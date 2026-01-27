@@ -457,7 +457,7 @@
                             <h3 class="text-5xl font-bold text-matauli-red-dark">2,550+</h3>
                             <p class="text-gray-600 text-lg mt-2">Peserta Didik</p>
                         </div>
-                        <div class="hidden md:block w-1 h-20 bg-matauli-yellow"></div>
+                        <div class="hidden md:block w-1 h-20 bg-yellow-400"></div>
                     </div>
                 </div>
 
@@ -468,7 +468,7 @@
                             <h3 class="text-5xl font-bold text-matauli-red-dark">999</h3>
                             <p class="text-gray-600 text-lg mt-2">Guru</p>
                         </div>
-                        <div class="hidden md:block w-1 h-20 bg-matauli-yellow"></div>
+                        <div class="hidden md:block w-1 h-20 bg-yellow-400"></div>
                     </div>
                 </div>
 
