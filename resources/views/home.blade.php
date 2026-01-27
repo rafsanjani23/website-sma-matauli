@@ -6,6 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMAN 1 Matauli Pandan - Beranda</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <style>
+        /* Slide Animation */
+        .hero-slide {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .hero-slide.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Dot Indicators */
+        .dot {
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background-color: white;
+            transform: scale(1.2);
+        }
+    </style>
 </head>
 
 <body>
@@ -208,13 +239,82 @@
                 </button>
 
                 <!-- Mobile Menu Dropdown -->
-                <div class="mobile-menu absolute top-17.5 right-0 w-40 bg-white shadow-sm p-6 hidden md:hidden">
-                    <ul class="flex flex-col space-y-3 text-xl font-semibold">
-                        <li><a href="{{ url('/') }}" class="text-sm">Beranda</a></li>
-                        <li><a href="{{ url('/tentang-kami') }}" class="text-sm">Tentang Kami</a></li>
-                        <li><a href="{{ url('/program') }}" class="text-sm">Program</a></li>
-                        <li><a href="{{ url('/dokumentasi') }}" class="text-sm">Dokumentasi</a></li>
-                    </ul>
+                <div
+                    class="mobile-menu hidden fixed top-[110px] right-4 w-64 bg-white shadow-2xl rounded-xl z-[60] border border-gray-100 overflow-hidden hiden md:hidden">
+
+                    <div class="max-h-[calc(100vh-160px)] overflow-y-auto py-3 custom-scrollbar">
+                        <ul class="flex flex-col w-full">
+
+                            <li>
+                                <a href="{{ url('/') }}"
+                                    class="block px-6 py-4 text-[16px] font-semibold text-[#1e293b] hover:bg-gray-50 transition-colors">
+                                    Beranda
+                                </a>
+                            </li>
+
+                            <li class="relative border-t border-gray-50">
+                                <div
+                                    class="mobile-dropdown-trigger flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-gray-50 transition-all outline-none">
+                                    <span class="text-[16px] font-semibold text-[#1e293b]">Tentang Kami</span>
+                                    <svg class="w-4 h-4 text-gray-400 transition-transform duration-300" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="m19 9-7 7-7-7" />
+                                    </svg>
+                                </div>
+
+                                <ul
+                                    class="mobile-dropdown-content hidden bg-[#f8fafc] border-y border-gray-100 overflow-hidden">
+                                    <li><a href="{{ url('/sejarah') }}"
+                                            class="block px-10 py-3.5 text-[14px] text-gray-600 border-b border-gray-200/50 hover:text-red-700">Sejarah
+                                            Sekolah</a></li>
+                                    <li><a href="{{ url('/visi-misi') }}"
+                                            class="block px-10 py-3.5 text-[14px] text-gray-600 border-b border-gray-200/50 hover:text-red-700">Visi
+                                            & Misi</a></li>
+                                    <li><a href="{{ url('/kurikulum') }}"
+                                            class="block px-10 py-3.5 text-[14px] text-gray-600 border-b border-gray-200/50 hover:text-red-700">Kurikulum</a>
+                                    </li>
+                                    <li><a href="{{ url('/tenaga-pendidik') }}"
+                                            class="block px-10 py-3.5 text-[14px] text-gray-600 border-b border-gray-200/50 hover:text-red-700">Tenaga
+                                            Pendidik</a></li>
+                                    <li><a href="{{ url('/fasilitas') }}"
+                                            class="block px-10 py-3.5 text-[14px] text-gray-600 border-b border-gray-200/50 hover:text-red-700">Fasilitas</a>
+                                    </li>
+                                    <li><a href="{{ url('/kemitraan') }}"
+                                            class="block px-10 py-3.5 text-[14px] text-gray-600 hover:text-red-700">Kemitraan</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="relative border-t border-gray-50">
+                                <div
+                                    class="mobile-dropdown-trigger flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-gray-50 transition-all outline-none">
+                                    <span class="text-[16px] font-semibold text-[#1e293b]">Program</span>
+                                    <svg class="w-4 h-4 text-gray-400 transition-transform duration-300" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="m19 9-7 7-7-7" />
+                                    </svg>
+                                </div>
+                                <ul
+                                    class="mobile-dropdown-content hidden bg-[#f8fafc] border-y border-gray-100 overflow-hidden">
+                                    <li><a href="{{ url('/prestasi') }}"
+                                            class="block px-10 py-3.5 text-[14px] text-gray-600 border-b border-gray-200/50 hover:text-red-700">Prestasi
+                                            Siswa</a></li>
+                                    <li><a href="{{ url('/ekskul') }}"
+                                            class="block px-10 py-3.5 text-[14px] text-gray-600 hover:text-red-700">Ekstrakurikuler</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="border-t border-gray-50">
+                                <a href="{{ url('/dokumentasi') }}"
+                                    class="block px-6 py-4 text-[16px] font-semibold text-[#1e293b] hover:bg-gray-50 transition-colors">
+                                    Dokumentasi
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
             </nav>
@@ -313,8 +413,7 @@
                 <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
 
                 <!-- Background Image -->
-                <img src="{{ asset('assets/Asrama.jpg') }}" alt="School Activities"
-                    class="w-full h-full object-cover">
+                <img src="{{ asset('assets/Asrama.jpg') }}" alt="School Activities" class="w-full h-full object-cover">
 
                 <!-- Content -->
                 <div class="absolute inset-0 z-20 flex items-center">
@@ -399,8 +498,7 @@
                 <div class="flex flex-col items-center">
                     <div class="relative mb-6">
                         <!-- Photo Container -->
-                        <div
-                            class="w-64 h-64 rounded-full overflow-hidden border-8 border-matauli-red-dark shadow-2xl">
+                        <div class="w-64 h-64 rounded-full overflow-hidden border-8 border-matauli-red-dark shadow-2xl">
                             <img src="{{ asset('assets/pak kepsek deden_merah maroon.png') }}" alt="Kepala Sekolah"
                                 class="w-full h-full object-cover">
                         </div>
@@ -430,8 +528,7 @@
                 <div class="flex flex-col items-center">
                     <div class="relative mb-6">
                         <!-- Photo Container -->
-                        <div
-                            class="w-64 h-64 rounded-full overflow-hidden border-8 border-matauli-red-dark shadow-2xl">
+                        <div class="w-64 h-64 rounded-full overflow-hidden border-8 border-matauli-red-dark shadow-2xl">
                             <img src="{{ asset('assets/bu ketum fitri_merah maroon.png') }}" alt="Ketua Umum"
                                 class="w-full h-full object-cover">
                         </div>
@@ -764,6 +861,32 @@
 
     <!-- ========== Mobile Menu Toggle Script ========== -->
     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const triggers = document.querySelectorAll('.mobile-dropdown-trigger');
+
+            triggers.forEach(trigger => {
+                trigger.addEventListener('click', function () {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('svg');
+                    const title = this.querySelector('span');
+
+                    // Periksa apakah dropdown ini sudah terbuka
+                    const isOpen = !content.classList.contains('hidden');
+
+                    // 1. Tutup SEMUA dropdown terlebih dahulu untuk membersihkan status
+                    document.querySelectorAll('.mobile-dropdown-content').forEach(el => el.classList.add('hidden'));
+                    document.querySelectorAll('.mobile-dropdown-trigger svg').forEach(el => el.classList.remove('rotate-180'));
+                    document.querySelectorAll('.mobile-dropdown-trigger span').forEach(el => el.classList.remove('text-red-700'));
+
+                    // 2. Jika sebelumnya tertutup, sekarang buka. Jika sebelumnya terbuka, biarkan tetap tertutup (Toggle)
+                    if (!isOpen) {
+                        content.classList.remove('hidden');
+                        icon.classList.add('rotate-180');
+                        title.classList.add('text-red-700');
+                    }
+                });
+            });
+        });
         // Select menu buttons and mobile menus
         const menuButtons = document.querySelectorAll(".menu-btn");
         const mobileMenus = document.querySelectorAll(".mobile-menu");
@@ -777,37 +900,7 @@
     </script>
 
     <!-- ========== Hero Slider Styles ========== -->
-    <style>
-        /* Slide Animation */
-        .hero-slide {
-            display: none;
-            animation: fadeIn 0.5s ease-in-out;
-        }
 
-        .hero-slide.active {
-            display: block;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        /* Dot Indicators */
-        .dot {
-            transition: all 0.3s ease;
-        }
-
-        .dot.active {
-            background-color: white;
-            transform: scale(1.2);
-        }
-    </style>
     <!-- ============================================ -->
     <!-- JAVASCRIPT SECTION - END -->
     <!-- ============================================ -->
