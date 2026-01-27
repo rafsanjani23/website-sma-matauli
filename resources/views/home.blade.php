@@ -381,7 +381,7 @@
     <!-- ============================================ -->
     <!-- ABOUT SECTION - START -->
     <!-- ============================================ -->
-    <section id="tentang" class="py-20 bg-white">
+    <section id="tentang" class="py-20 bg-[#fff9f9]">
         <div class="container mx-auto px-6 md:px-16 lg:px-24 xl:px-32">
 
             <!-- Section Title -->
