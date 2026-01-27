@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMAN 1 Matauli Pandan</title>
+    <title>SMAN 1 Matauli Pandan - Beranda</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
@@ -31,6 +31,7 @@
 
                 <!-- Contact Information -->
                 <div class="flex items-center gap-6">
+
                     <!-- Email -->
                     <div class="flex items-center gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-orange-500" fill="currentColor"
@@ -54,6 +55,7 @@
                             +62 821-2131-3131
                         </a>
                     </div>
+
                 </div>
             </div>
 
@@ -75,17 +77,17 @@
                     </div>
                 </div>
 
-                <!-- ========== DESKTOP NAVIGATION MENU ========== -->
+                <!-- Desktop Navigation Menu -->
                 <ul class="hidden md:flex items-center space-x-10 md:pl-28 font-semibold text-lg">
 
-                    <!-- MENU BERANDA -->
+                    <!-- Menu: Beranda -->
                     <li>
                         <a href="{{ url('/') }}" class="navlink-hover">
                             Beranda
                         </a>
                     </li>
 
-                    <!-- DROPDOWN MENU: TENTANG KAMI -->
+                    <!-- Dropdown Menu: Tentang Kami -->
                     <li class="relative group">
                         <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
                             Tentang Kami
@@ -96,59 +98,47 @@
                             </svg>
                         </button>
 
-                        <!-- Dropdown Content: Tentang Kami -->
+                        <!-- Dropdown Content -->
                         <ul class="nav-dropdown-content">
-                            <!-- 1. Sejarah Sekolah -->
                             <li>
                                 <a href="{{ url('/tentang-kami#sejarah-sekolah') }}" class="dropdown-item">
                                     Sejarah Sekolah
                                 </a>
                             </li>
-
-                            <!-- 2. Visi & Misi -->
                             <li>
                                 <a href="{{ url('/tentang-kami#visi-misi') }}" class="dropdown-item">
                                     Visi & Misi
                                 </a>
                             </li>
-
-                            <!-- 3. Kurikulum Sekolah -->
                             <li>
                                 <a href="{{ url('/tentang-kami#kurikulum') }}" class="dropdown-item">
                                     Kurikulum Sekolah
                                 </a>
                             </li>
-
-                            <!-- 4. Tenaga Pendidik & Kependidikan -->
                             <li>
                                 <a href="{{ url('/tentang-kami#tenaga-pendidik') }}" class="dropdown-item">
                                     Tenaga Pendidik & Kependidikan
                                 </a>
                             </li>
-
-                            <!-- 5. Fasilitas Sekolah -->
                             <li>
                                 <a href="{{ url('/tentang-kami#fasilitas') }}" class="dropdown-item">
                                     Fasilitas Sekolah
                                 </a>
                             </li>
-
-                            <!-- 6. Kemitraan Sekolah -->
                             <li>
                                 <a href="{{ url('/tentang-kami#kemitraan') }}" class="dropdown-item">
                                     Kemitraan Sekolah
                                 </a>
                             </li>
-
-                            <!-- 7. Tentang Asrama -->
                             <li>
                                 <a href="{{ url('/tentang-kami#asrama') }}" class="dropdown-item">
                                     Tentang Asrama
                                 </a>
                             </li>
                         </ul>
+                    </li>
 
-                        <!-- DROPDOWN MENU: PROGRAM -->
+                    <!-- Dropdown Menu: Program -->
                     <li class="relative group">
                         <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
                             Program
@@ -159,16 +149,13 @@
                             </svg>
                         </button>
 
-                        <!-- Dropdown Content: Program -->
+                        <!-- Dropdown Content -->
                         <ul class="nav-dropdown-content">
-                            <!-- 1. Prestasi Siswa -->
                             <li>
                                 <a href="{{ url('/program#prestasi-siswa') }}" class="dropdown-item">
                                     Prestasi Siswa
                                 </a>
                             </li>
-
-                            <!-- 2. Ekstrakulikuler -->
                             <li>
                                 <a href="{{ url('/program#ekstrakulikuler') }}" class="dropdown-item">
                                     Ekstrakulikuler
@@ -177,7 +164,7 @@
                         </ul>
                     </li>
 
-                    <!-- DROPDOWN MENU: DOKUMENTASI -->
+                    <!-- Dropdown Menu: Dokumentasi -->
                     <li class="relative group">
                         <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
                             Dokumentasi
@@ -188,23 +175,18 @@
                             </svg>
                         </button>
 
-                        <!-- Dropdown Content: Dokumentasi -->
+                        <!-- Dropdown Content -->
                         <ul class="nav-dropdown-content">
-                            <!-- 1. Galeri -->
                             <li>
                                 <a href="{{ url('/dokumentasi#galeri') }}" class="dropdown-item">
                                     Galeri
                                 </a>
                             </li>
-
-                            <!-- 2. Berita -->
                             <li>
                                 <a href="{{ url('/dokumentasi#berita') }}" class="dropdown-item">
                                     Berita
                                 </a>
                             </li>
-
-                            <!-- 3. Kegiatan Sekolah -->
                             <li>
                                 <a href="{{ url('/dokumentasi#kegiatan-sekolah') }}" class="dropdown-item">
                                     Kegiatan Sekolah
@@ -212,6 +194,7 @@
                             </li>
                         </ul>
                     </li>
+
                 </ul>
 
                 <!-- Mobile Menu Button -->
@@ -233,6 +216,7 @@
                         <li><a href="{{ url('/dokumentasi') }}" class="text-sm">Dokumentasi</a></li>
                     </ul>
                 </div>
+
             </nav>
         </div>
     </header>
@@ -241,58 +225,307 @@
     <!-- ============================================ -->
 
     <!-- ============================================ -->
-    <!-- HERO SECTION - START -->
+    <!-- HERO SLIDER SECTION - START -->
     <!-- ============================================ -->
-    <section
-        class="relative flex flex-col items-center justify-center text-center py-24 px-6 bg-[url('https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/banners/image-1.png')] bg-cover bg-center h-screen">
+    <section class="relative h-screen overflow-hidden">
 
-        <!-- Hero Title -->
-        <h1 class="text-2xl md:text-3xl font-medium text-white max-w-2xl">
-            Empower Your Sales & Marketing with a Next-Gen AI Workforce
-        </h1>
+        <!-- Slides Container -->
+        <div id="heroSlider" class="relative h-full">
 
-        <!-- Decorative Line -->
-        <div class="h-0.75 w-32 my-1 bg-linear-to-l from-transparent to-indigo-600"></div>
+            <!-- ========== SLIDE 1: Main Hero ========== -->
+            <div class="hero-slide active absolute inset-0">
+                <!-- Overlay Gradient -->
+                <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
 
-        <!-- Hero Description -->
-        <p class="text-sm md:text-base text-white max-w-xl">
-            Leverage AI Agents for real-time calling and unified multi-channel engagement,
-            optimizing customer interactions at scale.
-        </p>
+                <!-- Background Image -->
+                <img src="{{ asset('assets/Gerbang Depan Sekolah.jpeg') }}" alt="School Building"
+                    class="w-full h-full object-cover">
 
-        <!-- Call to Action Button -->
-        <button
-            class="px-8 py-2.5 mt-4 text-sm bg-linear-to-r from-indigo-600 to-violet-500 hover:scale-105 transition duration-300 text-white rounded-full">
-            Get Started
+                <!-- Content -->
+                <div class="absolute inset-0 z-20 flex items-center">
+                    <div class="container mx-auto px-6 md:px-16 lg:px-24 xl:px-32">
+                        <div class="max-w-3xl">
+                            <p class="text-yellow-400 font-bold text-lg md:text-xl mb-4 tracking-wider">
+                                SMA NEGERI 1 MATAULI PANDAN
+                            </p>
+                            <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                                Sekolah Unggul Berkarakter Pancasila & Berdaya Saing Global
+                            </h1>
+                            <p class="text-white/90 text-lg md:text-xl mb-8 italic">
+                                Bergabung dan Tumbuh Bersama SMA Negeri 1 Matauli Pandan
+                            </p>
+                            <a href="{{ url('/ppdb') }}"
+                                class="inline-flex items-center gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-8 py-4 rounded-lg transition-all hover:scale-105 shadow-lg">
+                                Daftar Disini
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========== SLIDE 2: IB Program ========== -->
+            <div class="hero-slide absolute inset-0">
+                <!-- Overlay Gradient -->
+                <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
+
+                <!-- Background Image -->
+                <img src="{{ asset('assets/Background IB Program.JPG') }}" alt="IB Program"
+                    class="w-full h-full object-cover">
+
+                <!-- Content -->
+                <div class="absolute inset-0 z-20 flex items-center">
+                    <div class="container mx-auto px-6 md:px-16 lg:px-24 xl:px-32">
+                        <div class="max-w-3xl">
+                            <p class="text-yellow-400 font-bold text-lg md:text-xl mb-4 tracking-wider">
+                                SMA NEGERI 1 MATAULI PANDAN
+                            </p>
+                            <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                                Mempersiapkan Siswa untuk Dunia Global melalui Program IB
+                            </h1>
+                            <p class="text-white/90 text-lg md:text-xl mb-8 italic">
+                                Kurikulum internasional yang menumbuhkan kepemimpinan, riset, dan karakter pelajar
+                                Pancasila.
+                            </p>
+                            <a href="{{ url('/program#ib-program') }}"
+                                class="inline-flex items-center gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-8 py-4 rounded-lg transition-all hover:scale-105 shadow-lg">
+                                Kenali Program IB
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========== SLIDE 3: Facilities ========== -->
+            <div class="hero-slide absolute inset-0">
+                <!-- Overlay Gradient -->
+                <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
+
+                <!-- Background Image -->
+                <img src="{{ asset('assets/Asrama.jpg') }}" alt="School Activities"
+                    class="w-full h-full object-cover">
+
+                <!-- Content -->
+                <div class="absolute inset-0 z-20 flex items-center">
+                    <div class="container mx-auto px-6 md:px-16 lg:px-24 xl:px-32">
+                        <div class="max-w-3xl">
+                            <p class="text-yellow-400 font-bold text-lg md:text-xl mb-4 tracking-wider">
+                                FASILITAS LENGKAP
+                            </p>
+                            <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                                Lingkungan Belajar Modern dan Nyaman
+                            </h1>
+                            <p class="text-white/90 text-lg md:text-xl mb-8 italic">
+                                Didukung Teknologi dan Tenaga Pengajar Profesional
+                            </p>
+                            <a href="{{ url('/tentang-kami#fasilitas') }}"
+                                class="inline-flex items-center gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-8 py-4 rounded-lg transition-all hover:scale-105 shadow-lg">
+                                Lihat Fasilitas
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button onclick="changeSlide(-1)"
+            class="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-30 bg-white/20 hover:bg-white/40 backdrop-blur-sm text-white p-3 md:p-4 rounded-full transition-all shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="3">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
         </button>
+
+        <button onclick="changeSlide(1)"
+            class="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-30 bg-white/20 hover:bg-white/40 backdrop-blur-sm text-white p-3 md:p-4 rounded-full transition-all shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="3">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+
+        <!-- Dots Navigation -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex gap-3">
+            <button onclick="goToSlide(0)"
+                class="dot active w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all"></button>
+            <button onclick="goToSlide(1)"
+                class="dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all"></button>
+            <button onclick="goToSlide(2)"
+                class="dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all"></button>
+        </div>
+
     </section>
     <!-- ============================================ -->
-    <!-- HERO SECTION - END -->
+    <!-- HERO SLIDER SECTION - END -->
     <!-- ============================================ -->
 
+    <!-- ============================================ -->
+    <!-- ABOUT SECTION - START -->
+    <!-- ============================================ -->
+    <section id="tentang" class="py-20 bg-white">
+        <div class="container mx-auto px-6 md:px-16 lg:px-24 xl:px-32">
 
+            <!-- Section Title -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-matauli-red-dark mb-4">
+                    Tentang Kami
+                </h2>
+                <div class="w-24 h-1 bg-yellow-400 mx-auto"></div>
+            </div>
+
+            <!-- ========== About Content Grid ========== -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
+
+                <!-- Kepala Sekolah -->
+                <div class="flex flex-col items-center">
+                    <div class="relative mb-6">
+                        <!-- Photo Container -->
+                        <div
+                            class="w-64 h-64 rounded-full overflow-hidden border-8 border-matauli-red-dark shadow-2xl">
+                            <img src="{{ asset('assets/pak kepsek deden_merah maroon.png') }}" alt="Kepala Sekolah"
+                                class="w-full h-full object-cover">
+                        </div>
+
+                        <!-- Name Badge -->
+                        <div
+                            class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-matauli-red-dark text-white px-6 py-2 rounded-full shadow-lg whitespace-nowrap">
+                            <p class="text-sm font-semibold">DEDEN RACHMAWAN, S.Pd., M.M</p>
+                            <p class="text-xs text-center">Kepala Sekolah SMAN 1</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- School Description -->
+                <div class="lg:col-span-1 flex items-center">
+                    <div class="text-center lg:text-left">
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            SMA Negeri 1 Plus Matauli Pandan merupakan sekolah negeri unggulan di bawah naungan Yayasan
+                            MATAULI dan Kementerian Pendidikan dan Kebudayaan Provinsi Sumatera Utara. Didirikan pada 14
+                            Juni 1994, hingga tahun 2025 sekolah ini telah meluluskan 30 angkatan dengan lebih dari
+                            8.000 alumni.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Ketua Umum -->
+                <div class="flex flex-col items-center">
+                    <div class="relative mb-6">
+                        <!-- Photo Container -->
+                        <div
+                            class="w-64 h-64 rounded-full overflow-hidden border-8 border-matauli-red-dark shadow-2xl">
+                            <img src="{{ asset('assets/bu ketum fitri_merah maroon.png') }}" alt="Ketua Umum"
+                                class="w-full h-full object-cover">
+                        </div>
+
+                        <!-- Name Badge -->
+                        <div
+                            class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-matauli-red-dark text-white px-6 py-2 rounded-full shadow-lg whitespace-nowrap">
+                            <p class="text-sm font-semibold">Fitri Krisnawati Tandjung, B.Sc</p>
+                            <p class="text-xs text-center">Ketua Umum</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ========== Statistics ========== -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+
+                <!-- Stat 1: Peserta Didik -->
+                <div class="text-center">
+                    <div class="flex items-center justify-center gap-4">
+                        <div>
+                            <h3 class="text-5xl font-bold text-matauli-red-dark">2,550+</h3>
+                            <p class="text-gray-600 text-lg mt-2">Peserta Didik</p>
+                        </div>
+                        <div class="hidden md:block w-1 h-20 bg-matauli-yellow"></div>
+                    </div>
+                </div>
+
+                <!-- Stat 2: Guru -->
+                <div class="text-center">
+                    <div class="flex items-center justify-center gap-4">
+                        <div>
+                            <h3 class="text-5xl font-bold text-matauli-red-dark">999</h3>
+                            <p class="text-gray-600 text-lg mt-2">Guru</p>
+                        </div>
+                        <div class="hidden md:block w-1 h-20 bg-matauli-yellow"></div>
+                    </div>
+                </div>
+
+                <!-- Stat 3: Ruang Kelas -->
+                <div class="text-center">
+                    <div class="flex items-center justify-center gap-4">
+                        <div>
+                            <h3 class="text-5xl font-bold text-matauli-red-dark">999</h3>
+                            <p class="text-gray-600 text-lg mt-2">Ruang Kelas</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA Button -->
+            <div class="text-center mt-12">
+                <a href="{{ url('/tentang-kami') }}"
+                    class="inline-flex items-center gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-8 py-4 rounded-lg transition-all hover:scale-105 shadow-lg">
+                    Selengkapnya
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <!-- ============================================ -->
+    <!-- ABOUT SECTION - END -->
+    <!-- ============================================ -->
 
     <!-- ============================================ -->
     <!-- FOOTER SECTION - START -->
     <!-- ============================================ -->
     <footer class="bg-matauli-red-dark text-white">
-        <!-- Footer Content -->
+
+        <!-- Footer Content Container -->
         <div class="container mx-auto px-6 md:px-16 lg:px-24 xl:px-32 py-16">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
 
                 <!-- ========== COLUMN 1: Logo & School Name ========== -->
                 <div class="flex flex-col items-start space-y-6">
-                    <!-- Logo & School Name Container -->
-                    <div class="flex items-start gap-4">
+
+                    <!-- Logo & Name Container -->
+                    <div class="flex items-start gap-3">
                         <!-- Logo -->
                         <img src="{{ asset('assets/Logo_SMAN_Matauli.png') }}" alt="Logo SMAN Matauli"
-                            class="h-36 w-auto shrink-0">
+                            class="h-32 w-auto shrink-0">
 
                         <!-- Vertical Divider -->
-                        <div class="h-36 w-0.75 bg-matauli-yellow shrink-0"></div>
+                        <div class="h-32 w-0.75 bg-matauli-yellow shrink-0"></div>
 
                         <!-- School Name -->
-                        <div class="flex flex-col justify-center h-36">
+                        <div class="flex flex-col justify-center h-32">
                             <h2 class="text-3xl font-bold leading-tight text-white whitespace-nowrap">
                                 <span class="block">
                                     <span class="tracking-widest">SMAN</span>
@@ -312,7 +545,7 @@
                 </div>
 
                 <!-- ========== COLUMN 2: Kunjungi Kami ========== -->
-                <div class="flex flex-col lg:pl-6">
+                <div class="flex flex-col">
                     <h3 class="text-xl font-bold mb-6 pb-2 border-b-2 border-matauli-yellow w-fit">
                         Kunjungi Kami
                     </h3>
@@ -327,7 +560,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                             </svg>
-                            <p class="text-gray-200 leading-relaxed">
+                            <p class="text-gray-200 leading-relaxed text-sm">
                                 Jl. Pendidikan No. 123, Pandan,<br>
                                 Tapanuli Tengah, Sumatera Utara
                             </p>
@@ -335,25 +568,26 @@
 
                         <!-- Phone -->
                         <div class="flex items-center gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-matauli-yellow"
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-matauli-yellow shrink-0"
                                 fill="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
                             </svg>
-                            <a href="tel:+628888888888" class="text-gray-200 hover:text-matauli-yellow transition">
+                            <a href="tel:+628888888888"
+                                class="text-gray-200 hover:text-matauli-yellow transition text-sm">
                                 +62 888-8888-8888
                             </a>
                         </div>
 
                         <!-- Email -->
                         <div class="flex items-center gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-matauli-yellow"
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-matauli-yellow shrink-0"
                                 fill="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                             </svg>
                             <a href="mailto:examplematauli@gmail.com"
-                                class="text-gray-200 hover:text-matauli-yellow transition">
+                                class="text-gray-200 hover:text-matauli-yellow transition text-sm">
                                 examplematauli@gmail.com
                             </a>
                         </div>
@@ -361,7 +595,7 @@
                 </div>
 
                 <!-- ========== COLUMN 3: Link Terkait ========== -->
-                <div class="flex flex-col lg:pl-6">
+                <div class="flex flex-col">
                     <h3 class="text-xl font-bold mb-6 pb-2 border-b-2 border-matauli-yellow w-fit">
                         Link Terkait
                     </h3>
@@ -407,7 +641,7 @@
                 </div>
 
                 <!-- ========== COLUMN 4: Ikuti Kami (Social Media) ========== -->
-                <div class="flex flex-col lg:pl-6">
+                <div class="flex flex-col">
                     <h3 class="text-xl font-bold mb-6 pb-2 border-b-2 border-matauli-yellow w-fit">
                         Ikuti Kami
                     </h3>
@@ -462,25 +696,122 @@
     <!-- FOOTER SECTION - END -->
     <!-- ============================================ -->
 
-
-
-
     <!-- ============================================ -->
-    <!-- JAVASCRIPT - Mobile Menu Toggle -->
+    <!-- JAVASCRIPT SECTION - START -->
     <!-- ============================================ -->
+
+    <!-- ========== Hero Slider Script ========== -->
     <script>
-        // Select all menu buttons and mobile menus
+        // Slider Variables
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slide');
+        const dots = document.querySelectorAll('.dot');
+        let autoSlideInterval;
+
+        // Show specific slide
+        function showSlide(n) {
+            if (n >= slides.length) currentSlide = 0;
+            if (n < 0) currentSlide = slides.length - 1;
+
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+
+        // Change slide (next/previous)
+        function changeSlide(n) {
+            currentSlide += n;
+            showSlide(currentSlide);
+            resetAutoSlide();
+        }
+
+        // Go to specific slide
+        function goToSlide(n) {
+            currentSlide = n;
+            showSlide(currentSlide);
+            resetAutoSlide();
+        }
+
+        // Auto slide function
+        function autoSlide() {
+            currentSlide++;
+            showSlide(currentSlide);
+        }
+
+        // Reset auto slide timer
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            autoSlideInterval = setInterval(autoSlide, 5000);
+        }
+
+        // Initialize auto-slide (5 seconds interval)
+        autoSlideInterval = setInterval(autoSlide, 5000);
+
+        // Pause auto-slide on hover
+        const heroSlider = document.getElementById('heroSlider');
+        if (heroSlider) {
+            heroSlider.addEventListener('mouseenter', () => {
+                clearInterval(autoSlideInterval);
+            });
+
+            heroSlider.addEventListener('mouseleave', () => {
+                resetAutoSlide();
+            });
+        }
+    </script>
+
+    <!-- ========== Mobile Menu Toggle Script ========== -->
+    <script>
+        // Select menu buttons and mobile menus
         const menuButtons = document.querySelectorAll(".menu-btn");
         const mobileMenus = document.querySelectorAll(".mobile-menu");
 
-        // Add click event listener to each menu button
+        // Add click event listener to toggle mobile menu
         menuButtons.forEach((btn, index) => {
             btn.addEventListener("click", () => {
-                // Toggle visibility of corresponding mobile menu
                 mobileMenus[index].classList.toggle("hidden");
             });
         });
     </script>
+
+    <!-- ========== Hero Slider Styles ========== -->
+    <style>
+        /* Slide Animation */
+        .hero-slide {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .hero-slide.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Dot Indicators */
+        .dot {
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background-color: white;
+            transform: scale(1.2);
+        }
+    </style>
+    <!-- ============================================ -->
+    <!-- JAVASCRIPT SECTION - END -->
+    <!-- ============================================ -->
+
 </body>
 
 </html>
