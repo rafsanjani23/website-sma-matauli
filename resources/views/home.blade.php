@@ -241,8 +241,8 @@
                 <li class="relative group">
                     <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
                         Tentang Kami
-                        <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none"
-                            stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
@@ -266,8 +266,8 @@
                 <li class="relative group">
                     <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
                         Program
-                        <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none"
-                            stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
@@ -283,8 +283,8 @@
                 <li class="relative group">
                     <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
                         Dokumentasi
-                        <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none"
-                            stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
@@ -302,9 +302,10 @@
             <!-- Mobile Menu Button -->
             <button id="menuToggle" aria-label="Toggle menu" type="button"
                 class="inline-flex lg:hidden items-center justify-center p-2 rounded-md text-white hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition-colors">
-                <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
                 <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none"
                     viewBox="0 0 24 24" stroke="currentColor">
@@ -357,9 +358,10 @@
                     <button
                         class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
                         <span>Tentang Kami</span>
-                        <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300" fill="none"
-                            stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
                     <ul class="mobile-dropdown-content bg-gray-50">
@@ -392,9 +394,10 @@
                     <button
                         class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
                         <span>Program</span>
-                        <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300" fill="none"
-                            stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
                     <ul class="mobile-dropdown-content bg-gray-50">
@@ -412,9 +415,10 @@
                     <button
                         class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
                         <span>Dokumentasi</span>
-                        <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300" fill="none"
-                            stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
                     <ul class="mobile-dropdown-content bg-gray-50">
@@ -470,7 +474,7 @@
 
             <!-- Slide 1 -->
             <div class="hero-slide active absolute inset-0">
-                <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent z-10"></div>
+                <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
                 <img src="{{ asset('assets/Gerbang Depan Sekolah.jpeg') }}" alt="School Building"
                     class="w-full h-full object-cover">
                 <div class="absolute inset-0 z-20 flex items-center">
@@ -504,7 +508,7 @@
 
             <!-- Slide 2 -->
             <div class="hero-slide absolute inset-0">
-                <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent z-10"></div>
+                <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
                 <img src="{{ asset('assets/Background IB Program.JPG') }}" alt="IB Program"
                     class="w-full h-full object-cover">
                 <div class="absolute inset-0 z-20 flex items-center">
@@ -539,8 +543,9 @@
 
             <!-- Slide 3 -->
             <div class="hero-slide absolute inset-0">
-                <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent z-10"></div>
-                <img src="{{ asset('assets/Asrama.jpg') }}" alt="School Activities" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
+                <img src="{{ asset('assets/Asrama.jpg') }}" alt="School Activities"
+                    class="w-full h-full object-cover">
                 <div class="absolute inset-0 z-20 flex items-center">
                     <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
                         <div class="max-w-3xl">
@@ -639,7 +644,7 @@
                 <!-- School Description -->
                 <div class="lg:col-span-1 flex items-center">
                     <div class="text-center lg:text-left">
-                        <p class="text-gray-700 text-base md:text-lg leading-relaxed">
+                        <p class="text-gray-700 text-base md:text-lg leading-relaxed text-justify">
                             SMA Negeri 1 Plus Matauli Pandan merupakan sekolah negeri unggulan di bawah naungan Yayasan
                             MATAULI dan Kementerian Pendidikan dan Kebudayaan Provinsi Sumatera Utara. Didirikan pada 14
                             Juni 1994, hingga tahun 2025 sekolah ini telah meluluskan 30 angkatan dengan lebih dari
@@ -743,7 +748,7 @@
                         <div class="flex flex-col justify-center leading-tight">
                             <h2 class="text-2xl md:text-3xl font-bold text-white">
                                 <span class="inline-flex items-center tracking-widest">
-                                    SMAN <span class="ml-2">1</span>
+                                    SMAN <span class="ml-3.5">1</span>
                                 </span>
                                 <span class="block">MATAULI</span>
                                 <span class="block tracking-wide">PANDAN</span>
@@ -752,9 +757,9 @@
                     </div>
 
                     <!-- Copyright -->
-                    <div class="text-xs md:text-sm text-gray-300 leading-relaxed">
-                        <p>Copyright 2026. All right reserved.</p>
-                        <p class="font-semibold text-white">SMAN 1 Matauli Pandan</p>
+                    <div class="text-xs md:text-sm leading-relaxed">
+                        <p>&copy; 2026. All right reserved.</p>
+                        <p class="font-bold text-yellow-400">SMAN 1 Matauli Pandan</p>
                     </div>
 
                 </div>
@@ -955,7 +960,7 @@
         }
 
         if (menuToggle) {
-            menuToggle.addEventListener('click', function () {
+            menuToggle.addEventListener('click', function() {
                 if (mobileMenu.classList.contains('active')) {
                     closeMenuFunc();
                 } else {
@@ -974,7 +979,7 @@
 
         // Mobile Dropdown
         document.querySelectorAll('.mobile-dropdown-trigger').forEach(trigger => {
-            trigger.addEventListener('click', function () {
+            trigger.addEventListener('click', function() {
                 const content = this.nextElementSibling;
                 const arrow = this.querySelector('.dropdown-arrow');
                 const isOpen = content.classList.contains('open');
@@ -999,7 +1004,7 @@
         });
 
         // Close on resize
-        window.addEventListener('resize', function () {
+        window.addEventListener('resize', function() {
             if (window.innerWidth >= 1024) {
                 closeMenuFunc();
             }
