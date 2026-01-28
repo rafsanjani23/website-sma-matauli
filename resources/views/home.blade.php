@@ -434,7 +434,7 @@
             <!-- Slide 1 -->
             <div class="hero-slide active absolute inset-0">
                 <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent z-10"></div>
-                <img src="assets/Gerbang Depan Sekolah.jpeg" alt="School Building"
+                <img src="{{ asset('assets/Gerbang Depan Sekolah.jpeg') }}" alt="School Building"
                     class="w-full h-full object-cover">
                 <div class="absolute inset-0 z-20 flex items-center">
                     <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
@@ -450,7 +450,7 @@
                             <p class="text-white/90 text-base sm:text-lg md:text-xl mb-6 md:mb-8 italic">
                                 Bergabung dan Tumbuh Bersama SMA Negeri 1 Matauli Pandan
                             </p>
-                            <a href="/ppdb"
+                            <a href="{{ url('/ppdb') }}"
                                 class="inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-6 py-3 md:px-8 md:py-4 rounded-lg transition-all hover:scale-105 shadow-lg text-sm md:text-base">
                                 Daftar Disini
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5"
@@ -468,7 +468,8 @@
             <!-- Slide 2 -->
             <div class="hero-slide absolute inset-0">
                 <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent z-10"></div>
-                <img src="assets/Background IB Program.JPG" alt="IB Program" class="w-full h-full object-cover">
+                <img src="{{ asset('assets/Background IB Program.JPG') }}" alt="IB Program"
+                    class="w-full h-full object-cover">
                 <div class="absolute inset-0 z-20 flex items-center">
                     <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
                         <div class="max-w-3xl">
@@ -484,7 +485,7 @@
                                 Kurikulum internasional yang menumbuhkan kepemimpinan, riset, dan karakter pelajar
                                 Pancasila.
                             </p>
-                            <a href="/program#ib-program"
+                            <a href="{{ url('/program#ib-program') }}"
                                 class="inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-6 py-3 md:px-8 md:py-4 rounded-lg transition-all hover:scale-105 shadow-lg text-sm md:text-base">
                                 Kenali Program IB
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5"
@@ -502,7 +503,8 @@
             <!-- Slide 3 -->
             <div class="hero-slide absolute inset-0">
                 <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent z-10"></div>
-                <img src="assets/Asrama.jpg" alt="School Activities" class="w-full h-full object-cover">
+                <img src="{{ asset('assets/Asrama.jpg') }}" alt="School Activities"
+                    class="w-full h-full object-cover">
                 <div class="absolute inset-0 z-20 flex items-center">
                     <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
                         <div class="max-w-3xl">
@@ -517,7 +519,7 @@
                             <p class="text-white/90 text-base sm:text-lg md:text-xl mb-6 md:mb-8 italic">
                                 Didukung Teknologi dan Tenaga Pengajar Profesional
                             </p>
-                            <a href="/tentang-kami#fasilitas"
+                            <a href="{{ url('/tentang-kami#fasilitas') }}"
                                 class="inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-6 py-3 md:px-8 md:py-4 rounded-lg transition-all hover:scale-105 shadow-lg text-sm md:text-base">
                                 Lihat Fasilitas
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5"
@@ -832,6 +834,53 @@
     <!-- JAVASCRIPT - START -->
     <!-- ============================================ -->
     <script>
+        // ========== HERO SLIDER ==========
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slide');
+        const dots = document.querySelectorAll('.dot');
+        let autoSlideInterval;
+
+        function showSlide(n) {
+            if (n >= slides.length) currentSlide = 0;
+            if (n < 0) currentSlide = slides.length - 1;
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+
+        function changeSlide(n) {
+            currentSlide += n;
+            showSlide(currentSlide);
+            resetAutoSlide();
+        }
+
+        function goToSlide(n) {
+            currentSlide = n;
+            showSlide(currentSlide);
+            resetAutoSlide();
+        }
+
+        function autoSlide() {
+            currentSlide++;
+            showSlide(currentSlide);
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            autoSlideInterval = setInterval(autoSlide, 5000);
+        }
+
+        // Start auto slide
+        autoSlideInterval = setInterval(autoSlide, 5000);
+
+        // Pause on hover
+        const heroSlider = document.getElementById('heroSlider');
+        if (heroSlider) {
+            heroSlider.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+            heroSlider.addEventListener('mouseleave', () => resetAutoSlide());
+        }
+
         // ========== MOBILE MENU - FIXED VERSION ==========
         const menuToggle = document.getElementById('menuToggle');
         const closeMenu = document.getElementById('closeMenu');
