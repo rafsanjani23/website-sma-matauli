@@ -7,6 +7,92 @@
     <title>SMAN 1 Matauli Pandan - Beranda</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style>
+        /* Custom Tailwind Config */
+        @layer utilities {
+            .navlink-hover {
+                @apply text-white hover:text-orange-400 transition-colors duration-300;
+            }
+
+            .dropdown-item {
+                @apply block px-4 py-2.5 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-colors;
+            }
+
+            .nav-dropdown-content {
+                @apply absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50;
+            }
+        }
+
+        /* Custom Scrollbar */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+
+        /* Prevent body scroll when mobile menu is open */
+        body.menu-open {
+            overflow: hidden;
+        }
+
+        /* Mobile Menu Backdrop - FIXED: COMPLETELY HIDDEN BY DEFAULT */
+        #menuBackdrop {
+            visibility: hidden !important;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+        }
+
+        #menuBackdrop.active {
+            visibility: visible !important;
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out, visibility 0s linear 0s;
+        }
+
+        /* Mobile Menu Panel */
+        #mobileMenu {
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #mobileMenu.active {
+            transform: translateX(0);
+        }
+
+        /* Mobile Dropdown */
+        .mobile-dropdown-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        }
+
+        .mobile-dropdown-content.open {
+            max-height: 500px;
+        }
+
+        /* Custom Colors */
+        .bg-matauli-red-dark {
+            background-color: #991b1b;
+        }
+
+        .text-matauli-orange {
+            color: #ea580c;
+        }
+
+        .hover\:text-matauli-orange:hover {
+            color: #ea580c;
+        }
+
         /* Hero Slide Animation */
         .hero-slide {
             display: none;
@@ -36,25 +122,6 @@
             background-color: white;
             transform: scale(1.2);
         }
-
-        /* Custom Scrollbar for Mobile Menu */
-        .custom-scrollbar::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        .custom-scrollbar::-webkit-scrollbar-track {
-            background: #f1f1f1;
-            border-radius: 10px;
-        }
-
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 10px;
-        }
-
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8;
-        }
     </style>
 </head>
 
@@ -65,22 +132,22 @@
     <header class="w-full sticky top-0 z-50 shadow-md">
 
         <!-- ========== TOP BAR - Contact Information ========== -->
-        <div class="bg-white text-[#000000] py-2 hidden md:block">
-            <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
+        <div class="bg-white text-[#000000] py-2 hidden lg:block">
+            <div class="container mx-auto px-4 lg:px-12 xl:px-24">
                 <div class="flex items-center justify-between">
 
                     <!-- Logo Section -->
-                    <div class="flex items-center gap-2 md:gap-3">
+                    <div class="flex items-center gap-3">
                         <img src="{{ asset('assets/Logo_Yayasan.png') }}" alt="Logo Yayasan"
-                            class="h-8 md:h-9 lg:h-10 w-auto object-contain">
+                            class="h-9 lg:h-10 w-auto object-contain">
                         <img src="{{ asset('assets/Logo_SMAN_Matauli.png') }}" alt="Logo SMAN Matauli"
-                            class="h-8 md:h-9 lg:h-10 w-auto object-contain">
+                            class="h-9 lg:h-10 w-auto object-contain">
                         <img src="{{ asset('assets/Logo_Provinsi.png') }}" alt="Logo Provinsi"
-                            class="h-8 md:h-9 lg:h-10 w-auto object-contain">
+                            class="h-9 lg:h-10 w-auto object-contain">
                     </div>
 
                     <!-- Contact Information -->
-                    <div class="flex items-center gap-4 md:gap-6 text-xs md:text-sm">
+                    <div class="flex items-center gap-6 text-sm">
                         <!-- Email -->
                         <div class="flex items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-orange-500" fill="currentColor"
@@ -112,345 +179,247 @@
 
         <!-- ========== MAIN NAVIGATION BAR ========== -->
         <nav
-            class="relative h-auto flex items-center justify-between px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 py-3 md:py-4 bg-matauli-red-dark text-gray-900 transition-all shadow">
+            class="relative flex items-center justify-between px-4 sm:px-6 lg:px-12 xl:px-24 py-3 lg:py-4 bg-matauli-red-dark text-gray-900 transition-all shadow">
 
             <!-- Brand Section -->
-            <div class="flex items-center gap-2 sm:gap-3 md:gap-4">
-                <!-- Logo - responsive sizing -->
+            <div class="flex items-center gap-2 sm:gap-3">
                 <img src="{{ asset('assets/Logo_SMAN_Matauli.png') }}" alt="Logo SMAN"
-                    class="h-8 md:h-10 lg:h-12 w-auto">
+                    class="h-10 sm:h-11 lg:h-12 w-auto">
 
-                <!-- School Name - responsive text sizing -->
                 <div class="flex flex-col text-[#fff9f9]">
-                    <h1 class="text-xs md:text-base lg:text-xl font-bold tracking-tight leading-tight">
+                    <h1 class="text-sm sm:text-base lg:text-xl font-bold tracking-tight leading-tight">
                         SMAN 1 MATAULI PANDAN
                     </h1>
-                    <span class="text-[0.5rem] md:text-[0.6rem] lg:text-xs font-light">
+                    <span class="text-[0.6rem] sm:text-[0.65rem] lg:text-xs font-light">
                         The center of excellence
                     </span>
                 </div>
             </div>
 
-            <!-- Desktop Navigation Menu (visible on medium and above) -->
-            <ul
-                class="hidden md:flex items-center space-x-4 md:space-x-8 lg:space-x-6 xl:space-x-10 font-semibold text-[0.8rem] md:text-[0.8rem] lg:text-base xl:text-lg">
+            <!-- Desktop Navigation Menu -->
+            <ul class="hidden lg:flex items-center space-x-6 xl:space-x-10 font-semibold text-sm xl:text-base">
 
-                <!-- Menu: Beranda -->
                 <li>
-                    <a href="{{ url('/') }}" class="navlink-hover">
-                        Beranda
-                    </a>
+                    <a href="{{ url('/') }}" class="navlink-hover">Beranda</a>
                 </li>
 
-                <!-- Dropdown Menu: Tentang Kami -->
                 <li class="relative group">
                     <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
                         Tentang Kami
-                        <svg class="ml-1 w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4 transition-transform duration-300 group-hover:rotate-180"
+                        <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
 
-                    <!-- Dropdown Content -->
                     <ul class="nav-dropdown-content">
-                        <li>
-                            <a href="{{ url('/tentang-kami#sejarah-sekolah') }}" class="dropdown-item">
-                                Sejarah Sekolah
-                            </a>
+                        <li><a href="{{ url('/tentang-kami#sejarah-sekolah') }}" class="dropdown-item">Sejarah
+                                Sekolah</a></li>
+                        <li><a href="{{ url('/tentang-kami#visi-misi') }}" class="dropdown-item">Visi & Misi</a></li>
+                        <li><a href="{{ url('/tentang-kami#kurikulum') }}" class="dropdown-item">Kurikulum Sekolah</a>
                         </li>
-                        <li>
-                            <a href="{{ url('/tentang-kami#visi-misi') }}" class="dropdown-item">
-                                Visi & Misi
-                            </a>
+                        <li><a href="{{ url('/tentang-kami#tenaga-pendidik') }}" class="dropdown-item">Tenaga Pendidik
+                                & Kependidikan</a></li>
+                        <li><a href="{{ url('/tentang-kami#fasilitas') }}" class="dropdown-item">Fasilitas Sekolah</a>
                         </li>
-                        <li>
-                            <a href="{{ url('/tentang-kami#kurikulum') }}" class="dropdown-item">
-                                Kurikulum Sekolah
-                            </a>
+                        <li><a href="{{ url('/tentang-kami#kemitraan') }}" class="dropdown-item">Kemitraan Sekolah</a>
                         </li>
-                        <li>
-                            <a href="{{ url('/tentang-kami#tenaga-pendidik') }}" class="dropdown-item">
-                                Tenaga Pendidik & Kependidikan
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ url('/tentang-kami#fasilitas') }}" class="dropdown-item">
-                                Fasilitas Sekolah
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ url('/tentang-kami#kemitraan') }}" class="dropdown-item">
-                                Kemitraan Sekolah
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ url('/tentang-kami#asrama') }}" class="dropdown-item">
-                                Tentang Asrama
-                            </a>
-                        </li>
+                        <li><a href="{{ url('/tentang-kami#asrama') }}" class="dropdown-item">Tentang Asrama</a></li>
                     </ul>
                 </li>
 
-                <!-- Dropdown Menu: Program -->
                 <li class="relative group">
                     <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
                         Program
-                        <svg class="ml-1 w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4 transition-transform duration-300 group-hover:rotate-180"
+                        <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
 
-                    <!-- Dropdown Content -->
                     <ul class="nav-dropdown-content">
-                        <li>
-                            <a href="{{ url('/program#prestasi-siswa') }}" class="dropdown-item">
-                                Prestasi Siswa
-                            </a>
+                        <li><a href="{{ url('/program#prestasi-siswa') }}" class="dropdown-item">Prestasi Siswa</a>
                         </li>
-                        <li>
-                            <a href="{{ url('/program#ekstrakulikuler') }}" class="dropdown-item">
-                                Ekstrakulikuler
-                            </a>
+                        <li><a href="{{ url('/program#ekstrakulikuler') }}" class="dropdown-item">Ekstrakulikuler</a>
                         </li>
                     </ul>
                 </li>
 
-                <!-- Dropdown Menu: Dokumentasi -->
                 <li class="relative group">
                     <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
                         Dokumentasi
-                        <svg class="ml-1 w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4 transition-transform duration-300 group-hover:rotate-180"
+                        <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
 
-                    <!-- Dropdown Content -->
                     <ul class="nav-dropdown-content">
-                        <li>
-                            <a href="{{ url('/dokumentasi#galeri') }}" class="dropdown-item">
-                                Galeri
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ url('/dokumentasi#berita') }}" class="dropdown-item">
-                                Berita
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ url('/dokumentasi#kegiatan-sekolah') }}" class="dropdown-item">
-                                Kegiatan Sekolah
-                            </a>
-                        </li>
+                        <li><a href="{{ url('/dokumentasi#galeri') }}" class="dropdown-item">Galeri</a></li>
+                        <li><a href="{{ url('/dokumentasi#berita') }}" class="dropdown-item">Berita</a></li>
+                        <li><a href="{{ url('/dokumentasi#kegiatan-sekolah') }}" class="dropdown-item">Kegiatan
+                                Sekolah</a></li>
                     </ul>
                 </li>
 
             </ul>
 
-            <!-- Mobile Menu Button (visible on small screens only) -->
-            <button aria-label="menu-btn" type="button"
-                class="menu-btn inline-block md:hidden active:scale-90 transition p-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30"
-                    class="fill-white">
-                    <path
-                        d="M3 7a1 1 0 1 0 0 2h24a1 1 0 1 0 0-2zm0 7a1 1 0 1 0 0 2h24a1 1 0 1 0 0-2zm0 7a1 1 0 1 0 0 2h24a1 1 0 1 0 0-2z" />
+            <!-- Mobile Menu Button -->
+            <button id="menuToggle" aria-label="Toggle menu" type="button"
+                class="inline-flex lg:hidden items-center justify-center p-2 rounded-md text-white hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition-colors">
+                <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
 
-            <!-- Mobile Menu Dropdown (only for small screens) -->
-            <div
-                class="mobile-menu hidden fixed top-25 sm:top-27.5 right-4 w-72 sm:w-80 bg-white shadow-2xl rounded-xl z-60 border border-gray-100 overflow-hidden md:hidden!">
+        </nav>
 
-                <!-- Scrollable Menu Content -->
-                <div class="max-h-[calc(100vh-140px)] overflow-y-auto py-3 custom-scrollbar">
-                    <ul class="flex flex-col w-full">
+        <!-- Mobile Menu Backdrop - PROPERLY HIDDEN -->
+        <div id="menuBackdrop" class="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"></div>
 
-                        <!-- ========== MENU ITEM: Beranda ========== -->
-                        <li>
-                            <a href="{{ url('/') }}"
-                                class="block px-6 py-3.5 text-base font-semibold text-[#1e293b] hover:bg-gray-50 transition-colors">
-                                Beranda
-                            </a>
-                        </li>
+        <!-- Mobile Menu Panel -->
+        <div id="mobileMenu" class="fixed top-0 right-0 h-full w-80 sm:w-96 bg-white shadow-2xl z-50 lg:hidden">
 
-                        <!-- ========== DROPDOWN MENU: Tentang Kami ========== -->
-                        <li class="relative border-t border-gray-50">
-
-                            <!-- Dropdown Trigger -->
-                            <div
-                                class="mobile-dropdown-trigger flex items-center justify-between px-6 py-3.5 cursor-pointer hover:bg-gray-50 transition-all outline-none">
-                                <span class="text-base font-semibold text-[#1e293b]">
-                                    Tentang Kami
-                                </span>
-
-                                <!-- Arrow Icon -->
-                                <svg class="w-4 h-4 text-gray-400 transition-transform duration-300" fill="none"
-                                    stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="m19 9-7 7-7-7" />
-                                </svg>
-                            </div>
-
-                            <!-- Dropdown Content -->
-                            <ul
-                                class="mobile-dropdown-content hidden bg-[#f8fafc] border-y border-gray-100 overflow-hidden">
-
-                                <!-- Sub-menu: Sejarah Sekolah -->
-                                <li>
-                                    <a href="{{ url('/tentang-kami#sejarah-sekolah') }}"
-                                        class="block px-10 py-3 text-sm font-semibold text-gray-600 border-b border-gray-200/50 hover:text-matauli-orange transition-colors">
-                                        Sejarah Sekolah
-                                    </a>
-                                </li>
-
-                                <!-- Sub-menu: Visi & Misi -->
-                                <li>
-                                    <a href="{{ url('/tentang-kami#visi-misi') }}"
-                                        class="block px-10 py-3 text-sm font-semibold text-gray-600 border-b border-gray-200/50 hover:text-matauli-orange transition-colors">
-                                        Visi & Misi
-                                    </a>
-                                </li>
-
-                                <!-- Sub-menu: Kurikulum -->
-                                <li>
-                                    <a href="{{ url('/tentang-kami#kurikulum') }}"
-                                        class="block px-10 py-3 text-sm font-semibold text-gray-600 border-b border-gray-200/50 hover:text-matauli-orange transition-colors">
-                                        Kurikulum
-                                    </a>
-                                </li>
-
-                                <!-- Sub-menu: Tenaga Pendidik -->
-                                <li>
-                                    <a href="{{ url('/tentang-kami#tenaga-pendidik') }}"
-                                        class="block px-10 py-3 text-sm font-semibold text-gray-600 border-b border-gray-200/50 hover:text-matauli-orange transition-colors">
-                                        Tenaga Pendidik
-                                    </a>
-                                </li>
-
-                                <!-- Sub-menu: Fasilitas -->
-                                <li>
-                                    <a href="{{ url('/tentang-kami#fasilitas') }}"
-                                        class="block px-10 py-3 text-sm font-semibold text-gray-600 border-b border-gray-200/50 hover:text-matauli-orange transition-colors">
-                                        Fasilitas
-                                    </a>
-                                </li>
-
-                                <!-- Sub-menu: Kemitraan -->
-                                <li>
-                                    <a href="{{ url('/tentang-kami#kemitraan') }}"
-                                        class="block px-10 py-3 text-sm font-semibold text-gray-600 border-b border-gray-200/50 hover:text-matauli-orange transition-colors">
-                                        Kemitraan
-                                    </a>
-                                </li>
-
-                                <!-- Sub-menu: Asrama (Last Item - No Border) -->
-                                <li>
-                                    <a href="{{ url('/tentang-kami#asrama') }}"
-                                        class="block px-10 py-3 text-sm font-semibold text-gray-600 hover:text-matauli-orange transition-colors">
-                                        Tentang Asrama
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </li>
-
-                        <!-- ========== DROPDOWN MENU: Program ========== -->
-                        <li class="relative border-t border-gray-50">
-
-                            <!-- Dropdown Trigger -->
-                            <div
-                                class="mobile-dropdown-trigger flex items-center justify-between px-6 py-3.5 cursor-pointer hover:bg-gray-50 transition-all outline-none">
-                                <span class="text-base font-semibold text-[#1e293b]">
-                                    Program
-                                </span>
-
-                                <!-- Arrow Icon -->
-                                <svg class="w-4 h-4 text-gray-400 transition-transform duration-300" fill="none"
-                                    stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="m19 9-7 7-7-7" />
-                                </svg>
-                            </div>
-
-                            <!-- Dropdown Content -->
-                            <ul
-                                class="mobile-dropdown-content hidden bg-[#f8fafc] border-y border-gray-100 overflow-hidden">
-
-                                <!-- Sub-menu: Prestasi Siswa -->
-                                <li>
-                                    <a href="{{ url('/program#prestasi-siswa') }}"
-                                        class="block px-10 py-3 text-sm font-semibold text-gray-600 border-b border-gray-200/50 hover:text-matauli-orange transition-colors">
-                                        Prestasi Siswa
-                                    </a>
-                                </li>
-
-                                <!-- Sub-menu: Ekstrakurikuler (Last Item - No Border) -->
-                                <li>
-                                    <a href="{{ url('/program#ekstrakulikuler') }}"
-                                        class="block px-10 py-3 text-sm font-semibold text-gray-600 hover:text-matauli-orange transition-colors">
-                                        Ekstrakurikuler
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </li>
-
-                        <!-- ========== DROPDOWN MENU: Dokumentasi ========== -->
-                        <li class="relative border-t border-gray-50">
-
-                            <!-- Dropdown Trigger -->
-                            <div
-                                class="mobile-dropdown-trigger flex items-center justify-between px-6 py-3.5 cursor-pointer hover:bg-gray-50 transition-all outline-none">
-                                <span class="text-base font-semibold text-[#1e293b]">
-                                    Dokumentasi
-                                </span>
-
-                                <!-- Arrow Icon -->
-                                <svg class="w-4 h-4 text-gray-400 transition-transform duration-300" fill="none"
-                                    stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="m19 9-7 7-7-7" />
-                                </svg>
-                            </div>
-
-                            <!-- Dropdown Content -->
-                            <ul
-                                class="mobile-dropdown-content hidden bg-[#f8fafc] border-y border-gray-100 overflow-hidden">
-
-                                <!-- Sub-menu: Galeri -->
-                                <li>
-                                    <a href="{{ url('/dokumentasi#galeri') }}"
-                                        class="block px-10 py-3 text-sm font-semibold text-gray-600 border-b border-gray-200/50 hover:text-matauli-orange transition-colors">
-                                        Galeri
-                                    </a>
-                                </li>
-
-                                <!-- Sub-menu: Berita -->
-                                <li>
-                                    <a href="{{ url('/dokumentasi#berita') }}"
-                                        class="block px-10 py-3 text-sm font-semibold text-gray-600 border-b border-gray-200/50 hover:text-matauli-orange transition-colors">
-                                        Berita
-                                    </a>
-                                </li>
-
-                                <!-- Sub-menu: Kegiatan Sekolah (Last Item - No Border) -->
-                                <li>
-                                    <a href="{{ url('/dokumentasi#kegiatan-sekolah') }}"
-                                        class="block px-10 py-3 text-sm font-semibold text-gray-600 hover:text-matauli-orange transition-colors">
-                                        Kegiatan Sekolah
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </li>
-
-                    </ul>
-                </div>
+            <!-- Mobile Menu Header -->
+            <div class="flex items-center justify-between px-6 py-4 bg-matauli-red-dark text-white">
+                <h2 class="text-lg font-bold">Menu</h2>
+                <button id="closeMenu" class="p-2 hover:bg-red-800 rounded-md transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
             </div>
 
-        </nav>
+            <!-- Scrollable Menu Content -->
+            <div class="h-[calc(100%-72px)] overflow-y-auto custom-scrollbar">
+                <ul class="flex flex-col py-2">
+
+                    <!-- Menu Item: Beranda -->
+                    <li>
+                        <a href="{{ url('/') }}"
+                            class="block px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 hover:text-orange-600 transition-colors border-b border-gray-100">
+                            Beranda
+                        </a>
+                    </li>
+
+                    <!-- Dropdown Menu: Tentang Kami -->
+                    <li class="border-b border-gray-100">
+                        <button
+                            class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
+                            <span>Tentang Kami</span>
+                            <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <ul class="mobile-dropdown-content bg-gray-50">
+                            <li><a href="{{ url('/tentang-kami#sejarah-sekolah') }}"
+                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Sejarah
+                                    Sekolah</a></li>
+                            <li><a href="{{ url('/tentang-kami#visi-misi') }}"
+                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Visi
+                                    & Misi</a></li>
+                            <li><a href="{{ url('/tentang-kami#kurikulum') }}"
+                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Kurikulum</a>
+                            </li>
+                            <li><a href="{{ url('/tentang-kami#tenaga-pendidik') }}"
+                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Tenaga
+                                    Pendidik</a></li>
+                            <li><a href="{{ url('/tentang-kami#fasilitas') }}"
+                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Fasilitas</a>
+                            </li>
+                            <li><a href="{{ url('/tentang-kami#kemitraan') }}"
+                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Kemitraan</a>
+                            </li>
+                            <li><a href="{{ url('/tentang-kami#asrama') }}"
+                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Tentang
+                                    Asrama</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown Menu: Program -->
+                    <li class="border-b border-gray-100">
+                        <button
+                            class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
+                            <span>Program</span>
+                            <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <ul class="mobile-dropdown-content bg-gray-50">
+                            <li><a href="{{ url('/program#prestasi-siswa') }}"
+                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Prestasi
+                                    Siswa</a></li>
+                            <li><a href="{{ url('/program#ekstrakulikuler') }}"
+                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Ekstrakurikuler</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown Menu: Dokumentasi -->
+                    <li class="border-b border-gray-100">
+                        <button
+                            class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
+                            <span>Dokumentasi</span>
+                            <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <ul class="mobile-dropdown-content bg-gray-50">
+                            <li><a href="{{ url('/dokumentasi#galeri') }}"
+                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Galeri</a>
+                            </li>
+                            <li><a href="{{ url('/dokumentasi#berita') }}"
+                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Berita</a>
+                            </li>
+                            <li><a href="{{ url('/dokumentasi#kegiatan-sekolah') }}"
+                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Kegiatan
+                                    Sekolah</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contact Info -->
+                    <li class="px-6 py-4 bg-gray-50 mt-4">
+                        <h3 class="text-sm font-bold text-gray-800 mb-3">Hubungi Kami</h3>
+                        <div class="space-y-2">
+                            <a href="mailto:ppdbmatauli@gmail.com"
+                                class="flex items-center gap-2 text-sm text-gray-600 hover:text-orange-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg>
+                                ppdbmatauli@gmail.com
+                            </a>
+                            <a href="tel:+6282121313131"
+                                class="flex items-center gap-2 text-sm text-gray-600 hover:text-orange-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                                </svg>
+                                +62 821-2131-3131
+                            </a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
     </header>
     <!-- ============================================ -->
     <!-- HEADER SECTION - END -->
@@ -464,8 +433,8 @@
 
             <!-- Slide 1 -->
             <div class="hero-slide active absolute inset-0">
-                <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
-                <img src="{{ asset('assets/Gerbang Depan Sekolah.jpeg') }}" alt="School Building"
+                <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent z-10"></div>
+                <img src="assets/Gerbang Depan Sekolah.jpeg" alt="School Building"
                     class="w-full h-full object-cover">
                 <div class="absolute inset-0 z-20 flex items-center">
                     <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
@@ -481,7 +450,7 @@
                             <p class="text-white/90 text-base sm:text-lg md:text-xl mb-6 md:mb-8 italic">
                                 Bergabung dan Tumbuh Bersama SMA Negeri 1 Matauli Pandan
                             </p>
-                            <a href="{{ url('/ppdb') }}"
+                            <a href="/ppdb"
                                 class="inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-6 py-3 md:px-8 md:py-4 rounded-lg transition-all hover:scale-105 shadow-lg text-sm md:text-base">
                                 Daftar Disini
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5"
@@ -498,9 +467,8 @@
 
             <!-- Slide 2 -->
             <div class="hero-slide absolute inset-0">
-                <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
-                <img src="{{ asset('assets/Background IB Program.JPG') }}" alt="IB Program"
-                    class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent z-10"></div>
+                <img src="assets/Background IB Program.JPG" alt="IB Program" class="w-full h-full object-cover">
                 <div class="absolute inset-0 z-20 flex items-center">
                     <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
                         <div class="max-w-3xl">
@@ -516,7 +484,7 @@
                                 Kurikulum internasional yang menumbuhkan kepemimpinan, riset, dan karakter pelajar
                                 Pancasila.
                             </p>
-                            <a href="{{ url('/program#ib-program') }}"
+                            <a href="/program#ib-program"
                                 class="inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-6 py-3 md:px-8 md:py-4 rounded-lg transition-all hover:scale-105 shadow-lg text-sm md:text-base">
                                 Kenali Program IB
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5"
@@ -533,9 +501,8 @@
 
             <!-- Slide 3 -->
             <div class="hero-slide absolute inset-0">
-                <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
-                <img src="{{ asset('assets/Asrama.jpg') }}" alt="School Activities"
-                    class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent z-10"></div>
+                <img src="assets/Asrama.jpg" alt="School Activities" class="w-full h-full object-cover">
                 <div class="absolute inset-0 z-20 flex items-center">
                     <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
                         <div class="max-w-3xl">
@@ -550,7 +517,7 @@
                             <p class="text-white/90 text-base sm:text-lg md:text-xl mb-6 md:mb-8 italic">
                                 Didukung Teknologi dan Tenaga Pengajar Profesional
                             </p>
-                            <a href="{{ url('/tentang-kami#fasilitas') }}"
+                            <a href="/tentang-kami#fasilitas"
                                 class="inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-6 py-3 md:px-8 md:py-4 rounded-lg transition-all hover:scale-105 shadow-lg text-sm md:text-base">
                                 Lihat Fasilitas
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5"
@@ -619,7 +586,7 @@
                     <div class="relative mb-8 md:mb-10">
                         <div
                             class="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 md:border-6 lg:border-8 border-matauli-red-dark shadow-2xl">
-                            <img src="{{ asset('assets/pak kepsek deden_merah maroon.png') }}" alt="Kepala Sekolah"
+                            <img src="assets/pak kepsek deden_merah maroon.png" alt="Kepala Sekolah"
                                 class="w-full h-full object-cover">
                         </div>
                         <div
@@ -648,7 +615,7 @@
                     <div class="relative mb-8 md:mb-10">
                         <div
                             class="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 md:border-6 lg:border-8 border-matauli-red-dark shadow-2xl">
-                            <img src="{{ asset('assets/bu ketum fitri_merah maroon.png') }}" alt="Ketua Umum"
+                            <img src="assets/bu ketum fitri_merah maroon.png" alt="Ketua Umum"
                                 class="w-full h-full object-cover">
                         </div>
                         <div
@@ -694,7 +661,7 @@
 
             <!-- CTA Button -->
             <div class="text-center mt-10 md:mt-12">
-                <a href="{{ url('/tentang-kami') }}"
+                <a href="/tentang-kami"
                     class="inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-6 py-3 md:px-8 md:py-4 rounded-lg transition-all hover:scale-105 shadow-lg text-sm md:text-base">
                     Selengkapnya
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" viewBox="0 0 20 20"
@@ -722,7 +689,7 @@
                 <!-- Column 1: Logo & School Name -->
                 <div class="flex flex-col items-start space-y-6 lg:pl-6">
                     <div class="flex items-start gap-3">
-                        <img src="{{ asset('assets/Logo_SMAN_Matauli.png') }}" alt="Logo SMAN Matauli"
+                        <img src="assets/Logo_SMAN_Matauli.png" alt="Logo SMAN Matauli"
                             class="h-24 md:h-28 lg:h-32 w-auto shrink-0">
                         <div class="h-24 md:h-28 lg:h-32 w-0.5 bg-yellow-400 shrink-0"></div>
                         <div class="flex flex-col justify-center h-24 md:h-28 lg:h-32">
@@ -792,22 +759,22 @@
                         Link Terkait
                     </h3>
                     <ul class="space-y-2 md:space-y-3">
-                        <li><a href="{{ url('/tentang-kami') }}"
+                        <li><a href="/tentang-kami"
                                 class="text-gray-200 hover:text-yellow-400 transition hover:translate-x-1 inline-block text-xs md:text-sm">Tentang
                                 Kami</a></li>
-                        <li><a href="{{ url('/program#keahlian') }}"
+                        <li><a href="/program#keahlian"
                                 class="text-gray-200 hover:text-yellow-400 transition hover:translate-x-1 inline-block text-xs md:text-sm">Program
                                 Keahlian</a></li>
-                        <li><a href="{{ url('/program#prestasi-siswa') }}"
+                        <li><a href="/program#prestasi-siswa"
                                 class="text-gray-200 hover:text-yellow-400 transition hover:translate-x-1 inline-block text-xs md:text-sm">Prestasi
                                 Siswa</a></li>
-                        <li><a href="{{ url('/dokumentasi#berita') }}"
+                        <li><a href="/dokumentasi#berita"
                                 class="text-gray-200 hover:text-yellow-400 transition hover:translate-x-1 inline-block text-xs md:text-sm">Berita
                                 Terkini</a></li>
-                        <li><a href="{{ url('/tentang-kami#sejarah-sekolah') }}"
+                        <li><a href="/tentang-kami#sejarah-sekolah"
                                 class="text-gray-200 hover:text-yellow-400 transition hover:translate-x-1 inline-block text-xs md:text-sm">Sejarah
                                 Sekolah</a></li>
-                        <li><a href="{{ url('/ppdb') }}"
+                        <li><a href="/ppdb"
                                 class="text-gray-200 hover:text-yellow-400 transition hover:translate-x-1 inline-block text-xs md:text-sm">PPDB
                                 Online</a></li>
                     </ul>
@@ -865,86 +832,85 @@
     <!-- JAVASCRIPT - START -->
     <!-- ============================================ -->
     <script>
-        // Hero Slider
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.hero-slide');
-        const dots = document.querySelectorAll('.dot');
-        let autoSlideInterval;
+        // ========== MOBILE MENU - FIXED VERSION ==========
+        const menuToggle = document.getElementById('menuToggle');
+        const closeMenu = document.getElementById('closeMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuBackdrop = document.getElementById('menuBackdrop');
+        const menuIcon = document.getElementById('menuIcon');
+        const closeIcon = document.getElementById('closeIcon');
 
-        function showSlide(n) {
-            if (n >= slides.length) currentSlide = 0;
-            if (n < 0) currentSlide = slides.length - 1;
-            slides.forEach(slide => slide.classList.remove('active'));
-            dots.forEach(dot => dot.classList.remove('active'));
-            slides[currentSlide].classList.add('active');
-            dots[currentSlide].classList.add('active');
+        function openMenu() {
+            mobileMenu.classList.add('active');
+            menuBackdrop.classList.add('active');
+            document.body.classList.add('menu-open');
+            menuIcon.classList.add('hidden');
+            closeIcon.classList.remove('hidden');
         }
 
-        function changeSlide(n) {
-            currentSlide += n;
-            showSlide(currentSlide);
-            resetAutoSlide();
+        function closeMenuFunc() {
+            mobileMenu.classList.remove('active');
+            menuBackdrop.classList.remove('active');
+            document.body.classList.remove('menu-open');
+            menuIcon.classList.remove('hidden');
+            closeIcon.classList.add('hidden');
         }
 
-        function goToSlide(n) {
-            currentSlide = n;
-            showSlide(currentSlide);
-            resetAutoSlide();
-        }
-
-        function autoSlide() {
-            currentSlide++;
-            showSlide(currentSlide);
-        }
-
-        function resetAutoSlide() {
-            clearInterval(autoSlideInterval);
-            autoSlideInterval = setInterval(autoSlide, 5000);
-        }
-
-        autoSlideInterval = setInterval(autoSlide, 5000);
-
-        const heroSlider = document.getElementById('heroSlider');
-        if (heroSlider) {
-            heroSlider.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
-            heroSlider.addEventListener('mouseleave', () => resetAutoSlide());
-        }
-
-        // Mobile Menu Toggle
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuButtons = document.querySelectorAll(".menu-btn");
-            const mobileMenus = document.querySelectorAll(".mobile-menu");
-
-            menuButtons.forEach((btn, index) => {
-                btn.addEventListener("click", () => {
-                    mobileMenus[index].classList.toggle("hidden");
-                });
+        if (menuToggle) {
+            menuToggle.addEventListener('click', function() {
+                if (mobileMenu.classList.contains('active')) {
+                    closeMenuFunc();
+                } else {
+                    openMenu();
+                }
             });
+        }
 
-            // Mobile Dropdown
-            const triggers = document.querySelectorAll('.mobile-dropdown-trigger');
-            triggers.forEach(trigger => {
-                trigger.addEventListener('click', function() {
-                    const content = this.nextElementSibling;
-                    const icon = this.querySelector('svg');
-                    const isOpen = !content.classList.contains('hidden');
+        if (closeMenu) {
+            closeMenu.addEventListener('click', closeMenuFunc);
+        }
 
-                    document.querySelectorAll('.mobile-dropdown-content').forEach(el => el.classList
-                        .add('hidden'));
-                    document.querySelectorAll('.mobile-dropdown-trigger svg').forEach(el => el
-                        .classList.remove('rotate-180'));
+        if (menuBackdrop) {
+            menuBackdrop.addEventListener('click', closeMenuFunc);
+        }
 
-                    if (!isOpen) {
-                        content.classList.remove('hidden');
-                        icon.classList.add('rotate-180');
-                    }
-                });
+        // Mobile Dropdown
+        document.querySelectorAll('.mobile-dropdown-trigger').forEach(trigger => {
+            trigger.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const arrow = this.querySelector('.dropdown-arrow');
+                const isOpen = content.classList.contains('open');
+
+                // Close all
+                document.querySelectorAll('.mobile-dropdown-content').forEach(el => el.classList.remove(
+                    'open'));
+                document.querySelectorAll('.dropdown-arrow').forEach(el => el.classList.remove(
+                    'rotate-180'));
+
+                // Toggle current
+                if (!isOpen) {
+                    content.classList.add('open');
+                    arrow.classList.add('rotate-180');
+                }
             });
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', closeMenuFunc);
+        });
+
+        // Close on resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth >= 1024) {
+                closeMenuFunc();
+            }
         });
     </script>
     <!-- ============================================ -->
     <!-- JAVASCRIPT - END -->
     <!-- ============================================ -->
+
 
 </body>
 
