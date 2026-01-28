@@ -472,7 +472,7 @@
     <section class="relative h-screen overflow-hidden">
         <div id="heroSlider" class="relative h-full">
 
-            <!-- Slide 1 -->
+            <!-- Slide 1 - Daftar Disini -->
             <div class="hero-slide active absolute inset-0">
                 <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
                 <img src="{{ asset('assets/Gerbang Depan Sekolah.jpeg') }}" alt="School Building"
@@ -506,7 +506,7 @@
                 </div>
             </div>
 
-            <!-- Slide 2 -->
+            <!-- Slide 2 - Program IB -->
             <div class="hero-slide absolute inset-0">
                 <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
                 <img src="{{ asset('assets/Background IB Program.JPG') }}" alt="IB Program"
@@ -541,7 +541,7 @@
                 </div>
             </div>
 
-            <!-- Slide 3 -->
+            <!-- Slide 3 - Fasilitas -->
             <div class="hero-slide absolute inset-0">
                 <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
                 <img src="{{ asset('assets/Asrama.jpg') }}" alt="School Activities"
@@ -608,9 +608,9 @@
     <!-- ============================================ -->
 
     <!-- ============================================ -->
-    <!-- ABOUT SECTION - START -->
+    <!-- TENTANG KAMI SECTION - START -->
     <!-- ============================================ -->
-    <section id="tentang" class="py-12 md:py-16 lg:py-20 bg-[#fff9f9]">
+    <section id="tentang-kami" class="py-12 md:py-16 lg:py-20 bg-[#fff9f9]">
         <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
 
             <!-- Section Title -->
@@ -621,7 +621,7 @@
                 <div class="w-20 md:w-24 h-1 bg-yellow-400 mx-auto"></div>
             </div>
 
-            <!-- About Content Grid -->
+            <!-- Tentang Kami Content Grid -->
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-10 lg:gap-12 mb-12 md:mb-16">
 
                 <!-- Kepala Sekolah -->
@@ -673,30 +673,31 @@
             </div>
 
             <!-- Statistics -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-16 max-w-5xl mx-auto">
                 <div class="text-center">
-                    <div class="flex items-center justify-center gap-4">
-                        <div>
-                            <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-matauli-red-dark">2,550+</h3>
-                            <p class="text-gray-600 text-base md:text-lg mt-2">Peserta Didik</p>
+                    <div class="flex items-center justify-center gap-6 md:gap-8">
+                        <div class="flex-1">
+                            <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-matauli-red-dark mb-3">2,550+
+                            </h3>
+                            <p class="text-gray-600 text-base md:text-lg">Peserta Didik</p>
                         </div>
-                        <div class="hidden md:block w-1 h-16 lg:h-20 bg-yellow-400"></div>
+                        <div class="hidden md:block w-1 h-20 lg:h-24 bg-yellow-400"></div>
                     </div>
                 </div>
                 <div class="text-center">
-                    <div class="flex items-center justify-center gap-4">
-                        <div>
-                            <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-matauli-red-dark">999</h3>
-                            <p class="text-gray-600 text-base md:text-lg mt-2">Guru</p>
+                    <div class="flex items-center justify-center gap-6 md:gap-8">
+                        <div class="flex-1">
+                            <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-matauli-red-dark mb-3">999</h3>
+                            <p class="text-gray-600 text-base md:text-lg">Guru</p>
                         </div>
-                        <div class="hidden md:block w-1 h-16 lg:h-20 bg-yellow-400"></div>
+                        <div class="hidden md:block w-1 h-20 lg:h-24 bg-yellow-400"></div>
                     </div>
                 </div>
                 <div class="text-center">
-                    <div class="flex items-center justify-center gap-4">
-                        <div>
-                            <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-matauli-red-dark">999</h3>
-                            <p class="text-gray-600 text-base md:text-lg mt-2">Ruang Kelas</p>
+                    <div class="flex items-center justify-center">
+                        <div class="flex-1">
+                            <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-matauli-red-dark mb-3">999</h3>
+                            <p class="text-gray-600 text-base md:text-lg">Ruang Kelas</p>
                         </div>
                     </div>
                 </div>
@@ -719,7 +720,7 @@
         </div>
     </section>
     <!-- ============================================ -->
-    <!-- ABOUT SECTION - END -->
+    <!-- TENTANG KAMI SECTION - END -->
     <!-- ============================================ -->
 
     <!-- ============================================ -->
