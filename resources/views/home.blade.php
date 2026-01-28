@@ -44,29 +44,64 @@
         /* Prevent body scroll when mobile menu is open */
         body.menu-open {
             overflow: hidden;
+            position: fixed;
+            width: 100%;
+            height: 100%;
         }
 
-        /* Mobile Menu Backdrop - FIXED: COMPLETELY HIDDEN BY DEFAULT */
+        /* Mobile Menu Backdrop - CRITICAL FIXES */
         #menuBackdrop {
-            visibility: hidden !important;
+            visibility: hidden;
             opacity: 0;
             transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+            /* Force full viewport coverage */
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+            width: 100vw !important;
+            height: 100vh !important;
+            height: 100dvh !important;
+            /* For mobile browsers */
+            margin: 0 !important;
+            padding: 0 !important;
+            background-color: rgba(0, 0, 0, 0.5) !important;
+            z-index: 60 !important;
         }
 
         #menuBackdrop.active {
-            visibility: visible !important;
+            visibility: visible;
             opacity: 1;
             transition: opacity 0.3s ease-in-out, visibility 0s linear 0s;
         }
 
-        /* Mobile Menu Panel */
+        /* Mobile Menu Panel - CRITICAL FIXES */
         #mobileMenu {
             transform: translateX(100%);
             transition: transform 0.3s ease-in-out;
+            /* Force proper positioning */
+            position: fixed !important;
+            top: 0 !important;
+            right: 0 !important;
+            height: 100vh !important;
+            height: 100dvh !important;
+            /* For mobile browsers */
+            margin: 0 !important;
+            z-index: 70 !important;
         }
 
         #mobileMenu.active {
             transform: translateX(0);
+        }
+
+        /* Hide mobile menu on desktop */
+        @media (min-width: 1024px) {
+
+            #menuBackdrop,
+            #mobileMenu {
+                display: none !important;
+            }
         }
 
         /* Mobile Dropdown */
@@ -280,149 +315,155 @@
 
         </nav>
 
-        <!-- Mobile Menu Backdrop - PROPERLY HIDDEN -->
-        <div id="menuBackdrop" class="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"></div>
-
-        <!-- Mobile Menu Panel -->
-        <div id="mobileMenu" class="fixed top-0 right-0 h-full w-80 sm:w-96 bg-white shadow-2xl z-50 lg:hidden">
-
-            <!-- Mobile Menu Header -->
-            <div class="flex items-center justify-between px-6 py-4 bg-matauli-red-dark text-white">
-                <h2 class="text-lg font-bold">Menu</h2>
-                <button id="closeMenu" class="p-2 hover:bg-red-800 rounded-md transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </div>
-
-            <!-- Scrollable Menu Content -->
-            <div class="h-[calc(100%-72px)] overflow-y-auto custom-scrollbar">
-                <ul class="flex flex-col py-2">
-
-                    <!-- Menu Item: Beranda -->
-                    <li>
-                        <a href="{{ url('/') }}"
-                            class="block px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 hover:text-orange-600 transition-colors border-b border-gray-100">
-                            Beranda
-                        </a>
-                    </li>
-
-                    <!-- Dropdown Menu: Tentang Kami -->
-                    <li class="border-b border-gray-100">
-                        <button
-                            class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
-                            <span>Tentang Kami</span>
-                            <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <ul class="mobile-dropdown-content bg-gray-50">
-                            <li><a href="{{ url('/tentang-kami#sejarah-sekolah') }}"
-                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Sejarah
-                                    Sekolah</a></li>
-                            <li><a href="{{ url('/tentang-kami#visi-misi') }}"
-                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Visi
-                                    & Misi</a></li>
-                            <li><a href="{{ url('/tentang-kami#kurikulum') }}"
-                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Kurikulum</a>
-                            </li>
-                            <li><a href="{{ url('/tentang-kami#tenaga-pendidik') }}"
-                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Tenaga
-                                    Pendidik</a></li>
-                            <li><a href="{{ url('/tentang-kami#fasilitas') }}"
-                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Fasilitas</a>
-                            </li>
-                            <li><a href="{{ url('/tentang-kami#kemitraan') }}"
-                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Kemitraan</a>
-                            </li>
-                            <li><a href="{{ url('/tentang-kami#asrama') }}"
-                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Tentang
-                                    Asrama</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- Dropdown Menu: Program -->
-                    <li class="border-b border-gray-100">
-                        <button
-                            class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
-                            <span>Program</span>
-                            <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <ul class="mobile-dropdown-content bg-gray-50">
-                            <li><a href="{{ url('/program#prestasi-siswa') }}"
-                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Prestasi
-                                    Siswa</a></li>
-                            <li><a href="{{ url('/program#ekstrakulikuler') }}"
-                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Ekstrakurikuler</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <!-- Dropdown Menu: Dokumentasi -->
-                    <li class="border-b border-gray-100">
-                        <button
-                            class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
-                            <span>Dokumentasi</span>
-                            <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <ul class="mobile-dropdown-content bg-gray-50">
-                            <li><a href="{{ url('/dokumentasi#galeri') }}"
-                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Galeri</a>
-                            </li>
-                            <li><a href="{{ url('/dokumentasi#berita') }}"
-                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Berita</a>
-                            </li>
-                            <li><a href="{{ url('/dokumentasi#kegiatan-sekolah') }}"
-                                    class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Kegiatan
-                                    Sekolah</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- Contact Info -->
-                    <li class="px-6 py-4 bg-gray-50 mt-4">
-                        <h3 class="text-sm font-bold text-gray-800 mb-3">Hubungi Kami</h3>
-                        <div class="space-y-2">
-                            <a href="mailto:ppdbmatauli@gmail.com"
-                                class="flex items-center gap-2 text-sm text-gray-600 hover:text-orange-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path
-                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-                                </svg>
-                                ppdbmatauli@gmail.com
-                            </a>
-                            <a href="tel:+6282121313131"
-                                class="flex items-center gap-2 text-sm text-gray-600 hover:text-orange-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path
-                                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
-                                </svg>
-                                +62 821-2131-3131
-                            </a>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-
     </header>
     <!-- ============================================ -->
     <!-- HEADER SECTION - END -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ -->
+    <!-- MOBILE MENU - MOVED OUTSIDE HEADER -->
+    <!-- ============================================ -->
+
+    <!-- Mobile Menu Backdrop -->
+    <div id="menuBackdrop" class="lg:hidden"></div>
+
+    <!-- Mobile Menu Panel -->
+    <div id="mobileMenu" class="lg:hidden w-80 sm:w-96 bg-white shadow-2xl">
+
+        <!-- Mobile Menu Header -->
+        <div class="flex items-center justify-between px-6 py-4 bg-matauli-red-dark text-white">
+            <h2 class="text-lg font-bold">Menu</h2>
+            <button id="closeMenu" class="p-2 hover:bg-red-800 rounded-md transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Scrollable Menu Content -->
+        <div class="h-[calc(100%-72px)] overflow-y-auto custom-scrollbar">
+            <ul class="flex flex-col py-2">
+
+                <!-- Menu Item: Beranda -->
+                <li>
+                    <a href="{{ url('/') }}"
+                        class="block px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 hover:text-orange-600 transition-colors border-b border-gray-100">
+                        Beranda
+                    </a>
+                </li>
+
+                <!-- Dropdown Menu: Tentang Kami -->
+                <li class="border-b border-gray-100">
+                    <button
+                        class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
+                        <span>Tentang Kami</span>
+                        <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <ul class="mobile-dropdown-content bg-gray-50">
+                        <li><a href="{{ url('/tentang-kami#sejarah-sekolah') }}"
+                                class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Sejarah
+                                Sekolah</a></li>
+                        <li><a href="{{ url('/tentang-kami#visi-misi') }}"
+                                class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Visi
+                                & Misi</a></li>
+                        <li><a href="{{ url('/tentang-kami#kurikulum') }}"
+                                class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Kurikulum</a>
+                        </li>
+                        <li><a href="{{ url('/tentang-kami#tenaga-pendidik') }}"
+                                class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Tenaga
+                                Pendidik</a></li>
+                        <li><a href="{{ url('/tentang-kami#fasilitas') }}"
+                                class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Fasilitas</a>
+                        </li>
+                        <li><a href="{{ url('/tentang-kami#kemitraan') }}"
+                                class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Kemitraan</a>
+                        </li>
+                        <li><a href="{{ url('/tentang-kami#asrama') }}"
+                                class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Tentang
+                                Asrama</a></li>
+                    </ul>
+                </li>
+
+                <!-- Dropdown Menu: Program -->
+                <li class="border-b border-gray-100">
+                    <button
+                        class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
+                        <span>Program</span>
+                        <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <ul class="mobile-dropdown-content bg-gray-50">
+                        <li><a href="{{ url('/program#prestasi-siswa') }}"
+                                class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Prestasi
+                                Siswa</a></li>
+                        <li><a href="{{ url('/program#ekstrakulikuler') }}"
+                                class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Ekstrakurikuler</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Dropdown Menu: Dokumentasi -->
+                <li class="border-b border-gray-100">
+                    <button
+                        class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
+                        <span>Dokumentasi</span>
+                        <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <ul class="mobile-dropdown-content bg-gray-50">
+                        <li><a href="{{ url('/dokumentasi#galeri') }}"
+                                class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Galeri</a>
+                        </li>
+                        <li><a href="{{ url('/dokumentasi#berita') }}"
+                                class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Berita</a>
+                        </li>
+                        <li><a href="{{ url('/dokumentasi#kegiatan-sekolah') }}"
+                                class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Kegiatan
+                                Sekolah</a></li>
+                    </ul>
+                </li>
+
+                <!-- Contact Info -->
+                <li class="px-6 py-4 bg-gray-50 mt-4">
+                    <h3 class="text-sm font-bold text-gray-800 mb-3">Hubungi Kami</h3>
+                    <div class="space-y-2">
+                        <a href="mailto:ppdbmatauli@gmail.com"
+                            class="flex items-center gap-2 text-sm text-gray-600 hover:text-orange-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg>
+                            ppdbmatauli@gmail.com
+                        </a>
+                        <a href="tel:+6282121313131"
+                            class="flex items-center gap-2 text-sm text-gray-600 hover:text-orange-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                            </svg>
+                            +62 821-2131-3131
+                        </a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- ============================================ -->
+    <!-- MOBILE MENU - END -->
     <!-- ============================================ -->
 
     <!-- ============================================ -->
