@@ -380,11 +380,11 @@
         <div id="heroSlider" class="relative h-full">
 
             <!-- Slide 1 - Daftar Disini -->
-            <div class="hero-slide active absolute inset-0">
+            <div id="beranda" class="hero-slide active absolute inset-0 pointer-events-none">
                 <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
                 <img src="{{ asset('assets/Gerbang Depan Sekolah.jpeg') }}" alt="School Building"
                     class="w-full h-full object-cover">
-                <div class="absolute inset-0 z-20 flex items-center">
+                <div class="absolute inset-0 z-20 flex items-center pointer-events-auto">
                     <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
                         <div class="max-w-3xl">
                             <p
@@ -414,11 +414,11 @@
             </div>
 
             <!-- Slide 2 - Program IB -->
-            <div class="hero-slide absolute inset-0">
+            <div id="ib" class="hero-slide absolute inset-0 pointer-events-none">
                 <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
                 <img src="{{ asset('assets/Background IB Program.JPG') }}" alt="IB Program"
                     class="w-full h-full object-cover">
-                <div class="absolute inset-0 z-20 flex items-center">
+                <div class="absolute inset-0 z-20 flex items-center pointer-events-auto">
                     <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
                         <div class="max-w-3xl">
                             <p
@@ -449,11 +449,11 @@
             </div>
 
             <!-- Slide 3 - Fasilitas -->
-            <div class="hero-slide absolute inset-0">
+            <div id="asrama" class="hero-slide absolute inset-0 pointer-events-none">
                 <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
                 <img src="{{ asset('assets/Asrama.jpg') }}" alt="School Activities"
                     class="w-full h-full object-cover">
-                <div class="absolute inset-0 z-20 flex items-center">
+                <div class="absolute inset-0 z-20 flex items-center pointer-events-auto">
                     <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
                         <div class="max-w-3xl">
                             <p
@@ -485,14 +485,14 @@
         </div>
 
         <!-- Navigation Arrows -->
-        <button onclick="changeSlide(-1)"
+        <button data-slide="prev"
             class="absolute left-2 md:left-6 lg:left-8 top-1/2 -translate-y-1/2 z-30 bg-white/30 hover:bg-white/50 backdrop-blur-sm text-white p-2 md:p-3 lg:p-4 rounded-full transition-all shadow-lg">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5 lg:h-6 lg:w-6" fill="none"
                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
         </button>
-        <button onclick="changeSlide(1)"
+        <button data-slide="next"
             class="absolute right-2 md:right-6 lg:right-8 top-1/2 -translate-y-1/2 z-30 bg-white/30 hover:bg-white/50 backdrop-blur-sm text-white p-2 md:p-3 lg:p-4 rounded-full transition-all shadow-lg">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5 lg:h-6 lg:w-6" fill="none"
                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
@@ -501,12 +501,12 @@
         </button>
 
         <!-- Dots Navigation -->
-        <div class="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-30 flex gap-2 md:gap-3">
-            <button onclick="goToSlide(0)"
+        <div class="absolute bottom-6 z-50 md:bottom-8 left-1/2 -translate-x-1/2 flex gap-2 md:gap-3 pointer-events-auto">
+            <button data-target="beranda"
                 class="dot active w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-white/50 hover:bg-white transition-all"></button>
-            <button onclick="goToSlide(1)"
+            <button data-target="ib"
                 class="dot w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-white/50 hover:bg-white transition-all"></button>
-            <button onclick="goToSlide(2)"
+            <button data-target="asrama"
                 class="dot w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-white/50 hover:bg-white transition-all"></button>
         </div>
     </section>
