@@ -501,7 +501,7 @@
         </button>
 
         <!-- Dots Navigation -->
-        <div class="absolute bottom-6 z-50 md:bottom-8 left-1/2 -translate-x-1/2 flex gap-2 md:gap-3 pointer-events-auto">
+        <div class="absolute bottom-6 z-30 md:bottom-8 left-1/2 -translate-x-1/2 flex gap-2 md:gap-3 pointer-events-auto">
             <button data-target="beranda"
                 class="dot active w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-white/50 hover:bg-white transition-all"></button>
             <button data-target="ib"
