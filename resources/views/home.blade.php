@@ -695,7 +695,8 @@
                             class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-matauli-red-dark text-white px-4 md:px-6 py-2 rounded-full shadow-lg">
                             <p class="text-xs md:text-sm font-semibold whitespace-nowrap">DEDEN RACHMAWAN, S.Pd., M.M
                             </p>
-                            <p class="text-[10px] md:text-xs text-center">Kepala Sekolah SMAN 1</p>
+                            <p class="text-[10px] md:text-xs text-center text-matauli-yellow font-bold">Kepala Sekolah
+                                SMAN 1 MATAULI</p>
                         </div>
                     </div>
                 </div>
@@ -717,14 +718,15 @@
                     <div class="relative mb-8 md:mb-10">
                         <div
                             class="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 md:border-6 lg:border-8 border-matauli-red-dark shadow-2xl">
-                            <img src="assets/bu ketum fitri_merah maroon.png" alt="Ketua Umum"
-                                class="w-full h-full object-cover">
+                            <img src="assets/bu ketum fitri.png" alt="Ketua Umum" class="w-full h-full object-cover">
                         </div>
                         <div
                             class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-matauli-red-dark text-white px-4 md:px-6 py-2 rounded-full shadow-lg">
                             <p class="text-xs md:text-sm font-semibold whitespace-nowrap">Fitri Krisnawati Tandjung,
                                 B.Sc</p>
-                            <p class="text-[10px] md:text-xs text-center">Ketua Umum</p>
+                            <p class="text-[10px] md:text-xs text-center text-matauli-yellow font-bold">Ketua Umum
+                                Yayasan
+                            </p>
                         </div>
                     </div>
                 </div>
