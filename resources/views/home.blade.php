@@ -486,14 +486,14 @@
 
         <!-- Navigation Arrows -->
         <button data-slide="prev"
-            class="absolute left-2 md:left-6 lg:left-8 top-1/2 -translate-y-1/2 z-30 bg-white/30 hover:bg-white/50 backdrop-blur-sm text-white p-2 md:p-3 lg:p-4 rounded-full transition-all shadow-lg">
+            class="hidden md:block lg:block absolute left-2 md:left-6 lg:left-8 top-1/2 -translate-y-1/2 z-30 bg-white/30 hover:bg-white/50 backdrop-blur-sm text-white p-2 md:p-3 lg:p-4 rounded-full transition-all shadow-lg">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5 lg:h-6 lg:w-6" fill="none"
                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
         </button>
         <button data-slide="next"
-            class="absolute right-2 md:right-6 lg:right-8 top-1/2 -translate-y-1/2 z-30 bg-white/30 hover:bg-white/50 backdrop-blur-sm text-white p-2 md:p-3 lg:p-4 rounded-full transition-all shadow-lg">
+            class="hidden md:block lg:block absolute right-2 md:right-6 lg:right-8 top-1/2 -translate-y-1/2 z-30 bg-white/30 hover:bg-white/50 backdrop-blur-sm text-white p-2 md:p-3 lg:p-4 rounded-full transition-all shadow-lg">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5 lg:h-6 lg:w-6" fill="none"
                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
