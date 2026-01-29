@@ -1437,10 +1437,10 @@
     <!-- ============================================ -->
     <footer class="bg-matauli-red-dark text-white">
         <div class="relative mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 py-12 md:py-16">
-            <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-25">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-25">
 
                 <!-- Column 1: Logo & School Name -->
-                <div class="flex flex-col items-start gap-6 lg:pl-6">
+                <div class="flex flex-col items-start gap-6 pl-3 lg:pl-6">
 
                     <div class="flex items-center gap-3">
 
@@ -1456,9 +1456,9 @@
 
                         <!-- Text -->
                         <div class="flex flex-col justify-center leading-tight">
-                            <h2 class="text-2xl md:text-3xl font-bold text-white">
+                            <h2 class="text-2xl lg:text-3xl font-bold text-white">
                                 <span class="inline-flex items-center tracking-widest">
-                                    SMAN <span class="ml-3.5">1</span>
+                                    SMAN <span class="ml-2.5 lg:ml-3.5">1</span>
                                 </span>
                                 <span class="block">MATAULI</span>
                                 <span class="block tracking-wide">PANDAN</span>
