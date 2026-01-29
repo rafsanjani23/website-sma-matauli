@@ -167,7 +167,7 @@
     <header class="w-full sticky top-0 z-50 shadow-md">
 
         <!-- ========== TOP BAR - Contact Information ========== -->
-        <div class="bg-white text-[#000000] py-2 hidden lg:block">
+        <div class="bg-white text-black py-2 hidden lg:block">
             <div class="relative mx-auto px-4 lg:px-12 xl:px-24">
                 <div class="flex items-center justify-between">
 
@@ -181,9 +181,10 @@
                             class="h-9 lg:h-10 w-auto object-contain">
                     </div>
 
-                    <!-- Contact Information -->
-                    <div class="flex items-center gap-6 text-sm">
-                        <!-- Email -->
+                    <!-- Contact & Language -->
+                    <div class="flex items-center gap-8 text-sm">
+
+                        <!-- Email (Left) -->
                         <div class="flex items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-orange-500" fill="currentColor"
                                 viewBox="0 0 24 24">
@@ -195,7 +196,7 @@
                             </a>
                         </div>
 
-                        <!-- Phone -->
+                        <!-- Phone (Center) -->
                         <div class="flex items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-orange-500" fill="currentColor"
                                 viewBox="0 0 24 24">
@@ -206,11 +207,43 @@
                                 +62 821-2131-3131
                             </a>
                         </div>
-                    </div>
 
+                        <!-- Language Dropdown (Right) -->
+                        <div class="relative group">
+                            <button class="flex items-center gap-2 font-semibold hover:text-orange-500 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-orange-500"
+                                    fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2a10 10 0 100 20 10 10 0 000-20zm5.93 6h-3.09a15.3 15.3 0 00-1.1-3.07A8.03 8.03 0 0117.93 8zM12 4.07c.6.86 1.14 1.9 1.58 3.93h-3.16c.44-2.03.98-3.07 1.58-3.93zM6.07 8a8.03 8.03 0 014.19-3.07A15.3 15.3 0 009.16 8H6.07zM4.07 12c0-.69.08-1.36.23-2h3.44a17.8 17.8 0 000 4H4.3a8.07 8.07 0 01-.23-2zm2 4h3.09c.27 1.2.65 2.28 1.1 3.07A8.03 8.03 0 016.07 16zM12 19.93c-.6-.86-1.14-1.9-1.58-3.93h3.16c-.44 2.03-.98 3.07-1.58 3.93zM13.74 19.07c.45-.79.83-1.87 1.1-3.07h3.09a8.03 8.03 0 01-4.19 3.07zM16.49 14a17.8 17.8 0 000-4h3.44c.15.64.23 1.31.23 2s-.08 1.36-.23 2h-3.44z" />
+                                </svg>
+                                <span>ID</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+
+                            <!-- Dropdown Menu -->
+                            <div
+                                class="absolute right-0 mt-2 w-32 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-99">
+                                <a href="/lang/id"
+                                    class="block px-4 py-2 hover:bg-gray-100 text-sm dropdown-item font-semibold">
+                                    🇮🇩 Indonesia
+                                </a>
+                                <a href="/lang/en"
+                                    class="block px-4 py-2 hover:bg-gray-100 text-sm dropdown-item font-semibold">
+                                    en English
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
+
 
         <!-- ========== MAIN NAVIGATION BAR ========== -->
         <nav
@@ -285,7 +318,8 @@
                         Dokumentasi
                         <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
 
@@ -434,12 +468,16 @@
                     </ul>
                 </li>
 
-                <!-- Contact Info -->
+                <!-- Contact & Language Info (Mobile) -->
                 <li class="px-6 py-4 bg-gray-50 mt-4">
-                    <h3 class="text-sm font-bold text-gray-800 mb-3">Hubungi Kami</h3>
-                    <div class="space-y-2">
+                    <h3 class="text-sm font-bold text-gray-800 mb-3">
+                        Hubungi Kami
+                    </h3>
+
+                    <!-- Contact -->
+                    <div class="space-y-3 mb-4">
                         <a href="mailto:ppdbmatauli@gmail.com"
-                            class="flex items-center gap-2 text-sm text-gray-600 hover:text-orange-600">
+                            class="flex items-center gap-2 text-sm text-gray-600 hover:text-orange-600 transition">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor"
                                 viewBox="0 0 24 24">
                                 <path
@@ -447,8 +485,9 @@
                             </svg>
                             ppdbmatauli@gmail.com
                         </a>
+
                         <a href="tel:+6282121313131"
-                            class="flex items-center gap-2 text-sm text-gray-600 hover:text-orange-600">
+                            class="flex items-center gap-2 text-sm text-gray-600 hover:text-orange-600 transition">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor"
                                 viewBox="0 0 24 24">
                                 <path
@@ -457,8 +496,28 @@
                             +62 821-2131-3131
                         </a>
                     </div>
-                </li>
 
+                    <!-- Language Selector (Mobile) -->
+                    <div class="border-t border-gray-200 pt-3">
+                        <p class="text-xs font-semibold text-gray-700 mb-2">
+                            Bahasa
+                        </p>
+
+                        <div class="flex gap-3">
+                            <a href="/lang/id"
+                                class="flex-1 text-center text-sm font-semibold px-4 py-2 rounded-lg bg-gray-100 text-gray-700 hover:bg-orange-500 hover:text-white transition">
+                                🇮🇩 Indonesia
+                            </a>
+
+                            <a href="/lang/en"
+                                class="flex-1 text-center text-sm font-semibold px-4 py-2 rounded-lg bg-gray-100 text-gray-700 hover:bg-orange-500 hover:text-white transition">
+                                en English
+                            </a>
+                        </div>
+                    </div>
+
+
+                </li>
             </ul>
         </div>
     </div>
@@ -721,6 +780,654 @@
     </section>
     <!-- ============================================ -->
     <!-- TENTANG KAMI SECTION - END -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ -->
+    <!-- PEMINATAN JURUSAN SECTION - START -->
+    <!-- ============================================ -->
+    <section id="peminatan-jurusan" class="py-12 md:py-16 lg:py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
+
+            <!-- Section Title -->
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-matauli-red-dark mb-4">
+                    Peminatan Jurusan
+                </h2>
+                <div class="w-20 md:w-24 h-1 bg-yellow-400 mx-auto"></div>
+            </div>
+
+            <!-- Jurusan Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 max-w-4xl mx-auto">
+
+                <!-- IPA Card -->
+                <a href="{{ url('/program/ipa') }}" class="group block">
+                    <div
+                        class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-gray-100 hover:border-yellow-400 cursor-pointer">
+                        <!-- Image Container -->
+                        <div class="relative h-48 md:h-56 overflow-hidden">
+                            <img src="{{ asset('assets/ipa-jurusan.jpg') }}" alt="Jurusan IPA"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <!-- Label Badge -->
+                            <div
+                                class="absolute top-4 left-4 bg-yellow-400 text-black font-bold px-4 py-2 rounded-lg shadow-lg">
+                                IPA
+                            </div>
+                        </div>
+                        <!-- Content -->
+                        <div class="p-6 md:p-8 text-center">
+                            <h3
+                                class="text-2xl md:text-3xl font-bold text-gray-900 mb-3 group-hover:text-matauli-red-dark transition-colors">
+                                Ilmu Pengetahuan Alam</h3>
+                            <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-4">
+                                Fokus pada Matematika, Fisika, Kimia, dan Biologi untuk persiapan karir di bidang sains
+                                dan teknologi.
+                            </p>
+                            <!-- CTA Arrow -->
+                            <div
+                                class="inline-flex items-center gap-2 text-matauli-red-dark font-semibold group-hover:gap-3 transition-all">
+                                <span>Selengkapnya</span>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- IPS Card -->
+                <a href="{{ url('/program/ips') }}" class="group block">
+                    <div
+                        class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-gray-100 hover:border-yellow-400 cursor-pointer">
+                        <!-- Image Container -->
+                        <div class="relative h-48 md:h-56 overflow-hidden">
+                            <img src="{{ asset('assets/ips-jurusan.jpg') }}" alt="Jurusan IPS"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <!-- Label Badge -->
+                            <div
+                                class="absolute top-4 left-4 bg-yellow-400 text-black font-bold px-4 py-2 rounded-lg shadow-lg">
+                                IPS
+                            </div>
+                        </div>
+                        <!-- Content -->
+                        <div class="p-6 md:p-8 text-center">
+                            <h3
+                                class="text-2xl md:text-3xl font-bold text-gray-900 mb-3 group-hover:text-matauli-red-dark transition-colors">
+                                Ilmu Pengetahuan Sosial</h3>
+                            <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-4">
+                                Fokus pada Ekonomi, Sosiologi, Geografi, dan Sejarah untuk persiapan karir di bidang
+                                sosial dan humaniora.
+                            </p>
+                            <!-- CTA Arrow -->
+                            <div
+                                class="inline-flex items-center gap-2 text-matauli-red-dark font-semibold group-hover:gap-3 transition-all">
+                                <span>Selengkapnya</span>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+
+        </div>
+
+        </div>
+    </section>
+    <!-- ============================================ -->
+    <!-- PEMINATAN JURUSAN SECTION - END -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ -->
+    <!-- PRESTASI SECTION - START -->
+    <!-- ============================================ -->
+    <section id="prestasi" class="py-12 md:py-16 lg:py-20 bg-[#fff9f9]">
+        <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
+
+            <!-- Section Title -->
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-matauli-red-dark mb-4">
+                    Prestasi
+                </h2>
+                <div class="w-20 md:w-24 h-1 bg-yellow-400 mx-auto"></div>
+            </div>
+
+            <!-- Prestasi Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12">
+
+                <!-- Prestasi Card 1 -->
+                <a href="/prestasi/olimpiade-matematika" class="group block">
+                    <div
+                        class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-yellow-400 h-full">
+
+                        <!-- Image -->
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="{{ asset('assets/Test Gambar.jpeg') }}" alt="Prestasi Olimpiade Matematika"
+                                class="w-full h-full object-cover transition-transform duration-500">
+
+                            <!-- Badge -->
+                            <div
+                                class="absolute bottom-4 left-4 bg-yellow-400 text-black font-bold px-3 py-1.5 rounded-lg text-xs shadow-lg">
+                                Olimpiade Matematika
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-6 flex flex-col justify-between h-47.5">
+                            <div>
+                                <h4
+                                    class="text-base md:text-lg font-bold text-gray-900 mb-2 group-hover:text-matauli-red-dark transition-colors">
+                                    Juara 1 Olimpiade Matematika
+                                </h4>
+                                <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                                    Tingkat Provinsi Sumatera Utara 2025.
+                                </p>
+                            </div>
+
+                            <!-- CTA Arrow -->
+                            <div
+                                class="mt-4 inline-flex items-center gap-2 text-matauli-red-dark font-semibold group-hover:gap-3 transition-all">
+                                <span>Selengkapnya</span>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Prestasi Card 2 -->
+                <a href="/prestasi/karya-tulis-ilmiah" class="group block">
+                    <div
+                        class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-yellow-400 h-full">
+
+                        <!-- Image -->
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="{{ asset('assets/Test Gambar.jpeg') }}" alt="Prestasi Karya Tulis Ilmiah"
+                                class="w-full h-full object-cover transition-transform duration-500">
+
+                            <!-- Badge -->
+                            <div
+                                class="absolute bottom-4 left-4 bg-yellow-400 text-black font-bold px-3 py-1.5 rounded-lg text-xs shadow-lg">
+                                Karya Tulis Ilmiah
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-6 flex flex-col justify-between h-47.5">
+                            <div>
+                                <h4
+                                    class="text-base md:text-lg font-bold text-gray-900 mb-2 group-hover:text-matauli-red-dark transition-colors">
+                                    Juara 2 Lomba Karya Tulis Ilmiah
+                                </h4>
+                                <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                                    Tingkat Nasional.
+                                </p>
+                            </div>
+
+                            <!-- CTA Arrow -->
+                            <div
+                                class="mt-4 inline-flex items-center gap-2 text-matauli-red-dark font-semibold group-hover:gap-3 transition-all">
+                                <span>Selengkapnya</span>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Prestasi Card 3 -->
+                <a href="/prestasi/kompetisi-robotika" class="group block">
+                    <div
+                        class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-yellow-400 h-full">
+
+                        <!-- Image -->
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="{{ asset('assets/Test Gambar.jpeg') }}" alt="Prestasi Kompetisi Robotika"
+                                class="w-full h-full object-cover transition-transform duration-500">
+
+                            <!-- Badge -->
+                            <div
+                                class="absolute bottom-4 left-4 bg-yellow-400 text-black font-bold px-3 py-1.5 rounded-lg text-xs shadow-lg">
+                                Kompetisi Robotika
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-6 flex flex-col justify-between h-47.5">
+                            <div>
+                                <h4
+                                    class="text-base md:text-lg font-bold text-gray-900 mb-2 group-hover:text-matauli-red-dark transition-colors">
+                                    Juara 1 Kompetisi Robotika
+                                </h4>
+                                <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                                    Regional Sumatera.
+                                </p>
+                            </div>
+
+                            <!-- CTA Arrow -->
+                            <div
+                                class="mt-4 inline-flex items-center gap-2 text-matauli-red-dark font-semibold group-hover:gap-3 transition-all">
+                                <span>Selengkapnya</span>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- CTA Global -->
+            <div class="text-center">
+                <a href="/program#prestasi-siswa"
+                    class="inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-6 py-3 md:px-8 md:py-4 rounded-lg transition-all hover:scale-105 shadow-lg">
+                    Lihat Semua Prestasi
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <!-- ============================================ -->
+    <!-- PRESTASI SECTION - END -->
+    <!-- ============================================ -->
+
+
+    <!-- ============================================ -->
+    <!-- TESTIMONIALS SECTION - START -->
+    <!-- ============================================ -->
+    <section id="testimonials" class="py-12 md:py-16 lg:py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
+
+            <!-- Section Title -->
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-matauli-red-dark mb-4">
+                    Testimonials
+                </h2>
+                <div class="w-20 md:w-24 h-1 bg-yellow-400 mx-auto"></div>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-10">
+
+                <!-- Testimonial Card 1 -->
+                <div
+                    class="bg-linear-to-brrom-gray-50 to-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 md:p-8 border border-gray-100">
+                    <!-- Avatar -->
+                    <div class="flex flex-col items-center mb-6">
+                        <div
+                            class="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden mb-4 shadow-lg ring-4 ring-yellow-400/30">
+                            <img src="{{ asset('assets/Anime1.jpg') }}" alt="Ahmad Fauzi Alumni"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="font-bold text-gray-900 text-base md:text-lg">Ahmad Fauzi</h4>
+                        <p class="text-sm text-gray-500">Alumni 2024</p>
+                    </div>
+                    <!-- Quote -->
+                    <div class="relative">
+                        <svg class="absolute -top-2 -left-2 w-8 h-8 text-yellow-400/20" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+                        </svg>
+                        <p class="text-gray-700 text-sm md:text-base leading-relaxed italic pl-6">
+                            "SMAN 1 Matauli Pandan memberikan pengalaman belajar yang luar biasa. Guru-guru profesional
+                            dan fasilitas modern membuat saya siap menghadapi dunia perkuliahan."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div
+                    class="bg-linear-to-br from-gray-50 to-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 md:p-8 border border-gray-100">
+                    <!-- Avatar -->
+                    <div class="flex flex-col items-center mb-6">
+                        <div
+                            class="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden mb-4 shadow-lg ring-4 ring-yellow-400/30">
+                            <img src="{{ asset('assets/Anime2.jpg') }}" alt="Siti Nurhaliza Alumni"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="font-bold text-gray-900 text-base md:text-lg">Siti Nurhaliza</h4>
+                        <p class="text-sm text-gray-500">Alumni 2023</p>
+                    </div>
+                    <!-- Quote -->
+                    <div class="relative">
+                        <svg class="absolute -top-2 -left-2 w-8 h-8 text-yellow-400/20" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+                        </svg>
+                        <p class="text-gray-700 text-sm md:text-base leading-relaxed italic pl-6">
+                            "Lingkungan belajar yang kondusif dan teman-teman yang suportif membuat masa SMA saya penuh
+                            kenangan indah. Terima kasih SMAN 1 Matauli Pandan!"
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 3 -->
+                <div
+                    class="bg-linear-to-br from-gray-50 to-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 md:p-8 border border-gray-100">
+                    <!-- Avatar -->
+                    <div class="flex flex-col items-center mb-6">
+                        <div
+                            class="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden mb-4 shadow-lg ring-4 ring-yellow-400/30">
+                            <img src="{{ asset('assets/Anime3.jpg') }}" alt="Budi Santoso Alumni"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="font-bold text-gray-900 text-base md:text-lg">Budi Santoso</h4>
+                        <p class="text-sm text-gray-500">Alumni 2022</p>
+                    </div>
+                    <!-- Quote -->
+                    <div class="relative">
+                        <svg class="absolute -top-2 -left-2 w-8 h-8 text-yellow-400/20" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+                        </svg>
+                        <p class="text-gray-700 text-sm md:text-base leading-relaxed italic pl-6">
+                            "Program IB yang ditawarkan sangat membantu saya untuk diterima di universitas luar negeri.
+                            Terima kasih atas bimbingan guru-guru hebat!"
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA Button -->
+            <div class="text-center">
+                <a href="/testimonials"
+                    class="inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-6 py-3 md:px-8 md:py-4 rounded-lg transition-all hover:scale-105 shadow-lg text-sm md:text-base">
+                    Selengkapnya
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <!-- ============================================ -->
+    <!-- TESTIMONIALS SECTION - END -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ -->
+    <!-- BERITA TERKINI SECTION - START -->
+    <!-- ============================================ -->
+    <section id="berita-terkini" class="py-12 md:py-16 lg:py-20 bg-[#fff9f9]">
+        <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
+
+            <!-- Section Title -->
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-matauli-red-dark mb-4">
+                    Berita Terkini
+                </h2>
+                <div class="w-20 md:w-24 h-1 bg-yellow-400 mx-auto"></div>
+            </div>
+
+            <!-- Berita Grid - Row 1 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-6 md:mb-8">
+
+                <!-- Berita Card 1 -->
+                <div
+                    class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                    <!-- Image -->
+                    <div class="relative h-48 md:h-52 bg-linear-to-br from-red-800 to-red-900 overflow-hidden">
+                        <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg class="w-20 h-20 text-white/70" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Content -->
+                    <div class="p-5 md:p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span
+                                class="text-xs font-semibold text-matauli-red-dark bg-red-50 px-3 py-1 rounded-full">JUDUL
+                                BERITA</span>
+                        </div>
+                        <p class="text-gray-600 text-xs md:text-sm mb-4">
+                            Ringkasan berita . . . . . . . . .
+                        </p>
+                        <!-- Facebook Link -->
+                        <a href="#"
+                            class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold text-sm transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                            Lihat di Facebook
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Berita Card 2 -->
+                <div
+                    class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                    <!-- Image -->
+                    <div class="relative h-48 md:h-52 bg-linear-to-br from-red-800 to-red-900 overflow-hidden">
+                        <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg class="w-20 h-20 text-white/70" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Content -->
+                    <div class="p-5 md:p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span
+                                class="text-xs font-semibold text-matauli-red-dark bg-red-50 px-3 py-1 rounded-full">JUDUL
+                                BERITA</span>
+                        </div>
+                        <p class="text-gray-600 text-xs md:text-sm mb-4">
+                            Ringkasan berita . . . . . . . . .
+                        </p>
+                        <!-- Facebook Link -->
+                        <a href="#"
+                            class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold text-sm transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                            Lihat di Facebook
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Berita Card 3 -->
+                <div
+                    class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                    <!-- Image -->
+                    <div class="relative h-48 md:h-52 bg-linear-to-br from-red-800 to-red-900 overflow-hidden">
+                        <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg class="w-20 h-20 text-white/70" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Content -->
+                    <div class="p-5 md:p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span
+                                class="text-xs font-semibold text-matauli-red-dark bg-red-50 px-3 py-1 rounded-full">JUDUL
+                                BERITA</span>
+                        </div>
+                        <p class="text-gray-600 text-xs md:text-sm mb-4">
+                            Ringkasan berita . . . . . . . . .
+                        </p>
+                        <!-- Facebook Link -->
+                        <a href="#"
+                            class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold text-sm transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                            Lihat di Facebook
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Berita Grid - Row 2 (Facebook Style) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-10">
+
+                <!-- Berita Facebook Card 1 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+                    <!-- Image -->
+                    <div class="relative h-48 md:h-52 bg-linear-to-br from-red-800 to-red-900 overflow-hidden">
+                        <div class="absolute inset-0 bg-black/30"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg class="w-20 h-20 text-white/70" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Content -->
+                    <div class="p-5 md:p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span
+                                class="text-xs font-semibold text-matauli-red-dark bg-red-50 px-3 py-1 rounded-full">JUDUL
+                                BERITA</span>
+                        </div>
+                        <p class="text-gray-600 text-xs md:text-sm mb-4">
+                            Ringkasan berita . . . . . . . . .
+                        </p>
+                        <!-- Facebook Link -->
+                        <a href="#"
+                            class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold text-sm transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                            Lihat di Facebook
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Berita Facebook Card 2 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+                    <!-- Image -->
+                    <div class="relative h-48 md:h-52 bg-linear-to-br from-red-800 to-red-900 overflow-hidden">
+                        <div class="absolute inset-0 bg-black/30"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg class="w-20 h-20 text-white/70" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Content -->
+                    <div class="p-5 md:p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span
+                                class="text-xs font-semibold text-matauli-red-dark bg-red-50 px-3 py-1 rounded-full">JUDUL
+                                BERITA</span>
+                        </div>
+                        <p class="text-gray-600 text-xs md:text-sm mb-4">
+                            Ringkasan berita . . . . . . . . .
+                        </p>
+                        <!-- Facebook Link -->
+                        <a href="#"
+                            class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold text-sm transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                            Lihat di Facebook
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Berita Facebook Card 3 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+                    <!-- Image -->
+                    <div class="relative h-48 md:h-52 bg-linear-to-br from-red-800 to-red-900 overflow-hidden">
+                        <div class="absolute inset-0 bg-black/30"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg class="w-20 h-20 text-white/70" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Content -->
+                    <div class="p-5 md:p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span
+                                class="text-xs font-semibold text-matauli-red-dark bg-red-50 px-3 py-1 rounded-full">JUDUL
+                                BERITA</span>
+                        </div>
+                        <p class="text-gray-600 text-xs md:text-sm mb-4">
+                            Ringkasan berita . . . . . . . . .
+                        </p>
+                        <!-- Facebook Link -->
+                        <a href="#"
+                            class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold text-sm transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                            Lihat di Facebook
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA Button -->
+            <div class="text-center">
+                <a href="/dokumentasi#berita"
+                    class="inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-6 py-3 md:px-8 md:py-4 rounded-lg transition-all hover:scale-105 shadow-lg text-sm md:text-base">
+                    Selengkapnya
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <!-- ============================================ -->
+    <!-- BERITA TERKINI SECTION - END -->
     <!-- ============================================ -->
 
     <!-- ============================================ -->
