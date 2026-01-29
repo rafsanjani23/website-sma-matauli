@@ -229,11 +229,11 @@
                             <div
                                 class="absolute right-0 mt-2 w-32 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-99">
                                 <a href="/lang/id"
-                                    class="block px-4 py-2 hover:bg-gray-100 text-sm dropdown-item font-semibold">
+                                    class="block px-4 py-2 hover:bg-gray-100 text-sm hover:text-orange-500 font-semibold">
                                     🇮🇩 Indonesia
                                 </a>
                                 <a href="/lang/en"
-                                    class="block px-4 py-2 hover:bg-gray-100 text-sm dropdown-item font-semibold">
+                                    class="block px-4 py-2 hover:bg-gray-100 text-sm hover:text-orange-500 font-semibold">
                                     en English
                                 </a>
                             </div>
