@@ -129,7 +129,7 @@
                     </button>
 
                     <ul class="nav-dropdown-content">
-                        <li><a href="{{ url('/tentang-kami#sejarah-sekolah') }}" class="dropdown-item">Sejarah
+                        <li><a href="{{ url('/sejarah') }}" class="dropdown-item">Sejarah
                                 Sekolah</a></li>
                         <li><a href="{{ url('/tentang-kami#visi-misi') }}" class="dropdown-item">Visi & Misi</a></li>
                         <li><a href="{{ url('/tentang-kami#kurikulum') }}" class="dropdown-item">Kurikulum Sekolah</a>
@@ -247,7 +247,7 @@
                         </svg>
                     </button>
                     <ul class="mobile-dropdown-content bg-gray-50">
-                        <li><a href="{{ url('/tentang-kami#sejarah-sekolah') }}"
+                        <li><a href="{{ url('/sejarah') }}"
                                 class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Sejarah
                                 Sekolah</a></li>
                         <li><a href="{{ url('/tentang-kami#visi-misi') }}"
@@ -1385,7 +1385,7 @@
                         <li><a href="/dokumentasi#berita"
                                 class="text-gray-200 hover:text-yellow-400 transition hover:translate-x-1 inline-block text-xs md:text-sm">Berita
                                 Terkini</a></li>
-                        <li><a href="/tentang-kami#sejarah-sekolah"
+                        <li><a href="/sejarah-sekolah"
                                 class="text-gray-200 hover:text-yellow-400 transition hover:translate-x-1 inline-block text-xs md:text-sm">Sejarah
                                 Sekolah</a></li>
                         <li><a href="/ppdb"
