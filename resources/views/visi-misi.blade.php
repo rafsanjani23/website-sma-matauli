@@ -520,13 +520,12 @@
     <!-- ============================================ -->
     <!-- VISI & MISI SECTION - START -->
     <!-- ============================================ -->
-    <section class="relative h-48 md:h-64 lg:h-72 overflow-hidden">
-        <!-- Background Image -->
-        <img src="{{ asset('assets/visi-misi-hero.jpg') }}" alt="Visi Misi Hero"
+    <section class="relative w-full h-75 sm:h-95 md:h-130 lg:h-155 overflow-hidden">
+        <img src="{{ asset('assets/visi-misi.JPG') }}" alt="Paduan Suara SMAN 1 Matauli Pandan"
             class="absolute inset-0 w-full h-full object-cover">
 
         <!-- Overlay -->
-        <div class="hero-overlay absolute inset-0"></div>
+        <div class="absolute inset-0 bg-black/45"></div>
 
         <!-- Content -->
         <div class="relative h-full flex items-center">
@@ -551,7 +550,7 @@
 
                 <!-- Text Content -->
                 <div class="order-2 md:order-1">
-                    <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 md:mb-6">
+                    <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-matauli-red-dark mb-4 md:mb-6">
                         SMAN 1 Matauli Menggunakan Kurikulum International Baccalaureate
                     </h2>
                     <p class="text-gray-700 text-sm md:text-base leading-relaxed">
@@ -564,7 +563,7 @@
 
                 <!-- Image -->
                 <div class="order-1 md:order-2">
-                    <img src="{{ asset('assets/kurikulum-ib.jpg') }}" alt="Kurikulum IB"
+                    <img src="{{ asset('assets/visi-misi2.JPG') }}" alt="Kurikulum IB"
                         class="w-full h-56 md:h-72 object-cover rounded-xl shadow-lg">
                 </div>
 
@@ -579,14 +578,14 @@
     <!-- ============================================ -->
     <!-- VISI SECTION - START -->
     <!-- ============================================ -->
-    <section class="py-12 md:py-16 bg-linear-to-brrom-matauli-red-dark to-red-900">
+    <section class="py-12 md:py-16 bg-linear-to-br from-matauli-red-dark to-red-900">
         <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
 
             <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
 
                 <!-- Image (Hidden on mobile, shown on md+) -->
                 <div class="hidden md:block">
-                    <img src="{{ asset('assets/visi-image.jpg') }}" alt="Visi SMAN 1 Matauli"
+                    <img src="{{ asset('assets/visi-misi3.jpeg') }}" alt="Visi SMAN 1 Matauli"
                         class="w-full h-72 object-cover rounded-xl shadow-2xl">
                 </div>
 
@@ -622,7 +621,7 @@
 
                 <!-- Image -->
                 <div class="order-2 md:order-1">
-                    <img src="{{ asset('assets/misi-image.jpg') }}" alt="Misi SMAN 1 Matauli"
+                    <img src="{{ asset('assets/visi-misi.JPG') }}" alt="Misi SMAN 1 Matauli"
                         class="w-full h-56 md:h-96 object-cover rounded-xl shadow-lg md:sticky md:top-24">
                 </div>
 
