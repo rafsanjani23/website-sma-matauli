@@ -1,7 +1,7 @@
 <!-- ============================================ -->
 <!-- HERO SLIDER SECTION - START -->
 <!-- ============================================ -->
-<section class="relative h-screen overflow-hidden">
+<section class="relative w-full h-95 md:h-130 lg:h-155 overflow-hidden">
     <div id="heroSlider" class="relative h-full">
 
         <!-- Slide 1 - Daftar Disini -->
@@ -17,7 +17,7 @@
                             SMA NEGERI 1 MATAULI PANDAN
                         </p>
                         <h1
-                            class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 md:mb-6">
+                            class="text-white text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 md:mb-6">
                             Sekolah Unggul Berkarakter Pancasila & Berdaya Saing Global
                         </h1>
                         <p class="text-white/90 text-base sm:text-lg md:text-xl mb-6 md:mb-8 italic">
@@ -51,7 +51,7 @@
                             SMA NEGERI 1 MATAULI PANDAN
                         </p>
                         <h1
-                            class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 md:mb-6">
+                            class="text-white text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 md:mb-6">
                             Mempersiapkan Siswa untuk Dunia Global melalui Program IB
                         </h1>
                         <p class="text-white/90 text-base sm:text-lg md:text-xl mb-6 md:mb-8 italic">
@@ -85,7 +85,7 @@
                             FASILITAS LENGKAP
                         </p>
                         <h1
-                            class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 md:mb-6">
+                            class="text-white text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 md:mb-6">
                             Lingkungan Belajar Modern dan Nyaman
                         </h1>
                         <p class="text-white/90 text-base sm:text-lg md:text-xl mb-6 md:mb-8 italic">
