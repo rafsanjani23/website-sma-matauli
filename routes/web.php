@@ -11,9 +11,6 @@ Route::get('/welcome', function () {
 Route::get('/sejarah', function () {
     return view('sejarah');
 });
-<<<<<<< HEAD
-=======
 Route::get('/visi-misi', function () {
     return view('visi-misi');
 })->name('visi-misi');
->>>>>>> main
