@@ -501,7 +501,8 @@
         </button>
 
         <!-- Dots Navigation -->
-        <div class="absolute bottom-6 z-30 md:bottom-8 left-1/2 -translate-x-1/2 flex gap-2 md:gap-3 pointer-events-auto">
+        <div
+            class="absolute bottom-6 z-30 md:bottom-8 left-1/2 -translate-x-1/2 flex gap-2 md:gap-3 pointer-events-auto">
             <button data-target="beranda"
                 class="dot active w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-white/50 hover:bg-white transition-all"></button>
             <button data-target="ib"
@@ -762,7 +763,7 @@
 
                         <!-- Image -->
                         <div class="relative h-48 overflow-hidden">
-                            <img src="{{ asset('assets/Test Gambar.jpeg') }}" alt="Prestasi Olimpiade Matematika"
+                            <img src="{{ asset('assets/Prestasi1.jpg') }}" alt="Prestasi Olimpiade Matematika"
                                 class="w-full h-full object-cover transition-transform duration-500">
 
                             <!-- Badge -->
@@ -807,7 +808,7 @@
 
                         <!-- Image -->
                         <div class="relative h-48 overflow-hidden">
-                            <img src="{{ asset('assets/Test Gambar.jpeg') }}" alt="Prestasi Karya Tulis Ilmiah"
+                            <img src="{{ asset('assets/Prestasi2.jpg') }}" alt="Prestasi Karya Tulis Ilmiah"
                                 class="w-full h-full object-cover transition-transform duration-500">
 
                             <!-- Badge -->
@@ -852,7 +853,7 @@
 
                         <!-- Image -->
                         <div class="relative h-48 overflow-hidden">
-                            <img src="{{ asset('assets/Test Gambar.jpeg') }}" alt="Prestasi Kompetisi Robotika"
+                            <img src="{{ asset('assets/Prestasi3.jpg') }}" alt="Prestasi Kompetisi Robotika"
                                 class="w-full h-full object-cover transition-transform duration-500">
 
                             <!-- Badge -->
