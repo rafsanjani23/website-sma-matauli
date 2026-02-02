@@ -402,7 +402,7 @@
                     <ul class="nav-dropdown-content">
                         <li><a href="{{ url('/sejarah') }}" class="dropdown-item">Sejarah
                                 Sekolah</a></li>
-                        <li><a href="{{ url('/tentang-kami#visi-misi') }}" class="dropdown-item">Visi & Misi</a></li>
+                        <li><a href="{{ url('/visi-misi') }}" class="dropdown-item">Visi & Misi</a></li>
                         <li><a href="{{ url('/tentang-kami#kurikulum') }}" class="dropdown-item">Kurikulum Sekolah</a>
                         </li>
                         <li><a href="{{ url('/tentang-kami#tenaga-pendidik') }}" class="dropdown-item">Tenaga Pendidik
@@ -521,7 +521,7 @@
                         <li><a href="{{ url('/sejarah') }}"
                                 class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Sejarah
                                 Sekolah</a></li>
-                        <li><a href="{{ url('/tentang-kami#visi-misi') }}"
+                        <li><a href="{{ url('/visi-misi') }}"
                                 class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Visi
                                 & Misi</a></li>
                         <li><a href="{{ url('/tentang-kami#kurikulum') }}"
@@ -647,6 +647,31 @@
     <!-- ============================================ -->
     <!-- SEJARAH SEKOLAH SECTION - START -->
     <!-- ============================================ -->
+    <!-- HERO IMAGE FULL WIDTH -->
+    <section class="relative w-full h-[300px] sm:h-[380px] md:h-[520px] lg:h-[620px] overflow-hidden">
+        <img src="{{ asset('assets/paduansuara.JPG') }}" alt="Paduan Suara SMAN 1 Matauli Pandan"
+            class="absolute inset-0 w-full h-full object-cover">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/45"></div>
+
+        <!-- Logo & Text -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+            <!-- Logo -->
+            <img src="{{ asset('assets/Logo_SMAN_Matauli.png') }}" alt="Logo SMAN 1 Matauli Pandan"
+                class="h-10 sm:h-12 md:h-16 lg:h-20 mb-4 object-contain drop-shadow-xl">
+
+            <h2 class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2">
+                SMAN 1 Matauli Pandan
+            </h2>
+
+            <p class="text-gray-200 text-sm sm:text-base md:text-lg tracking-wide">
+                The Center of Excellence
+            </p>
+        </div>
+    </section>
+
+
     <section class="py-12 md:py-20 lg:py-24 bg-linear-to-b from-white to-gray-50">
         <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
 
