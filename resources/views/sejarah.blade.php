@@ -166,15 +166,119 @@
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
             background: #7f1d1d;
         }
+
+        /* Mobile Menu Styles */
+        #menuBackdrop {
+            position: fixed;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 60;
+            display: none;
+        }
+
+        #menuBackdrop.show {
+            display: block;
+        }
+
+        #mobileMenu {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            height: 100dvh;
+            z-index: 70;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #mobileMenu.translate-x-0 {
+            transform: translateX(0);
+        }
+
+        #mobileMenu.translate-x-full {
+            transform: translateX(100%);
+        }
+
+        /* Mobile Dropdown Content */
+        .mobile-dropdown-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        }
+
+        .mobile-dropdown-content.show {
+            max-height: 500px;
+        }
+
+        /* Prevent body scroll when menu is open */
+        body.menu-open {
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Desktop Navigation Styles */
+        .navlink-hover {
+            color: #fff9f9;
+            transition: color 0.3s ease;
+        }
+
+        .navlink-hover:hover {
+            color: #fbbf24;
+        }
+
+        .nav-dropdown-content {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 220px;
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 50;
+        }
+
+        .group:hover .nav-dropdown-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-item {
+            display: block;
+            padding: 0.75rem 1rem;
+            color: #374151;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .dropdown-item:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-item:hover {
+            background-color: #fff7ed;
+            color: #ea580c;
+            padding-left: 1.25rem;
+        }
+
+        .dropdown-item:first-child {
+            border-radius: 0.5rem 0.5rem 0 0;
+        }
+
+        .dropdown-item:last-child {
+            border-radius: 0 0 0.5rem 0.5rem;
+        }
     </style>
 </head>
 
 <body class="bg-gray-50">
-
-    <!-- ============================================ -->
-    <!-- HEADER/NAVIGATION - Reuse from main page -->
-    <!-- ============================================ -->
-
     <!-- ============================================ -->
     <!-- HEADER SECTION - START -->
     <!-- ============================================ -->
@@ -1035,7 +1139,7 @@
         function openMenu() {
             mobileMenu.classList.remove('translate-x-full');
             mobileMenu.classList.add('translate-x-0');
-            menuBackdrop.classList.remove('hidden');
+            menuBackdrop.classList.add('show');
             document.body.classList.add('menu-open');
             menuIcon.classList.add('hidden');
             closeIcon.classList.remove('hidden');
@@ -1044,23 +1148,47 @@
         function closeMenuFunc() {
             mobileMenu.classList.remove('translate-x-0');
             mobileMenu.classList.add('translate-x-full');
-            menuBackdrop.classList.add('hidden');
+            menuBackdrop.classList.remove('show');
             document.body.classList.remove('menu-open');
             menuIcon.classList.remove('hidden');
             closeIcon.classList.add('hidden');
+
+            // Close all dropdowns when menu closes
+            document.querySelectorAll('.mobile-dropdown-content').forEach(content => {
+                content.classList.remove('show');
+            });
+            document.querySelectorAll('.dropdown-arrow').forEach(arrow => {
+                arrow.classList.remove('rotate-180');
+            });
         }
 
+        // Event listeners
         menuToggle?.addEventListener('click', openMenu);
         closeMenu?.addEventListener('click', closeMenuFunc);
         menuBackdrop?.addEventListener('click', closeMenuFunc);
 
-        // Mobile Dropdown
+        // Mobile Dropdown Toggle
         document.querySelectorAll('.mobile-dropdown-trigger').forEach(trigger => {
-            trigger.addEventListener('click', function() {
+            trigger.addEventListener('click', function(e) {
+                e.preventDefault();
                 const content = this.nextElementSibling;
                 const arrow = this.querySelector('.dropdown-arrow');
 
-                content.classList.toggle('hidden');
+                // Close other dropdowns
+                document.querySelectorAll('.mobile-dropdown-content').forEach(otherContent => {
+                    if (otherContent !== content) {
+                        otherContent.classList.remove('show');
+                    }
+                });
+
+                document.querySelectorAll('.dropdown-arrow').forEach(otherArrow => {
+                    if (otherArrow !== arrow) {
+                        otherArrow.classList.remove('rotate-180');
+                    }
+                });
+
+                // Toggle current dropdown
+                content.classList.toggle('show');
                 arrow.classList.toggle('rotate-180');
             });
         });
@@ -1075,6 +1203,13 @@
             if (window.innerWidth >= 1024) {
                 closeMenuFunc();
             }
+        });
+
+        // Prevent scroll propagation on mobile menu
+        mobileMenu?.addEventListener('touchmove', function(e) {
+            e.stopPropagation();
+        }, {
+            passive: false
         });
     </script>
 
