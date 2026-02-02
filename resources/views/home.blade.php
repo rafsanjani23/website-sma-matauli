@@ -131,7 +131,7 @@
                     <ul class="nav-dropdown-content">
                         <li><a href="{{ url('/sejarah') }}" class="dropdown-item">Sejarah
                                 Sekolah</a></li>
-                        <li><a href="{{ url('/tentang-kami#visi-misi') }}" class="dropdown-item">Visi & Misi</a></li>
+                        <li><a href="{{ url('/visi-misi') }}" class="dropdown-item">Visi & Misi</a></li>
                         <li><a href="{{ url('/tentang-kami#kurikulum') }}" class="dropdown-item">Kurikulum Sekolah</a>
                         </li>
                         <li><a href="{{ url('/tentang-kami#tenaga-pendidik') }}" class="dropdown-item">Tenaga Pendidik
@@ -250,7 +250,7 @@
                         <li><a href="{{ url('/sejarah') }}"
                                 class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Sejarah
                                 Sekolah</a></li>
-                        <li><a href="{{ url('/tentang-kami#visi-misi') }}"
+                        <li><a href="{{ url('/visi-misi') }}"
                                 class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Visi
                                 & Misi</a></li>
                         <li><a href="{{ url('/tentang-kami#kurikulum') }}"
