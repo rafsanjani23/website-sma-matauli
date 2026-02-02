@@ -91,15 +91,6 @@
             height: 100%;
         }
 
-        /* Desktop Navigation */
-        .navlink-hover {
-            color: #fff9f9;
-            transition: color 0.3s ease;
-        }
-
-        .navlink-hover:hover {
-            color: #fbbf24;
-        }
 
         .nav-dropdown-content {
             position: absolute;
@@ -266,8 +257,8 @@
                 <li class="relative group">
                     <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
                         Tentang Kami
-                        <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
-                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
@@ -291,8 +282,8 @@
                 <li class="relative group">
                     <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
                         Program
-                        <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
-                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
@@ -308,10 +299,9 @@
                 <li class="relative group">
                     <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
                         Dokumentasi
-                        <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
-                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 9l-7 7-7-7" />
+                        <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
 
@@ -328,10 +318,9 @@
             <!-- Mobile Menu Button -->
             <button id="menuToggle" aria-label="Toggle menu" type="button"
                 class="inline-flex lg:hidden items-center justify-center p-2 rounded-md text-white hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition-colors">
-                <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4 6h16M4 12h16M4 18h16" />
+                <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
                 <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none"
                     viewBox="0 0 24 24" stroke="currentColor">
@@ -384,10 +373,9 @@
                     <button
                         class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
                         <span>Tentang Kami</span>
-                        <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300"
-                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 9l-7 7-7-7" />
+                        <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
                     <ul class="mobile-dropdown-content bg-gray-50">
@@ -420,10 +408,9 @@
                     <button
                         class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
                         <span>Program</span>
-                        <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300"
-                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 9l-7 7-7-7" />
+                        <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
                     <ul class="mobile-dropdown-content bg-gray-50">
@@ -441,10 +428,9 @@
                     <button
                         class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
                         <span>Dokumentasi</span>
-                        <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300"
-                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 9l-7 7-7-7" />
+                        <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
                     <ul class="mobile-dropdown-content bg-gray-50">
@@ -885,7 +871,7 @@
 
         // Mobile Dropdown Toggle
         document.querySelectorAll('.mobile-dropdown-trigger').forEach(trigger => {
-            trigger.addEventListener('click', function(e) {
+            trigger.addEventListener('click', function (e) {
                 e.preventDefault();
                 const content = this.nextElementSibling;
                 const arrow = this.querySelector('.dropdown-arrow');
@@ -915,14 +901,14 @@
         });
 
         // Handle window resize
-        window.addEventListener('resize', function() {
+        window.addEventListener('resize', function () {
             if (window.innerWidth >= 1024) {
                 closeMenuFunc();
             }
         });
 
         // Prevent scroll propagation on mobile menu
-        mobileMenu?.addEventListener('touchmove', function(e) {
+        mobileMenu?.addEventListener('touchmove', function (e) {
             e.stopPropagation();
         }, {
             passive: false
