@@ -647,7 +647,7 @@
     <!-- ============================================ -->
     <!-- SEJARAH SEKOLAH SECTION - START -->
     <!-- ============================================ -->
-    <section class="py-12 md:py-20 lg:py-24 bg-gradient-to-b from-white to-gray-50">
+    <section class="py-12 md:py-20 lg:py-24 bg-linear-to-b from-white to-gray-50">
         <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
 
             <!-- Page Title -->
@@ -656,7 +656,7 @@
                     Sejarah Sekolah
                 </h1>
                 <div
-                    class="w-20 md:w-32 h-1 md:h-1.5 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-400 mx-auto mb-4 md:mb-6">
+                    class="w-20 md:w-32 h-1 md:h-1.5 bg-linear-to-r from-yellow-400 via-yellow-500 to-yellow-400 mx-auto mb-4 md:mb-6">
                 </div>
                 <p class="text-gray-600 text-sm md:text-lg max-w-3xl mx-auto leading-relaxed px-4">
                     Perjalanan panjang SMAN 1 Matauli Pandan dalam mencetak generasi unggul dan berkarakter sejak
@@ -682,7 +682,7 @@
                         <!-- Mobile Dot -->
                         <div class="mobile-dot-wrapper md:hidden">
                             <div
-                                class="w-14 h-14 rounded-full bg-gradient-to-br from-matauli-red-dark to-red-900 flex items-center justify-center shadow-xl timeline-dot ring-4 ring-white">
+                                class="w-14 h-14 rounded-full bg-linear-to-br from-matauli-red-dark to-red-900 flex items-center justify-center shadow-xl timeline-dot ring-4 ring-white">
                                 <span class="text-white font-bold text-base">94</span>
                             </div>
                         </div>
@@ -705,7 +705,7 @@
                             <!-- Desktop Dot -->
                             <div class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex">
                                 <div
-                                    class="w-20 h-20 rounded-full bg-gradient-to-br from-matauli-red-dark to-red-900 flex items-center justify-center shadow-xl timeline-dot ring-4 ring-white">
+                                    class="w-20 h-20 rounded-full bg-linear-to-br from-matauli-red-dark to-red-900 flex items-center justify-center shadow-xl timeline-dot ring-4 ring-white">
                                     <span class="text-white font-bold text-xl">94</span>
                                 </div>
                             </div>
@@ -719,7 +719,7 @@
                         <!-- Mobile Dot -->
                         <div class="mobile-dot-wrapper md:hidden">
                             <div
-                                class="w-14 h-14 rounded-full bg-gradient-to-br from-matauli-red-dark to-red-900 flex items-center justify-center shadow-xl timeline-dot ring-4 ring-white">
+                                class="w-14 h-14 rounded-full bg-linear-to-br from-matauli-red-dark to-red-900 flex items-center justify-center shadow-xl timeline-dot ring-4 ring-white">
                                 <span class="text-white font-bold text-base">08</span>
                             </div>
                         </div>
@@ -730,7 +730,7 @@
                             <!-- Desktop Dot -->
                             <div class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex">
                                 <div
-                                    class="w-20 h-20 rounded-full bg-gradient-to-br from-matauli-red-dark to-red-900 flex items-center justify-center shadow-xl timeline-dot ring-4 ring-white">
+                                    class="w-20 h-20 rounded-full bg-linear-to-br from-matauli-red-dark to-red-900 flex items-center justify-center shadow-xl timeline-dot ring-4 ring-white">
                                     <span class="text-white font-bold text-xl">08</span>
                                 </div>
                             </div>
@@ -757,7 +757,7 @@
                         <!-- Mobile Dot -->
                         <div class="mobile-dot-wrapper md:hidden">
                             <div
-                                class="w-14 h-14 rounded-full bg-gradient-to-br from-matauli-red-dark to-red-900 flex items-center justify-center shadow-xl timeline-dot ring-4 ring-white">
+                                class="w-14 h-14 rounded-full bg-linear-to-br from-matauli-red-dark to-red-900 flex items-center justify-center shadow-xl timeline-dot ring-4 ring-white">
                                 <span class="text-white font-bold text-base">12</span>
                             </div>
                         </div>
@@ -781,7 +781,7 @@
                             <!-- Desktop Dot -->
                             <div class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex">
                                 <div
-                                    class="w-20 h-20 rounded-full bg-gradient-to-br from-matauli-red-dark to-red-900 flex items-center justify-center shadow-xl timeline-dot ring-4 ring-white">
+                                    class="w-20 h-20 rounded-full bg-linear-to-br from-matauli-red-dark to-red-900 flex items-center justify-center shadow-xl timeline-dot ring-4 ring-white">
                                     <span class="text-white font-bold text-xl">12</span>
                                 </div>
                             </div>
@@ -795,7 +795,7 @@
                         <!-- Mobile Dot -->
                         <div class="mobile-dot-wrapper md:hidden">
                             <div
-                                class="w-14 h-14 rounded-full bg-gradient-to-br from-matauli-red-dark to-red-900 flex items-center justify-center shadow-xl timeline-dot ring-4 ring-white">
+                                class="w-14 h-14 rounded-full bg-linear-to-br from-matauli-red-dark to-red-900 flex items-center justify-center shadow-xl timeline-dot ring-4 ring-white">
                                 <span class="text-white font-bold text-base">14</span>
                             </div>
                         </div>
@@ -806,7 +806,7 @@
                             <!-- Desktop Dot -->
                             <div class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex">
                                 <div
-                                    class="w-20 h-20 rounded-full bg-gradient-to-br from-matauli-red-dark to-red-900 flex items-center justify-center shadow-xl timeline-dot ring-4 ring-white">
+                                    class="w-20 h-20 rounded-full bg-linear-to-br from-matauli-red-dark to-red-900 flex items-center justify-center shadow-xl timeline-dot ring-4 ring-white">
                                     <span class="text-white font-bold text-xl">14</span>
                                 </div>
                             </div>
@@ -832,7 +832,7 @@
                         <!-- Mobile Dot -->
                         <div class="mobile-dot-wrapper md:hidden">
                             <div
-                                class="w-14 h-14 rounded-full bg-gradient-to-br from-matauli-red-dark to-red-900 flex items-center justify-center shadow-xl timeline-dot ring-4 ring-white">
+                                class="w-14 h-14 rounded-full bg-linear-to-br from-matauli-red-dark to-red-900 flex items-center justify-center shadow-xl timeline-dot ring-4 ring-white">
                                 <span class="text-white font-bold text-base">21</span>
                             </div>
                         </div>
@@ -855,7 +855,7 @@
                             <!-- Desktop Dot -->
                             <div class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex">
                                 <div
-                                    class="w-20 h-20 rounded-full bg-gradient-to-br from-matauli-red-dark to-red-900 flex items-center justify-center shadow-xl timeline-dot ring-4 ring-white">
+                                    class="w-20 h-20 rounded-full bg-linear-to-br from-matauli-red-dark to-red-900 flex items-center justify-center shadow-xl timeline-dot ring-4 ring-white">
                                     <span class="text-white font-bold text-xl">21</span>
                                 </div>
                             </div>
@@ -869,7 +869,7 @@
                         <!-- Mobile Dot -->
                         <div class="mobile-dot-wrapper md:hidden">
                             <div
-                                class="w-14 h-14 rounded-full bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center shadow-xl ring-4 ring-white animate-pulse">
+                                class="w-14 h-14 rounded-full bg-linear-to-br from-yellow-500 to-yellow-600 flex items-center justify-center shadow-xl ring-4 ring-white animate-pulse">
                                 <span class="text-white font-bold text-base">25</span>
                             </div>
                         </div>
@@ -880,7 +880,7 @@
                             <!-- Desktop Dot -->
                             <div class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex">
                                 <div
-                                    class="w-20 h-20 rounded-full bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center shadow-xl ring-4 ring-white animate-pulse">
+                                    class="w-20 h-20 rounded-full bg-linear-to-br from-yellow-500 to-yellow-600 flex items-center justify-center shadow-xl ring-4 ring-white animate-pulse">
                                     <span class="text-white font-bold text-xl">25</span>
                                 </div>
                             </div>
@@ -888,7 +888,7 @@
                             <!-- Content -->
                             <div class="md:text-left">
                                 <div
-                                    class="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl md:rounded-2xl shadow-lg md:shadow-xl p-4 md:p-8 hover:shadow-2xl transition-all duration-300 border-l-4 border-yellow-500">
+                                    class="bg-linear-to-br from-yellow-50 to-orange-50 rounded-xl md:rounded-2xl shadow-lg md:shadow-xl p-4 md:p-8 hover:shadow-2xl transition-all duration-300 border-l-4 border-yellow-500">
                                     <div class="flex flex-wrap items-center gap-2 mb-2 md:mb-3">
                                         <h3 class="text-lg md:text-3xl font-bold text-yellow-600">
                                             2025 - Transformasi Edukasi
@@ -915,7 +915,7 @@
             <!-- Statistics Section -->
             <div class="mt-16 md:mt-24">
                 <div
-                    class="bg-gradient-to-br from-matauli-red-dark to-red-900 rounded-2xl md:rounded-3xl shadow-2xl p-6 md:p-12">
+                    class="bg-linear-to-br from-matauli-red-dark to-red-900 rounded-2xl md:rounded-3xl shadow-2xl p-6 md:p-12">
                     <h2 class="text-xl md:text-3xl font-bold text-white text-center mb-6 md:mb-12">
                         31 Tahun Perjalanan Mencerdaskan Bangsa
                     </h2>
