@@ -1,6 +1,6 @@
 <footer class="bg-matauli-red-dark text-white">
     <div class="relative mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 py-12 md:py-16">
-        <div class="grid grid-cols-1 lg:grid-cols-4 gap-10 lg:gap-25">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-25">
 
             <!-- Column 1: Logo & School Name -->
             <div class="flex flex-col items-start gap-6 pl-3 lg:pl-6">
