@@ -579,7 +579,7 @@
     <!-- ============================================ -->
     <!-- VISI SECTION - START -->
     <!-- ============================================ -->
-    <section class="py-12 md:py-16 bg-gradient-to-br from-matauli-red-dark to-red-900">
+    <section class="py-12 md:py-16 bg-linear-to-brrom-matauli-red-dark to-red-900">
         <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
 
             <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -637,7 +637,7 @@
                         <!-- Misi 1 -->
                         <div class="flex items-start gap-3 md:gap-4">
                             <div
-                                class="flex-shrink-0 w-7 h-7 md:w-8 md:h-8 rounded-full bg-matauli-red-dark flex items-center justify-center text-white font-bold text-xs md:text-sm">
+                                class="shrink-0 w-7 h-7 md:w-8 md:h-8 rounded-full bg-matauli-red-dark flex items-center justify-center text-white font-bold text-xs md:text-sm">
                                 1
                             </div>
                             <p class="text-gray-700 text-sm md:text-base leading-relaxed pt-0.5">
@@ -649,7 +649,7 @@
                         <!-- Misi 2 -->
                         <div class="flex items-start gap-3 md:gap-4">
                             <div
-                                class="flex-shrink-0 w-7 h-7 md:w-8 md:h-8 rounded-full bg-matauli-red-dark flex items-center justify-center text-white font-bold text-xs md:text-sm">
+                                class="shrink-0 w-7 h-7 md:w-8 md:h-8 rounded-full bg-matauli-red-dark flex items-center justify-center text-white font-bold text-xs md:text-sm">
                                 2
                             </div>
                             <p class="text-gray-700 text-sm md:text-base leading-relaxed pt-0.5">
@@ -661,7 +661,7 @@
                         <!-- Misi 3 -->
                         <div class="flex items-start gap-3 md:gap-4">
                             <div
-                                class="flex-shrink-0 w-7 h-7 md:w-8 md:h-8 rounded-full bg-matauli-red-dark flex items-center justify-center text-white font-bold text-xs md:text-sm">
+                                class="shrink-0 w-7 h-7 md:w-8 md:h-8 rounded-full bg-matauli-red-dark flex items-center justify-center text-white font-bold text-xs md:text-sm">
                                 3
                             </div>
                             <p class="text-gray-700 text-sm md:text-base leading-relaxed pt-0.5">

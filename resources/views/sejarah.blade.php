@@ -648,7 +648,7 @@
     <!-- SEJARAH SEKOLAH SECTION - START -->
     <!-- ============================================ -->
     <!-- HERO IMAGE FULL WIDTH -->
-    <section class="relative w-full h-[300px] sm:h-[380px] md:h-[520px] lg:h-[620px] overflow-hidden">
+    <section class="relative w-full h-75 sm:h-95 md:h-130 lg:h-155 overflow-hidden">
         <img src="{{ asset('assets/paduansuara.JPG') }}" alt="Paduan Suara SMAN 1 Matauli Pandan"
             class="absolute inset-0 w-full h-full object-cover">
 
