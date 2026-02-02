@@ -11,3 +11,6 @@ Route::get('/welcome', function () {
 Route::get('/sejarah', function () {
     return view('sejarah');
 });
+Route::get('/visi-misi', function () {
+    return view('visi-misi');
+})->name('visi-misi');
