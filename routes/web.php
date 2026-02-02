@@ -3,14 +3,11 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home');
-});
-Route::get('/welcome', function () {
     return view('pages.home');
 });
 Route::get('/sejarah', function () {
-    return view('sejarah');
-});
+    return view('pages.sejarah');
+})->name('sejarah');
 Route::get('/visi-misi', function () {
-    return view('visi-misi');
+    return view('pages.visi-misi');
 })->name('visi-misi');
