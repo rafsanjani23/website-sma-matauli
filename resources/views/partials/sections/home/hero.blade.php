@@ -24,7 +24,7 @@
                             Bergabung dan Tumbuh Bersama SMA Negeri 1 Matauli Pandan
                         </p>
                         <a href="{{ url('/ppdb') }}"
-                            class="inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-4 py-3 md:px-8 md:py-4 rounded-lg transition-all hover:scale-105 shadow-lg text-sm">
+                            class="inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-4 py-2 md:px-6 md:py-3 rounded-lg transition-all hover:scale-105 shadow-lg text-sm md:text-base">
                             Daftar Disini
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" viewBox="0 0 20 20"
                                 fill="currentColor">
@@ -59,7 +59,7 @@
                             Pancasila.
                         </p>
                         <a href="{{ url('/program#ib-program') }}"
-                            class="inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-4 py-3 md:px-8 md:py-4 rounded-lg transition-all hover:scale-105 shadow-lg text-sm">
+                            class="inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-4 py-2 md:px-6 md:py-3 rounded-lg transition-all hover:scale-105 shadow-lg text-sm md:text-base">
                             Kenali Program IB
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" viewBox="0 0 20 20"
                                 fill="currentColor">
@@ -92,7 +92,7 @@
                             Didukung Teknologi dan Tenaga Pengajar Profesional
                         </p>
                         <a href="{{ url('/tentang-kami#fasilitas') }}"
-                            class="inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-4 py-3 md:px-8 md:py-4 rounded-lg transition-all hover:scale-105 shadow-lg text-sm">
+                            class="inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-4 py-2 md:px-6 md:py-3 rounded-lg transition-all hover:scale-105 shadow-lg text-sm md:text-base">
                             Lihat Fasilitas
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" viewBox="0 0 20 20"
                                 fill="currentColor">

@@ -215,13 +215,13 @@
                     </div>
                 </div>
 
-                <!-- 2025 - Transformasi Edukasi -->
+                <!-- 2026 - Transformasi Edukasi -->
                 <div class="timeline-card mobile-timeline-item">
                     <!-- Mobile Dot -->
                     <div class="mobile-dot-wrapper md:hidden">
                         <div
                             class="w-14 h-14 rounded-full bg-linear-to-br from-yellow-500 to-yellow-600 flex items-center justify-center shadow-xl ring-4 ring-white animate-pulse">
-                            <span class="text-white font-bold text-base">25</span>
+                            <span class="text-white font-bold text-base">26</span>
                         </div>
                     </div>
 
@@ -232,7 +232,7 @@
                         <div class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex">
                             <div
                                 class="w-20 h-20 rounded-full bg-linear-to-br from-yellow-500 to-yellow-600 flex items-center justify-center shadow-xl ring-4 ring-white animate-pulse">
-                                <span class="text-white font-bold text-xl">25</span>
+                                <span class="text-white font-bold text-xl">26</span>
                             </div>
                         </div>
 
@@ -242,7 +242,7 @@
                                 class="bg-linear-to-br from-yellow-50 to-orange-50 rounded-xl md:rounded-2xl shadow-lg md:shadow-xl p-4 md:p-8 hover:shadow-2xl transition-all duration-300 border-l-4 border-yellow-500">
                                 <div class="flex flex-wrap items-center gap-2 mb-2 md:mb-3">
                                     <h3 class="text-lg md:text-3xl font-bold text-yellow-600">
-                                        2025 - Transformasi Edukasi
+                                        2026 - Transformasi Edukasi
                                     </h3>
                                     <span
                                         class="bg-yellow-500 text-white text-xs font-bold px-2 md:px-3 py-1 rounded-full animate-pulse">
