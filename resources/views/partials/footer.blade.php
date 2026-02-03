@@ -7,7 +7,7 @@
         <div class="absolute bottom-0 right-0 w-96 h-96 bg-yellow-400 rounded-full blur-3xl"></div>
     </div>
 
-    <div class="relative mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 py-12 md:py-16 lg:py-20">
+    <div class="relative mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 pt-12 md:pt-16 lg:pt-20 pb-6 md:pb-8">
 
         <!-- Main Footer Content -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 lg:gap-12">
@@ -216,7 +216,7 @@
                 </h3>
 
                 <!-- Social Media Icons -->
-                <div class="flex flex-wrap gap-3 mb-6">
+                <div class="flex flex-wrap gap-3">
 
                     <!-- Facebook -->
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
@@ -274,8 +274,8 @@
                     </a>
                 </div>
 
-                <!-- Newsletter (Optional) -->
-                {{-- <div class="mt-4">
+                {{-- <!-- Newsletter (Optional) -->
+                <div class="mt-4">
                     <p class="text-xs text-gray-300 mb-3">Dapatkan update terbaru langsung di inbox Anda</p>
                     <div class="flex gap-2">
                         <input type="email" placeholder="Email Anda"
@@ -295,11 +295,18 @@
         </div>
 
         <!-- Bottom Bar -->
-        <div class="mt-12 pt-8 border-t border-white/10">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-                <p class="text-gray-300 text-center md:text-left flex items-center gap-2">
-                    Dikembangkan oleh<span class="text-yellow-500 font-semibold">YANG IT IT AJA</span>
+        <div class="mt-8 pt-5 border-t border-white/10">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
+                <p class="text-gray-300 text-center md:text-left flex items-center gap-1">
+                    Dikembangkan dengan<span class="text-yellow-400 font-bold">YANG IT IT AJA</span>
                 </p>
+                {{-- <div class="flex gap-4 text-gray-300">
+                    <a href="{{ url('/privacy-policy') }}" class="hover:text-yellow-400 transition text-sm">Kebijakan
+                        Privasi</a>
+                    <span>•</span>
+                    <a href="{{ url('/terms') }}" class="hover:text-yellow-400 transition text-sm">Syarat &
+                        Ketentuan</a>
+                </div> --}}
             </div>
         </div>
 
