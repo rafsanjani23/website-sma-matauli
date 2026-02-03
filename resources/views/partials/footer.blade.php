@@ -32,8 +32,10 @@
 
                     <!-- Text -->
                     <div class="flex flex-col justify-center leading-tight">
-                        <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-white drop-shadow-lg">
-                            <span class="block tracking-wider">SMAN 1</span>
+                        <h2 class="text-2xl lg:text-3xl font-bold text-white">
+                            <span class="inline-flex items-center tracking-widest">
+                                SMAN <span class="ml-2.5 lg:ml-3.5">1</span>
+                            </span>
                             <span class="block">MATAULI</span>
                             <span class="block tracking-wide">PANDAN</span>
                         </h2>
