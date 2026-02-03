@@ -41,7 +41,7 @@
         <!-- Slide 2 - Program IB -->
         <div id="ib" class="hero-slide absolute inset-0 pointer-events-none">
             <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
-            <img src="{{ asset('assets/Background IB Program1.JPG') }}" alt="IB Program"
+            <img src="{{ asset('assets/Background IB Program.JPG') }}" alt="IB Program"
                 class="w-full h-full object-cover">
             <div class="absolute inset-0 z-20 flex items-center pointer-events-auto">
                 <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">

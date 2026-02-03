@@ -8,7 +8,7 @@
 
             <!-- Image -->
             <div class="order-2 md:order-1">
-                <img src="{{ asset('assets/visi-misi.JPG') }}" alt="Misi SMAN 1 Matauli"
+                <img src="{{ asset('assets/visi-misi4.JPG') }}" alt="Misi SMAN 1 Matauli"
                     class="w-full h-56 md:h-96 object-cover rounded-xl shadow-lg md:sticky md:top-24">
             </div>
 
