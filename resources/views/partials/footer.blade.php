@@ -10,7 +10,7 @@
     <div class="relative mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 pt-12 md:pt-16 lg:pt-20 pb-6 md:pb-8">
 
         <!-- Main Footer Content -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 lg:gap-12">
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 lg:gap-12">
 
             <!-- Column 1: Logo & School Name -->
             <div class="flex flex-col items-center sm:items-start gap-6 lg:col-span-1">
