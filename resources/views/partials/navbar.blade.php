@@ -130,7 +130,26 @@
                     <li><a href="{{ url('/tentang-kami#asrama') }}" class="dropdown-item">Tentang Asrama</a></li>
                 </ul>
             </li>
+<!-- dropdown tentang asrama -->
+            <li class="relative group">
+                <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
+                    Tentang Asrama
+                    <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
 
+                <ul class="nav-dropdown-content">
+                    <li><a href="{{ url('/#') }}" class="dropdown-item">Fasilitas Asrama</a>
+                    </li>
+                    <li><a href="{{ url('/#') }}" class="dropdown-item">Kegiatan Asrama</a>
+                    </li>
+                </ul>
+            </li>
+<!-- dropdown tentang asrama end -->
+
+<!--dropdown program  -->
             <li class="relative group">
                 <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
                     Program
@@ -147,10 +166,30 @@
                     </li>
                 </ul>
             </li>
+<!-- dropdown program end -->
+
+<!-- dropdown alumni -->
+            <li class="relative group">
+                <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
+                    Alumni
+                    <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+
+                <ul class="nav-dropdown-content">
+                    <li><a href="{{ url('/program#prestasi-siswa') }}" class="dropdown-item">Prestasi Siswa </a>
+                    </li>
+                    <li><a href="{{ url('/program#ekstrakulikuler') }}" class="dropdown-item">Ekstrakulikuler</a>
+                    </li>
+                </ul>
+            </li>
+<!-- dropdown alumni end -->
 
             <li class="relative group">
                 <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
-                    Dokumentasi
+                    Galeri
                     <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -255,7 +294,26 @@
                 </ul>
             </li>
 
-            <!-- Dropdown Menu: Program -->
+            <!-- Dropdown Menu: tentang asrama-->
+            <li class="border-b border-gray-100">
+                <button
+                    class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
+                    <span>Tentang Asrama</span>
+                    <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <ul class="mobile-dropdown-content bg-gray-50">
+                    <li><a href="{{ url('/asrama#fasilitas-asrama') }}"
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Fasilitas Asrama</a></li>
+                    <li><a href="{{ url('/asrama#kegiatan-asrama') }}"
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Kegiatan Asrama</a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- dropdown program -->
             <li class="border-b border-gray-100">
                 <button
                     class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
@@ -275,11 +333,31 @@
                 </ul>
             </li>
 
+            <!-- dropdown alumni -->
+            <li class="border-b border-gray-100">
+                <button
+                    class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
+                    <span>Alumni</span>
+                    <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <ul class="mobile-dropdown-content bg-gray-50">
+                    <li><a href="{{ url('/program#prestasi-siswa') }}"
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Prestasi
+                            Siswa</a></li>
+                    <li><a href="{{ url('/program#ekstrakulikuler') }}"
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Ekstrakurikuler</a>
+                    </li>
+                </ul>
+            </li>
+
             <!-- Dropdown Menu: Dokumentasi -->
             <li class="border-b border-gray-100">
                 <button
                     class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
-                    <span>Dokumentasi</span>
+                    <span>Galeri</span>
                     <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
