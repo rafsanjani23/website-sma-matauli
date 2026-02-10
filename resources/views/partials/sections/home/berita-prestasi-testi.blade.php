@@ -1,5 +1,5 @@
 <section id="berita-prestasi-testi" class="py-12">
-    <div class="max-w-7xl mx-auto px-4">
+    <div class="max-w-7xl mx-auto px-10">
 
         <!-- Header -->
         <header class="mb-5 text-center">
@@ -10,7 +10,7 @@
         </header>
 
         <!-- Tab List -->
-        <div class="flex justify-center mb-10">
+        <div class="flex justify-center mb-5">
             <div role="tablist" aria-orientation="horizontal"
                 class="inline-flex justify-center gap-2 p-1 bg-matauli-red-dark rounded-full w-lg">
                 <button role="tab" id="tab-berita" aria-selected="true" aria-controls="gallery-berita" class="px-13 py-3 rounded-full text-md font-medium transition-all duration-200
