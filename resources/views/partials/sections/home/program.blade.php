@@ -7,36 +7,30 @@
         <!-- Section Title -->
         <div class="text-center mb-12 md:mb-16">
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-matauli-red-dark mb-4">
-                Peminatan Jurusan
+                Program Sekolah
             </h2>
             <div class="w-20 md:w-24 h-1 bg-yellow-400 mx-auto"></div>
         </div>
 
-        <!-- Jurusan Grid -->
+        <!-- program Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 max-w-4xl mx-auto">
 
-            <!-- IPA Card -->
-            <a href="{{ url('/program/ipa') }}" class="group block">
+            <!-- pre ib Card -->
+            <a href="{{ url('/program/pre-ib') }}" class="group block">
                 <div
                     class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-gray-100 hover:border-yellow-400 cursor-pointer">
                     <!-- Image Container -->
                     <div class="relative h-48 md:h-56 overflow-hidden">
                         <img src="{{ asset('assets/ipa-jurusan.jpg') }}" alt="Jurusan IPA"
                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <!-- Label Badge -->
-                        <div
-                            class="absolute top-4 left-4 bg-yellow-400 text-black font-bold px-4 py-2 rounded-lg shadow-lg">
-                            IPA
-                        </div>
                     </div>
                     <!-- Content -->
                     <div class="p-6 md:p-8 text-center">
                         <h3
                             class="text-2xl md:text-3xl font-bold text-gray-900 mb-3 group-hover:text-matauli-red-dark transition-colors">
-                            Ilmu Pengetahuan Alam</h3>
+                            Program Pre-Internasional Baccaulareate</h3>
                         <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-4">
-                            Fokus pada Matematika, Fisika, Kimia, dan Biologi untuk persiapan karir di bidang sains
-                            dan teknologi.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, consequatur voluptas! Cum beatae libero eligendi quos tempore sunt, veritatis officia aperiam? Pariatur voluptatem temporibus magni. Aut recusandae enim consequuntur corrupti?
                         </p>
                         <!-- CTA Arrow -->
                         <div
@@ -54,7 +48,7 @@
                 </div>
             </a>
 
-            <!-- IPS Card -->
+            <!-- matauli Card -->
             <a href="{{ url('/program/ips') }}" class="group block">
                 <div
                     class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-gray-100 hover:border-yellow-400 cursor-pointer">
@@ -62,20 +56,14 @@
                     <div class="relative h-48 md:h-56 overflow-hidden">
                         <img src="{{ asset('assets/ips-jurusan.jpg') }}" alt="Jurusan IPS"
                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <!-- Label Badge -->
-                        <div
-                            class="absolute top-4 left-4 bg-yellow-400 text-black font-bold px-4 py-2 rounded-lg shadow-lg">
-                            IPS
-                        </div>
                     </div>
                     <!-- Content -->
                     <div class="p-6 md:p-8 text-center">
                         <h3
                             class="text-2xl md:text-3xl font-bold text-gray-900 mb-3 group-hover:text-matauli-red-dark transition-colors">
-                            Ilmu Pengetahuan Sosial</h3>
+                            Program Khusus Kemataulian</h3>
                         <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-4">
-                            Fokus pada Ekonomi, Sosiologi, Geografi, dan Sejarah untuk persiapan karir di bidang
-                            sosial dan humaniora.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore beatae obcaecati dignissimos molestias, accusamus laboriosam delectus vero aperiam qui earum voluptate cum deleniti, illo error excepturi magni quasi eius assumenda?
                         </p>
                         <!-- CTA Arrow -->
                         <div
