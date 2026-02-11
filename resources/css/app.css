@@ -1,6 +1,7 @@
 @import "tailwindcss";
-@import './custom.css';
-@import './sejarah.css';
+@import "./custom.css";
+@import "./sejarah.css";
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap");
 
 @source "../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php";
 @source "../../storage/framework/views/*.php";
@@ -8,7 +9,7 @@
 @source "../**/*.js";
 
 @theme {
-    --font-sans: "Instrument Sans", ui-sans-serif, system-ui;
+    --font-sans: "Poppins", ui-sans-serif, system-ui;
     --color-matauli-blue-dark: #0a1628;
     --color-matauli-blue: #1e3a8a;
     --color-matauli-blue-light: #2d4a9a;
