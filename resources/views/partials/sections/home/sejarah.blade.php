@@ -1,24 +1,24 @@
 <!-- ============================================ -->
 <!-- SEJARAH SECTION - START -->
 <!-- ============================================ -->
-<section class="py-16 md:py-20 lg:py-24 bg-gradient-to-r from-rose-300 via-red-700 to-red-900 relative overflow-hidden">
+<section class="bg-gradient-to-r from-rose-300 via-red-700 to-red-900 relative overflow-hidden mt-10">
 
-    <!-- Decorative Background -->
+    <!-- Decorative Background
     <div class="absolute inset-0 opacity-10 pointer-events-none">
         <div class="absolute -top-10 -left-10 w-96 h-96 bg-black rounded-full blur-3xl"></div>
         <div class="absolute -bottom-10 -right-10 w-96 h-96 bg-rose-400 rounded-full blur-3xl"></div>
-    </div>
+    </div> -->
 
-    <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 relative z-10">
+    <div class="container mx-auto relative z-10">
 
-        <div class="grid md:grid-cols-2 gap-10 md:gap-14 lg:gap-16 items-center">
+        <div class="grid md:grid-cols-2 gap-14 md:gap-16 lg:gap-18 items-center">
 
             <!-- Left Column: Image -->
-            <div class="order-2 md:order-1" data-aos="fade-right">
-                <div class="relative">
+            <div class="order-2 md:order-1 h-[680px] w-full" data-aos="fade-right">
+                <div class="relative ">
                     <img src="{{ asset('assets/feisal-dan-akbar tanjung.png') }}"
                         alt="Pendiri SMAN 1 Matauli Pandan - Jenderal TNI Feisal Tanjung dan Dr. Ir. H. Akbar Tandjung"
-                        class="w-full h-auto rounded-2xl shadow-2xl object-cover">
+                        class="w-full h-full rounded-2xl shadow-rose-300 object-cover">
                 </div>
             </div>
 
@@ -26,9 +26,9 @@
             <div class="order-1 md:order-2" data-aos="fade-left">
 
                 <!-- Title -->
-                <div class="mb-6 md:mb-8">
+                <div class="mb-2 md:mb-4">
                     <h2
-                        class="text-4xl md:text-5xl lg:text-6xl font-bold text-yellow-400 italic font-libre mb-3 md:mb-4">
+                        class="text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-400 italic font-libre mb-2 md:mb-3">
                         Sejarah
                     </h2>
 
@@ -51,9 +51,9 @@
                 <!-- CTA -->
                 <div>
                     <a href="{{ url('/sejarah') }}"
-                        class="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 
-                               text-black font-semibold px-6 py-3 md:px-8 md:py-4 
-                               rounded-xl transition-all duration-300 
+                        class="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500
+                               text-black font-semibold px-6 py-3 md:px-8 md:py-4
+                               rounded-xl transition-all duration-300
                                hover:scale-105 shadow-lg text-sm md:text-base">
                         Baca lebih lanjut
                     </a>
