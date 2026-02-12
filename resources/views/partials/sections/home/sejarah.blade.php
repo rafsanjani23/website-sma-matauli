@@ -14,7 +14,7 @@
             <div class="grid md:grid-cols-2 gap-14 md:gap-16 lg:gap-18 items-center">
 
                 <!-- Left Column: Image -->
-                <div class="order-2 md:order-1 h-170 max-h-sm w-full" data-aos="fade-right">
+                <div class="order-2 md:order-1 h-170 max-h-sm w-full scroll-animate opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
                     <div class="relative">
                         <img src="{{ asset('assets/feisal-dan-akbar tanjung.png') }}"
                             alt="Pendiri SMAN 1 Matauli Pandan - Jenderal TNI Feisal Tanjung dan Dr. Ir. H. Akbar Tandjung"
@@ -23,7 +23,7 @@
                 </div>
 
                 <!-- Right Column: Content -->
-                <div class="order-1 md:order-2" data-aos="fade-left">
+                <div class="order-1 md:order-2 scroll-animate opacity-0 -translate-x-10 transition-all duration-1000 ease-in-out">
 
                     <!-- Title -->
                     <div class="mb-2 md:mb-4">

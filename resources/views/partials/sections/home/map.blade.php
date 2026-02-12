@@ -8,7 +8,7 @@
             </h2>
             <div class="w-20 md:w-30 h-1 bg-yellow-400 mx-auto mb-3"></div>
             <p class="text-gray-500">
-                Jl. KH. Dewantara No.1, Sibuluan Indah, Kec. Pandan, Kabupaten Tapanuli Tengah, Sumatera Utara 22611
+                Jl. KH. Dewantara No.1, Sibuluan Indah, Kec. Pandan, <br> Kabupaten Tapanuli Tengah, Sumatera Utara 22611
             </p>
         </div>
 

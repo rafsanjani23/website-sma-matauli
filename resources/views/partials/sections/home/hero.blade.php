@@ -5,13 +5,13 @@
     <div id="heroSlider" class="relative h-full pointer-events-auto select-none">
 
         <!-- Slide 1 - Daftar Disini -->
-        <div id="beranda" class="hero-slide active absolute inset-0 pointer-events-none">
+        <div id="beranda" class="hero-slide active absolute inset-0 pointer-events-none ease-in-out">
             <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
             <img src="{{ asset('assets/Gerbang Depan Sekolah.jpeg') }}" alt="School Building"
                 class="w-full h-full object-cover">
             <div class="absolute inset-0 z-20 flex items-center pointer-events-auto">
                 <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
-                    <div class="max-w-3xl">
+                    <div class="max-w-3xl scroll-animate translate-x-10 transition-all opacity-0 duration-1500 ease-in-out">
                         <p
                             class="text-yellow-400 font-bold text-sm md:text-lg lg:text-xl mb-3 md:mb-4 tracking-wider">
                             SMA NEGERI 1 MATAULI PANDAN
@@ -39,13 +39,13 @@
         </div>
 
         <!-- Slide 2 - Program IB -->
-        <div id="ib" class="hero-slide absolute inset-0 pointer-events-none">
+        <div id="ib" class="hero-slide absolute inset-0 pointer-events-none ease-in-out">
             <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
             <img src="{{ asset('assets/Background IB Program.JPG') }}" alt="IB Program"
                 class="w-full h-full object-cover">
             <div class="absolute inset-0 z-20 flex items-center pointer-events-auto">
                 <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
-                    <div class="max-w-3xl">
+                    <div class="max-w-3xl scroll-animate translate-x-10 transition-all opacity-0 duration-1500 ease-in-out">
                         <p
                             class="text-yellow-400 font-bold text-sm md:text-lg lg:text-xl mb-3 md:mb-4 tracking-wider">
                             SMA NEGERI 1 MATAULI PANDAN
@@ -74,12 +74,12 @@
         </div>
 
         <!-- Slide 3 - Fasilitas -->
-        <div id="asrama" class="hero-slide absolute inset-0 pointer-events-none">
+        <div id="asrama" class="hero-slide absolute inset-0 pointer-events-none ease-in-out">
             <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
             <img src="{{ asset('assets/Asrama.jpg') }}" alt="School Activities" class="w-full h-full object-cover">
             <div class="absolute inset-0 z-20 flex items-center pointer-events-auto">
                 <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
-                    <div class="max-w-3xl">
+                    <div class="max-w-3xl scroll-animate translate-x-10 transition-all opacity-0 duration-1500 ease-in-out">
                         <p
                             class="text-yellow-400 font-bold text-sm md:text-lg lg:text-xl mb-3 md:mb-4 tracking-wider">
                             FASILITAS LENGKAP
