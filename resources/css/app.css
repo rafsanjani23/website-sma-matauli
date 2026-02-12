@@ -10,6 +10,7 @@
 
 @theme {
     --font-sans: "Poppins", ui-sans-serif, system-ui;
+    --font-libre: "Libre Baskerville", serif;
     --color-matauli-blue-dark: #0a1628;
     --color-matauli-blue: #1e3a8a;
     --color-matauli-blue-light: #2d4a9a;

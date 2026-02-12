@@ -1,4 +1,4 @@
-<section id="berita-prestasi-testi" class="py-12">
+<section id="berita-prestasi-testi" class="py-12 max-w-7xl">
     <div class="max-w-7xl mx-auto px-10">
 
         <!-- Header -->
@@ -13,7 +13,7 @@
         <div class="flex justify-center mb-5">
             <div role="tablist" aria-orientation="horizontal"
                 class="inline-flex justify-center gap-2 p-1 bg-matauli-red-dark rounded-full w-lg">
-                <button role="tab" id="tab-berita" aria-selected="true" aria-controls="gallery-berita" class="px-13 py-3 rounded-full text-md font-medium transition-all duration-200
+                <button role="tab" id="tab-berita" aria-selected="true" aria-controls="gallery-berita" class="px-12 py-3 rounded-full text-md font-medium transition-all duration-200
                  outline-none focus:ring-2
                  aria-selected:bg-matauli-yellow
                  aria-selected:text-matauli-red-dark
@@ -22,7 +22,7 @@
                     Berita
                 </button>
 
-                <button role="tab" id="tab-prestasi" aria-selected="false" aria-controls="gallery-prestasi" class="px-13 py-3 rounded-full text-sm font-medium transition-all duration-200
+                <button role="tab" id="tab-prestasi" aria-selected="false" aria-controls="gallery-prestasi" class="px-12 py-3 rounded-full text-sm font-medium transition-all duration-200
                  outline-none focus:ring-2
                  aria-selected:bg-matauli-yellow
                  aria-selected:text-matauli-red-dark
@@ -31,7 +31,7 @@
                     Prestasi
                 </button>
 
-                <button role="tab" id="tab-testimoni" aria-selected="false" aria-controls="gallery-testimoni" class="px-13 py-3 rounded-full text-sm font-medium transition-all duration-200
+                <button role="tab" id="tab-testimoni" aria-selected="false" aria-controls="gallery-testimoni" class="px-12 py-3 rounded-full text-sm font-medium transition-all duration-200
                  outline-none focus:ring-2
                  aria-selected:bg-matauli-yellow
                  aria-selected:text-matauli-red-dark

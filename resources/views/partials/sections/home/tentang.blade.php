@@ -1,7 +1,7 @@
 <!-- ============================================ -->
 <!-- TENTANG KAMI SECTION - START -->
 <!-- ============================================ -->
-<section id="tentang-kami" class="py-12 md:py-16 lg:py-20 bg-[#fff9f9]">
+<section id="tentang-kami" class="max-w-7xl py-12 md:py-16 lg:py-20 bg-[#fff9f9]">
     <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
 
         <!-- Section Title -->
@@ -16,8 +16,8 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-10 lg:gap-12 mb-12 md:mb-16">
 
             <!-- Kepala Sekolah -->
-            <div class="flex flex-col items-center">
-                <div class="relative mb-8 md:mb-10">
+            <div class="flex flex-col items-center order-2 md:order-2">
+                <div class="relative mb-8 md:mb-10 scroll-animate opacity-0 transition-all scale-90 duration-1500 ease-in-out">
                     <div
                         class="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 md:border-6 lg:border-8 border-matauli-red-dark shadow-2xl">
                         <img src="assets/pak kepsek deden_merah maroon.png" alt="Kepala Sekolah"
@@ -34,7 +34,7 @@
             </div>
 
             <!-- School Description -->
-            <div class="lg:col-span-1 flex items-center">
+            <div class="lg:col-span-1 flex order-1 md:order-1 lg:order-2 items-center scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-in-out">
                 <div class="text-center lg:text-left">
                     <p class="text-gray-700 text-base md:text-lg leading-relaxed text-justify">
                         SMA Negeri 1 Plus Matauli Pandan merupakan sekolah negeri unggulan di bawah naungan Yayasan
@@ -46,8 +46,8 @@
             </div>
 
             <!-- Ketua Umum -->
-            <div class="flex flex-col items-center">
-                <div class="relative mb-8 md:mb-10">
+            <div class="flex flex-col items-center order-3 md:order-3">
+                <div class="relative mb-8 md:mb-10 scroll-animate opacity-0 transition-all scale-90 duration-1500 ease-in-out">
                     <div
                         class="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 md:border-6 lg:border-8 border-matauli-red-dark shadow-2xl">
                         <img src="assets/bu ketum fitri.png" alt="Ketua Umum" class="w-full h-full object-cover">

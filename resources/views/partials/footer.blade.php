@@ -1,5 +1,5 @@
 <footer
-    class="bg-linear-to-br from-matauli-red-dark via-red-900 to-matauli-red-dark text-white relative overflow-hidden">
+    class="max-w-7xl mx-auto bg-linear-to-br from-matauli-red-dark via-red-900 to-matauli-red-dark text-white relative overflow-hidden">
 
     <!-- Decorative Elements -->
     <div class="absolute inset-0 opacity-5">
@@ -7,7 +7,7 @@
         <div class="absolute bottom-0 right-0 w-96 h-96 bg-yellow-400 rounded-full blur-3xl"></div>
     </div>
 
-    <div class="relative mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 pt-12 md:pt-16 lg:pt-20 pb-6 md:pb-8">
+    <div class="relative mx-auto px-4 sm:px-6 md:px-12 lg:px-24 pt-12 md:pt-16 lg:pt-20 pb-6 md:pb-8">
 
         <!-- Main Footer Content -->
         <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 lg:gap-12">
