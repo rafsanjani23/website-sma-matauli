@@ -1,7 +1,7 @@
 <!-- ============================================ -->
 <!-- SEJARAH SECTION - START -->
 <!-- ============================================ -->
-<section class="py-16 md:py-20 lg:py-24 bg-gradient-to-r from-rose-300 via-red-700 to-red-900 relative overflow-hidden">
+<section class="py-16 md:py-20 lg:py-24 bg-linear-to-r from-rose-300 via-red-700 to-red-900 relative overflow-hidden">
 
     <!-- Decorative Background -->
     <div class="absolute inset-0 opacity-10 pointer-events-none">
