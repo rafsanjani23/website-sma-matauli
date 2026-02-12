@@ -1,7 +1,7 @@
 <!-- ============================================ -->
 <!-- SEJARAH SECTION - START -->
 <!-- ============================================ -->
-<section id="sejarah" class="py-5">
+<section id="sejarah" class="py-5 max-w-7xl mx-auto">
     <div class="bg-linear-to-r from-rose-300 via-red-700 to-red-900 relative overflow-hidden ">
         <!-- Decorative Background
     <div class="absolute inset-0 opacity-10 pointer-events-none">
@@ -9,21 +9,21 @@
         <div class="absolute -bottom-10 -right-10 w-96 h-96 bg-rose-400 rounded-full blur-3xl"></div>
     </div> -->
 
-        <div class="container mx-auto z-10">
+        <div class="container mx-auto z-10 ">
 
-            <div class="grid md:grid-cols-2 gap-14 md:gap-16 lg:gap-18 items-center">
+            <div class="grid md:grid-cols-2 gap-14 md:gap-16 lg:gap-18 items-center-safe">
 
                 <!-- Left Column: Image -->
-                <div class="order-2 md:order-1 h-170 max-h-sm w-full scroll-animate opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+                <div class="order-2 md:order-1 h-full w-full flex scroll-animate opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
                     <div class="relative">
                         <img src="{{ asset('assets/feisal-dan-akbar tanjung.png') }}"
                             alt="Pendiri SMAN 1 Matauli Pandan - Jenderal TNI Feisal Tanjung dan Dr. Ir. H. Akbar Tandjung"
-                            class="w-full h-full rounded-2xl object-cover">
+                            class="w-full h-full rounded-none object-fill">
                     </div>
                 </div>
 
                 <!-- Right Column: Content -->
-                <div class="order-1 md:order-2 scroll-animate opacity-0 -translate-x-10 transition-all duration-1000 ease-in-out">
+                <div class="order-1 md:order-2 px-2 py-6 md:px-0 scroll-animate opacity-0 -translate-x-10 transition-all duration-1000 ease-in-out">
 
                     <!-- Title -->
                     <div class="mb-2 md:mb-4">

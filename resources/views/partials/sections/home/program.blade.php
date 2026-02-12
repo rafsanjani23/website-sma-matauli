@@ -1,7 +1,7 @@
 <!-- ============================================ -->
 <!-- PEMINATAN JURUSAN SECTION - START -->
 <!-- ============================================ -->
-<section id="peminatan-jurusan" class="py-12 md:py-16 lg:py-20 bg-white">
+<section id="peminatan-jurusan" class="py-12 md:py-16 lg:py-20 bg-white max-w-7xl">
     <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
 
         <!-- Section Title -->

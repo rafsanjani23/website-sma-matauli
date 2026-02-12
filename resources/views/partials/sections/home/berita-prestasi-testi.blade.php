@@ -1,4 +1,4 @@
-<section id="berita-prestasi-testi" class="py-12">
+<section id="berita-prestasi-testi" class="py-12 max-w-7xl">
     <div class="max-w-7xl mx-auto px-10">
 
         <!-- Header -->

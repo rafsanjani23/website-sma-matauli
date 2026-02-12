@@ -1,8 +1,8 @@
 <!-- ============================================ -->
 <!-- HERO SLIDER SECTION - START -->
 <!-- ============================================ -->
-<section id="heroSection" class="relative w-full h-95 md:h-130 lg:h-155 overflow-hidden">
-    <div id="heroSlider" class="relative h-full pointer-events-auto select-none">
+<section id="heroSection" class="relative max-w-7xl w-full h-95 md:h-130 lg:h-155 overflow-hidden">
+    <div id="heroSlider" class="container h-full pointer-events-auto select-none">
 
         <!-- Slide 1 - Daftar Disini -->
         <div id="beranda" class="hero-slide active absolute inset-0 pointer-events-none ease-in-out">

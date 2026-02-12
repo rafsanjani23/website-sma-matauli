@@ -14,7 +14,7 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body>
+<body class="mx-auto max-w-7xl">
 
     {{-- Navbar --}}
     @include('partials.navbar')
