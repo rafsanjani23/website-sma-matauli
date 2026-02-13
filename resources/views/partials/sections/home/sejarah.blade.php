@@ -38,18 +38,6 @@
                     </div>
 
                     <!-- Description -->
-<<<<<<< HEAD
-                    <div class="mb-8 md:mb-10">
-                        <p class="text-white text-sm md:text-base lg:text-md leading-relaxed text-justify xl:px-2">
-                            SMA Negeri 1 Plus MATAULI Pandan adalah sekolah negeri unggulan di bawah naungan Yayasan
-                            Maju Tapian Nauli (MATAULI) serta Kementerian Pendidikan dan Kebudayaan di Provinsi
-                            Sumatera Utara. Pada tanggal 14 Juni 1994, angkatan pertama secara resmi dilantik oleh
-                            Panglima ABRI, Jenderal TNI Feisal Tanjung dan Dr. Ir. H. Akbar Tandjung serta
-                            tokoh-tokoh
-                            nasional asal Tapanuli Tengah.
-                        </p>
-                    </div>
-=======
                     <p class="text-base md:text-lg leading-relaxed text-justify mb-4 max-w-xl">
                         SMA Negeri 1 Plus MATAULI Pandan adalah sekolah negeri unggulan di bawah naungan
                         Yayasan Maju Tapian Nauli (MATAULI) serta Kementerian Pendidikan dan Kebudayaan
@@ -57,7 +45,6 @@
                         dilantik oleh Panglima ABRI, Jenderal TNI Feisal Tanjung dan Dr. Ir. H. Akbar Tandjung
                         serta tokoh-tokoh nasional asal Tapanuli Tengah.
                     </p>
->>>>>>> 0c11fe5 (Update halaman Sejarah di home)
 
                     <!-- CTA -->
                     <div>
