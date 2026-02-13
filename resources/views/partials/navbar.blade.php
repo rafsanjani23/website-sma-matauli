@@ -119,7 +119,7 @@
                     <li><a href="{{ route('sejarah') }}" class="dropdown-item">Sejarah
                             Sekolah</a></li>
                     <li><a href="{{ route('visi-misi') }}" class="dropdown-item">Visi & Misi</a></li>
-                    <li><a href="{{ url('/tentang-kami#struktur-sekolah') }}" class="dropdown-item">Struktur Sekolah</a>
+                    <li><a href="{{ url('/struktur') }}" class="dropdown-item">Struktur Sekolah</a>
                     </li>
                     <li><a href="{{ url('/tentang-kami#tenaga-pendidik') }}" class="dropdown-item">Tenaga Pendidik
                             & Kependidikan</a></li>
@@ -278,7 +278,7 @@
                     <li><a href="{{ route('visi-misi') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Visi
                             & Misi</a></li>
-                    <li><a href="{{ url('/tentang-kami#struktur-sekolah') }}"
+                    <li><a href="{{ url('/struktur') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Struktur Sekolah</a>
                     </li>
                     <li><a href="{{ url('/tentang-kami#tenaga-pendidik') }}"
