@@ -11,3 +11,9 @@ Route::get('/sejarah', function () {
 Route::get('/visi-misi', function () {
     return view('pages.visi-misi');
 })->name('visi-misi');
+Route::get('/struktur', function () {
+    return view('pages.struktur');
+})->name('struktur');
+Route::get('/tendik', function () {
+    return view('pages.tendik');
+})->name('tendik');
