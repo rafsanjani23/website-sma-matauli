@@ -119,15 +119,15 @@
                     <li><a href="{{ route('sejarah') }}" class="dropdown-item">Sejarah
                             Sekolah</a></li>
                     <li><a href="{{ route('visi-misi') }}" class="dropdown-item">Visi & Misi</a></li>
-                    <li><a href="{{ url('/tentang-kami#kurikulum') }}" class="dropdown-item">Kurikulum Sekolah</a>
+                    <li><a href="{{ url('/tentang-kami#struktur-sekolah') }}" class="dropdown-item">Struktur Sekolah</a>
                     </li>
                     <li><a href="{{ url('/tentang-kami#tenaga-pendidik') }}" class="dropdown-item">Tenaga Pendidik
                             & Kependidikan</a></li>
                     <li><a href="{{ url('/tentang-kami#fasilitas') }}" class="dropdown-item">Fasilitas Sekolah</a>
                     </li>
+                    <li><a href="{{ url('/tentang-kami#asrama') }}" class="dropdown-item">Ekstrakurikuler</a></li>
                     <li><a href="{{ url('/tentang-kami#kemitraan') }}" class="dropdown-item">Kemitraan Sekolah</a>
                 </li>
-                <li><a href="{{ url('/tentang-kami#asrama') }}" class="dropdown-item">Tentang Asrama</a></li>
             </ul>
         </li>
 
@@ -142,9 +142,9 @@
                         </button>
 
                         <ul class="nav-dropdown-content">
-                            <li><a href="{{ url('/program#prestasi-siswa') }}" class="dropdown-item">Prestasi Siswa</a>
+                            <li><a href="{{ url('/program#prestasi-siswa') }}" class="dropdown-item">Program Kemataulian</a>
                             </li>
-                            <li><a href="{{ url('/program#ekstrakulikuler') }}" class="dropdown-item">Ekstrakulikuler</a>
+                            <li><a href="{{ url('/program#ekstrakulikuler') }}" class="dropdown-item">Program Pre-IB</a>
                             </li>
                         </ul>
                     </li>
@@ -183,7 +183,7 @@
                 <ul class="nav-dropdown-content">
                     <li><a href="{{ url('/alumni#studi-lanjut') }}" class="dropdown-item">Studi Lanjut</a>
                     </li>
-                    <li><a href="{{ url('/alumni#prestasi-alumni') }}" class="dropdown-item">Prestasi Alumni</a>
+                    <li><a href="{{ url('/alumni#prestasi-alumni') }}" class="dropdown-item">Professional</a>
                     </li>
                 </ul>
             </li>
@@ -199,8 +199,8 @@
                 </button>
 
                 <ul class="nav-dropdown-content">
-                    <li><a href="{{ url('/dokumentasi#galeri') }}" class="dropdown-item">Galeri</a></li>
-                    <li><a href="{{ url('/dokumentasi#berita') }}" class="dropdown-item">Berita</a></li>
+                    <li><a href="{{ url('/dokumentasi#galeri') }}" class="dropdown-item">Foto</a></li>
+                    <li><a href="{{ url('/dokumentasi#berita') }}" class="dropdown-item">Video</a></li>
                     <li><a href="{{ url('/dokumentasi#kegiatan-sekolah') }}" class="dropdown-item">Kegiatan
                             Sekolah</a></li>
                 </ul>
@@ -278,8 +278,8 @@
                     <li><a href="{{ route('visi-misi') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Visi
                             & Misi</a></li>
-                    <li><a href="{{ url('/tentang-kami#kurikulum') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Kurikulum</a>
+                    <li><a href="{{ url('/tentang-kami#struktur-sekolah') }}"
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Struktur Sekolah</a>
                     </li>
                     <li><a href="{{ url('/tentang-kami#tenaga-pendidik') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Tenaga
@@ -287,12 +287,11 @@
                     <li><a href="{{ url('/tentang-kami#fasilitas') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Fasilitas</a>
                     </li>
+                    <li><a href="{{ url('/tentang-kami#asrama') }}"
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Ekstrakulikuler</a></li>
                     <li><a href="{{ url('/tentang-kami#kemitraan') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Kemitraan</a>
                     </li>
-                    <li><a href="{{ url('/tentang-kami#asrama') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Tentang
-                            Asrama</a></li>
                 </ul>
             </li>
 
@@ -308,10 +307,9 @@
                 </button>
                 <ul class="mobile-dropdown-content bg-gray-50">
                     <li><a href="{{ url('/program#prestasi-siswa') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Prestasi
-                            Siswa</a></li>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Program Kemataulian</a></li>
                     <li><a href="{{ url('/program#ekstrakulikuler') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Ekstrakurikuler</a>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Program Pre-IB</a>
                     </li>
                 </ul>
             </li>
@@ -347,10 +345,9 @@
                 </button>
                 <ul class="mobile-dropdown-content bg-gray-50">
                     <li><a href="{{ url('/program#prestasi-siswa') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Prestasi
-                            Siswa</a></li>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Study Lanjut</a></li>
                     <li><a href="{{ url('/program#ekstrakulikuler') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Ekstrakurikuler</a>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Professional</a>
                     </li>
                 </ul>
             </li>
@@ -367,10 +364,10 @@
                 </button>
                 <ul class="mobile-dropdown-content bg-gray-50">
                     <li><a href="{{ url('/dokumentasi#galeri') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Galeri</a>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Foto</a>
                     </li>
                     <li><a href="{{ url('/dokumentasi#berita') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Berita</a>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Video</a>
                     </li>
                     <li><a href="{{ url('/dokumentasi#kegiatan-sekolah') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Kegiatan
