@@ -2,7 +2,7 @@
 <!-- SEJARAH SECTION - START -->
 <!-- ============================================ -->
 <section id="sejarah" class=" relative py-5 max-w-7xl">
-    <div class="bg-linear-to-r from-rose-300 via-red-700 to-red-900 relative overflow-hidden">
+    <div class="bg-linear-to-t md:bg-linear-to-r from-rose-300 via-red-700 to-red-900 relative overflow-hidden">
         <div class="absolute inset-0 opacity-10 pointer-events-none">
             <div class="absolute -top-10 -left-10 w-96 h-96 bg-black rounded-full blur-3xl"></div>
             <div class="absolute -bottom-10 -right-10 w-96 h-96 bg-rose-400 rounded-full blur-3xl"></div>
@@ -10,7 +10,7 @@
 
         <div class="container mx-auto z-10 ">
 
-            <div class="grid md:grid-cols-2 gap-14 md:gap-16 lg:gap-18 items-stretch">
+            <div class="grid md:grid-cols-2 gap-14 md:gap-16 lg:gap-18 items-center-safe">
 
                 <!-- Left Column: Image -->
                 <div
@@ -18,7 +18,7 @@
                     <div class="relative">
                         <img src="{{ asset('assets/feisal-dan-akbar tanjung.png') }}"
                             alt="Pendiri SMAN 1 Matauli Pandan - Jenderal TNI Feisal Tanjung dan Dr. Ir. H. Akbar Tandjung"
-                            class="w-2xl h-full max-h-124.5 rounded-none object-bottom">
+                            class="w-2xl h-full rounded-none object-bottom">
                     </div>
                 </div>
 
