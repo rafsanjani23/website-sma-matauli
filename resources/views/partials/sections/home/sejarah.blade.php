@@ -14,17 +14,17 @@
 
                 <!-- Left Column: Image -->
                 <div
-                    class="order-2 md:order-1 h-full w-full flex scroll-animate opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+                    class="order-2 md:order-1 h-full w-full my-auto mx-auto flex scroll-animate opacity-0 translate-y-10 transition-all duration-700 ease-in-out object-bottom">
                     <div class="relative">
                         <img src="{{ asset('assets/feisal-dan-akbar tanjung.png') }}"
                             alt="Pendiri SMAN 1 Matauli Pandan - Jenderal TNI Feisal Tanjung dan Dr. Ir. H. Akbar Tandjung"
-                            class="w-2xl h-full rounded-none object-bottom">
+                            class="w-full h-full rounded-none">
                     </div>
                 </div>
 
                 <!-- Right Column: Content -->
                 <div
-                    class="order-1 md:order-2 px-2 py-6 md:px-0 scroll-animate opacity-0 -translate-x-10 transition-all duration-1000 ease-in-out">
+                    class="order-1 md:order-2 py-6 md:px-2 scroll-animate opacity-0 -translate-x-10 transition-all duration-1000 ease-in-out">
 
                     <!-- Title -->
                     <div class="mb-2 md:mb-4">
@@ -40,7 +40,7 @@
 
                     <!-- Description -->
                     <div class="mb-8 md:mb-10">
-                        <p class="text-white text-sm md:text-base lg:text-lg xl:text-lg leading-relaxed text-justify xl:px-2">
+                        <p class="text-white text-sm md:text-base lg:text-md xl:text-lg leading-relaxed text-justify xl:px-2">
                             SMA Negeri 1 Plus MATAULI Pandan adalah sekolah negeri unggulan di bawah naungan Yayasan
                             Maju Tapian Nauli (MATAULI) serta Kementerian Pendidikan dan Kebudayaan di Provinsi
                             Sumatera Utara. Pada tanggal 14 Juni 1994, angkatan pertama secara resmi dilantik oleh
