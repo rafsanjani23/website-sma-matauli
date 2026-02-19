@@ -2,18 +2,19 @@
     <div class=" mx-auto px-10">
 
         <!-- Header -->
-        <header class="mb-5 text-center">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-matauli-red-dark mb-4">
-                Berita, Prestasi, dan Testimonials
-            </h2>
-            <div class="w-20 md:w-60 h-1 bg-yellow-400 mx-auto"></div>
+        <header class="text-center mb-10 md:mb-12">
+            <span class="text-xs font-semibold tracking-[0.3em] uppercase text-red-800">Informasi Terkini</span>
+            <h2 class="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-red-900">Berita, Prestasi & Testimonials</h2>
+            <div class="mt-4 mx-auto w-14 h-0.5 bg-yellow-400 rounded-full">
+            </div>
         </header>
 
         <!-- Tab List -->
         <div class="flex justify-center mb-5">
             <div role="tablist" aria-orientation="horizontal"
                 class="inline-flex justify-center gap-2 p-1 bg-matauli-red-dark rounded-full w-lg">
-                <button role="tab" id="tab-berita" aria-selected="true" aria-controls="gallery-berita" class="px-12 py-3 rounded-full text-md font-medium transition-all duration-200
+                <button role="tab" id="tab-berita" aria-selected="true" aria-controls="gallery-berita"
+                    class="px-12 py-3 rounded-full text-md font-medium transition-all duration-200
                  outline-none focus:ring-2
                  aria-selected:bg-matauli-yellow
                  aria-selected:text-matauli-red-dark
@@ -22,7 +23,8 @@
                     Berita
                 </button>
 
-                <button role="tab" id="tab-prestasi" aria-selected="false" aria-controls="gallery-prestasi" class="px-12 py-3 rounded-full text-sm font-medium transition-all duration-200
+                <button role="tab" id="tab-prestasi" aria-selected="false" aria-controls="gallery-prestasi"
+                    class="px-12 py-3 rounded-full text-sm font-medium transition-all duration-200
                  outline-none focus:ring-2
                  aria-selected:bg-matauli-yellow
                  aria-selected:text-matauli-red-dark
@@ -31,7 +33,8 @@
                     Prestasi
                 </button>
 
-                <button role="tab" id="tab-testimoni" aria-selected="false" aria-controls="gallery-testimoni" class="px-12 py-3 rounded-full text-sm font-medium transition-all duration-200
+                <button role="tab" id="tab-testimoni" aria-selected="false" aria-controls="gallery-testimoni"
+                    class="px-12 py-3 rounded-full text-sm font-medium transition-all duration-200
                  outline-none focus:ring-2
                  aria-selected:bg-matauli-yellow
                  aria-selected:text-matauli-red-dark
