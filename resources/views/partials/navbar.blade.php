@@ -1,6 +1,6 @@
 <!-- HEADER SECTION - START -->
 <!-- ============================================ -->
-<header class="w-screen sticky top-0 z-50 shadow-md">
+<header class="w-full sticky top-0 z-50 shadow-md">
 
     <!-- ========== TOP BAR - Contact Information ========== -->
     <div class="bg-white text-black py-2 hidden lg:block">

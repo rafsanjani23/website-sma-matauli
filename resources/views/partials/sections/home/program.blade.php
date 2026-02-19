@@ -71,11 +71,6 @@
                             </svg>
                         </div>
                     </div>
-
-                    {{-- BOTTOM ACCENT: Gradient muncul dari kiri saat hover --}}
-                    <div
-                        class="h-0.5 w-full bg-linear-to-r from-red-800 to-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-out origin-left">
-                    </div>
                 </div>
             </a>
 
@@ -128,11 +123,6 @@
                                     clip-rule="evenodd" />
                             </svg>
                         </div>
-                    </div>
-
-                    {{-- BOTTOM ACCENT --}}
-                    <div
-                        class="h-0.5 w-full bg-linear-to-r from-red-800 to-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-out origin-left">
                     </div>
                 </div>
             </a>
