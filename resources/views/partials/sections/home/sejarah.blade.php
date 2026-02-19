@@ -1,7 +1,7 @@
 <!-- ============================================ -->
 <!-- SEJARAH SECTION - START -->
 <!-- ============================================ -->
-<section id="sejarah" class="py-5 max-w-7xl mx-auto">
+<section id="sejarah" class="py-5 mx-auto">
     <div class="relative overflow-hidden bg-linear-to-br from-red-900 via-red-800 to-red-950">
 
         {{-- ===================== --}}

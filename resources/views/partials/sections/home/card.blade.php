@@ -1,4 +1,4 @@
-<section id="card-badge" class="py-16 max-w-7xl mx-auto px-6">
+<section id="card-badge" class="py-16 mx-auto px-6">
 
     {{-- ===================== --}}
     {{-- SECTION HEADER --}}

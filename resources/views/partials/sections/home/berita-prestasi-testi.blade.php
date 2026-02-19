@@ -1,5 +1,5 @@
 <section id="berita-prestasi-testi" class="py-12">
-    <div class=" mx-auto px-10">
+    <div class="mx-auto px-10">
 
         <!-- Header -->
         <header class="text-center mb-10 md:mb-12">

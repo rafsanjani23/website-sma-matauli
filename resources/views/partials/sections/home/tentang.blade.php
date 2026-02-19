@@ -1,7 +1,7 @@
 <!-- ============================================ -->
 <!-- TENTANG KAMI SECTION - START -->
 <!-- ============================================ -->
-<section id="tentang-kami" class="max-w-7xl py-8 md:py-10 lg:py-12 bg-[#fff9f9]">
+<section id="tentang-kami" class="py-8 md:py-10 lg:py-12 bg-[#fff9f9]">
     <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
 
         {{-- ===================== --}}

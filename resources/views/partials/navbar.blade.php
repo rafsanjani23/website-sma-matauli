@@ -1,6 +1,10 @@
 <!-- HEADER SECTION - START -->
 <!-- ============================================ -->
+<<<<<<< HEAD
 <header class="w-full sticky top-0 z-50 shadow-md">
+=======
+<header class="w-screen sticky top-0 z-50 shadow-md">
+>>>>>>> 3fbf35e (feat(home): update homepage sections with 4 keunggulan cards, sejarah pendiri, tentang kami, and program sekolah)
 
     <!-- ========== TOP BAR - Contact Information ========== -->
     <div class="bg-white text-black py-2 hidden lg:block">
@@ -127,30 +131,30 @@
                     </li>
                     <li><a href="{{ url('/tentang-kami#asrama') }}" class="dropdown-item">Ekstrakurikuler</a></li>
                     <li><a href="{{ url('/tentang-kami#kemitraan') }}" class="dropdown-item">Kemitraan Sekolah</a>
-                </li>
-            </ul>
-        </li>
-
-        <!--dropdown program  -->
-                    <li class="relative group">
-                        <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
-                            Program
-                            <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-
-                        <ul class="nav-dropdown-content">
-                            <li><a href="{{ url('/program#prestasi-siswa') }}" class="dropdown-item">Program Kemataulian</a>
-                            </li>
-                            <li><a href="{{ url('/program#ekstrakulikuler') }}" class="dropdown-item">Program Pre-IB</a>
-                            </li>
-                        </ul>
                     </li>
-        <!-- dropdown program end -->
+                </ul>
+            </li>
 
-<!-- dropdown tentang asrama -->
+            <!--dropdown program  -->
+            <li class="relative group">
+                <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
+                    Program
+                    <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+
+                <ul class="nav-dropdown-content">
+                    <li><a href="{{ url('/program#prestasi-siswa') }}" class="dropdown-item">Program Kemataulian</a>
+                    </li>
+                    <li><a href="{{ url('/program#ekstrakulikuler') }}" class="dropdown-item">Program Pre-IB</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- dropdown program end -->
+
+            <!-- dropdown tentang asrama -->
             <li class="relative group">
                 <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
                     Asrama
@@ -167,10 +171,10 @@
                     </li>
                 </ul>
             </li>
-<!-- dropdown tentang asrama end -->
+            <!-- dropdown tentang asrama end -->
 
 
-<!-- dropdown alumni -->
+            <!-- dropdown alumni -->
             <li class="relative group">
                 <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
                     Alumni
@@ -187,7 +191,7 @@
                     </li>
                 </ul>
             </li>
-<!-- dropdown alumni end -->
+            <!-- dropdown alumni end -->
 
             <li class="relative group">
                 <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
@@ -211,8 +215,8 @@
         <!-- Mobile Menu Button -->
         <button id="menuToggle" aria-label="Toggle menu" type="button"
             class="inline-flex lg:hidden items-center justify-center p-2 rounded-md text-white hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition-colors">
-            <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
+            <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
             <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none"
@@ -279,7 +283,8 @@
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Visi
                             & Misi</a></li>
                     <li><a href="{{ url('/struktur') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Struktur Sekolah</a>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Struktur
+                            Sekolah</a>
                     </li>
                     <li><a href="{{ url('/tentang-kami#tenaga-pendidik') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Tenaga
@@ -288,7 +293,8 @@
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Fasilitas</a>
                     </li>
                     <li><a href="{{ url('/tentang-kami#asrama') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Ekstrakulikuler</a></li>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Ekstrakulikuler</a>
+                    </li>
                     <li><a href="{{ url('/tentang-kami#kemitraan') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Kemitraan</a>
                     </li>
@@ -307,9 +313,11 @@
                 </button>
                 <ul class="mobile-dropdown-content bg-gray-50">
                     <li><a href="{{ url('/program#prestasi-siswa') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Program Kemataulian</a></li>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Program
+                            Kemataulian</a></li>
                     <li><a href="{{ url('/program#ekstrakulikuler') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Program Pre-IB</a>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Program
+                            Pre-IB</a>
                     </li>
                 </ul>
             </li>
@@ -326,9 +334,11 @@
                 </button>
                 <ul class="mobile-dropdown-content bg-gray-50">
                     <li><a href="{{ url('/asrama#fasilitas-asrama') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Fasilitas Asrama</a></li>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Fasilitas
+                            Asrama</a></li>
                     <li><a href="{{ url('/asrama#kegiatan-asrama') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Kegiatan Asrama</a>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Kegiatan
+                            Asrama</a>
                     </li>
                 </ul>
             </li>
@@ -345,7 +355,8 @@
                 </button>
                 <ul class="mobile-dropdown-content bg-gray-50">
                     <li><a href="{{ url('/program#prestasi-siswa') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Study Lanjut</a></li>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Study
+                            Lanjut</a></li>
                     <li><a href="{{ url('/program#ekstrakulikuler') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Professional</a>
                     </li>
@@ -385,7 +396,8 @@
                 <div class="space-y-3 mb-4">
                     <a href="mailto:ppdbmatauli@gmail.com"
                         class="flex items-center gap-2 text-sm text-gray-600 hover:text-orange-600 transition">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor"
+                            viewBox="0 0 24 24">
                             <path
                                 d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                         </svg>
@@ -394,7 +406,8 @@
 
                     <a href="tel:+6282121313131"
                         class="flex items-center gap-2 text-sm text-gray-600 hover:text-orange-600 transition">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor"
+                            viewBox="0 0 24 24">
                             <path
                                 d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
                         </svg>

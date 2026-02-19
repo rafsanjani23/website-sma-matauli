@@ -1,7 +1,7 @@
 <!-- ============================================ -->
 <!-- BERITA TERKINI SECTION - START -->
 <!-- ============================================ -->
-<section id="berita-terkini" class="py-12 md:py-16 lg:py-20 bg-[#fff9f9] ">
+<section id="berita-terkini" class="py-12 md:py-16 lg:py-20 bg-[#fff9f9]">
     <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
 
         <!-- Section Title -->
@@ -16,8 +16,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-6 md:mb-8">
 
             <!-- Berita Card 1 -->
-            <div
-                class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group">
+            <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group">
                 <!-- Image -->
                 <div class="relative h-48 md:h-52 bg-linear-to-br from-red-800 to-red-900 overflow-hidden">
                     <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors"></div>
