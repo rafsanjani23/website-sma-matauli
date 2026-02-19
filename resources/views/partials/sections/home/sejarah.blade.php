@@ -1,14 +1,14 @@
 <!-- ============================================ -->
 <!-- SEJARAH SECTION - START -->
 <!-- ============================================ -->
-<section id="sejarah" class=" relative py-5 max-w-7xl">
+<section id="sejarah" class=" relative py-5">
     <div class="bg-linear-to-t md:bg-linear-to-r from-rose-300 via-red-700 to-red-900 relative overflow-hidden">
         <div class="absolute inset-0 opacity-10 pointer-events-none">
             <div class="absolute -top-10 -left-10 w-96 h-96 bg-black rounded-full blur-3xl"></div>
             <div class="absolute -bottom-10 -right-10 w-96 h-96 bg-rose-400 rounded-full blur-3xl"></div>
         </div>
 
-        <div class="relative max-w-7xl mx-auto z-10 ">
+        <div class="relative mx-auto z-10 ">
 
             <div class="grid md:grid-cols-2 gap-10 items-center-safe">
 

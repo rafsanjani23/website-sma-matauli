@@ -1,8 +1,8 @@
 <!-- ============================================ -->
 <!-- TENTANG KAMI SECTION - START -->
 <!-- ============================================ -->
-<section id="tentang-kami" class="max-w-7xl py-12 md:py-16 lg:py-20 bg-[#fff9f9]">
-    <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
+<section id="tentang-kami" class="py-12 md:py-16 lg:py-20 bg-[#fff9f9]">
+    <div class="relative mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
 
         <!-- Section Title -->
         <div class="text-center mb-12 md:mb-16">
@@ -13,7 +13,7 @@
         </div>
 
         <!-- Tentang Kami Content Grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-10 lg:gap-12 mb-12 md:mb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8  mb-12 md:mb-16">
 
             <!-- Kepala Sekolah -->
             <div class="flex flex-col items-center order-2 md:order-2">

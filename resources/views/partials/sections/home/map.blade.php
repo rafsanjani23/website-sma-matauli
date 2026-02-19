@@ -1,4 +1,4 @@
-<section id="map" class="py-16 bg-gray-50 max-w-7xl">
+<section id="map" class="py-16 bg-gray-50">
     <div class="max-w-6xl mx-auto px-4">
 
         <!-- Judul -->
