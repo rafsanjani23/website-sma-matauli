@@ -1,5 +1,5 @@
 <footer
-    class="max-w-7xl bg-linear-to-br from-matauli-red-dark via-red-900 to-matauli-red-dark text-white relative overflow-hidden">
+    class="max-w-7xl w-screen bg-linear-to-br from-matauli-red-dark via-red-900 to-matauli-red-dark text-white relative overflow-hidden">
 
     <!-- Decorative Elements -->
     <div class="absolute inset-0 opacity-5">

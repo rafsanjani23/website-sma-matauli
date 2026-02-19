@@ -1,5 +1,5 @@
 <section id="card-badge" class="py-5 max-w-7xl">
-    <div class="container max-w-9xl grid md:grid-cols-2 lg:grid-cols-4 gap-0.5 mx-auto">
+    <div class="container max-w-7xl grid md:grid-cols-2 lg:grid-cols-4 mx-auto px-25 justify-center">
         <!-- icons school buiding -->
         <div class="hover:scale-105 hover:z-20 bg-white border border-gray-200 shadow-md w-65 max-w-sm overflow-hidden mx-auto mt-4 scroll-animate transition-all translate-x-10 opacity-0 duration-700 ease-in-out">
             <div class="p-4">

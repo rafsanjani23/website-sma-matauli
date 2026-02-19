@@ -1,7 +1,7 @@
 <!-- ============================================ -->
 <!-- BERITA TERKINI SECTION - START -->
 <!-- ============================================ -->
-<section id="berita-terkini" class="py-12 md:py-16 lg:py-20 bg-[#fff9f9]">
+<section id="berita-terkini" class="py-12 md:py-16 lg:py-20 bg-[#fff9f9] max-w-7xl">
     <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
 
         <!-- Section Title -->

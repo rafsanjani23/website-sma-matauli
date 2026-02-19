@@ -8,13 +8,13 @@
             <div class="absolute -bottom-10 -right-10 w-96 h-96 bg-rose-400 rounded-full blur-3xl"></div>
         </div>
 
-        <div class="container mx-auto z-10 ">
+        <div class="relative max-w-7xl mx-auto z-10 ">
 
-            <div class="grid md:grid-cols-2 gap-14 md:gap-16 lg:gap-18 items-center-safe">
+            <div class="grid md:grid-cols-2 gap-10 items-center-safe">
 
                 <!-- Left Column: Image -->
                 <div
-                    class="order-2 md:order-1 h-full w-full my-auto mx-auto flex scroll-animate opacity-0 translate-y-10 transition-all duration-700 ease-in-out object-bottom">
+                    class="order-2 md:order-1 h-full w-full  mx-auto flex scroll-animate opacity-0 translate-y-10 transition-all duration-700 ease-in-out object-bottom">
                     <div class="relative">
                         <img src="{{ asset('assets/feisal-dan-akbar tanjung.png') }}"
                             alt="Pendiri SMAN 1 Matauli Pandan - Jenderal TNI Feisal Tanjung dan Dr. Ir. H. Akbar Tandjung"
@@ -24,7 +24,7 @@
 
                 <!-- Right Column: Content -->
                 <div
-                    class="order-1 md:order-2 py-6 md:px-2 scroll-animate opacity-0 -translate-x-10 transition-all duration-1000 ease-in-out">
+                    class="order-1 md:order-2 py-4 px-8 scroll-animate opacity-0 -translate-x-10 transition-all duration-1000 ease-in-out">
 
                     <!-- Title -->
                     <div class="mb-2 md:mb-4">
@@ -40,7 +40,7 @@
 
                     <!-- Description -->
                     <div class="mb-8 md:mb-10">
-                        <p class="text-white text-sm md:text-base lg:text-md xl:text-lg leading-relaxed text-justify xl:px-2">
+                        <p class="text-white text-sm md:text-base lg:text-md leading-relaxed text-justify xl:px-2">
                             SMA Negeri 1 Plus MATAULI Pandan adalah sekolah negeri unggulan di bawah naungan Yayasan
                             Maju Tapian Nauli (MATAULI) serta Kementerian Pendidikan dan Kebudayaan di Provinsi
                             Sumatera Utara. Pada tanggal 14 Juni 1994, angkatan pertama secara resmi dilantik oleh
