@@ -10,7 +10,7 @@
     <div class="relative mx-auto px-4 sm:px-6 md:px-12 lg:px-24 pt-12 md:pt-16 lg:pt-20 pb-6 md:pb-8">
 
         <!-- Main Footer Content -->
-        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 lg:gap-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_1.5fr_1fr_1fr] gap-8 lg:gap-12">
 
             <!-- Column 1: Logo & School Name -->
             <div class="flex flex-col items-center sm:items-start gap-6 lg:col-span-1">
@@ -34,7 +34,7 @@
                     <div class="flex flex-col justify-center leading-tight">
                         <h2 class="text-2xl lg:text-3xl font-bold text-white">
                             <span class="inline-flex items-center tracking-widest">
-                                SMAN <span class="ml-2.5 lg:ml-3.5">1</span>
+                                SMAN <span class="ml-4 lg:ml-5">1</span>
                             </span>
                             <span class="block">MATAULI</span>
                             <span class="block tracking-wide">PANDAN</span>
@@ -57,7 +57,7 @@
             <div class="flex flex-col">
                 <h3 class="text-lg md:text-xl font-bold mb-6 pb-3 border-b-2 border-yellow-400 w-fit relative">
                     <span class="relative z-10">Kunjungi Kami</span>
-                    <div class="absolute bottom-0 left-0 w-full h-0.5 bg-linear-to-r from-yellow-400 to-transparent">
+                    <div class="absolute bottom-0 left-0 w-full h-0.5 bg-yellow-400">
                     </div>
                 </h3>
                 <div class="space-y-4">
@@ -130,7 +130,7 @@
             <div class="flex flex-col">
                 <h3 class="text-lg md:text-xl font-bold mb-6 pb-3 border-b-2 border-yellow-400 w-fit relative">
                     <span class="relative z-10">Link Terkait</span>
-                    <div class="absolute bottom-0 left-0 w-full h-0.5 bg-linear-to-r from-yellow-400 to-transparent">
+                    <div class="absolute bottom-0 left-0 w-full h-0.5 bg-yellow-400">
                     </div>
                 </h3>
                 <ul class="space-y-3">
@@ -213,7 +213,7 @@
             <div class="flex flex-col">
                 <h3 class="text-lg md:text-xl font-bold mb-6 pb-3 border-b-2 border-yellow-400 w-fit relative">
                     <span class="relative z-10">Ikuti Kami</span>
-                    <div class="absolute bottom-0 left-0 w-full h-0.5 bg-linear-to-r from-yellow-400 to-transparent">
+                    <div class="absolute bottom-0 left-0 w-full h-0.5 bg-yellow-400">
                     </div>
                 </h3>
 
@@ -300,7 +300,7 @@
         <div class="mt-8 pt-5 border-t border-white/10">
             <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
                 <p class="text-gray-300 text-center md:text-left flex items-center gap-1">
-                    Dikembangkan dengan<span class="text-yellow-400 font-bold">YANG IT IT AJA</span>
+                    Dibuat Oleh<span class="text-yellow-400 font-bold">YANG IT IT AJA</span>
                 </p>
                 {{-- <div class="flex gap-4 text-gray-300">
                     <a href="{{ url('/privacy-policy') }}" class="hover:text-yellow-400 transition text-sm">Kebijakan
