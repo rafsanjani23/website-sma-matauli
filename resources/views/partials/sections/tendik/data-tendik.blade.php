@@ -1,5 +1,9 @@
 <section class="py-16 bg-white">
+<<<<<<< HEAD
     <div class="max-w-6xl mx-auto px-4">
+=======
+    <div class="max-w-7xl mx-auto px-4">
+>>>>>>> fajri-branch
 
         <!-- PIMPINAN -->
         <div class="text-start mb-10">
@@ -17,7 +21,11 @@
                 </div>
                 <div
                     class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto mt-4">
+<<<<<<< HEAD
                     <div class="aspect-[3/2]">
+=======
+                    <div class="aspect-3/2">
+>>>>>>> fajri-branch
                         <img src="https://readymadeui.com/Imagination.webp" class="w-full h-full object-cover"
                             alt="Card image" />
                     </div>
@@ -35,7 +43,11 @@
                 </div>
                 <div
                     class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto mt-4">
+<<<<<<< HEAD
                     <div class="aspect-[3/2]">
+=======
+                    <div class="aspect-3/2">
+>>>>>>> fajri-branch
                         <img src="https://readymadeui.com/Imagination.webp" class="w-full h-full object-cover"
                             alt="Card image" />
                     </div>
@@ -53,7 +65,11 @@
                 </div>
                 <div
                     class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto mt-4">
+<<<<<<< HEAD
                     <div class="aspect-[3/2]">
+=======
+                    <div class="aspect-3/2">
+>>>>>>> fajri-branch
                         <img src="https://readymadeui.com/Imagination.webp" class="w-full h-full object-cover"
                             alt="Card image" />
                     </div>
@@ -71,7 +87,11 @@
                 </div>
                 <div
                     class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto mt-4">
+<<<<<<< HEAD
                     <div class="aspect-[3/2]">
+=======
+                    <div class="aspect-3/2">
+>>>>>>> fajri-branch
                         <img src="https://readymadeui.com/Imagination.webp" class="w-full h-full object-cover"
                             alt="Card image" />
                     </div>

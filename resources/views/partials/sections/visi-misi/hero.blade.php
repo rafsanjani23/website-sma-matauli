@@ -1,7 +1,7 @@
 <!-- ============================================ -->
 <!-- VISI & MISI SECTION - START -->
 <!-- ============================================ -->
-<section class="relative w-full h-75 sm:h-95 md:h-130 lg:h-155 overflow-hidden">
+<section class="relative w-full h-75 max-w-7xl sm:h-95 md:h-130 lg:h-155 overflow-hidden">
     <img src="{{ asset('assets/visi-misi.JPG') }}" alt="Paduan Suara SMAN 1 Matauli Pandan"
         class="absolute inset-0 w-full h-full object-cover">
 
