@@ -1,7 +1,7 @@
 <!-- ============================================ -->
 <!-- HERO SLIDER SECTION - START -->
 <!-- ============================================ -->
-<section id="heroSection" class="relative max-w-7xl w-screen h-95 md:h-130 lg:h-155 overflow-hidden">
+<section id="heroSection" class="relative w-screen h-95 md:h-130 lg:h-155 overflow-hidden">
     <div id="heroSlider" class="container h-full pointer-events-auto select-none">
 
         <!-- Slide 1 - Daftar Disini -->

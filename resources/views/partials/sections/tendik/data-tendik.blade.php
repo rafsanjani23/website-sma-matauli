@@ -1,5 +1,5 @@
 <section class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-4">
+    <div class="mx-auto px-4">
 
         <!-- PIMPINAN -->
         <div class="text-start mb-10">
