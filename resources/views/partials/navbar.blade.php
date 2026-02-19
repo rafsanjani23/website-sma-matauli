@@ -1,10 +1,6 @@
 <!-- HEADER SECTION - START -->
 <!-- ============================================ -->
-<<<<<<< HEAD
 <header class="w-full sticky top-0 z-50 shadow-md">
-=======
-<header class="w-screen sticky top-0 z-50 shadow-md">
->>>>>>> 3fbf35e (feat(home): update homepage sections with 4 keunggulan cards, sejarah pendiri, tentang kami, and program sekolah)
 
     <!-- ========== TOP BAR - Contact Information ========== -->
     <div class="bg-white text-black py-2 hidden lg:block">

@@ -1,7 +1,7 @@
 <!-- ============================================ -->
 <!-- HERO SLIDER SECTION - START -->
 <!-- ============================================ -->
-<section id="heroSection" class="relative w-screen h-95 md:h-130 lg:h-155 overflow-hidden">
+<section id="heroSection" class="relative w-full h-105 md:h-130 lg:h-155 overflow-hidden">
     <div id="heroSlider" class="container h-full pointer-events-auto select-none">
 
         <!-- Slide 1 - Daftar Disini -->
@@ -23,10 +23,11 @@
                             Bergabung dan Tumbuh Bersama SMA Negeri 1 Matauli Pandan
                         </p>
                         <a href="{{ url('/ppdb') }}"
-                            class="inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-4 py-2 md:px-6 md:py-3 rounded-lg transition-all hover:scale-105 shadow-lg text-sm md:text-base">
+                            class="group inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-5 py-2.5 md:px-7 md:py-3.5 rounded-full transition-all duration-300 hover:gap-4 hover:shadow-2xl hover:shadow-yellow-400/30 hover:scale-105 shadow-lg text-sm md:text-base">
                             Daftar Disini
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" viewBox="0 0 20 20"
-                                fill="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-4 w-4 md:h-5 md:w-5 group-hover:translate-x-1 transition-transform duration-300"
+                                viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd"
                                     d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                                     clip-rule="evenodd" />
@@ -58,10 +59,11 @@
                             Pancasila.
                         </p>
                         <a href="{{ url('/program#ib-program') }}"
-                            class="inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-4 py-2 md:px-6 md:py-3 rounded-lg transition-all hover:scale-105 shadow-lg text-sm md:text-base">
+                            class="group inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-5 py-2.5 md:px-7 md:py-3.5 rounded-full transition-all duration-300 hover:gap-4 hover:shadow-2xl hover:shadow-yellow-400/30 hover:scale-105 shadow-lg text-sm md:text-base">
                             Kenali Program IB
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" viewBox="0 0 20 20"
-                                fill="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-4 w-4 md:h-5 md:w-5 group-hover:translate-x-1 transition-transform duration-300"
+                                viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd"
                                     d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                                     clip-rule="evenodd" />
@@ -91,10 +93,11 @@
                             Didukung Teknologi dan Tenaga Pengajar Profesional
                         </p>
                         <a href="{{ url('/tentang-kami#fasilitas') }}"
-                            class="inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-4 py-2 md:px-6 md:py-3 rounded-lg transition-all hover:scale-105 shadow-lg text-sm md:text-base">
+                            class="group inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-5 py-2.5 md:px-7 md:py-3.5 rounded-full transition-all duration-300 hover:gap-4 hover:shadow-2xl hover:shadow-yellow-400/30 hover:scale-105 shadow-lg text-sm md:text-base">
                             Lihat Fasilitas
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" viewBox="0 0 20 20"
-                                fill="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-4 w-4 md:h-5 md:w-5 group-hover:translate-x-1 transition-transform duration-300"
+                                viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd"
                                     d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                                     clip-rule="evenodd" />
