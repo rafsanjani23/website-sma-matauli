@@ -16,13 +16,13 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="mx-auto max-w-7xl">
+<body>
 
     {{-- Navbar --}}
     @include('partials.navbar')
 
     {{-- Content --}}
-    <main class="relative">
+    <main>
         @yield('content')
     </main>
 
