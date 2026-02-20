@@ -19,7 +19,7 @@
         {{-- PROFILE GRID --}}
         {{-- Foto kiri — Deskripsi tengah — Foto kanan --}}
         {{-- ===================== --}}
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-12 lg:gap-8 mb-16 md:mb-20 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 mb-16 md:mb-20 items-center">
 
             {{-- ===== KOLOM KIRI: Kepala Sekolah ===== --}}
             <div

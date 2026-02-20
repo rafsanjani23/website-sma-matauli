@@ -12,9 +12,9 @@
         <!-- Tab List -->
         <div class="flex justify-center mb-5">
             <div role="tablist" aria-orientation="horizontal"
-                class="inline-flex justify-center gap-2 p-1 bg-matauli-red-dark rounded-full w-lg">
+                class="inline-flex justify-center gap-2 p-1 bg-matauli-red-dark rounded-full w-md md:w-lg">
                 <button role="tab" id="tab-berita" aria-selected="true" aria-controls="gallery-berita"
-                    class="px-12 py-3 rounded-full text-md font-medium transition-all duration-200
+                    class="px-8 lg:px-12 py-3 rounded-full text-md font-medium transition-all duration-200
                  outline-none focus:ring-2
                  aria-selected:bg-matauli-yellow
                  aria-selected:text-matauli-red-dark
@@ -24,7 +24,7 @@
                 </button>
 
                 <button role="tab" id="tab-prestasi" aria-selected="false" aria-controls="gallery-prestasi"
-                    class="px-12 py-3 rounded-full text-sm font-medium transition-all duration-200
+                    class="px-8 lg:px-12 py-3 rounded-full text-sm font-medium transition-all duration-200
                  outline-none focus:ring-2
                  aria-selected:bg-matauli-yellow
                  aria-selected:text-matauli-red-dark
@@ -34,7 +34,7 @@
                 </button>
 
                 <button role="tab" id="tab-testimoni" aria-selected="false" aria-controls="gallery-testimoni"
-                    class="px-12 py-3 rounded-full text-sm font-medium transition-all duration-200
+                    class="px-8 lg:px-12 py-3 rounded-full text-sm font-medium transition-all duration-200
                  outline-none focus:ring-2
                  aria-selected:bg-matauli-yellow
                  aria-selected:text-matauli-red-dark

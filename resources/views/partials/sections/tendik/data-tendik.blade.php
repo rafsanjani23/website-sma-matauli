@@ -9,14 +9,13 @@
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-16">
-
             <!-- CARD kepsek-->
             <div>
-                <div class="bg-red-900 text-white text-sm font-semibold py-1 rounded-full inline-block px-4 mb-3">
+                <div class="bg-red-900 text-white text-sm font-semibold py-1 rounded-full inline-block px-4 mb-2">
                     Kepala Sekolah
                 </div>
                 <div
-                    class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto mt-4">
+                    class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto">
                     <div class="aspect-3/2">
                         <img src="https://readymadeui.com/Imagination.webp" class="w-full h-full object-cover"
                             alt="Card image" />
@@ -30,11 +29,11 @@
             </div>
             <!-- CARD wakakurikulum-->
             <div>
-                <div class="bg-red-900 text-white text-sm font-semibold py-1 rounded-full inline-block px-4 mb-3">
+                <div class="bg-red-900 text-white text-sm font-semibold py-1 rounded-full inline-block px-4 mb-2">
                     Wakasek Kurikulum
                 </div>
                 <div
-                    class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto mt-4">
+                    class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto">
                     <div class="aspect-3/2">
                         <img src="https://readymadeui.com/Imagination.webp" class="w-full h-full object-cover"
                             alt="Card image" />
@@ -48,11 +47,11 @@
             </div>
             <!-- CARD waka kesiswaan-->
             <div>
-                <div class="bg-red-900 text-white text-sm font-semibold py-1 rounded-full inline-block px-4 mb-3">
+                <div class="bg-red-900 text-white text-sm font-semibold py-1 rounded-full inline-block px-4 mb-2">
                     Wakasek Kesiswaan
                 </div>
                 <div
-                    class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto mt-4">
+                    class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto">
 
                     <div class="aspect-3/2">
                         <img src="https://readymadeui.com/Imagination.webp" class="w-full h-full object-cover"
@@ -67,11 +66,11 @@
             </div>
             <!-- CARD waka asrama-->
             <div>
-                <div class="bg-red-900 text-white text-sm font-semibold py-1 rounded-full inline-block px-4 mb-3">
+                <div class="bg-red-900 text-white text-sm font-semibold py-1 rounded-full inline-block px-4 mb-2">
                     Wakasek Asrama
                 </div>
                 <div
-                    class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto mt-4">
+                    class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto">
                     <div class="aspect-3/2">
                         <img src="https://readymadeui.com/Imagination.webp" class="w-full h-full object-cover"
                             alt="Card image" />
@@ -83,9 +82,6 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
-
     </div>
 </section>

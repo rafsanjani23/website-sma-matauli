@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-<section id="map" class="py-16 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4">
-=======
 <section id="map" class="py-20 md:py-24 bg-gray-50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
->>>>>>> f4159ae (feat(home): update homepage sections with 4 keunggulan cards, sejarah pendiri, tentang kami, and program sekolah)
 
         <!-- ===== HEADER ===== -->
         <div class="text-center mb-10">

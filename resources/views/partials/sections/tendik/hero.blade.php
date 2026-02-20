@@ -1,4 +1,4 @@
-<section class="relative w-full h-60 sm:h-95 md:h-100 lg:h-110 overflow-hidden">
+<section class="relative w-full h-80 md:h-100 lg:h-120 overflow-hidden">
     <img src="{{ asset('assets/Gerbang Depan Sekolah.jpeg') }}" alt="Paduan Suara SMAN 1 Matauli Pandan"
         class="absolute inset-0 w-full h-full object-fill">
 
