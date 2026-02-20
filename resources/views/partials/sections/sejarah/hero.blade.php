@@ -1,7 +1,7 @@
 <!-- HERO IMAGE FULL WIDTH -->
-<section class="relative w-full h-75 sm:h-95 md:h-130 lg:h-155 overflow-hidden">
-    <img src="{{ asset('assets/paduansuara.JPG') }}" alt="Paduan Suara SMAN 1 Matauli Pandan"
-        class="absolute inset-0 w-full h-full object-cover">
+<section class="relative w-full h-80 md:h-100 lg:h-120 overflow-hidden">
+    <img src="{{ asset('assets/FotoPendiriMatauli.jpg') }}" alt="Foto Pendiri Matauli Pandan"
+        class="absolute inset-0 w-full h-170 object-cover">
 
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black/45"></div>

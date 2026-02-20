@@ -8,17 +8,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const closeIcon = document.getElementById("closeIcon");
 
     function openMenu() {
+        document.documentElement.classList.add("menu-open");
         mobileMenu.classList.add("active");
         menuBackdrop.classList.add("active");
-        document.body.classList.add("menu-open");
         menuIcon.classList.add("hidden");
         closeIcon.classList.remove("hidden");
     }
 
     function closeMenuFunc() {
+        document.documentElement.classList.remove("menu-open");
         mobileMenu.classList.remove("active");
         menuBackdrop.classList.remove("active");
-        document.body.classList.remove("menu-open");
         menuIcon.classList.remove("hidden");
         closeIcon.classList.add("hidden");
     }
