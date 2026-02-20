@@ -1,7 +1,7 @@
 {{-- ============================================ --}}
 {{-- VISI SECTION --}}
 {{-- ============================================ --}}
-<section class="py-16 md:py-24 bg-gradient-to-br from-red-800 via-red-900 to-red-950 relative overflow-hidden">
+<section class="py-16 md:py-24 bg-linear-to-br from-red-800 via-red-900 to-red-950 relative overflow-hidden">
 
     {{-- Dekorasi latar --}}
     <div
@@ -21,7 +21,7 @@
             <h2 class="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-white">
                 Visi Sekolah
             </h2>
-            <div class="w-12 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mt-4 rounded-full"></div>
+            <div class="w-12 h-0.5 bg-linear-to-r from-yellow-400 to-yellow-600 mx-auto mt-4 rounded-full"></div>
         </div>
 
         <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
@@ -31,7 +31,7 @@
                 <div class="relative rounded-2xl overflow-hidden shadow-2xl">
                     <img src="{{ asset('assets/visi-misi3.jpeg') }}" alt="Visi SMAN 1 Matauli"
                         class="w-full h-80 object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-red-950/70 via-transparent to-transparent"></div>
+                    <div class="absolute inset-0 bg-linear-to-t from-red-950/70 via-transparent to-transparent"></div>
                 </div>
                 <div
                     class="absolute -bottom-5 -right-5 w-24 h-24 bg-yellow-400 rounded-2xl flex items-center justify-center shadow-xl rotate-3">

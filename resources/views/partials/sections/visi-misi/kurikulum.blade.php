@@ -17,12 +17,12 @@
                     Menggunakan Kurikulum
                     <span class="relative inline-block">
                         <span class="relative z-10">International</span>
-                        <span class="absolute bottom-1 left-0 right-0 h-2.5 bg-yellow-400/40 -z-0 rounded"></span>
+                        <span class="absolute bottom-1 left-0 right-0 h-2.5 bg-yellow-400/40 z-0 rounded"></span>
                     </span>
                     <br class="hidden sm:block"> Baccalaureate
                 </h2>
 
-                <div class="w-12 h-0.5 bg-gradient-to-r from-red-800 to-yellow-500 mb-5 rounded-full"></div>
+                <div class="w-12 h-0.5 bg-linear-to-r from-red-800 to-yellow-500 mb-5 rounded-full"></div>
 
                 <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-8">
                     SMAN 1 Matauli Pandan bernaung di bawah Yayasan Maju Tapian Nauli. Dengan lingkungan belajar
@@ -53,11 +53,11 @@
 
                 <div class="relative rounded-2xl overflow-hidden shadow-2xl">
                     <div
-                        class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-red-800 via-red-600 to-yellow-500 z-10">
+                        class="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-red-800 via-red-600 to-yellow-500 z-10">
                     </div>
                     <img src="{{ asset('assets/visi-misi2.JPG') }}" alt="Kurikulum IB SMAN 1 Matauli"
                         class="w-full h-64 md:h-80 object-cover">
-                    <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-red-900/60 to-transparent">
+                    <div class="absolute bottom-0 left-0 right-0 h-20 bg-linear-to-t from-red-900/60 to-transparent">
                     </div>
                     <div class="absolute bottom-4 left-4 right-4">
                         <span

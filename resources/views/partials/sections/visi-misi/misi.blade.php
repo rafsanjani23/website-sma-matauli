@@ -12,7 +12,7 @@
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-red-900">
                 Misi Sekolah
             </h2>
-            <div class="w-12 h-0.5 bg-gradient-to-r from-red-800 to-yellow-500 mt-4 rounded-full"></div>
+            <div class="w-12 h-0.5 bg-linear-to-r from-red-800 to-yellow-500 mt-4 rounded-full"></div>
         </div>
 
         <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
@@ -21,11 +21,11 @@
             <div class="order-2 md:order-1 relative">
                 <div class="relative rounded-2xl overflow-hidden shadow-xl">
                     <div
-                        class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-red-800 via-red-600 to-yellow-500 z-10">
+                        class="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-red-800 via-red-600 to-yellow-500 z-10">
                     </div>
                     <img src="{{ asset('assets/visi-misi4.JPG') }}" alt="Misi SMAN 1 Matauli"
-                        class="w-full h-64 md:h-[480px] object-cover md:sticky md:top-24">
-                    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-red-900/50 to-transparent">
+                        class="w-full h-64 md:h-120 object-cover md:sticky md:top-24">
+                    <div class="absolute bottom-0 left-0 right-0 h-24 bg-linear-to-t from-red-900/50 to-transparent">
                     </div>
                 </div>
                 <div class="absolute -bottom-3 -left-3 w-16 h-16 rounded-full bg-yellow-400/30 hidden md:block"></div>
@@ -38,11 +38,11 @@
                 <div
                     class="group relative bg-white rounded-2xl p-5 md:p-6 shadow-md border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                     <div
-                        class="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-red-800 to-red-600 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        class="absolute top-0 left-0 right-0 h-0.5 bg-linear-to-r from-red-800 to-red-600 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     </div>
                     <div class="flex items-start gap-4">
                         <div
-                            class="shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gradient-to-br from-red-800 to-red-950 flex items-center justify-center shadow-lg">
+                            class="shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-linear-to-br from-red-800 to-red-950 flex items-center justify-center shadow-lg">
                             <span class="text-white font-black text-sm md:text-base">01</span>
                         </div>
                         <div class="pt-1">
@@ -59,11 +59,11 @@
                 <div
                     class="group relative bg-white rounded-2xl p-5 md:p-6 shadow-md border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                     <div
-                        class="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-red-800 to-red-600 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        class="absolute top-0 left-0 right-0 h-0.5 bg-linear-to-r from-red-800 to-red-600 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     </div>
                     <div class="flex items-start gap-4">
                         <div
-                            class="shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gradient-to-br from-red-800 to-red-950 flex items-center justify-center shadow-lg">
+                            class="shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-linear-to-br from-red-800 to-red-950 flex items-center justify-center shadow-lg">
                             <span class="text-white font-black text-sm md:text-base">02</span>
                         </div>
                         <div class="pt-1">
@@ -80,11 +80,11 @@
                 <div
                     class="group relative bg-white rounded-2xl p-5 md:p-6 shadow-md border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                     <div
-                        class="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-red-800 to-red-600 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        class="absolute top-0 left-0 right-0 h-0.5 bg-linear-to-r from-red-800 to-red-600 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     </div>
                     <div class="flex items-start gap-4">
                         <div
-                            class="shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gradient-to-br from-red-800 to-red-950 flex items-center justify-center shadow-lg">
+                            class="shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-linear-to-br from-red-800 to-red-950 flex items-center justify-center shadow-lg">
                             <span class="text-white font-black text-sm md:text-base">03</span>
                         </div>
                         <div class="pt-1">
@@ -98,7 +98,7 @@
                 </div>
 
                 {{-- CTA --}}
-                <div class="bg-gradient-to-br from-red-800 to-red-950 rounded-2xl p-5 md:p-6 mt-2">
+                <div class="bg-linear-to-br from-red-800 to-red-950 rounded-2xl p-5 md:p-6 mt-2">
                     <p class="text-white/80 text-sm mb-4 leading-relaxed">
                         Bersama kami, wujudkan generasi penerus bangsa yang unggul dan berkarakter.
                     </p>
