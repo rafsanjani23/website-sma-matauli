@@ -5,12 +5,11 @@
         {{-- PAGE TITLE --}}
         {{-- ===================== --}}
         <div class="text-center mb-12 md:mb-20">
-            <span class="text-xs font-semibold tracking-[0.3em] uppercase text-red-800">Perjalanan Kami</span>
-            <h1 class="mt-3 text-3xl md:text-5xl lg:text-6xl font-bold text-red-900 mb-4 md:mb-6">
+            <span class="text-xs font-semibold tracking-[0.3em] uppercase text-black">Perjalanan Kami</span>
+            <h1 class="mt-3 text-3xl md:text-5xl lg:text-6xl font-bold text-black mb-4 md:mb-6">
                 Sejarah Sekolah
             </h1>
-            <div
-                class="w-14 h-0.5 bg-linear-to-r from-red-800 via-red-600 to-yellow-500 mx-auto mb-4 md:mb-6 rounded-full">
+            <div class="w-14 h-0.5 bg-yellow-400 mx-auto mb-4 md:mb-6 rounded-full">
             </div>
             <p class="text-gray-500 text-sm md:text-lg max-w-3xl mx-auto leading-relaxed px-4">
                 Perjalanan panjang SMAN 1 Matauli Pandan dalam mencetak generasi unggul dan berkarakter sejak tahun 1994

@@ -3,8 +3,8 @@
 
         <!-- Header -->
         <header class="text-center mb-10 md:mb-12">
-            <span class="text-xs font-semibold tracking-[0.3em] uppercase text-red-800">Informasi Terkini</span>
-            <h2 class="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-red-900">Berita, Prestasi & Testimonials</h2>
+            <span class="text-xs font-semibold tracking-[0.3em] uppercase text-black">Informasi Terkini</span>
+            <h2 class="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-black">Berita, Prestasi & Testimonials</h2>
             <div class="mt-4 mx-auto w-14 h-0.5 bg-yellow-400 rounded-full">
             </div>
         </header>

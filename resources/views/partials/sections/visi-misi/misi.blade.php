@@ -9,10 +9,10 @@
                 <div class="w-8 h-0.5 bg-yellow-500"></div>
                 <span class="text-xs font-bold tracking-[0.25em] uppercase text-yellow-600">Langkah Nyata</span>
             </div>
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-red-900">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black">
                 Misi Sekolah
             </h2>
-            <div class="w-12 h-0.5 bg-linear-to-r from-red-800 to-yellow-500 mt-4 rounded-full"></div>
+            <div class="w-12 h-0.5 bg-yellow-400 mt-4 rounded-full"></div>
         </div>
 
         <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-start">

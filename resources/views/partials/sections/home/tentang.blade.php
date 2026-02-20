@@ -9,8 +9,7 @@
         {{-- ===================== --}}
         <div class="text-center mb-14 md:mb-20">
             {{-- <span class="text-xs font-semibold tracking-[0.3em] uppercase text-red-800">Siapa Kami</span> --}}
-            <h2 class="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-red-900"><span
-                    class="text-black">Tentang</span> Kami</h2>
+            <h2 class="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-black">Tentang Kami</h2>
             <div class="mt-5 mx-auto w-14 h-0.5 bg-yellow-400 rounded-full">
             </div>
         </div>

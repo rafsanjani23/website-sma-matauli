@@ -13,7 +13,7 @@
                     <span class="text-xs font-bold tracking-[0.25em] uppercase text-yellow-600">Kurikulum Unggulan</span>
                 </div>
 
-                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-red-900 leading-tight mb-5">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-black leading-tight mb-5">
                     Menggunakan Kurikulum
                     <span class="relative inline-block">
                         <span class="relative z-10">International</span>
@@ -22,7 +22,7 @@
                     <br class="hidden sm:block"> Baccalaureate
                 </h2>
 
-                <div class="w-12 h-0.5 bg-linear-to-r from-red-800 to-yellow-500 mb-5 rounded-full"></div>
+                <div class="w-12 h-0.5 bg-yellow-400 mb-5 rounded-full"></div>
 
                 <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-8">
                     SMAN 1 Matauli Pandan bernaung di bawah Yayasan Maju Tapian Nauli. Dengan lingkungan belajar

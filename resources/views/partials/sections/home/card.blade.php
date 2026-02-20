@@ -5,11 +5,10 @@
     {{-- Berisi eyebrow text, judul utama, dan garis gradient --}}
     {{-- ===================== --}}
     <div class="text-center mb-14">
-        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-red-800">Keunggulan Kami</span>
-        <h2 class="mt-3 text-3xl font-bold text-gray-900">Mengapa Memilih <em
-                class="text-red-800 not-italic font-extrabold">Sekolah Kami</em></h2>
-        {{-- Garis dekoratif bawah judul --}}
-        <div class="mt-4 mx-auto w-14 h-0.5 bg-yellow-400 rounded-full"></div>
+        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-black">Keunggulan Kami</span>
+        <h2 class="mt-3 text-3xl font-bold text-gray-900">Mengapa Memilih Sekolah Kami
+            {{-- Garis dekoratif bawah judul --}}
+            <div class="mt-4 mx-auto w-14 h-0.5 bg-yellow-400 rounded-full"></div>
     </div>
 
     {{-- ===================== --}}

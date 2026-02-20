@@ -8,9 +8,8 @@
         {{-- SECTION HEADER --}}
         {{-- ===================== --}}
         <div class="text-center mb-12 md:mb-16">
-            <span class="text-xs font-semibold tracking-[0.3em] uppercase text-red-800">Pilihan Program</span>
-            <h2 class="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-red-900"><span
-                    class="text-black">Program</span> Sekolah</h2>
+            <span class="text-xs font-semibold tracking-[0.3em] uppercase text-black">Pilihan Program</span>
+            <h2 class="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-black">Program Sekolah</h2>
             <div class="mt-4 mx-auto w-14 h-0.5 bg-yellow-400 rounded-full">
             </div>
         </div>

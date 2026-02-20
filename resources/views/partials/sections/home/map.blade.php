@@ -3,8 +3,8 @@
 
         <!-- ===== HEADER ===== -->
         <div class="text-center mb-10">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-red-900">
-                <span class="text-black">Lokasi</span> Kami
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black">
+                Lokasi Kami
             </h2>
 
             <div class="mt-4 mx-auto w-14 h-0.5 bg-yellow-400 rounded-full"></div>
