@@ -7,7 +7,7 @@
 
     <!-- Content -->
     <div class="relative h-full flex items-center">
-        <div class="container  px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
+        <div class="container px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
             <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white tracking-wider">
                 TENAGA PENDIDIK & KEPENDIDIKAN
             </h1>
