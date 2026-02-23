@@ -17,3 +17,6 @@ Route::get('/struktur', function () {
 Route::get('/tendik', function () {
     return view('pages.tendik');
 })->name('tendik');
+Route::get('/fasilitas', function () {
+    return view('pages.fasilitas-sekolah');
+})->name('fasilitas');

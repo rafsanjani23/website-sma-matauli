@@ -8,7 +8,7 @@
             </span>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-2">
             <!-- CARD kepsek-->
             <div>
                 <div class="bg-red-900 text-white text-sm font-semibold py-1 rounded-full inline-block px-4 mb-2">
