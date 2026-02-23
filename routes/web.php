@@ -20,3 +20,6 @@ Route::get('/tendik', function () {
 Route::get('/fasilitas', function () {
     return view('pages.fasilitas-sekolah');
 })->name('fasilitas');
+Route::get('/ekstrakurikuler', function () {
+    return view('pages.ekstrakurikuler');
+})->name('ekstrakurikuler');
