@@ -121,7 +121,7 @@
                     <li><a href="{{ route('visi-misi') }}" class="dropdown-item">Visi & Misi</a></li>
                     <li><a href="{{ url('/struktur') }}" class="dropdown-item">Struktur Sekolah</a>
                     </li>
-                    <li><a href="{{ url('/tentang-kami#tenaga-pendidik') }}" class="dropdown-item">Tenaga Pendidik
+                    <li><a href="{{ url('/tendik') }}" class="dropdown-item">Tenaga Pendidik
                             & Kependidikan</a></li>
                     <li><a href="{{ url('/tentang-kami#fasilitas') }}" class="dropdown-item">Fasilitas Sekolah</a>
                     </li>
@@ -285,7 +285,7 @@
                     <li><a href="{{ url('/tentang-kami#tenaga-pendidik') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Tenaga
                             Pendidik</a></li>
-                    <li><a href="{{ url('/tentang-kami#fasilitas') }}"
+                    <li><a href="{{ url('/tendik') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Fasilitas</a>
                     </li>
                     <li><a href="{{ url('/tentang-kami#asrama') }}"
