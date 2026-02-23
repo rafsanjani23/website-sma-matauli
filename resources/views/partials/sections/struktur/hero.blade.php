@@ -12,7 +12,7 @@
             class="h-10 sm:h-12 md:h-16 lg:h-20 mb-4 object-contain drop-shadow-xl">
 
         <h2 class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2">
-            Struktur Sekolah
+            STRUKTUR SEKOLAH
         </h2>
 
         <p class="text-gray-200 text-sm sm:text-base md:text-lg tracking-wide">

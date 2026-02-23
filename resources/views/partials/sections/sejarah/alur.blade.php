@@ -5,26 +5,25 @@
         {{-- PAGE TITLE --}}
         {{-- ===================== --}}
         <div class="text-center mb-12 md:mb-20">
-            <span class="text-xs font-semibold tracking-[0.3em] uppercase text-black">Perjalanan Kami</span>
             <h1 class="mt-3 text-3xl md:text-5xl lg:text-6xl font-bold text-black mb-4 md:mb-6">
-                Sejarah Sekolah
+                Perjalanan Kami
             </h1>
-            <div class="w-14 h-0.5 bg-yellow-400 mx-auto mb-4 md:mb-6 rounded-full">
-            </div>
             <p class="text-gray-500 text-sm md:text-lg max-w-3xl mx-auto leading-relaxed px-4">
                 Perjalanan panjang SMAN 1 Matauli Pandan dalam mencetak generasi unggul dan berkarakter sejak tahun 1994
             </p>
+            <div class="w-14 h-0.5 bg-yellow-400 mx-auto mt-4 md:mb-6 rounded-full">
+            </div>
         </div>
 
         {{-- ===================== --}}
         {{-- TIMELINE --}}
         {{-- ===================== --}}
         <div class="relative max-w-6xl mx-auto">
-
             {{-- GARIS VERTIKAL DESKTOP (tengah) --}}
             <div
                 class="absolute left-1/2 -translate-x-px top-0 bottom-0 w-0.5 bg-linear-to-b from-red-800 via-red-700 to-yellow-500 hidden md:block">
             </div>
+
 
             {{-- ============================================================ --}}
             {{-- MOBILE TIMELINE                                               --}}
