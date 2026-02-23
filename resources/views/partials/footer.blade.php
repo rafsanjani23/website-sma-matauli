@@ -134,76 +134,73 @@
                     </div>
                 </h3>
                 <ul class="space-y-3">
+                    {{-- SPMB --}}
                     <li>
-                        <a href="{{ url('/tentang-kami') }}"
-                            class="group flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition-all duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 5l7 7-7 7" />
-                            </svg>
-                            <span class="text-sm font-medium">Tentang Kami</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ url('/program#keahlian') }}"
-                            class="group flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition-all duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 5l7 7-7 7" />
-                            </svg>
-                            <span class="text-sm font-medium">Program Keahlian</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ url('/program#prestasi-siswa') }}"
-                            class="group flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition-all duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 5l7 7-7 7" />
-                            </svg>
-                            <span class="text-sm font-medium">Prestasi Siswa</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ url('/dokumentasi#berita') }}"
-                            class="group flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition-all duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="h-4 w-4 transform group-hover:translate-x-1 transition-transform"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 5l7 7-7 7" />
-                            </svg>
-                            <span class="text-sm font-medium">Berita Terkini</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ url('/sejarah-sekolah') }}"
-                            class="group flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition-all duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="h-4 w-4 transform group-hover:translate-x-1 transition-transform"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 5l7 7-7 7" />
-                            </svg>
-                            <span class="text-sm font-medium">Sejarah Sekolah</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ url('/ppdb') }}"
+                        <a href="{{ url('/spmb') }}"
                             class="group flex items-center gap-2 text-yellow-400 hover:text-yellow-300 transition-all duration-300 font-semibold">
                             <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                            <span class="text-sm">SPMB</span>
+                        </a>
+                    </li>
+
+                    {{-- Erapor --}}
+                    <li>
+                        <a href="https://erapor.kemdikbud.go.id"
+                            class="group flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition-all duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                            <span class="text-sm font-medium">Erapor</span>
+                        </a>
+                    </li>
+
+                    {{-- Asrama --}}
+                    <li>
+                        <a href="{{ url('/asrama') }}"
+                            class="group flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition-all duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                            <span class="text-sm font-medium">Asrama</span>
+                        </a>
+                    </li>
+
+                    {{-- Dapodik --}}
+                    <li>
+                        <a href="https://dapo.kemdikbud.go.id"
+                            class="group flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition-all duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg"
                                 class="h-4 w-4 transform group-hover:translate-x-1 transition-transform"
                                 fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M9 5l7 7-7 7" />
                             </svg>
-                            <span class="text-sm">PPDB Online</span>
+                            <span class="text-sm font-medium">Dapodik</span>
+                        </a>
+                    </li>
+
+                    {{-- Perpustakaan --}}
+                    <li>
+                        <a href="{{ url('/perpustakaan') }}"
+                            class="group flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition-all duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-4 w-4 transform group-hover:translate-x-1 transition-transform"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                            <span class="text-sm font-medium">Perpustakaan</span>
                         </a>
                     </li>
                 </ul>
@@ -276,24 +273,12 @@
                     </a>
                 </div>
 
-                {{-- <!-- Newsletter (Optional) -->
-                <div class="mt-4">
-                    <p class="text-xs text-gray-300 mb-3">Dapatkan update terbaru langsung di inbox Anda</p>
-                    <div class="flex gap-2">
-                        <input type="email" placeholder="Email Anda"
-                            class="flex-1 px-3 py-2 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-gray-400 text-sm focus:outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition-all">
-                        <button
-                            class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-matauli-red-dark font-bold rounded-lg transition-all hover:scale-105 text-sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
-                                fill="currentColor">
-                                <path
-                                    d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
-                            </svg>
-                        </button>
-                    </div>
-                </div> --}}
+                {{-- Gambar LOGO IB --}}
+                <div class="mt-8">
+                    <img src="{{ asset('assets/LogoIB.png') }}" alt="LOGO IB"
+                        class="w-full rounded-xl object-cover">
+                </div>
             </div>
-
         </div>
 
         <!-- Bottom Bar -->
@@ -302,15 +287,6 @@
                 <p class="text-gray-300 text-center md:text-left flex items-center gap-1">
                     Dibuat Oleh<span class="text-yellow-400 font-bold">YANG IT IT AJA</span>
                 </p>
-                {{-- <div class="flex gap-4 text-gray-300">
-                    <a href="{{ url('/privacy-policy') }}" class="hover:text-yellow-400 transition text-sm">Kebijakan
-                        Privasi</a>
-                    <span>•</span>
-                    <a href="{{ url('/terms') }}" class="hover:text-yellow-400 transition text-sm">Syarat &
-                        Ketentuan</a>
-                </div> --}}
             </div>
         </div>
-
-    </div>
 </footer>
