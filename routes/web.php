@@ -23,3 +23,6 @@ Route::get('/fasilitas', function () {
 Route::get('/ekstrakurikuler', function () {
     return view('pages.ekstrakurikuler');
 })->name('ekstrakurikuler');
+Route::get('/mitra', function () {
+    return view('pages.mitra-list');
+})->name('mitra');

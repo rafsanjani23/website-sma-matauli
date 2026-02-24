@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'Ekstrakurikuler')
 
 @section('content')
     @include('partials.sections.ekstrakurikuler.heading')
