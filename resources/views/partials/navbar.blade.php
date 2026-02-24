@@ -126,7 +126,7 @@
                     <li><a href="{{ url('/fasilitas') }}" class="dropdown-item">Fasilitas Sekolah</a>
                     </li>
                     <li><a href="{{ url('/ekstrakurikuler') }}" class="dropdown-item">Ekstrakurikuler</a></li>
-                    <li><a href="{{ url('/tentang-kami#kemitraan') }}" class="dropdown-item">Kemitraan Sekolah</a>
+                    <li><a href="{{ url('/mitra') }}" class="dropdown-item">Kemitraan Sekolah</a>
                     </li>
                 </ul>
             </li>
@@ -291,7 +291,7 @@
                     <li><a href="{{ url('/ekstrakurikuler') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Ekstrakulikuler</a>
                     </li>
-                    <li><a href="{{ url('/tentang-kami#kemitraan') }}"
+                    <li><a href="{{ url('/mitra') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Kemitraan</a>
                     </li>
                 </ul>
