@@ -68,7 +68,8 @@
                     <div
                         class="w-52 h-52 md:w-60 md:h-60 lg:w-64 lg:h-64 rounded-full bg-linear-to-br from-red-800 to-red-950 p-1.5 shadow-2xl shadow-red-900/30">
                         <div class="w-full h-full rounded-full overflow-hidden bg-gray-100">
-                            <img src="assets/bu ketum fitri.png" alt="Ketua Umum" class="w-full h-full object-cover">
+                            <img src="assets/bu ketum fitri crop.png" alt="Ketua Umum"
+                                style="width: 100%; height: 90%; object-fit: cover; object-position: center 0%; margin-top: 0;">
                         </div>
                     </div>
 
@@ -87,7 +88,7 @@
         {{-- STATISTICS --}}
         {{-- 3 kartu statistik dengan background merah --}}
         {{-- ===================== --}}
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto mb-12 md:mb-14">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto mb-12 md:mb-14">
 
             {{-- Stat 1: Peserta Didik --}}
             <div
@@ -108,15 +109,25 @@
                 <p class="text-red-200 text-sm font-medium">Guru</p>
             </div>
 
-            {{-- Stat 3: Ruang Kelas --}}
+            {{-- Stat 3: Tendik --}}
             <div
-                class="group relative bg-white border border-red-100 rounded-2xl p-6 text-center shadow-sm hover:shadow-xl hover:shadow-red-900/10 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                class="group relative bg-white rounded-2xl p-6 text-center shadow-md hover:shadow-xl hover:shadow-red-900/30 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
                 {{-- TOP ACCENT --}}
                 <h3 class="text-4xl md:text-5xl font-bold text-red-800 mb-2">999</h3>
+                <div class="w-8 h-0.5 bg-yellow-400 mx-auto mb-2 group-hover:w-14 transition-all duration-500"></div>
+                <p class="text-gray-500 text-sm font-medium">Tendik</p>
+            </div>
+
+            {{-- Stat 4: Rombongan Belajar --}}
+            <div
+                class="group relative bg-red-800 border border-red-100 rounded-2xl p-6 text-center shadow-sm hover:shadow-xl hover:shadow-red-900/10 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                {{-- TOP ACCENT --}}
+                <h3 class="text-4xl md:text-5xl font-bold text-white mb-2">999</h3>
                 <div class="w-8 h-0.5 bg-yellow-400 mx-auto mb-2 group-hover:w-14 transition-all duration-500">
                 </div>
-                <p class="text-gray-500 text-sm font-medium">Ruang Kelas</p>
+                <p class="text-red-200 text-sm font-medium">Rombongan Belajar</p>
             </div>
+
 
         </div>
 

@@ -5,7 +5,6 @@
     {{-- Berisi eyebrow text, judul utama, dan garis gradient --}}
     {{-- ===================== --}}
     <div class="text-center mb-14">
-        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-black">Keunggulan Kami</span>
         <h2 class="mt-3 text-3xl font-bold text-gray-900">Mengapa Memilih Sekolah Kami
             {{-- Garis dekoratif bawah judul --}}
             <div class="mt-4 mx-auto w-14 h-0.5 bg-yellow-400 rounded-full"></div>
@@ -24,11 +23,6 @@
             {{-- TOP BAR: Garis gradient muncul dari kiri saat hover --}}
             <div
                 class="absolute top-0 inset-x-0 h-1 bg-linear-to-r from-red-800 to-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out origin-left">
-            </div>
-
-            {{-- NUMBER BADGE: Nomor urut pojok kanan atas --}}
-            <div class="absolute top-4 right-4 w-7 h-7 rounded-full bg-red-50 flex items-center justify-center">
-                <span class="text-red-800 text-xs font-bold">01</span>
             </div>
 
             {{-- CARD CONTENT --}}
@@ -67,11 +61,6 @@
                 class="absolute top-0 inset-x-0 h-1 bg-linear-to-r from-red-800 to-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out origin-left">
             </div>
 
-            {{-- NUMBER BADGE --}}
-            <div class="absolute top-4 right-4 w-7 h-7 rounded-full bg-red-50 flex items-center justify-center">
-                <span class="text-red-800 text-xs font-bold">02</span>
-            </div>
-
             {{-- CARD CONTENT --}}
             <div class="p-7 flex flex-col items-center text-center">
 
@@ -80,7 +69,7 @@
                     <div
                         class="absolute inset-0 rounded-full bg-red-50 group-hover:bg-red-100 group-hover:scale-110 transition-all duration-500">
                     </div>
-                    <img src="data:image/png;base64,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"
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAABo0lEQVR4nO3dsU3DQBiG4SOiNEpP3CCmYB8IK8AEZIVkhgyUhs6BOhOE6ipOQj7he//E71NGis/Kl8/nXy6ckiRJkiRJc3LTaqHtanVutVZrr8dj9e+4+M8T0Xi3tV98Wy6v9h/dkg2AVTdgrl4O++9fn6X0lVJKi7un+7HHswEwA4AZAAzfA9bD8Emfw192ff841bFtAMwAYAYAMwCYAcAMAIbfhk55i3cJbADMAGD4JSiLOBG3uDzaABjegPUwvAPLPgNrFtkAGN4AQqRbXxsAwxuw6/sP+hxINgBmADADgOF7QOYkLATegAaTcJipt8QGwPAGTC3S1FtiA2B4A5yEhTIAmAHA8D0gcxIWAm8A9Ey4BJmYbQAMb0AU1MRsA2B4A5yEhTIAmAHA8D0gcxIWAm9A40k43PNhGwDDG9BSxOfDNgCGN8BJWCgDgBkADN8DMidhIfAGwM+E8cnYBsDwBpAiTMY2AIY3wElYKAOAGQDMAGAGADMAWPXrl8a+xOeh62qXCs/XWF2w6kFsczqNSn3bdb72qsAGSJIkSZIkzccPmc1GphcN1HwAAAAASUVORK5CYII="
                         alt="kurikulum-ib"
                         class="relative z-10 w-9 h-9 object-contain group-hover:scale-110 transition-transform duration-500">
                 </div>
@@ -99,18 +88,13 @@
             </div> --}}
         </div>
 
-        {{-- ===== CARD 3: Beasiswa ===== --}}
+        {{-- ===== CARD 3: Asrama ===== --}}
         <div
             class="group relative bg-white border border-gray-100 rounded-xl shadow-sm overflow-hidden mx-auto w-full scroll-animate transition-all duration-700 ease-in-out translate-x-10 opacity-0 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-900/10 hover:border-red-100 cursor-pointer">
 
             {{-- TOP BAR --}}
             <div
                 class="absolute top-0 inset-x-0 h-1 bg-linear-to-r from-red-800 to-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out origin-left">
-            </div>
-
-            {{-- NUMBER BADGE --}}
-            <div class="absolute top-4 right-4 w-7 h-7 rounded-full bg-red-50 flex items-center justify-center">
-                <span class="text-red-800 text-xs font-bold">03</span>
             </div>
 
             {{-- CARD CONTENT --}}
@@ -121,17 +105,17 @@
                     <div
                         class="absolute inset-0 rounded-full bg-red-50 group-hover:bg-red-100 group-hover:scale-110 transition-all duration-500">
                     </div>
-                    <img src="data:image/png;base64,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"
-                        alt="scholarship"
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAACU0lEQVR4nO2aO24CMRQAX6KUSKkjqnQciCtEuUKOkCtEXIED0aVCqZHokyKyAhv257X93rNn2oWVPbMGvIsIAAAAADjk7fHxW3sMS7jXHsASgnzPEdwG6Er3GsFlgD7ZHiO4CzAm2VsEVwGmyvUUwU2AuVK9RHARIFamhwjmAyyVaD2C6QCp5FmOYDZAamlWI9xpD6BLCVHvp5OZeZsZiIi9q7REKDMfQdbkl8JEgFblixgI0LJ8EeUArcsXUQyA/F9UAiD/j+IBkH9N0QDI/0+xAMi/TZEAXuWXGHf2AF7lB3KPP2sA7/IDOeeRLUAt8gO55pMlQG3yAznmlTxArfIDqeeXNEDt8gMp55ksQCvyA6nmmyRAa/IDKea96JFbq+JvEfv4MnoFIP+aWB9RAZB/mxgvswMgf5i5fmYFQP405nia/MURTvq8WsWMqSk+z2cRmfbFPGkFcOXHMcXbaADkL2PM32AA5KdhyGNvAOSnpc/n7N3bx3pNmBFej8fJXtX/mtg6BFDmIdWJXg77r6Hju832aex14TUlsDJeVoAyBFCGAMoQQBkCKJPsV1BJXg773mO7zbbgSJbjZic8JL0PrRhzdsLmV0CM+O57La8K0xuxJfK75+lGYCMGImI4QKqrP9f5UmE2QCsQQBkCKGN2H5DjM7vUz1GeiDmCAMoQQBkCKEMAZQigDAGUqTrAbrM1fStapOIAl+ItR6g2gBeqDXB5K8PqrWgRB48kl2BZfKDaFeAFAihDAGUIoAwBlCGAMgRQhgDKEAAAAAAAAADa4gfhLMWfgDVbYQAAAABJRU5ErkJggg=="
+                        alt="boarding school"
                         class="relative z-10 w-9 h-9 object-contain group-hover:scale-110 transition-transform duration-500">
                 </div>
 
                 {{-- JUDUL & DESKRIPSI --}}
                 <h3
                     class="font-semibold text-gray-800 text-sm leading-snug mb-2 group-hover:text-red-800 transition-colors duration-300">
-                    Beasiswa Sekolah</h3>
-                <p class="text-xs text-gray-400 font-light leading-relaxed">Program beasiswa komprehensif untuk
-                    mendukung siswa berprestasi meraih pendidikan terbaik.</p>
+                    Asrama Sekolah</h3>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">Fasilitas asrama modern dengan lingkungan
+                    belajar kondusif untuk mendukung kehidupan dan prestasi siswa secara menyeluruh.</p>
             </div>
 
             {{-- BOTTOM ACCENT --}}
@@ -147,11 +131,6 @@
             {{-- TOP BAR --}}
             <div
                 class="absolute top-0 inset-x-0 h-1 bg-linear-to-r from-red-800 to-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out origin-left">
-            </div>
-
-            {{-- NUMBER BADGE --}}
-            <div class="absolute top-4 right-4 w-7 h-7 rounded-full bg-red-50 flex items-center justify-center">
-                <span class="text-red-800 text-xs font-bold">04</span>
             </div>
 
             {{-- CARD CONTENT --}}

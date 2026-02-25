@@ -491,16 +491,20 @@
         <div class="mt-16 md:mt-24">
             <div class="bg-linear-to-br from-red-800 to-red-950 rounded-2xl md:rounded-3xl shadow-2xl p-6 md:p-12">
                 <h2 class="text-xl md:text-3xl font-bold text-white text-center mb-6 md:mb-12">
-                    31 Tahun Perjalanan Mencerdaskan Bangsa
+                    <span class="relative inline-block text-yellow-400 px-1">
+                        33 Tahun
+                        <span class="absolute -bottom-1 left-0 w-full h-0.75 rounded-full"
+                            style="background: linear-gradient(90deg, transparent, #facc15, #fde68a, #facc15, transparent);"></span>
+                        <span
+                            class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-3/4 h-1.5 rounded-full blur-sm opacity-60"
+                            style="background: #facc15;"></span>
+                    </span>
+                    <span class="text-white"> Perjalanan Mencerdaskan Bangsa</span>
                 </h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
                     <div class="text-center">
-                        <div class="text-3xl md:text-5xl font-bold text-yellow-400 mb-1 md:mb-2">31+</div>
-                        <div class="text-white text-xs md:text-base">Tahun Berdiri</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-3xl md:text-5xl font-bold text-yellow-400 mb-1 md:mb-2">30+</div>
-                        <div class="text-white text-xs md:text-base">Angkatan Lulus</div>
+                        <div class="text-3xl md:text-5xl font-bold text-yellow-400 mb-1 md:mb-2">XXXIII</div>
+                        <div class="text-white text-xs md:text-base">Angkatan</div>
                     </div>
                     <div class="text-center">
                         <div class="text-3xl md:text-5xl font-bold text-yellow-400 mb-1 md:mb-2">8K+</div>
