@@ -5,26 +5,25 @@
         {{-- PAGE TITLE --}}
         {{-- ===================== --}}
         <div class="text-center mb-12 md:mb-20">
-            <span class="text-xs font-semibold tracking-[0.3em] uppercase text-black">Perjalanan Kami</span>
             <h1 class="mt-3 text-3xl md:text-5xl lg:text-6xl font-bold text-black mb-4 md:mb-6">
-                Sejarah Sekolah
+                Perjalanan Kami
             </h1>
-            <div class="w-14 h-0.5 bg-yellow-400 mx-auto mb-4 md:mb-6 rounded-full">
-            </div>
             <p class="text-gray-500 text-sm md:text-lg max-w-3xl mx-auto leading-relaxed px-4">
                 Perjalanan panjang SMAN 1 Matauli Pandan dalam mencetak generasi unggul dan berkarakter sejak tahun 1994
             </p>
+            <div class="w-14 h-0.5 bg-yellow-400 mx-auto mt-4 md:mb-6 rounded-full">
+            </div>
         </div>
 
         {{-- ===================== --}}
         {{-- TIMELINE --}}
         {{-- ===================== --}}
         <div class="relative max-w-6xl mx-auto">
-
             {{-- GARIS VERTIKAL DESKTOP (tengah) --}}
             <div
                 class="absolute left-1/2 -translate-x-px top-0 bottom-0 w-0.5 bg-linear-to-b from-red-800 via-red-700 to-yellow-500 hidden md:block">
             </div>
+
 
             {{-- ============================================================ --}}
             {{-- MOBILE TIMELINE                                               --}}
@@ -492,16 +491,20 @@
         <div class="mt-16 md:mt-24">
             <div class="bg-linear-to-br from-red-800 to-red-950 rounded-2xl md:rounded-3xl shadow-2xl p-6 md:p-12">
                 <h2 class="text-xl md:text-3xl font-bold text-white text-center mb-6 md:mb-12">
-                    31 Tahun Perjalanan Mencerdaskan Bangsa
+                    <span class="relative inline-block text-yellow-400 px-1">
+                        33 Tahun
+                        <span class="absolute -bottom-1 left-0 w-full h-0.75 rounded-full"
+                            style="background: linear-gradient(90deg, transparent, #facc15, #fde68a, #facc15, transparent);"></span>
+                        <span
+                            class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-3/4 h-1.5 rounded-full blur-sm opacity-60"
+                            style="background: #facc15;"></span>
+                    </span>
+                    <span class="text-white"> Perjalanan Mencerdaskan Bangsa</span>
                 </h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
                     <div class="text-center">
-                        <div class="text-3xl md:text-5xl font-bold text-yellow-400 mb-1 md:mb-2">31+</div>
-                        <div class="text-white text-xs md:text-base">Tahun Berdiri</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-3xl md:text-5xl font-bold text-yellow-400 mb-1 md:mb-2">30+</div>
-                        <div class="text-white text-xs md:text-base">Angkatan Lulus</div>
+                        <div class="text-3xl md:text-5xl font-bold text-yellow-400 mb-1 md:mb-2">XXXIII</div>
+                        <div class="text-white text-xs md:text-base">Angkatan</div>
                     </div>
                     <div class="text-center">
                         <div class="text-3xl md:text-5xl font-bold text-yellow-400 mb-1 md:mb-2">8K+</div>

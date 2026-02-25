@@ -97,7 +97,7 @@
                     </div>
                 </div>
 
-                {{-- CTA --}}
+                {{-- CTA
                 <div class="bg-linear-to-br from-red-800 to-red-950 rounded-2xl p-5 md:p-6 mt-2">
                     <p class="text-white/80 text-sm mb-4 leading-relaxed">
                         Bersama kami, wujudkan generasi penerus bangsa yang unggul dan berkarakter.
@@ -111,7 +111,7 @@
                                 d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg>
                     </a>
-                </div>
+                </div> --}}
 
             </div>
         </div>

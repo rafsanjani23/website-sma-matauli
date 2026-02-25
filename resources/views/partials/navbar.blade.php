@@ -116,17 +116,16 @@
                 </button>
 
                 <ul class="nav-dropdown-content">
-                    <li><a href="{{ route('sejarah') }}" class="dropdown-item">Sejarah
-                            Sekolah</a></li>
+                    <li><a href="{{ route('sejarah') }}" class="dropdown-item">Sejarah</a></li>
                     <li><a href="{{ route('visi-misi') }}" class="dropdown-item">Visi & Misi</a></li>
-                    <li><a href="{{ url('/struktur') }}" class="dropdown-item">Struktur Sekolah</a>
+                    <li><a href="{{ url('/struktur') }}" class="dropdown-item">Struktur</a>
                     </li>
                     <li><a href="{{ url('/tendik') }}" class="dropdown-item">Tenaga Pendidik
                             & Kependidikan</a></li>
-                    <li><a href="{{ url('/fasilitas') }}" class="dropdown-item">Fasilitas Sekolah</a>
+                    <li><a href="{{ url('/fasilitas') }}" class="dropdown-item">Fasilitas</a>
                     </li>
                     <li><a href="{{ url('/ekstrakurikuler') }}" class="dropdown-item">Ekstrakurikuler</a></li>
-                    <li><a href="{{ url('/mitra') }}" class="dropdown-item">Kemitraan Sekolah</a>
+                    <li><a href="{{ url('/mitra') }}" class="dropdown-item">Kemitraan</a>
                     </li>
                 </ul>
             </li>
@@ -201,8 +200,7 @@
                 <ul class="nav-dropdown-content">
                     <li><a href="{{ url('/dokumentasi#galeri') }}" class="dropdown-item">Foto</a></li>
                     <li><a href="{{ url('/dokumentasi#berita') }}" class="dropdown-item">Video</a></li>
-                    <li><a href="{{ url('/dokumentasi#kegiatan-sekolah') }}" class="dropdown-item">Kegiatan
-                            Sekolah</a></li>
+                    <li><a href="{{ url('/dokumentasi#kegiatan-sekolah') }}" class="dropdown-item">Kegiatan</a></li>
                 </ul>
             </li>
 
@@ -273,14 +271,13 @@
                 </button>
                 <ul class="mobile-dropdown-content bg-gray-50">
                     <li><a href="{{ route('sejarah') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Sejarah
-                            Sekolah</a></li>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Sejarah</a>
+                    </li>
                     <li><a href="{{ route('visi-misi') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Visi
                             & Misi</a></li>
                     <li><a href="{{ url('/struktur') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Struktur
-                            Sekolah</a>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Struktur</a>
                     </li>
                     <li><a href="{{ url('/tendik') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Tenaga
@@ -377,8 +374,8 @@
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Video</a>
                     </li>
                     <li><a href="{{ url('/dokumentasi#kegiatan-sekolah') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Kegiatan
-                            Sekolah</a></li>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Kegiatan</a>
+                    </li>
                 </ul>
             </li>
 

@@ -6,14 +6,13 @@
 
         {{-- Header --}}
         <div class="text-center mb-12 md:mb-16">
-            <span class="text-xs font-bold tracking-[0.25em] uppercase text-black">Tentang Kami</span>
             <h2 class="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-black">
                 Struktur Organisasi
             </h2>
-            <div class="w-12 h-0.5 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
             <p class="text-gray-500 text-sm md:text-base mt-4 max-w-xl mx-auto">
                 Susunan kepemimpinan dan organisasi SMAN 1 Matauli Pandan
             </p>
+            <div class="w-12 h-0.5 bg-yellow-400 mx-auto mt-5 rounded-full"></div>
         </div>
 
         {{-- ======================= --}}
