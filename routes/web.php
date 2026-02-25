@@ -26,3 +26,6 @@ Route::get('/ekstrakurikuler', function () {
 Route::get('/mitra', function () {
     return view('pages.mitra-list');
 })->name('mitra');
+Route::get('/mitra-detail', function () {
+    return view('pages.mitra-detail');
+})->name('mitra-detail');
