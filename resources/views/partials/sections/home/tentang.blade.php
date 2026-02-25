@@ -104,7 +104,7 @@
             <div
                 class="group relative bg-red-800 rounded-2xl p-6 text-center shadow-md hover:shadow-xl hover:shadow-red-900/30 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
                 {{-- TOP ACCENT --}}
-                <h3 class="text-4xl md:text-5xl font-bold text-white mb-2">999</h3>
+                <h3 class="text-4xl md:text-5xl font-bold text-white mb-2">85</h3>
                 <div class="w-8 h-0.5 bg-yellow-400 mx-auto mb-2 group-hover:w-14 transition-all duration-500"></div>
                 <p class="text-red-200 text-sm font-medium">Guru</p>
             </div>
@@ -113,7 +113,7 @@
             <div
                 class="group relative bg-white rounded-2xl p-6 text-center shadow-md hover:shadow-xl hover:shadow-red-900/30 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
                 {{-- TOP ACCENT --}}
-                <h3 class="text-4xl md:text-5xl font-bold text-red-800 mb-2">999</h3>
+                <h3 class="text-4xl md:text-5xl font-bold text-red-800 mb-2">54</h3>
                 <div class="w-8 h-0.5 bg-yellow-400 mx-auto mb-2 group-hover:w-14 transition-all duration-500"></div>
                 <p class="text-gray-500 text-sm font-medium">Tendik</p>
             </div>
