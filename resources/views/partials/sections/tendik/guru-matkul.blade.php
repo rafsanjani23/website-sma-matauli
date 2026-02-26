@@ -1,4 +1,4 @@
-<section class="py-2 bg-white">
+<section id="guru" class="py-2 bg-white">
     <div class="mx-auto px-4">
         <div class="p-2">
             <div class="space-y-2 mx-auto">

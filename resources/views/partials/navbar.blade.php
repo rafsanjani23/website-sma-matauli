@@ -141,9 +141,9 @@
                 </button>
 
                 <ul class="nav-dropdown-content">
-                    <li><a href="{{ url('/program#prestasi-siswa') }}" class="dropdown-item">Program Kemataulian</a>
+                    <li><a href="{{ url('/program-kemataulian') }}" class="dropdown-item">Program Kemataulian</a>
                     </li>
-                    <li><a href="{{ url('/program#ekstrakulikuler') }}" class="dropdown-item">Program Pre-IB</a>
+                    <li><a href="{{ url('/program-ib') }}" class="dropdown-item">Program Pre-IB</a>
                     </li>
                 </ul>
             </li>
@@ -305,10 +305,10 @@
                     </svg>
                 </button>
                 <ul class="mobile-dropdown-content bg-gray-50">
-                    <li><a href="{{ url('/program#prestasi-siswa') }}"
+                    <li><a href="{{ url('/program-kemataulian') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Program
                             Kemataulian</a></li>
-                    <li><a href="{{ url('/program#ekstrakulikuler') }}"
+                    <li><a href="{{ url('/program-ib') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Program
                             Pre-IB</a>
                     </li>

@@ -32,3 +32,6 @@ Route::get('/mitra-detail', function () {
 Route::get('/program-kemataulian', function () {
     return view('pages.program-kemataulian');
 })->name('program-kemataulian');
+Route::get('/program-ib', function () {
+    return view('pages.program-ib');
+})->name('program-ib');
