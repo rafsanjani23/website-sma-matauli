@@ -297,9 +297,13 @@
                     <img src="{{ asset('assets/LogoIB.png') }}" alt="LOGO IB"
                         class="w-full rounded-xl object-cover">
                 </div>
+                {{-- Gambar Kurikulum Merdeka --}}
+                <div class="mt-6">
+                    <img src="{{ asset('assets/kurikulum.png') }}" alt="Kurikulum Merdeka"
+                        class="w-full h-18 object-cover rounded-xl">
+                </div>
             </div>
         </div>
-
         <!-- Bottom Bar -->
         <div class="mt-8 pt-5 border-t border-white/10">
             <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs">

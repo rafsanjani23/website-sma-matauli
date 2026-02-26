@@ -1,6 +1,6 @@
 <!-- HERO IMAGE FULL WIDTH -->
 <section class="relative w-full h-80 md:h-100 lg:h-120 overflow-hidden">
-    <img src="{{ asset('assets/FotoPendiriMatauli.jpg') }}" alt="Foto Pendiri Matauli Pandan"
+    <img src="{{ asset('assets/Sejarah_HeroSection.jpg') }}" alt="Foto Pendiri Matauli Pandan"
         class="absolute inset-0 w-full h-170 object-cover">
 
     <!-- Overlay -->

@@ -30,7 +30,7 @@
                     <div
                         class="w-52 h-52 md:w-60 md:h-60 lg:w-64 lg:h-64 rounded-full bg-linear-to-br from-red-800 to-red-950 p-1.5 shadow-2xl shadow-red-900/30">
                         <div class="w-full h-full rounded-full overflow-hidden bg-gray-100">
-                            <img src="assets/Pak_Deden.png" alt="Kepala Sekolah"
+                            <img src="assets/Pak_Deden_Kepala_Sekolah.png" alt="Kepala Sekolah"
                                 class="width: 100%; height: 100%; object-fit: cover; object-position: center 0%; margin-top: 0;">
                         </div>
                     </div>
@@ -69,7 +69,7 @@
                     <div
                         class="w-52 h-52 md:w-60 md:h-60 lg:w-64 lg:h-64 rounded-full bg-linear-to-br from-red-800 to-red-950 p-1.5 shadow-2xl shadow-red-900/30">
                         <div class="w-full h-full rounded-full overflow-hidden bg-gray-100">
-                            <img src="assets/bu ketum fitri crop.png" alt="Ketua Umum"
+                            <img src="assets/Ibu_Fitri_Ketua_Umum.png" alt="Ketua Umum"
                                 style="width: 100%; height: 90%; object-fit: cover; object-position: center 0%; margin-top: 0;">
                         </div>
                     </div>
@@ -95,7 +95,7 @@
             <div
                 class="group relative bg-white border border-red-100 rounded-2xl p-6 text-center shadow-sm hover:shadow-xl hover:shadow-red-900/10 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
                 {{-- TOP ACCENT --}}
-                <h3 class="text-4xl md:text-5xl font-bold text-red-800 mb-2">2,550+</h3>
+                <h3 class="text-4xl md:text-5xl font-bold text-red-800 mb-2">1,193</h3>
                 <div class="w-8 h-0.5 bg-yellow-400 mx-auto mb-2 group-hover:w-14 transition-all duration-500">
                 </div>
                 <p class="text-gray-500 text-sm font-medium">Peserta Didik</p>
@@ -123,7 +123,7 @@
             <div
                 class="group relative bg-red-800 border border-red-100 rounded-2xl p-6 text-center shadow-sm hover:shadow-xl hover:shadow-red-900/10 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
                 {{-- TOP ACCENT --}}
-                <h3 class="text-4xl md:text-5xl font-bold text-white mb-2">999</h3>
+                <h3 class="text-4xl md:text-5xl font-bold text-white mb-2">34</h3>
                 <div class="w-8 h-0.5 bg-yellow-400 mx-auto mb-2 group-hover:w-14 transition-all duration-500">
                 </div>
                 <p class="text-red-200 text-sm font-medium">Rombongan Belajar</p>
