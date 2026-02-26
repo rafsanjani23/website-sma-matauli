@@ -29,3 +29,6 @@ Route::get('/mitra', function () {
 Route::get('/mitra-detail', function () {
     return view('pages.mitra-detail');
 })->name('mitra-detail');
+Route::get('/program-kemataulian', function () {
+    return view('pages.program-kemataulian');
+})->name('program-kemataulian');
