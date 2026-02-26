@@ -27,8 +27,8 @@
                             <path
                                 d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                         </svg>
-                        <a href="mailto:ppdbmatauli@gmail.com" class="hover:text-orange-500 transition">
-                            ppdbmatauli@gmail.com
+                        <a href="mailto:matauli@www.sman1-matauli.sch.id"
+                            class="hover:text-orange-500 transition">matauli@www.sman1-matauli.sch.id
                         </a>
                     </div>
 
@@ -39,8 +39,8 @@
                             <path
                                 d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
                         </svg>
-                        <a href="tel:+6282121313131" class="hover:text-orange-500 font-semibold transition">
-                            +62 821-2131-3131
+                        <a href="tel:+62631371996" class="hover:text-orange-500 font-semibold transition">
+                            +62 631-371-996
                         </a>
                     </div>
 
@@ -141,9 +141,17 @@
                 </button>
 
                 <ul class="nav-dropdown-content">
+<<<<<<< HEAD
                     <li><a href="{{ url('/program-kemataulian') }}" class="dropdown-item">Program Kemataulian</a>
                     </li>
                     <li><a href="{{ url('/program-ib') }}" class="dropdown-item">Program Pre-IB</a>
+=======
+                    <li><a href="{{ url('/program#kemataulian') }}" class="dropdown-item">Program Kemataulian</a>
+                    </li>
+                    <li><a href="{{ url('/program#preIB') }}" class="dropdown-item">Program Pre-IB</a>
+                    </li>
+                    <li><a href="{{ url('/program#kemendikdasmen') }}" class="dropdown-item">Program Kemendikdasmen</a>
+>>>>>>> main
                     </li>
                 </ul>
             </li>
@@ -305,12 +313,23 @@
                     </svg>
                 </button>
                 <ul class="mobile-dropdown-content bg-gray-50">
+<<<<<<< HEAD
                     <li><a href="{{ url('/program-kemataulian') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Program
                             Kemataulian</a></li>
                     <li><a href="{{ url('/program-ib') }}"
+=======
+                    <li><a href="{{ url('/program#kemataulian') }}"
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Program
+                            Kemataulian</a></li>
+                    <li><a href="{{ url('/program#preIB') }}"
+>>>>>>> main
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Program
                             Pre-IB</a>
+                    </li>
+                    <li><a href="{{ url('/program#kemendikdasmen') }}"
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Program
+                            Kemendikdasmen</a>
                     </li>
                 </ul>
             </li>
@@ -387,14 +406,14 @@
 
                 <!-- Contact -->
                 <div class="space-y-3 mb-4">
-                    <a href="mailto:ppdbmatauli@gmail.com"
+                    <a href="mailto:matauli@www.sman1-matauli.sch.id"
                         class="flex items-center gap-2 text-sm text-gray-600 hover:text-orange-600 transition">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor"
                             viewBox="0 0 24 24">
                             <path
                                 d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                         </svg>
-                        ppdbmatauli@gmail.com
+                        matauli@www.sman1-matauli.sch.id
                     </a>
 
                     <a href="tel:+6282121313131"

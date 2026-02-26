@@ -78,7 +78,7 @@
                         <div class="flex-1">
                             <p class="text-xs text-yellow-400 font-semibold mb-1">Alamat</p>
                             <p class="text-gray-200 leading-relaxed text-sm">
-                                Jl. Pendidikan No. 123, Pandan,<br>
+                                Jl. Ki Hajar Dewantara No. 01 Pandan,<br>
                                 Tapanuli Tengah, Sumatera Utara
                             </p>
                         </div>
@@ -97,10 +97,29 @@
                         </div>
                         <div class="flex-1">
                             <p class="text-xs text-yellow-400 font-semibold mb-1">Telepon</p>
-                            <a href="tel:+628888888888"
+                            <a href="tel:+62631371996"
                                 class="text-gray-200 hover:text-yellow-400 transition text-sm font-medium">
-                                +62 888-8888-8888
+                                +62 631-371-996
                             </a>
+                        </div>
+                    </div>
+
+                    <!-- Fax -->
+                    <div class="flex items-center gap-3 group hover:translate-x-1 transition-transform duration-300">
+                        <div
+                            class="shrink-0 w-10 h-10 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center group-hover:bg-yellow-400 transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5 text-yellow-400 group-hover:text-matauli-red-dark transition-colors"
+                                fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z" />
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-xs text-yellow-400 font-semibold mb-1">Fax</p>
+                            <p class="text-gray-200 text-sm font-medium">
+                                +62 631-371-997
+                            </p>
                         </div>
                     </div>
 
@@ -117,9 +136,9 @@
                         </div>
                         <div class="flex-1">
                             <p class="text-xs text-yellow-400 font-semibold mb-1">Email</p>
-                            <a href="mailto:examplematauli@gmail.com"
+                            <a href="mailto:matauli@www.sman1-matauli.sch.id"
                                 class="text-gray-200 hover:text-yellow-400 transition text-sm font-medium break-all">
-                                examplematauli@gmail.com
+                                matauli@www.sman1-matauli.sch.id
                             </a>
                         </div>
                     </div>
@@ -167,8 +186,8 @@
                         <a href="{{ url('/asrama') }}"
                             class="group flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition-all duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg"
-                                class="h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
+                                class="h-4 w-4 transform group-hover:translate-x-1 transition-transform"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M9 5l7 7-7 7" />
                             </svg>
@@ -278,9 +297,13 @@
                     <img src="{{ asset('assets/LogoIB.png') }}" alt="LOGO IB"
                         class="w-full rounded-xl object-cover">
                 </div>
+                {{-- Gambar Kurikulum Merdeka --}}
+                <div class="mt-6">
+                    <img src="{{ asset('assets/kurikulum.png') }}" alt="Kurikulum Merdeka"
+                        class="w-full h-18 object-cover rounded-xl">
+                </div>
             </div>
         </div>
-
         <!-- Bottom Bar -->
         <div class="mt-8 pt-5 border-t border-white/10">
             <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
