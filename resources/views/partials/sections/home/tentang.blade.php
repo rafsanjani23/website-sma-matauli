@@ -30,10 +30,11 @@
                     <div
                         class="w-52 h-52 md:w-60 md:h-60 lg:w-64 lg:h-64 rounded-full bg-linear-to-br from-red-800 to-red-950 p-1.5 shadow-2xl shadow-red-900/30">
                         <div class="w-full h-full rounded-full overflow-hidden bg-gray-100">
-                            <img src="assets/pak kepsek deden_merah maroon.png" alt="Kepala Sekolah"
-                                class="w-full h-full object-cover">
+                            <img src="assets/Pak_Deden.png" alt="Kepala Sekolah"
+                                class="width: 100%; height: 100%; object-fit: cover; object-position: center 0%; margin-top: 0;">
                         </div>
                     </div>
+
 
                     {{-- NAME BADGE --}}
                     <div

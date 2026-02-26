@@ -9,8 +9,7 @@
                 Wadah pengembangan minat dan bakat siswa untuk membentuk karakter unggul, mandiri, dan kreatif.
             </p>
 
-              <div
-                class="w-30 h-0.5 bg-matauli-orange mx-auto mt-2 mb-4 md:mb-6 rounded-full">
+            <div class="w-30 h-0.5 bg-yellow-400 mx-auto mt-2 mb-4 md:mb-6 rounded-full">
             </div>
         </div>
     </div>
