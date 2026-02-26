@@ -141,17 +141,11 @@
                 </button>
 
                 <ul class="nav-dropdown-content">
-<<<<<<< HEAD
                     <li><a href="{{ url('/program-kemataulian') }}" class="dropdown-item">Program Kemataulian</a>
                     </li>
                     <li><a href="{{ url('/program-ib') }}" class="dropdown-item">Program Pre-IB</a>
-=======
-                    <li><a href="{{ url('/program#kemataulian') }}" class="dropdown-item">Program Kemataulian</a>
                     </li>
-                    <li><a href="{{ url('/program#preIB') }}" class="dropdown-item">Program Pre-IB</a>
-                    </li>
-                    <li><a href="{{ url('/program#kemendikdasmen') }}" class="dropdown-item">Program Kemendikdasmen</a>
->>>>>>> main
+                    <li><a href="{{ url('/program-kemendikdasmen') }}" class="dropdown-item">Program Kemendikdasmen</a>
                     </li>
                 </ul>
             </li>
@@ -313,21 +307,14 @@
                     </svg>
                 </button>
                 <ul class="mobile-dropdown-content bg-gray-50">
-<<<<<<< HEAD
                     <li><a href="{{ url('/program-kemataulian') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Program
                             Kemataulian</a></li>
                     <li><a href="{{ url('/program-ib') }}"
-=======
-                    <li><a href="{{ url('/program#kemataulian') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Program
-                            Kemataulian</a></li>
-                    <li><a href="{{ url('/program#preIB') }}"
->>>>>>> main
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Program
                             Pre-IB</a>
                     </li>
-                    <li><a href="{{ url('/program#kemendikdasmen') }}"
+                    <li><a href="{{ url('/program-kemendikdasmen') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Program
                             Kemendikdasmen</a>
                     </li>
