@@ -292,15 +292,15 @@
                     </a>
                 </div>
 
-                {{-- Gambar LOGO IB --}}
+                {{-- Gambar Kurikulum Merdeka --}}
                 <div class="mt-8">
+                    <img src="{{ asset('assets/kurikulum.png') }}" alt="Kurikulum Merdeka"
+                        class="w-full h-16 object-cover rounded-xl">
+                </div>
+                {{-- Gambar LOGO IB --}}
+                <div class="mt-6">
                     <img src="{{ asset('assets/LogoIB.png') }}" alt="LOGO IB"
                         class="w-full rounded-xl object-cover">
-                </div>
-                {{-- Gambar Kurikulum Merdeka --}}
-                <div class="mt-6">
-                    <img src="{{ asset('assets/kurikulum.png') }}" alt="Kurikulum Merdeka"
-                        class="w-full h-18 object-cover rounded-xl">
                 </div>
             </div>
         </div>
