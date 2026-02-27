@@ -11,7 +11,7 @@
             <p class="text-gray-500 text-sm md:text-lg max-w-3xl mx-auto leading-relaxed px-4">
                 Perjalanan panjang SMAN 1 Matauli Pandan dalam mencetak generasi unggul dan berkarakter sejak tahun 1994
             </p>
-            <div class="w-14 h-0.5 bg-yellow-400 mx-auto mt-4 md:mb-6 rounded-full"></div>
+            <div class="mt-4 mx-auto w-14 h-1 bg-yellow-400 rounded-full"></div>
         </div>
 
         {{-- ===================== --}}
@@ -635,7 +635,7 @@
                     </span>
                     <span class="text-white"> Perjalanan Mencerdaskan Bangsa</span>
                 </h2>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
+                <div class="grid grid-cols-3 md:grid-cols-3 gap-4 md:gap-8">
                     <div class="text-center">
                         <div class="text-3xl md:text-5xl font-bold text-yellow-400 mb-1 md:mb-2">XXXIII</div>
                         <div class="text-white text-xs md:text-base">Angkatan</div>

@@ -7,7 +7,7 @@
     <div class="text-center mb-14">
         <h2 class="mt-3 text-3xl font-bold text-gray-900">Mengapa Memilih Sekolah Kami
             {{-- Garis dekoratif bawah judul --}}
-            <div class="mt-4 mx-auto w-14 h-0.5 bg-yellow-400 rounded-full"></div>
+            <div class="mt-4 mx-auto w-14 h-1 bg-yellow-400 rounded-full"></div>
     </div>
 
     {{-- ===================== --}}

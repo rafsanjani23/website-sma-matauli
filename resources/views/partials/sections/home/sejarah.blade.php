@@ -1,7 +1,7 @@
 <!-- ============================================ -->
 <!-- SEJARAH SECTION - START -->
 <!-- ============================================ -->
-<section id="sejarah" class="py-5 mx-auto">
+<section id="sejarah" class="mx-auto">
     <div class="relative overflow-hidden bg-linear-to-br from-red-900 via-red-800 to-red-950">
 
         {{-- ===================== --}}
@@ -25,7 +25,7 @@
                 class="order-2 md:order-1 relative overflow-hidden scroll-animate opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
 
                 {{-- IMAGE: Full height mengisi kolom --}}
-                <img src="{{ asset('assets/feisal-dan-akbar tanjung.png') }}"
+                <img src="{{ asset('assets/feisal_dan_akbar_tanjung.png') }}"
                     alt="Pendiri SMAN 1 Matauli Pandan - Jenderal TNI Feisal Tanjung dan Dr. Ir. H. Akbar Tandjung"
                     class="w-full h-full object-cover object-top">
 

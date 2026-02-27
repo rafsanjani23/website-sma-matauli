@@ -1,12 +1,11 @@
-<section id="berita-prestasi-testi" class="py-12">
+<section id="berita-prestasi-testi" class="py-12 bg-gray-50">
     <div class="mx-auto px-10">
 
         <!-- Header -->
         <header class="text-center mb-10 md:mb-12">
             <span class="text-xs font-semibold tracking-[0.3em] uppercase text-black">Informasi Terkini</span>
             <h2 class="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-black">Berita, Prestasi & Testimonials</h2>
-            <div class="mt-4 mx-auto w-14 h-0.5 bg-yellow-400 rounded-full">
-            </div>
+            <div class="mt-4 mx-auto w-14 h-1 bg-yellow-400 rounded-full"></div>
         </header>
 
         <!-- Tab List -->

@@ -6,7 +6,7 @@
     <p class="mt-3 text-gray-600 max-w-xl mx-auto text-sm md:text-base">
         Kami menjalin kolaborasi dengan berbagai perusahaan nasional dan internasional
     </p>
-    <div class="w-14 h-1 bg-yellow-400 mx-auto mt-3 rounded"></div>
+    <div class="mt-4 mx-auto w-14 h-1 bg-yellow-400 rounded-full"></div>
 
     <div class="relative mt-10 max-w-4xl mx-auto">
 

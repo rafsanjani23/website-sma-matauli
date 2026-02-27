@@ -12,7 +12,7 @@
             <p class="text-gray-500 text-sm md:text-base mt-4 max-w-xl mx-auto">
                 Susunan kepemimpinan dan organisasi SMAN 1 Matauli Pandan
             </p>
-            <div class="w-12 h-0.5 bg-yellow-400 mx-auto mt-5 rounded-full"></div>
+            <div class="mt-4 mx-auto w-14 h-1 bg-yellow-400 rounded-full"></div>
         </div>
 
         {{-- ======================= --}}

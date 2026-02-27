@@ -1,4 +1,4 @@
-<section id="map" class="py-20 md:py-24 bg-gray-50">
+<section id="map" class="py-20 md:py-24">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- ===== HEADER ===== -->
@@ -7,7 +7,7 @@
                 Lokasi Kami
             </h2>
 
-            <div class="mt-4 mx-auto w-14 h-0.5 bg-yellow-400 rounded-full"></div>
+            <div class="mt-4 mx-auto w-14 h-1 bg-yellow-400 rounded-full"></div>
 
             <p class="mt-4 text-gray-600 text-sm md:text-base leading-relaxed">
                 Jl. KH. Dewantara No.1, Sibuluan Indah, Kec. Pandan,<br>

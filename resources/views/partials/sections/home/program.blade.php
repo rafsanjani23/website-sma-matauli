@@ -9,7 +9,7 @@
         {{-- ===================== --}}
         <div class="text-center mb-12 md:mb-16">
             <h2 class="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-black">Program Sekolah</h2>
-            <div class="mt-4 mx-auto w-14 h-0.5 bg-yellow-400 rounded-full"></div>
+            <div class="mt-4 mx-auto w-14 h-1 bg-yellow-400 rounded-full"></div>
         </div>
 
         {{-- ===================== --}}

@@ -21,7 +21,7 @@
             <h2 class="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-white">
                 Visi Sekolah
             </h2>
-            <div class="w-12 h-0.5 bg-linear-to-r from-yellow-400 to-yellow-600 mx-auto mt-4 rounded-full"></div>
+            <div class="mt-4 mx-auto w-14 h-1 bg-yellow-400 rounded-full"></div>
         </div>
 
         <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">

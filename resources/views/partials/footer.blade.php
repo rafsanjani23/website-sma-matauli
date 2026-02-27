@@ -295,12 +295,12 @@
                 {{-- Gambar Kurikulum Merdeka --}}
                 <div class="mt-8">
                     <img src="{{ asset('assets/kurikulum.png') }}" alt="Kurikulum Merdeka"
-                        class="w-full h-16 object-cover rounded-xl">
+                        class="w-full h-16 object-cover rounded-xl max-md:w-[230px]">
                 </div>
                 {{-- Gambar LOGO IB --}}
-                <div class="mt-6">
+                <div class="mt-4">
                     <img src="{{ asset('assets/LogoIB.png') }}" alt="LOGO IB"
-                        class="w-full rounded-xl object-cover">
+                        class="w-full rounded-xl object-cover max-md:w-[239px] max-md:h-16">
                 </div>
             </div>
         </div>
