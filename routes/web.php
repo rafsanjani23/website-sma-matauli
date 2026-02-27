@@ -35,3 +35,9 @@ Route::get('/program-kemataulian', function () {
 Route::get('/program-ib', function () {
     return view('pages.program-ib');
 })->name('program-ib');
+Route::get('/fasilitas-asrama', function () {
+    return view('pages.fasilitas-asrama');
+})->name('fasilitas-asrama');
+Route::get('/kegiatan-asrama', function () {
+    return view('pages.kegiatan-asrama');
+})->name('kegiatan-asrama');

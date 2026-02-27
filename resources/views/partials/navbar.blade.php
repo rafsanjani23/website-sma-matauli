@@ -162,9 +162,9 @@
                 </button>
 
                 <ul class="nav-dropdown-content">
-                    <li><a href="{{ url('/#') }}" class="dropdown-item">Fasilitas Asrama</a>
+                    <li><a href="{{ url('/fasilitas-asrama') }}" class="dropdown-item">Fasilitas Asrama</a>
                     </li>
-                    <li><a href="{{ url('/#') }}" class="dropdown-item">Kegiatan Asrama</a>
+                    <li><a href="{{ route('kegiatan-asrama') }}" class="dropdown-item">Kegiatan Asrama</a>
                     </li>
                 </ul>
             </li>
@@ -332,10 +332,10 @@
                     </svg>
                 </button>
                 <ul class="mobile-dropdown-content bg-gray-50">
-                    <li><a href="{{ url('/asrama#fasilitas-asrama') }}"
+                    <li><a href="{{ route('fasilitas-asrama') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Fasilitas
                             Asrama</a></li>
-                    <li><a href="{{ url('/asrama#kegiatan-asrama') }}"
+                    <li><a href="{{ route('kegiatan-asrama') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Kegiatan
                             Asrama</a>
                     </li>
