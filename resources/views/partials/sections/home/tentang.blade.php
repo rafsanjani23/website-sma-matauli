@@ -6,7 +6,7 @@
     {{-- BACKGROUND DECORATIONS --}}
     <div class="absolute inset-0 pointer-events-none select-none">
         {{-- Blob kiri atas --}}
-        <div class="absolute top-0 left-0 w-72 h-72 rounded-full bg-red-800/[0.04]"></div>
+        <div class="absolute top-0 left-0 w-72 h-72 rounded-full bg-red-800/4"></div>
         {{-- Blob kanan bawah --}}
         <div class="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-yellow-400/10"></div>
         {{-- Dot grid subtle --}}
@@ -48,7 +48,7 @@
                     </div>
 
                     <div
-                        class="w-52 h-52 md:w-60 md:h-60 lg:w-64 lg:h-64 rounded-full bg-linear-to-br from-red-800 to-red-950 p-[3px] shadow-2xl shadow-red-900/40 relative z-10">
+                        class="w-52 h-52 md:w-60 md:h-60 lg:w-64 lg:h-64 rounded-full bg-linear-to-br from-red-800 to-red-950 p-0.75 shadow-2xl shadow-red-900/40 relative z-10">
                         <div class="w-full h-full rounded-full overflow-hidden bg-gray-100">
                             <img src="assets/Pak_Deden_Kepala_Sekolah_wm.png" alt="Kepala Sekolah"
                                 style="width: 100%; height: 140%; object-fit: cover; object-position: center 0%; margin-top: 0;">
@@ -180,7 +180,7 @@
                     </div>
 
                     <div
-                        class="w-52 h-52 md:w-60 md:h-60 lg:w-64 lg:h-64 rounded-full bg-linear-to-br from-red-800 to-red-950 p-[3px] shadow-2xl shadow-red-900/40 relative z-10">
+                        class="w-52 h-52 md:w-60 md:h-60 lg:w-64 lg:h-64 rounded-full bg-linear-to-br from-red-800 to-red-950 p-0.75 shadow-2xl shadow-red-900/40 relative z-10">
                         <div class="w-full h-full rounded-full overflow-hidden bg-gray-100">
                             <img src="assets/Ibu_Fitri_Ketua_Umum_wm.png" alt="Ketua Umum"
                                 style="width: 100%; height: 110%; object-fit: cover; object-position: center 0%; margin-top: 0;">

@@ -6,14 +6,16 @@
             </h1>
         </div>
         <!-- foto kegiatan -->
-        <div class="flex gap-8 md:gap-10
+        <div
+            class="flex gap-8 md:gap-10
              overflow-x-auto md:overflow-hidden
              scroll-smooth snap-x snap-mandatory
              px-4 justify-center">
 
             <!-- Card -->
-            <div class="snap-center shrink-0
-                  w-[220px] md:min-w-[280px]
+            <div
+                class="snap-center shrink-0
+                  w-55 md:min-w-70
                   h-32 md:h-40
                   border border-red-400 rounded-2xl
                   flex items-center justify-center
@@ -22,12 +24,12 @@
             </div>
 
             <div
-                class="snap-center shrink-0 w-[220px] md:min-w-[280px] h-32 md:h-40 border border-red-400 rounded-2xl flex items-center justify-center font-semibold bg-white">
+                class="snap-center shrink-0 w-55 md:min-w-70 h-32 md:h-40 border border-red-400 rounded-2xl flex items-center justify-center font-semibold bg-white">
                 Kegiatan 2
             </div>
 
             <div
-                class="snap-center shrink-0 w-[220px] md:min-w-[280px] h-32 md:h-40 border border-red-400 rounded-2xl flex items-center justify-center font-semibold bg-white">
+                class="snap-center shrink-0 w-55 md:min-w-70 h-32 md:h-40 border border-red-400 rounded-2xl flex items-center justify-center font-semibold bg-white">
                 Kegiatan 3
             </div>
 
