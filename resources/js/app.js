@@ -5,3 +5,4 @@ import './sejarah';
 import './swipe';
 import './tablist';
 import './scroollAnimation';
+import './tablistStudi';
