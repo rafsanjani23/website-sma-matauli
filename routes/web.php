@@ -44,3 +44,6 @@ Route::get('/kegiatan-asrama', function () {
 Route::get('/galeri-foto', function () {
     return view('pages.galeri-foto');
 })->name('galeri-foto');
+Route::get('/galeri-video', function () {
+    return view('pages.galeri-video');
+})->name('galeri-video');

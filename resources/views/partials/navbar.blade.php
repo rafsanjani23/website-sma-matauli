@@ -201,7 +201,7 @@
 
                 <ul class="nav-dropdown-content">
                     <li><a href="{{ url('/galeri-foto') }}" class="dropdown-item">Foto</a></li>
-                    <li><a href="{{ url('/dokumentasi#berita') }}" class="dropdown-item">Video</a></li>
+                    <li><a href="{{ url('/galeri-video') }}" class="dropdown-item">Video</a></li>
                     <li><a href="{{ url('/dokumentasi#kegiatan-sekolah') }}" class="dropdown-item">Kegiatan</a></li>
                 </ul>
             </li>
@@ -376,7 +376,7 @@
                     <li><a href="{{ url('/galeri-foto') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Foto</a>
                     </li>
-                    <li><a href="{{ url('/dokumentasi#berita') }}"
+                    <li><a href="{{ url('/galeri-video') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Video</a>
                     </li>
                     <li><a href="{{ url('/dokumentasi#kegiatan-sekolah') }}"
