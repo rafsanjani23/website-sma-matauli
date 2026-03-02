@@ -41,3 +41,6 @@ Route::get('/fasilitas-asrama', function () {
 Route::get('/kegiatan-asrama', function () {
     return view('pages.kegiatan-asrama');
 })->name('kegiatan-asrama');
+Route::get('/galeri-foto', function () {
+    return view('pages.galeri-foto');
+})->name('galeri-foto');
