@@ -57,7 +57,7 @@
                             Kurikulum internasional yang menumbuhkan kepemimpinan, riset, dan karakter pelajar
                             Pancasila.
                         </p>
-                        <a href="{{ url('/program#ib-program') }}"
+                        <a href="{{ url('/program-ib') }}"
                             class="group inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-5 py-2.5 md:px-7 md:py-3.5 rounded-full transition-all duration-300 hover:gap-4 hover:shadow-2xl hover:shadow-yellow-400/30 hover:scale-105 shadow-lg text-sm md:text-base">
                             Kenali Program IB
                             <svg xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +73,7 @@
             </div>
         </div>
 
-        <!-- Slide 3 - Fasilitas -->
+        <!-- Slide 3 - Asrama -->
         <div id="asrama" class="hero-slide absolute inset-0 pointer-events-none ease-in-out">
             <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
             <img src="{{ asset('assets/Asrama1.jpeg') }}" alt="School Activities" class="w-full h-full object-cover">
@@ -82,18 +82,19 @@
                     <div
                         class="max-w-3xl scroll-animate translate-x-10 transition-all opacity-0 duration-1500 ease-in-out">
                         <p class="text-yellow-400 font-bold text-sm md:text-lg lg:text-xl mb-3 md:mb-4 tracking-wider">
-                            FASILITAS LENGKAP
+                            ASRAMA SMA NEGERI 1 MATAULI PANDAN
                         </p>
                         <h1
                             class="text-white text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-4 md:mb-6">
-                            Lingkungan Belajar Modern dan Nyaman
+                            Membentuk Kemandirian & Karakter dalam Kehidupan Berasrama
                         </h1>
                         <p class="text-white/90 text-sm md:text-xl mb-6 md:mb-8 italic">
-                            Didukung Teknologi dan Tenaga Pengajar Profesional
+                            Fasilitas asrama modern dengan pembinaan akademik, keagamaan, dan pengembangan diri yang
+                            terintegrasi.
                         </p>
-                        <a href="{{ url('/tentang-kami#fasilitas') }}"
+                        <a href="{{ url('/fasilitas-asrama') }}"
                             class="group inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-5 py-2.5 md:px-7 md:py-3.5 rounded-full transition-all duration-300 hover:gap-4 hover:shadow-2xl hover:shadow-yellow-400/30 hover:scale-105 shadow-lg text-sm md:text-base">
-                            Lihat Fasilitas
+                            Lihat Asrama
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="h-4 w-4 md:h-5 md:w-5 group-hover:translate-x-1 transition-transform duration-300"
                                 viewBox="0 0 20 20" fill="currentColor">
