@@ -56,3 +56,6 @@ Route::get('/galeri-video', function () {
 Route::get('/galeri-media', function () {
     return view('pages.galeri-media');
 })->name('galeri-media');
+Route::get('/galeri-media-detail', function () {
+    return view('pages.galeri-media-detail');
+})->name('galeri-media-detail');
