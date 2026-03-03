@@ -53,3 +53,6 @@ Route::get('/galeri-foto', function () {
 Route::get('/galeri-video', function () {
     return view('pages.galeri-video');
 })->name('galeri-video');
+Route::get('/galeri-media', function () {
+    return view('pages.galeri-media');
+})->name('galeri-media');

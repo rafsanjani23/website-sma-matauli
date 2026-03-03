@@ -148,7 +148,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <a href="/dokumentasi#berita"
+                <a href="/galeri-media"
                     class="mt-10 group inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-8 py-3 rounded-full transition-all duration-300 hover:gap-4 shadow-lg shadow-yellow-900/30 text-sm md:text-base">
                     <span>Selengkapnya</span>
                     <svg xmlns="http://www.w3.org/2000/svg"
