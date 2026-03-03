@@ -19,7 +19,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 max-w-6xl mx-auto items-stretch">
 
             {{-- ===== CARD: Program Pre-IB ===== --}}
-            <a href="{{ url('/program/pre-ib') }}" class="group block h-full">
+            <a href="{{ url('/program-ib') }}" class="group block h-full">
                 <div
                     class="relative bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-900/10 hover:border-red-100 transition-all duration-500 h-full flex flex-col">
 
@@ -61,7 +61,7 @@
             </a>
 
             {{-- ===== CARD: Program Kemataulian ===== --}}
-            <a href="{{ url('/program/kemataulian') }}" class="group block h-full">
+            <a href="{{ url('/program-kemataulian') }}" class="group block h-full">
                 <div
                     class="relative bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-900/10 hover:border-red-100 transition-all duration-500 h-full flex flex-col">
 
@@ -103,7 +103,7 @@
             </a>
 
             {{-- ===== CARD: Program Kemendikdasmen ===== --}}
-            <a href="{{ url('/program/kemendikdasmen') }}" class="group block md:col-span-2 lg:col-span-1 h-full">
+            <a href="{{ url('/program-kemendikdasmen') }}" class="group block md:col-span-2 lg:col-span-1 h-full">
                 <div
                     class="relative bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-900/10 hover:border-red-100 transition-all duration-500 h-full flex flex-col">
 
