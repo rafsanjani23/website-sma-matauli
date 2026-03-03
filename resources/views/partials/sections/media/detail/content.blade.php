@@ -5,7 +5,7 @@
     <div class="max-w-3xl mx-auto px-6 md:px-8">
 
         <!-- JUDUL BERITA -->
-        <h1 class="text-3xl md:text-5xl font-bold text-slate-950 text-center mb-8 md:mb-10">
+        <h1 class="text-2xl md:text-3xl font-bold text-slate-900 text-center mb-8 md:mb-10">
             JUDUL BERITA
         </h1>
 
