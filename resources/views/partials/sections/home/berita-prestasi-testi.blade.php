@@ -104,7 +104,7 @@
         <div id="gallery-prestasi" role="tabpanel" aria-labelledby="tab-prestasi" class="hidden">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Prestasi Card 1 -->
-                <a href="/prestasi/olimpiade-matematika" class="group block">
+                <a href="{{ route('prestasi-detail') }}" class="group block">
                     <div
                         class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-yellow-400 h-full">
 
@@ -149,7 +149,7 @@
                 </a>
 
                 <!-- Prestasi Card 2 -->
-                <a href="/prestasi/karya-tulis-ilmiah" class="group block">
+                <a href="{{ route('prestasi-detail') }}" class="group block">
                     <div
                         class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-yellow-400 h-full">
 
@@ -194,7 +194,7 @@
                 </a>
 
                 <!-- Prestasi Card 3 -->
-                <a href="/prestasi/kompetisi-robotika" class="group block">
+                <a href="{{ route('prestasi-detail') }}" class="group block">
                     <div
                         class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-yellow-400 h-full">
 
@@ -239,7 +239,7 @@
                 </a>
             </div>
             <div class="text-center">
-                <a href="/program#prestasi-siswa"
+                <a href="{{ route('prestasi') }}"
                     class="mt-10 group inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-8 py-3 rounded-full transition-all duration-300 hover:gap-4 shadow-lg shadow-yellow-900/30 text-sm md:text-base">
                     Lihat Semua Prestasi
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -332,7 +332,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <a href="/testimonials"
+                <a href="{{ route('testimonials') }}"
                     class="mt-10 group inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-8 py-3 rounded-full transition-all duration-300 hover:gap-4 shadow-lg shadow-yellow-900/30 text-sm md:text-base">
                     Selengkapnya
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" viewBox="0 0 20 20"

@@ -1,4 +1,4 @@
-<section class="py-12 md:py-16 lg:py-20 bg-white">
+<section class="pb-12 md:pb-16 lg:pb-20 bg-white">
 {{-- ===================== --}}
             {{-- PROGRAM GRID --}}
             {{-- 1 kolom (mobile) → 2 kolom (tablet) → 3 kolom (desktop) --}}
