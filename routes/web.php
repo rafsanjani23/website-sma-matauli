@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pages.home');
 });
+
+// tentang kami
 Route::get('/sejarah', function () {
     return view('pages.sejarah');
 })->name('sejarah');
@@ -29,24 +31,35 @@ Route::get('/mitra', function () {
 Route::get('/mitra-detail', function () {
     return view('pages.mitra-detail');
 })->name('mitra-detail');
+
+// program
 Route::get('/program-kemataulian', function () {
     return view('pages.program-kemataulian');
 })->name('program-kemataulian');
 Route::get('/program-ib', function () {
     return view('pages.program-ib');
 })->name('program-ib');
+Route::get('/program-kemendikdasmen', function () {
+    return view('pages.program-kemendikdasmen');
+})->name('program-kemendikdasmen');
+
+// asrama
 Route::get('/fasilitas-asrama', function () {
     return view('pages.fasilitas-asrama');
 })->name('fasilitas-asrama');
 Route::get('/kegiatan-asrama', function () {
     return view('pages.kegiatan-asrama');
 })->name('kegiatan-asrama');
+
+// alumni
 Route::get('/studi-lanjut', function () {
     return view('pages.studi-lanjut');
 })->name('studi-lanjut');
 Route::get('/profesional-alumni', function () {
     return view('pages.profesional-alumni');
 })->name('profesional-alumni');
+
+// galeri
 Route::get('/galeri-foto', function () {
     return view('pages.galeri-foto');
 })->name('galeri-foto');
