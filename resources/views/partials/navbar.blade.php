@@ -182,9 +182,9 @@
                 </button>
 
                 <ul class="nav-dropdown-content">
-                    <li><a href="{{ url('/alumni#studi-lanjut') }}" class="dropdown-item">Studi Lanjut</a>
+                    <li><a href="{{ route('studi-lanjut') }}" class="dropdown-item">Studi Lanjut</a>
                     </li>
-                    <li><a href="{{ url('/alumni#prestasi-alumni') }}" class="dropdown-item">Professional</a>
+                    <li><a href="{{ route('profesional-alumni') }}" class="dropdown-item">Professional</a>
                     </li>
                 </ul>
             </li>
@@ -353,10 +353,10 @@
                     </svg>
                 </button>
                 <ul class="mobile-dropdown-content bg-gray-50">
-                    <li><a href="{{ url('/program#prestasi-siswa') }}"
+                    <li><a href="{{ route('studi-lanjut') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Study
                             Lanjut</a></li>
-                    <li><a href="{{ url('/program#ekstrakulikuler') }}"
+                    <li><a href="{{ route('profesional-alumni') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Professional</a>
                     </li>
                 </ul>

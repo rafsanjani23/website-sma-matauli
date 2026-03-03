@@ -41,6 +41,12 @@ Route::get('/fasilitas-asrama', function () {
 Route::get('/kegiatan-asrama', function () {
     return view('pages.kegiatan-asrama');
 })->name('kegiatan-asrama');
+Route::get('/studi-lanjut', function () {
+    return view('pages.studi-lanjut');
+})->name('studi-lanjut');
+Route::get('/profesional-alumni', function () {
+    return view('pages.profesional-alumni');
+})->name('profesional-alumni');
 Route::get('/galeri-foto', function () {
     return view('pages.galeri-foto');
 })->name('galeri-foto');
