@@ -124,6 +124,7 @@
                             & Kependidikan</a></li>
                     <li><a href="{{ url('/fasilitas') }}" class="dropdown-item">Fasilitas</a>
                     </li>
+                    <li><a href="{{ route('prestasi') }}" class="dropdown-item">Prestasi</a></li>
                     <li><a href="{{ url('/ekstrakurikuler') }}" class="dropdown-item">Ekstrakurikuler</a></li>
                     <li><a href="{{ url('/mitra') }}" class="dropdown-item">Kemitraan</a>
                     </li>
@@ -186,6 +187,7 @@
                     </li>
                     <li><a href="{{ route('profesional-alumni') }}" class="dropdown-item">Professional</a>
                     </li>
+                    <li><a href="{{ route('testimonials') }}" class="dropdown-item">Testimonials</a></li>
                 </ul>
             </li>
             <!-- dropdown alumni end -->
@@ -287,6 +289,9 @@
                     <li><a href="{{ url('/fasilitas') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Fasilitas</a>
                     </li>
+                    <li><a href="{{ route('prestasi') }}"
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Prestasi</a>
+                    </li>
                     <li><a href="{{ url('/ekstrakurikuler') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Ekstrakulikuler</a>
                     </li>
@@ -358,6 +363,9 @@
                             Lanjut</a></li>
                     <li><a href="{{ route('profesional-alumni') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Professional</a>
+                    </li>
+                    <li><a href="{{ route('testimonials') }}"
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Testimonials</a>
                     </li>
                 </ul>
             </li>

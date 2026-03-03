@@ -69,3 +69,15 @@ Route::get('/galeri-video', function () {
 Route::get('/galeri-media', function () {
     return view('pages.galeri-media');
 })->name('galeri-media');
+Route::get('/galeri-media-detail', function () {
+    return view('pages.galeri-media-detail');
+})->name('galeri-media-detail');
+Route::get('/prestasi', function () {
+    return view('pages.prestasi');
+})->name('prestasi');
+Route::get('/prestasi-detail', function () {
+    return view('pages.prestasi-detail');
+})->name('prestasi-detail');
+Route::get('/testimonials', function () {
+    return view('pages.testimonials');
+})->name('testimonials');
