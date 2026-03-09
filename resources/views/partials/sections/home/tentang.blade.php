@@ -147,7 +147,7 @@
 
                             {{-- CTA --}}
                             <div class="mt-5 flex items-center justify-between">
-                                <a href="/sejarah"
+                                <a href="/visi-misi"
                                     class="group/btn inline-flex items-center gap-2 bg-red-800 hover:bg-red-900 text-white font-bold px-6 py-2.5 rounded-full transition-all duration-300 hover:gap-3 shadow-lg shadow-red-900/25 text-sm">
                                     <span>Selengkapnya</span>
                                     <svg xmlns="http://www.w3.org/2000/svg"
