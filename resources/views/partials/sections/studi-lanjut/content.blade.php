@@ -11,7 +11,7 @@
                  aria-selected:text-matauli-red-dark
                  aria-selected:shadow-lg
                  text-matauli-yellow hover:text-gray-200">
-                    TNI / POLRI
+                    {{ __('TNI / POLRI') }}
                 </button>
 
                 <button role="tab" id="tab-kedinasan" aria-controls="panel-kedinasan" aria-selected="false" class="px-8 lg:px-12 py-3 rounded-full text-md font-medium transition-all duration-200
@@ -20,7 +20,7 @@
                  aria-selected:text-matauli-red-dark
                  aria-selected:shadow-lg
                  text-matauli-yellow hover:text-gray-200">
-                    KEDINASAN
+                    {{ __('KEDINASAN') }}
                 </button>
 
                 <button role="tab" id="tab-ptn" aria-controls="panel-ptn" aria-selected="false" class="px-8 lg:px-12 py-3 rounded-full text-md font-medium transition-all duration-200
@@ -29,7 +29,7 @@
                  aria-selected:text-matauli-red-dark
                  aria-selected:shadow-lg
                  text-matauli-yellow hover:text-gray-200">
-                    PTN
+                    {{ __('PTN') }}
                 </button>
 
                 <button role="tab" id="tab-ptln" aria-controls="panel-ptln" aria-selected="false" class="px-8 lg:px-12 py-3 rounded-full text-md font-medium transition-all duration-200
@@ -38,7 +38,7 @@
                  aria-selected:text-matauli-red-dark
                  aria-selected:shadow-lg
                  text-matauli-yellow hover:text-gray-200">
-                    PTLN
+                    {{ __('PTLN') }}
                 </button>
 
             </div>

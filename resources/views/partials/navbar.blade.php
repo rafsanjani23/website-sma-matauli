@@ -52,7 +52,7 @@
                                 <path
                                     d="M12 2a10 10 0 100 20 10 10 0 000-20zm5.93 6h-3.09a15.3 15.3 0 00-1.1-3.07A8.03 8.03 0 0117.93 8zM12 4.07c.6.86 1.14 1.9 1.58 3.93h-3.16c.44-2.03.98-3.07 1.58-3.93zM6.07 8a8.03 8.03 0 014.19-3.07A15.3 15.3 0 009.16 8H6.07zM4.07 12c0-.69.08-1.36.23-2h3.44a17.8 17.8 0 000 4H4.3a8.07 8.07 0 01-.23-2zm2 4h3.09c.27 1.2.65 2.28 1.1 3.07A8.03 8.03 0 016.07 16zM12 19.93c-.6-.86-1.14-1.9-1.58-3.93h3.16c-.44 2.03-.98 3.07-1.58 3.93zM13.74 19.07c.45-.79.83-1.87 1.1-3.07h3.09a8.03 8.03 0 01-4.19 3.07zM16.49 14a17.8 17.8 0 000-4h3.44c.15.64.23 1.31.23 2s-.08 1.36-.23 2h-3.44z" />
                             </svg>
-                            <span>ID</span>
+                            <span>{{ app()->getLocale() == 'id' ? 'ID' : 'EN' }}</span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="currentColor"
                                 viewBox="0 0 20 20">
                                 <path fill-rule="evenodd"
@@ -64,13 +64,13 @@
                         <!-- Dropdown Menu -->
                         <div
                             class="absolute right-0 mt-2 w-32 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-99">
-                            <a href="/lang/id"
-                                class="block px-4 py-2 hover:bg-gray-100 text-sm hover:text-orange-500 font-semibold">
-                                🇮🇩 Indonesia
+                            <a href="{{ route('lang.switch', 'id') }}"
+                                class="block px-4 py-2 hover:bg-gray-100 text-sm hover:text-orange-500 font-semibold {{ app()->getLocale() == 'id' ? 'bg-orange-50 text-orange-500' : '' }}">
+                                Indonesia
                             </a>
-                            <a href="/lang/en"
-                                class="block px-4 py-2 hover:bg-gray-100 text-sm hover:text-orange-500 font-semibold">
-                                en English
+                            <a href="{{ route('lang.switch', 'en') }}"
+                                class="block px-4 py-2 hover:bg-gray-100 text-sm hover:text-orange-500 font-semibold {{ app()->getLocale() == 'en' ? 'bg-orange-50 text-orange-500' : '' }}">
+                                English
                             </a>
                         </div>
                     </div>
@@ -103,12 +103,12 @@
         <ul class="hidden lg:flex items-center space-x-6 xl:space-x-10 font-semibold text-sm xl:text-base">
 
             <li>
-                <a href="{{ url('/') }}" class="navlink-hover">Beranda</a>
+                <a href="{{ url('/') }}" class="navlink-hover">{{ __('Beranda') }}</a>
             </li>
 
             <li class="relative group">
                 <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
-                    Tentang Kami
+                    {{ __('Tentang Kami') }}
                     <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -116,17 +116,17 @@
                 </button>
 
                 <ul class="nav-dropdown-content">
-                    <li><a href="{{ route('sejarah') }}" class="dropdown-item">Sejarah</a></li>
-                    <li><a href="{{ route('visi-misi') }}" class="dropdown-item">Visi & Misi</a></li>
-                    <li><a href="{{ url('/struktur') }}" class="dropdown-item">Struktur</a>
+                    <li><a href="{{ route('sejarah') }}" class="dropdown-item">{{ __('Sejarah') }}</a></li>
+                    <li><a href="{{ route('visi-misi') }}" class="dropdown-item">{{ __('Visi & Misi') }}</a></li>
+                    <li><a href="{{ url('/struktur') }}" class="dropdown-item">{{ __('Struktur') }}</a>
                     </li>
-                    <li><a href="{{ url('/tendik') }}" class="dropdown-item">Tenaga Pendidik
-                            & Kependidikan</a></li>
-                    <li><a href="{{ url('/fasilitas') }}" class="dropdown-item">Fasilitas</a>
+                    <li><a href="{{ url('/tendik') }}" class="dropdown-item">{{ __('Tenaga Pendidik') }}
+                            & {{ __('Tendik') }}</a></li>
+                    <li><a href="{{ url('/fasilitas') }}" class="dropdown-item">{{ __('Fasilitas') }}</a>
                     </li>
-                    <li><a href="{{ route('prestasi') }}" class="dropdown-item">Prestasi</a></li>
-                    <li><a href="{{ url('/ekstrakurikuler') }}" class="dropdown-item">Ekstrakurikuler</a></li>
-                    <li><a href="{{ url('/mitra') }}" class="dropdown-item">Kemitraan</a>
+                    <li><a href="{{ route('prestasi') }}" class="dropdown-item">{{ __('Prestasi') }}</a></li>
+                    <li><a href="{{ url('/ekstrakurikuler') }}" class="dropdown-item">{{ __('Ekstrakurikuler') }}</a></li>
+                    <li><a href="{{ url('/mitra') }}" class="dropdown-item">{{ __('Kemitraan') }}</a>
                     </li>
                 </ul>
             </li>
@@ -134,7 +134,7 @@
             <!--dropdown program  -->
             <li class="relative group">
                 <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
-                    Program
+                    {{ __('Program') }}
                     <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -142,11 +142,11 @@
                 </button>
 
                 <ul class="nav-dropdown-content">
-                    <li><a href="{{ url('/program-kemataulian') }}" class="dropdown-item">Program Kemataulian</a>
+                    <li><a href="{{ url('/program-kemataulian') }}" class="dropdown-item">{{ __('Program Kemataulian') }}</a>
                     </li>
-                    <li><a href="{{ url('/program-ib') }}" class="dropdown-item">Program Pre-IB</a>
+                    <li><a href="{{ url('/program-ib') }}" class="dropdown-item">{{ __('Program Pre-IB') }}</a>
                     </li>
-                    <li><a href="{{ url('/program-kemendikdasmen') }}" class="dropdown-item">Program Kemendikdasmen</a>
+                    <li><a href="{{ url('/program-kemendikdasmen') }}" class="dropdown-item">{{ __('Program Kemendikdasmen') }}</a>
                     </li>
                 </ul>
             </li>
@@ -155,7 +155,7 @@
             <!-- dropdown tentang asrama -->
             <li class="relative group">
                 <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
-                    Asrama
+                    {{ __('Asrama') }}
                     <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -163,9 +163,9 @@
                 </button>
 
                 <ul class="nav-dropdown-content">
-                    <li><a href="{{ url('/fasilitas-asrama') }}" class="dropdown-item">Fasilitas Asrama</a>
+                    <li><a href="{{ url('/fasilitas-asrama') }}" class="dropdown-item">{{ __('Fasilitas Asrama') }}</a>
                     </li>
-                    <li><a href="{{ route('kegiatan-asrama') }}" class="dropdown-item">Kegiatan Asrama</a>
+                    <li><a href="{{ route('kegiatan-asrama') }}" class="dropdown-item">{{ __('Kegiatan Asrama') }}</a>
                     </li>
                 </ul>
             </li>
@@ -175,7 +175,7 @@
             <!-- dropdown alumni -->
             <li class="relative group">
                 <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
-                    Alumni
+                    {{ __('Alumni') }}
                     <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -183,18 +183,18 @@
                 </button>
 
                 <ul class="nav-dropdown-content">
-                    <li><a href="{{ route('studi-lanjut') }}" class="dropdown-item">Studi Lanjut</a>
+                    <li><a href="{{ route('studi-lanjut') }}" class="dropdown-item">{{ __('Studi Lanjut') }}</a>
                     </li>
-                    <li><a href="{{ route('profesional-alumni') }}" class="dropdown-item">Professional</a>
+                    <li><a href="{{ route('profesional-alumni') }}" class="dropdown-item">{{ __('Professional') }}</a>
                     </li>
-                    <li><a href="{{ route('testimonials') }}" class="dropdown-item">Testimonials</a></li>
+                    <li><a href="{{ route('testimonials') }}" class="dropdown-item">{{ __('Testimonials') }}</a></li>
                 </ul>
             </li>
             <!-- dropdown alumni end -->
 
             <li class="relative group">
                 <button class="navlink-hover flex items-center cursor-pointer focus:outline-none">
-                    Galeri
+                    {{ __('Galeri') }}
                     <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -202,9 +202,9 @@
                 </button>
 
                 <ul class="nav-dropdown-content">
-                    <li><a href="{{ url('/galeri-foto') }}" class="dropdown-item">Foto</a></li>
-                    <li><a href="{{ url('/galeri-video') }}" class="dropdown-item">Video</a></li>
-                    <li><a href="{{ url('/galeri-media') }}" class="dropdown-item">Media</a></li>
+                    <li><a href="{{ url('/galeri-foto') }}" class="dropdown-item">{{ __('Foto') }}</a></li>
+                    <li><a href="{{ url('/galeri-video') }}" class="dropdown-item">{{ __('Video') }}</a></li>
+                    <li><a href="{{ url('/galeri-media') }}" class="dropdown-item">{{ __('Media') }}</a></li>
                 </ul>
             </li>
 
@@ -242,7 +242,7 @@
 
     <!-- Mobile Menu Header -->
     <div class="flex items-center justify-between px-6 py-4 bg-matauli-red-dark text-white">
-        <h2 class="text-lg font-bold">Menu</h2>
+        <h2 class="text-lg font-bold">{{ __('Menu') }}</h2>
         <button id="closeMenu" class="p-2 hover:bg-red-800 rounded-md transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
@@ -259,7 +259,7 @@
             <li>
                 <a href="{{ url('/') }}"
                     class="block px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 hover:text-orange-600 transition-colors border-b border-gray-100">
-                    Beranda
+                    {{ __('Beranda') }}
                 </a>
             </li>
 
@@ -267,7 +267,7 @@
             <li class="border-b border-gray-100">
                 <button
                     class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
-                    <span>Tentang Kami</span>
+                    <span>{{ __('Tentang Kami') }}</span>
                     <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -275,28 +275,27 @@
                 </button>
                 <ul class="mobile-dropdown-content bg-gray-50">
                     <li><a href="{{ route('sejarah') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Sejarah</a>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Sejarah') }}</a>
                     </li>
                     <li><a href="{{ route('visi-misi') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Visi
-                            & Misi</a></li>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Visi & Misi') }}</a></li>
                     <li><a href="{{ url('/struktur') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Struktur</a>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Struktur') }}</a>
                     </li>
                     <li><a href="{{ url('/tendik') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Tenaga
-                            Pendidik</a></li>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Tenaga Pendidik') }}
+                            & {{ __('Tendik') }}</a></li>
                     <li><a href="{{ url('/fasilitas') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Fasilitas</a>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Fasilitas') }}</a>
                     </li>
                     <li><a href="{{ route('prestasi') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Prestasi</a>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Prestasi') }}</a>
                     </li>
                     <li><a href="{{ url('/ekstrakurikuler') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Ekstrakulikuler</a>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Ekstrakurikuler') }}</a>
                     </li>
                     <li><a href="{{ url('/mitra') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Kemitraan</a>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Kemitraan') }}</a>
                     </li>
                 </ul>
             </li>
@@ -305,7 +304,7 @@
             <li class="border-b border-gray-100">
                 <button
                     class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
-                    <span>Program</span>
+                    <span>{{ __('Program') }}</span>
                     <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -313,15 +312,12 @@
                 </button>
                 <ul class="mobile-dropdown-content bg-gray-50">
                     <li><a href="{{ url('/program-kemataulian') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Program
-                            Kemataulian</a></li>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Program Kemataulian') }}</a></li>
                     <li><a href="{{ url('/program-ib') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Program
-                            Pre-IB</a>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Program Pre-IB') }}</a>
                     </li>
                     <li><a href="{{ url('/program-kemendikdasmen') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Program
-                            Kemendikdasmen</a>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Program Kemendikdasmen') }}</a>
                     </li>
                 </ul>
             </li>
@@ -330,7 +326,7 @@
             <li class="border-b border-gray-100">
                 <button
                     class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
-                    <span>Asrama</span>
+                    <span>{{ __('Asrama') }}</span>
                     <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -338,11 +334,9 @@
                 </button>
                 <ul class="mobile-dropdown-content bg-gray-50">
                     <li><a href="{{ route('fasilitas-asrama') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Fasilitas
-                            Asrama</a></li>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Fasilitas Asrama') }}</a></li>
                     <li><a href="{{ route('kegiatan-asrama') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Kegiatan
-                            Asrama</a>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Kegiatan Asrama') }}</a>
                     </li>
                 </ul>
             </li>
@@ -351,7 +345,7 @@
             <li class="border-b border-gray-100">
                 <button
                     class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
-                    <span>Alumni</span>
+                    <span>{{ __('Alumni') }}</span>
                     <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -359,13 +353,12 @@
                 </button>
                 <ul class="mobile-dropdown-content bg-gray-50">
                     <li><a href="{{ route('studi-lanjut') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Study
-                            Lanjut</a></li>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Studi Lanjut') }}</a></li>
                     <li><a href="{{ route('profesional-alumni') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Professional</a>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Professional') }}</a>
                     </li>
                     <li><a href="{{ route('testimonials') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Testimonials</a>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Testimonials') }}</a>
                     </li>
                 </ul>
             </li>
@@ -374,7 +367,7 @@
             <li class="border-b border-gray-100">
                 <button
                     class="mobile-dropdown-trigger w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-gray-800 hover:bg-orange-50 transition-colors">
-                    <span>Galeri</span>
+                    <span>{{ __('Galeri') }}</span>
                     <svg class="dropdown-arrow w-5 h-5 text-gray-500 transition-transform duration-300" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -382,13 +375,13 @@
                 </button>
                 <ul class="mobile-dropdown-content bg-gray-50">
                     <li><a href="{{ url('/galeri-foto') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Foto</a>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Foto') }}</a>
                     </li>
                     <li><a href="{{ url('/galeri-video') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Video</a>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Video') }}</a>
                     </li>
                     <li><a href="{{ url('/galeri-media') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">Media</a>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Media') }}</a>
                     </li>
                 </ul>
             </li>
@@ -396,7 +389,7 @@
             <!-- Contact & Language Info (Mobile) -->
             <li class="px-6 py-4 bg-gray-50 mt-4">
                 <h3 class="text-sm font-bold text-gray-800 mb-3">
-                    Hubungi Kami
+                    {{ __('Hubungi Kami') }}
                 </h3>
 
                 <!-- Contact -->
@@ -425,18 +418,18 @@
                 <!-- Language Selector (Mobile) -->
                 <div class="border-t border-gray-200 pt-3">
                     <p class="text-xs font-semibold text-gray-700 mb-2">
-                        Bahasa
+                        {{ __('Bahasa') }}
                     </p>
 
                     <div class="flex gap-3">
-                        <a href="/lang/id"
-                            class="flex-1 text-center text-sm font-semibold px-4 py-2 rounded-lg bg-gray-100 text-gray-700 hover:bg-orange-500 hover:text-white transition">
-                            🇮🇩 Indonesia
+                        <a href="{{ route('lang.switch', 'id') }}"
+                            class="flex-1 text-center text-sm font-semibold px-4 py-2 rounded-lg transition {{ app()->getLocale() == 'id' ? 'bg-orange-500 text-white' : 'bg-gray-100 text-gray-700 hover:bg-orange-500 hover:text-white' }}">
+                            Indonesia
                         </a>
 
-                        <a href="/lang/en"
-                            class="flex-1 text-center text-sm font-semibold px-4 py-2 rounded-lg bg-gray-100 text-gray-700 hover:bg-orange-500 hover:text-white transition">
-                            en English
+                        <a href="{{ route('lang.switch', 'en') }}"
+                            class="flex-1 text-center text-sm font-semibold px-4 py-2 rounded-lg transition {{ app()->getLocale() == 'en' ? 'bg-orange-500 text-white' : 'bg-gray-100 text-gray-700 hover:bg-orange-500 hover:text-white' }}">
+                            English
                         </a>
                     </div>
                 </div>

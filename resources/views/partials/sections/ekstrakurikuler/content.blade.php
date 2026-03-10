@@ -8,7 +8,7 @@
                         class="w-full h-full object-cover" />
                 </div>
                 <div class="p-6 absolute bottom-0 left-0 right-0 bg-matauli-red-dark rounded-2xl opacity-90">
-                    <h3 class="text-xl text-center font-semibold text-white line-clamp-1">EKSTRAKURIKULER</h3>
+                    <h3 class="text-xl text-center font-semibold text-white line-clamp-1">{{ __('EKSTRAKURIKULER') }}</h3>
                     <div class="h-0 overflow-hidden group-hover:h-[70px] group-hover:mt-4 transition-all duration-300">
                         <p class="text-gray-200 text-[15px] leading-relaxed line-clamp-3">Dive into the world of bold
                             flavors and cultural traditions with this mouth-watering pasta journey.</p>
@@ -22,7 +22,7 @@
                         class="w-full h-full object-cover" />
                 </div>
                 <div class="p-6 absolute bottom-0 left-0 right-0 bg-matauli-red-dark rounded-2xl opacity-90">
-                    <h3 class="text-xl text-center font-semibold text-white line-clamp-1">EKSTRAKURIKULER</h3>
+                    <h3 class="text-xl text-center font-semibold text-white line-clamp-1">{{ __('EKSTRAKURIKULER') }}</h3>
                     <div class="h-0 overflow-hidden group-hover:h-[70px] group-hover:mt-4 transition-all duration-300">
                         <p class="text-gray-200 text-[15px] leading-relaxed line-clamp-3">Dive into the world of bold
                             flavors and cultural traditions with this mouth-watering pasta journey.</p>
@@ -36,7 +36,7 @@
                         class="w-full h-full object-cover" />
                 </div>
                 <div class="p-6 absolute bottom-0 left-0 right-0 bg-matauli-red-dark rounded-2xl opacity-90">
-                    <h3 class="text-xl text-center font-semibold text-white line-clamp-1">EKSTRAKURIKULER</h3>
+                    <h3 class="text-xl text-center font-semibold text-white line-clamp-1">{{ __('EKSTRAKURIKULER') }}</h3>
                     <div class="h-0 overflow-hidden group-hover:h-[70px] group-hover:mt-4 transition-all duration-300">
                         <p class="text-gray-200 text-[15px] leading-relaxed line-clamp-3">Dive into the world of bold
                             flavors and cultural traditions with this mouth-watering pasta journey.</p>
@@ -50,7 +50,7 @@
                         class="w-full h-full object-cover" />
                 </div>
                 <div class="p-6 absolute bottom-0 left-0 right-0 bg-matauli-red-dark rounded-2xl opacity-90">
-                    <h3 class="text-xl text-center font-semibold text-white line-clamp-1">EKSTRAKURIKULER</h3>
+                    <h3 class="text-xl text-center font-semibold text-white line-clamp-1">{{ __('EKSTRAKURIKULER') }}</h3>
                     <div class="h-0 overflow-hidden group-hover:h-[70px] group-hover:mt-4 transition-all duration-300">
                         <p class="text-gray-200 text-[15px] leading-relaxed line-clamp-3">Dive into the world of bold
                             flavors and cultural traditions with this mouth-watering pasta journey.</p>
@@ -64,7 +64,7 @@
                         class="w-full h-full object-cover" />
                 </div>
                 <div class="p-6 absolute bottom-0 left-0 right-0 bg-matauli-red-dark rounded-2xl opacity-90">
-                    <h3 class="text-xl text-center font-semibold text-white line-clamp-1">EKSTRAKURIKULER</h3>
+                    <h3 class="text-xl text-center font-semibold text-white line-clamp-1">{{ __('EKSTRAKURIKULER') }}</h3>
                     <div class="h-0 overflow-hidden group-hover:h-[70px] group-hover:mt-4 transition-all duration-300">
                         <p class="text-gray-200 text-[15px] leading-relaxed line-clamp-3">Dive into the world of bold
                             flavors and cultural traditions with this mouth-watering pasta journey.</p>
@@ -78,7 +78,7 @@
                         class="w-full h-full object-cover" />
                 </div>
                 <div class="p-6 absolute bottom-0 left-0 right-0 bg-matauli-red-dark rounded-2xl opacity-90">
-                    <h3 class="text-xl text-center font-semibold text-white line-clamp-1">EKSTRAKURIKULER</h3>
+                    <h3 class="text-xl text-center font-semibold text-white line-clamp-1">{{ __('EKSTRAKURIKULER') }}</h3>
                     <div class="h-0 overflow-hidden group-hover:h-[70px] group-hover:mt-4 transition-all duration-300">
                         <p class="text-gray-200 text-[15px] leading-relaxed line-clamp-3">Dive into the world of bold
                             flavors and cultural traditions with this mouth-watering pasta journey.</p>
@@ -92,7 +92,7 @@
                         class="w-full h-full object-cover" />
                 </div>
                 <div class="p-6 absolute bottom-0 left-0 right-0 bg-matauli-red-dark rounded-2xl opacity-90">
-                    <h3 class="text-xl text-center font-semibold text-white line-clamp-1">EKSTRAKURIKULER</h3>
+                    <h3 class="text-xl text-center font-semibold text-white line-clamp-1">{{ __('EKSTRAKURIKULER') }}</h3>
                     <div class="h-0 overflow-hidden group-hover:h-[70px] group-hover:mt-4 transition-all duration-300">
                         <p class="text-gray-200 text-[15px] leading-relaxed line-clamp-3">Dive into the world of bold
                             flavors and cultural traditions with this mouth-watering pasta journey.</p>
@@ -106,7 +106,7 @@
                         class="w-full h-full object-cover" />
                 </div>
                 <div class="p-6 absolute bottom-0 left-0 right-0 bg-matauli-red-dark rounded-2xl opacity-90">
-                    <h3 class="text-xl text-center font-semibold text-white line-clamp-1">EKSTRAKURIKULER</h3>
+                    <h3 class="text-xl text-center font-semibold text-white line-clamp-1">{{ __('EKSTRAKURIKULER') }}</h3>
                     <div class="h-0 overflow-hidden group-hover:h-[70px] group-hover:mt-4 transition-all duration-300">
                         <p class="text-gray-200 text-[15px] leading-relaxed line-clamp-3">Dive into the world of bold
                             flavors and cultural traditions with this mouth-watering pasta journey.</p>
@@ -120,7 +120,7 @@
                         class="w-full h-full object-cover" />
                 </div>
                 <div class="p-6 absolute bottom-0 left-0 right-0 bg-matauli-red-dark rounded-2xl opacity-90">
-                    <h3 class="text-xl text-center font-semibold text-white line-clamp-1">EKSTRAKURIKULER</h3>
+                    <h3 class="text-xl text-center font-semibold text-white line-clamp-1">{{ __('EKSTRAKURIKULER') }}</h3>
                     <div class="h-0 overflow-hidden group-hover:h-[70px] group-hover:mt-4 transition-all duration-300">
                         <p class="text-gray-200 text-[15px] leading-relaxed line-clamp-3">Dive into the world of bold
                             flavors and cultural traditions with this mouth-watering pasta journey.</p>

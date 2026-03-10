@@ -24,7 +24,7 @@
                     </div>
                 </div>
             @empty
-                <div class="col-span-full text-center py-12 text-gray-400">Belum ada foto.</div>
+                <div class="col-span-full text-center py-12 text-gray-400">{{ __('Belum ada foto.') }}</div>
             @endforelse
 
         </div>

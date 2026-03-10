@@ -7,7 +7,7 @@
                 <div role="accordion">
                     <button type="button"
                         class="accordion-button cursor-pointer w-full text-md font-bold text-left py-3 px-6 hover:bg-gray-100 text-slate-900 flex items-center transition-all border-2 rounded-4xl">
-                        <span class="mr-4">GURU MATA PELAJARAN</span>
+                        <span class="mr-4">{{ __('GURU MATA PELAJARAN') }}</span>
                         <svg xmlns="http://www.w3.org/2000/svg"
                             class="w-3.75 h-3.75 fill-current ml-auto shrink-0 transition-transform duration-300 rotate-180"
                             viewBox="0 0 451.847 451.847">
@@ -38,7 +38,7 @@
                                 </div>
                             </div>
                             @empty
-                            <div class="col-span-full text-center py-8 text-gray-400">Belum ada data.</div>
+                            <div class="col-span-full text-center py-8 text-gray-400">{{ __('Belum ada data.') }}</div>
                             @endforelse
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                 <div role="accordion">
                     <button type="button"
                         class="accordion-button cursor-pointer w-full text-md font-bold text-left py-3 px-6 hover:bg-gray-100 text-slate-900 flex items-center transition-all border-2 rounded-4xl">
-                        <span class="mr-4">GURU MATA PELAJARAN INTERNATIONAL BACCALAUREATE (IB)</span>
+                        <span class="mr-4">{{ __('GURU MATA PELAJARAN INTERNATIONAL BACCALAUREATE (IB)') }}</span>
                         <svg xmlns="http://www.w3.org/2000/svg"
                             class="w-3.75 h-3.75 fill-current ml-auto shrink-0 transition-transform duration-300"
                             viewBox="0 0 451.847 451.847">
@@ -79,7 +79,7 @@
                                 </div>
                             </div>
                             @empty
-                            <div class="col-span-full text-center py-8 text-gray-400">Belum ada data.</div>
+                            <div class="col-span-full text-center py-8 text-gray-400">{{ __('Belum ada data.') }}</div>
                             @endforelse
                         </div>
                     </div>
@@ -89,7 +89,7 @@
                 <div role="accordion">
                     <button type="button"
                         class="accordion-button cursor-pointer w-full text-md font-bold text-left py-3 px-6 hover:bg-gray-100 text-slate-900 flex items-center transition-all border-2 rounded-4xl">
-                        <span class="mr-4">TENAGA KEPENDIDIKAN</span>
+                        <span class="mr-4">{{ __('TENAGA KEPENDIDIKAN') }}</span>
                         <svg xmlns="http://www.w3.org/2000/svg"
                             class="w-3.75 h-3.75 fill-current ml-auto shrink-0 transition-transform duration-300"
                             viewBox="0 0 451.847 451.847">
@@ -120,7 +120,7 @@
                                 </div>
                             </div>
                             @empty
-                            <div class="col-span-full text-center py-8 text-gray-400">Belum ada data.</div>
+                            <div class="col-span-full text-center py-8 text-gray-400">{{ __('Belum ada data.') }}</div>
                             @endforelse
                         </div>
                     </div>

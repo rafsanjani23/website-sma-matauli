@@ -23,7 +23,7 @@
         <div class="text-center mb-16 md:mb-20">
             <span class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.3em] uppercase text-red-800 mb-4">
             </span>
-            <h2 class="mt-2 text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">Tentang Kami</h2>
+            <h2 class="mt-2 text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">{{ __('Tentang Kami') }}</h2>
             <div class="mt-4 mx-auto w-14 h-1 bg-yellow-400 rounded-full"></div>
         </div>
 
@@ -123,7 +123,7 @@
                                         <path
                                             d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                                     </svg>
-                                    Akreditasi A (Unggul)
+                                    {{ __('Akreditasi A (Unggul)') }}
                                 </div>
                             </div>
                         </div>
@@ -135,13 +135,7 @@
                                 <span
                                     class="absolute -top-3 -left-2 text-7xl font-serif text-red-50 leading-none select-none pointer-events-none">"</span>
                                 <p class="relative text-gray-600 text-[15px] leading-[1.85] text-justify">
-                                    SMA Negeri 1 Plus Matauli Pandan merupakan sekolah negeri unggulan di bawah naungan
-                                    Yayasan
-                                    MATAULI dan Kementerian Pendidikan dan Kebudayaan Provinsi Sumatera Utara. Didirikan
-                                    pada 14
-                                    Juni 1994, hingga tahun 2025 sekolah ini telah meluluskan 30 angkatan dengan lebih
-                                    dari
-                                    8.000 alumni.
+                                    {{ __('SMA Negeri 1 Plus Matauli Pandan merupakan sekolah negeri unggulan di bawah naungan Yayasan MATAULI dan Kementerian Pendidikan dan Kebudayaan Provinsi Sumatera Utara. Didirikan pada 14 Juni 1994, hingga tahun 2025 sekolah ini telah meluluskan 30 angkatan dengan lebih dari 8.000 alumni.') }}
                                 </p>
                             </div>
 
@@ -149,7 +143,7 @@
                             <div class="mt-5 flex items-center justify-between">
                                 <a href="/visi-misi"
                                     class="group/btn inline-flex items-center gap-2 bg-red-800 hover:bg-red-900 text-white font-bold px-6 py-2.5 rounded-full transition-all duration-300 hover:gap-3 shadow-lg shadow-red-900/25 text-sm">
-                                    <span>Selengkapnya</span>
+                                    <span>{{ __('Selengkapnya') }}</span>
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                         class="h-4 w-4 group-hover/btn:translate-x-1 transition-transform duration-300"
                                         viewBox="0 0 20 20" fill="currentColor">
@@ -241,7 +235,7 @@
                     <div
                         class="w-5 h-0.5 bg-yellow-400 mx-auto mb-3 group-hover:w-10 transition-all duration-500 rounded-full">
                     </div>
-                    <p class="text-red-200 text-xs font-semibold tracking-widest uppercase">Peserta Didik</p>
+                    <p class="text-red-200 text-xs font-semibold tracking-widest uppercase">{{ __('Peserta Didik') }}</p>
                 </div>
 
                 {{-- Stat 2: Guru --}}
@@ -253,7 +247,7 @@
                     <div
                         class="w-5 h-0.5 bg-white/40 mx-auto mb-3 group-hover:w-10 transition-all duration-500 rounded-full">
                     </div>
-                    <p class="text-red-200 text-xs font-semibold tracking-widest uppercase">Guru</p>
+                    <p class="text-red-200 text-xs font-semibold tracking-widest uppercase">{{ __('Guru') }}</p>
                 </div>
 
                 {{-- Stat 3: Tendik --}}
@@ -265,7 +259,7 @@
                     <div
                         class="w-5 h-0.5 bg-yellow-400 mx-auto mb-3 group-hover:w-10 transition-all duration-500 rounded-full">
                     </div>
-                    <p class="text-red-200 text-xs font-semibold tracking-widest uppercase">Tendik</p>
+                    <p class="text-red-200 text-xs font-semibold tracking-widest uppercase">{{ __('Tendik') }}</p>
                 </div>
 
                 {{-- Stat 4: Rombongan Belajar --}}
@@ -277,7 +271,7 @@
                     <div
                         class="w-5 h-0.5 bg-white/40 mx-auto mb-3 group-hover:w-10 transition-all duration-500 rounded-full">
                     </div>
-                    <p class="text-red-200 text-xs font-semibold tracking-widest uppercase">Rombongan Belajar</p>
+                    <p class="text-red-200 text-xs font-semibold tracking-widest uppercase">{{ __('Rombongan Belajar') }}</p>
                 </div>
 
             </div>

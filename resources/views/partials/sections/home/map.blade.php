@@ -4,7 +4,7 @@
         <!-- ===== HEADER ===== -->
         <div class="text-center mb-10">
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black">
-                Lokasi Kami
+                {{ __('Lokasi Kami') }}
             </h2>
 
             <div class="mt-4 mx-auto w-14 h-1 bg-yellow-400 rounded-full"></div>
@@ -29,7 +29,7 @@
         <div class="mt-6 text-center">
             <a href="https://maps.app.goo.gl/dKbrVKdBU9vYoUGg6" target="_blank"
                 class="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-md">
-                Lihat di Google Maps
+                {{ __('Lihat di Google Maps') }}
             </a>
         </div>
 

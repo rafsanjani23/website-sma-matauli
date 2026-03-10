@@ -2,7 +2,7 @@
     <div class="mx-auto px-4">
         <div class="text-center mb-18">
             <h1 class="mt-2 text-2xl md:text-3xl font-bold text-slate-950 mb-2 ">
-                FASILITAS ASRAMA
+                {{ __('FASILITAS ASRAMA') }}
             </h1>
         </div>
 
@@ -19,7 +19,7 @@
                 </div>
             </div>
             @empty
-            <div class="col-span-full text-center py-8 text-gray-400">Belum ada data.</div>
+            <div class="col-span-full text-center py-8 text-gray-400">{{ __('Belum ada data.') }}</div>
             @endforelse
         </div>
     </div>

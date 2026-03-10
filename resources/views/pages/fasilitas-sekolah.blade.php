@@ -9,7 +9,7 @@
     <section class="bg-white">
         <div class="mx-auto px-4">
             <div class="text-center mb-18">
-                <h1 class="mt-2 text-2xl md:text-3xl font-bold text-slate-950 mb-2">LABORATORIUM / STUDI</h1>
+                <h1 class="mt-2 text-2xl md:text-3xl font-bold text-slate-950 mb-2">{{ __('LABORATORIUM / STUDI') }}</h1>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-2 px-10">
                 @foreach ($labStudi as $item)

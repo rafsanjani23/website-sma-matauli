@@ -9,8 +9,8 @@
                 <img src="{{ asset('assets/Logo_SMAN_Matauli.png') }}" alt="Testimonial Alumni" class="h-28 w-full">
             </div>
             <div>
-                <span class="text-xs font-semibold tracking-[0.3em] uppercase text-matauli-red-dark">Testimonials</span>
-                <h2 class="mt-2 text-3xl md:text-4xl lg:text-5xl font-bold text-black">Testimonial Alumni</h2>
+                <span class="text-xs font-semibold tracking-[0.3em] uppercase text-matauli-red-dark">{{ __('Testimonials') }}</span>
+                <h2 class="mt-2 text-3xl md:text-4xl lg:text-5xl font-bold text-black">{{ __('Testimonial Alumni') }}</h2>
                 <div class="mt-2 mx-auto w-18 h-0.5 bg-yellow-400 rounded-full"></div>
             </div>
         </div>

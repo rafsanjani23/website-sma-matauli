@@ -56,7 +56,7 @@
             <!-- Column 2: Kunjungi Kami -->
             <div class="flex flex-col">
                 <h3 class="text-lg md:text-xl font-bold mb-6 pb-3 border-b-2 border-yellow-400 w-fit relative">
-                    <span class="relative z-10">Kunjungi Kami</span>
+                    <span class="relative z-10">{{ __('Kunjungi Kami') }}</span>
                     <div class="absolute bottom-0 left-0 w-full h-0.5 bg-yellow-400">
                     </div>
                 </h3>
@@ -76,7 +76,7 @@
                             </svg>
                         </div>
                         <div class="flex-1">
-                            <p class="text-xs text-yellow-400 font-semibold mb-1">Alamat</p>
+                            <p class="text-xs text-yellow-400 font-semibold mb-1">{{ __('Alamat') }}</p>
                             <p class="text-gray-200 leading-relaxed text-sm">
                                 Jl. Ki Hajar Dewantara No. 01 Pandan,<br>
                                 Tapanuli Tengah, Sumatera Utara
@@ -96,7 +96,7 @@
                             </svg>
                         </div>
                         <div class="flex-1">
-                            <p class="text-xs text-yellow-400 font-semibold mb-1">Telepon</p>
+                            <p class="text-xs text-yellow-400 font-semibold mb-1">{{ __('Telepon') }}</p>
                             <a href="tel:+62631371996"
                                 class="text-gray-200 hover:text-yellow-400 transition text-sm font-medium">
                                 +62 631-371-996
@@ -135,7 +135,7 @@
                             </svg>
                         </div>
                         <div class="flex-1">
-                            <p class="text-xs text-yellow-400 font-semibold mb-1">Email</p>
+                            <p class="text-xs text-yellow-400 font-semibold mb-1">{{ __('Email') }}</p>
                             <a href="mailto:matauli@www.sman1-matauli.sch.id"
                                 class="text-gray-200 hover:text-yellow-400 transition text-sm font-medium break-all">
                                 matauli@www.sman1-matauli.sch.id
@@ -148,7 +148,7 @@
             <!-- Column 3: Link Terkait -->
             <div class="flex flex-col">
                 <h3 class="text-lg md:text-xl font-bold mb-6 pb-3 border-b-2 border-yellow-400 w-fit relative">
-                    <span class="relative z-10">Link Terkait</span>
+                    <span class="relative z-10">{{ __('Link Terkait') }}</span>
                     <div class="absolute bottom-0 left-0 w-full h-0.5 bg-yellow-400">
                     </div>
                 </h3>
@@ -219,7 +219,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M9 5l7 7-7 7" />
                             </svg>
-                            <span class="text-sm font-medium">Perpustakaan</span>
+                            <span class="text-sm font-medium">{{ __('Perpustakaan') }}</span>
                         </a>
                     </li>
                 </ul>
@@ -228,7 +228,7 @@
             <!-- Column 4: Ikuti Kami -->
             <div class="flex flex-col">
                 <h3 class="text-lg md:text-xl font-bold mb-6 pb-3 border-b-2 border-yellow-400 w-fit relative">
-                    <span class="relative z-10">Ikuti Kami</span>
+                    <span class="relative z-10">{{ __('Ikuti Kami') }}</span>
                     <div class="absolute bottom-0 left-0 w-full h-0.5 bg-yellow-400">
                     </div>
                 </h3>
@@ -308,7 +308,7 @@
         <div class="mt-8 pt-5 border-t border-white/10">
             <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
                 <p class="text-gray-300 text-center md:text-left flex items-center gap-1">
-                    Dibuat Oleh<span class="text-yellow-400 font-bold">YANG IT IT AJA</span>
+                    {{ __('Dibuat Oleh') }}<span class="text-yellow-400 font-bold">YANG IT IT AJA</span>
                 </p>
             </div>
         </div>

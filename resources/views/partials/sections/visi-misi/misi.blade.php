@@ -7,10 +7,10 @@
         <div class="mb-10 md:mb-14">
             <div class="flex items-center gap-3 mb-4">
                 <div class="w-8 h-0.5 bg-yellow-500"></div>
-                <span class="text-xs font-bold tracking-[0.25em] uppercase text-yellow-600">Langkah Nyata</span>
+                <span class="text-xs font-bold tracking-[0.25em] uppercase text-yellow-600">{{ __('Langkah Nyata') }}</span>
             </div>
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black">
-                Misi Sekolah
+                {{ __('Misi Sekolah') }}
             </h2>
             <div class="mt-4 w-14 h-1 bg-yellow-400 rounded-full"></div>
         </div>
@@ -46,10 +46,9 @@
                             <span class="text-white font-black text-sm md:text-base">01</span>
                         </div>
                         <div class="pt-1">
-                            <h3 class="font-bold text-red-900 text-sm md:text-base mb-1.5">Inovasi & Teknologi</h3>
+                            <h3 class="font-bold text-red-900 text-sm md:text-base mb-1.5">{{ __('Inovasi & Teknologi') }}</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Mewujudkan pelayanan pendidikan yang berbasis penelitian dan inovasi pendidikan serta
-                                sains teknologi yang melampaui standar nasional pendidikan (SNP)
+                                {{ __('Mewujudkan pelayanan pendidikan yang berbasis penelitian dan inovasi pendidikan serta sains teknologi yang melampaui standar nasional pendidikan (SNP)') }}
                             </p>
                         </div>
                     </div>
@@ -67,10 +66,9 @@
                             <span class="text-white font-black text-sm md:text-base">02</span>
                         </div>
                         <div class="pt-1">
-                            <h3 class="font-bold text-red-900 text-sm md:text-base mb-1.5">Karakter & Budaya</h3>
+                            <h3 class="font-bold text-red-900 text-sm md:text-base mb-1.5">{{ __('Karakter & Budaya') }}</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Mewujudkan budaya sekolah yang disiplin, tekun, berintegritas, tegas, pantang menyerah,
-                                bertanggungjawab dan toleran
+                                {{ __('Mewujudkan budaya sekolah yang disiplin, tekun, berintegritas, tegas, pantang menyerah, bertanggungjawab dan toleran') }}
                             </p>
                         </div>
                     </div>
@@ -88,10 +86,9 @@
                             <span class="text-white font-black text-sm md:text-base">03</span>
                         </div>
                         <div class="pt-1">
-                            <h3 class="font-bold text-red-900 text-sm md:text-base mb-1.5">Keterampilan 4C</h3>
+                            <h3 class="font-bold text-red-900 text-sm md:text-base mb-1.5">{{ __('Keterampilan 4C') }}</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Mewujudkan siswa yang memiliki keterampilan berpikir kritis, berkomunikasi,
-                                berkolaborasi dan berkreatifitas
+                                {{ __('Mewujudkan siswa yang memiliki keterampilan berpikir kritis, berkomunikasi, berkolaborasi dan berkreatifitas') }}
                             </p>
                         </div>
                     </div>

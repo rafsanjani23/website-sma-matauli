@@ -17,9 +17,9 @@
     <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 relative z-10">
 
         <div class="text-center mb-10 md:mb-14">
-            <span class="text-xs font-bold tracking-[0.25em] uppercase text-yellow-400">Arah & Tujuan</span>
+            <span class="text-xs font-bold tracking-[0.25em] uppercase text-yellow-400">{{ __('Arah & Tujuan') }}</span>
             <h2 class="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-                Visi Sekolah
+                {{ __('Visi Sekolah') }}
             </h2>
             <div class="mt-4 mx-auto w-14 h-1 bg-yellow-400 rounded-full"></div>
         </div>
@@ -37,7 +37,7 @@
                     class="absolute -bottom-5 -right-5 w-24 h-24 bg-yellow-400 rounded-2xl flex items-center justify-center shadow-xl rotate-3">
                     <div class="text-center -rotate-3">
                         <div class="text-red-900 font-black text-lg leading-none">31+</div>
-                        <div class="text-red-800 font-semibold text-xs leading-tight">Tahun<br>Berdiri</div>
+                        <div class="text-red-800 font-semibold text-xs leading-tight">{{ __('Tahun Berdiri') }}</div>
                     </div>
                 </div>
             </div>
@@ -52,9 +52,7 @@
                     <div
                         class="relative z-10 bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-white/20">
                         <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed font-medium italic">
-                            Mewujudkan SMA Negeri 1 Matauli Pandan sebagai tempat layanan pendidikan unggul yang
-                            menghasilkan lulusan berkarakter pancasila, berdaya saing global dan berwawasan
-                            lingkungan.
+                            {{ __('Mewujudkan SMA Negeri 1 Matauli Pandan sebagai tempat layanan pendidikan unggul yang menghasilkan lulusan berkarakter pancasila, berdaya saing global dan berwawasan lingkungan.') }}
                         </p>
                     </div>
 
@@ -66,15 +64,15 @@
                 <div class="mt-8 grid grid-cols-3 gap-3">
                     <div class="text-center bg-white/10 rounded-xl p-3 border border-white/10">
                         <div class="text-yellow-400 text-xl mb-1">🏛️</div>
-                        <div class="text-white text-xs font-semibold">Berkarakter<br>Pancasila</div>
+                        <div class="text-white text-xs font-semibold">{{ __('Berkarakter Pancasila') }}</div>
                     </div>
                     <div class="text-center bg-white/10 rounded-xl p-3 border border-white/10">
                         <div class="text-yellow-400 text-xl mb-1">🌐</div>
-                        <div class="text-white text-xs font-semibold">Berdaya Saing<br>Global</div>
+                        <div class="text-white text-xs font-semibold">{{ __('Berdaya Saing Global') }}</div>
                     </div>
                     <div class="text-center bg-white/10 rounded-xl p-3 border border-white/10">
                         <div class="text-yellow-400 text-xl mb-1">🌿</div>
-                        <div class="text-white text-xs font-semibold">Berwawasan<br>Lingkungan</div>
+                        <div class="text-white text-xs font-semibold">{{ __('Berwawasan Lingkungan') }}</div>
                     </div>
                 </div>
             </div>

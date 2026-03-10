@@ -3,8 +3,8 @@
 
         <!-- Header -->
         <header class="text-center mb-10 md:mb-12">
-            <span class="text-xs font-semibold tracking-[0.3em] uppercase text-black">Informasi Terkini</span>
-            <h2 class="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-black">Berita, Prestasi & Testimonials</h2>
+            <span class="text-xs font-semibold tracking-[0.3em] uppercase text-black">{{ __('Informasi Terkini') }}</span>
+            <h2 class="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-black">{{ __('Berita, Prestasi & Testimonials') }}</h2>
             <div class="mt-4 mx-auto w-14 h-1 bg-yellow-400 rounded-full"></div>
         </header>
 
@@ -19,7 +19,7 @@
                  aria-selected:text-matauli-red-dark
                  aria-selected:shadow-lg
                  text-matauli-yellow hover:text-gray-200">
-                    Berita
+                    {{ __('Berita') }}
                 </button>
 
                 <button role="tab" id="tab-prestasi" aria-selected="false" aria-controls="gallery-prestasi"
@@ -29,7 +29,7 @@
                  aria-selected:text-matauli-red-dark
                  aria-selected:shadow-lg
                  text-matauli-yellow hover:text-gray-200">
-                    Prestasi
+                    {{ __('Prestasi') }}
                 </button>
 
                 <button role="tab" id="tab-testimoni" aria-selected="false" aria-controls="gallery-testimoni"
@@ -39,7 +39,7 @@
                  aria-selected:text-matauli-red-dark
                  aria-selected:shadow-lg
                  text-matauli-yellow hover:text-gray-200">
-                    Testimonials
+                    {{ __('Testimonials') }}
                 </button>
             </div>
         </div>
@@ -77,14 +77,14 @@
                                 <path
                                     d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                             </svg>
-                            Lihat di Facebook
+                            {{ __('Lihat di Facebook') }}
                         </span>
                         @endif
                     </div>
                 </a>
                 @empty
                 <div class="col-span-full text-center py-12 text-gray-400">
-                    Belum ada berita.
+                    {{ __('Belum ada berita.') }}
                 </div>
                 @endforelse
             </div>
@@ -148,14 +148,14 @@
                 </a>
                 @empty
                 <div class="col-span-full text-center py-12 text-gray-400">
-                    Belum ada data prestasi.
+                    {{ __('Belum ada data prestasi.') }}
                 </div>
                 @endforelse
             </div>
             <div class="text-center">
                 <a href="{{ route('prestasi') }}"
                     class="mt-10 group inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-8 py-3 rounded-full transition-all duration-300 hover:gap-4 shadow-lg shadow-yellow-900/30 text-sm md:text-base">
-                    Lihat Semua Prestasi
+                    {{ __('Lihat Semua Prestasi') }}
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd"
                             d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
@@ -201,7 +201,7 @@
                 </div>
                 @empty
                 <div class="col-span-full text-center py-12 text-gray-400">
-                    Belum ada testimonial.
+                    {{ __('Belum ada testimonial.') }}
                 </div>
                 @endforelse
             </div>

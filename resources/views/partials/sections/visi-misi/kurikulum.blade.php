@@ -10,11 +10,11 @@
             <div class="order-2 md:order-1">
                 <div class="flex items-center gap-3 mb-5">
                     <div class="w-8 h-0.5 bg-yellow-500"></div>
-                    <span class="text-xs font-bold tracking-[0.25em] uppercase text-yellow-600">Kurikulum Unggulan</span>
+                    <span class="text-xs font-bold tracking-[0.25em] uppercase text-yellow-600">{{ __('Kurikulum Unggulan') }}</span>
                 </div>
 
                 <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-black leading-tight mb-5">
-                    Menggunakan Kurikulum
+                    {{ __('Menggunakan Kurikulum') }}
                     <span class="relative inline-block">
                         <span class="relative z-10">International</span>
                         <span class="absolute bottom-1 left-0 right-0 h-2.5 bg-yellow-400/40 z-0 rounded"></span>
@@ -25,21 +25,18 @@
                 <div class="w-12 h-0.5 bg-yellow-400 mb-5 rounded-full"></div>
 
                 <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-8">
-                    SMAN 1 Matauli Pandan bernaung di bawah Yayasan Maju Tapian Nauli. Dengan lingkungan belajar
-                    yang modern, guru berpengalaman, serta berbagai kegiatan ekstrakurikuler, SMAN 1 Matauli Pandan
-                    berkomitmen membentuk siswa yang beriman, berilmu, beramal, dan siap bersaing di
-                    tingkat nasional maupun global.
+                    {{ __('SMAN 1 Matauli Pandan bernaung di bawah Yayasan Maju Tapian Nauli. Dengan lingkungan belajar yang modern, guru berpengalaman, serta berbagai kegiatan ekstrakurikuler, SMAN 1 Matauli Pandan berkomitmen membentuk siswa yang beriman, berilmu, beramal, dan siap bersaing di tingkat nasional maupun global.') }}
                 </p>
 
                 <div class="grid grid-cols-2 gap-4">
                     <div class="bg-red-50 rounded-2xl p-4 border border-red-100">
                         <div class="text-2xl md:text-3xl font-bold text-red-800 mb-1">IB</div>
-                        <div class="text-xs md:text-sm text-gray-600 leading-snug">International Baccalaureate Certified
+                        <div class="text-xs md:text-sm text-gray-600 leading-snug">{{ __('International Baccalaureate Certified') }}
                         </div>
                     </div>
                     <div class="bg-yellow-50 rounded-2xl p-4 border border-yellow-100">
                         <div class="text-2xl md:text-3xl font-bold text-yellow-700 mb-1">ISO</div>
-                        <div class="text-xs md:text-sm text-gray-600 leading-snug">9001:2008 Sistem Manajemen Mutu</div>
+                        <div class="text-xs md:text-sm text-gray-600 leading-snug">{{ __('9001:2008 Sistem Manajemen Mutu') }}</div>
                     </div>
                 </div>
             </div>
@@ -62,7 +59,7 @@
                     <div class="absolute bottom-4 left-4 right-4">
                         <span
                             class="bg-white/20 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1.5 rounded-full border border-white/30">
-                            🌍 Standar Pendidikan Internasional
+                            🌍 {{ __('Standar Pendidikan Internasional') }}
                         </span>
                     </div>
                 </div>

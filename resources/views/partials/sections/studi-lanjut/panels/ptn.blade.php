@@ -18,6 +18,6 @@
         </div>
     </div>
     @empty
-    <div class="col-span-full text-center py-8 text-gray-400">Belum ada data.</div>
+    <div class="col-span-full text-center py-8 text-gray-400">{{ __('Belum ada data.') }}</div>
     @endforelse
 </div>

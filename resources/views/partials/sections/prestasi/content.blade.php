@@ -33,7 +33,7 @@
                     {{-- CTA Arrow --}}
                     <div
                         class="mt-4 inline-flex items-center gap-2 text-matauli-red-dark font-semibold group-hover:gap-3 transition-all">
-                        <span>Selengkapnya</span>
+                        <span>{{ __('Selengkapnya') }}</span>
                         <svg xmlns="http://www.w3.org/2000/svg"
                             class="h-5 w-5 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20"
                             fill="currentColor">
@@ -47,7 +47,7 @@
         </a>
         @empty
         <div class="col-span-full text-center py-12 text-gray-400">
-            Belum ada data prestasi.
+            {{ __('Belum ada data prestasi.') }}
         </div>
         @endforelse
     </div>

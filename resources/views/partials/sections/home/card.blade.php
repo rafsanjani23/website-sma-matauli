@@ -5,7 +5,7 @@
     {{-- Berisi eyebrow text, judul utama, dan garis gradient --}}
     {{-- ===================== --}}
     <div class="text-center mb-14">
-        <h2 class="mt-3 text-3xl font-bold text-gray-900">Mengapa Memilih Sekolah Kami
+        <h2 class="mt-3 text-3xl font-bold text-gray-900">{{ __('Mengapa Memilih Sekolah Kami') }}
             {{-- Garis dekoratif bawah judul --}}
             <div class="mt-4 mx-auto w-14 h-1 bg-yellow-400 rounded-full"></div>
     </div>
@@ -41,9 +41,8 @@
                 {{-- JUDUL & DESKRIPSI --}}
                 <h3
                     class="font-semibold text-gray-800 text-sm leading-snug mb-2 group-hover:text-red-800 transition-colors duration-300">
-                    Semangat Keakraban, Rasa Solidaritas Yang Kuat</h3>
-                <p class="text-xs text-gray-400 font-light leading-relaxed">Membangun komunitas sekolah yang hangat dan
-                    penuh kebersamaan.</p>
+                    {{ __('Semangat Keakraban, Rasa Solidaritas Yang Kuat') }}</h3>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">{{ __('Membangun komunitas sekolah yang hangat dan penuh kebersamaan.') }}</p>
             </div>
 
             {{-- BOTTOM ACCENT: Garis gradient muncul dari kiri saat hover --}}
@@ -77,9 +76,8 @@
                 {{-- JUDUL & DESKRIPSI --}}
                 <h3
                     class="font-semibold text-gray-800 text-sm leading-snug mb-2 group-hover:text-red-800 transition-colors duration-300">
-                    Kurikulum International Baccalaureate</h3>
-                <p class="text-xs text-gray-400 font-light leading-relaxed">Standar pendidikan bertaraf internasional
-                    yang diakui lebih dari 150 negara.</p>
+                    {{ __('Kurikulum International Baccalaureate') }}</h3>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">{{ __('Standar pendidikan bertaraf internasional yang diakui lebih dari 150 negara.') }}</p>
             </div>
 
             {{-- BOTTOM ACCENT --}}
@@ -113,9 +111,8 @@
                 {{-- JUDUL & DESKRIPSI --}}
                 <h3
                     class="font-semibold text-gray-800 text-sm leading-snug mb-2 group-hover:text-red-800 transition-colors duration-300">
-                    Asrama Sekolah</h3>
-                <p class="text-xs text-gray-400 font-light leading-relaxed">Fasilitas asrama modern dengan lingkungan
-                    belajar kondusif untuk mendukung kehidupan dan prestasi siswa secara menyeluruh.</p>
+                    {{ __('Asrama Sekolah') }}</h3>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">{{ __('Fasilitas asrama modern dengan lingkungan belajar kondusif untuk mendukung kehidupan dan prestasi siswa secara menyeluruh.') }}</p>
             </div>
 
             {{-- BOTTOM ACCENT --}}
@@ -149,9 +146,8 @@
                 {{-- JUDUL & DESKRIPSI --}}
                 <h3
                     class="font-semibold text-gray-800 text-sm leading-snug mb-2 group-hover:text-red-800 transition-colors duration-300">
-                    Tenaga Pengajar Profesional</h3>
-                <p class="text-xs text-gray-400 font-light leading-relaxed">Didukung guru-guru berpengalaman dan
-                    bersertifikasi internasional di bidangnya.</p>
+                    {{ __('Tenaga Pengajar Profesional') }}</h3>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">{{ __('Didukung guru-guru berpengalaman dan bersertifikasi internasional di bidangnya.') }}</p>
             </div>
 
             {{-- BOTTOM ACCENT --}}

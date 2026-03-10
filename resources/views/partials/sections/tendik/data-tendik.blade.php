@@ -4,7 +4,7 @@
         <!-- PIMPINAN -->
         <div class="text-start mb-10">
             <span class="bg-red-900 text-white px-6 py-2 rounded-full text-sm font-semibold shadow">
-                Pimpinan Sekolah
+                {{ __('Pimpinan Sekolah') }}
             </span>
         </div>
 
@@ -34,7 +34,7 @@
                 </div>
             </div>
             @empty
-            <div class="col-span-full text-center py-8 text-gray-400">Belum ada data pimpinan.</div>
+            <div class="col-span-full text-center py-8 text-gray-400">{{ __('Belum ada data pimpinan.') }}</div>
             @endforelse
         </div>
     </div>

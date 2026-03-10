@@ -2,7 +2,7 @@
     <div class="mx-auto px-4">
         <div class="text-center mb-18">
             <h1 class="mt-2 text-2xl md:text-3xl font-bold text-slate-950 mb-2 ">
-                FASILITAS UMUM
+                {{ __('FASILITAS UMUM') }}
             </h1>
         </div>
 

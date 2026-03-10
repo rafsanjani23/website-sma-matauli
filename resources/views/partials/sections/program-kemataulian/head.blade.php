@@ -9,7 +9,7 @@
                 <img src="{{ asset('assets/Logo_SMAN_Matauli.png') }}" alt="Program Kemataulian" class="h-28 w-full">
             </div>
             <div>
-                <h2 class="mt-2 text-3xl md:text-4xl lg:text-5xl font-bold text-black">Program Kemataulian</h2>
+                <h2 class="mt-2 text-3xl md:text-4xl lg:text-5xl font-bold text-black">{{ __('Program Kemataulian') }}</h2>
                 <div class="mt-2 mx-auto w-18 h-0.5 bg-yellow-400 rounded-full"></div>
             </div>
         </div>

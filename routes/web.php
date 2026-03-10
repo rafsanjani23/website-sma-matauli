@@ -18,6 +18,14 @@ use App\Http\Controllers\Admin\ProfesionalController;
 use App\Http\Controllers\Admin\FotoController;
 use App\Http\Controllers\Admin\VideoController;
 
+// Language switch
+Route::get('/lang/{locale}', function (string $locale) {
+    if (in_array($locale, ['id', 'en'])) {
+        session(['locale' => $locale]);
+    }
+    return redirect()->back();
+})->name('lang.switch');
+
 Route::get('/', function () {
     $berita = \App\Models\Media::latest()->take(3)->get();
     $prestasi = \App\Models\Prestasi::latest()->take(3)->get();

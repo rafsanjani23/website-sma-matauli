@@ -1,10 +1,10 @@
 <section class="py-16 bg-[#fdf9f6] text-center">
 
     <h2 class="text-3xl md:text-4xl font-extrabold">
-        KOLABORASI DAN KEMITRAAN
+        {{ __('KOLABORASI DAN KEMITRAAN') }}
     </h2>
     <p class="mt-3 text-gray-600 max-w-xl mx-auto text-sm md:text-base">
-        Kami menjalin kolaborasi dengan berbagai perusahaan nasional dan internasional
+        {{ __('Kami menjalin kolaborasi dengan berbagai perusahaan nasional dan internasional') }}
     </p>
     <div class="mt-4 mx-auto w-14 h-1 bg-yellow-400 rounded-full"></div>
 
@@ -39,7 +39,7 @@
                 </div>
             </a>
             @empty
-            <div class="w-full text-center py-8 text-gray-400">Belum ada data mitra.</div>
+            <div class="w-full text-center py-8 text-gray-400">{{ __('Belum ada data mitra.') }}</div>
             @endforelse
 
         </div>

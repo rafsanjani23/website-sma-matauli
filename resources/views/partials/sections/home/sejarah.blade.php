@@ -47,7 +47,7 @@
                     {{-- Judul italic kuning --}}
                     <h2
                         class="text-4xl md:text-5xl lg:text-6xl font-bold text-yellow-400 italic font-libre leading-none mb-2">
-                        Sejarah
+                        {{ __('Sejarah') }}
                     </h2>
                     {{-- Sub judul putih --}}
                     <h3 class="text-xl md:text-2xl lg:text-3xl font-semibold text-white leading-snug">
@@ -59,18 +59,14 @@
 
                 {{-- DESKRIPSI --}}
                 <p class="text-sm md:text-base leading-relaxed text-white/80 text-justify mb-8 max-w-lg">
-                    SMA Negeri 1 Plus MATAULI Pandan adalah sekolah negeri unggulan di bawah naungan
-                    Yayasan Maju Tapian Nauli (MATAULI) serta Kementerian Pendidikan dan Kebudayaan
-                    di Provinsi Sumatera Utara. Pada tanggal 14 Juni 1994, angkatan pertama secara resmi
-                    dilantik oleh Panglima ABRI, Jenderal TNI Feisal Tanjung dan Dr. Ir. H. Akbar Tandjung
-                    serta tokoh-tokoh nasional asal Tapanuli Tengah.
+                    {{ __('SMA Negeri 1 Plus MATAULI Pandan adalah sekolah negeri unggulan di bawah naungan Yayasan Maju Tapian Nauli (MATAULI) serta Kementerian Pendidikan dan Kebudayaan di Provinsi Sumatera Utara. Pada tanggal 14 Juni 1994, angkatan pertama secara resmi dilantik oleh Panglima ABRI, Jenderal TNI Feisal Tanjung dan Dr. Ir. H. Akbar Tandjung serta tokoh-tokoh nasional asal Tapanuli Tengah.') }}
                 </p>
 
                 {{-- CTA BUTTON --}}
                 <div>
                     <a href="{{ url('/sejarah') }}"
                         class="group inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-red-900 font-bold px-6 py-2.5 rounded-full transition-all duration-300 ease-in-out hover:gap-4 shadow-lg shadow-black/20 text-sm">
-                        <span>Baca lebih lanjut</span>
+                        <span>{{ __('Baca lebih lanjut') }}</span>
                         <svg xmlns="http://www.w3.org/2000/svg"
                             class="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300"
                             viewBox="0 0 20 20" fill="currentColor">

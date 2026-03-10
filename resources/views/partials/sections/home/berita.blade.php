@@ -7,7 +7,7 @@
         <!-- Section Title -->
         <div class="text-center mb-12 md:mb-16">
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-matauli-red-dark mb-4">
-                Berita Terkini
+                {{ __('Berita Terkini') }}
             </h2>
             <div class="w-20 md:w-24 h-1 bg-yellow-400 mx-auto"></div>
         </div>
@@ -41,14 +41,14 @@
                                     <path
                                         d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                                 </svg>
-                                Lihat di Facebook
+                                {{ __('Lihat di Facebook') }}
                             </span>
                         @endif
                     </div>
                 </a>
             @empty
                 <div class="col-span-full text-center py-12 text-gray-400">
-                    Belum ada berita.
+                    {{ __('Belum ada berita.') }}
                 </div>
             @endforelse
         </div>
@@ -57,7 +57,7 @@
         <div class="text-center">
             <a href="{{ route('galeri-media') }}"
                 class="inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-6 py-3 md:px-8 md:py-4 rounded-lg transition-all hover:scale-105 shadow-lg text-sm md:text-base">
-                Selengkapnya
+                {{ __('Selengkapnya') }}
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" viewBox="0 0 20 20"
                     fill="currentColor">
                     <path fill-rule="evenodd"

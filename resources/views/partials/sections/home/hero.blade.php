@@ -17,14 +17,14 @@
                         </p>
                         <h1
                             class="text-white text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-4 md:mb-6">
-                            Sekolah Unggul Berkarakter Pancasila & Berdaya Saing Global
+                            {{ __('Sekolah Unggul Berkarakter Pancasila & Berdaya Saing Global') }}
                         </h1>
                         <p class="text-white/90 text-sm md:text-xl mb-6 md:mb-8 italic">
-                            Bergabung dan Tumbuh Bersama SMA Negeri 1 Matauli Pandan
+                            {{ __('Bergabung dan Tumbuh Bersama SMA Negeri 1 Matauli Pandan') }}
                         </p>
                         <a href="{{ url('/ppdb') }}"
                             class="group inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-5 py-2.5 md:px-7 md:py-3.5 rounded-full transition-all duration-300 hover:gap-4 hover:shadow-2xl hover:shadow-yellow-400/30 hover:scale-105 shadow-lg text-sm md:text-base">
-                            Daftar Disini
+                            {{ __('Daftar Disini') }}
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="h-4 w-4 md:h-5 md:w-5 group-hover:translate-x-1 transition-transform duration-300"
                                 viewBox="0 0 20 20" fill="currentColor">
@@ -51,15 +51,14 @@
                         </p>
                         <h1
                             class="text-white text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-4 md:mb-6">
-                            Mempersiapkan Siswa untuk Dunia Global melalui Program IB
+                            {{ __('Mempersiapkan Siswa untuk Dunia Global melalui Program IB') }}
                         </h1>
                         <p class="text-white/90 text-sm md:text-xl mb-6 md:mb-8 italic">
-                            Kurikulum internasional yang menumbuhkan kepemimpinan, riset, dan karakter pelajar
-                            Pancasila.
+                            {{ __('Kurikulum internasional yang menumbuhkan kepemimpinan, riset, dan karakter pelajar Pancasila.') }}
                         </p>
                         <a href="{{ url('/program-ib') }}"
                             class="group inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-5 py-2.5 md:px-7 md:py-3.5 rounded-full transition-all duration-300 hover:gap-4 hover:shadow-2xl hover:shadow-yellow-400/30 hover:scale-105 shadow-lg text-sm md:text-base">
-                            Kenali Program IB
+                            {{ __('Kenali Program IB') }}
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="h-4 w-4 md:h-5 md:w-5 group-hover:translate-x-1 transition-transform duration-300"
                                 viewBox="0 0 20 20" fill="currentColor">
@@ -86,15 +85,14 @@
                         </p>
                         <h1
                             class="text-white text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-4 md:mb-6">
-                            Membentuk Kemandirian & Karakter dalam Kehidupan Berasrama
+                            {{ __('Membentuk Kemandirian & Karakter dalam Kehidupan Berasrama') }}
                         </h1>
                         <p class="text-white/90 text-sm md:text-xl mb-6 md:mb-8 italic">
-                            Fasilitas asrama modern dengan pembinaan akademik, keagamaan, dan pengembangan diri yang
-                            terintegrasi.
+                            {{ __('Fasilitas asrama modern dengan pembinaan akademik, keagamaan, dan pengembangan diri yang terintegrasi.') }}
                         </p>
                         <a href="{{ url('/fasilitas-asrama') }}"
                             class="group inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-5 py-2.5 md:px-7 md:py-3.5 rounded-full transition-all duration-300 hover:gap-4 hover:shadow-2xl hover:shadow-yellow-400/30 hover:scale-105 shadow-lg text-sm md:text-base">
-                            Lihat Asrama
+                            {{ __('Lihat Asrama') }}
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="h-4 w-4 md:h-5 md:w-5 group-hover:translate-x-1 transition-transform duration-300"
                                 viewBox="0 0 20 20" fill="currentColor">

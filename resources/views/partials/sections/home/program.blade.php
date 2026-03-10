@@ -8,7 +8,7 @@
         {{-- SECTION HEADER --}}
         {{-- ===================== --}}
         <div class="text-center mb-12 md:mb-16">
-            <h2 class="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-black">Program Sekolah</h2>
+            <h2 class="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-black">{{ __('Program Sekolah') }}</h2>
             <div class="mt-4 mx-auto w-14 h-1 bg-yellow-400 rounded-full"></div>
         </div>
 
@@ -38,7 +38,7 @@
                     <div class="p-6 md:p-8 flex flex-col flex-1">
                         <h3
                             class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-red-800 transition-colors duration-300 leading-snug">
-                            Program Pre-Internasional Baccalaureate
+                            {{ __('Program Pre-Internasional Baccalaureate') }}
                         </h3>
                         <div class="w-8 h-0.5 bg-yellow-400 mb-4 group-hover:w-14 transition-all duration-500"></div>
                         <p class="text-gray-500 text-sm md:text-base leading-relaxed mb-6 flex-1">
@@ -80,7 +80,7 @@
                     <div class="p-6 md:p-8 flex flex-col flex-1">
                         <h3
                             class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-red-800 transition-colors duration-300 leading-snug">
-                            Program Khusus Kemataulian
+                            {{ __('Program Khusus Kemataulian') }}
                         </h3>
                         <div class="w-8 h-0.5 bg-yellow-400 mb-4 group-hover:w-14 transition-all duration-500"></div>
                         <p class="text-gray-500 text-sm md:text-base leading-relaxed mb-6 flex-1">
@@ -122,7 +122,7 @@
                     <div class="p-6 md:p-8 flex flex-col flex-1">
                         <h3
                             class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-red-800 transition-colors duration-300 leading-snug">
-                            Program Kemendikdasmen
+                            {{ __('Program Kemendikdasmen') }}
                         </h3>
                         <div class="w-8 h-0.5 bg-yellow-400 mb-4 group-hover:w-14 transition-all duration-500"></div>
                         <p class="text-gray-500 text-sm md:text-base leading-relaxed mb-6 flex-1">
