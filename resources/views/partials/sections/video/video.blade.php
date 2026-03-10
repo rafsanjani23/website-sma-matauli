@@ -5,12 +5,12 @@
     <div class="mx-auto px-4">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-2 px-10">
 
-            @for ($i = 0; $i < 9; $i++)
+            @forelse ($items as $item)
             <div>
                 <div
                     class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-4xl overflow-hidden mx-auto relative group">
-                    <div class="aspect-3/2 relative cursor-pointer" onclick="openVideoModal('lXwn83rmegQ')">
-                        <img src="https://img.youtube.com/vi/lXwn83rmegQ/hqdefault.jpg" alt="Video Thumbnail"
+                    <div class="aspect-3/2 relative cursor-pointer" onclick="openVideoModal('{{ $item->youtube_id }}')">
+                        <img src="https://img.youtube.com/vi/{{ $item->youtube_id }}/hqdefault.jpg" alt="{{ $item->judul }}"
                             class="w-full h-full object-cover" />
                         <!-- Play Button Overlay -->
                         <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-all duration-300">
@@ -22,11 +22,13 @@
                         </div>
                     </div>
                     <div class="p-4 absolute bottom-0 left-0 right-0 bg-matauli-red-dark rounded-2xl opacity-90">
-                        <h3 class="text-lg text-center font-semibold text-white line-clamp-1">Judul Video</h3>
+                        <h3 class="text-lg text-center font-semibold text-white line-clamp-1">{{ $item->judul }}</h3>
                     </div>
                 </div>
             </div>
-            @endfor
+            @empty
+            <div class="col-span-full text-center py-12 text-gray-400">Belum ada video.</div>
+            @endforelse
 
         </div>
     </div>

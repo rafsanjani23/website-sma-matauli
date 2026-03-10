@@ -23,67 +23,24 @@
              scroll-smooth snap-x snap-mandatory
              px-4">
 
-            <!-- Card -->
-            <a href="{{ route('mitra-detail') }}">
+            @forelse ($items as $item)
+            <a href="{{ route('mitra-detail', $item->id) }}">
                 <div class="snap-center shrink-0
                   w-55 md:min-w-70
                   h-32 md:h-40
                   border border-red-400 rounded-2xl
                   flex items-center justify-center
-                  font-semibold bg-white">
-                    Mitra 1
+                  font-semibold bg-white overflow-hidden">
+                    @if ($item->gambar_mitra)
+                        <img src="{{ Storage::url($item->gambar_mitra) }}" alt="{{ $item->nama_mitra }}" class="w-full h-full object-contain p-2" />
+                    @else
+                        {{ $item->nama_mitra }}
+                    @endif
                 </div>
             </a>
-            <a href="{{ route('mitra-detail') }}">
-                <div class="snap-center shrink-0
-                  w-55 md:min-w-70
-                  h-32 md:h-40
-                  border border-red-400 rounded-2xl
-                  flex items-center justify-center
-                  font-semibold bg-white">
-                    Mitra 2
-                </div>
-            </a>
-            <a href="{{ route('mitra-detail') }}">
-                <div class="snap-center shrink-0
-                  w-55 md:min-w-70
-                  h-32 md:h-40
-                  border border-red-400 rounded-2xl
-                  flex items-center justify-center
-                  font-semibold bg-white">
-                    Mitra 3
-                </div>
-            </a>
-            <a href="{{ route('mitra-detail') }}">
-                <div class="snap-center shrink-0
-                  w-55 md:min-w-70
-                  h-32 md:h-40
-                  border border-red-400 rounded-2xl
-                  flex items-center justify-center
-                  font-semibold bg-white">
-                    Mitra 4
-                </div>
-            </a>
-            <a href="{{ route('mitra-detail') }}">
-                <div class="snap-center shrink-0
-                  w-55 md:min-w-70
-                  h-32 md:h-40
-                  border border-red-400 rounded-2xl
-                  flex items-center justify-center
-                  font-semibold bg-white">
-                    Mitra 5
-                </div>
-            </a>
-            <a href="{{ route('mitra-detail') }}">
-                <div class="snap-center shrink-0
-                  w-55 md:min-w-70
-                  h-32 md:h-40
-                  border border-red-400 rounded-2xl
-                  flex items-center justify-center
-                  font-semibold bg-white">
-                    Mitra 6
-                </div>
-            </a>
+            @empty
+            <div class="w-full text-center py-8 text-gray-400">Belum ada data mitra.</div>
+            @endforelse
 
         </div>
 
@@ -102,7 +59,7 @@
     const nextBtn = document.getElementById("next");
     const prevBtn = document.getElementById("prev");
 
-    const scrollAmount = 320; // sesuaikan dengan lebar card + gap
+    const scrollAmount = 320;
 
     nextBtn.addEventListener("click", () => {
         slider.scrollBy({

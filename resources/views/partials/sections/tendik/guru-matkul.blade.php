@@ -17,21 +17,29 @@
                     </button>
                     <div class="accordion-content overflow-hidden transition-all duration-300 ease-in-out">
                         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-2 mt-3 px-6">
-                            <div>
+                            @forelse ($guruMapel as $item)
+                            <div class="aspect-3/2">
                                 <div
                                     class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto">
                                     <div class="aspect-3/2">
-                                        <img src="https://readymadeui.com/Imagination.webp"
-                                            class="w-full h-full object-cover" alt="Card image" />
+                                        @if ($item->foto)
+                                            <img src="{{ Storage::url($item->foto) }}"
+                                                class="w-full h-full object-cover" alt="{{ $item->nama }}" />
+                                        @else
+                                            <div class="w-full h-full flex items-center justify-center bg-gray-100">
+                                                <svg class="w-16 h-16 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                                            </div>
+                                        @endif
                                     </div>
                                     <div class="p-2">
-                                        <h5 class="text-matauli-red-dark text-center text-md font-semibold">NAMA GURU
-                                        </h5>
-                                        <p class="text-slate-500 text-center text-sm font-light mt-2">nama mata
-                                            pelajaran</p>
+                                        <h5 class="text-matauli-red-dark text-center text-md font-semibold">{{ $item->nama }}</h5>
+                                        <p class="text-slate-500 text-center text-sm font-light mt-2">{{ $item->mata_pelajaran }}</p>
                                     </div>
                                 </div>
                             </div>
+                            @empty
+                            <div class="col-span-full text-center py-8 text-gray-400">Belum ada data.</div>
+                            @endforelse
                         </div>
                     </div>
                 </div>
@@ -50,21 +58,29 @@
                     </button>
                     <div class="accordion-content overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
                         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-2 mt-3 px-6">
-                            <div>
+                            @forelse ($guruIB as $item)
+                            <div class="aspect-3/2">
                                 <div
                                     class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto">
                                     <div class="aspect-3/2">
-                                        <img src="https://readymadeui.com/Imagination.webp"
-                                            class="w-full h-full object-cover" alt="Card image" />
+                                        @if ($item->foto)
+                                            <img src="{{ Storage::url($item->foto) }}"
+                                                class="w-full h-full object-cover" alt="{{ $item->nama }}" />
+                                        @else
+                                            <div class="w-full h-full flex items-center justify-center bg-gray-100">
+                                                <svg class="w-16 h-16 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                                            </div>
+                                        @endif
                                     </div>
                                     <div class="p-2">
-                                        <h5 class="text-matauli-red-dark text-center text-md font-semibold">NAMA GURU
-                                        </h5>
-                                        <p class="text-slate-500 text-center text-sm font-light mt-2">nama mata
-                                            pelajaran</p>
+                                        <h5 class="text-matauli-red-dark text-center text-md font-semibold">{{ $item->nama }}</h5>
+                                        <p class="text-slate-500 text-center text-sm font-light mt-2">{{ $item->mata_pelajaran }}</p>
                                     </div>
                                 </div>
                             </div>
+                            @empty
+                            <div class="col-span-full text-center py-8 text-gray-400">Belum ada data.</div>
+                            @endforelse
                         </div>
                     </div>
                 </div>
@@ -83,19 +99,29 @@
                     </button>
                     <div class="accordion-content overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
                         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-2 mt-3 px-6">
-                            <div>
+                            @forelse ($tendik as $item)
+                            <div class="aspect-3/2">
                                 <div
                                     class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto">
                                     <div class="aspect-3/2">
-                                        <img src="https://readymadeui.com/Imagination.webp"
-                                            class="w-full h-full object-cover" alt="Card image" />
+                                        @if ($item->foto)
+                                            <img src="{{ Storage::url($item->foto) }}"
+                                                class="w-full h-full object-cover" alt="{{ $item->nama }}" />
+                                        @else
+                                            <div class="w-full h-full flex items-center justify-center bg-gray-100">
+                                                <svg class="w-16 h-16 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                                            </div>
+                                        @endif
                                     </div>
                                     <div class="p-2">
-                                        <h5 class="text-matauli-red-dark text-center text-md font-semibold">NAMA</h5>
-                                        <p class="text-slate-500 text-center text-sm font-light mt-2">jabatan</p>
+                                        <h5 class="text-matauli-red-dark text-center text-md font-semibold">{{ $item->nama }}</h5>
+                                        <p class="text-slate-500 text-center text-sm font-light mt-2">{{ $item->jabatan }}</p>
                                     </div>
                                 </div>
                             </div>
+                            @empty
+                            <div class="col-span-full text-center py-8 text-gray-400">Belum ada data.</div>
+                            @endforelse
                         </div>
                     </div>
                 </div>
