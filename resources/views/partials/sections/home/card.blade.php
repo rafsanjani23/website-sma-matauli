@@ -33,16 +33,19 @@
                     <div
                         class="absolute inset-0 rounded-full bg-red-50 group-hover:bg-red-100 group-hover:scale-110 transition-all duration-500">
                     </div>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADF0lEQVR4nO2du27UUBCGvyoggRAgOugDDwGEZyGEhssjzOwKKUFUeRWKiIQgEQouFaELILpcarTpjYZsAQiCvT5zvMeeTzrSKpKdf749muN1jjcQBEEwDAQWFJ4KHCpUNcaBwJod13X2ohBYqyn4t2HHdZ29KKT+TP5zHHWdvSgUDmac0ftdZx9E61BY7Tp7UQgsTGXXndmxGAZBEDiyDmemffnIhr22n3Wdq4+L3/O/XK69EDjbdb5eS9aQnU+yhux8kjVk55OsITufZA3Z9WkrOWRnlByyM0oO2Rklh+yMkkM2+SQPWrZkljxI2dKR5EHJXj+51bkxg6BNgeUxLD6DczYErivcE9iaQfZGr2+xSsM/qgrsjeBmjfPeUvjc8Nz93eMhDfZjCLwWuFj33KtwSWGnwfkPKQHrcwqPFT4IHCfuo3tNJP8qW+BL4izHAu8FHmVvNwLXFD55LVijGu3ilGxLXrkEdq32tDZPn8lukgW2EmTc9pSdZWZP20XlWMhy24wCK54ZFR7ijfVkzyLGsNg24/TSz1P0O7xRmDjP6PNtM9o5nEVP8Ma5gCqR6AveOfHGu4BxgtYxhhshGv/FUOH+IES3OVbhZYKMr7xzts04D6KrEdyZNd8IbredlYMRrfBN4ErTbAKXFb6GaBr1wR27d9FEssCbJr/Do8YSRVd2g8juXfwvk7WaJjM5RPNP4dv2sdou2+w628b09Urdha+XoocwCNGEaO3RCNGE6KpPI0QzINGlvEk41JiMEE2I1hB9QtdiQzQhOmkInQO5vRLtMDZT7ib1fJOKFC2Ou0lDNHl2k4Zo5ms3ad9FL82ab9pGQrQWvpt0rkS3OVbhbq7dpB41JsO7gHHG3aQeNSbDuwDJuJvUo8ZklFKAFpKz+AK0kJzFF6CF5GxVQJvBwHIWX4AWkrP4ArSQnJ09LEQZor+nytnZ42+UIdr/8Td7JnroogUekOk7N3YHLPpjtq+wtwfPvWSTCC/JT+AqObGZbc9EW79KuUCSiIRyJwJvrV3EP2MIgiAIgiAIgiAIgiDgJz8Af19z/tqnGO4AAAAASUVORK5CYII="
-                        alt="school-building"
-                        class="relative z-10 w-9 h-9 object-contain group-hover:scale-110 transition-transform duration-500">
+                    <svg class="relative z-10 w-9 h-9 text-red-800 group-hover:scale-110 transition-transform duration-500"
+                        fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                    </svg>
                 </div>
 
                 {{-- JUDUL & DESKRIPSI --}}
                 <h3
                     class="font-semibold text-gray-800 text-sm leading-snug mb-2 group-hover:text-red-800 transition-colors duration-300">
                     {{ __('Semangat Keakraban, Rasa Solidaritas Yang Kuat') }}</h3>
-                <p class="text-xs text-gray-400 font-light leading-relaxed">{{ __('Membangun komunitas sekolah yang hangat dan penuh kebersamaan.') }}</p>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">
+                    {{ __('Membangun komunitas sekolah yang hangat dan penuh kebersamaan.') }}</p>
             </div>
 
             {{-- BOTTOM ACCENT: Garis gradient muncul dari kiri saat hover --}}
@@ -68,16 +71,19 @@
                     <div
                         class="absolute inset-0 rounded-full bg-red-50 group-hover:bg-red-100 group-hover:scale-110 transition-all duration-500">
                     </div>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAABo0lEQVR4nO3dsU3DQBiG4SOiNEpP3CCmYB8IK8AEZIVkhgyUhs6BOhOE6ipOQj7he//E71NGis/Kl8/nXy6ckiRJkiRJc3LTaqHtanVutVZrr8dj9e+4+M8T0Xi3tV98Wy6v9h/dkg2AVTdgrl4O++9fn6X0lVJKi7un+7HHswEwA4AZAAzfA9bD8Emfw192ff841bFtAMwAYAYAMwCYAcAMAIbfhk55i3cJbADMAGD4JSiLOBG3uDzaABjegPUwvAPLPgNrFtkAGN4AQqRbXxsAwxuw6/sP+hxINgBmADADgOF7QOYkLATegAaTcJipt8QGwPAGTC3S1FtiA2B4A5yEhTIAmAHA8D0gcxIWAm8A9Ey4BJmYbQAMb0AU1MRsA2B4A5yEhTIAmAHA8D0gcxIWAm9A40k43PNhGwDDG9BSxOfDNgCGN8BJWCgDgBkADN8DMidhIfAGwM+E8cnYBsDwBpAiTMY2AIY3wElYKAOAGQDMAGAGADMAWPXrl8a+xOeh62qXCs/XWF2w6kFsczqNSn3bdb72qsAGSJIkSZIkzccPmc1GphcN1HwAAAAASUVORK5CYII="
-                        alt="kurikulum-ib"
-                        class="relative z-10 w-9 h-9 object-contain group-hover:scale-110 transition-transform duration-500">
+                    <svg class="relative z-10 w-9 h-9 text-red-800 group-hover:scale-110 transition-transform duration-500"
+                        fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                    </svg>
                 </div>
 
                 {{-- JUDUL & DESKRIPSI --}}
                 <h3
                     class="font-semibold text-gray-800 text-sm leading-snug mb-2 group-hover:text-red-800 transition-colors duration-300">
                     {{ __('Kurikulum International Baccalaureate') }}</h3>
-                <p class="text-xs text-gray-400 font-light leading-relaxed">{{ __('Standar pendidikan bertaraf internasional yang diakui lebih dari 150 negara.') }}</p>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">
+                    {{ __('Standar pendidikan bertaraf internasional yang diakui lebih dari 150 negara.') }}</p>
             </div>
 
             {{-- BOTTOM ACCENT --}}
@@ -103,8 +109,8 @@
                     <div
                         class="absolute inset-0 rounded-full bg-red-50 group-hover:bg-red-100 group-hover:scale-110 transition-all duration-500">
                     </div>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAACU0lEQVR4nO2aO24CMRQAX6KUSKkjqnQciCtEuUKOkCtEXIED0aVCqZHokyKyAhv257X93rNn2oWVPbMGvIsIAAAAADjk7fHxW3sMS7jXHsASgnzPEdwG6Er3GsFlgD7ZHiO4CzAm2VsEVwGmyvUUwU2AuVK9RHARIFamhwjmAyyVaD2C6QCp5FmOYDZAamlWI9xpD6BLCVHvp5OZeZsZiIi9q7REKDMfQdbkl8JEgFblixgI0LJ8EeUArcsXUQyA/F9UAiD/j+IBkH9N0QDI/0+xAMi/TZEAXuWXGHf2AF7lB3KPP2sA7/IDOeeRLUAt8gO55pMlQG3yAznmlTxArfIDqeeXNEDt8gMp55ksQCvyA6nmmyRAa/IDKea96JFbq+JvEfv4MnoFIP+aWB9RAZB/mxgvswMgf5i5fmYFQP405nia/MURTvq8WsWMqSk+z2cRmfbFPGkFcOXHMcXbaADkL2PM32AA5KdhyGNvAOSnpc/n7N3bx3pNmBFej8fJXtX/mtg6BFDmIdWJXg77r6Hju832aex14TUlsDJeVoAyBFCGAMoQQBkCKJPsV1BJXg773mO7zbbgSJbjZic8JL0PrRhzdsLmV0CM+O57La8K0xuxJfK75+lGYCMGImI4QKqrP9f5UmE2QCsQQBkCKGN2H5DjM7vUz1GeiDmCAMoQQBkCKEMAZQigDAGUqTrAbrM1fStapOIAl+ItR6g2gBeqDXB5K8PqrWgRB48kl2BZfKDaFeAFAihDAGUIoAwBlCGAMgRQhgDKEAAAAAAAAADa4gfhLMWfgDVbYQAAAABJRU5ErkJggg=="
-                        alt="boarding school"
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADF0lEQVR4nO2du27UUBCGvyoggRAgOugDDwGEZyGEhssjzOwKKUFUeRWKiIQgEQouFaELILpcarTpjYZsAQiCvT5zvMeeTzrSKpKdf749muN1jjcQBEEwDAQWFJ4KHCpUNcaBwJod13X2ohBYqyn4t2HHdZ29KKT+TP5zHHWdvSgUDmac0ftdZx9E61BY7Tp7UQgsTGXXndmxGAZBEDiyDmemffnIhr22n3Wdq4+L3/O/XK69EDjbdb5eS9aQnU+yhux8kjVk55OsITufZA3Z9WkrOWRnlByyM0oO2Rklh+yMkkM2+SQPWrZkljxI2dKR5EHJXj+51bkxg6BNgeUxLD6DczYErivcE9iaQfZGr2+xSsM/qgrsjeBmjfPeUvjc8Nz93eMhDfZjCLwWuFj33KtwSWGnwfkPKQHrcwqPFT4IHCfuo3tNJP8qW+BL4izHAu8FHmVvNwLXFD55LVijGu3ilGxLXrkEdq32tDZPn8lukgW2EmTc9pSdZWZP20XlWMhy24wCK54ZFR7ijfVkzyLGsNg24/TSz1P0O7xRmDjP6PNtM9o5nEVP8Ma5gCqR6AveOfHGu4BxgtYxhhshGv/FUOH+IES3OVbhZYKMr7xzts04D6KrEdyZNd8IbredlYMRrfBN4ErTbAKXFb6GaBr1wR27d9FEssCbJr/Do8YSRVd2g8juXfwvk7WaJjM5RPNP4dv2sdou2+w628b09Urdha+XoocwCNGEaO3RCNGE6KpPI0QzINGlvEk41JiMEE2I1hB9QtdiQzQhOmkInQO5vRLtMDZT7ib1fJOKFC2Ou0lDNHl2k4Zo5ms3ad9FL82ab9pGQrQWvpt0rkS3OVbhbq7dpB41JsO7gHHG3aQeNSbDuwDJuJvUo8ZklFKAFpKz+AK0kJzFF6CF5GxVQJvBwHIWX4AWkrP4ArSQnJ09LEQZor+nytnZ42+UIdr/8Td7JnroogUekOk7N3YHLPpjtq+wtwfPvWSTCC/JT+AqObGZbc9EW79KuUCSiIRyJwJvrV3EP2MIgiAIgiAIgiAIgiDgJz8Af19z/tqnGO4AAAAASUVORK5CYII="
+                        alt="asrama"
                         class="relative z-10 w-9 h-9 object-contain group-hover:scale-110 transition-transform duration-500">
                 </div>
 
@@ -112,7 +118,9 @@
                 <h3
                     class="font-semibold text-gray-800 text-sm leading-snug mb-2 group-hover:text-red-800 transition-colors duration-300">
                     {{ __('Asrama Sekolah') }}</h3>
-                <p class="text-xs text-gray-400 font-light leading-relaxed">{{ __('Fasilitas asrama modern dengan lingkungan belajar kondusif untuk mendukung kehidupan dan prestasi siswa secara menyeluruh.') }}</p>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">
+                    {{ __('Fasilitas asrama modern dengan lingkungan belajar kondusif untuk mendukung kehidupan dan prestasi siswa secara menyeluruh.') }}
+                </p>
             </div>
 
             {{-- BOTTOM ACCENT --}}
@@ -147,7 +155,8 @@
                 <h3
                     class="font-semibold text-gray-800 text-sm leading-snug mb-2 group-hover:text-red-800 transition-colors duration-300">
                     {{ __('Tenaga Pengajar Profesional') }}</h3>
-                <p class="text-xs text-gray-400 font-light leading-relaxed">{{ __('Didukung guru-guru berpengalaman dan bersertifikasi internasional di bidangnya.') }}</p>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">
+                    {{ __('Didukung guru-guru berpengalaman dan bersertifikasi internasional di bidangnya.') }}</p>
             </div>
 
             {{-- BOTTOM ACCENT --}}

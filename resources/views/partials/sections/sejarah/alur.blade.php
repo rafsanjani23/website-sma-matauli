@@ -206,7 +206,7 @@
                     <div class="flex-1 pt-1 pb-6">
                         <div class="bg-white rounded-2xl shadow-md border-l-4 border-red-800 overflow-hidden">
                             <div class="h-44 w-full overflow-hidden">
-                                <img src="{{ asset('assets/sejarah-2012.jpg') }}" alt="2012"
+                                <img src="{{ asset('assets/Sejarah_2012.jpeg') }}" alt="2012"
                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-5">
@@ -287,7 +287,7 @@
                         <div
                             class="bg-linear-to-br from-yellow-50 to-orange-50 rounded-2xl shadow-md border-l-4 border-yellow-500 overflow-hidden">
                             <div class="h-44 w-full overflow-hidden">
-                                <img src="{{ asset('assets/sejarah-2026.jpg') }}" alt="2026"
+                                <img src="{{ asset('assets/Sejarah_2026.jpg') }}" alt="2026"
                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-5">
@@ -300,7 +300,8 @@
                                 </div>
                                 <p class="text-gray-700 text-sm leading-relaxed">
                                     {{ __('Penerapan Kurikulum Merdeka dan') }} <span
-                                        class="font-semibold text-yellow-700">International Baccalaureate</span> {{ __('dan transformasi digital di seluruh aspek pembelajaran.') }}
+                                        class="font-semibold text-yellow-700">International Baccalaureate</span>
+                                    {{ __('dan transformasi digital di seluruh aspek pembelajaran.') }}
                                 </p>
                             </div>
                         </div>
@@ -320,8 +321,11 @@
                         <div class="max-w-sm w-full">
                             <div
                                 class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-r-4 border-red-800 text-right">
-                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">{{ __('1991 - Pendirian Yayasan Maju Tapian Nauli (MATAULI)') }}</h3>
-                                <p class="text-gray-600 text-sm md:text-base leading-relaxed">{{ __('Yayasan Maju Tapian Nauli (MATAULI) didirikan tahun 1991 oleh Jendral TNI (Purn) Feisal Tanjung dan Dr. Ir. H. Akbar Tandjung Beserta Tokoh Masyarakat Tapanuli Tengah yang Peduli dengan Pendidikan.') }}</p>
+                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
+                                    {{ __('1991 - Pendirian Yayasan Maju Tapian Nauli (MATAULI)') }}</h3>
+                                <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                                    {{ __('Yayasan Maju Tapian Nauli (MATAULI) didirikan tahun 1991 oleh Jendral TNI (Purn) Feisal Tanjung dan Dr. Ir. H. Akbar Tandjung Beserta Tokoh Masyarakat Tapanuli Tengah yang Peduli dengan Pendidikan.') }}
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -359,8 +363,11 @@
                         <div class="max-w-sm w-full">
                             <div
                                 class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-l-4 border-red-800">
-                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">{{ __('1994 - Pendirian SMAN 1 Matauli Pandan') }}</h3>
-                                <p class="text-gray-600 text-sm md:text-base leading-relaxed">{{ __('SMA Negeri 1 (Plus) Matauli Pandan didirikan pada tahun 1994 di Jl. K. H. Dewantara No. 01 Pandan, Kabupaten Tapanuli Tengah, Provinsi Sumatera Utara.') }}</p>
+                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
+                                    {{ __('1994 - Pendirian SMAN 1 Matauli Pandan') }}</h3>
+                                <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                                    {{ __('SMA Negeri 1 (Plus) Matauli Pandan didirikan pada tahun 1994 di Jl. K. H. Dewantara No. 01 Pandan, Kabupaten Tapanuli Tengah, Provinsi Sumatera Utara.') }}
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -372,8 +379,11 @@
                         <div class="max-w-sm w-full">
                             <div
                                 class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-r-4 border-red-800 text-right">
-                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">{{ __('1994 - Kerjasama dengan Kanwil Depdikbud Provinsi Sumatera Utara') }}</h3>
-                                <p class="text-gray-600 text-sm md:text-base leading-relaxed">{{ __('Kerjasama antara Kantor Wilayah Departemen Pendidikan dan Kebudayaan Provinsi Sumatera Utara dengan Yayasan MATAULI.') }}</p>
+                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
+                                    {{ __('1994 - Kerjasama dengan Kanwil Depdikbud Provinsi Sumatera Utara') }}</h3>
+                                <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                                    {{ __('Kerjasama antara Kantor Wilayah Departemen Pendidikan dan Kebudayaan Provinsi Sumatera Utara dengan Yayasan MATAULI.') }}
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -411,9 +421,12 @@
                         <div class="max-w-sm w-full">
                             <div
                                 class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-l-4 border-red-800">
-                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">{{ __('1995 - Perubahan Status') }}
+                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
+                                    {{ __('1995 - Perubahan Status') }}
                                 </h3>
-                                <p class="text-gray-600 text-sm md:text-base leading-relaxed">{{ __('Pada 26 Oktober dilakukan perubahan status menjadi SMAN Negeri 2 MATAULI Sibolga.') }}</p>
+                                <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                                    {{ __('Pada 26 Oktober dilakukan perubahan status menjadi SMAN Negeri 2 MATAULI Sibolga.') }}
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -425,8 +438,11 @@
                         <div class="max-w-sm w-full">
                             <div
                                 class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-r-4 border-red-800 text-right">
-                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">{{ __('2004 - Perubahan Nama Sekolah') }}</h3>
-                                <p class="text-gray-600 text-sm md:text-base leading-relaxed">{{ __('Pada 27 Januari melakukan perubahan nama menjadi SMA Negeri 1 MATAULI PANDAN.') }}</p>
+                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
+                                    {{ __('2004 - Perubahan Nama Sekolah') }}</h3>
+                                <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                                    {{ __('Pada 27 Januari melakukan perubahan nama menjadi SMA Negeri 1 MATAULI PANDAN.') }}
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -464,8 +480,11 @@
                         <div class="max-w-sm w-full">
                             <div
                                 class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-l-4 border-red-800">
-                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">{{ __('2008 - Mendapatkan Sertifikat Sistem Manajemen Mutu') }}</h3>
-                                <p class="text-gray-600 text-sm md:text-base leading-relaxed">{{ __('SMA Negeri 1 (Plus) Matauli Pandan telah mendapatkan sertifikat Sistem Manajemen Mutu (SMM) ISO 9001 : 2008 yang menjadi pedoman penyelenggaraan sistem manajemen sekolah.') }}</p>
+                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
+                                    {{ __('2008 - Mendapatkan Sertifikat Sistem Manajemen Mutu') }}</h3>
+                                <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                                    {{ __('SMA Negeri 1 (Plus) Matauli Pandan telah mendapatkan sertifikat Sistem Manajemen Mutu (SMM) ISO 9001 : 2008 yang menjadi pedoman penyelenggaraan sistem manajemen sekolah.') }}
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -477,8 +496,11 @@
                         <div class="max-w-sm w-full">
                             <div
                                 class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-r-4 border-red-800 text-right">
-                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">{{ __('2012 - Menjadi Sekolah Penyedia Layanan Data Berbasis IT') }}</h3>
-                                <p class="text-gray-600 text-sm md:text-base leading-relaxed">{{ __('Sejak tahun 2012, SMA Negeri 1 (Plus) Matauli Pandan dipercaya sebagai penyedia layanan data berbasis IT bagi seluruh SMA di Kabupaten Tapanuli Tengah.') }}</p>
+                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
+                                    {{ __('2012 - Menjadi Sekolah Penyedia Layanan Data Berbasis IT') }}</h3>
+                                <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                                    {{ __('Sejak tahun 2012, SMA Negeri 1 (Plus) Matauli Pandan dipercaya sebagai penyedia layanan data berbasis IT bagi seluruh SMA di Kabupaten Tapanuli Tengah.') }}
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -491,7 +513,7 @@
                     </div>
                     <div class="flex items-center justify-start pl-16 py-8">
                         <div class="max-w-sm w-full h-56 rounded-2xl overflow-hidden shadow-xl bg-gray-100">
-                            <img src="{{ asset('assets/sejarah-2012.jpg') }}" alt="2012"
+                            <img src="{{ asset('assets/Sejarah_2012.jpeg') }}" alt="2012"
                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                     </div>
@@ -516,8 +538,11 @@
                         <div class="max-w-sm w-full">
                             <div
                                 class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-l-4 border-red-800">
-                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">{{ __('2014 - Perpanjang Kerjasama dengan Dinas Pendidikan') }}</h3>
-                                <p class="text-gray-600 text-sm md:text-base leading-relaxed">{{ __('Pada 28 Februari melakukan Perpanjangan Kerjasama Dinas Pendidikan Provinsi Sumatera Utara dengan Yayasan MATAULI.') }}</p>
+                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
+                                    {{ __('2014 - Perpanjang Kerjasama dengan Dinas Pendidikan') }}</h3>
+                                <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                                    {{ __('Pada 28 Februari melakukan Perpanjangan Kerjasama Dinas Pendidikan Provinsi Sumatera Utara dengan Yayasan MATAULI.') }}
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -529,8 +554,11 @@
                         <div class="max-w-sm w-full">
                             <div
                                 class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-r-4 border-red-800 text-right">
-                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">{{ __('2021 - Telah Mendapatkan Akreditasi A') }}</h3>
-                                <p class="text-gray-600 text-sm md:text-base leading-relaxed">{{ __('Sekolah ini telah terakreditasi A dengan Nomor SK Akreditasi 1347/BAN-SM/SK/2021 pada tanggal 8 Desember 2021.') }}</p>
+                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
+                                    {{ __('2021 - Telah Mendapatkan Akreditasi A') }}</h3>
+                                <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                                    {{ __('Sekolah ini telah terakreditasi A dengan Nomor SK Akreditasi 1347/BAN-SM/SK/2021 pada tanggal 8 Desember 2021.') }}
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -553,7 +581,7 @@
                 <div class="relative grid grid-cols-2 gap-0 min-h-64">
                     <div class="flex items-center justify-end pr-16 py-8">
                         <div class="max-w-sm w-full h-56 rounded-2xl overflow-hidden shadow-xl bg-gray-100">
-                            <img src="{{ asset('assets/sejarah-2026.jpg') }}" alt="2026"
+                            <img src="{{ asset('assets/Sejarah_2026.jpg') }}" alt="2026"
                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                     </div>
@@ -569,12 +597,16 @@
                             <div
                                 class="bg-linear-to-br from-yellow-50 to-orange-50 rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-l-4 border-yellow-500">
                                 <div class="flex items-center gap-2 mb-3">
-                                    <h3 class="text-xl md:text-2xl font-bold text-yellow-700">{{ __('2026 - Transformasi Edukasi') }}</h3>
+                                    <h3 class="text-xl md:text-2xl font-bold text-yellow-700">
+                                        {{ __('2026 - Transformasi Edukasi') }}</h3>
                                     <span
                                         class="bg-yellow-500 text-white text-xs font-bold px-3 py-1 mb-8 rounded-full animate-pulse">NOW</span>
                                 </div>
-                                <p class="text-gray-700 text-sm md:text-base leading-relaxed">{{ __('Penerapan Kurikulum Merdeka dan') }} <span class="font-semibold text-yellow-700">International
-                                        Baccalaureate</span> {{ __('dan transformasi digital di seluruh aspek pembelajaran.') }}</p>
+                                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                                    {{ __('Penerapan Kurikulum Merdeka dan') }} <span
+                                        class="font-semibold text-yellow-700">International
+                                        Baccalaureate</span>
+                                    {{ __('dan transformasi digital di seluruh aspek pembelajaran.') }}</p>
                             </div>
                         </div>
                     </div>
