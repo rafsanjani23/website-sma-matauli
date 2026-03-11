@@ -29,13 +29,21 @@
                     alt="Pendiri SMAN 1 Matauli Pandan - Jenderal TNI Feisal Tanjung dan Dr. Ir. H. Akbar Tandjung"
                     class="w-full h-full object-cover object-top">
 
-                {{-- IMAGE OVERLAY: Gradasi ke kanan agar menyatu dengan konten --}}
-                {{-- <div
-                    class="absolute inset-0 bg-linear-to-r from-transparent via-transparent to-red-800/60 hidden md:block">
-                </div> --}}
-
-                {{-- IMAGE OVERLAY BOTTOM: Gradasi ke atas untuk mobile --}}
-                {{-- <div class="absolute inset-0 bg-linear-to-t from-red-900/80 to-transparent md:hidden"></div> --}}
+                {{-- NAME CARDS: Overlay di bawah foto --}}
+                <div class="absolute bottom-0 inset-x-0 bg-linear-to-t from-black/70 via-black/40 to-transparent pt-16 pb-4 px-4">
+                    <div class="flex justify-between gap-3">
+                        {{-- Feisal Tanjung (kiri) --}}
+                        <div class="text-center flex-1">
+                            <p class="text-white font-semibold text-xs md:text-sm leading-tight">Jenderal TNI (Purn.)</p>
+                            <p class="text-yellow-400 font-bold text-sm md:text-base leading-tight">Feisal Tanjung</p>
+                        </div>
+                        {{-- Akbar Tanjung (kanan) --}}
+                        <div class="text-center flex-1">
+                            <p class="text-white font-semibold text-xs md:text-sm leading-tight">Dr. Ir. H.</p>
+                            <p class="text-yellow-400 font-bold text-sm md:text-base leading-tight">Akbar Tanjung</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             {{-- ===== KOLOM KANAN: Konten ===== --}}

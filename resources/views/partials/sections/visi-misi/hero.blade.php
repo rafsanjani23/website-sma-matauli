@@ -1,7 +1,7 @@
 <!-- HERO IMAGE FULL WIDTH -->
-<section class="relative w-full h-80 md:h-100 lg:h-120 overflow-hidden">
-    <img src="{{ asset('assets/visi-misi.JPG') }}" alt="Foto Pendiri Matauli Pandan"
-        class="absolute inset-0 w-full h-210 object-cover">
+<section class="relative w-full h-[50vh] md:h-[60vh] lg:h-[70vh] overflow-hidden">
+    <img src="{{ asset('assets/visi_misi.jpeg') }}" alt="Foto Pendiri Matauli Pandan"
+        class="absolute inset-0 w-full h-full object-cover object-[center_30%]">
 
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black/45"></div>

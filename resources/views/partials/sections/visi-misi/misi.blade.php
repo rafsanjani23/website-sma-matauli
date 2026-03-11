@@ -1,15 +1,28 @@
 {{-- ============================================ --}}
 {{-- MISI SECTION --}}
 {{-- ============================================ --}}
-<section class="py-16 md:py-24 bg-white overflow-hidden">
-    <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
+<section class="py-16 md:py-24 bg-linear-to-br from-red-800 via-red-900 to-red-950 relative overflow-hidden">
+
+    {{-- Dekorasi latar --}}
+    <div
+        class="absolute top-0 right-0 w-96 h-96 rounded-full bg-white/5 -translate-y-1/2 translate-x-1/3 hidden md:block">
+    </div>
+    <div
+        class="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-yellow-400/10 translate-y-1/2 -translate-x-1/3 hidden md:block">
+    </div>
+    <div class="absolute inset-0 opacity-5"
+        style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;">
+    </div>
+
+    <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 relative z-10">
 
         <div class="mb-10 md:mb-14">
             <div class="flex items-center gap-3 mb-4">
-                <div class="w-8 h-0.5 bg-yellow-500"></div>
-                <span class="text-xs font-bold tracking-[0.25em] uppercase text-yellow-600">{{ __('Langkah Nyata') }}</span>
+                <div class="w-8 h-0.5 bg-yellow-400"></div>
+                <span
+                    class="text-xs font-bold tracking-[0.25em] uppercase text-yellow-400">{{ __('Langkah Nyata') }}</span>
             </div>
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
                 {{ __('Misi Sekolah') }}
             </h2>
             <div class="mt-4 w-14 h-1 bg-yellow-400 rounded-full"></div>
@@ -36,18 +49,16 @@
 
                 {{-- Misi 1 --}}
                 <div
-                    class="group relative bg-white rounded-2xl p-5 md:p-6 shadow-md border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                    <div
-                        class="absolute top-0 left-0 right-0 h-0.5 bg-linear-to-r from-red-800 to-red-600 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    </div>
+                    class="group relative bg-white/10 backdrop-blur-sm rounded-2xl p-5 md:p-6 border border-white/20 hover:bg-white/20 hover:-translate-y-1 transition-all duration-300">
                     <div class="flex items-start gap-4">
                         <div
-                            class="shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-linear-to-br from-red-800 to-red-950 flex items-center justify-center shadow-lg">
-                            <span class="text-white font-black text-sm md:text-base">01</span>
+                            class="shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-yellow-400 flex items-center justify-center shadow-lg">
+                            <span class="text-red-900 font-black text-sm md:text-base">01</span>
                         </div>
                         <div class="pt-1">
-                            <h3 class="font-bold text-red-900 text-sm md:text-base mb-1.5">{{ __('Inovasi & Teknologi') }}</h3>
-                            <p class="text-gray-600 text-sm leading-relaxed">
+                            <h3 class="font-bold text-yellow-400 text-sm md:text-base mb-1.5">
+                                {{ __('Inovasi & Teknologi') }}</h3>
+                            <p class="text-white/80 text-sm leading-relaxed">
                                 {{ __('Mewujudkan pelayanan pendidikan yang berbasis penelitian dan inovasi pendidikan serta sains teknologi yang melampaui standar nasional pendidikan (SNP)') }}
                             </p>
                         </div>
@@ -56,18 +67,16 @@
 
                 {{-- Misi 2 --}}
                 <div
-                    class="group relative bg-white rounded-2xl p-5 md:p-6 shadow-md border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                    <div
-                        class="absolute top-0 left-0 right-0 h-0.5 bg-linear-to-r from-red-800 to-red-600 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    </div>
+                    class="group relative bg-white/10 backdrop-blur-sm rounded-2xl p-5 md:p-6 border border-white/20 hover:bg-white/20 hover:-translate-y-1 transition-all duration-300">
                     <div class="flex items-start gap-4">
                         <div
-                            class="shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-linear-to-br from-red-800 to-red-950 flex items-center justify-center shadow-lg">
-                            <span class="text-white font-black text-sm md:text-base">02</span>
+                            class="shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-yellow-400 flex items-center justify-center shadow-lg">
+                            <span class="text-red-900 font-black text-sm md:text-base">02</span>
                         </div>
                         <div class="pt-1">
-                            <h3 class="font-bold text-red-900 text-sm md:text-base mb-1.5">{{ __('Karakter & Budaya') }}</h3>
-                            <p class="text-gray-600 text-sm leading-relaxed">
+                            <h3 class="font-bold text-yellow-400 text-sm md:text-base mb-1.5">
+                                {{ __('Karakter & Budaya') }}</h3>
+                            <p class="text-white/80 text-sm leading-relaxed">
                                 {{ __('Mewujudkan budaya sekolah yang disiplin, tekun, berintegritas, tegas, pantang menyerah, bertanggungjawab dan toleran') }}
                             </p>
                         </div>
@@ -76,18 +85,16 @@
 
                 {{-- Misi 3 --}}
                 <div
-                    class="group relative bg-white rounded-2xl p-5 md:p-6 shadow-md border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                    <div
-                        class="absolute top-0 left-0 right-0 h-0.5 bg-linear-to-r from-red-800 to-red-600 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    </div>
+                    class="group relative bg-white/10 backdrop-blur-sm rounded-2xl p-5 md:p-6 border border-white/20 hover:bg-white/20 hover:-translate-y-1 transition-all duration-300">
                     <div class="flex items-start gap-4">
                         <div
-                            class="shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-linear-to-br from-red-800 to-red-950 flex items-center justify-center shadow-lg">
-                            <span class="text-white font-black text-sm md:text-base">03</span>
+                            class="shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-yellow-400 flex items-center justify-center shadow-lg">
+                            <span class="text-red-900 font-black text-sm md:text-base">03</span>
                         </div>
                         <div class="pt-1">
-                            <h3 class="font-bold text-red-900 text-sm md:text-base mb-1.5">{{ __('Keterampilan 4C') }}</h3>
-                            <p class="text-gray-600 text-sm leading-relaxed">
+                            <h3 class="font-bold text-yellow-400 text-sm md:text-base mb-1.5">
+                                {{ __('Keterampilan 4C') }}</h3>
+                            <p class="text-white/80 text-sm leading-relaxed">
                                 {{ __('Mewujudkan siswa yang memiliki keterampilan berpikir kritis, berkomunikasi, berkolaborasi dan berkreatifitas') }}
                             </p>
                         </div>
