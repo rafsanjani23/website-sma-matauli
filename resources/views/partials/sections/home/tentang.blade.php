@@ -66,7 +66,7 @@
                         <div class="bg-white border border-red-100 rounded-2xl px-6 py-3.5 shadow-lg shadow-red-900/10">
                             <div class="w-8 h-0.5 bg-yellow-400 mx-auto mb-2 rounded-full"></div>
                             <p class="text-xs font-bold text-gray-800 whitespace-nowrap">Deden Rachmawan, S.Pd., M.M</p>
-                            <p class="text-[10px] text-red-800 font-semibold mt-1">Kepala Sekolah SMAN 1 MATAULI</p>
+                            <p class="text-[10px] text-red-800 font-semibold mt-1">{{ __('Kepala Sekolah SMAN 1 MATAULI') }}</p>
                         </div>
                         {{-- Active indicator --}}
                         {{-- <div
@@ -193,7 +193,7 @@
                             <div class="w-8 h-0.5 bg-yellow-400 mx-auto mb-2 rounded-full"></div>
                             <p class="text-xs font-bold text-gray-800 whitespace-nowrap">Fitri Krisnawati Tandjung, B.Sc
                             </p>
-                            <p class="text-[10px] text-red-800 font-semibold mt-1">Ketua Umum Yayasan MATAULI</p>
+                            <p class="text-[10px] text-red-800 font-semibold mt-1">{{ __('Ketua Umum Yayasan MATAULI') }}</p>
                         </div>
                         {{-- Active indicator --}}
                         {{-- <div
