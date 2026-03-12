@@ -218,7 +218,7 @@
                 if (cropper) { cropper.destroy(); cropper = null; }
                 cropImage.onload = function() {
                     cropper = new Cropper(cropImage, {
-                        aspectRatio: 3 / 2,
+                        aspectRatio: 4 / 3,
                         viewMode: 1,
                         autoCropArea: 1,
                         responsive: true,
