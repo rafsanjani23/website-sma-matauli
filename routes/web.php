@@ -37,6 +37,12 @@ Route::get('/', function () {
 Route::get('/sejarah', function () {
     return view('pages.sejarah');
 })->name('sejarah');
+Route::get('/profil/feisal-tanjung', function () {
+    return view('pages.profil-feisal-tanjung');
+})->name('profil.feisal-tanjung');
+Route::get('/profil/akbar-tanjung', function () {
+    return view('pages.profil-akbar-tanjung');
+})->name('profil.akbar-tanjung');
 Route::get('/visi-misi', function () {
     return view('pages.visi-misi');
 })->name('visi-misi');

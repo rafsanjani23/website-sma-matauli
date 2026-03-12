@@ -33,15 +33,15 @@
                 <div class="absolute bottom-0 inset-x-0 bg-linear-to-t from-black/70 via-black/40 to-transparent pt-16 pb-4 px-4">
                     <div class="flex justify-between gap-3">
                         {{-- Feisal Tanjung (kiri) --}}
-                        <div class="text-center flex-1">
+                        <a href="{{ url('/profil/feisal-tanjung') }}" class="text-center flex-1 group cursor-pointer hover:scale-105 transition-transform duration-300">
                             <p class="text-white font-semibold text-xs md:text-sm leading-tight">Jenderal TNI (Purn.)</p>
-                            <p class="text-yellow-400 font-bold text-sm md:text-base leading-tight">Feisal Tanjung</p>
-                        </div>
+                            <p class="text-yellow-400 font-bold text-sm md:text-base leading-tight group-hover:underline">Feisal Tanjung</p>
+                        </a>
                         {{-- Akbar Tanjung (kanan) --}}
-                        <div class="text-center flex-1">
+                        <a href="{{ url('/profil/akbar-tanjung') }}" class="text-center flex-1 group cursor-pointer hover:scale-105 transition-transform duration-300">
                             <p class="text-white font-semibold text-xs md:text-sm leading-tight">Dr. Ir. H.</p>
-                            <p class="text-yellow-400 font-bold text-sm md:text-base leading-tight">Akbar Tanjung</p>
-                        </div>
+                            <p class="text-yellow-400 font-bold text-sm md:text-base leading-tight group-hover:underline">Akbar Tanjung</p>
+                        </a>
                     </div>
                 </div>
             </div>
