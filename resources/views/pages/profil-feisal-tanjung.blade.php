@@ -29,9 +29,7 @@
                         (Purn.)</h1>
                     <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-yellow-400 italic font-libre leading-tight">
                         Feisal Tanjung</h2>
-                    <div class="mt-4 flex items-center gap-3 justify-center md:justify-start">
-                        <span class="text-white/60 text-sm">1939 &mdash; 2013</span>
-                        <span class="w-12 h-0.5 bg-yellow-400/50 rounded-full"></span>
+                    <div class="mt-4 flex items-center justify-center md:justify-start">
                         <span class="text-yellow-400/80 text-sm font-medium">{{ __('Pendiri Yayasan MATAULI') }}</span>
                     </div>
                 </div>
@@ -110,33 +108,7 @@
                 {{-- Timeline line --}}
                 <div class="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5 bg-red-100 -translate-x-1/2"></div>
 
-                {{-- Item 1 --}}
-                <div class="relative flex flex-col md:flex-row items-start mb-10 md:mb-12">
-                    <div class="md:w-1/2 md:pr-12 md:text-right pl-14 md:pl-0">
-                        <span class="text-red-800 font-bold text-sm">1993–1998</span>
-                        <h4 class="text-lg font-bold text-gray-900 mt-1">{{ __('Panglima TNI') }}</h4>
-                        <p class="text-gray-500 text-sm mt-1">{{ __('Masa pemerintahan Presiden Soeharto') }}</p>
-                    </div>
-                    <div
-                        class="absolute left-6 md:left-1/2 w-3 h-3 bg-red-800 rounded-full ring-4 ring-red-100 -translate-x-1/2 mt-1.5">
-                    </div>
-                    <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
-                </div>
-
-                {{-- Item 2 --}}
-                <div class="relative flex flex-col md:flex-row items-start mb-10 md:mb-12">
-                    <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
-                    <div
-                        class="absolute left-6 md:left-1/2 w-3 h-3 bg-red-800 rounded-full ring-4 ring-red-100 -translate-x-1/2 mt-1.5">
-                    </div>
-                    <div class="md:w-1/2 md:pl-12 pl-14">
-                        <span class="text-red-800 font-bold text-sm">1998–1999</span>
-                        <h4 class="text-lg font-bold text-gray-900 mt-1">{{ __('Menko Polkam RI') }}</h4>
-                        <p class="text-gray-500 text-sm mt-1">{{ __('Masa pemerintahan Presiden B. J. Habibie') }}</p>
-                    </div>
-                </div>
-
-                {{-- Item 3 --}}
+                {{-- Item 1 - 1991 --}}
                 <div class="relative flex flex-col md:flex-row items-start mb-10 md:mb-12">
                     <div class="md:w-1/2 md:pr-12 md:text-right pl-14 md:pl-0">
                         <span class="text-red-800 font-bold text-sm">1991</span>
@@ -150,19 +122,45 @@
                     <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
                 </div>
 
-                {{-- Item 4 --}}
-                <div class="relative flex flex-col md:flex-row items-start">
+                {{-- Item 2 - 1993 --}}
+                <div class="relative flex flex-col md:flex-row items-start mb-10 md:mb-12">
                     <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
                     <div
-                        class="absolute left-6 md:left-1/2 w-3 h-3 bg-yellow-400 rounded-full ring-4 ring-yellow-100 -translate-x-1/2 mt-1.5">
+                        class="absolute left-6 md:left-1/2 w-3 h-3 bg-red-800 rounded-full ring-4 ring-red-100 -translate-x-1/2 mt-1.5">
                     </div>
                     <div class="md:w-1/2 md:pl-12 pl-14">
+                        <span class="text-red-800 font-bold text-sm">1993–1998</span>
+                        <h4 class="text-lg font-bold text-gray-900 mt-1">{{ __('Panglima TNI') }}</h4>
+                        <p class="text-gray-500 text-sm mt-1">{{ __('Masa pemerintahan Presiden Soeharto') }}</p>
+                    </div>
+                </div>
+
+                {{-- Item 3 - 1994 --}}
+                <div class="relative flex flex-col md:flex-row items-start mb-10 md:mb-12">
+                    <div class="md:w-1/2 md:pr-12 md:text-right pl-14 md:pl-0">
                         <span class="text-red-800 font-bold text-sm">14 Juni 1994</span>
                         <h4 class="text-lg font-bold text-gray-900 mt-1">
                             {{ __('Pendirian SMA Negeri 1 (Plus) Matauli Pandan') }}</h4>
                         <p class="text-gray-500 text-sm mt-1">
                             {{ __('Mendirikan dan meresmikan SMA Negeri 1 (Plus) Matauli Pandan sebagai sekolah unggulan di Tapanuli Tengah') }}
                         </p>
+                    </div>
+                    <div
+                        class="absolute left-6 md:left-1/2 w-3 h-3 bg-yellow-400 rounded-full ring-4 ring-yellow-100 -translate-x-1/2 mt-1.5">
+                    </div>
+                    <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+                </div>
+
+                {{-- Item 4 - 1998 --}}
+                <div class="relative flex flex-col md:flex-row items-start">
+                    <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
+                    <div
+                        class="absolute left-6 md:left-1/2 w-3 h-3 bg-red-800 rounded-full ring-4 ring-red-100 -translate-x-1/2 mt-1.5">
+                    </div>
+                    <div class="md:w-1/2 md:pl-12 pl-14">
+                        <span class="text-red-800 font-bold text-sm">1998–1999</span>
+                        <h4 class="text-lg font-bold text-gray-900 mt-1">{{ __('Menko Polkam RI') }}</h4>
+                        <p class="text-gray-500 text-sm mt-1">{{ __('Masa pemerintahan Presiden B. J. Habibie') }}</p>
                     </div>
                 </div>
             </div>
