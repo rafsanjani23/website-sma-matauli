@@ -22,13 +22,13 @@
             <div
                 class="group relative bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div class="aspect-4/3 overflow-hidden bg-gray-100">
-                    <img src="https://readymadeui.com/Imagination.webp"
+                    <img src="assets/Mustaqim Haniru, M.Appling.png"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         alt="Guru IB" />
                 </div>
                 <div class="p-4 text-center">
-                    <h5 class="text-gray-900 font-bold text-sm md:text-base">NAMA GURU</h5>
-                    <p class="text-red-800 text-xs md:text-sm font-medium mt-1">{{ __('Mata Pelajaran') }}</p>
+                    <h5 class="text-gray-900 font-bold text-sm md:text-base">Mustaqim Haniru, M.Appling</h5>
+                    <p class="text-red-800 text-xs md:text-sm font-medium mt-1">{{ __('English Teacher') }}</p>
                 </div>
                 {{-- <div
                     class="absolute top-3 right-3 bg-yellow-400 text-slate-900 text-[10px] font-bold px-2 py-0.5 rounded-full">
@@ -39,13 +39,14 @@
             <div
                 class="group relative bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div class="aspect-4/3 overflow-hidden bg-gray-100">
-                    <img src="https://readymadeui.com/Imagination.webp"
+                    <img src="assets/Fajar Mukharom Darozat, M.Si.png"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         alt="Guru IB" />
                 </div>
                 <div class="p-4 text-center">
-                    <h5 class="text-gray-900 font-bold text-sm md:text-base">NAMA GURU</h5>
-                    <p class="text-red-800 text-xs md:text-sm font-medium mt-1">{{ __('Mata Pelajaran') }}</p>
+                    <h5 class="text-gray-900 font-bold text-sm md:text-base">Fajar Mukharom Darozat, M.Si</h5>
+                    <p class="text-red-800 text-xs md:text-sm font-medium mt-1">{{ __('Physics Teacher') }}
+                    </p>
                 </div>
                 {{-- <div
                     class="absolute top-3 right-3 bg-yellow-400 text-slate-900 text-[10px] font-bold px-2 py-0.5 rounded-full">
@@ -56,13 +57,13 @@
             <div
                 class="group relative bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div class="aspect-4/3 overflow-hidden bg-gray-100">
-                    <img src="https://readymadeui.com/Imagination.webp"
+                    <img src="assets/Rosmida Valentina, S.Si.png"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         alt="Guru IB" />
                 </div>
                 <div class="p-4 text-center">
-                    <h5 class="text-gray-900 font-bold text-sm md:text-base">NAMA GURU</h5>
-                    <p class="text-red-800 text-xs md:text-sm font-medium mt-1">{{ __('Mata Pelajaran') }}</p>
+                    <h5 class="text-gray-900 font-bold text-sm md:text-base">Rosmida Valentina, S.Si</h5>
+                    <p class="text-red-800 text-xs md:text-sm font-medium mt-1">{{ __('Biology Teacher') }}</p>
                 </div>
                 {{-- <div
                     class="absolute top-3 right-3 bg-yellow-400 text-slate-900 text-[10px] font-bold px-2 py-0.5 rounded-full">
@@ -72,7 +73,7 @@
 
         {{-- CTA Button --}}
         <div class="text-center mt-10">
-            <a href="/tendik#guru"
+            <a href="{{ route('tendik') }}#guru-ib"
                 class="group inline-flex items-center gap-2 bg-red-800 hover:bg-red-700 text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:gap-3 shadow-lg shadow-red-900/20 text-sm">
                 {{ __('Lihat Semua Guru') }}
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 group-hover:translate-x-1 transition-transform"

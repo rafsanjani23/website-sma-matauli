@@ -45,7 +45,7 @@
                 </div>
 
                 {{-- ===== ACCORDION 2: Guru IB ===== --}}
-                <div role="accordion">
+                <div id="guru-ib" role="accordion">
                     <button type="button"
                         class="accordion-button cursor-pointer w-full text-md font-bold text-left py-3 px-6 hover:bg-gray-100 text-slate-900 flex items-center transition-all border-2 rounded-4xl">
                         <span class="mr-4">{{ __('GURU MATA PELAJARAN INTERNATIONAL BACCALAUREATE (IB)') }}</span>
@@ -143,6 +143,31 @@
             firstButton.classList.add('bg-matauli-red-dark');
             firstButton.classList.add('text-white');
             firstButton.querySelector('svg')?.classList.add('rotate-180');
+        }
+
+        // Auto-open accordion berdasarkan hash URL
+        const hash = window.location.hash;
+        if (hash) {
+            const target = document.querySelector(hash);
+            if (target && target.querySelector('.accordion-button')) {
+                // Reset accordion pertama yang sudah terbuka
+                if (firstContent && firstButton) {
+                    firstContent.style.maxHeight = '0px';
+                    firstButton.classList.remove('bg-matauli-red-dark', 'text-white');
+                    firstButton.querySelector('svg')?.classList.remove('rotate-180');
+                }
+
+                const targetBtn = target.querySelector('.accordion-button');
+                const targetContent = target.querySelector('.accordion-content');
+                const targetIcon = targetBtn.querySelector('svg');
+
+                targetContent.style.maxHeight = targetContent.scrollHeight + 'px';
+                targetBtn.classList.add('bg-matauli-red-dark', 'text-white');
+                targetIcon?.classList.add('rotate-180');
+
+                // Scroll ke accordion target
+                setTimeout(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }), 300);
+            }
         }
 
         document.querySelectorAll('.accordion-button').forEach(button => {
