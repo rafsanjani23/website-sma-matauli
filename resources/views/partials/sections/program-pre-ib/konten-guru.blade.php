@@ -23,7 +23,7 @@
                 class="group relative bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div class="aspect-4/3 overflow-hidden bg-gray-100">
                     <img src="assets/Mustaqim Haniru, M.Appling.png"
-                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                         alt="Guru IB" />
                 </div>
                 <div class="p-4 text-center">
@@ -40,7 +40,7 @@
                 class="group relative bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div class="aspect-4/3 overflow-hidden bg-gray-100">
                     <img src="assets/Fajar Mukharom Darozat, M.Si.png"
-                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                         alt="Guru IB" />
                 </div>
                 <div class="p-4 text-center">
@@ -58,7 +58,7 @@
                 class="group relative bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div class="aspect-4/3 overflow-hidden bg-gray-100">
                     <img src="assets/Rosmida Valentina, S.Si.png"
-                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        class="w-full h-full object-cover object-[center_40%] group-hover:scale-105 transition-transform duration-500"
                         alt="Guru IB" />
                 </div>
                 <div class="p-4 text-center">
