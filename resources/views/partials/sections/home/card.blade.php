@@ -72,9 +72,15 @@
                         class="absolute inset-0 rounded-full bg-red-50 group-hover:bg-red-100 group-hover:scale-110 transition-all duration-500">
                     </div>
                     <svg class="relative z-10 w-9 h-9 text-red-800 group-hover:scale-110 transition-transform duration-500"
-                        fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                        viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                        {{-- Globe --}}
+                        <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="3"/>
+                        <ellipse cx="32" cy="32" rx="12" ry="28" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <line x1="4" y1="22" x2="60" y2="22" stroke="currentColor" stroke-width="2"/>
+                        <line x1="4" y1="42" x2="60" y2="42" stroke="currentColor" stroke-width="2"/>
+                        {{-- IB text background --}}
+                        <rect x="14" y="24" width="36" height="18" rx="3" fill="currentColor"/>
+                        <text x="32" y="38.5" text-anchor="middle" font-size="16" font-weight="bold" fill="white" font-family="serif" letter-spacing="1">IB</text>
                     </svg>
                 </div>
 
