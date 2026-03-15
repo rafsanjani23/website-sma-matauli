@@ -1,14 +1,30 @@
-<section>
-    <div class="mx-auto px-2 mt-20">
-        <div class="mb-2">
-            <h2 class="text-center mt-2 text-xl md:text-3xl font-bold text-slate-950 mb-2 md:mb-4">
-                {{ __('TENTANG ASRAMA') }}
-            </h2>
-            <div class="max-w-4xl mb-4 mx-auto border-b-2 border-x-2 border-gray-300 rounded-2xl ">
-                <p class="text-slate-800 text-md font-semibold text-center mx-auto leading-relaxed p-6">
-                    {{ __('Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita exercitationem, consectetur laudantium fuga nobis odio beatae qui voluptatum mollitia. Rem reprehenderit eaque impedit repellendus provident itaque perferendis dolore iusto voluptas natus at labore dicta doloribus incidunt repellat, odio ipsam non est magni placeat ab officiis facilis numquam soluta. Porro, nihil. Aut minus aliquid optio cupiditate consequatur voluptatum neque eum laborum?') }}</p>
-            </div>
+{{-- ============================================ --}}
+{{-- TENTANG ASRAMA SECTION --}}
+{{-- ============================================ --}}
+<section class="relative overflow-hidden bg-white">
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute -top-32 -left-32 w-96 h-96 bg-yellow-100/40 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 -right-40 w-125 h-125 bg-red-100/30 rounded-full blur-3xl"></div>
+    </div>
 
+    <div class="relative max-w-5xl mx-auto px-6 py-16 md:py-24">
+        {{-- Header --}}
+        <div class="text-center mb-10">
+            <p class="text-red-800 text-sm font-semibold tracking-widest uppercase mb-2">
+                {{ __('Kehidupan Berasrama') }}</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+                {{ __('Tentang Asrama') }}
+            </h2>
+            <div class="w-16 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        {{-- Konten --}}
+        <div class="max-w-3xl mx-auto">
+            <div class="bg-gray-50 rounded-2xl p-8 md:p-10 border border-gray-100">
+                <p class="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
+                    {{ __('Asrama Yayasan MATAULI merupakan tempat tinggal bagi seluruh siswa SMAN 1 Matauli Pandan selama menempuh pendidikan. Dengan sistem boarding school, siswa dibina dalam lingkungan yang mendukung pengembangan akademik, karakter, dan kemandirian. Asrama dilengkapi dengan berbagai fasilitas penunjang untuk memastikan kenyamanan dan produktivitas siswa dalam belajar maupun berkegiatan.') }}
+                </p>
+            </div>
         </div>
     </div>
 </section>
