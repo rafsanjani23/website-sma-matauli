@@ -52,7 +52,7 @@
                                     {{ __('1991 - Pendirian Yayasan Maju Tapian Nauli (MATAULI)') }}
                                 </h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
-                                    {{ __('Yayasan Maju Tapian Nauli (MATAULI) didirikan tahun 1991 oleh Jendral TNI (Purn) Feisal Tanjung dan Dr. Ir. H. Akbar Tandjung Beserta Tokoh Masyarakat Tapanuli Tengah yang Peduli dengan Pendidikan.') }}
+                                    {{ __('Yayasan Maju Tapian Nauli (MATAULI) didirikan tahun 1991 oleh Jendral TNI (Purn) Feisal Tandjung dan Dr. Ir. Akbar Tandjung Beserta Tokoh Masyarakat Tapanuli Tengah yang Peduli dengan Pendidikan.') }}
                                 </p>
                             </div>
                         </div>
@@ -324,7 +324,7 @@
                                 <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
                                     {{ __('1991 - Pendirian Yayasan Maju Tapian Nauli (MATAULI)') }}</h3>
                                 <p class="text-gray-600 text-sm md:text-base leading-relaxed">
-                                    {{ __('Yayasan Maju Tapian Nauli (MATAULI) didirikan tahun 1991 oleh Jendral TNI (Purn) Feisal Tanjung dan Dr. Ir. H. Akbar Tandjung Beserta Tokoh Masyarakat Tapanuli Tengah yang Peduli dengan Pendidikan.') }}
+                                    {{ __('Yayasan Maju Tapian Nauli (MATAULI) didirikan tahun 1991 oleh Jendral TNI (Purn) Feisal Tandjung dan Dr. Ir. Akbar Tandjung Beserta Tokoh Masyarakat Tapanuli Tengah yang Peduli dengan Pendidikan.') }}
                                 </p>
                             </div>
                         </div>

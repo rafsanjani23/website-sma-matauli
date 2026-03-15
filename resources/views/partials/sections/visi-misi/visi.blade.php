@@ -33,7 +33,7 @@
                 <div
                     class="absolute -bottom-5 -right-5 w-24 h-24 bg-yellow-400 rounded-2xl flex items-center justify-center shadow-xl rotate-3">
                     <div class="text-center -rotate-3">
-                        <div class="text-red-900 font-black text-lg leading-none">31+</div>
+                        <div class="text-red-900 font-black text-lg leading-none">33</div>
                         <div class="text-red-800 font-semibold text-xs leading-tight">{{ __('Tahun Berdiri') }}</div>
                     </div>
                 </div>
@@ -41,10 +41,11 @@
 
             {{-- Visi content --}}
             <div>
-                <div
-                    class="relative z-10 bg-white rounded-2xl p-6 md:p-8 border border-gray-200 shadow-lg">
+                <div class="relative z-10 bg-white rounded-2xl p-6 md:p-8 border border-gray-200 shadow-lg">
                     <p class="text-gray-700 text-base md:text-lg lg:text-xl leading-relaxed font-medium italic">
-                        <span class="text-red-300 text-2xl md:text-3xl font-serif not-italic">&ldquo;</span>{{ __('Mewujudkan SMA Negeri 1 Matauli Pandan sebagai tempat layanan pendidikan unggul yang menghasilkan lulusan berkarakter pancasila, berdaya saing global dan berwawasan lingkungan.') }}<span class="text-red-300 text-2xl md:text-3xl font-serif not-italic">&rdquo;</span>
+                        <span
+                            class="text-red-300 text-2xl md:text-3xl font-serif not-italic">&ldquo;</span>{{ __('Mewujudkan SMA Negeri 1 Matauli Pandan sebagai tempat layanan pendidikan unggul yang menghasilkan lulusan berkarakter pancasila, berdaya saing global dan berwawasan lingkungan.') }}<span
+                            class="text-red-300 text-2xl md:text-3xl font-serif not-italic">&rdquo;</span>
                     </p>
                 </div>
 
