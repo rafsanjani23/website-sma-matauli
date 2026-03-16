@@ -22,11 +22,11 @@
                 <div class="flex flex-col items-center mb-6">
                     <div
                         class="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden mb-4 shadow-lg ring-4 ring-yellow-400/30">
-                        <img src="{{ asset('assets/Anime1.jpg') }}" alt="Ahmad Fauzi Alumni"
+                        <img src="{{ asset('assets/Anime1.jpg') }}" alt="Ahmad Fauzi Angkatan"
                             class="w-full h-full object-cover">
                     </div>
                     <h4 class="font-bold text-gray-900 text-base md:text-lg">Ahmad Fauzi</h4>
-                    <p class="text-sm text-gray-500">Alumni 2024</p>
+                    <p class="text-sm text-gray-500">Angkatan 2024</p>
                 </div>
                 <!-- Quote -->
                 <div class="relative">
@@ -48,11 +48,11 @@
                 <div class="flex flex-col items-center mb-6">
                     <div
                         class="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden mb-4 shadow-lg ring-4 ring-yellow-400/30">
-                        <img src="{{ asset('assets/Anime2.jpg') }}" alt="Siti Nurhaliza Alumni"
+                        <img src="{{ asset('assets/Anime2.jpg') }}" alt="Siti Nurhaliza Angkatan"
                             class="w-full h-full object-cover">
                     </div>
                     <h4 class="font-bold text-gray-900 text-base md:text-lg">Siti Nurhaliza</h4>
-                    <p class="text-sm text-gray-500">Alumni 2023</p>
+                    <p class="text-sm text-gray-500">Angkatan 2023</p>
                 </div>
                 <!-- Quote -->
                 <div class="relative">
@@ -74,11 +74,11 @@
                 <div class="flex flex-col items-center mb-6">
                     <div
                         class="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden mb-4 shadow-lg ring-4 ring-yellow-400/30">
-                        <img src="{{ asset('assets/Anime3.jpg') }}" alt="Budi Santoso Alumni"
+                        <img src="{{ asset('assets/Anime3.jpg') }}" alt="Budi Santoso Angkatan"
                             class="w-full h-full object-cover">
                     </div>
                     <h4 class="font-bold text-gray-900 text-base md:text-lg">Budi Santoso</h4>
-                    <p class="text-sm text-gray-500">Alumni 2022</p>
+                    <p class="text-sm text-gray-500">Angkatan 2022</p>
                 </div>
                 <!-- Quote -->
                 <div class="relative">
