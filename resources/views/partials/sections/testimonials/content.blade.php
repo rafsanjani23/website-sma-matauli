@@ -20,7 +20,7 @@
                         @endif
                     </div>
                     <h4 class="font-bold text-gray-900 text-base md:text-lg">{{ $item->nama }}</h4>
-                    <p class="text-sm text-gray-500">Alumni {{ $item->tahun_alumni }}</p>
+                    <p class="text-sm text-gray-500">Angkatan {{ $item->tahun_alumni }}</p>
                 </div>
                 {{-- Quote --}}
                 <div class="relative">
