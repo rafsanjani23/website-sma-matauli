@@ -9,10 +9,22 @@ use Illuminate\Support\Facades\Storage;
 
 class TenagaPendidikController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $items = TenagaPendidik::latest()->get();
-        return view('admin.tenaga-pendidik.index', compact('items'));
+        $search = $request->query('search');
+        if (!empty($search)) {
+            $items = TenagaPendidik::where('tenaga_pendidik.nama', 'like', '%' . $search . '%')
+            ->orWhere('tenaga_pendidik.mata_pelajaran', 'like', '%'.$search.'%')
+            ->orWhere('tenaga_pendidik.kategori', 'like', '%'.$search.'%')
+            ->paginate(20)->onEachSide(2)
+            ->fragment('tenaga_pendidik');
+        } else {
+            $items = TenagaPendidik::latest()->paginate(20)->onEachSide(2)->fragment('tenaga_pendidik');
+        }
+        return view('admin.tenaga-pendidik.index', with([
+            'items' => $items,
+            'search' => $search
+        ]));
     }
 
     public function create()
