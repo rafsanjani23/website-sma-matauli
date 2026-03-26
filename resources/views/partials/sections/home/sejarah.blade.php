@@ -26,19 +26,26 @@
 
                 {{-- IMAGE: Full height mengisi kolom --}}
                 <img src="{{ asset('assets/feisal_dan_akbar_tanjung.png') }}"
-                    alt="Pendiri SMAN 1 Matauli Pandan - Jenderal TNI Feisal Tandjung dan Dr. Ir. Akbar Tandjung"
+                    alt="Pendiri SMAN 1 Matauli Pandan - Jenderal TNI Feisal Tanjung dan Dr. Ir. Akbar Tandjung"
                     class="w-full h-full object-cover object-top">
 
                 {{-- NAME CARDS: Overlay di bawah foto --}}
-                <div class="absolute bottom-0 inset-x-0 bg-linear-to-t from-black/70 via-black/40 to-transparent pt-16 pb-4 px-4">
+                <div
+                    class="absolute bottom-0 inset-x-0 bg-linear-to-t from-black/70 via-black/40 to-transparent pt-16 pb-4 px-4">
                     <div class="flex justify-between gap-3">
-                        {{-- Feisal Tandjung (kiri) --}}
-                        <a href="{{ url('/profil/feisal-tanjung') }}" class="text-center flex-1 group cursor-pointer hover:scale-105 transition-transform duration-300">
-                            <p class="text-yellow-400 font-bold text-sm md:text-base leading-tight group-hover:underline">Jenderal TNI (Purn.) Feisal Tandjung</p>
+                        {{-- Feisal Tanjung (kiri) --}}
+                        <a href="{{ url('/profil/feisal-tanjung') }}"
+                            class="text-center flex-1 group cursor-pointer hover:scale-105 transition-transform duration-300">
+                            <p
+                                class="text-yellow-400 font-bold text-sm md:text-base leading-tight group-hover:underline">
+                                Jenderal TNI (Purn.) Feisal Tanjung</p>
                         </a>
                         {{-- Akbar Tandjung (kanan) --}}
-                        <a href="{{ url('/profil/akbar-tanjung') }}" class="text-center flex-1 group cursor-pointer hover:scale-105 transition-transform duration-300">
-                            <p class="text-yellow-400 font-bold text-sm md:text-base leading-tight group-hover:underline">Dr. Ir. Akbar Tandjung</p>
+                        <a href="{{ url('/profil/akbar-tanjung') }}"
+                            class="text-center flex-1 group cursor-pointer hover:scale-105 transition-transform duration-300">
+                            <p
+                                class="text-yellow-400 font-bold text-sm md:text-base leading-tight group-hover:underline">
+                                Dr. Ir. Akbar Tandjung</p>
                         </a>
                     </div>
                 </div>
@@ -65,7 +72,7 @@
 
                 {{-- DESKRIPSI --}}
                 <p class="text-sm md:text-base leading-relaxed text-white/80 text-justify mb-8 max-w-lg">
-                    {{ __('SMA Negeri 1 Plus MATAULI Pandan adalah sekolah negeri unggulan di bawah naungan Yayasan Maju Tapian Nauli (MATAULI) serta Kementerian Pendidikan dan Kebudayaan di Provinsi Sumatera Utara. Pada tanggal 14 Juni 1994, angkatan pertama secara resmi dilantik oleh Panglima ABRI, Jenderal TNI Feisal Tandjung dan Dr. Ir. Akbar Tandjung serta tokoh-tokoh nasional asal Tapanuli Tengah.') }}
+                    {{ __('SMA Negeri 1 Plus MATAULI Pandan adalah sekolah negeri unggulan di bawah naungan Yayasan Maju Tapian Nauli (MATAULI) serta Kementerian Pendidikan dan Kebudayaan di Provinsi Sumatera Utara. Pada tanggal 14 Juni 1994, angkatan pertama secara resmi dilantik oleh Panglima ABRI, Jenderal TNI Feisal Tanjung dan Dr. Ir. Akbar Tandjung serta tokoh-tokoh nasional asal Tapanuli Tengah.') }}
                 </p>
 
                 {{-- CTA BUTTON --}}

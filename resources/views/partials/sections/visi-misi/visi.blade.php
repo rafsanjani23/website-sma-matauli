@@ -44,27 +44,11 @@
                 <div class="relative z-10 bg-white rounded-2xl p-6 md:p-8 border border-gray-200 shadow-lg">
                     <p class="text-gray-700 text-base md:text-lg lg:text-xl leading-relaxed font-medium italic">
                         <span
-                            class="text-red-300 text-2xl md:text-3xl font-serif not-italic">&ldquo;</span>{{ __('Mewujudkan SMA Negeri 1 Matauli Pandan sebagai tempat layanan pendidikan unggul yang menghasilkan lulusan berkarakter pancasila, berdaya saing global dan berwawasan lingkungan.') }}<span
+                            class="text-red-300 text-2xl md:text-3xl font-serif not-italic">&ldquo;</span>{{ __('Menjadi sekolah unggul dengan mengimplementasikan strategi pembelajaran mendalam untuk menghasilkan pemimpin masa depan yang beriman dan bertaqwa, berkarakter, berintegritas, berwawasan global, berwawasan lingkungan dan berkembang sesuai zamannya.') }}<span
                             class="text-red-300 text-2xl md:text-3xl font-serif not-italic">&rdquo;</span>
                     </p>
                 </div>
-
-                <div class="mt-8 grid grid-cols-3 gap-3">
-                    <div class="text-center bg-red-50 rounded-xl p-3 border border-red-100">
-                        <div class="text-red-800 text-xl mb-1">🏛️</div>
-                        <div class="text-gray-800 text-xs font-semibold">{{ __('Berkarakter Pancasila') }}</div>
-                    </div>
-                    <div class="text-center bg-red-50 rounded-xl p-3 border border-red-100">
-                        <div class="text-red-800 text-xl mb-1">🌐</div>
-                        <div class="text-gray-800 text-xs font-semibold">{{ __('Berdaya Saing Global') }}</div>
-                    </div>
-                    <div class="text-center bg-red-50 rounded-xl p-3 border border-red-100">
-                        <div class="text-red-800 text-xl mb-1">🌿</div>
-                        <div class="text-gray-800 text-xs font-semibold">{{ __('Berwawasan Lingkungan') }}</div>
-                    </div>
-                </div>
             </div>
-
         </div>
     </div>
 </section>

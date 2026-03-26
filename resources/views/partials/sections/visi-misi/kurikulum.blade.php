@@ -10,7 +10,8 @@
             <div class="order-2 md:order-1">
                 <div class="flex items-center gap-3 mb-5">
                     <div class="w-8 h-0.5 bg-yellow-500"></div>
-                    <span class="text-xs font-bold tracking-[0.25em] uppercase text-yellow-600">{{ __('Kurikulum Unggulan') }}</span>
+                    <span
+                        class="text-xs font-bold tracking-[0.25em] uppercase text-yellow-600">{{ __('Kurikulum Unggulan') }}</span>
                 </div>
 
                 <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-black leading-tight mb-5">
@@ -31,12 +32,14 @@
                 <div class="grid grid-cols-2 gap-4">
                     <div class="bg-red-50 rounded-2xl p-4 border border-red-100">
                         <div class="text-2xl md:text-3xl font-bold text-red-800 mb-1">IB</div>
-                        <div class="text-xs md:text-sm text-gray-600 leading-snug">{{ __('International Baccalaureate Certified') }}
+                        <div class="text-xs md:text-sm text-gray-600 leading-snug">
+                            {{ __('International Baccalaureate Certified') }}
                         </div>
                     </div>
                     <div class="bg-yellow-50 rounded-2xl p-4 border border-yellow-100">
                         <div class="text-2xl md:text-3xl font-bold text-yellow-700 mb-1">ISO</div>
-                        <div class="text-xs md:text-sm text-gray-600 leading-snug">{{ __('9001:2008 Sistem Manajemen Mutu') }}</div>
+                        <div class="text-xs md:text-sm text-gray-600 leading-snug">
+                            {{ __('9001:2008 Sistem Manajemen Mutu') }}</div>
                     </div>
                 </div>
             </div>
