@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Profil Jenderal TNI (Purn.) Feisal Tandjung')
+@section('title', 'Profil Jenderal TNI (Purn.) Feisal Tanjung')
 @section('content')
 
     {{-- Hero Section --}}
@@ -16,7 +16,7 @@
                     <div
                         class="w-52 h-52 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden ring-4 ring-yellow-400/30 shadow-2xl">
                         <img src="{{ asset('assets/Jenderal TNI (Purn.) Feisal Tanjung.webp') }}"
-                            alt="Jenderal TNI (Purn.) Feisal Tandjung"
+                            alt="Jenderal TNI (Purn.) Feisal Tanjung"
                             class="w-full h-full object-cover object-top scale-100">
                     </div>
                 </div>
@@ -26,7 +26,7 @@
                     <p class="text-white/80 text-sm md:text-base font-medium tracking-widest uppercase mb-2">
                         {{ __('Profil Tokoh Pendiri') }}</p>
                     <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-yellow-400 italic font-libre leading-tight">
-                        Jenderal TNI (Purn.) Feisal Tandjung</h1>
+                        Jenderal TNI (Purn.) Feisal Tanjung</h1>
                     <div class="mt-4 flex items-center justify-center md:justify-start">
                         <span class="text-white/80 text-sm font-medium">{{ __('Pendiri Yayasan MATAULI') }}</span>
                     </div>
@@ -79,19 +79,19 @@
 
             <div class="space-y-6 text-gray-600 leading-relaxed md:text-lg text-justify">
                 <p>
-                    {{ __('Jendral TNI. Feisal Tandjung merupakan salah satu tokoh militer Indonesia yang memiliki peran penting dalam perjalanan Tentara Nasional Indonesia. Lahir di Tarutung, Sumatera Utara, pada 17 Juni 1939 dan dikenal sebagai perwira tinggi yang memiliki dedikasi besar terhadap pengabdian kepada negara.') }}
+                    {{ __('Jendral TNI. Feisal Tanjung merupakan salah satu tokoh militer Indonesia yang memiliki peran penting dalam perjalanan Tentara Nasional Indonesia. Lahir di Tarutung, Sumatera Utara, pada 17 Juni 1939 dan dikenal sebagai perwira tinggi yang memiliki dedikasi besar terhadap pengabdian kepada negara.') }}
                 </p>
 
                 <p>
-                    {{ __('Bapak Jendral TNI. Feisal Tandjung menjabat sebagai Panglima Tentara Nasional Indonesia pada periode 1993–1998 pada masa pemerintahan Presiden Soeharto. Selanjutnya, beliau menjabat sebagai Menteri Koordinator Bidang Politik dan Keamanan Republik Indonesia pada tahun 1998–1999 pada masa pemerintahan Presiden B. J. Habibie.') }}
+                    {{ __('Bapak Jendral TNI. Feisal Tanjung menjabat sebagai Panglima Tentara Nasional Indonesia pada periode 1993–1998 pada masa pemerintahan Presiden Soeharto. Selanjutnya, beliau menjabat sebagai Menteri Koordinator Bidang Politik dan Keamanan Republik Indonesia pada tahun 1998–1999 pada masa pemerintahan Presiden B. J. Habibie.') }}
                 </p>
 
                 <p>
-                    {{ __('Sebagai tokoh nasional yang berasal dari Sumatera Utara, Feisal Tandjung dikenal memiliki kepedulian besar terhadap pembangunan daerah dan peningkatan kualitas sumber daya manusia. Ia juga dikenal sebagai sosok yang memiliki komitmen kuat dalam mendukung pembangunan pendidikan bagi generasi muda Indonesia, termasuk melalui pendirian lembaga pendidikan di bawah naungan Yayasan Matauli di Tahun 1991.') }}
+                    {{ __('Sebagai tokoh nasional yang berasal dari Sumatera Utara, Feisal Tanjung dikenal memiliki kepedulian besar terhadap pembangunan daerah dan peningkatan kualitas sumber daya manusia. Ia juga dikenal sebagai sosok yang memiliki komitmen kuat dalam mendukung pembangunan pendidikan bagi generasi muda Indonesia, termasuk melalui pendirian lembaga pendidikan di bawah naungan Yayasan Matauli di Tahun 1991.') }}
                 </p>
 
                 <p>
-                    {{ __('Wafat pada 18 Februari 2013 di Jakarta pada usia 73 tahun. Jenderal TNI (Purn.) Feisal Tandjung dimakamkan secara militer di Taman Makam Pahlawan Kalibata, Jakarta Selatan, sebagai bentuk penghormatan atas jasa dan pengabdiannya kepada bangsa dan negara.') }}
+                    {{ __('Wafat pada 18 Februari 2013 di Jakarta pada usia 73 tahun. Jenderal TNI (Purn.) Feisal Tanjung dimakamkan secara militer di Taman Makam Pahlawan Kalibata, Jakarta Selatan, sebagai bentuk penghormatan atas jasa dan pengabdiannya kepada bangsa dan negara.') }}
                 </p>
             </div>
         </div>

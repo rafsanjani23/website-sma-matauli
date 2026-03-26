@@ -52,7 +52,7 @@
                                     {{ __('1991 - Pendirian Yayasan Maju Tapian Nauli (MATAULI)') }}
                                 </h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
-                                    {{ __('Yayasan Maju Tapian Nauli (MATAULI) didirikan tahun 1991 oleh Jendral TNI (Purn) Feisal Tandjung dan Dr. Ir. Akbar Tandjung Beserta Tokoh Masyarakat Tapanuli Tengah yang Peduli dengan Pendidikan.') }}
+                                    {{ __('Yayasan Maju Tapian Nauli (MATAULI) didirikan tahun 1991 oleh Jendral TNI (Purn) Feisal Tanjung dan Dr. Ir. Akbar Tandjung Beserta Tokoh Masyarakat Tapanuli Tengah yang Peduli dengan Pendidikan.') }}
                                 </p>
                             </div>
                         </div>
@@ -187,7 +187,7 @@
                                     {{ __('2008 - Mendapatkan Sertifikat Sistem Manajemen Mutu') }}
                                 </h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
-                                    {{ __('SMA Negeri 1 (Plus) Matauli Pandan mendapatkan sertifikat Sistem Manajemen Mutu (SMM) ISO 9001 : 2008 sebagai pedoman penyelenggaraan sistem manajemen sekolah.') }}
+                                    {{ __('SMA Negeri 1 (Plus) Matauli Pandan telah mendapatkan sertifikat Sistem Manajemen Mutu (SMM) ISO 9001 : 2008 sebagai pedoman penyelenggaraan sistem manajemen sekolah.') }}
                                 </p>
                             </div>
                         </div>
@@ -211,7 +211,7 @@
                             </div>
                             <div class="p-5">
                                 <h3 class="text-base font-bold text-red-800 mb-2 leading-snug">
-                                    {{ __('2012 - Sekolah Penyedia Layanan Data Berbasis IT') }}
+                                    {{ __('2012 - Menjadi Sekolah Penyedia Layanan Data Berbasis IT') }}
                                 </h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
                                     {{ __('Sejak tahun 2012, SMA Negeri 1 (Plus) Matauli Pandan dipercaya sebagai penyedia layanan data berbasis IT bagi seluruh SMA di Kabupaten Tapanuli Tengah.') }}
@@ -287,7 +287,7 @@
                         <div
                             class="bg-linear-to-br from-yellow-50 to-orange-50 rounded-2xl shadow-md border-l-4 border-yellow-500 overflow-hidden">
                             <div class="h-44 w-full overflow-hidden">
-                                <img src="{{ asset('assets/Sejarah_2026.jpg') }}" alt="2026"
+                                <img src="{{ asset('assets/Sejarah_2026.jpeg') }}" alt="2026"
                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-5">
@@ -324,7 +324,7 @@
                                 <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
                                     {{ __('1991 - Pendirian Yayasan Maju Tapian Nauli (MATAULI)') }}</h3>
                                 <p class="text-gray-600 text-sm md:text-base leading-relaxed">
-                                    {{ __('Yayasan Maju Tapian Nauli (MATAULI) didirikan tahun 1991 oleh Jendral TNI (Purn) Feisal Tandjung dan Dr. Ir. Akbar Tandjung Beserta Tokoh Masyarakat Tapanuli Tengah yang Peduli dengan Pendidikan.') }}
+                                    {{ __('Yayasan Maju Tapian Nauli (MATAULI) didirikan tahun 1991 oleh Jendral TNI (Purn) Feisal Tanjung dan Dr. Ir. Akbar Tandjung Beserta Tokoh Masyarakat Tapanuli Tengah yang Peduli dengan Pendidikan.') }}
                                 </p>
                             </div>
                         </div>
@@ -581,7 +581,7 @@
                 <div class="relative grid grid-cols-2 gap-0 min-h-64">
                     <div class="flex items-center justify-end pr-16 py-8">
                         <div class="max-w-sm w-full h-56 rounded-2xl overflow-hidden shadow-xl bg-gray-100">
-                            <img src="{{ asset('assets/Sejarah_2026.jpg') }}" alt="2026"
+                            <img src="{{ asset('assets/Sejarah_2026.jpeg') }}" alt="2026"
                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                     </div>
