@@ -66,21 +66,16 @@
                         <div class="bg-white border border-red-100 rounded-2xl px-6 py-3.5 shadow-lg shadow-red-900/10">
                             <div class="w-8 h-0.5 bg-yellow-400 mx-auto mb-2 rounded-full"></div>
                             <p class="text-xs font-bold text-gray-800 whitespace-nowrap">Deden Rachmawan, S.Pd., M.M</p>
-                            <p class="text-[10px] text-red-800 font-semibold mt-1">{{ __('Kepala Sekolah SMAN 1 MATAULI') }}</p>
+                            <p class="text-[10px] text-red-800 font-semibold mt-1">
+                                {{ __('Kepala Sekolah SMAN 1 MATAULI') }}</p>
                         </div>
-                        {{-- Active indicator --}}
-                        {{-- <div
-                            class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 flex items-center gap-1.5 bg-white rounded-full px-3 py-1 shadow-sm border border-gray-100">
-                            <div class="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse"></div>
-                            <span class="text-[10px] text-gray-400 font-medium">Aktif Menjabat</span>
-                        </div> --}}
                     </div>
                 </div>
             </div>
 
             {{-- ===== KOLOM TENGAH: Deskripsi ===== --}}
             <div
-                class="order-1 lg:order-2 scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-in-out">
+                class="order-3 lg:order-2 scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-in-out">
 
                 {{-- Card deskripsi --}}
                 <div class="relative group/card">
@@ -161,7 +156,7 @@
 
             {{-- ===== KOLOM KANAN: Ketua Umum ===== --}}
             <div
-                class="flex flex-col items-center order-3 scroll-animate opacity-0 translate-x-10 transition-all duration-700 ease-in-out">
+                class="flex flex-col items-center order-1 lg:order-3 scroll-animate opacity-0 translate-x-10 transition-all duration-700 ease-in-out">
 
                 {{-- Foto dengan ring bertingkat --}}
                 <div class="relative mb-12">
@@ -193,14 +188,9 @@
                             <div class="w-8 h-0.5 bg-yellow-400 mx-auto mb-2 rounded-full"></div>
                             <p class="text-xs font-bold text-gray-800 whitespace-nowrap">Fitri Krisnawati Tandjung, B.Sc
                             </p>
-                            <p class="text-[10px] text-red-800 font-semibold mt-1">{{ __('Ketua Umum Yayasan MATAULI') }}</p>
+                            <p class="text-[10px] text-red-800 font-semibold mt-1">
+                                {{ __('Ketua Umum Yayasan MATAULI') }}</p>
                         </div>
-                        {{-- Active indicator --}}
-                        {{-- <div
-                            class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 flex items-center gap-1.5 bg-white rounded-full px-3 py-1 shadow-sm border border-gray-100">
-                            <div class="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse"></div>
-                            <span class="text-[10px] text-gray-400 font-medium">Aktif Menjabat</span>
-                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -235,7 +225,8 @@
                     <div
                         class="w-5 h-0.5 bg-yellow-400 mx-auto mb-3 group-hover:w-10 transition-all duration-500 rounded-full">
                     </div>
-                    <p class="text-red-200 text-xs font-semibold tracking-widest uppercase">{{ __('Peserta Didik') }}</p>
+                    <p class="text-red-200 text-xs font-semibold tracking-widest uppercase">{{ __('Peserta Didik') }}
+                    </p>
                 </div>
 
                 {{-- Stat 2: Guru --}}
@@ -271,7 +262,8 @@
                     <div
                         class="w-5 h-0.5 bg-white/40 mx-auto mb-3 group-hover:w-10 transition-all duration-500 rounded-full">
                     </div>
-                    <p class="text-red-200 text-xs font-semibold tracking-widest uppercase">{{ __('Rombongan Belajar') }}</p>
+                    <p class="text-red-200 text-xs font-semibold tracking-widest uppercase">
+                        {{ __('Rombongan Belajar') }}</p>
                 </div>
 
             </div>
