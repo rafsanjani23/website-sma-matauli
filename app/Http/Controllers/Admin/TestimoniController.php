@@ -9,10 +9,21 @@ use Illuminate\Support\Facades\Storage;
 
 class TestimoniController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $items = Testimoni::latest()->get();
-        return view('admin.testimoni.index', compact('items'));
+        $search = $request->query('search');
+        if (!empty($search)) {
+            $items = Testimoni::where('testimoni.nama', 'like', '%' . $search . '%')
+                ->orWhere('testimoni.tahun_alumni')
+                ->paginate(20)->onEachSide(2)
+                ->fragment('testimoni');
+        } else {
+            $items = Testimoni::latest()->paginate(20)->onEachSide(2)->fragment('testimoni');
+        }
+        return view('admin.testimoni.index', with([
+            'items' => $items,
+            'search' => $search
+        ]));
     }
 
     public function create()

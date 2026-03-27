@@ -9,10 +9,21 @@ use Illuminate\Support\Facades\Storage;
 
 class MediaController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $items = Media::latest()->get();
-        return view('admin.media.index', compact('items'));
+        $search = $request->query('search');
+        if(!empty($search)){
+            $items = Media::where('media.judul', 'like' , '%'.$search.'%')
+            ->orWhere('media.tanggal')
+            ->paginate(20)->onEachSide(2)
+            ->fragment('media');
+        }else{
+             $items = Media::latest()->paginate(20)->onEachSide(2)->fragment('media');
+        }
+        return view('admin.media.index', with([
+            'items' => $items,
+            'search' => $search
+        ]));
     }
 
     public function create()
