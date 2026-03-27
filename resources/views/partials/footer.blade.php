@@ -203,7 +203,7 @@
                 <ul class="space-y-3">
                     {{-- SPMB --}}
                     <li>
-                        <a href="{{ url('/spmb') }}"
+                        <a href="{{ url('https://penerimaan.sman1-matauli.sch.id/') }}"
                             class="group flex items-center gap-2 text-yellow-400 hover:text-yellow-300 transition-all duration-300 font-semibold">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="h-4 w-4 transform group-hover:translate-x-1 transition-transform"
