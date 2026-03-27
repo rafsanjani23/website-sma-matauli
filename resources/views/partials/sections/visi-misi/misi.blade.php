@@ -8,7 +8,7 @@
         style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 36px 36px;">
     </div>
     <div
-        class="absolute top-0 right-0 w-80 h-80 rounded-full bg-white/[0.04] -translate-y-1/2 translate-x-1/3 pointer-events-none">
+        class="absolute top-0 right-0 w-80 h-80 rounded-full bg-white/4 -translate-y-1/2 translate-x-1/3 pointer-events-none">
     </div>
     <div
         class="absolute bottom-0 left-0 w-56 h-56 rounded-full bg-yellow-400/[0.07] translate-y-1/2 -translate-x-1/3 pointer-events-none">
@@ -34,7 +34,7 @@
 
             {{-- Misi 01 - span 2 --}}
             <div
-                class="sm:col-span-2 group bg-white/[0.07] hover:bg-white/[0.13] border border-white/[0.13] rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
+                class="sm:col-span-2 group bg-white/[0.07] hover:bg-white/13 border border-white/13 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-yellow-400 flex items-center justify-center">
                         <span class="text-red-900 font-black text-[11px]">01</span>
@@ -50,7 +50,7 @@
 
             {{-- Misi 02 --}}
             <div
-                class="group bg-white/[0.07] hover:bg-white/[0.13] border border-white/[0.13] rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
+                class="group bg-white/[0.07] hover:bg-white/13 border border-white/13 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-yellow-400 flex items-center justify-center">
                         <span class="text-red-900 font-black text-[11px]">02</span>
@@ -66,7 +66,7 @@
 
             {{-- Misi 03 --}}
             <div
-                class="group bg-white/[0.07] hover:bg-white/[0.13] border border-white/[0.13] rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
+                class="group bg-white/[0.07] hover:bg-white/13 border border-white/13 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-yellow-400 flex items-center justify-center">
                         <span class="text-red-900 font-black text-[11px]">03</span>
@@ -82,7 +82,7 @@
 
             {{-- Misi 04 --}}
             <div
-                class="group bg-white/[0.07] hover:bg-white/[0.13] border border-white/[0.13] rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
+                class="group bg-white/[0.07] hover:bg-white/13 border border-white/13 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-yellow-400 flex items-center justify-center">
                         <span class="text-red-900 font-black text-[11px]">04</span>
@@ -98,7 +98,7 @@
 
             {{-- Misi 05 --}}
             <div
-                class="group bg-white/[0.07] hover:bg-white/[0.13] border border-white/[0.13] rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
+                class="group bg-white/[0.07] hover:bg-white/13 border border-white/13 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-yellow-400 flex items-center justify-center">
                         <span class="text-red-900 font-black text-[11px]">05</span>
@@ -114,7 +114,7 @@
 
             {{-- Misi 06 --}}
             <div
-                class="group bg-white/[0.07] hover:bg-white/[0.13] border border-white/[0.13] rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
+                class="group bg-white/[0.07] hover:bg-white/13 border border-white/13 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-yellow-400 flex items-center justify-center">
                         <span class="text-red-900 font-black text-[11px]">06</span>
@@ -130,7 +130,7 @@
 
             {{-- Misi 07 --}}
             <div
-                class="group bg-white/[0.07] hover:bg-white/[0.13] border border-white/[0.13] rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
+                class="group bg-white/[0.07] hover:bg-white/13 border border-white/13 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-yellow-400 flex items-center justify-center">
                         <span class="text-red-900 font-black text-[11px]">07</span>
@@ -146,7 +146,7 @@
 
             {{-- Misi 08 --}}
             <div
-                class="group bg-white/[0.07] hover:bg-white/[0.13] border border-white/[0.13] rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
+                class="group bg-white/[0.07] hover:bg-white/13 border border-white/13 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-yellow-400 flex items-center justify-center">
                         <span class="text-red-900 font-black text-[11px]">08</span>
@@ -162,7 +162,7 @@
 
             {{-- Misi 09 --}}
             <div
-                class="group bg-white/[0.07] hover:bg-white/[0.13] border border-white/[0.13] rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
+                class="group bg-white/[0.07] hover:bg-white/13 border border-white/13 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-yellow-400 flex items-center justify-center">
                         <span class="text-red-900 font-black text-[11px]">09</span>
@@ -178,7 +178,7 @@
 
             {{-- Misi 10 --}}
             <div
-                class="group bg-white/[0.07] hover:bg-white/[0.13] border border-white/[0.13] rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
+                class="group bg-white/[0.07] hover:bg-white/13 border border-white/13 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-yellow-400 flex items-center justify-center">
                         <span class="text-red-900 font-black text-[11px]">10</span>
@@ -194,7 +194,7 @@
 
             {{-- Misi 11 - span 2 --}}
             <div
-                class="sm:col-span-2 group bg-white/[0.07] hover:bg-white/[0.13] border border-white/[0.13] rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
+                class="sm:col-span-2 group bg-white/[0.07] hover:bg-white/13 border border-white/13 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-yellow-400 flex items-center justify-center">
                         <span class="text-red-900 font-black text-[11px]">11</span>
@@ -210,7 +210,7 @@
 
             {{-- Misi 12 --}}
             <div
-                class="group bg-white/[0.07] hover:bg-white/[0.13] border border-white/[0.13] rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
+                class="group bg-white/[0.07] hover:bg-white/13 border border-white/13 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-yellow-400 flex items-center justify-center">
                         <span class="text-red-900 font-black text-[11px]">12</span>
@@ -226,7 +226,7 @@
 
             {{-- Misi 13 - Full width --}}
             <div
-                class="sm:col-span-2 lg:col-span-3 group bg-white/[0.07] hover:bg-white/[0.13] border border-white/[0.13] rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
+                class="sm:col-span-2 lg:col-span-3 group bg-white/[0.07] hover:bg-white/13 border border-white/13 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-yellow-400 flex items-center justify-center">
                         <span class="text-red-900 font-black text-[11px]">13</span>
