@@ -14,7 +14,7 @@ class MediaController extends Controller
         $search = $request->query('search');
         if(!empty($search)){
             $items = Media::where('media.judul', 'like' , '%'.$search.'%')
-            ->orWhere('media.tanggal')
+            ->orWhere('media.tanggal', 'like' , '%'.$search.'%')
             ->paginate(20)->onEachSide(2)
             ->fragment('media');
         }else{

@@ -14,9 +14,9 @@ class PrestasiController extends Controller
         $search = $request->query('search');
         if (!empty($search)) {
             $items = Prestasi::where('prestasi.judul', 'like', '%' . $search . '%')
-                ->orWhere('prestasi.tanggal')
-                ->orWhere('prestasi.nama_lomba')
-                ->orWhere('prestasi.tingkatan')
+                ->orWhere('prestasi.tanggal', 'like', '%' . $search . '%')
+                ->orWhere('prestasi.nama_lomba', 'like', '%' . $search . '%')
+                ->orWhere('prestasi.tingkatan', 'like', '%' . $search . '%')
                 ->paginate(20)->onEachSide(2)
                 ->fragment('prestasi');
         } else {

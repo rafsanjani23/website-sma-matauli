@@ -14,7 +14,7 @@ class TestimoniController extends Controller
         $search = $request->query('search');
         if (!empty($search)) {
             $items = Testimoni::where('testimoni.nama', 'like', '%' . $search . '%')
-                ->orWhere('testimoni.tahun_alumni')
+                ->orWhere('testimoni.tahun_alumni', 'like', '%' . $search . '%')
                 ->paginate(20)->onEachSide(2)
                 ->fragment('testimoni');
         } else {
