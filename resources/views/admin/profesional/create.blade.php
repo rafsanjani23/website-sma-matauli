@@ -28,6 +28,10 @@
                     <input type="text" name="nama_lembaga" id="nama_lembaga" value="{{ old('nama_lembaga') }}" required class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
                 </div>
                 <div>
+                    <label for="angkatan" class="block text-sm font-semibold text-gray-700 mb-1.5">Angkatan</label>
+                    <input type="text" name="angkatan" id="angkatan" value="{{ old('angkatan') }}" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
+                </div>
+                <div>
                     <label for="foto" class="block text-sm font-semibold text-gray-700 mb-1.5">Foto</label>
                     <input type="file" name="foto" id="foto" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm file:mr-4 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-red-50 file:text-red-800 hover:file:bg-red-100 transition" />
                 </div>

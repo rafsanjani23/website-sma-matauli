@@ -16,6 +16,7 @@
                 <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">Foto</th>
                 <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">Nama</th>
                 <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">Nama Lembaga</th>
+                <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">Angkatan</th>
                 <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">Aksi</th>
             </tr></thead>
             <tbody class="divide-y divide-gray-100">
@@ -29,6 +30,7 @@
                     </td>
                     <td class="px-6 py-4 text-sm text-gray-700">{{ $item->nama }}</td>
                     <td class="px-6 py-4 text-sm text-gray-700">{{ $item->nama_lembaga }}</td>
+                    <td class="px-6 py-4 text-sm text-gray-700">{{ $item->angkatan ?? '-' }}</td>
                     <td class="px-6 py-4">
                         <div class="flex items-center gap-2">
                             <a href="{{ route('admin.profesional.edit', $item->id) }}" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Edit</a>

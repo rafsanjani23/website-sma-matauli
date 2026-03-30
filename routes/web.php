@@ -102,8 +102,9 @@ Route::get('/studi-lanjut', function () {
     $tniPolri = \App\Models\StudiLanjut::where('kategori', 'TNI-Polri')->get();
     $kedinasan = \App\Models\StudiLanjut::where('kategori', 'Kedinasan')->get();
     $ptn = \App\Models\StudiLanjut::where('kategori', 'PTN')->get();
+    $pts = \App\Models\StudiLanjut::where('kategori', 'PTS')->get();
     $ptln = \App\Models\StudiLanjut::where('kategori', 'PTLN')->get();
-    return view('pages.studi-lanjut', compact('tniPolri', 'kedinasan', 'ptn', 'ptln'));
+    return view('pages.studi-lanjut', compact('tniPolri', 'kedinasan', 'ptn', 'pts', 'ptln'));
 })->name('studi-lanjut');
 Route::get('/profesional-alumni', function () {
     $items = \App\Models\Profesional::latest()->get();

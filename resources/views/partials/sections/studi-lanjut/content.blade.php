@@ -32,6 +32,15 @@
                     {{ __('PTN') }}
                 </button>
 
+                <button role="tab" id="tab-pts" aria-controls="panel-pts" aria-selected="false" class="px-8 lg:px-12 py-3 rounded-full text-md font-medium transition-all duration-200
+                 outline-none focus:ring-2
+                 aria-selected:bg-matauli-yellow
+                 aria-selected:text-matauli-red-dark
+                 aria-selected:shadow-lg
+                 text-matauli-yellow hover:text-gray-200">
+                    {{ __('PTS') }}
+                </button>
+
                 <button role="tab" id="tab-ptln" aria-controls="panel-ptln" aria-selected="false" class="px-8 lg:px-12 py-3 rounded-full text-md font-medium transition-all duration-200
                  outline-none focus:ring-2
                  aria-selected:bg-matauli-yellow
@@ -56,6 +65,10 @@
 
         <div id="panel-ptn" role="tabpanel" aria-labelledby="tab-ptn" class="hidden">
            @include('partials.sections.studi-lanjut.panels.ptn')
+        </div>
+
+        <div id="panel-pts" role="tabpanel" aria-labelledby="tab-pts" class="hidden">
+           @include('partials.sections.studi-lanjut.panels.pts')
         </div>
 
         <div id="panel-ptln" role="tabpanel" aria-labelledby="tab-ptln" class="hidden">

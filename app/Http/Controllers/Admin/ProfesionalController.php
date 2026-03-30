@@ -25,6 +25,7 @@ class ProfesionalController extends Controller
         $validated = $request->validate([
             'nama' => 'required|max:50',
             'nama_lembaga' => 'required|max:50',
+            'angkatan' => 'nullable|max:20',
             'foto' => 'nullable|image|max:2048',
             'link_facebook' => 'nullable|max:50',
             'link_twitter' => 'nullable|max:50',
@@ -53,6 +54,7 @@ class ProfesionalController extends Controller
         $validated = $request->validate([
             'nama' => 'required|max:50',
             'nama_lembaga' => 'required|max:50',
+            'angkatan' => 'nullable|max:20',
             'foto' => 'nullable|image|max:2048',
             'link_facebook' => 'nullable|max:50',
             'link_twitter' => 'nullable|max:50',
