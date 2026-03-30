@@ -120,12 +120,13 @@
                     <li><a href="{{ route('visi-misi') }}" class="dropdown-item">{{ __('Visi & Misi') }}</a></li>
                     <li><a href="{{ url('/struktur') }}" class="dropdown-item">{{ __('Struktur') }}</a>
                     </li>
-                    <li><a href="{{ url('/tendik') }}" class="dropdown-item">{{ __('Tenaga Pendidik') }}
-                            & {{ __('Tendik') }}</a></li>
+                    <li><a href="{{ url('/tendik') }}" class="dropdown-item">{{ __('Guru') }}
+                            & {{ __('Tenaga Kependidikan') }}</a></li>
                     <li><a href="{{ url('/fasilitas') }}" class="dropdown-item">{{ __('Fasilitas') }}</a>
                     </li>
                     <li><a href="{{ route('prestasi') }}" class="dropdown-item">{{ __('Prestasi') }}</a></li>
-                    <li><a href="{{ url('/ekstrakurikuler') }}" class="dropdown-item">{{ __('Ekstrakurikuler') }}</a></li>
+                    <li><a href="{{ url('/ekstrakurikuler') }}" class="dropdown-item">{{ __('Ekstrakurikuler') }}</a>
+                    </li>
                     <li><a href="{{ url('/mitra') }}" class="dropdown-item">{{ __('Kemitraan') }}</a>
                     </li>
                 </ul>
@@ -142,11 +143,13 @@
                 </button>
 
                 <ul class="nav-dropdown-content">
-                    <li><a href="{{ url('/program-kemataulian') }}" class="dropdown-item">{{ __('Program Kemataulian') }}</a>
+                    <li><a href="{{ url('/program-kemataulian') }}"
+                            class="dropdown-item">{{ __('Program Kemataulian') }}</a>
                     </li>
                     <li><a href="{{ url('/program-ib') }}" class="dropdown-item">{{ __('Program Pre-IB') }}</a>
                     </li>
-                    <li><a href="{{ url('/program-kemendikdasmen') }}" class="dropdown-item">{{ __('Program Kemendikdasmen') }}</a>
+                    <li><a href="{{ url('/program-kemendikdasmen') }}"
+                            class="dropdown-item">{{ __('Program Kemendikdasmen') }}</a>
                     </li>
                 </ul>
             </li>
@@ -163,9 +166,11 @@
                 </button>
 
                 <ul class="nav-dropdown-content">
-                    <li><a href="{{ url('/fasilitas-asrama') }}" class="dropdown-item">{{ __('Fasilitas Asrama') }}</a>
+                    <li><a href="{{ url('/fasilitas-asrama') }}"
+                            class="dropdown-item">{{ __('Fasilitas Asrama') }}</a>
                     </li>
-                    <li><a href="{{ route('kegiatan-asrama') }}" class="dropdown-item">{{ __('Kegiatan Asrama') }}</a>
+                    <li><a href="{{ route('kegiatan-asrama') }}"
+                            class="dropdown-item">{{ __('Kegiatan Asrama') }}</a>
                     </li>
                 </ul>
             </li>
@@ -185,9 +190,11 @@
                 <ul class="nav-dropdown-content">
                     <li><a href="{{ route('studi-lanjut') }}" class="dropdown-item">{{ __('Studi Lanjut') }}</a>
                     </li>
-                    <li><a href="{{ route('profesional-alumni') }}" class="dropdown-item">{{ __('Professional') }}</a>
+                    <li><a href="{{ route('profesional-alumni') }}"
+                            class="dropdown-item">{{ __('Professional') }}</a>
                     </li>
-                    <li><a href="{{ route('testimonials') }}" class="dropdown-item">{{ __('Testimonials') }}</a></li>
+                    <li><a href="{{ route('testimonials') }}" class="dropdown-item">{{ __('Testimonials') }}</a>
+                    </li>
                 </ul>
             </li>
             <!-- dropdown alumni end -->
@@ -278,13 +285,14 @@
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Sejarah') }}</a>
                     </li>
                     <li><a href="{{ route('visi-misi') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Visi & Misi') }}</a></li>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Visi & Misi') }}</a>
+                    </li>
                     <li><a href="{{ url('/struktur') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Struktur') }}</a>
                     </li>
                     <li><a href="{{ url('/tendik') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Tenaga Pendidik') }}
-                            & {{ __('Tendik') }}</a></li>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Guru') }}
+                            & {{ __('Tenaga Kependidikan') }}</a></li>
                     <li><a href="{{ url('/fasilitas') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Fasilitas') }}</a>
                     </li>
@@ -312,7 +320,8 @@
                 </button>
                 <ul class="mobile-dropdown-content bg-gray-50">
                     <li><a href="{{ url('/program-kemataulian') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Program Kemataulian') }}</a></li>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Program Kemataulian') }}</a>
+                    </li>
                     <li><a href="{{ url('/program-ib') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Program Pre-IB') }}</a>
                     </li>
@@ -334,7 +343,8 @@
                 </button>
                 <ul class="mobile-dropdown-content bg-gray-50">
                     <li><a href="{{ route('fasilitas-asrama') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Fasilitas Asrama') }}</a></li>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Fasilitas Asrama') }}</a>
+                    </li>
                     <li><a href="{{ route('kegiatan-asrama') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Kegiatan Asrama') }}</a>
                     </li>
@@ -353,7 +363,8 @@
                 </button>
                 <ul class="mobile-dropdown-content bg-gray-50">
                     <li><a href="{{ route('studi-lanjut') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Studi Lanjut') }}</a></li>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Studi Lanjut') }}</a>
+                    </li>
                     <li><a href="{{ route('profesional-alumni') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Professional') }}</a>
                     </li>
