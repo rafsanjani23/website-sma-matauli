@@ -3,7 +3,7 @@
 
         <!-- TAB LIST -->
         <div class="flex justify-center mb-8">
-            <div role="tablist" class="flex justify-center gap-1 lg:gap-2 p-1 bg-matauli-red-dark rounded-full w-full max-w-4xl mb-4">
+            <div role="tablist" class="inline-flex gap-1 lg:gap-2 p-1 bg-matauli-red-dark rounded-full mb-4">
 
                 <button role="tab" id="tab-tni" aria-controls="panel-tni" aria-selected="true" class="px-4 lg:px-8 py-3 rounded-full text-sm lg:text-md font-medium transition-all duration-200
                  outline-none focus:ring-2

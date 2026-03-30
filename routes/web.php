@@ -129,8 +129,10 @@ Route::get('/galeri-media/{id}', function ($id) {
     return view('pages.galeri-media-detail', compact('item'));
 })->name('galeri-media-detail');
 Route::get('/prestasi', function () {
-    $items = \App\Models\Prestasi::latest()->get();
-    return view('pages.prestasi', compact('items'));
+    $prestasiSekolah = \App\Models\Prestasi::where('kategori', 'Prestasi Sekolah')->latest()->get();
+    $prestasiSiswa = \App\Models\Prestasi::where('kategori', 'Prestasi Siswa')->latest()->get();
+    $prestasiGuru = \App\Models\Prestasi::where('kategori', 'Prestasi Guru')->latest()->get();
+    return view('pages.prestasi', compact('prestasiSekolah', 'prestasiSiswa', 'prestasiGuru'));
 })->name('prestasi');
 Route::get('/prestasi/{id}', function ($id) {
     $item = \App\Models\Prestasi::findOrFail($id);

@@ -1,55 +1,52 @@
-<section class="pb-12 md:pb-16 lg:pb-20 bg-white">
+<section id="prestasi-tabs" class="pb-12 md:pb-16 lg:pb-20 bg-white">
     <div class="mx-auto px-4 sm:px-6 lg:px-12 xl:px-24">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        @forelse ($items as $item)
-        <a href="{{ route('prestasi-detail', $item->id) }}" class="group block">
-            <div
-                class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-yellow-400 h-full">
 
-                {{-- Image --}}
-                <div class="relative h-48 md:h-52 overflow-hidden">
-                    <img src="{{ Storage::url($item->gambar) }}" alt="{{ $item->judul }}"
-                        class="w-full h-full object-cover transition-transform duration-500">
+        <!-- TAB LIST -->
+        <div class="flex justify-center mb-8">
+            <div role="tablist" class="inline-flex gap-1 lg:gap-2 p-1 bg-matauli-red-dark rounded-full mb-4">
 
-                    {{-- Badge --}}
-                    <div
-                        class="absolute bottom-4 left-4 bg-yellow-400 text-black font-bold px-3 py-1.5 rounded-lg text-xs shadow-lg">
-                        {{ $item->nama_lomba }}
-                    </div>
-                </div>
+                <button role="tab" id="tab-prestasi-sekolah" aria-controls="panel-prestasi-sekolah" aria-selected="true" class="px-4 lg:px-8 py-3 rounded-full text-sm lg:text-md font-medium transition-all duration-200
+                 outline-none focus:ring-2
+                 aria-selected:bg-matauli-yellow
+                 aria-selected:text-matauli-red-dark
+                 aria-selected:shadow-lg
+                 text-matauli-yellow hover:text-gray-200 whitespace-nowrap">
+                    {{ __('Prestasi Sekolah') }}
+                </button>
 
-                {{-- Content --}}
-                <div class="p-6 flex flex-col justify-between h-47.5">
-                    <div>
-                        <h4
-                            class="text-base md:text-lg font-bold text-gray-900 mb-2 group-hover:text-matauli-red-dark transition-colors">
-                            {{ $item->judul }}
-                        </h4>
-                        <p class="text-gray-600 text-sm md:text-base leading-relaxed">
-                            {{ $item->tingkatan }}
-                        </p>
-                    </div>
+                <button role="tab" id="tab-prestasi-siswa" aria-controls="panel-prestasi-siswa" aria-selected="false" class="px-4 lg:px-8 py-3 rounded-full text-sm lg:text-md font-medium transition-all duration-200
+                 outline-none focus:ring-2
+                 aria-selected:bg-matauli-yellow
+                 aria-selected:text-matauli-red-dark
+                 aria-selected:shadow-lg
+                 text-matauli-yellow hover:text-gray-200 whitespace-nowrap">
+                    {{ __('Prestasi Siswa') }}
+                </button>
 
-                    {{-- CTA Arrow --}}
-                    <div
-                        class="mt-4 inline-flex items-center gap-2 text-matauli-red-dark font-semibold group-hover:gap-3 transition-all">
-                        <span>{{ __('Selengkapnya') }}</span>
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20"
-                            fill="currentColor">
-                            <path fill-rule="evenodd"
-                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </div>
-                </div>
+                <button role="tab" id="tab-prestasi-guru" aria-controls="panel-prestasi-guru" aria-selected="false" class="px-4 lg:px-8 py-3 rounded-full text-sm lg:text-md font-medium transition-all duration-200
+                 outline-none focus:ring-2
+                 aria-selected:bg-matauli-yellow
+                 aria-selected:text-matauli-red-dark
+                 aria-selected:shadow-lg
+                 text-matauli-yellow hover:text-gray-200 whitespace-nowrap">
+                    {{ __('Prestasi Guru') }}
+                </button>
+
             </div>
-        </a>
-        @empty
-        <div class="col-span-full text-center py-12 text-gray-400">
-            {{ __('Belum ada data prestasi.') }}
         </div>
-        @endforelse
-    </div>
+
+        <!-- PANELS -->
+        <div id="panel-prestasi-sekolah" role="tabpanel" aria-labelledby="tab-prestasi-sekolah">
+            @include('partials.sections.prestasi.panel', ['items' => $prestasiSekolah])
+        </div>
+
+        <div id="panel-prestasi-siswa" role="tabpanel" aria-labelledby="tab-prestasi-siswa" class="hidden">
+            @include('partials.sections.prestasi.panel', ['items' => $prestasiSiswa])
+        </div>
+
+        <div id="panel-prestasi-guru" role="tabpanel" aria-labelledby="tab-prestasi-guru" class="hidden">
+            @include('partials.sections.prestasi.panel', ['items' => $prestasiGuru])
+        </div>
+
     </div>
 </section>

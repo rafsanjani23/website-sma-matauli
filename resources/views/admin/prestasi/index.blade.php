@@ -24,6 +24,7 @@
                         <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">Judul</th>
                         <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">Nama Lomba</th>
                         <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">Tingkatan</th>
+                        <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">Kategori</th>
                         <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">Tanggal</th>
                         <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">Aksi</th>
                     </tr>
@@ -42,6 +43,7 @@
                             <td class="px-6 py-4 text-sm text-gray-700">{{ $item->judul }}</td>
                             <td class="px-6 py-4 text-sm text-gray-700">{{ $item->nama_lomba }}</td>
                             <td class="px-6 py-4 text-sm text-gray-700">{{ $item->tingkatan }}</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">{{ $item->kategori }}</td>
                             <td class="px-6 py-4 text-sm text-gray-700">{{ $item->tanggal }}</td>
                             <td class="px-6 py-4">
                                 <div class="flex items-center gap-2">
