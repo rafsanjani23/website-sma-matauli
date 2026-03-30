@@ -26,7 +26,7 @@ class StudiLanjutController extends Controller
             'foto' => 'nullable|image|max:2048',
             'nama_alumni' => 'required|max:50',
             'nama_lembaga' => 'required|max:50',
-            'kategori' => 'required|in:PTN,PTLN,TNI-Polri,Kedinasan',
+            'kategori' => 'required|in:PTN,PTS,PTLN,TNI-Polri,Kedinasan',
         ]);
 
         if ($request->hasFile('foto')) {
@@ -52,7 +52,7 @@ class StudiLanjutController extends Controller
             'foto' => 'nullable|image|max:2048',
             'nama_alumni' => 'required|max:50',
             'nama_lembaga' => 'required|max:50',
-            'kategori' => 'required|in:PTN,PTLN,TNI-Polri,Kedinasan',
+            'kategori' => 'required|in:PTN,PTS,PTLN,TNI-Polri,Kedinasan',
         ]);
 
         if ($request->hasFile('foto')) {

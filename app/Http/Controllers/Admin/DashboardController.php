@@ -24,6 +24,7 @@ class DashboardController extends Controller
             ['label' => 'Profesional', 'count' => DB::table('profesional')->count(), 'route' => 'admin.profesional.index', 'icon' => 'star'],
             ['label' => 'Foto', 'count' => DB::table('foto')->count(), 'route' => 'admin.foto.index', 'icon' => 'photo'],
             ['label' => 'Video', 'count' => DB::table('video')->count(), 'route' => 'admin.video.index', 'icon' => 'video'],
+            ['label' => 'Ekstrakurikuler', 'count' => DB::table('ekstrakurikuler')->count(), 'route' => 'admin.ekstrakurikuler.index', 'icon' => 'star'],
         ];
 
         return view('admin.dashboard', compact('stats'));

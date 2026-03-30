@@ -6,3 +6,4 @@ import './swipe';
 import './tablist';
 import './scroollAnimation';
 import './tablistStudi';
+import './tablistPrestasi';

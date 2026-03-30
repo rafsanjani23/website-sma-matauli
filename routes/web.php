@@ -17,6 +17,7 @@ use App\Http\Controllers\Admin\StudiLanjutController;
 use App\Http\Controllers\Admin\ProfesionalController;
 use App\Http\Controllers\Admin\FotoController;
 use App\Http\Controllers\Admin\VideoController;
+use App\Http\Controllers\Admin\EkstrakurikulerController;
 
 // Language switch
 Route::get('/lang/{locale}', function (string $locale) {
@@ -63,7 +64,8 @@ Route::get('/fasilitas', function () {
     return view('pages.fasilitas-sekolah', compact('labStudi', 'akademik', 'umum'));
 })->name('fasilitas');
 Route::get('/ekstrakurikuler', function () {
-    return view('pages.ekstrakurikuler');
+    $items = \App\Models\Ekstrakurikuler::latest()->get();
+    return view('pages.ekstrakurikuler', compact('items'));
 })->name('ekstrakurikuler');
 Route::get('/mitra', function () {
     $items = \App\Models\Kemitraan::latest()->get();
@@ -100,8 +102,9 @@ Route::get('/studi-lanjut', function () {
     $tniPolri = \App\Models\StudiLanjut::where('kategori', 'TNI-Polri')->get();
     $kedinasan = \App\Models\StudiLanjut::where('kategori', 'Kedinasan')->get();
     $ptn = \App\Models\StudiLanjut::where('kategori', 'PTN')->get();
+    $pts = \App\Models\StudiLanjut::where('kategori', 'PTS')->get();
     $ptln = \App\Models\StudiLanjut::where('kategori', 'PTLN')->get();
-    return view('pages.studi-lanjut', compact('tniPolri', 'kedinasan', 'ptn', 'ptln'));
+    return view('pages.studi-lanjut', compact('tniPolri', 'kedinasan', 'ptn', 'pts', 'ptln'));
 })->name('studi-lanjut');
 Route::get('/profesional-alumni', function () {
     $items = \App\Models\Profesional::latest()->get();
@@ -126,8 +129,10 @@ Route::get('/galeri-media/{id}', function ($id) {
     return view('pages.galeri-media-detail', compact('item'));
 })->name('galeri-media-detail');
 Route::get('/prestasi', function () {
-    $items = \App\Models\Prestasi::latest()->get();
-    return view('pages.prestasi', compact('items'));
+    $prestasiSekolah = \App\Models\Prestasi::where('kategori', 'Prestasi Sekolah')->latest()->get();
+    $prestasiSiswa = \App\Models\Prestasi::where('kategori', 'Prestasi Siswa')->latest()->get();
+    $prestasiGuru = \App\Models\Prestasi::where('kategori', 'Prestasi Guru')->latest()->get();
+    return view('pages.prestasi', compact('prestasiSekolah', 'prestasiSiswa', 'prestasiGuru'));
 })->name('prestasi');
 Route::get('/prestasi/{id}', function ($id) {
     $item = \App\Models\Prestasi::findOrFail($id);
@@ -261,5 +266,13 @@ Route::prefix('admin')->group(function () {
         Route::get('/video/{id}/edit', [VideoController::class, 'edit'])->name('admin.video.edit');
         Route::put('/video/{id}', [VideoController::class, 'update'])->name('admin.video.update');
         Route::delete('/video/{id}', [VideoController::class, 'destroy'])->name('admin.video.destroy');
+
+        // Ekstrakurikuler
+        Route::get('/ekstrakurikuler', [EkstrakurikulerController::class, 'index'])->name('admin.ekstrakurikuler.index');
+        Route::get('/ekstrakurikuler/create', [EkstrakurikulerController::class, 'create'])->name('admin.ekstrakurikuler.create');
+        Route::post('/ekstrakurikuler', [EkstrakurikulerController::class, 'store'])->name('admin.ekstrakurikuler.store');
+        Route::get('/ekstrakurikuler/{id}/edit', [EkstrakurikulerController::class, 'edit'])->name('admin.ekstrakurikuler.edit');
+        Route::put('/ekstrakurikuler/{id}', [EkstrakurikulerController::class, 'update'])->name('admin.ekstrakurikuler.update');
+        Route::delete('/ekstrakurikuler/{id}', [EkstrakurikulerController::class, 'destroy'])->name('admin.ekstrakurikuler.destroy');
     });
 });

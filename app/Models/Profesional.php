@@ -11,6 +11,7 @@ class Profesional extends Model
     protected $fillable = [
         'nama',
         'nama_lembaga',
+        'angkatan',
         'foto',
         'link_facebook',
         'link_twitter',

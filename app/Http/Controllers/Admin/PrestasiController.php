@@ -29,6 +29,7 @@ class PrestasiController extends Controller
             'isi' => 'required',
             'gambar' => 'required|image|max:2048',
             'tanggal' => 'required|date',
+            'kategori' => 'required|in:Prestasi Sekolah,Prestasi Siswa,Prestasi Guru',
         ]);
 
         if ($request->hasFile('gambar')) {
@@ -57,6 +58,7 @@ class PrestasiController extends Controller
             'isi' => 'required',
             'gambar' => 'nullable|image|max:2048',
             'tanggal' => 'required|date',
+            'kategori' => 'required|in:Prestasi Sekolah,Prestasi Siswa,Prestasi Guru',
         ]);
 
         if ($request->hasFile('gambar')) {

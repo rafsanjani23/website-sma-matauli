@@ -15,6 +15,7 @@ class Prestasi extends Model
         'isi',
         'gambar',
         'tanggal',
+        'kategori',
     ];
 
     protected function casts(): array

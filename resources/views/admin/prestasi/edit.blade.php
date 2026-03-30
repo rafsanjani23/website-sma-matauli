@@ -71,6 +71,17 @@
                         class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">
                 </div>
 
+                <div>
+                    <label for="kategori" class="block text-sm font-semibold text-gray-700 mb-1.5">Kategori</label>
+                    <select name="kategori" id="kategori" required
+                        class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">
+                        <option value="">Pilih Kategori</option>
+                        <option value="Prestasi Sekolah" {{ old('kategori', $item->kategori) == 'Prestasi Sekolah' ? 'selected' : '' }}>Prestasi Sekolah</option>
+                        <option value="Prestasi Siswa" {{ old('kategori', $item->kategori) == 'Prestasi Siswa' ? 'selected' : '' }}>Prestasi Siswa</option>
+                        <option value="Prestasi Guru" {{ old('kategori', $item->kategori) == 'Prestasi Guru' ? 'selected' : '' }}>Prestasi Guru</option>
+                    </select>
+                </div>
+
                 <div class="pt-4">
                     <button type="submit" class="bg-red-800 hover:bg-red-900 text-white font-semibold px-6 py-2.5 rounded-xl text-sm transition">
                         Simpan

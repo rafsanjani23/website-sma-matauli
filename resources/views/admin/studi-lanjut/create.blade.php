@@ -36,6 +36,7 @@
                     <select name="kategori" id="kategori" required class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">
                         <option value="">Pilih Kategori</option>
                         <option value="PTN" {{ old('kategori') == 'PTN' ? 'selected' : '' }}>PTN</option>
+                        <option value="PTS" {{ old('kategori') == 'PTS' ? 'selected' : '' }}>PTS</option>
                         <option value="PTLN" {{ old('kategori') == 'PTLN' ? 'selected' : '' }}>PTLN</option>
                         <option value="TNI-Polri" {{ old('kategori') == 'TNI-Polri' ? 'selected' : '' }}>TNI-Polri</option>
                         <option value="Kedinasan" {{ old('kategori') == 'Kedinasan' ? 'selected' : '' }}>Kedinasan</option>
