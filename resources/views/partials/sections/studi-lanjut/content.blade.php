@@ -3,50 +3,50 @@
 
         <!-- TAB LIST -->
         <div class="flex justify-center mb-8">
-            <div role="tablist" class="flex justify-center gap-2 lg:gap-10 p-1 bg-matauli-red-dark rounded-full w-full max-w-3xl mb-4">
+            <div role="tablist" class="flex justify-center gap-1 lg:gap-2 p-1 bg-matauli-red-dark rounded-full w-full max-w-4xl mb-4">
 
-                <button role="tab" id="tab-tni" aria-controls="panel-tni" aria-selected="true" class="px-8 lg:px-12 py-3 rounded-full text-md font-medium transition-all duration-200
+                <button role="tab" id="tab-tni" aria-controls="panel-tni" aria-selected="true" class="px-4 lg:px-8 py-3 rounded-full text-sm lg:text-md font-medium transition-all duration-200
                  outline-none focus:ring-2
                  aria-selected:bg-matauli-yellow
                  aria-selected:text-matauli-red-dark
                  aria-selected:shadow-lg
-                 text-matauli-yellow hover:text-gray-200">
+                 text-matauli-yellow hover:text-gray-200 whitespace-nowrap">
                     {{ __('TNI / POLRI') }}
                 </button>
 
-                <button role="tab" id="tab-kedinasan" aria-controls="panel-kedinasan" aria-selected="false" class="px-8 lg:px-12 py-3 rounded-full text-md font-medium transition-all duration-200
+                <button role="tab" id="tab-kedinasan" aria-controls="panel-kedinasan" aria-selected="false" class="px-4 lg:px-8 py-3 rounded-full text-sm lg:text-md font-medium transition-all duration-200
                  outline-none focus:ring-2
                  aria-selected:bg-matauli-yellow
                  aria-selected:text-matauli-red-dark
                  aria-selected:shadow-lg
-                 text-matauli-yellow hover:text-gray-200">
+                 text-matauli-yellow hover:text-gray-200 whitespace-nowrap">
                     {{ __('KEDINASAN') }}
                 </button>
 
-                <button role="tab" id="tab-ptn" aria-controls="panel-ptn" aria-selected="false" class="px-8 lg:px-12 py-3 rounded-full text-md font-medium transition-all duration-200
+                <button role="tab" id="tab-ptn" aria-controls="panel-ptn" aria-selected="false" class="px-4 lg:px-8 py-3 rounded-full text-sm lg:text-md font-medium transition-all duration-200
                  outline-none focus:ring-2
                  aria-selected:bg-matauli-yellow
                  aria-selected:text-matauli-red-dark
                  aria-selected:shadow-lg
-                 text-matauli-yellow hover:text-gray-200">
+                 text-matauli-yellow hover:text-gray-200 whitespace-nowrap">
                     {{ __('PTN') }}
                 </button>
 
-                <button role="tab" id="tab-pts" aria-controls="panel-pts" aria-selected="false" class="px-8 lg:px-12 py-3 rounded-full text-md font-medium transition-all duration-200
+                <button role="tab" id="tab-pts" aria-controls="panel-pts" aria-selected="false" class="px-4 lg:px-8 py-3 rounded-full text-sm lg:text-md font-medium transition-all duration-200
                  outline-none focus:ring-2
                  aria-selected:bg-matauli-yellow
                  aria-selected:text-matauli-red-dark
                  aria-selected:shadow-lg
-                 text-matauli-yellow hover:text-gray-200">
+                 text-matauli-yellow hover:text-gray-200 whitespace-nowrap">
                     {{ __('PTS') }}
                 </button>
 
-                <button role="tab" id="tab-ptln" aria-controls="panel-ptln" aria-selected="false" class="px-8 lg:px-12 py-3 rounded-full text-md font-medium transition-all duration-200
+                <button role="tab" id="tab-ptln" aria-controls="panel-ptln" aria-selected="false" class="px-4 lg:px-8 py-3 rounded-full text-sm lg:text-md font-medium transition-all duration-200
                  outline-none focus:ring-2
                  aria-selected:bg-matauli-yellow
                  aria-selected:text-matauli-red-dark
                  aria-selected:shadow-lg
-                 text-matauli-yellow hover:text-gray-200">
+                 text-matauli-yellow hover:text-gray-200 whitespace-nowrap">
                     {{ __('PTLN') }}
                 </button>
 
