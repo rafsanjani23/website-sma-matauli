@@ -76,6 +76,7 @@
                         ['route' => 'admin.tenaga-pendidik.index', 'label' => 'Tenaga Pendidik'],
                         ['route' => 'admin.tenaga-kependidikan.index', 'label' => 'Tenaga Kependidikan'],
                         ['route' => 'admin.kemitraan.index', 'label' => 'Kemitraan'],
+                        ['route' => 'admin.ekstrakurikuler.index', 'label' => 'Ekstrakurikuler'],
                     ];
                 @endphp
 
