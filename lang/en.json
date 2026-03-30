@@ -45,7 +45,7 @@
     "Selengkapnya": "Read More",
     "Peserta Didik": "Students",
     "Guru": "Teachers",
-    "Tendik": "Administrative Staff",
+    "Tenaga Kependidikan": "Educational Staff",
     "Rombongan Belajar": "Learning Groups",
 
     "SMA Negeri 1 Plus MATAULI Pandan adalah sekolah negeri unggulan di bawah naungan Yayasan Maju Tapian Nauli (MATAULI) serta Kementerian Pendidikan dan Kebudayaan di Provinsi Sumatera Utara. Pada tanggal 14 Juni 1994, angkatan pertama secara resmi dilantik oleh Panglima ABRI, Jenderal TNI Feisal Tanjung dan Dr. Ir. Akbar Tandjung serta tokoh-tokoh nasional asal Tapanuli Tengah.": "SMA Negeri 1 Plus MATAULI Pandan is an excellent state school under the Maju Tapian Nauli Foundation (MATAULI) and the Ministry of Education and Culture in North Sumatra Province. On June 14, 1994, the first class was officially inaugurated by the Commander of the Armed Forces, General TNI Feisal Tanjung and Dr. Ir. Akbar Tandjung, along with national figures from Central Tapanuli.",
@@ -200,12 +200,12 @@
     "Wakasek Asrama": "Vice Principal for Dormitory",
     "Wakil Kepala Sekolah": "Vice Principal",
 
-    "GURU & TENAGA KEPENDIDIKAN": "TEACHERS & EDUCATIONAL PERSONNEL",
+    "GURU & TENAGA KEPENDIDIKAN": "TEACHERS & EDUCATIONAL STAFF",
     "Pimpinan Sekolah": "School Leadership",
     "Belum ada data pimpinan.": "No leadership data available.",
     "GURU MATA PELAJARAN": "SUBJECT TEACHERS",
     "GURU MATA PELAJARAN INTERNATIONAL BACCALAUREATE (IB)": "INTERNATIONAL BACCALAUREATE (IB) SUBJECT TEACHERS",
-    "TENAGA KEPENDIDIKAN": "EDUCATIONAL SUPPORT STAFF",
+    "TENAGA KEPENDIDIKAN": "EDUCATIONAL STAFF",
     "Belum ada data.": "No data available.",
 
     "FASILITAS SEKOLAH": "SCHOOL FACILITIES",
