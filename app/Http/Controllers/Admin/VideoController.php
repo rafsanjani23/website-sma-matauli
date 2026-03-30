@@ -8,10 +8,20 @@ use Illuminate\Http\Request;
 
 class VideoController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $items = Video::latest()->get();
-        return view('admin.video.index', compact('items'));
+        $search = $request->query('search');
+        if (!empty($search)) {
+            $items = Video::where('video.judul', 'like', '%' . $search . '%')
+                ->paginate(20)->onEachSide(2)
+                ->fragment('video');
+        } else {
+            $items = Video::latest()->paginate(20)->onEachSide(2)->fragment('video');
+        }
+        return view('admin.video.index', with([
+            'items' => $items,
+            'search' => $search
+        ]));
     }
 
     public function create()

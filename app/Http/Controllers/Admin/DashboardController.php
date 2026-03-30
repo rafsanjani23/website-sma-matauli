@@ -17,7 +17,7 @@ class DashboardController extends Controller
             ['label' => 'Fasilitas Asrama', 'count' => DB::table('fasilitas_asrama')->count(), 'route' => 'admin.fasilitas-asrama.index', 'icon' => 'home'],
             ['label' => 'Kegiatan Asrama', 'count' => DB::table('kegiatan_asrama')->count(), 'route' => 'admin.kegiatan-asrama.index', 'icon' => 'calendar'],
             ['label' => 'Pimpinan', 'count' => DB::table('pimpinan')->count(), 'route' => 'admin.pimpinan.index', 'icon' => 'users'],
-            ['label' => 'Tenaga Pendidik', 'count' => DB::table('tenaga_pendidik')->count(), 'route' => 'admin.tenaga-pendidik.index', 'icon' => 'academic'],
+            ['label' => 'Guru', 'count' => DB::table('tenaga_pendidik')->count(), 'route' => 'admin.tenaga-pendidik.index', 'icon' => 'academic'],
             ['label' => 'Tenaga Kependidikan', 'count' => DB::table('tenaga_kependidikan')->count(), 'route' => 'admin.tenaga-kependidikan.index', 'icon' => 'briefcase'],
             ['label' => 'Kemitraan', 'count' => DB::table('kemitraan')->count(), 'route' => 'admin.kemitraan.index', 'icon' => 'handshake'],
             ['label' => 'Studi Lanjut', 'count' => DB::table('studi_lanjut')->count(), 'route' => 'admin.studi-lanjut.index', 'icon' => 'graduation'],

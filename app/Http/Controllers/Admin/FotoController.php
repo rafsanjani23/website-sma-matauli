@@ -9,10 +9,20 @@ use Illuminate\Support\Facades\Storage;
 
 class FotoController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $items = Foto::latest()->get();
-        return view('admin.foto.index', compact('items'));
+        $search = $request->query('search');
+        if (!empty($search)) {
+            $items = Foto::where('foto.judul', 'like', '%' . $search . '%')
+                ->paginate(20)->onEachSide(2)
+                ->fragment('foto');
+        } else {
+            $items = Foto::latest()->paginate(20)->onEachSide(2)->fragment('foto');
+        }
+        return view('admin.foto.index', with([
+            'items' => $items,
+            'search' => $search
+        ]));
     }
 
     public function create()
