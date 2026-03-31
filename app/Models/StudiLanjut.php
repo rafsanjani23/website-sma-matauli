@@ -9,9 +9,9 @@ class StudiLanjut extends Model
     protected $table = 'studi_lanjut';
 
     protected $fillable = [
-        'foto',
         'nama_alumni',
         'nama_lembaga',
         'kategori',
+        'angkatan',
     ];
 }

@@ -1,23 +1,58 @@
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 p-2">
-    @forelse ($ptln as $item)
-    <div class="border border-gray-300 border-b-2 rounded-md overflow-hidden">
-        <div class="w-full aspect-3/2 bg-gray-50">
-            @if ($item->foto)
-                <img src="{{ Storage::url($item->foto) }}" class="w-full h-full object-fill" alt="{{ $item->nama_alumni }}" />
-            @else
-                <div class="w-full h-full flex items-center justify-center bg-gray-100">
-                    <svg class="w-16 h-16 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-                </div>
-            @endif
-        </div>
-        <div class="p-4">
-            <h4 class="text-slate-900 text-base font-semibold">{{ $item->nama_alumni }}</h4>
-            <div class="mt-4">
-                <p class="text-slate-600 text-sm leading-relaxed">{{ $item->nama_lembaga }}</p>
-            </div>
-        </div>
+<div class="max-w-4xl mx-auto">
+    <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+        <table class="min-w-full">
+            <thead>
+                <tr class="bg-gray-50">
+                    <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">No.</th>
+                    <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Nama Alumni</th>
+                    <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Lembaga</th>
+                    <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Angkatan</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100">
+                @php $no = 1 + (($ptln->currentPage() - 1) * $ptln->perPage()) @endphp
+                @forelse ($ptln as $item)
+                    <tr class="hover:bg-gray-50 transition">
+                        <td class="px-6 py-4 text-sm text-gray-500">{{ $no++ }}</td>
+                        <td class="px-6 py-4 text-sm font-semibold text-slate-900">{{ $item->nama_alumni }}</td>
+                        <td class="px-6 py-4 text-sm text-slate-600">{{ $item->nama_lembaga }}</td>
+                        <td class="px-6 py-4 text-sm text-slate-600">{{ $item->angkatan }}</td>
+                    </tr>
+                @empty
+                    <tr>
+                        <td colspan="4" class="px-6 py-12 text-center text-gray-400 text-sm">{{ __('Belum ada data.') }}</td>
+                    </tr>
+                @endforelse
+            </tbody>
+        </table>
     </div>
-    @empty
-    <div class="col-span-full text-center py-8 text-gray-400">{{ __('Belum ada data.') }}</div>
-    @endforelse
+
+    @if ($ptln->lastPage() > 1)
+        <ul class="flex space-x-2 justify-center mt-6">
+            <li>
+                <a href="{{ $ptln->previousPageUrl() ?? '#' }}"
+                    class="flex items-center justify-center shrink-0 bg-gray-100 w-9 h-9 rounded-md {{ $ptln->onFirstPage() ? 'opacity-50 pointer-events-none' : '' }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3 fill-gray-400" viewBox="0 0 55.753 55.753">
+                        <path d="M12.745 23.915c.283-.282.59-.52.913-.727L35.266 1.581a5.4 5.4 0 0 1 7.637 7.638L24.294 27.828l18.705 18.706a5.4 5.4 0 0 1-7.636 7.637L13.658 32.464a5.367 5.367 0 0 1-.913-.727 5.367 5.367 0 0 1-1.572-3.911 5.369 5.369 0 0 1 1.572-3.911z" />
+                    </svg>
+                </a>
+            </li>
+            @for ($i = 1; $i <= $ptln->lastPage(); $i++)
+                <li>
+                    <a href="{{ $ptln->url($i) }}"
+                        class="flex items-center justify-center shrink-0 border {{ $ptln->currentPage() == $i ? 'bg-red-800 text-white border-red-800' : 'border-gray-200 hover:border-red-600 text-gray-900' }} cursor-pointer text-base font-medium px-[13px] h-9 rounded-md">
+                        {{ $i }}
+                    </a>
+                </li>
+            @endfor
+            <li>
+                <a href="{{ $ptln->nextPageUrl() ?? '#' }}"
+                    class="flex items-center justify-center shrink-0 border border-gray-200 hover:border-red-600 w-9 h-9 rounded-md {{ !$ptln->hasMorePages() ? 'opacity-50 pointer-events-none' : '' }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3 fill-gray-400 rotate-180" viewBox="0 0 55.753 55.753">
+                        <path d="M12.745 23.915c.283-.282.59-.52.913-.727L35.266 1.581a5.4 5.4 0 0 1 7.637 7.638L24.294 27.828l18.705 18.706a5.4 5.4 0 0 1-7.636 7.637L13.658 32.464a5.367 5.367 0 0 1-.913-.727 5.367 5.367 0 0 1-1.572-3.911 5.369 5.369 0 0 1 1.572-3.911z" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    @endif
 </div>

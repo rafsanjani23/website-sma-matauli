@@ -1,8 +1,8 @@
 <section id="studi-lanjut" class="py-12 bg-gray-50">
-    <div class="mx-auto max-w-7xl">
+    <div class="mx-auto max-w-7xl px-4">
 
         <!-- TAB LIST -->
-        <div class="flex justify-center mb-8">
+        <div class="flex justify-center mb-6">
             <div role="tablist" class="inline-flex gap-1 lg:gap-2 p-1 bg-matauli-red-dark rounded-full mb-4">
 
                 <button role="tab" id="tab-tni" aria-controls="panel-tni" aria-selected="true" class="px-4 lg:px-8 py-3 rounded-full text-sm lg:text-md font-medium transition-all duration-200
@@ -51,6 +51,20 @@
                 </button>
 
             </div>
+        </div>
+
+        <!-- ANGKATAN FILTER -->
+        <div class="flex justify-center mb-8">
+            <form action="{{ route('studi-lanjut') }}" method="GET" class="flex items-center gap-3">
+                <label for="angkatan" class="text-sm font-semibold text-slate-700">Filter Angkatan:</label>
+                <select name="angkatan" id="angkatan" onchange="this.form.submit()"
+                    class="px-4 py-2 border border-gray-300 rounded-lg text-sm text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent">
+                    <option value="">Semua Angkatan</option>
+                    @foreach ($angkatanList as $ank)
+                        <option value="{{ $ank }}" {{ $angkatan == $ank ? 'selected' : '' }}>{{ $ank }}</option>
+                    @endforeach
+                </select>
+            </form>
         </div>
 
         <!-- PANELS -->

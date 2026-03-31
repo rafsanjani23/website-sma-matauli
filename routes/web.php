@@ -98,13 +98,40 @@ Route::get('/kegiatan-asrama', function () {
 })->name('kegiatan-asrama');
 
 // alumni
-Route::get('/studi-lanjut', function () {
-    $tniPolri = \App\Models\StudiLanjut::where('kategori', 'TNI-Polri')->get();
-    $kedinasan = \App\Models\StudiLanjut::where('kategori', 'Kedinasan')->get();
-    $ptn = \App\Models\StudiLanjut::where('kategori', 'PTN')->get();
-    $pts = \App\Models\StudiLanjut::where('kategori', 'PTS')->get();
-    $ptln = \App\Models\StudiLanjut::where('kategori', 'PTLN')->get();
-    return view('pages.studi-lanjut', compact('tniPolri', 'kedinasan', 'ptn', 'pts', 'ptln'));
+Route::get('/studi-lanjut', function (\Illuminate\Http\Request $request) {
+    $angkatan = $request->query('angkatan');
+    $kategoriList = ['TNI-Polri', 'Kedinasan', 'PTN', 'PTS', 'PTLN'];
+
+    // Get total count for percentages
+    $total = \App\Models\StudiLanjut::count();
+    $percentages = [];
+    foreach ($kategoriList as $kat) {
+        $count = \App\Models\StudiLanjut::where('kategori', $kat)->count();
+        $percentages[$kat] = $total > 0 ? round(($count / $total) * 100, 1) : 0;
+    }
+
+    // Get all unique angkatan values for dropdown
+    $angkatanList = \App\Models\StudiLanjut::select('angkatan')->distinct()->orderBy('angkatan', 'desc')->pluck('angkatan');
+
+    // Build queries per category with optional angkatan filter + pagination
+    $perPage = 10;
+    $buildQuery = function ($kategori) use ($request, $angkatan, $perPage) {
+        $query = \App\Models\StudiLanjut::where('kategori', $kategori);
+        if (!empty($angkatan)) {
+            $query->where('angkatan', $angkatan);
+        }
+        return $query->orderBy('angkatan', 'desc')->orderBy('nama_alumni', 'asc')
+            ->paginate($perPage, ['*'], strtolower(str_replace('-', '', $kategori)) . '_page')
+            ->appends($request->query());
+    };
+
+    $tniPolri = $buildQuery('TNI-Polri');
+    $kedinasan = $buildQuery('Kedinasan');
+    $ptn = $buildQuery('PTN');
+    $pts = $buildQuery('PTS');
+    $ptln = $buildQuery('PTLN');
+
+    return view('pages.studi-lanjut', compact('tniPolri', 'kedinasan', 'ptn', 'pts', 'ptln', 'percentages', 'angkatanList', 'angkatan', 'total'));
 })->name('studi-lanjut');
 Route::get('/profesional-alumni', function () {
     $items = \App\Models\Profesional::latest()->get();
