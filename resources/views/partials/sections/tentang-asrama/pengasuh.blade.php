@@ -1,36 +1,44 @@
-<section id="pengasuh">
-<div role="accordion">
-    <button type="button"
-        class="accordion-button cursor-pointer w-full text-md font-bold text-left py-3 px-6 hover:bg-gray-100 text-slate-900 flex items-center transition-all border-2 rounded-4xl">
-        <span class="mr-4">{{ __('PENGASUH ASRAMA') }}</span>
-        <svg xmlns="http://www.w3.org/2000/svg"
-            class="w-3.75 h-3.75 fill-current ml-auto shrink-0 transition-transform duration-300 rotate-180"
-            viewBox="0 0 451.847 451.847">
-            <path
-                d="M225.923 354.706c-8.098 0-16.195-3.092-22.369-9.263L9.27 151.157c-12.359-12.359-12.359-32.397 0-44.751 12.354-12.354 32.388-12.354 44.748 0l171.905 171.915 171.906-171.909c12.359-12.354 32.391-12.354 44.744 0 12.365 12.354 12.365 32.392 0 44.751L248.292 345.449c-6.177 6.172-14.274 9.257-22.369 9.257z" />
-        </svg>
-    </button>
-    <div class="accordion-content overflow-hidden transition-all duration-300 ease-in-out">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-2 mt-3 px-6">
-            <div class="aspect-3/2">
-                <div
-                    class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto">
-                    <div class="aspect-3/2">
-                        <div class="w-full h-full flex items-center justify-center bg-gray-100">
-                            <svg class="w-16 h-16 text-gray-300" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                            </svg>
+<section id="pengasuh" class="py-15">
+    <div class="mb-10 mx-auto">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+                {{ __('Pengasuh Asrama') }}
+            </h2>
+            <div class="w-16 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
+        </div>
+    </div>
+    <div role="accordion">
+        <button type="button"
+            class="accordion-button cursor-pointer w-full text-md font-bold text-left py-3 px-6 hover:bg-gray-100 text-slate-900 flex items-center transition-all border-2 rounded-4xl">
+            <span class="mr-4">{{ __('PENGASUH ASRAMA') }}</span>
+            <svg xmlns="http://www.w3.org/2000/svg"
+                class="w-3.75 h-3.75 fill-current ml-auto shrink-0 transition-transform duration-300 rotate-180"
+                viewBox="0 0 451.847 451.847">
+                <path
+                    d="M225.923 354.706c-8.098 0-16.195-3.092-22.369-9.263L9.27 151.157c-12.359-12.359-12.359-32.397 0-44.751 12.354-12.354 32.388-12.354 44.748 0l171.905 171.915 171.906-171.909c12.359-12.354 32.391-12.354 44.744 0 12.365 12.354 12.365 32.392 0 44.751L248.292 345.449c-6.177 6.172-14.274 9.257-22.369 9.257z" />
+            </svg>
+        </button>
+        <div class="accordion-content overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-2 mt-3 px-6">
+                <div class="aspect-3/2">
+                    <div
+                        class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto">
+                        <div class="aspect-3/2">
+                            <div class="w-full h-full flex items-center justify-center bg-gray-100">
+                                <svg class="w-16 h-16 text-gray-300" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                                </svg>
+                            </div>
                         </div>
-                    </div>
-                    <div class="p-2">
-                        <h5 class="text-matauli-red-dark text-center text-md font-semibold">NAMA PENGASUH</h5>
+                        <div class="p-2">
+                            <h5 class="text-matauli-red-dark text-center text-md font-semibold">NAMA PENGASUH</h5>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </section>
 
 

@@ -2,7 +2,7 @@
     <div class="mb-20 mx-auto">
         <div class="text-center mb-10">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
-                {{ __('Sosial Media Kami') }}
+                {{ __('Sosial Media Asrama') }}
             </h2>
             <div class="w-16 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
         </div>
@@ -55,7 +55,7 @@
                         </g>
                     </svg>
                 </a>
-                <p class="mt-2 text-md text-slate-950 transition font-medium">Instagram</p>
+                <p class="mt-2 text-md md:text-lg text-slate-950 transition font-semibold">Instagram</p>
             </div>
 
             <!-- Facebook -->
@@ -80,7 +80,7 @@
                         </g>
                     </svg>
                 </a>
-                <p class="mt-2 text-md text-slate-950 transition font-medium">Facebook</p>
+                <p class="mt-2 text-md md:text-lg text-slate-950 transition font-semibold">Facebook</p>
             </div>
 
             <!-- YouTube -->
@@ -102,7 +102,7 @@
                         </g>
                     </svg>
                 </a>
-                <p class="mt-2 text-md text-slate-950 transition font-medium">YouTube</p>
+                <p class="mt-2 text-md md:text-lg text-slate-950 transition font-semibold">YouTube</p>
             </div>
         </div>
     </div>
