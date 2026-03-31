@@ -143,7 +143,7 @@
                         </div>
                     </div>
 
-                    <!-- Divider Asrama -->
+                    {{-- <!-- Divider Asrama -->
                     <div class="flex items-center gap-3 pt-1">
                         <div class="flex-1 h-px bg-white/10"></div>
                         <span
@@ -189,7 +189,7 @@
                                 asrama@sman1-matauli.sch.id
                             </a>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
 
@@ -206,8 +206,8 @@
                         <a href="{{ url('https://penerimaan.sman1-matauli.sch.id/') }}"
                             class="group flex items-center gap-2 text-yellow-400 hover:text-yellow-300 transition-all duration-300 font-semibold">
                             <svg xmlns="http://www.w3.org/2000/svg"
-                                class="h-4 w-4 transform group-hover:translate-x-1 transition-transform"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                class="h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M9 5l7 7-7 7" />
                             </svg>
@@ -220,28 +220,14 @@
                         <a href="https://erapor.kemdikbud.go.id"
                             class="group flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition-all duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg"
-                                class="h-4 w-4 transform group-hover:translate-x-1 transition-transform"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                class="h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M9 5l7 7-7 7" />
                             </svg>
                             <span class="text-sm font-medium">Erapor</span>
                         </a>
                     </li>
-
-                    {{-- Asrama --}}
-                    {{-- <li>
-                        <a href="{{ url('/asrama') }}"
-                            class="group flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition-all duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="h-4 w-4 transform group-hover:translate-x-1 transition-transform"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 5l7 7-7 7" />
-                            </svg>
-                            <span class="text-sm font-medium">Asrama</span>
-                        </a>
-                    </li> --}}
 
                     {{-- Dapodik --}}
                     <li>
@@ -270,6 +256,47 @@
                             <span class="text-sm font-medium">{{ __('Perpustakaan') }}</span>
                         </a>
                     </li>
+
+                    {{-- PUDD --}}
+                    <li>
+                        <a href="{{ asset('assets/pdf/SK Visi Misi SMA Negeri 1 Matauli Pandan 2025.pdf') }}"
+                            target="_blank" rel="noopener noreferrer"
+                            class="group flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition-all duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-4 w-4 transform group-hover:translate-x-1 transition-transform"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                            <span class="text-sm font-medium">PUDD</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-red-400 opacity-70"
+                                fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM8 17h8v1H8v-1zm0-3h8v1H8v-1zm0-3h5v1H8v-1z" />
+                            </svg>
+                        </a>
+                    </li>
+
+                    {{-- Perdupsis --}}
+                    <li>
+                        <a href="{{ asset('assets/pdf/SK Visi Misi SMA Negeri 1 Matauli Pandan 2025.pdf') }}"
+                            target="_blank" rel="noopener noreferrer"
+                            class="group flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition-all duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-4 w-4 transform group-hover:translate-x-1 transition-transform"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                            <span class="text-sm font-medium">Perdupsis</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-red-400 opacity-70"
+                                fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM8 17h8v1H8v-1zm0-3h8v1H8v-1zm0-3h5v1H8v-1z" />
+                            </svg>
+                        </a>
+                    </li>
+
                 </ul>
             </div>
 
