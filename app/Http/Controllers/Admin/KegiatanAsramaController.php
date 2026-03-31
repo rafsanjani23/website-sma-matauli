@@ -9,10 +9,20 @@ use Illuminate\Support\Facades\Storage;
 
 class KegiatanAsramaController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $items = KegiatanAsrama::latest()->get();
-        return view('admin.kegiatan-asrama.index', compact('items'));
+        $search = $request->query('search');
+        if(!empty($search)){
+            $items = KegiatanAsrama::where('kegiatan_asrama.nama', 'like' , '%'.$search.'%')
+            ->paginate(20)->onEachSide(2)
+            ->fragment('kegiatan_asrama');
+        }else{
+             $items = KegiatanAsrama::latest()->paginate(20)->onEachSide(2)->fragment('kegiatan_asrama');
+        }
+        return view('admin.kegiatan-asrama.index', with([
+            'items' => $items,
+            'search' => $search
+        ]));
     }
 
     public function create()

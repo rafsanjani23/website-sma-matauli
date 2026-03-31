@@ -9,10 +9,23 @@ use Illuminate\Support\Facades\Storage;
 
 class PrestasiController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $items = Prestasi::latest()->get();
-        return view('admin.prestasi.index', compact('items'));
+        $search = $request->query('search');
+        if (!empty($search)) {
+            $items = Prestasi::where('prestasi.judul', 'like', '%' . $search . '%')
+                ->orWhere('prestasi.tanggal', 'like', '%' . $search . '%')
+                ->orWhere('prestasi.nama_lomba', 'like', '%' . $search . '%')
+                ->orWhere('prestasi.tingkatan', 'like', '%' . $search . '%')
+                ->paginate(20)->onEachSide(2)
+                ->fragment('prestasi');
+        } else {
+            $items = Prestasi::latest()->paginate(20)->onEachSide(2)->fragment('prestasi');
+        }
+        return view('admin.prestasi.index', with([
+            'items' => $items,
+            'search' => $search
+        ]));
     }
 
     public function create()

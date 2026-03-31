@@ -9,10 +9,21 @@ use Illuminate\Support\Facades\Storage;
 
 class FasilitasSekolahController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $items = FasilitasSekolah::latest()->get();
-        return view('admin.fasilitas-sekolah.index', compact('items'));
+           $search = $request->query('search');
+        if(!empty($search)){
+            $items = FasilitasSekolah::where('fasilitas_sekolah.nama', 'like' , '%'.$search.'%')
+            ->orWhere('fasilitas_sekolah.kategori', 'like' , '%'.$search.'%')
+            ->paginate(20)->onEachSide(2)
+            ->fragment('fasilitas_sekolah');
+        }else{
+             $items = FasilitasSekolah::latest()->paginate(20)->onEachSide(2)->fragment('fasilitas_sekolah');
+        }
+        return view('admin.fasilitas-sekolah.index', with([
+            'items' => $items,
+            'search' => $search
+        ]));
     }
 
     public function create()

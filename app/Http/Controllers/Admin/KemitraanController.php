@@ -9,10 +9,20 @@ use Illuminate\Support\Facades\Storage;
 
 class KemitraanController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $items = Kemitraan::latest()->get();
-        return view('admin.kemitraan.index', compact('items'));
+        $search = $request->query('search');
+        if (!empty($search)) {
+            $items = Kemitraan::where('kemitraan.nama_mitra', 'like', '%' . $search . '%')
+                ->paginate(20)->onEachSide(2)
+                ->fragment('kemitraan');
+        } else {
+            $items = Kemitraan::latest()->paginate(20)->onEachSide(2)->fragment('kemitraan');
+        }
+        return view('admin.kemitraan.index', with([
+            'items' => $items,
+            'search' => $search
+        ]));
     }
 
     public function create()

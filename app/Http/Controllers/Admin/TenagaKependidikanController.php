@@ -9,10 +9,21 @@ use Illuminate\Support\Facades\Storage;
 
 class TenagaKependidikanController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $items = TenagaKependidikan::latest()->get();
-        return view('admin.tenaga-kependidikan.index', compact('items'));
+        $search = $request->query('search');
+        if (!empty($search)) {
+            $items = TenagaKependidikan::where('tenaga_kependidikan.nama', 'like', '%' . $search . '%')
+                ->orWhere('tenaga_kependidikan.jabatan', 'like', '%' . $search . '%')
+                ->paginate(20)->onEachSide(2)
+                ->fragment('tenaga_kependidikan');
+        } else {
+            $items = TenagaKependidikan::latest()->paginate(20)->onEachSide(2)->fragment('tenaga_kependidikan');
+        }
+        return view('admin.tenaga-kependidikan.index', with([
+            'items' => $items,
+            'search' => $search
+        ]));
     }
 
     public function create()

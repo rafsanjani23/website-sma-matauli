@@ -49,7 +49,7 @@
                 </thead>
                 <tbody class="divide-y divide-gray-100">
                     @php
-                        $no = 1 + ($items->currentPage() - 1) * $items->perPage();
+                        $no = 1 + (($items->currentPage() - 1) * $items->perPage())
                     @endphp
                     @forelse ($items as $item)
                         <tr class="hover:bg-gray-50">
@@ -105,10 +105,16 @@
                     {{-- Number --}}
                     @for ($i = 1; $i <= $items->lastPage(); $i++)
                         <li>
+<<<<<<< HEAD
+                            <a href="{{ $items->url($i) }}" class="flex items-center justify-center shrink-0 border
+                                                   {{ $items->currentPage() == $i ? 'bg-red-800 text-white border-red-800' : 'border-gray-200 hover:border-red-600 text-gray-900' }}
+                                                   cursor-pointer text-base font-medium px-[13px] h-9 rounded-md">
+=======
                             <a href="{{ $items->url($i) }}"
                                 class="flex items-center justify-center shrink-0 border
                                                    {{ $items->currentPage() == $i ? 'bg-red-800 text-white border-red-800' : 'border-gray-200 hover:border-red-600 text-gray-900' }}
                                                    cursor-pointer text-base font-medium px-3.25 h-9 rounded-md">
+>>>>>>> main
 
                                 {{ $i }}
 

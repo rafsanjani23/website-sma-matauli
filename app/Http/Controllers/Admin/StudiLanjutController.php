@@ -9,10 +9,22 @@ use Illuminate\Support\Facades\Storage;
 
 class StudiLanjutController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $items = StudiLanjut::latest()->get();
-        return view('admin.studi-lanjut.index', compact('items'));
+        $search = $request->query('search');
+        if (!empty($search)) {
+            $items = StudiLanjut::where('studi_lanjut.nama_alumni', 'like', '%' . $search . '%')
+                ->orWhere('studi_lanjut.nama_lembaga', 'like', '%' . $search . '%')
+                ->orWhere('studi_lanjut.kategori', 'like', '%' . $search . '%')
+                ->paginate(20)->onEachSide(2)
+                ->fragment('studi_lanjut');
+        } else {
+            $items = StudiLanjut::latest()->paginate(20)->onEachSide(2)->fragment('studi_lanjut');
+        }
+        return view('admin.studi-lanjut.index', with([
+            'items' => $items,
+            'search' => $search
+        ]));
     }
 
     public function create()

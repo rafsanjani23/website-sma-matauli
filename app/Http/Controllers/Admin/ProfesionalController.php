@@ -9,10 +9,21 @@ use Illuminate\Support\Facades\Storage;
 
 class ProfesionalController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $items = Profesional::latest()->get();
-        return view('admin.profesional.index', compact('items'));
+        $search = $request->query('search');
+        if (!empty($search)) {
+            $items = Profesional::where('profesional.nama', 'like', '%' . $search . '%')
+                ->orWhere('profesional.nama_lembaga', 'like', '%' . $search . '%')
+                ->paginate(20)->onEachSide(2)
+                ->fragment('profesional');
+        } else {
+            $items = Profesional::latest()->paginate(20)->onEachSide(2)->fragment('profesional');
+        }
+        return view('admin.profesional.index', with([
+            'items' => $items,
+            'search' => $search
+        ]));
     }
 
     public function create()
