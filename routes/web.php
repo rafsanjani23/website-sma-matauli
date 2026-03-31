@@ -50,6 +50,9 @@ Route::get('/visi-misi', function () {
 Route::get('/struktur', function () {
     return view('pages.struktur');
 })->name('struktur');
+Route::get('/komite', function () {
+    return view('pages.komite');
+})->name('komite');
 Route::get('/tendik', function () {
     $pimpinan = \App\Models\Pimpinan::all();
     $guruMapel = \App\Models\TenagaPendidik::where('kategori', 'Guru Mata Pelajaran')->get();
@@ -88,6 +91,9 @@ Route::get('/program-kemendikdasmen', function () {
 })->name('program-kemendikdasmen');
 
 // asrama
+Route::get('/tentang-asrama', function (){
+    return view('pages.tentang-asrama');
+})->name('tentang-asrama');
 Route::get('/fasilitas-asrama', function () {
     $items = \App\Models\FasilitasAsrama::latest()->get();
     return view('pages.fasilitas-asrama', compact('items'));

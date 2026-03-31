@@ -120,6 +120,8 @@
                     <li><a href="{{ route('visi-misi') }}" class="dropdown-item">{{ __('Visi & Misi') }}</a></li>
                     <li><a href="{{ url('/struktur') }}" class="dropdown-item">{{ __('Struktur') }}</a>
                     </li>
+                    <li><a href="{{ url('/komite') }}" class="dropdown-item">{{ __('Komite') }}</a>
+                    </li>
                     <li><a href="{{ url('/tendik') }}" class="dropdown-item">{{ __('Guru') }}
                             & {{ __('Tenaga Kependidikan') }}</a></li>
                     <li><a href="{{ url('/fasilitas') }}" class="dropdown-item">{{ __('Fasilitas') }}</a>
@@ -166,11 +168,11 @@
                 </button>
 
                 <ul class="nav-dropdown-content">
-                    <li><a href="{{ url('/fasilitas-asrama') }}"
-                            class="dropdown-item">{{ __('Fasilitas Asrama') }}</a>
+                    <li><a href="{{ url('/tentang-asrama') }}" class="dropdown-item">{{ __('Tentang Asrama') }}</a>
                     </li>
-                    <li><a href="{{ route('kegiatan-asrama') }}"
-                            class="dropdown-item">{{ __('Kegiatan Asrama') }}</a>
+                    <li><a href="{{ url('/fasilitas-asrama') }}" class="dropdown-item">{{ __('Fasilitas Asrama') }}</a>
+                    </li>
+                    <li><a href="{{ route('kegiatan-asrama') }}" class="dropdown-item">{{ __('Kegiatan Asrama') }}</a>
                     </li>
                 </ul>
             </li>
@@ -190,8 +192,7 @@
                 <ul class="nav-dropdown-content">
                     <li><a href="{{ route('studi-lanjut') }}" class="dropdown-item">{{ __('Studi Lanjut') }}</a>
                     </li>
-                    <li><a href="{{ route('profesional-alumni') }}"
-                            class="dropdown-item">{{ __('Professional') }}</a>
+                    <li><a href="{{ route('profesional-alumni') }}" class="dropdown-item">{{ __('Professional') }}</a>
                     </li>
                     <li><a href="{{ route('testimonials') }}" class="dropdown-item">{{ __('Testimonials') }}</a>
                     </li>
@@ -220,8 +221,8 @@
         <!-- Mobile Menu Button -->
         <button id="menuToggle" aria-label="Toggle menu" type="button"
             class="inline-flex lg:hidden items-center justify-center p-2 rounded-md text-white hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition-colors">
-            <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                viewBox="0 0 24 24" stroke="currentColor">
+            <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
             <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none"
@@ -290,6 +291,9 @@
                     <li><a href="{{ url('/struktur') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Struktur') }}</a>
                     </li>
+                    <li><a href="{{ url('/komite') }}"
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Komite') }}</a>
+                    </li>
                     <li><a href="{{ url('/tendik') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Guru') }}
                             & {{ __('Tenaga Kependidikan') }}</a></li>
@@ -342,6 +346,9 @@
                     </svg>
                 </button>
                 <ul class="mobile-dropdown-content bg-gray-50">
+                    <li><a href="{{ route('tentang-asrama') }}"
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Tentang Asrama') }}</a>
+                    </li>
                     <li><a href="{{ route('fasilitas-asrama') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Fasilitas Asrama') }}</a>
                     </li>
@@ -407,8 +414,7 @@
                 <div class="space-y-3 mb-4">
                     <a href="mailto:matauli@www.sman1-matauli.sch.id"
                         class="flex items-center gap-2 text-sm text-gray-600 hover:text-orange-600 transition">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor"
-                            viewBox="0 0 24 24">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
                             <path
                                 d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                         </svg>
@@ -417,8 +423,7 @@
 
                     <a href="tel:+6282121313131"
                         class="flex items-center gap-2 text-sm text-gray-600 hover:text-orange-600 transition">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor"
-                            viewBox="0 0 24 24">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
                             <path
                                 d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
                         </svg>

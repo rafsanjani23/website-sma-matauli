@@ -9,10 +9,20 @@ use Illuminate\Support\Facades\Storage;
 
 class EkstrakurikulerController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $items = Ekstrakurikuler::latest()->get();
-        return view('admin.ekstrakurikuler.index', compact('items'));
+        $search = $request->query('search');
+        if(!empty($search)){
+            $items = Ekstrakurikuler::where('ekstrakurikuler.nama', 'like' , '%'.$search.'%')
+            ->paginate(20)->onEachSide(2)
+            ->fragment('ekstrakurikuler');
+        }else{
+             $items = Ekstrakurikuler::latest()->paginate(20)->onEachSide(2)->fragment('ekstrakurikuler');
+        }
+        return view('admin.ekstrakurikuler.index', with([
+            'items' => $items,
+            'search' => $search
+        ]));
     }
 
     public function create()
