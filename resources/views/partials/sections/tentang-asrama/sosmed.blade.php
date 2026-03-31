@@ -55,7 +55,7 @@
                         </g>
                     </svg>
                 </a>
-                <p class="mt-2 text-sm">Instagram</p>
+                <p class="mt-2 text-md text-slate-950 transition font-medium">Instagram</p>
             </div>
 
             <!-- Facebook -->
@@ -80,7 +80,7 @@
                         </g>
                     </svg>
                 </a>
-                <p class="mt-2 text-sm">Facebook</p>
+                <p class="mt-2 text-md text-slate-950 transition font-medium">Facebook</p>
             </div>
 
             <!-- YouTube -->
@@ -102,7 +102,7 @@
                         </g>
                     </svg>
                 </a>
-                <p class="mt-2 text-sm">YouTube</p>
+                <p class="mt-2 text-md text-slate-950 transition font-medium">YouTube</p>
             </div>
         </div>
     </div>
