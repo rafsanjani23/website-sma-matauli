@@ -1,15 +1,9 @@
-<!-- ============================================ -->
-<!-- TENTANG KAMI SECTION -->
-<!-- ============================================ -->
 <section id="tentang-kami" class="relative py-10 md:py-12 lg:py-16 bg-[#fff9f9] overflow-hidden">
 
     {{-- BACKGROUND DECORATIONS --}}
     <div class="absolute inset-0 pointer-events-none select-none">
-        {{-- Blob kiri atas --}}
         <div class="absolute top-0 left-0 w-72 h-72 rounded-full bg-red-800/4"></div>
-        {{-- Blob kanan bawah --}}
         <div class="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-yellow-400/10"></div>
-        {{-- Dot grid subtle --}}
         <div class="absolute inset-0 opacity-30"
             style="background-image: radial-gradient(circle, #9f121240 1px, transparent 1px); background-size: 40px 40px; mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);">
         </div>
@@ -18,35 +12,177 @@
     <div class="relative container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
 
         {{-- ===================== --}}
+        {{-- PEMERINTAH PROVINSI BANNER --}}
+        {{-- ===================== --}}
+        <div class="mb-22 md:mb-26 scroll-animate opacity-0 translate-y-8 transition-all duration-700 ease-in-out">
+            <div class="relative rounded-3xl overflow-hidden shadow-xl border border-red-100">
+
+                {{-- Background --}}
+                <div class="absolute inset-0 bg-linear-to-br from-white via-red-50/40 to-yellow-50/30"></div>
+
+                {{-- Top accent bar --}}
+                <div class="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-red-800 via-yellow-400 to-red-800">
+                </div>
+
+                {{-- Bottom accent bar --}}
+                <div class="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-red-800 via-yellow-400 to-red-800">
+                </div>
+
+                {{-- Dot pattern --}}
+                <div class="absolute inset-0 opacity-[0.03]"
+                    style="background-image: radial-gradient(circle, #9f1212 1px, transparent 1px); background-size: 24px 24px;">
+                </div>
+
+                <div class="relative px-5 py-6 md:py-8">
+
+                    {{-- ===== MOBILE: Stack vertical ===== --}}
+                    {{-- ===== DESKTOP: Horizontal ===== --}}
+
+                    {{-- TEKS JUDUL (tampil di atas pada mobile, tengah pada desktop) --}}
+                    <div class="flex flex-col items-center text-center mb-5 md:hidden">
+                        <div class="w-9 h-9 rounded-full bg-red-800/10 flex items-center justify-center mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-800" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-base font-black text-red-800 leading-tight uppercase tracking-wide">
+                            Pemerintah Provinsi<br>
+                            <span class="text-gray-800">Sumatera Utara</span>
+                        </h3>
+                        <div class="flex items-center gap-2 mt-2">
+                            <div class="w-6 h-px bg-red-800/30"></div>
+                            <div class="w-2 h-2 rounded-full bg-yellow-400"></div>
+                            <div class="w-6 h-px bg-red-800/30"></div>
+                        </div>
+                    </div>
+
+                    {{-- FOTO GRID: 3 kolom di mobile, flex row di desktop --}}
+                    <div class="flex items-end justify-center gap-3 md:gap-4 lg:gap-6">
+
+                        {{-- FOTO KIRI: Gubernur & Wagub --}}
+                        <div class="flex items-end gap-2 md:gap-3 shrink-0">
+
+                            {{-- Gubernur --}}
+                            <div class="flex flex-col items-center">
+                                <div class="relative">
+                                    {{-- <div
+                                        class="absolute -inset-1 rounded-2xl bg-linear-to-b from-yellow-400/40 to-red-800/20 blur-sm">
+                                    </div> --}}
+                                    <div
+                                        class="relative w-22.5 h-27.5 sm:w-28 sm:h-32 md:w-32 md:h-36 lg:w-36 lg:h-44 xl:w-40 xl:h-48 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
+                                        <img src="assets/Gubernur_Sumut.png" alt="Gubernur Sumatera Utara"
+                                            class="w-full h-full object-cover object-top">
+                                        <div
+                                            class="absolute bottom-0 left-0 right-0 bg-linear-to-t from-red-900/90 to-transparent px-1.5 py-1.5">
+                                            <p
+                                                class="text-white text-[8px] md:text-[9px] font-bold leading-tight text-center">
+                                                M. Bobby Afif Nasution, S.E., M.M.</p>
+                                            <p
+                                                class="text-yellow-300 text-[7px] md:text-[8px] font-semibold text-center mt-0.5">
+                                                Gubernur</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {{-- Wagub --}}
+                            <div class="flex flex-col items-center">
+                                <div class="relative">
+                                    {{-- <div
+                                        class="absolute -inset-1 rounded-2xl bg-linear-to-b from-red-800/20 to-yellow-400/20 blur-sm">
+                                    </div> --}}
+                                    <div
+                                        class="relative w-22.5 h-27.5 sm:w-28 sm:h-32 md:w-32 md:h-36 lg:w-36 lg:h-44 xl:w-40 xl:h-48 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
+                                        <img src="assets/WakilGubernur_Sumut.png" alt="Wakil Gubernur Sumatera Utara"
+                                            class="w-full h-full object-cover object-top">
+                                        <div
+                                            class="absolute bottom-0 left-0 right-0 bg-linear-to-t from-red-900/90 to-transparent px-1.5 py-1.5">
+                                            <p
+                                                class="text-white text-[8px] md:text-[9px] font-bold leading-tight text-center">
+                                                H. Surya, B.Sc.</p>
+                                            <p
+                                                class="text-yellow-300 text-[7px] md:text-[8px] font-semibold text-center mt-0.5">
+                                                Wakil Gubernur</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- TEKS TENGAH — hanya tampil di md ke atas --}}
+                        <div
+                            class="hidden md:flex flex-1 flex-col items-center justify-center text-center px-2 md:px-4">
+                            <div class="w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mb-3">
+                                <img src="assets/Logo_Provinsi.png" alt="Logo Pemprov Sumut"
+                                    class="w-12 h-12 md:w-16 md:h-16 object-contain">
+                            </div>
+                            <h3
+                                class="text-base md:text-xl lg:text-2xl font-black text-red-800 leading-tight uppercase tracking-wide">
+                                Pemerintah<br>Provinsi<br>
+                                <span class="text-gray-800">Sumatera Utara</span>
+                            </h3>
+                            <div class="flex items-center gap-2 my-3">
+                                <div class="w-6 h-px bg-red-800/30"></div>
+                                <div class="w-2 h-2 rounded-full bg-yellow-400"></div>
+                                <div class="w-6 h-px bg-red-800/30"></div>
+                            </div>
+                        </div>
+
+                        {{-- FOTO KANAN: Kadisdik --}}
+                        <div class="flex items-end shrink-0">
+                            <div class="flex flex-col items-center">
+                                <div class="relative">
+                                    {{-- <div
+                                        class="absolute -inset-1 rounded-2xl bg-linear-to-b from-yellow-400/40 to-red-800/20 blur-sm">
+                                    </div> --}}
+                                    <div
+                                        class="relative w-22.5 h-27.5 sm:w-28 sm:h-32 md:w-32 md:h-36 lg:w-36 lg:h-44 xl:w-40 xl:h-48 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
+                                        <img src="assets/Kepala Dinas Pendidikan Sumatera Utara.png"
+                                            alt="Kepala Dinas Pendidikan Sumatera Utara"
+                                            class="w-full h-full object-cover object-top">
+                                        <div
+                                            class="absolute bottom-0 left-0 right-0 bg-linear-to-t from-red-900/90 to-transparent px-1.5 py-1.5">
+                                            <p
+                                                class="text-white text-[8px] md:text-[9px] font-bold leading-tight text-center">
+                                                Alexander Sinulingga, S.STP., M.Si.</p>
+                                            <p
+                                                class="text-yellow-300 text-[7px] md:text-[8px] font-semibold text-center mt-0.5">
+                                                Kepala Dinas Pendidikan</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{-- ===================== --}}
         {{-- SECTION HEADER --}}
         {{-- ===================== --}}
-        <div class="text-center mb-16 md:mb-20">
-            <span class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.3em] uppercase text-red-800 mb-4">
-            </span>
+        <div class="text-center mb-10 md:mb-12">
             <h2 class="mt-2 text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">{{ __('Tentang Kami') }}</h2>
             <div class="mt-4 mx-auto w-14 h-1 bg-yellow-400 rounded-full"></div>
         </div>
 
         {{-- ===================== --}}
         {{-- PROFILE GRID --}}
-        {{-- Foto kiri — Deskripsi tengah — Foto kanan --}}
         {{-- ===================== --}}
         <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.3fr_1fr] gap-12 lg:gap-8 items-center mb-20 md:mb-24">
 
             {{-- ===== KOLOM KIRI: Kepala Sekolah ===== --}}
             <div
                 class="flex flex-col items-center order-2 lg:order-1 scroll-animate opacity-0 -translate-x-10 transition-all duration-700 ease-in-out">
-
-                {{-- Foto dengan ring bertingkat --}}
                 <div class="relative mb-12">
-                    {{-- Ring terluar animasi --}}
                     <div
                         class="absolute -inset-4 rounded-full border border-red-200/60 border-dashed animate-[spin_20s_linear_infinite]">
                     </div>
-                    {{-- Ring tengah --}}
                     <div class="absolute -inset-1.5 rounded-full bg-linear-to-br from-yellow-400/30 to-transparent">
                     </div>
-
                     <div
                         class="w-52 h-52 md:w-60 md:h-60 lg:w-64 lg:h-64 rounded-full bg-linear-to-br from-red-800 to-red-950 p-0.75 shadow-2xl shadow-red-900/40 relative z-10">
                         <div class="w-full h-full rounded-full overflow-hidden bg-gray-100">
@@ -54,13 +190,9 @@
                                 style="width: 100%; height: 140%; object-fit: cover; object-position: center 0%; margin-top: 0;">
                         </div>
                     </div>
-
-                    {{-- Dot aksen kuning --}}
                     <div class="absolute top-2 right-2 w-4 h-4 rounded-full bg-yellow-400 ring-2 ring-white z-20"></div>
                     <div class="absolute bottom-14 -left-2 w-3 h-3 rounded-full bg-red-800/40 z-20"></div>
                 </div>
-
-                {{-- Name Badge --}}
                 <div class="text-center">
                     <div class="inline-block relative">
                         <div class="bg-white border border-red-100 rounded-2xl px-6 py-3.5 shadow-lg shadow-red-900/10">
@@ -76,30 +208,19 @@
             {{-- ===== KOLOM TENGAH: Deskripsi ===== --}}
             <div
                 class="order-3 lg:order-2 scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-in-out">
-
-                {{-- Card deskripsi --}}
                 <div class="relative group/card">
-
-                    {{-- Glow background --}}
                     <div
                         class="absolute -inset-1 bg-linear-to-br from-red-800/20 via-yellow-400/10 to-red-800/20 rounded-[28px] blur-lg opacity-0 group-hover/card:opacity-100 transition-opacity duration-700">
                     </div>
-
                     <div class="relative bg-white rounded-3xl overflow-hidden shadow-md border border-gray-100/80">
-
-                        {{-- TOP HEADER STRIP --}}
                         <div class="relative bg-linear-to-r from-red-800 to-red-900 px-8 py-5">
-                            {{-- Dot pattern di dalam header --}}
                             <div class="absolute inset-0 opacity-10"
                                 style="background-image: radial-gradient(circle, #fff 1px, transparent 1px); background-size: 16px 16px;">
                             </div>
-                            {{-- Shine line --}}
                             <div
                                 class="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-yellow-400/50 to-transparent">
                             </div>
-
                             <div class="relative flex items-center gap-3">
-                                {{-- Icon sekolah --}}
                                 <div class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-400"
                                         fill="currentColor" viewBox="0 0 24 24">
@@ -110,7 +231,6 @@
                                 <div>
                                     <p class="text-white font-bold text-sm leading-tight">SMAN 1 Matauli Pandan</p>
                                 </div>
-                                {{-- Badge akreditasi --}}
                                 <div
                                     class="ml-auto flex items-center gap-1.5 bg-yellow-400 text-yellow-900 text-[10px] font-black px-2.5 py-1 rounded-lg">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="currentColor"
@@ -122,10 +242,7 @@
                                 </div>
                             </div>
                         </div>
-
-                        {{-- BODY --}}
                         <div class="px-8 pt-7 pb-8">
-                            {{-- Quote besar di background --}}
                             <div class="relative">
                                 <span
                                     class="absolute -top-3 -left-2 text-7xl font-serif text-red-50 leading-none select-none pointer-events-none">"</span>
@@ -133,8 +250,6 @@
                                     {{ __('SMA Negeri 1 Plus Matauli Pandan merupakan sekolah negeri unggulan di bawah naungan Yayasan MATAULI dan Kementerian Pendidikan dan Kebudayaan Provinsi Sumatera Utara. Didirikan pada 14 Juni 1994, hingga tahun 2025 sekolah ini telah meluluskan 30 angkatan dengan lebih dari 8.000 alumni.') }}
                                 </p>
                             </div>
-
-                            {{-- CTA --}}
                             <div class="mt-5 flex items-center justify-between">
                                 <a href="/visi-misi"
                                     class="group/btn inline-flex items-center gap-2 bg-red-800 hover:bg-red-900 text-white font-bold px-6 py-2.5 rounded-full transition-all duration-300 hover:gap-3 shadow-lg shadow-red-900/25 text-sm">
@@ -149,7 +264,6 @@
                                 </a>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -157,17 +271,12 @@
             {{-- ===== KOLOM KANAN: Ketua Umum ===== --}}
             <div
                 class="flex flex-col items-center order-1 lg:order-3 scroll-animate opacity-0 translate-x-10 transition-all duration-700 ease-in-out">
-
-                {{-- Foto dengan ring bertingkat --}}
                 <div class="relative mb-12">
-                    {{-- Ring terluar animasi berlawanan arah --}}
                     <div
                         class="absolute -inset-4 rounded-full border border-red-200/60 border-dashed animate-[spin_20s_linear_infinite_reverse]">
                     </div>
-                    {{-- Ring tengah --}}
                     <div class="absolute -inset-1.5 rounded-full bg-linear-to-bl from-yellow-400/30 to-transparent">
                     </div>
-
                     <div
                         class="w-52 h-52 md:w-60 md:h-60 lg:w-64 lg:h-64 rounded-full bg-linear-to-br from-red-800 to-red-950 p-0.75 shadow-2xl shadow-red-900/40 relative z-10">
                         <div class="w-full h-full rounded-full overflow-hidden bg-gray-100">
@@ -175,19 +284,16 @@
                                 style="width: 100%; height: 110%; object-fit: cover; object-position: center 0%; margin-top: 0;">
                         </div>
                     </div>
-
-                    {{-- Dot aksen --}}
                     <div class="absolute top-2 left-2 w-4 h-4 rounded-full bg-yellow-400 ring-2 ring-white z-20"></div>
                     <div class="absolute bottom-14 -right-2 w-3 h-3 rounded-full bg-red-800/40 z-20"></div>
                 </div>
-
-                {{-- Name Badge --}}
                 <div class="text-center">
                     <div class="inline-block relative">
-                        <div class="bg-white border border-red-100 rounded-2xl px-6 py-3.5 shadow-lg shadow-red-900/10">
+                        <div
+                            class="bg-white border border-red-100 rounded-2xl px-6 py-3.5 shadow-lg shadow-red-900/10">
                             <div class="w-8 h-0.5 bg-yellow-400 mx-auto mb-2 rounded-full"></div>
-                            <p class="text-xs font-bold text-gray-800 whitespace-nowrap">Fitri Krisnawati Tandjung, B.Sc
-                            </p>
+                            <p class="text-xs font-bold text-gray-800 whitespace-nowrap">Fitri Krisnawati Tandjung,
+                                B.Sc</p>
                             <p class="text-[10px] text-red-800 font-semibold mt-1">
                                 {{ __('Ketua Umum Yayasan MATAULI') }}</p>
                         </div>
@@ -201,22 +307,18 @@
         {{-- STATISTICS BANNER --}}
         {{-- ===================== --}}
         <div class="relative rounded-3xl overflow-hidden">
-            {{-- BG gradient --}}
             <div class="absolute inset-0 bg-linear-to-r from-red-900 via-red-800 to-red-900"></div>
-            {{-- Dot pattern overlay --}}
             <div class="absolute inset-0 opacity-10"
                 style="background-image: radial-gradient(circle, #fff 1px, transparent 1px); background-size: 20px 20px;">
             </div>
-            {{-- Shine effect --}}
-            <div class="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-white/30 to-transparent">
+            <div
+                class="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-white/30 to-transparent">
             </div>
             <div
                 class="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-white/10 to-transparent">
             </div>
 
             <div class="relative grid grid-cols-2 md:grid-cols-4">
-
-                {{-- Stat 1: Peserta Didik --}}
                 <div
                     class="group flex flex-col items-center justify-center text-center px-6 py-10 border-r border-b md:border-b-0 border-white/10 hover:bg-white/5 transition-colors duration-300">
                     <p
@@ -228,8 +330,6 @@
                     <p class="text-red-200 text-xs font-semibold tracking-widest uppercase">{{ __('Peserta Didik') }}
                     </p>
                 </div>
-
-                {{-- Stat 2: Guru --}}
                 <div
                     class="group flex flex-col items-center justify-center text-center px-6 py-10 border-r-0 md:border-r border-b md:border-b-0 border-white/10 hover:bg-white/5 transition-colors duration-300">
                     <p
@@ -240,8 +340,6 @@
                     </div>
                     <p class="text-red-200 text-xs font-semibold tracking-widest uppercase">{{ __('Guru') }}</p>
                 </div>
-
-                {{-- Stat 3: Tendik --}}
                 <div
                     class="group flex flex-col items-center justify-center text-center px-6 py-10 border-r border-white/10 hover:bg-white/5 transition-colors duration-300">
                     <p
@@ -252,8 +350,6 @@
                     </div>
                     <p class="text-red-200 text-xs font-semibold tracking-widest uppercase">{{ __('Tendik') }}</p>
                 </div>
-
-                {{-- Stat 4: Rombongan Belajar --}}
                 <div
                     class="group flex flex-col items-center justify-center text-center px-6 py-10 hover:bg-white/5 transition-colors duration-300">
                     <p
@@ -265,12 +361,8 @@
                     <p class="text-red-200 text-xs font-semibold tracking-widest uppercase">
                         {{ __('Rombongan Belajar') }}</p>
                 </div>
-
             </div>
         </div>
 
     </div>
 </section>
-<!-- ============================================ -->
-<!-- TENTANG KAMI SECTION - END -->
-<!-- ============================================ -->
