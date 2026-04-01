@@ -33,13 +33,13 @@
                         <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">
                             No.</th>
                         <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">
-                            Foto</th>
-                        <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">
                             Nama Alumni</th>
                         <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">
                             Nama Lembaga</th>
                         <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">
                             Kategori</th>
+                        <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">
+                            Angkatan</th>
                         <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">
                             Aksi</th>
                     </tr>
@@ -51,14 +51,10 @@
                     @forelse ($items as $item)
                         <tr class="hover:bg-gray-50">
                             <td class="px-6 py-4 text-sm text-gray-700">{{ $no++ }}</td>
-                            <td class="px-6 py-4 text-sm text-gray-700">
-                                @if ($item->foto)
-                                    <img src="{{ Storage::url($item->foto) }}" alt="Foto" class="w-16 h-10 object-cover rounded" />
-                                @endif
-                            </td>
                             <td class="px-6 py-4 text-sm text-gray-700">{{ $item->nama_alumni }}</td>
                             <td class="px-6 py-4 text-sm text-gray-700">{{ $item->nama_lembaga }}</td>
                             <td class="px-6 py-4 text-sm text-gray-700">{{ $item->kategori }}</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">{{ $item->angkatan }}</td>
                             <td class="px-6 py-4">
                                 <div class="flex items-center gap-2">
                                     <a href="{{ route('admin.studi-lanjut.edit', $item->id) }}"

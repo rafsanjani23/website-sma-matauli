@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\StudiLanjut;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 
 class StudiLanjutController extends Controller
 {
@@ -16,6 +15,7 @@ class StudiLanjutController extends Controller
             $items = StudiLanjut::where('studi_lanjut.nama_alumni', 'like', '%' . $search . '%')
                 ->orWhere('studi_lanjut.nama_lembaga', 'like', '%' . $search . '%')
                 ->orWhere('studi_lanjut.kategori', 'like', '%' . $search . '%')
+                ->orWhere('studi_lanjut.angkatan', 'like', '%' . $search . '%')
                 ->paginate(20)->onEachSide(2)
                 ->fragment('studi_lanjut');
         } else {
@@ -35,15 +35,11 @@ class StudiLanjutController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'foto' => 'nullable|image|max:2048',
             'nama_alumni' => 'required|max:50',
             'nama_lembaga' => 'required|max:50',
             'kategori' => 'required|in:PTN,PTS,PTLN,TNI-Polri,Kedinasan',
+            'angkatan' => 'required|max:10',
         ]);
-
-        if ($request->hasFile('foto')) {
-            $validated['foto'] = $request->file('foto')->store('studi-lanjut', 'public');
-        }
 
         StudiLanjut::create($validated);
 
@@ -61,18 +57,11 @@ class StudiLanjutController extends Controller
         $item = StudiLanjut::findOrFail($id);
 
         $validated = $request->validate([
-            'foto' => 'nullable|image|max:2048',
             'nama_alumni' => 'required|max:50',
             'nama_lembaga' => 'required|max:50',
             'kategori' => 'required|in:PTN,PTS,PTLN,TNI-Polri,Kedinasan',
+            'angkatan' => 'required|max:10',
         ]);
-
-        if ($request->hasFile('foto')) {
-            if ($item->foto) {
-                Storage::disk('public')->delete($item->foto);
-            }
-            $validated['foto'] = $request->file('foto')->store('studi-lanjut', 'public');
-        }
 
         $item->update($validated);
 
@@ -82,11 +71,6 @@ class StudiLanjutController extends Controller
     public function destroy($id)
     {
         $item = StudiLanjut::findOrFail($id);
-
-        if ($item->foto) {
-            Storage::disk('public')->delete($item->foto);
-        }
-
         $item->delete();
 
         return redirect()->route('admin.studi-lanjut.index')->with('success', 'Data berhasil dihapus.');

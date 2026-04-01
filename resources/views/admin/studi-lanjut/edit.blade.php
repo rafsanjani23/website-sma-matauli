@@ -17,7 +17,7 @@
                     </ul>
                 </div>
             @endif
-            <form action="{{ route('admin.studi-lanjut.update', $item->id) }}" method="POST" enctype="multipart/form-data" class="space-y-5">
+            <form action="{{ route('admin.studi-lanjut.update', $item->id) }}" method="POST" class="space-y-5">
                 @csrf
                 @method('PUT')
                 <div>
@@ -29,13 +29,6 @@
                     <input type="text" name="nama_lembaga" id="nama_lembaga" value="{{ old('nama_lembaga', $item->nama_lembaga) }}" required class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
                 </div>
                 <div>
-                    <label for="foto" class="block text-sm font-semibold text-gray-700 mb-1.5">Foto</label>
-                    @if ($item->foto)
-                        <img src="{{ Storage::url($item->foto) }}" alt="Foto saat ini" class="w-40 h-24 object-cover rounded-lg mb-4" />
-                    @endif
-                    <input type="file" name="foto" id="foto" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm file:mr-4 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-red-50 file:text-red-800 hover:file:bg-red-100 transition" />
-                </div>
-                <div>
                     <label for="kategori" class="block text-sm font-semibold text-gray-700 mb-1.5">Kategori</label>
                     <select name="kategori" id="kategori" required class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">
                         <option value="">Pilih Kategori</option>
@@ -45,6 +38,10 @@
                         <option value="TNI-Polri" {{ old('kategori', $item->kategori) == 'TNI-Polri' ? 'selected' : '' }}>TNI-Polri</option>
                         <option value="Kedinasan" {{ old('kategori', $item->kategori) == 'Kedinasan' ? 'selected' : '' }}>Kedinasan</option>
                     </select>
+                </div>
+                <div>
+                    <label for="angkatan" class="block text-sm font-semibold text-gray-700 mb-1.5">Angkatan</label>
+                    <input type="text" name="angkatan" id="angkatan" value="{{ old('angkatan', $item->angkatan) }}" required placeholder="Contoh: 2024" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
                 </div>
                 <div class="pt-4">
                     <button type="submit" class="bg-red-800 hover:bg-red-900 text-white font-semibold px-6 py-2.5 rounded-xl text-sm transition">Simpan</button>
