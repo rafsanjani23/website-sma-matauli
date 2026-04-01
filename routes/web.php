@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\PengasuhController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashboardController;
@@ -50,6 +51,9 @@ Route::get('/visi-misi', function () {
 Route::get('/struktur', function () {
     return view('pages.struktur');
 })->name('struktur');
+Route::get('/komite', function () {
+    return view('pages.komite');
+})->name('komite');
 Route::get('/tendik', function () {
     $pimpinan = \App\Models\Pimpinan::all();
     $guruMapel = \App\Models\TenagaPendidik::where('kategori', 'Guru Mata Pelajaran')->get();
@@ -88,6 +92,10 @@ Route::get('/program-kemendikdasmen', function () {
 })->name('program-kemendikdasmen');
 
 // asrama
+Route::get('/tentang-asrama', function (){
+    $pengasuh = \App\Models\Pengasuh::latest()->get();
+    return view('pages.tentang-asrama', compact('pengasuh'));
+})->name('tentang-asrama');
 Route::get('/fasilitas-asrama', function () {
     $items = \App\Models\FasilitasAsrama::latest()->get();
     return view('pages.fasilitas-asrama', compact('items'));
@@ -301,5 +309,13 @@ Route::prefix('admin')->group(function () {
         Route::get('/ekstrakurikuler/{id}/edit', [EkstrakurikulerController::class, 'edit'])->name('admin.ekstrakurikuler.edit');
         Route::put('/ekstrakurikuler/{id}', [EkstrakurikulerController::class, 'update'])->name('admin.ekstrakurikuler.update');
         Route::delete('/ekstrakurikuler/{id}', [EkstrakurikulerController::class, 'destroy'])->name('admin.ekstrakurikuler.destroy');
+
+            // Pengasuh
+        Route::get('/pengasuh', [PengasuhController::class, 'index'])->name('admin.pengasuh.index');
+        Route::get('/pengasuh/create', [PengasuhController::class, 'create'])->name('admin.pengasuh.create');
+        Route::post('/pengasuh', [PengasuhController::class, 'store'])->name('admin.pengasuh.store');
+        Route::get('/pengasuh/{id}/edit', [PengasuhController::class, 'edit'])->name('admin.pengasuh.edit');
+        Route::put('/pengasuh/{id}', [PengasuhController::class, 'update'])->name('admin.pengasuh.update');
+        Route::delete('/pengasuh/{id}', [PengasuhController::class, 'destroy'])->name('admin.pengasuh.destroy');
     });
 });

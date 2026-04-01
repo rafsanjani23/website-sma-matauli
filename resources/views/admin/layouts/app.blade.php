@@ -72,6 +72,7 @@
                         ['route' => 'admin.fasilitas-sekolah.index', 'label' => 'Fasilitas Sekolah'],
                         ['route' => 'admin.fasilitas-asrama.index', 'label' => 'Fasilitas Asrama'],
                         ['route' => 'admin.kegiatan-asrama.index', 'label' => 'Kegiatan Asrama'],
+                        ['route' => 'admin.pengasuh.index', 'label' => 'Pengasuh Asrama'],
                         ['route' => 'admin.pimpinan.index', 'label' => 'Pimpinan'],
                         ['route' => 'admin.tenaga-pendidik.index', 'label' => 'Tenaga Pendidik'],
                         ['route' => 'admin.tenaga-kependidikan.index', 'label' => 'Tenaga Kependidikan'],
