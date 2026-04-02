@@ -52,7 +52,7 @@
 
                 {{-- CARD CONTENT --}}
 
-                <a href="mailto:asrama@sman1-matauli.sch.id">
+                <a href="mailto:sekret.asramamtn@gmail.com">
                     <div class="p-7 flex flex-col justify-center items-center text-center">
                         {{-- ICON CIRCLE: Lingkaran membesar saat hover --}}
                         <div
@@ -68,7 +68,7 @@
                         {{-- JUDUL & DESKRIPSI --}}
                         <h3 class="text-lg text-matauli-red-dark font-semibold mb-1 mt-2">{{ __('Email Asrama') }}</h3>
                         <p class="text-slate-950 transition text-md font-medium">
-                            asrama@sman1-matauli.sch.id
+                            sekret.asramamtn@gmail.com
                         </p>
                     </div>
 
