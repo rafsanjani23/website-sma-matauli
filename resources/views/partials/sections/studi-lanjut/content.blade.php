@@ -56,10 +56,10 @@
         <!-- ANGKATAN FILTER -->
         <div class="flex justify-center mb-8">
             <form action="{{ route('studi-lanjut') }}" method="GET" class="flex items-center gap-3">
-                <label for="angkatan" class="text-sm font-semibold text-slate-700">Filter Angkatan:</label>
+                <label for="angkatan" class="text-sm font-semibold text-slate-700">{{ __('Filter Angkatan:') }}</label>
                 <select name="angkatan" id="angkatan" onchange="this.form.submit()"
                     class="px-4 py-2 border border-gray-300 rounded-lg text-sm text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent">
-                    <option value="">Semua Angkatan</option>
+                    <option value="">{{ __('Semua Angkatan') }}</option>
                     @foreach ($angkatanList as $ank)
                         <option value="{{ $ank }}" {{ $angkatan == $ank ? 'selected' : '' }}>{{ $ank }}</option>
                     @endforeach

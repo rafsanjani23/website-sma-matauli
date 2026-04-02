@@ -1,7 +1,7 @@
 <section class="py-10 bg-white">
     <div class="mx-auto max-w-5xl px-4">
-        <h2 class="text-center text-xl md:text-2xl font-bold text-slate-900 mb-2">Distribusi Studi Lanjut Alumni</h2>
-        <p class="text-center text-sm text-gray-500 mb-10">Total {{ $total }} alumni tercatat</p>
+        <h2 class="text-center text-xl md:text-2xl font-bold text-slate-900 mb-2">{{ __('Distribusi Studi Lanjut Alumni') }}</h2>
+        <p class="text-center text-sm text-gray-500 mb-10">{{ __('Total') }} {{ $total }} {{ __('alumni tercatat') }}</p>
 
         @php
             $categories = [
@@ -50,7 +50,7 @@
                     @php $pct = $percentages[$key] ?? 0; @endphp
                     <div class="flex items-center gap-3">
                         <span class="w-4 h-4 rounded-full shrink-0" style="background-color: {{ $config['color'] }}"></span>
-                        <span class="text-sm md:text-base font-semibold text-slate-700 w-28">{{ $config['label'] }}</span>
+                        <span class="text-sm md:text-base font-semibold text-slate-700 w-28">{{ __($config['label']) }}</span>
                         <span class="text-sm md:text-base font-bold text-slate-900">{{ $pct }}%</span>
                     </div>
                 @endforeach
