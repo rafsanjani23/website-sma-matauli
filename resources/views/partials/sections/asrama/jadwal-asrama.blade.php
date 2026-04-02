@@ -148,7 +148,7 @@
                     @foreach ($days as $i => $day)
                         <button onclick="jadwalSlider.goTo({{ $i }})" id="day-pill-{{ $i }}"
                             class="day-pill px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 {{ $i === 0 ? 'bg-red-800 text-white shadow-lg scale-105' : 'bg-gray-100 text-gray-600 hover:bg-gray-200' }}">
-                            {{ $day }}
+                            {{ __($day) }}
                         </button>
                     @endforeach
                 </div>
@@ -165,7 +165,7 @@
             @foreach ($days as $i => $day)
                 <div id="jadwal-slide-{{ $i }}" class="jadwal-slide rounded-2xl overflow-hidden shadow-sm border border-gray-100 transition-all duration-300" style="{{ $i !== 0 ? 'display:none;' : '' }}">
                     <div class="bg-red-800 px-6 py-3 flex items-center justify-between">
-                        <h3 class="text-white font-bold text-lg tracking-wide">{{ $day }}</h3>
+                        <h3 class="text-white font-bold text-lg tracking-wide">{{ __($day) }}</h3>
                         <span class="text-white/60 text-sm">{{ $i + 1 }} / {{ count($days) }}</span>
                     </div>
                     <table class="w-full">
@@ -179,7 +179,7 @@
                             @foreach ($jadwal[$i] as $j => $item)
                                 <tr class="{{ $j % 2 === 0 ? 'bg-white' : 'bg-gray-50/50' }} hover:bg-yellow-50/50 transition-colors">
                                     <td class="px-6 py-3 text-red-800 font-mono font-semibold text-sm whitespace-nowrap">{{ $item[0] }}</td>
-                                    <td class="px-6 py-3 text-gray-700 text-sm">{{ $item[1] }}</td>
+                                    <td class="px-6 py-3 text-gray-700 text-sm">{{ __($item[1]) }}</td>
                                 </tr>
                             @endforeach
                         </tbody>
