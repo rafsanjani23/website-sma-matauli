@@ -47,7 +47,7 @@
                         </p>
                         <div
                             class="inline-flex items-center gap-2 text-red-800 font-semibold text-sm group-hover:gap-4 transition-all duration-300">
-                            <span>Selengkapnya</span>
+                            <span>{{ __('Selengkapnya') }}</span>
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300"
                                 viewBox="0 0 20 20" fill="currentColor">
@@ -89,7 +89,7 @@
                         </p>
                         <div
                             class="inline-flex items-center gap-2 text-red-800 font-semibold text-sm group-hover:gap-4 transition-all duration-300">
-                            <span>Selengkapnya</span>
+                            <span>{{ __('Selengkapnya') }}</span>
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300"
                                 viewBox="0 0 20 20" fill="currentColor">
@@ -131,7 +131,7 @@
                         </p>
                         <div
                             class="inline-flex items-center gap-2 text-red-800 font-semibold text-sm group-hover:gap-4 transition-all duration-300">
-                            <span>Selengkapnya</span>
+                            <span>{{ __('Selengkapnya') }}</span>
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300"
                                 viewBox="0 0 20 20" fill="currentColor">

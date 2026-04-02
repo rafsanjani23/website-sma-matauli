@@ -91,7 +91,7 @@
             <div class="text-center">
                 <a href="/galeri-media"
                     class="mt-10 group inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-8 py-3 rounded-full transition-all duration-300 hover:gap-4 shadow-lg shadow-yellow-900/30 text-sm md:text-base">
-                    <span>Selengkapnya</span>
+                    <span>{{ __('Selengkapnya') }}</span>
                     <svg xmlns="http://www.w3.org/2000/svg"
                         class="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" viewBox="0 0 20 20"
                         fill="currentColor">
@@ -134,7 +134,7 @@
                             <!-- CTA Arrow -->
                             <div
                                 class="mt-4 inline-flex items-center gap-2 text-matauli-red-dark font-semibold group-hover:gap-3 transition-all">
-                                <span>Selengkapnya</span>
+                                <span>{{ __('Selengkapnya') }}</span>
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="h-5 w-5 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20"
                                     fill="currentColor">
@@ -208,7 +208,7 @@
             <div class="text-center">
                 <a href="{{ route('testimonials') }}"
                     class="mt-10 group inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-8 py-3 rounded-full transition-all duration-300 hover:gap-4 shadow-lg shadow-yellow-900/30 text-sm md:text-base">
-                    Selengkapnya
+                    {{ __('Selengkapnya') }}
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" viewBox="0 0 20 20"
                         fill="currentColor">
                         <path fill-rule="evenodd"
