@@ -22,7 +22,7 @@
                         <p class="text-white/90 text-sm md:text-xl mb-6 md:mb-8 italic">
                             {{ __('Bergabung dan Tumbuh Bersama SMA Negeri 1 Matauli Pandan') }}
                         </p>
-                        <a href="{{ url('/ppdb') }}"
+                        <a href="https://penerimaan.sman1-matauli.sch.id/" target="_blank"
                             class="group inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-5 py-2.5 md:px-7 md:py-3.5 rounded-full transition-all duration-300 hover:gap-4 hover:shadow-2xl hover:shadow-yellow-400/30 hover:scale-105 shadow-lg text-sm md:text-base">
                             {{ __('Daftar Disini') }}
                             <svg xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +90,7 @@
                         <p class="text-white/90 text-sm md:text-xl mb-6 md:mb-8 italic">
                             {{ __('Fasilitas asrama modern dengan pembinaan akademik, keagamaan, dan pengembangan diri yang terintegrasi.') }}
                         </p>
-                        <a href="{{ url('/fasilitas-asrama') }}"
+                        <a href="{{ url('/tentang-asrama') }}"
                             class="group inline-flex items-center gap-2 md:gap-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-5 py-2.5 md:px-7 md:py-3.5 rounded-full transition-all duration-300 hover:gap-4 hover:shadow-2xl hover:shadow-yellow-400/30 hover:scale-105 shadow-lg text-sm md:text-base">
                             {{ __('Lihat Asrama') }}
                             <svg xmlns="http://www.w3.org/2000/svg"
