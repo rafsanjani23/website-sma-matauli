@@ -12,7 +12,7 @@
             @forelse ($pimpinan as $item)
                 <div class="aspect-3/2">
                     <div class="bg-red-900 text-white text-sm font-semibold py-1 rounded-full inline-block px-4 mb-2">
-                        {{ $item->jabatan }}
+                        {{ __($item->jabatan) }}
                     </div>
                     <div
                         class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto">
