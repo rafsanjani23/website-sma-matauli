@@ -14,7 +14,7 @@
                 </div>
             @empty
                 <div class="col-span-full text-center py-12 text-gray-400">
-                    Belum ada data ekstrakurikuler.
+                    {{ __('Belum ada data ekstrakurikuler.') }}
                 </div>
             @endforelse
         </div>
