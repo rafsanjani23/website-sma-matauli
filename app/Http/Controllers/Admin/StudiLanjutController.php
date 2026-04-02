@@ -19,7 +19,7 @@ class StudiLanjutController extends Controller
                 ->paginate(20)->onEachSide(2)
                 ->fragment('studi_lanjut');
         } else {
-            $items = StudiLanjut::latest()->paginate(20)->onEachSide(2)->fragment('studi_lanjut');
+            $items = StudiLanjut::orderBy('nama_alumni')->paginate(20)->onEachSide(2)->fragment('studi_lanjut');
         }
         return view('admin.studi-lanjut.index', with([
             'items' => $items,

@@ -17,7 +17,7 @@ class PengasuhController extends Controller
                 ->paginate(20)->onEachSide(2)
                 ->fragment('pengasuh');
         } else {
-            $items = Pengasuh::latest()->paginate(20)->onEachSide(2)->fragment('pengasuh');
+            $items = Pengasuh::orderBy('nama')->paginate(20)->onEachSide(2)->fragment('pengasuh');
         }
         return view('admin.pengasuh.index', with([
             'items' => $items,

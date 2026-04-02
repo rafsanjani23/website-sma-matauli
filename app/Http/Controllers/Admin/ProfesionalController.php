@@ -18,7 +18,7 @@ class ProfesionalController extends Controller
                 ->paginate(20)->onEachSide(2)
                 ->fragment('profesional');
         } else {
-            $items = Profesional::latest()->paginate(20)->onEachSide(2)->fragment('profesional');
+            $items = Profesional::orderBy('nama')->paginate(20)->onEachSide(2)->fragment('profesional');
         }
         return view('admin.profesional.index', with([
             'items' => $items,

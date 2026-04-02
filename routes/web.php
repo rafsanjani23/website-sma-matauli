@@ -56,9 +56,9 @@ Route::get('/komite', function () {
 })->name('komite');
 Route::get('/tendik', function () {
     $pimpinan = \App\Models\Pimpinan::all();
-    $guruMapel = \App\Models\TenagaPendidik::where('kategori', 'Guru Mata Pelajaran')->get();
-    $guruIB = \App\Models\TenagaPendidik::where('kategori', 'IB')->get();
-    $tendik = \App\Models\TenagaKependidikan::all();
+    $guruMapel = \App\Models\TenagaPendidik::where('kategori', 'Guru Mata Pelajaran')->orderBy('nama')->get();
+    $guruIB = \App\Models\TenagaPendidik::where('kategori', 'IB')->orderBy('nama')->get();
+    $tendik = \App\Models\TenagaKependidikan::orderBy('nama')->get();
     return view('pages.tendik', compact('pimpinan', 'guruMapel', 'guruIB', 'tendik'));
 })->name('tendik');
 Route::get('/fasilitas', function () {
@@ -68,7 +68,7 @@ Route::get('/fasilitas', function () {
     return view('pages.fasilitas-sekolah', compact('labStudi', 'akademik', 'umum'));
 })->name('fasilitas');
 Route::get('/ekstrakurikuler', function () {
-    $items = \App\Models\Ekstrakurikuler::latest()->get();
+    $items = \App\Models\Ekstrakurikuler::orderBy('nama')->get();
     return view('pages.ekstrakurikuler', compact('items'));
 })->name('ekstrakurikuler');
 Route::get('/mitra', function () {
@@ -93,7 +93,7 @@ Route::get('/program-kemendikdasmen', function () {
 
 // asrama
 Route::get('/tentang-asrama', function (){
-    $pengasuh = \App\Models\Pengasuh::latest()->get();
+    $pengasuh = \App\Models\Pengasuh::orderBy('nama')->get();
     return view('pages.tentang-asrama', compact('pengasuh'));
 })->name('tentang-asrama');
 Route::get('/fasilitas-asrama', function () {
@@ -142,7 +142,7 @@ Route::get('/studi-lanjut', function (\Illuminate\Http\Request $request) {
     return view('pages.studi-lanjut', compact('tniPolri', 'kedinasan', 'ptn', 'pts', 'ptln', 'percentages', 'angkatanList', 'angkatan', 'total'));
 })->name('studi-lanjut');
 Route::get('/profesional-alumni', function () {
-    $items = \App\Models\Profesional::latest()->get();
+    $items = \App\Models\Profesional::orderBy('nama')->get();
     return view('pages.profesional-alumni', compact('items'));
 })->name('profesional-alumni');
 

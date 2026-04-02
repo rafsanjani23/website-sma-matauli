@@ -19,7 +19,7 @@ class TenagaPendidikController extends Controller
             ->paginate(20)->onEachSide(2)
             ->fragment('tenaga_pendidik');
         } else {
-            $items = TenagaPendidik::latest()->paginate(20)->onEachSide(2)->fragment('tenaga_pendidik');
+            $items = TenagaPendidik::orderBy('nama')->paginate(20)->onEachSide(2)->fragment('tenaga_pendidik');
         }
         return view('admin.tenaga-pendidik.index', with([
             'items' => $items,

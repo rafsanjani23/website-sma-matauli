@@ -18,7 +18,7 @@ class TenagaKependidikanController extends Controller
                 ->paginate(20)->onEachSide(2)
                 ->fragment('tenaga_kependidikan');
         } else {
-            $items = TenagaKependidikan::latest()->paginate(20)->onEachSide(2)->fragment('tenaga_kependidikan');
+            $items = TenagaKependidikan::orderBy('nama')->paginate(20)->onEachSide(2)->fragment('tenaga_kependidikan');
         }
         return view('admin.tenaga-kependidikan.index', with([
             'items' => $items,

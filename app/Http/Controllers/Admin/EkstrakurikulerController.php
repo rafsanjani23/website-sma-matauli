@@ -17,7 +17,7 @@ class EkstrakurikulerController extends Controller
             ->paginate(20)->onEachSide(2)
             ->fragment('ekstrakurikuler');
         }else{
-             $items = Ekstrakurikuler::latest()->paginate(20)->onEachSide(2)->fragment('ekstrakurikuler');
+             $items = Ekstrakurikuler::orderBy('nama')->paginate(20)->onEachSide(2)->fragment('ekstrakurikuler');
         }
         return view('admin.ekstrakurikuler.index', with([
             'items' => $items,
