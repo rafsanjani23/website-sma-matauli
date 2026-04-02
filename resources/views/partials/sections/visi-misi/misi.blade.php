@@ -21,7 +21,7 @@
                     class="text-[11px] font-bold tracking-[0.22em] uppercase text-red-800">{{ __('Langkah Nyata') }}</span>
             </div>
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                {{ __('Misi') }} <span class="text-red-800">{{ __('Sekolah') }}</span>
+                {{ __('Misi Sekolah') }}
             </h2>
             <div class="mt-4 w-11 h-1 bg-yellow-400 rounded-full"></div>
         </div>
