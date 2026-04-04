@@ -63,8 +63,7 @@
                                 <div class="flex items-center gap-2">
                                     <a href="{{ route('admin.ekstrakurikuler.edit', $item->id) }}"
                                         class="text-blue-600 hover:text-blue-800 text-sm font-medium">Edit</a>
-                                    <form action="{{ route('admin.ekstrakurikuler.destroy', $item->id) }}" method="POST"
-                                        onsubmit="return confirm('Yakin ingin menghapus data ini?')">
+                                    <form action="{{ route('admin.ekstrakurikuler.destroy', $item->id) }}" method="POST">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit"

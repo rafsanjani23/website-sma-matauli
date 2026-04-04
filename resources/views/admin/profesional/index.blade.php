@@ -61,8 +61,7 @@ w@extends('admin.layouts.app')
                                 <div class="flex items-center gap-2">
                                     <a href="{{ route('admin.profesional.edit', $item->id) }}"
                                         class="text-blue-600 hover:text-blue-800 text-sm font-medium">Edit</a>
-                                    <form action="{{ route('admin.profesional.destroy', $item->id) }}" method="POST"
-                                        onsubmit="return confirm('Yakin ingin menghapus?')">
+                                    <form action="{{ route('admin.profesional.destroy', $item->id) }}" method="POST">
                                         @csrf @method('DELETE')
                                         <button type="submit"
                                             class="text-red-600 hover:text-red-800 text-sm font-medium">Hapus</button>
