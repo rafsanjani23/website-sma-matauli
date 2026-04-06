@@ -14,22 +14,22 @@
         {{-- ===================== --}}
         {{-- PEMERINTAH PROVINSI BANNER --}}
         {{-- ===================== --}}
-        <div class="mb-22 md:mb-26 scroll-animate opacity-0 translate-y-8 transition-all duration-700 ease-in-out">
+        <div class="mb-22 md:mb-26 pemprov-banner scroll-animate">
             <div class="relative rounded-3xl overflow-hidden shadow-xl border border-red-100">
 
                 {{-- Background --}}
                 <div class="absolute inset-0 bg-linear-to-br from-white via-red-50/40 to-yellow-50/30"></div>
 
                 {{-- Top accent bar --}}
-                <div class="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-red-800 via-yellow-400 to-red-800">
+                <div class="banner-bar absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-red-800 via-yellow-400 to-red-800">
                 </div>
 
                 {{-- Bottom accent bar --}}
-                <div class="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-red-800 via-yellow-400 to-red-800">
+                <div class="banner-bar absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-red-800 via-yellow-400 to-red-800">
                 </div>
 
                 {{-- Dot pattern --}}
-                <div class="absolute inset-0 opacity-[0.03]"
+                <div class="banner-dots absolute inset-0"
                     style="background-image: radial-gradient(circle, #9f1212 1px, transparent 1px); background-size: 24px 24px;">
                 </div>
 
@@ -39,7 +39,7 @@
                     {{-- ===== DESKTOP: Horizontal ===== --}}
 
                     {{-- TEKS JUDUL (tampil di atas pada mobile, tengah pada desktop) --}}
-                    <div class="flex flex-col items-center text-center mb-5 md:hidden">
+                    <div class="flex flex-col items-center text-center mb-5 md:hidden banner-mobile-title">
                         <div class="w-9 h-9 rounded-full bg-red-800/10 flex items-center justify-center mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-800" fill="currentColor"
                                 viewBox="0 0 24 24">
@@ -48,8 +48,8 @@
                             </svg>
                         </div>
                         <h3 class="text-base font-black text-red-800 leading-tight uppercase tracking-wide">
-                            Pemerintah Provinsi<br>
-                            <span class="text-gray-800">Sumatera Utara</span>
+                            {{ __('Pemerintah Provinsi') }}<br>
+                            <span class="text-gray-800">{{ __('Sumatera Utara') }}</span>
                         </h3>
                         <div class="flex items-center gap-2 mt-2">
                             <div class="w-6 h-px bg-red-800/30"></div>
@@ -65,13 +65,13 @@
                         <div class="flex items-end gap-2 md:gap-3 shrink-0">
 
                             {{-- Gubernur --}}
-                            <div class="flex flex-col items-center">
+                            <div class="flex flex-col items-center photo-left">
                                 <div class="relative">
                                     {{-- <div
                                         class="absolute -inset-1 rounded-2xl bg-linear-to-b from-yellow-400/40 to-red-800/20 blur-sm">
                                     </div> --}}
                                     <div
-                                        class="relative w-22.5 h-27.5 sm:w-28 sm:h-32 md:w-32 md:h-36 lg:w-36 lg:h-44 xl:w-40 xl:h-48 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
+                                        class="photo-card relative w-22.5 h-27.5 sm:w-28 sm:h-32 md:w-32 md:h-36 lg:w-36 lg:h-44 xl:w-40 xl:h-48 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
                                         <img src="assets/Gubernur_Sumut.png" alt="Gubernur Sumatera Utara"
                                             class="w-full h-full object-cover object-top">
                                         <div
@@ -81,20 +81,20 @@
                                                 M. Bobby Afif Nasution, S.E., M.M.</p>
                                             <p
                                                 class="text-yellow-300 text-[7px] md:text-[8px] font-semibold text-center mt-0.5">
-                                                Gubernur</p>
+                                                {{ __('Gubernur') }}</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             {{-- Wagub --}}
-                            <div class="flex flex-col items-center">
+                            <div class="flex flex-col items-center photo-left-delay">
                                 <div class="relative">
                                     {{-- <div
                                         class="absolute -inset-1 rounded-2xl bg-linear-to-b from-red-800/20 to-yellow-400/20 blur-sm">
                                     </div> --}}
                                     <div
-                                        class="relative w-22.5 h-27.5 sm:w-28 sm:h-32 md:w-32 md:h-36 lg:w-36 lg:h-44 xl:w-40 xl:h-48 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
+                                        class="photo-card relative w-22.5 h-27.5 sm:w-28 sm:h-32 md:w-32 md:h-36 lg:w-36 lg:h-44 xl:w-40 xl:h-48 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
                                         <img src="assets/WakilGubernur_Sumut.png" alt="Wakil Gubernur Sumatera Utara"
                                             class="w-full h-full object-cover object-top">
                                         <div
@@ -104,7 +104,7 @@
                                                 H. Surya, B.Sc.</p>
                                             <p
                                                 class="text-yellow-300 text-[7px] md:text-[8px] font-semibold text-center mt-0.5">
-                                                Wakil Gubernur</p>
+                                                {{ __('Wakil Gubernur') }}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -114,16 +114,16 @@
                         {{-- TEKS TENGAH — hanya tampil di md ke atas --}}
                         <div
                             class="hidden md:flex flex-1 flex-col items-center justify-center text-center px-2 md:px-4">
-                            <div class="w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mb-3">
+                            <div class="banner-center-logo w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mb-3">
                                 <img src="assets/Logo_Provinsi.png" alt="Logo Pemprov Sumut"
                                     class="w-12 h-12 md:w-16 md:h-16 object-contain">
                             </div>
                             <h3
-                                class="text-base md:text-xl lg:text-2xl font-black text-red-800 leading-tight uppercase tracking-wide">
-                                Pemerintah<br>Provinsi<br>
-                                <span class="text-gray-800">Sumatera Utara</span>
+                                class="banner-center-text text-base md:text-xl lg:text-2xl font-black text-red-800 leading-tight uppercase tracking-wide">
+                                {{ __('Pemerintah') }}<br>{{ __('Provinsi') }}<br>
+                                <span class="text-gray-800">{{ __('Sumatera Utara') }}</span>
                             </h3>
-                            <div class="flex items-center gap-2 my-3">
+                            <div class="banner-center-divider flex items-center gap-2 my-3">
                                 <div class="w-6 h-px bg-red-800/30"></div>
                                 <div class="w-2 h-2 rounded-full bg-yellow-400"></div>
                                 <div class="w-6 h-px bg-red-800/30"></div>
@@ -132,13 +132,13 @@
 
                         {{-- FOTO KANAN: Kadisdik --}}
                         <div class="flex items-end shrink-0">
-                            <div class="flex flex-col items-center">
+                            <div class="flex flex-col items-center photo-right">
                                 <div class="relative">
                                     {{-- <div
                                         class="absolute -inset-1 rounded-2xl bg-linear-to-b from-yellow-400/40 to-red-800/20 blur-sm">
                                     </div> --}}
                                     <div
-                                        class="relative w-22.5 h-27.5 sm:w-28 sm:h-32 md:w-32 md:h-36 lg:w-36 lg:h-44 xl:w-40 xl:h-48 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
+                                        class="photo-card relative w-22.5 h-27.5 sm:w-28 sm:h-32 md:w-32 md:h-36 lg:w-36 lg:h-44 xl:w-40 xl:h-48 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
                                         <img src="assets/Kepala Dinas Pendidikan Sumatera Utara.png"
                                             alt="Kepala Dinas Pendidikan Sumatera Utara"
                                             class="w-full h-full object-cover object-top">
@@ -149,7 +149,7 @@
                                                 Alexander Sinulingga, S.STP., M.Si.</p>
                                             <p
                                                 class="text-yellow-300 text-[7px] md:text-[8px] font-semibold text-center mt-0.5">
-                                                Kepala Dinas Pendidikan</p>
+                                                {{ __('Kepala Dinas Pendidikan') }}</p>
                                         </div>
                                     </div>
                                 </div>

@@ -84,3 +84,157 @@
     /* Saat membuka, tidak ada delay */
     transition-delay: 0ms;
 }
+
+/* ========== PEMPROV BANNER SCROLL ANIMATION ========== */
+.pemprov-banner {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+.pemprov-banner.animate-in {
+    opacity: 1;
+}
+
+/* Accent bars — expand from center */
+.pemprov-banner .banner-bar {
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.2s;
+}
+.pemprov-banner.animate-in .banner-bar {
+    transform: scaleX(1);
+}
+
+/* Dot pattern fade */
+.pemprov-banner .banner-dots {
+    opacity: 0 !important;
+    transition: opacity 1.2s ease-out 0.3s;
+}
+.pemprov-banner.animate-in .banner-dots {
+    opacity: 0.03 !important;
+}
+
+/* ---- DESKTOP (md+) photo & center text animations ---- */
+@media (min-width: 768px) {
+    .pemprov-banner .photo-left {
+        opacity: 0;
+        transform: translateX(-50px) rotate(-5deg);
+        transition: all 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.15s;
+    }
+    .pemprov-banner .photo-left-delay {
+        opacity: 0;
+        transform: translateX(-35px) rotate(-3deg);
+        transition: all 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.28s;
+    }
+    .pemprov-banner .photo-right {
+        opacity: 0;
+        transform: translateX(50px) rotate(5deg);
+        transition: all 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.2s;
+    }
+    .pemprov-banner.animate-in .photo-left,
+    .pemprov-banner.animate-in .photo-left-delay,
+    .pemprov-banner.animate-in .photo-right {
+        opacity: 1;
+        transform: translateX(0) rotate(0);
+    }
+
+    /* Center logo — scale + rotate in */
+    .pemprov-banner .banner-center-logo {
+        opacity: 0;
+        transform: scale(0.2) rotate(-20deg);
+        transition: all 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s;
+    }
+    .pemprov-banner.animate-in .banner-center-logo {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+
+    /* Center text — slide up */
+    .pemprov-banner .banner-center-text {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.7s ease-out 0.45s;
+    }
+    .pemprov-banner.animate-in .banner-center-text {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Center divider — expand */
+    .pemprov-banner .banner-center-divider {
+        opacity: 0;
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: all 0.6s ease-out 0.55s;
+    }
+    .pemprov-banner.animate-in .banner-center-divider {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+/* ---- MOBILE (<md) animations ---- */
+@media (max-width: 767px) {
+    .pemprov-banner .banner-mobile-title {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
+        transition: all 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.1s;
+    }
+    .pemprov-banner.animate-in .banner-mobile-title {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    .pemprov-banner .photo-left {
+        opacity: 0;
+        transform: translateY(40px) scale(0.85);
+        transition: all 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.2s;
+    }
+    .pemprov-banner .photo-left-delay {
+        opacity: 0;
+        transform: translateY(40px) scale(0.85);
+        transition: all 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.32s;
+    }
+    .pemprov-banner .photo-right {
+        opacity: 0;
+        transform: translateY(40px) scale(0.85);
+        transition: all 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.44s;
+    }
+    .pemprov-banner.animate-in .photo-left,
+    .pemprov-banner.animate-in .photo-left-delay,
+    .pemprov-banner.animate-in .photo-right {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* ---- Photo card shine sweep effect ---- */
+.pemprov-banner .photo-card {
+    position: relative;
+    overflow: hidden;
+}
+.pemprov-banner .photo-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.35),
+        transparent
+    );
+    transform: skewX(-20deg);
+    z-index: 10;
+    pointer-events: none;
+}
+
+@keyframes banner-photo-shine {
+    0% { left: -100%; }
+    100% { left: 250%; }
+}
+
+.pemprov-banner.animate-in .photo-card::after {
+    animation: banner-photo-shine 1s ease-out 0.75s both;
+}
