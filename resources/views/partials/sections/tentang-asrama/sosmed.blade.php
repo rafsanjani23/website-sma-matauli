@@ -7,11 +7,11 @@
             <div class="w-16 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-2 px-40 mt-10 max-w-5xl mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-2 px-20 md:px-40 mt-10 max-w-5xl mx-auto">
             <!-- Instagram -->
             <div class="text-center">
                 <a href="https://instagram.com/asrama.matauli" target="_blank"
-                    class="w-25 h-25 flex items-center justify-center rounded-full text-white text-2xl mx-auto hover:scale-110 transition duration-300">
+                    class="w-18 h-18 md:w-25 md:h-25 flex items-center justify-center rounded-full text-white text-2xl mx-auto hover:scale-110 transition duration-300">
                     <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -61,7 +61,7 @@
             <!-- Facebook -->
             <div class="text-center">
                 <a href="https://www.facebook.com/share/187QDTyJhr/" target="_blank"
-                    class="w-25 h-25 flex items-center justify-center rounded-full text-white text-2xl mx-auto hover:scale-110 transition duration-300">
+                    class="w-18 h-18 md:w-25 md:h-25 flex items-center justify-center rounded-full text-white text-2xl mx-auto hover:scale-110 transition duration-300">
                     <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -86,7 +86,7 @@
             <!-- YouTube -->
             <div class="text-center">
                 <a href="https://tiktok.com/@asrama.matauli" target="_blank"
-                    class="w-25 h-25 flex items-center justify-center rounded-full bg-red-600 text-white text-2xl mx-auto hover:scale-110 transition duration-300">
+                    class="w-18 h-18 md:w-25 md:h-25 flex items-center justify-center rounded-full bg-red-600 text-white text-2xl mx-auto hover:scale-110 transition duration-300">
                     <svg viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg" fill="#000000">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>

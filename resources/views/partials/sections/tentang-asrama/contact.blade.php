@@ -8,7 +8,7 @@
                 <div class="w-16 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
             </div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mx-auto justify-center px-26">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mx-auto justify-center px-5 md:px-26">
             <div
                 class="group relative bg-white border border-gray-100 rounded-xl shadow-sm overflow-hidden mx-auto w-full max-w-sm scroll-animate transition-all duration-700 ease-in-out translate-x-10 opacity-0 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-900/10 hover:border-red-100 cursor-pointer">
 

@@ -1,5 +1,5 @@
-<section class="relative w-full h-80 md:h-100 lg:h-120 overflow-hidden mb-4">
-    <img src="{{ asset('assets/Asrama.jpg') }}" alt="asrama" class="absolute inset-0 w-full h-210 object-cover">
+<section class="relative w-full h-64 md:h-100 lg:h-120 overflow-hidden mb-4">
+    <img src="{{ asset('assets/Asrama.jpg') }}" alt="asrama" class="absolute inset-0 w-full md:h-210 object-cover">
 
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black/45"></div>
