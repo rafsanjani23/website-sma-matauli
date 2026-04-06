@@ -19,6 +19,7 @@ use App\Http\Controllers\Admin\ProfesionalController;
 use App\Http\Controllers\Admin\FotoController;
 use App\Http\Controllers\Admin\VideoController;
 use App\Http\Controllers\Admin\EkstrakurikulerController;
+use App\Http\Controllers\Admin\ProgramKemataulianController;
 
 // Language switch
 Route::get('/lang/{locale}', function (string $locale) {
@@ -82,7 +83,8 @@ Route::get('/mitra/{id}', function ($id) {
 
 // program
 Route::get('/program-kemataulian', function () {
-    return view('pages.program-kemataulian');
+    $items = \App\Models\ProgramKemataulian::orderBy('judul')->get();
+    return view('pages.program-kemataulian', compact('items'));
 })->name('program-kemataulian');
 Route::get('/program-ib', function () {
     return view('pages.program-ib');
@@ -310,7 +312,15 @@ Route::prefix('admin')->group(function () {
         Route::put('/ekstrakurikuler/{id}', [EkstrakurikulerController::class, 'update'])->name('admin.ekstrakurikuler.update');
         Route::delete('/ekstrakurikuler/{id}', [EkstrakurikulerController::class, 'destroy'])->name('admin.ekstrakurikuler.destroy');
 
-            // Pengasuh
+            // Program Kemataulian
+        Route::get('/program-kemataulian', [ProgramKemataulianController::class, 'index'])->name('admin.program-kemataulian.index');
+        Route::get('/program-kemataulian/create', [ProgramKemataulianController::class, 'create'])->name('admin.program-kemataulian.create');
+        Route::post('/program-kemataulian', [ProgramKemataulianController::class, 'store'])->name('admin.program-kemataulian.store');
+        Route::get('/program-kemataulian/{id}/edit', [ProgramKemataulianController::class, 'edit'])->name('admin.program-kemataulian.edit');
+        Route::put('/program-kemataulian/{id}', [ProgramKemataulianController::class, 'update'])->name('admin.program-kemataulian.update');
+        Route::delete('/program-kemataulian/{id}', [ProgramKemataulianController::class, 'destroy'])->name('admin.program-kemataulian.destroy');
+
+        // Pengasuh
         Route::get('/pengasuh', [PengasuhController::class, 'index'])->name('admin.pengasuh.index');
         Route::get('/pengasuh/create', [PengasuhController::class, 'create'])->name('admin.pengasuh.create');
         Route::post('/pengasuh', [PengasuhController::class, 'store'])->name('admin.pengasuh.store');

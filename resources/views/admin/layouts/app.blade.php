@@ -78,6 +78,7 @@
                         ['route' => 'admin.tenaga-kependidikan.index', 'label' => 'Tenaga Kependidikan'],
                         ['route' => 'admin.kemitraan.index', 'label' => 'Kemitraan'],
                         ['route' => 'admin.ekstrakurikuler.index', 'label' => 'Ekstrakurikuler'],
+                        ['route' => 'admin.program-kemataulian.index', 'label' => 'Program Kemataulian'],
                     ];
                 @endphp
 
