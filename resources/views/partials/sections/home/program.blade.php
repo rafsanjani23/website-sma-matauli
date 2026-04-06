@@ -26,7 +26,7 @@
                     {{-- IMAGE CONTAINER --}}
                     <div class="relative h-52 md:h-60 overflow-hidden">
                         <img src="{{ asset('assets/gambar-kerja-sama.webp') }}" alt="Program Pre-IB"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+                            class="w-full h-full object-cover object-center">
                         <div class="absolute inset-0 bg-linear-to-t from-black/30 to-transparent"></div>
                         <div
                             class="absolute top-4 left-4 bg-red-800 text-white text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full">
@@ -37,11 +37,11 @@
                     {{-- CARD CONTENT --}}
                     <div class="p-6 md:p-8 flex flex-col flex-1">
                         <h3
-                            class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-red-800 transition-colors duration-300 leading-snug">
+                            class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-red-800 transition-colors duration-300 leading-snug text-center min-h-[4rem] md:min-h-[4.5rem] lg:min-h-[6.5rem] flex items-center justify-center">
                             {{ __('Program Pre-Internasional Baccalaureate') }}
                         </h3>
-                        <div class="w-8 h-0.5 bg-yellow-400 mb-4 group-hover:w-14 transition-all duration-500"></div>
-                        <p class="text-gray-500 text-sm md:text-base leading-relaxed mb-6 flex-1">
+                        <div class="w-8 h-0.5 bg-yellow-400 mb-4 group-hover:w-14 transition-all duration-500 mx-auto"></div>
+                        <p class="text-gray-500 text-sm md:text-base leading-relaxed mb-6 flex-1 text-justify">
                             {{ __('Dalam rangka mendukung visi Indonesia Emas 2045, Yayasan MATAULI menjalin kerja sama strategis dengan YPKBI untuk menyelenggarakan program IB Diploma Programme di SMAN 1 Plus MATAULI Pandan.') }}
                         </p>
                         <div
@@ -67,7 +67,7 @@
                     {{-- IMAGE CONTAINER --}}
                     <div class="relative h-52 md:h-60 overflow-hidden">
                         <img src="{{ asset('assets/ips-jurusan.jpg') }}" alt="Program Kemataulian"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+                            class="w-full h-full object-cover object-center">
                         <div class="absolute inset-0 bg-linear-to-t from-black/30 to-transparent"></div>
                         <div
                             class="absolute top-4 left-4 bg-red-800 text-white text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full">
@@ -78,11 +78,11 @@
                     {{-- CARD CONTENT --}}
                     <div class="p-6 md:p-8 flex flex-col flex-1">
                         <h3
-                            class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-red-800 transition-colors duration-300 leading-snug">
+                            class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-red-800 transition-colors duration-300 leading-snug text-center min-h-[4rem] md:min-h-[4.5rem] lg:min-h-[6.5rem] flex items-center justify-center">
                             {{ __('Program Khusus Kemataulian') }}
                         </h3>
-                        <div class="w-8 h-0.5 bg-yellow-400 mb-4 group-hover:w-14 transition-all duration-500"></div>
-                        <p class="text-gray-500 text-sm md:text-base leading-relaxed mb-6 flex-1">
+                        <div class="w-8 h-0.5 bg-yellow-400 mb-4 group-hover:w-14 transition-all duration-500 mx-auto"></div>
+                        <p class="text-gray-500 text-sm md:text-base leading-relaxed mb-6 flex-1 text-justify">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore beatae obcaecati dignissimos
                             molestias, accusamus laboriosam delectus vero aperiam qui earum voluptate cum deleniti.
                         </p>
@@ -109,7 +109,7 @@
                     {{-- IMAGE CONTAINER --}}
                     <div class="relative h-52 md:h-60 overflow-hidden">
                         <img src="{{ asset('assets/ipa-jurusan.jpg') }}" alt="Program Kemendikdasmen"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+                            class="w-full h-full object-cover object-center">
                         <div class="absolute inset-0 bg-linear-to-t from-black/30 to-transparent"></div>
                         <div
                             class="absolute top-4 left-4 bg-red-800 text-white text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full">
@@ -120,11 +120,11 @@
                     {{-- CARD CONTENT --}}
                     <div class="p-6 md:p-8 flex flex-col flex-1">
                         <h3
-                            class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-red-800 transition-colors duration-300 leading-snug">
+                            class="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-red-800 transition-colors duration-300 leading-snug text-center min-h-[4rem] md:min-h-[4.5rem] lg:min-h-[6.5rem] flex items-center justify-center">
                             {{ __('Program Kemendikdasmen') }}
                         </h3>
-                        <div class="w-8 h-0.5 bg-yellow-400 mb-4 group-hover:w-14 transition-all duration-500"></div>
-                        <p class="text-gray-500 text-sm md:text-base leading-relaxed mb-6 flex-1">
+                        <div class="w-8 h-0.5 bg-yellow-400 mb-4 group-hover:w-14 transition-all duration-500 mx-auto"></div>
+                        <p class="text-gray-500 text-sm md:text-base leading-relaxed mb-6 flex-1 text-justify">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore beatae obcaecati dignissimos
                             molestias, accusamus laboriosam delectus vero aperiam qui earum voluptate cum deleniti.
                         </p>
