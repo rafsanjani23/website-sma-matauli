@@ -27,6 +27,7 @@ class DashboardController extends Controller
             ['label' => 'Video', 'count' => DB::table('video')->count(), 'route' => 'admin.video.index', 'icon' => 'video'],
             ['label' => 'Ekstrakurikuler', 'count' => DB::table('ekstrakurikuler')->count(), 'route' => 'admin.ekstrakurikuler.index', 'icon' => 'star'],
             ['label' => 'Program Kemataulian', 'count' => DB::table('program_kemataulian')->count(), 'route' => 'admin.program-kemataulian.index', 'icon' => 'academic'],
+            ['label' => 'Program Kemendikdasmen', 'count' => DB::table('program_kemendikdasmen')->count(), 'route' => 'admin.program-kemendikdasmen.index', 'icon' => 'academic'],
         ];
 
         return view('admin.dashboard', compact('stats'));

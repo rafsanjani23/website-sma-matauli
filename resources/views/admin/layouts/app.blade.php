@@ -79,6 +79,7 @@
                         ['route' => 'admin.kemitraan.index', 'label' => 'Kemitraan'],
                         ['route' => 'admin.ekstrakurikuler.index', 'label' => 'Ekstrakurikuler'],
                         ['route' => 'admin.program-kemataulian.index', 'label' => 'Program Kemataulian'],
+                        ['route' => 'admin.program-kemendikdasmen.index', 'label' => 'Program Kemendikdasmen'],
                     ];
                 @endphp
 

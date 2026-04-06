@@ -20,6 +20,7 @@ use App\Http\Controllers\Admin\FotoController;
 use App\Http\Controllers\Admin\VideoController;
 use App\Http\Controllers\Admin\EkstrakurikulerController;
 use App\Http\Controllers\Admin\ProgramKemataulianController;
+use App\Http\Controllers\Admin\ProgramKemendikdasmenController;
 
 // Language switch
 Route::get('/lang/{locale}', function (string $locale) {
@@ -90,7 +91,8 @@ Route::get('/program-ib', function () {
     return view('pages.program-ib');
 })->name('program-ib');
 Route::get('/program-kemendikdasmen', function () {
-    return view('pages.program-kemendikdasmen');
+    $items = \App\Models\ProgramKemendikdasmen::orderBy('judul')->get();
+    return view('pages.program-kemendikdasmen', compact('items'));
 })->name('program-kemendikdasmen');
 
 // asrama
@@ -319,6 +321,14 @@ Route::prefix('admin')->group(function () {
         Route::get('/program-kemataulian/{id}/edit', [ProgramKemataulianController::class, 'edit'])->name('admin.program-kemataulian.edit');
         Route::put('/program-kemataulian/{id}', [ProgramKemataulianController::class, 'update'])->name('admin.program-kemataulian.update');
         Route::delete('/program-kemataulian/{id}', [ProgramKemataulianController::class, 'destroy'])->name('admin.program-kemataulian.destroy');
+
+        // Program Kemendikdasmen
+        Route::get('/program-kemendikdasmen', [ProgramKemendikdasmenController::class, 'index'])->name('admin.program-kemendikdasmen.index');
+        Route::get('/program-kemendikdasmen/create', [ProgramKemendikdasmenController::class, 'create'])->name('admin.program-kemendikdasmen.create');
+        Route::post('/program-kemendikdasmen', [ProgramKemendikdasmenController::class, 'store'])->name('admin.program-kemendikdasmen.store');
+        Route::get('/program-kemendikdasmen/{id}/edit', [ProgramKemendikdasmenController::class, 'edit'])->name('admin.program-kemendikdasmen.edit');
+        Route::put('/program-kemendikdasmen/{id}', [ProgramKemendikdasmenController::class, 'update'])->name('admin.program-kemendikdasmen.update');
+        Route::delete('/program-kemendikdasmen/{id}', [ProgramKemendikdasmenController::class, 'destroy'])->name('admin.program-kemendikdasmen.destroy');
 
         // Pengasuh
         Route::get('/pengasuh', [PengasuhController::class, 'index'])->name('admin.pengasuh.index');
