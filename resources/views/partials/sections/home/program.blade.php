@@ -25,7 +25,7 @@
 
                     {{-- IMAGE CONTAINER --}}
                     <div class="relative h-52 md:h-60 overflow-hidden">
-                        <img src="{{ asset('assets/ipa-jurusan.jpg') }}" alt="Program Pre-IB"
+                        <img src="{{ asset('assets/gambar-kerja-sama.webp') }}" alt="Program Pre-IB"
                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
                         <div class="absolute inset-0 bg-linear-to-t from-black/30 to-transparent"></div>
                         <div
@@ -42,8 +42,7 @@
                         </h3>
                         <div class="w-8 h-0.5 bg-yellow-400 mb-4 group-hover:w-14 transition-all duration-500"></div>
                         <p class="text-gray-500 text-sm md:text-base leading-relaxed mb-6 flex-1">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore beatae obcaecati dignissimos
-                            molestias, accusamus laboriosam delectus vero aperiam qui earum voluptate cum deleniti.
+                            {{ __('Dalam rangka mendukung visi Indonesia Emas 2045, Yayasan MATAULI menjalin kerja sama strategis dengan YPKBI untuk menyelenggarakan program IB Diploma Programme di SMAN 1 Plus MATAULI Pandan.') }}
                         </p>
                         <div
                             class="inline-flex items-center gap-2 text-red-800 font-semibold text-sm group-hover:gap-4 transition-all duration-300">
