@@ -36,6 +36,16 @@
                 </div>
 
                 <div>
+                    <label for="kategori" class="block text-sm font-semibold text-gray-700 mb-1.5">Kategori</label>
+                    <select name="kategori" id="kategori" required
+                        class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">
+                        <option value="">-- Pilih Kategori --</option>
+                        <option value="rutin" {{ old('kategori') === 'rutin' ? 'selected' : '' }}>Kegiatan Rutin</option>
+                        <option value="tidak_rutin" {{ old('kategori') === 'tidak_rutin' ? 'selected' : '' }}>Kegiatan Tidak Rutin</option>
+                    </select>
+                </div>
+
+                <div>
                     <label for="gambar" class="block text-sm font-semibold text-gray-700 mb-1.5">Gambar</label>
                     <input type="file" name="gambar" id="gambar" accept="image/*"
                         class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm file:mr-4 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-red-50 file:text-red-800 hover:file:bg-red-100 transition">

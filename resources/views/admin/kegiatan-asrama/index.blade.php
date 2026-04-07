@@ -36,6 +36,7 @@
                         <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">No.</th>
                         <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">Gambar</th>
                         <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">Nama</th>
+                        <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">Kategori</th>
                         <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">Aksi</th>
                     </tr>
                 </thead>
@@ -54,6 +55,13 @@
                                 @endif
                             </td>
                             <td class="px-6 py-4 text-sm text-gray-700">{{ $item->nama }}</td>
+                            <td class="px-6 py-4">
+                                @if ($item->kategori === 'rutin')
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Rutin</span>
+                                @else
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">Tidak Rutin</span>
+                                @endif
+                            </td>
                             <td class="px-6 py-4">
                                 <div class="flex items-center gap-2">
                                     <a href="{{ route('admin.kegiatan-asrama.edit', $item->id) }}" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Edit</a>
