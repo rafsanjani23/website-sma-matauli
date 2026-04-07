@@ -1,12 +1,25 @@
-document.addEventListener("DOMContentLoaded", () => {
+let scrollObserver = null;
+
+function initScrollAnimations() {
+    // Disconnect previous observer jika ada (untuk re-init dari bfcache)
+    if (scrollObserver) {
+        scrollObserver.disconnect();
+        scrollObserver = null;
+    }
+
     const elements = document.querySelectorAll('.scroll-animate');
 
+    // Reset semua elemen ke state awal
     elements.forEach(el => {
-        // Simpan class awal untuk reset saat keluar viewport
-        el.dataset.initialClass = el.className;
+        if (el.dataset.initialClass) {
+            el.classList.remove('animate-in');
+            el.className = el.dataset.initialClass;
+        } else {
+            el.dataset.initialClass = el.className;
+        }
     });
 
-    const observer = new IntersectionObserver(entries => {
+    scrollObserver = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             const el = entry.target;
             const delay = parseInt(el.dataset.delay || '0', 10);
@@ -43,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
 
             } else {
-                // ===== KELUAR VIEWPORT =====
+                // ===== KELUAR VIEWPORT — reset ke state awal =====
                 if (el._animTimeout) {
                     clearTimeout(el._animTimeout);
                     el._animTimeout = null;
@@ -56,5 +69,15 @@ document.addEventListener("DOMContentLoaded", () => {
         threshold: 0.15
     });
 
-    elements.forEach(el => observer.observe(el));
+    elements.forEach(el => scrollObserver.observe(el));
+}
+
+// Init saat halaman pertama kali dimuat
+document.addEventListener("DOMContentLoaded", initScrollAnimations);
+
+// Re-init saat halaman dikembalikan dari bfcache (browser back/forward)
+window.addEventListener("pageshow", (event) => {
+    if (event.persisted) {
+        initScrollAnimations();
+    }
 });

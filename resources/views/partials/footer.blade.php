@@ -259,8 +259,7 @@
 
                     {{-- PUDD --}}
                     <li>
-                        <a href="{{ asset('assets/pdf/SK Visi Misi SMA Negeri 1 Matauli Pandan 2025.pdf') }}"
-                            target="_blank" rel="noopener noreferrer"
+                        <a href="{{ asset('assets/pdf/PUDD.pdf') }}" target="_blank" rel="noopener noreferrer"
                             class="group flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition-all duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="h-4 w-4 transform group-hover:translate-x-1 transition-transform"
@@ -279,8 +278,7 @@
 
                     {{-- Perdupsis --}}
                     <li>
-                        <a href="{{ asset('assets/pdf/SK Visi Misi SMA Negeri 1 Matauli Pandan 2025.pdf') }}"
-                            target="_blank" rel="noopener noreferrer"
+                        <a href="{{ asset('assets/pdf/Perdupsis.pdf') }}" target="_blank" rel="noopener noreferrer"
                             class="group flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition-all duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="h-4 w-4 transform group-hover:translate-x-1 transition-transform"
