@@ -20,7 +20,7 @@
         {{-- Gambar Struktur --}}
         <div class="relative max-w-5xl mx-auto">
             <div class="rounded-2xl overflow-hidden shadow-xl border border-gray-100 bg-white p-4 md:p-6">
-                <img src="{{ asset('assets/struktur/Struktur_Komite.webp') }}"
+                <img src="{{ asset('assets/struktur/Struktur_Komite_(1).webp') }}"
                     alt="{{ __('Struktur Organisasi SMAN 1 Matauli Pandan') }}"
                     class="w-full h-auto object-contain rounded-lg">
             </div>
