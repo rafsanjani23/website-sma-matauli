@@ -37,6 +37,16 @@
                 </div>
 
                 <div>
+                    <label for="kategori" class="block text-sm font-semibold text-gray-700 mb-1.5">Kategori</label>
+                    <select name="kategori" id="kategori" required
+                        class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">
+                        <option value="">-- Pilih Kategori --</option>
+                        <option value="rutin" {{ old('kategori', $item->kategori) === 'rutin' ? 'selected' : '' }}>Kegiatan Rutin</option>
+                        <option value="tidak_rutin" {{ old('kategori', $item->kategori) === 'tidak_rutin' ? 'selected' : '' }}>Kegiatan Tidak Rutin</option>
+                    </select>
+                </div>
+
+                <div>
                     <label for="gambar" class="block text-sm font-semibold text-gray-700 mb-1.5">Gambar</label>
                     @if ($item->gambar)
                         <div class="mb-2">

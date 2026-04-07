@@ -34,6 +34,7 @@ class KegiatanAsramaController extends Controller
     {
         $validated = $request->validate([
             'nama' => 'required|max:50',
+            'kategori' => 'required|in:rutin,tidak_rutin',
             'gambar' => 'required|image|max:2048',
         ]);
 
@@ -58,6 +59,7 @@ class KegiatanAsramaController extends Controller
 
         $validated = $request->validate([
             'nama' => 'required|max:50',
+            'kategori' => 'required|in:rutin,tidak_rutin',
             'gambar' => 'nullable|image|max:2048',
         ]);
 

@@ -105,8 +105,9 @@ Route::get('/fasilitas-asrama', function () {
     return view('pages.fasilitas-asrama', compact('items'));
 })->name('fasilitas-asrama');
 Route::get('/kegiatan-asrama', function () {
-    $items = \App\Models\KegiatanAsrama::latest()->get();
-    return view('pages.kegiatan-asrama', compact('items'));
+    $rutinItems = \App\Models\KegiatanAsrama::where('kategori', 'rutin')->latest()->get();
+    $tidakRutinItems = \App\Models\KegiatanAsrama::where('kategori', 'tidak_rutin')->latest()->get();
+    return view('pages.kegiatan-asrama', compact('rutinItems', 'tidakRutinItems'));
 })->name('kegiatan-asrama');
 
 // alumni

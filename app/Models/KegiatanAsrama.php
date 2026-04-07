@@ -10,6 +10,7 @@ class KegiatanAsrama extends Model
 
     protected $fillable = [
         'nama',
+        'kategori',
         'gambar',
     ];
 }

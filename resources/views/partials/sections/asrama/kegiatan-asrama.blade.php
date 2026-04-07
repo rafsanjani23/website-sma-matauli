@@ -6,21 +6,46 @@
             </h1>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-2 px-10">
-            @forelse ($items as $item)
-            <div>
-                <div class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-4xl overflow-hidden mx-auto">
-                    <div class="aspect-3/2">
-                        <img src="{{ Storage::url($item->gambar) }}" class="w-full h-full object-cover" alt="{{ $item->nama }}" />
+        {{-- Kegiatan Rutin --}}
+        <div class="mb-12 px-10">
+            <h2 class="text-xl md:text-2xl font-bold text-slate-800 mb-6">{{ __('Kegiatan Rutin') }}</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-2">
+                @forelse ($rutinItems as $item)
+                <div>
+                    <div class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-4xl overflow-hidden mx-auto">
+                        <div class="aspect-3/2">
+                            <img src="{{ Storage::url($item->gambar) }}" class="w-full h-full object-cover" alt="{{ $item->nama }}" />
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <h5 class="text-matauli-red-dark text-center text-md font-semibold">{{ $item->nama }}</h5>
                     </div>
                 </div>
-                <div class="p-2">
-                    <h5 class="text-matauli-red-dark text-center text-md font-semibold">{{ $item->nama }}</h5>
-                </div>
+                @empty
+                <div class="col-span-full text-center py-8 text-gray-400">{{ __('Belum ada data.') }}</div>
+                @endforelse
             </div>
-            @empty
-            <div class="col-span-full text-center py-8 text-gray-400">{{ __('Belum ada data.') }}</div>
-            @endforelse
+        </div>
+
+        {{-- Kegiatan Tidak Rutin --}}
+        <div class="px-10">
+            <h2 class="text-xl md:text-2xl font-bold text-slate-800 mb-6">{{ __('Kegiatan Tidak Rutin') }}</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-2">
+                @forelse ($tidakRutinItems as $item)
+                <div>
+                    <div class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-4xl overflow-hidden mx-auto">
+                        <div class="aspect-3/2">
+                            <img src="{{ Storage::url($item->gambar) }}" class="w-full h-full object-cover" alt="{{ $item->nama }}" />
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <h5 class="text-matauli-red-dark text-center text-md font-semibold">{{ $item->nama }}</h5>
+                    </div>
+                </div>
+                @empty
+                <div class="col-span-full text-center py-8 text-gray-400">{{ __('Belum ada data.') }}</div>
+                @endforelse
+            </div>
         </div>
     </div>
 </section>
