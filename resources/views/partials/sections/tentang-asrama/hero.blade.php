@@ -12,7 +12,7 @@
         </p>
 
         <h2 class="text-white font-bold text-3xl md:text-5xl tracking-wide">
-            {{ __('Asrama Yayasan Matauli') }}
+            {{ __('Asrama Yayasan MATAULI') }}
         </h2>
     </div>
 </section>

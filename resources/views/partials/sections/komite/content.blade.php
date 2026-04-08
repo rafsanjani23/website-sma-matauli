@@ -12,7 +12,7 @@
         {{-- Header --}}
         <div class="text-center mb-10 md:mb-14">
             <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 max-w-2xl mx-auto">
-                {{ __('Susunan Komite SMAN 1 Matauli Pandan') }}
+                {{ __('Susunan Komite SMAN 1 MATAULI Pandan') }}
             </h2>
             <div class="w-50 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
         </div>
