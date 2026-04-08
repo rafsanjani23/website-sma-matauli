@@ -16,7 +16,7 @@
                 {{ __('46 Siswa Penerima Beasiswa') }}
             </h2>
             <p class="text-gray-500 text-sm md:text-base max-w-2xl mx-auto">
-                {{ __('Implementasi Kurikulum International Baccalaureate Diploma Programme SMAN 1 Matauli Pandan') }}
+                {{ __('Implementasi Kurikulum International Baccalaureate Diploma Programme SMAN 1 MATAULI Pandan') }}
             </p>
             <div class="w-16 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
         </div>

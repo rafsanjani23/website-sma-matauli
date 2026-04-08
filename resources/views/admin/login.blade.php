@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Admin | SMAN 1 Matauli Pandan</title>
+    <title>Login Admin | SMAN 1 MATAULI Pandan</title>
     <link rel="icon" type="image/png" href="{{ asset('assets/Logo_SMAN_Matauli.png') }}">
     @vite(['resources/css/app.css'])
 </head>
@@ -25,10 +25,10 @@
 
             {{-- Logo & Title --}}
             <div class="text-center mb-8">
-                <img src="{{ asset('assets/Logo_SMAN_Matauli.png') }}" alt="Logo SMAN 1 Matauli Pandan"
+                <img src="{{ asset('assets/Logo_SMAN_Matauli.png') }}" alt="Logo SMAN 1 MATAULI Pandan"
                     class="w-20 h-20 mx-auto mb-4">
                 <h1 class="text-2xl font-bold text-gray-900">Admin Panel</h1>
-                <p class="text-gray-500 text-sm mt-1">SMAN 1 Matauli Pandan</p>
+                <p class="text-gray-500 text-sm mt-1">SMAN 1 MATAULI Pandan</p>
             </div>
 
             {{-- Error Message --}}

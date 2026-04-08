@@ -26,7 +26,7 @@
                 <div class="w-12 h-0.5 bg-yellow-400 mb-5 rounded-full"></div>
 
                 <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-8">
-                    {{ __('SMAN 1 Matauli Pandan bernaung di bawah Yayasan Maju Tapian Nauli. Dengan lingkungan belajar yang modern, guru berpengalaman, serta berbagai kegiatan ekstrakurikuler, SMAN 1 Matauli Pandan berkomitmen membentuk siswa yang beriman, berilmu, beramal, dan siap bersaing di tingkat nasional maupun global.') }}
+                    {{ __('SMAN 1 MATAULI Pandan bernaung di bawah Yayasan Maju Tapian Nauli. Dengan lingkungan belajar yang modern, guru berpengalaman, serta berbagai kegiatan ekstrakurikuler, SMAN 1 MATAULI Pandan berkomitmen membentuk siswa yang beriman, berilmu, beramal, dan siap bersaing di tingkat nasional maupun global.') }}
                 </p>
 
                 <div class="grid grid-cols-2 gap-4">
@@ -55,7 +55,7 @@
                     <div
                         class="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-red-800 via-red-600 to-yellow-500 z-10">
                     </div>
-                    <img src="{{ asset('assets/visi-misi2.JPG') }}" alt="Kurikulum IB SMAN 1 Matauli"
+                    <img src="{{ asset('assets/visi-misi2.JPG') }}" alt="Kurikulum IB SMAN 1 MATAULI"
                         class="w-full h-64 md:h-80 object-cover">
                     <div class="absolute bottom-0 left-0 right-0 h-20 bg-linear-to-t from-red-900/60 to-transparent">
                     </div>

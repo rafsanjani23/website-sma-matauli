@@ -35,7 +35,7 @@
                         <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
                     </svg>
                     <p class="text-gray-700 text-sm md:text-base leading-relaxed italic pl-6">
-                        "SMAN 1 Matauli Pandan memberikan pengalaman belajar yang luar biasa. Guru-guru profesional
+                        "SMAN 1 MATAULI Pandan memberikan pengalaman belajar yang luar biasa. Guru-guru profesional
                         dan fasilitas modern membuat saya siap menghadapi dunia perkuliahan."
                     </p>
                 </div>
@@ -62,7 +62,7 @@
                     </svg>
                     <p class="text-gray-700 text-sm md:text-base leading-relaxed italic pl-6">
                         "Lingkungan belajar yang kondusif dan teman-teman yang suportif membuat masa SMA saya penuh
-                        kenangan indah. Terima kasih SMAN 1 Matauli Pandan!"
+                        kenangan indah. Terima kasih SMAN 1 MATAULI Pandan!"
                     </p>
                 </div>
             </div>

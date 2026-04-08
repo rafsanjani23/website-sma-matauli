@@ -9,7 +9,7 @@
                 {{ __('Perjalanan Kami') }}
             </h1>
             <p class="text-gray-500 text-sm md:text-lg max-w-3xl mx-auto leading-relaxed px-4">
-                {{ __('Perjalanan panjang SMAN 1 Matauli Pandan dalam mencetak generasi unggul dan berkarakter sejak tahun 1994') }}
+                {{ __('Perjalanan panjang SMAN 1 MATAULI Pandan dalam mencetak generasi unggul dan berkarakter sejak tahun 1994') }}
             </p>
             <div class="mt-4 mx-auto w-14 h-1 bg-yellow-400 rounded-full"></div>
         </div>
@@ -76,10 +76,10 @@
                             </div>
                             <div class="p-5">
                                 <h3 class="text-base font-bold text-red-800 mb-2 leading-snug">
-                                    {{ __('1994 - Pendirian SMAN 1 Matauli Pandan') }}
+                                    {{ __('1994 - Pendirian SMAN 1 MATAULI Pandan') }}
                                 </h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
-                                    {{ __('SMA Negeri 1 (Plus) Matauli Pandan didirikan pada tahun 1994 di Jl. K. H. Dewantara No. 01 Pandan, Kabupaten Tapanuli Tengah, Provinsi Sumatera Utara.') }}
+                                    {{ __('SMA Negeri 1 (Plus) MATAULI Pandan didirikan pada tahun 1994 di Jl. K. H. Dewantara No. 01 Pandan, Kabupaten Tapanuli Tengah, Provinsi Sumatera Utara.') }}
                                 </p>
                             </div>
                         </div>
@@ -187,7 +187,7 @@
                                     {{ __('2008 - Mendapatkan Sertifikat Sistem Manajemen Mutu') }}
                                 </h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
-                                    {{ __('SMA Negeri 1 (Plus) Matauli Pandan telah mendapatkan sertifikat Sistem Manajemen Mutu (SMM) ISO 9001 : 2008 sebagai pedoman penyelenggaraan sistem manajemen sekolah.') }}
+                                    {{ __('SMA Negeri 1 (Plus) MATAULI Pandan telah mendapatkan sertifikat Sistem Manajemen Mutu (SMM) ISO 9001 : 2008 sebagai pedoman penyelenggaraan sistem manajemen sekolah.') }}
                                 </p>
                             </div>
                         </div>
@@ -214,7 +214,7 @@
                                     {{ __('2012 - Menjadi Sekolah Penyedia Layanan Data Berbasis IT') }}
                                 </h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
-                                    {{ __('Sejak tahun 2012, SMA Negeri 1 (Plus) Matauli Pandan dipercaya sebagai penyedia layanan data berbasis IT bagi seluruh SMA di Kabupaten Tapanuli Tengah.') }}
+                                    {{ __('Sejak tahun 2012, SMA Negeri 1 (Plus) MATAULI Pandan dipercaya sebagai penyedia layanan data berbasis IT bagi seluruh SMA di Kabupaten Tapanuli Tengah.') }}
                                 </p>
                             </div>
                         </div>
@@ -364,9 +364,9 @@
                             <div
                                 class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-l-4 border-red-800">
                                 <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
-                                    {{ __('1994 - Pendirian SMAN 1 Matauli Pandan') }}</h3>
+                                    {{ __('1994 - Pendirian SMAN 1 MATAULI Pandan') }}</h3>
                                 <p class="text-gray-600 text-sm md:text-base leading-relaxed">
-                                    {{ __('SMA Negeri 1 (Plus) Matauli Pandan didirikan pada tahun 1994 di Jl. K. H. Dewantara No. 01 Pandan, Kabupaten Tapanuli Tengah, Provinsi Sumatera Utara.') }}
+                                    {{ __('SMA Negeri 1 (Plus) MATAULI Pandan didirikan pada tahun 1994 di Jl. K. H. Dewantara No. 01 Pandan, Kabupaten Tapanuli Tengah, Provinsi Sumatera Utara.') }}
                                 </p>
                             </div>
                         </div>
@@ -483,7 +483,7 @@
                                 <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
                                     {{ __('2008 - Mendapatkan Sertifikat Sistem Manajemen Mutu') }}</h3>
                                 <p class="text-gray-600 text-sm md:text-base leading-relaxed">
-                                    {{ __('SMA Negeri 1 (Plus) Matauli Pandan telah mendapatkan sertifikat Sistem Manajemen Mutu (SMM) ISO 9001 : 2008 yang menjadi pedoman penyelenggaraan sistem manajemen sekolah.') }}
+                                    {{ __('SMA Negeri 1 (Plus) MATAULI Pandan telah mendapatkan sertifikat Sistem Manajemen Mutu (SMM) ISO 9001 : 2008 yang menjadi pedoman penyelenggaraan sistem manajemen sekolah.') }}
                                 </p>
                             </div>
                         </div>
@@ -499,7 +499,7 @@
                                 <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
                                     {{ __('2012 - Menjadi Sekolah Penyedia Layanan Data Berbasis IT') }}</h3>
                                 <p class="text-gray-600 text-sm md:text-base leading-relaxed">
-                                    {{ __('Sejak tahun 2012, SMA Negeri 1 (Plus) Matauli Pandan dipercaya sebagai penyedia layanan data berbasis IT bagi seluruh SMA di Kabupaten Tapanuli Tengah.') }}
+                                    {{ __('Sejak tahun 2012, SMA Negeri 1 (Plus) MATAULI Pandan dipercaya sebagai penyedia layanan data berbasis IT bagi seluruh SMA di Kabupaten Tapanuli Tengah.') }}
                                 </p>
                             </div>
                         </div>

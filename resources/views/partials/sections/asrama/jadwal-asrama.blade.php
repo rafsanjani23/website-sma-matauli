@@ -17,7 +17,7 @@
             </h2>
             <div class="w-16 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
             <p class="text-gray-500 mt-4 max-w-2xl mx-auto text-sm md:text-base">
-                {{ __('Jadwal kegiatan harian siswa SMAN 1 Matauli Pandan selama tinggal di asrama.') }}
+                {{ __('Jadwal kegiatan harian siswa SMAN 1 MATAULI Pandan selama tinggal di asrama.') }}
             </p>
         </div>
 

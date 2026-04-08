@@ -87,7 +87,7 @@
                 </p>
 
                 <p>
-                    {{ __('Sebagai tokoh nasional yang berasal dari Sumatera Utara, Feisal Tanjung dikenal memiliki kepedulian besar terhadap pembangunan daerah dan peningkatan kualitas sumber daya manusia. Ia juga dikenal sebagai sosok yang memiliki komitmen kuat dalam mendukung pembangunan pendidikan bagi generasi muda Indonesia, termasuk melalui pendirian lembaga pendidikan di bawah naungan Yayasan Matauli di Tahun 1991.') }}
+                    {{ __('Sebagai tokoh nasional yang berasal dari Sumatera Utara, Feisal Tanjung dikenal memiliki kepedulian besar terhadap pembangunan daerah dan peningkatan kualitas sumber daya manusia. Ia juga dikenal sebagai sosok yang memiliki komitmen kuat dalam mendukung pembangunan pendidikan bagi generasi muda Indonesia, termasuk melalui pendirian lembaga pendidikan di bawah naungan Yayasan MATAULI di Tahun 1991.') }}
                 </p>
 
                 <p>

@@ -7,9 +7,9 @@
 
     <title>
         @hasSection('title')
-            @yield('title') | SMAN 1 Matauli Pandan
+            @yield('title') | SMAN 1 MATAULI Pandan
         @else
-            SMAN 1 Matauli Pandan
+            SMAN 1 MATAULI Pandan
         @endif
     </title>
 

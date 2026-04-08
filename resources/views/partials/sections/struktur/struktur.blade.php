@@ -12,7 +12,7 @@
         {{-- Header --}}
         <div class="text-center mb-10 md:mb-14">
             <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 max-w-2xl mx-auto">
-                {{ __('Susunan Kepemimpinan dan Organisasi SMAN 1 Matauli Pandan') }}
+                {{ __('Susunan Kepemimpinan dan Organisasi SMAN 1 MATAULI Pandan') }}
             </h2>
             <div class="w-16 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
         </div>
@@ -21,13 +21,13 @@
         <div class="relative max-w-5xl mx-auto">
             <div class="rounded-2xl overflow-hidden shadow-xl border border-gray-100 bg-white p-4 md:p-6">
                 <img src="{{ asset('assets/Struktur_Sekolah.png') }}"
-                    alt="{{ __('Struktur Organisasi SMAN 1 Matauli Pandan') }}"
+                    alt="{{ __('Struktur Organisasi SMAN 1 MATAULI Pandan') }}"
                     class="w-full h-auto object-contain rounded-lg">
             </div>
 
             {{-- Caption --}}
             <p class="text-center text-gray-400 text-xs md:text-sm mt-4">
-                {{ __('Bagan struktur organisasi SMAN 1 Matauli Pandan tahun ajaran berjalan') }}
+                {{ __('Bagan struktur organisasi SMAN 1 MATAULI Pandan tahun ajaran berjalan') }}
             </p>
         </div>
     </div>

@@ -21,7 +21,7 @@
                     <!-- Logo wrapper with glow effect -->
                     <div class="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center shrink-0 relative">
                         <div class="absolute inset-0 bg-yellow-400/20 rounded-full blur-xl"></div>
-                        <img src="{{ asset('assets/Logo_SMAN_Matauli.png') }}" alt="Logo SMAN Matauli"
+                        <img src="{{ asset('assets/Logo_SMAN_Matauli.png') }}" alt="Logo SMAN MATAULI"
                             class="max-w-full max-h-full object-contain relative z-10 drop-shadow-2xl">
                     </div>
 
@@ -47,7 +47,7 @@
                     <p class="text-gray-300 flex items-center gap-2 justify-center sm:justify-start">
                         &copy; 2026. All rights reserved.
                     </p>
-                    <p class="font-bold text-yellow-400 text-sm md:text-base mt-1">SMAN 1 Matauli Pandan</p>
+                    <p class="font-bold text-yellow-400 text-sm md:text-base mt-1">SMAN 1 MATAULI Pandan</p>
                 </div>
 
             </div>

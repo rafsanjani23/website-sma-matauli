@@ -86,7 +86,7 @@
                 </p>
 
                 <p>
-                    {{ __('Di luar aktivitas politik, beliau dikenal memiliki perhatian besar terhadap pengembangan pendidikan dan pembinaan generasi muda. Komitmen tersebut diwujudkan melalui berbagai kegiatan sosial dan pendidikan, termasuk melalui pendirian lembaga pendidikan di bawah naungan Yayasan Matauli di Tahun 1991.') }}
+                    {{ __('Di luar aktivitas politik, beliau dikenal memiliki perhatian besar terhadap pengembangan pendidikan dan pembinaan generasi muda. Komitmen tersebut diwujudkan melalui berbagai kegiatan sosial dan pendidikan, termasuk melalui pendirian lembaga pendidikan di bawah naungan Yayasan MATAULI di Tahun 1991.') }}
                 </p>
             </div>
         </div>

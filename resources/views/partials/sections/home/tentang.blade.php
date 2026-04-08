@@ -229,7 +229,7 @@
                                     </svg>
                                 </div>
                                 <div>
-                                    <p class="text-white font-bold text-sm leading-tight">SMAN 1 Matauli Pandan</p>
+                                    <p class="text-white font-bold text-sm leading-tight">SMAN 1 MATAULI Pandan</p>
                                 </div>
                                 <div
                                     class="ml-auto flex items-center gap-1.5 bg-yellow-400 text-yellow-900 text-[10px] font-black px-2.5 py-1 rounded-lg">
@@ -247,7 +247,7 @@
                                 <span
                                     class="absolute -top-3 -left-2 text-7xl font-serif text-red-50 leading-none select-none pointer-events-none">"</span>
                                 <p class="relative text-gray-600 text-[15px] leading-[1.85] text-justify">
-                                    {{ __('SMA Negeri 1 Plus Matauli Pandan merupakan sekolah negeri unggulan di bawah naungan Yayasan MATAULI dan Kementerian Pendidikan dan Kebudayaan Provinsi Sumatera Utara. Didirikan pada 14 Juni 1994, hingga tahun 2025 sekolah ini telah meluluskan 30 angkatan dengan lebih dari 8.000 alumni.') }}
+                                    {{ __('SMA Negeri 1 Plus MATAULI Pandan merupakan sekolah negeri unggulan di bawah naungan Yayasan MATAULI dan Kementerian Pendidikan dan Kebudayaan Provinsi Sumatera Utara. Didirikan pada 14 Juni 1994, hingga tahun 2025 sekolah ini telah meluluskan 30 angkatan dengan lebih dari 8.000 alumni.') }}
                                 </p>
                             </div>
                             <div class="mt-5 flex items-center justify-between">

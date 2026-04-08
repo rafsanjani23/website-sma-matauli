@@ -22,7 +22,7 @@
         <div class="max-w-3xl mx-auto">
             <div class="bg-gray-50 rounded-2xl p-8 md:p-10 border border-gray-100">
                 <p class="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
-                    {{ __('Asrama Yayasan MATAULI merupakan tempat tinggal bagi seluruh siswa SMAN 1 Matauli Pandan selama menempuh pendidikan. Dengan sistem boarding school, siswa dibina dalam lingkungan yang mendukung pengembangan akademik, karakter, dan kemandirian. Asrama dilengkapi dengan berbagai fasilitas penunjang untuk memastikan kenyamanan dan produktivitas siswa dalam belajar maupun berkegiatan.') }}
+                    {{ __('Asrama Yayasan MATAULI merupakan tempat tinggal bagi seluruh siswa SMAN 1 MATAULI Pandan selama menempuh pendidikan. Dengan sistem boarding school, siswa dibina dalam lingkungan yang mendukung pengembangan akademik, karakter, dan kemandirian. Asrama dilengkapi dengan berbagai fasilitas penunjang untuk memastikan kenyamanan dan produktivitas siswa dalam belajar maupun berkegiatan.') }}
                 </p>
             </div>
         </div>
