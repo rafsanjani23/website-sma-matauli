@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Admin | SMAN 1 Matauli Pandan</title>
+    <link rel="icon" type="image/png" href="{{ asset('assets/Logo_SMAN_Matauli.png') }}">
     @vite(['resources/css/app.css'])
 </head>
 
