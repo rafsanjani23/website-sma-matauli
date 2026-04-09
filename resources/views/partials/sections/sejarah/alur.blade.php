@@ -160,7 +160,7 @@
                                     {{ __('2004 - Perubahan Nama Sekolah') }}
                                 </h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
-                                    {{ __('Pada 27 Januari melakukan perubahan nama menjadi SMA Negeri 1 MATAULI PANDAN.') }}
+                                    {{ __('Pada 27 Januari melakukan perubahan nama menjadi SMA Negeri 1 MATAULI Pandan.') }}
                                 </p>
                             </div>
                         </div>
@@ -299,7 +299,7 @@
                                         class="bg-yellow-500 text-white text-xs font-bold px-2 py-0.5 rounded-full animate-pulse">NOW</span>
                                 </div>
                                 <p class="text-gray-700 text-sm leading-relaxed">
-                                    {{ __('Penerapan Kurikulum Merdeka dan') }} <span
+                                    {{ __('Penerapan') }} <span
                                         class="font-semibold text-yellow-700">International Baccalaureate</span>
                                     {{ __('dan transformasi digital di seluruh aspek pembelajaran.') }}
                                 </p>
@@ -441,7 +441,7 @@
                                 <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
                                     {{ __('2004 - Perubahan Nama Sekolah') }}</h3>
                                 <p class="text-gray-600 text-sm md:text-base leading-relaxed">
-                                    {{ __('Pada 27 Januari melakukan perubahan nama menjadi SMA Negeri 1 MATAULI PANDAN.') }}
+                                    {{ __('Pada 27 Januari melakukan perubahan nama menjadi SMA Negeri 1 MATAULI Pandan.') }}
                                 </p>
                             </div>
                         </div>
@@ -603,7 +603,7 @@
                                         class="bg-yellow-500 text-white text-xs font-bold px-3 py-1 mb-8 rounded-full animate-pulse">NOW</span>
                                 </div>
                                 <p class="text-gray-700 text-sm md:text-base leading-relaxed">
-                                    {{ __('Penerapan Kurikulum Merdeka dan') }} <span
+                                    {{ __('Penerapan') }} <span
                                         class="font-semibold text-yellow-700">International
                                         Baccalaureate</span>
                                     {{ __('dan transformasi digital di seluruh aspek pembelajaran.') }}</p>
