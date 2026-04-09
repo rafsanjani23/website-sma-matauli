@@ -40,14 +40,11 @@
 
                     {{-- TEKS JUDUL (tampil di atas pada mobile, tengah pada desktop) --}}
                     <div class="flex flex-col items-center text-center mb-5 md:hidden banner-mobile-title">
-                        <div class="w-9 h-9 rounded-full bg-red-800/10 flex items-center justify-center mb-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-800" fill="currentColor"
-                                viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                            </svg>
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-3">
+                            <img src="assets/Logo_Provinsi.png" alt="Logo Pemprov Sumut"
+                                class="w-12 h-12 sm:w-14 sm:h-14 object-contain">
                         </div>
-                        <h3 class="text-base font-black text-red-800 leading-tight uppercase tracking-wide">
+                        <h3 class="text-lg sm:text-xl font-black text-red-800 leading-tight uppercase tracking-wide">
                             {{ __('Pemerintah Provinsi') }}<br>
                             <span class="text-gray-800">{{ __('Sumatera Utara') }}</span>
                         </h3>
@@ -59,10 +56,10 @@
                     </div>
 
                     {{-- FOTO GRID: 3 kolom di mobile, flex row di desktop --}}
-                    <div class="flex items-end justify-center gap-3 md:gap-4 lg:gap-6">
+                    <div class="flex items-end justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-6">
 
                         {{-- FOTO KIRI: Gubernur & Wagub --}}
-                        <div class="flex items-end gap-2 md:gap-3 shrink-0">
+                        <div class="flex items-end gap-2 sm:gap-2.5 md:gap-3 shrink-0">
 
                             {{-- Gubernur --}}
                             <div class="flex flex-col items-center photo-left">
@@ -71,16 +68,16 @@
                                         class="absolute -inset-1 rounded-2xl bg-linear-to-b from-yellow-400/40 to-red-800/20 blur-sm">
                                     </div> --}}
                                     <div
-                                        class="photo-card relative w-22.5 h-27.5 sm:w-28 sm:h-32 md:w-32 md:h-36 lg:w-36 lg:h-44 xl:w-40 xl:h-48 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
+                                        class="photo-card relative w-26 h-32 sm:w-32 sm:h-38 md:w-44 md:h-52 lg:w-48 lg:h-56 xl:w-52 xl:h-60 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
                                         <img src="assets/Gubernur_Sumut.png" alt="Gubernur Sumatera Utara"
                                             class="w-full h-full object-cover object-top">
                                         <div
-                                            class="absolute bottom-0 left-0 right-0 bg-linear-to-t from-red-900/90 to-transparent px-1.5 py-1.5">
+                                            class="absolute bottom-0 left-0 right-0 bg-linear-to-t from-red-900/90 to-transparent px-2 py-2 md:px-3 md:py-2.5">
                                             <p
-                                                class="text-white text-[8px] md:text-[9px] font-bold leading-tight text-center">
+                                                class="text-white text-[8px] sm:text-[10px] md:text-sm font-bold leading-tight text-center">
                                                 M. Bobby Afif Nasution, S.E., M.M.</p>
                                             <p
-                                                class="text-yellow-300 text-[7px] md:text-[8px] font-semibold text-center mt-0.5">
+                                                class="text-yellow-300 text-[7px] sm:text-[9px] md:text-xs font-semibold text-center mt-0.5">
                                                 {{ __('Gubernur') }}</p>
                                         </div>
                                     </div>
@@ -94,16 +91,16 @@
                                         class="absolute -inset-1 rounded-2xl bg-linear-to-b from-red-800/20 to-yellow-400/20 blur-sm">
                                     </div> --}}
                                     <div
-                                        class="photo-card relative w-22.5 h-27.5 sm:w-28 sm:h-32 md:w-32 md:h-36 lg:w-36 lg:h-44 xl:w-40 xl:h-48 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
+                                        class="photo-card relative w-26 h-32 sm:w-32 sm:h-38 md:w-44 md:h-52 lg:w-48 lg:h-56 xl:w-52 xl:h-60 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
                                         <img src="assets/WakilGubernur_Sumut.png" alt="Wakil Gubernur Sumatera Utara"
                                             class="w-full h-full object-cover object-top">
                                         <div
-                                            class="absolute bottom-0 left-0 right-0 bg-linear-to-t from-red-900/90 to-transparent px-1.5 py-1.5">
+                                            class="absolute bottom-0 left-0 right-0 bg-linear-to-t from-red-900/90 to-transparent px-2 py-2 md:px-3 md:py-2.5">
                                             <p
-                                                class="text-white text-[8px] md:text-[9px] font-bold leading-tight text-center">
+                                                class="text-white text-[8px] sm:text-[10px] md:text-sm font-bold leading-tight text-center">
                                                 H. Surya, B.Sc.</p>
                                             <p
-                                                class="text-yellow-300 text-[7px] md:text-[8px] font-semibold text-center mt-0.5">
+                                                class="text-yellow-300 text-[7px] sm:text-[9px] md:text-xs font-semibold text-center mt-0.5">
                                                 {{ __('Wakil Gubernur') }}</p>
                                         </div>
                                     </div>
@@ -138,17 +135,17 @@
                                         class="absolute -inset-1 rounded-2xl bg-linear-to-b from-yellow-400/40 to-red-800/20 blur-sm">
                                     </div> --}}
                                     <div
-                                        class="photo-card relative w-22.5 h-27.5 sm:w-28 sm:h-32 md:w-32 md:h-36 lg:w-36 lg:h-44 xl:w-40 xl:h-48 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
+                                        class="photo-card relative w-26 h-32 sm:w-32 sm:h-38 md:w-44 md:h-52 lg:w-48 lg:h-56 xl:w-52 xl:h-60 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
                                         <img src="assets/Kepala Dinas Pendidikan Sumatera Utara.png"
                                             alt="Kepala Dinas Pendidikan Sumatera Utara"
                                             class="w-full h-full object-cover object-top">
                                         <div
-                                            class="absolute bottom-0 left-0 right-0 bg-linear-to-t from-red-900/90 to-transparent px-1.5 py-1.5">
+                                            class="absolute bottom-0 left-0 right-0 bg-linear-to-t from-red-900/90 to-transparent px-2 py-2 md:px-3 md:py-2.5">
                                             <p
-                                                class="text-white text-[8px] md:text-[9px] font-bold leading-tight text-center">
+                                                class="text-white text-[8px] sm:text-[10px] md:text-sm font-bold leading-tight text-center">
                                                 Alexander Sinulingga, S.STP., M.Si.</p>
                                             <p
-                                                class="text-yellow-300 text-[7px] md:text-[8px] font-semibold text-center mt-0.5">
+                                                class="text-yellow-300 text-[7px] sm:text-[9px] md:text-xs font-semibold text-center mt-0.5">
                                                 {{ __('Kepala Dinas Pendidikan') }}</p>
                                         </div>
                                     </div>
