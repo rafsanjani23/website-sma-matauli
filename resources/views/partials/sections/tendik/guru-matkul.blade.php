@@ -15,30 +15,36 @@
                                 d="M225.923 354.706c-8.098 0-16.195-3.092-22.369-9.263L9.27 151.157c-12.359-12.359-12.359-32.397 0-44.751 12.354-12.354 32.388-12.354 44.748 0l171.905 171.915 171.906-171.909c12.359-12.354 32.391-12.354 44.744 0 12.365 12.354 12.365 32.392 0 44.751L248.292 345.449c-6.177 6.172-14.274 9.257-22.369 9.257z" />
                         </svg>
                     </button>
-                    <div class="accordion-content overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
                         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-2 mt-3 px-6">
                             @forelse ($guruMapel as $item)
-                            <div class="aspect-3/2">
-                                <div
-                                    class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto">
-                                    <div class="aspect-3/2">
-                                        @if ($item->foto)
-                                            <img src="{{ Storage::url($item->foto) }}"
-                                                class="w-full h-full object-cover" alt="{{ $item->nama }}" />
-                                        @else
-                                            <div class="w-full h-full flex items-center justify-center bg-gray-100">
-                                                <svg class="w-16 h-16 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-                                            </div>
-                                        @endif
-                                    </div>
-                                    <div class="p-2">
-                                        <h5 class="text-matauli-red-dark text-center text-md font-semibold">{{ $item->nama }}</h5>
-                                        <p class="text-slate-500 text-center text-sm font-light mt-2">{{ $item->mata_pelajaran }}</p>
+                                <div class="aspect-3/2">
+                                    <div
+                                        class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto">
+                                        <div class="aspect-3/2">
+                                            @if ($item->foto)
+                                                <img src="{{ Storage::url($item->foto) }}" class="w-full h-full object-cover"
+                                                    alt="{{ $item->nama }}" />
+                                            @else
+                                                <div class="w-full h-full flex items-center justify-center bg-gray-100">
+                                                    <svg class="w-16 h-16 text-gray-300" fill="currentColor"
+                                                        viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                                                    </svg>
+                                                </div>
+                                            @endif
+                                        </div>
+                                        <div class="p-2">
+                                            <h5 class="text-matauli-red-dark text-center text-md font-semibold">
+                                                {{ $item->nama }}</h5>
+                                            <p class="text-slate-500 text-center text-sm font-light mt-2">
+                                                {{ $item->mata_pelajaran }}</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             @empty
-                            <div class="col-span-full text-center py-8 text-gray-400">{{ __('Belum ada data.') }}</div>
+                                <div class="col-span-full text-center py-8 text-gray-400">{{ __('Belum ada data.') }}</div>
                             @endforelse
                         </div>
                     </div>
@@ -56,30 +62,36 @@
                                 d="M225.923 354.706c-8.098 0-16.195-3.092-22.369-9.263L9.27 151.157c-12.359-12.359-12.359-32.397 0-44.751 12.354-12.354 32.388-12.354 44.748 0l171.905 171.915 171.906-171.909c12.359-12.354 32.391-12.354 44.744 0 12.365 12.354 12.365 32.392 0 44.751L248.292 345.449c-6.177 6.172-14.274 9.257-22.369 9.257z" />
                         </svg>
                     </button>
-                    <div class="accordion-content overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+                    <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
                         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-2 mt-3 px-6">
                             @forelse ($guruIB as $item)
-                            <div class="aspect-3/2">
-                                <div
-                                    class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto">
-                                    <div class="aspect-3/2">
-                                        @if ($item->foto)
-                                            <img src="{{ Storage::url($item->foto) }}"
-                                                class="w-full h-full object-cover" alt="{{ $item->nama }}" />
-                                        @else
-                                            <div class="w-full h-full flex items-center justify-center bg-gray-100">
-                                                <svg class="w-16 h-16 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-                                            </div>
-                                        @endif
-                                    </div>
-                                    <div class="p-2">
-                                        <h5 class="text-matauli-red-dark text-center text-md font-semibold">{{ $item->nama }}</h5>
-                                        <p class="text-slate-500 text-center text-sm font-light mt-2">{{ $item->mata_pelajaran }}</p>
+                                <div class="aspect-3/2">
+                                    <div
+                                        class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto">
+                                        <div class="aspect-3/2">
+                                            @if ($item->foto)
+                                                <img src="{{ Storage::url($item->foto) }}" class="w-full h-full object-cover"
+                                                    alt="{{ $item->nama }}" />
+                                            @else
+                                                <div class="w-full h-full flex items-center justify-center bg-gray-100">
+                                                    <svg class="w-16 h-16 text-gray-300" fill="currentColor"
+                                                        viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                                                    </svg>
+                                                </div>
+                                            @endif
+                                        </div>
+                                        <div class="p-2">
+                                            <h5 class="text-matauli-red-dark text-center text-md font-semibold">
+                                                {{ $item->nama }}</h5>
+                                            <p class="text-slate-500 text-center text-sm font-light mt-2">
+                                                {{ $item->mata_pelajaran }}</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             @empty
-                            <div class="col-span-full text-center py-8 text-gray-400">{{ __('Belum ada data.') }}</div>
+                                <div class="col-span-full text-center py-8 text-gray-400">{{ __('Belum ada data.') }}</div>
                             @endforelse
                         </div>
                     </div>
@@ -97,30 +109,36 @@
                                 d="M225.923 354.706c-8.098 0-16.195-3.092-22.369-9.263L9.27 151.157c-12.359-12.359-12.359-32.397 0-44.751 12.354-12.354 32.388-12.354 44.748 0l171.905 171.915 171.906-171.909c12.359-12.354 32.391-12.354 44.744 0 12.365 12.354 12.365 32.392 0 44.751L248.292 345.449c-6.177 6.172-14.274 9.257-22.369 9.257z" />
                         </svg>
                     </button>
-                    <div class="accordion-content overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+                    <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
                         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-2 mt-3 px-6">
                             @forelse ($tendik as $item)
-                            <div class="aspect-3/2">
-                                <div
-                                    class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto">
-                                    <div class="aspect-3/2">
-                                        @if ($item->foto)
-                                            <img src="{{ Storage::url($item->foto) }}"
-                                                class="w-full h-full object-cover" alt="{{ $item->nama }}" />
-                                        @else
-                                            <div class="w-full h-full flex items-center justify-center bg-gray-100">
-                                                <svg class="w-16 h-16 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-                                            </div>
-                                        @endif
-                                    </div>
-                                    <div class="p-2">
-                                        <h5 class="text-matauli-red-dark text-center text-md font-semibold">{{ $item->nama }}</h5>
-                                        <p class="text-slate-500 text-center text-sm font-light mt-2">{{ $item->jabatan }}</p>
+                                <div class="aspect-3/2">
+                                    <div
+                                        class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto">
+                                        <div class="aspect-3/2">
+                                            @if ($item->foto)
+                                                <img src="{{ Storage::url($item->foto) }}" class="w-full h-full object-cover"
+                                                    alt="{{ $item->nama }}" />
+                                            @else
+                                                <div class="w-full h-full flex items-center justify-center bg-gray-100">
+                                                    <svg class="w-16 h-16 text-gray-300" fill="currentColor"
+                                                        viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                                                    </svg>
+                                                </div>
+                                            @endif
+                                        </div>
+                                        <div class="p-2">
+                                            <h5 class="text-matauli-red-dark text-center text-md font-semibold">
+                                                {{ $item->nama }}</h5>
+                                            <p class="text-slate-500 text-center text-sm font-light mt-2">
+                                                {{ $item->jabatan }}</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             @empty
-                            <div class="col-span-full text-center py-8 text-gray-400">{{ __('Belum ada data.') }}</div>
+                                <div class="col-span-full text-center py-8 text-gray-400">{{ __('Belum ada data.') }}</div>
                             @endforelse
                         </div>
                     </div>
@@ -134,69 +152,43 @@
 <script>
     document.addEventListener('DOMContentLoaded', () => {
 
-        const firstContent = document.querySelector('.accordion-content');
-        const firstButton = document.querySelector('.accordion-button');
+        const accordions = document.querySelectorAll('[role="accordion"]');
 
-        // buka accordion pertama
-        if (firstContent && firstButton) {
-            firstContent.style.maxHeight = firstContent.scrollHeight + 'px';
-            firstButton.classList.add('bg-matauli-red-dark');
-            firstButton.classList.add('text-white');
-            firstButton.querySelector('svg')?.classList.add('rotate-180');
-        }
+        accordions.forEach((acc, index) => {
+            const button = acc.querySelector('.accordion-button');
+            const content = acc.querySelector('.accordion-content');
+            const icon = button.querySelector('svg');
 
-        // Auto-open accordion berdasarkan hash URL
-        const hash = window.location.hash;
-        if (hash) {
-            const target = document.querySelector(hash);
-            if (target && target.querySelector('.accordion-button')) {
-                // Reset accordion pertama yang sudah terbuka
-                if (firstContent && firstButton) {
-                    firstContent.style.maxHeight = '0px';
-                    firstButton.classList.remove('bg-matauli-red-dark', 'text-white');
-                    firstButton.querySelector('svg')?.classList.remove('rotate-180');
-                }
+            // buka accordion pertama
+            if (index === 0) {
+                content.classList.remove('max-h-0', 'overflow-hidden');
+                content.classList.add('max-h-[70vh]', 'overflow-y-auto');
 
-                const targetBtn = target.querySelector('.accordion-button');
-                const targetContent = target.querySelector('.accordion-content');
-                const targetIcon = targetBtn.querySelector('svg');
-
-                targetContent.style.maxHeight = targetContent.scrollHeight + 'px';
-                targetBtn.classList.add('bg-matauli-red-dark', 'text-white');
-                targetIcon?.classList.add('rotate-180');
-
-                // Scroll ke accordion target
-                setTimeout(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }), 300);
+                button.classList.add('bg-matauli-red-dark', 'text-white');
+                icon?.classList.add('rotate-180');
             }
-        }
 
-        document.querySelectorAll('.accordion-button').forEach(button => {
             button.addEventListener('click', () => {
+                const isOpen = content.classList.contains('max-h-[70vh]');
 
-                const content = button.nextElementSibling;
-                const icon = button.querySelector('svg');
-                const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
-
-                // Reset semua accordion
+                // reset semua accordion
                 document.querySelectorAll('.accordion-content').forEach(el => {
-                    el.style.maxHeight = '0px';
+                    el.classList.remove('max-h-[70vh]', 'overflow-y-auto');
+                    el.classList.add('max-h-0', 'overflow-hidden');
                 });
 
-                // Reset semua tombol
+                // reset semua button
                 document.querySelectorAll('.accordion-button').forEach(btn => {
-                    btn.classList.remove('bg-matauli-red-dark');
-                    btn.classList.remove('text-white');
+                    btn.classList.remove('bg-matauli-red-dark', 'text-white');
+                    btn.querySelector('svg')?.classList.remove('rotate-180');
                 });
 
-                // Reset semua icon
-                document.querySelectorAll('.accordion-button svg').forEach(svg => {
-                    svg.classList.remove('rotate-180');
-                });
-
+                // buka yang diklik
                 if (!isOpen) {
-                    content.style.maxHeight = content.scrollHeight + 'px';
-                    button.classList.add('bg-matauli-red-dark');
-                    button.classList.add('text-white');
+                    content.classList.remove('max-h-0', 'overflow-hidden');
+                    content.classList.add('max-h-[70vh]', 'overflow-y-auto');
+
+                    button.classList.add('bg-matauli-red-dark', 'text-white');
                     icon?.classList.add('rotate-180');
                 }
             });

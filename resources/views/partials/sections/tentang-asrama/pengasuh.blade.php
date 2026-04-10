@@ -18,10 +18,10 @@
                     d="M225.923 354.706c-8.098 0-16.195-3.092-22.369-9.263L9.27 151.157c-12.359-12.359-12.359-32.397 0-44.751 12.354-12.354 32.388-12.354 44.748 0l171.905 171.915 171.906-171.909c12.359-12.354 32.391-12.354 44.744 0 12.365 12.354 12.365 32.392 0 44.751L248.292 345.449c-6.177 6.172-14.274 9.257-22.369 9.257z" />
             </svg>
         </button>
-        <div class="accordion-content overflow-hidden transition-all duration-300 ease-in-out">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-2 mt-3 px-10 ">
+        <div class="accordion-content h-[60vh] overflow-x-auto transition-all duration-300 ease-in-out px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-2">
                 @forelse ($pengasuh as $item)
-                <div class="aspect-3/2">
+                <div class="aspect-3/2 mt-2">
                     <div
                         class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-lg overflow-hidden mx-auto">
                         <div class="aspect-3/2">

@@ -76,10 +76,10 @@
                             </div>
                             <div class="p-5">
                                 <h3 class="text-base font-bold text-red-800 mb-2 leading-snug">
-                                    {{ __('1994 - Pendirian SMAN 1 MATAULI Pandan') }}
+                                    {{ __('1994 - Pendirian SMA MATAULI Pandan') }}
                                 </h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
-                                    {{ __('SMA Negeri 1 (Plus) MATAULI Pandan didirikan pada tahun 1994 di Jl. K. H. Dewantara No. 01 Pandan, Kabupaten Tapanuli Tengah, Provinsi Sumatera Utara.') }}
+                                    {{ __('SMA MATAULI Pandan didirikan pada tahun 1994 di Jl. K. H. Dewantara No. 01 Pandan, Kabupaten Tapanuli Tengah, Provinsi Sumatera Utara.') }}
                                 </p>
                             </div>
                         </div>
@@ -364,9 +364,9 @@
                             <div
                                 class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-l-4 border-red-800">
                                 <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
-                                    {{ __('1994 - Pendirian SMAN 1 MATAULI Pandan') }}</h3>
+                                    {{ __('1994 - Pendirian SMA MATAULI Pandan') }}</h3>
                                 <p class="text-gray-600 text-sm md:text-base leading-relaxed">
-                                    {{ __('SMA Negeri 1 (Plus) MATAULI Pandan didirikan pada tahun 1994 di Jl. K. H. Dewantara No. 01 Pandan, Kabupaten Tapanuli Tengah, Provinsi Sumatera Utara.') }}
+                                    {{ __('SMA MATAULI Pandan didirikan pada tahun 1994 di Jl. K. H. Dewantara No. 01 Pandan, Kabupaten Tapanuli Tengah, Provinsi Sumatera Utara.') }}
                                 </p>
                             </div>
                         </div>
