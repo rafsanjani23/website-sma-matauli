@@ -358,5 +358,12 @@
     "Kepala Sekolah SMAN 1 MATAULI": "Principal of SMAN 1 MATAULI",
     "Ketua Umum Yayasan MATAULI": "President of MATAULI Foundation",
     "Belum ada data program kemataulian.": "No program kemataulian data yet.",
-    "Belum ada data program kemendikdasmen.": "No program kemendikdasmen data yet."
+    "Belum ada data program kemendikdasmen.": "No program kemendikdasmen data yet.",
+
+    "KOMITE": "COMMITTEE",
+    "Susunan Komite SMAN 1 MATAULI Pandan": "Committee Structure of SMAN 1 MATAULI Pandan",
+    "Ketua Komite": "Committee Chair",
+    "Bendahara Komite": "Committee Treasurer",
+    "Sekretaris Komite": "Committee Secretary",
+    "Anggota Komite": "Committee Members"
 }
