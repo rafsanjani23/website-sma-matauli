@@ -10,7 +10,7 @@ class TenagaPendidikSeeder extends Seeder
 {
     public function run(): void
     {
-        TenagaPendidik::factory()->count(100)->create();
+        TenagaPendidik::factory()->count(50)->create();
 
     }
 }

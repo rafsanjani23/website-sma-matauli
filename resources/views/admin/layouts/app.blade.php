@@ -143,9 +143,9 @@
 
             {{-- Logout --}}
             <div class="px-4 py-3 border-t border-red-800/50">
-                <form method="POST" action="{{ route('admin.logout') }}">
+                <form id="logout-form" method="POST" action="{{ route('admin.logout') }}">
                     @csrf
-                    <button type="submit"
+                    <button type="button" onclick="showLogoutConfirm()"
                         class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm text-red-200 hover:bg-white/10 hover:text-white transition-all duration-200 w-full">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5"
                             viewBox="0 0 24 24">
@@ -288,6 +288,14 @@
                     okText: 'Ya, Tambah',
                     okClass: 'text-green-600 hover:bg-green-50',
                 },
+                logout: {
+                    icon: '<svg class="w-8 h-8 text-red-700" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9" /></svg>',
+                    iconBg: 'bg-red-100',
+                    title: 'Konfirmasi Logout',
+                    message: 'Apakah Anda yakin ingin keluar dari sesi admin?',
+                    okText: 'Ya, Logout',
+                    okClass: 'text-red-700 hover:bg-red-50',
+                },
             };
 
             function showConfirm(type, form) {
@@ -323,8 +331,14 @@
                 hideConfirm();
             });
 
+            window.showLogoutConfirm = function() {
+                showConfirm('logout', document.getElementById('logout-form'));
+            };
+
             document.addEventListener('submit', function(e) {
                 var form = e.target;
+
+                if (form.id === 'logout-form') return;
 
                 if (form.dataset.confirmed === 'true') {
                     delete form.dataset.confirmed;
