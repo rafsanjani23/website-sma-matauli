@@ -20,7 +20,7 @@
                         </div>
                     </div>
                     <div class="p-2">
-                        <h5 class="text-matauli-red-dark text-center text-md font-semibold">{{ $item->nama }}</h5>
+                        <h5 class="text-black text-center text-md font-semibold">{{ $item->nama }}</h5>
                     </div>
                 </div>
                 @endforeach

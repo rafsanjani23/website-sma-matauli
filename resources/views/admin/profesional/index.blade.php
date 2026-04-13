@@ -1,4 +1,4 @@
-w@extends('admin.layouts.app')
+@extends('admin.layouts.app')
 @section('title', 'Kelola Profesional')
 @section('content')
     <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
