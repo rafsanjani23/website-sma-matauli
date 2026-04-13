@@ -474,15 +474,15 @@
                 if (existing) existing.remove();
                 // Create preview
                 const preview = document.createElement('div');
-                preview.className = 'crop-preview mt-2 flex items-center gap-2';
+                preview.className = 'crop-preview mt-3';
+                const label = document.createElement('p');
+                label.className = 'text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1.5';
+                label.textContent = 'Sesudah';
                 const img = document.createElement('img');
                 img.src = URL.createObjectURL(blob);
                 img.className = 'w-32 h-20 object-cover rounded-lg border border-gray-200';
-                const badge = document.createElement('span');
-                badge.className = 'text-xs text-green-700 bg-green-50 px-2 py-1 rounded-lg font-medium';
-                badge.textContent = 'Cropped';
+                preview.appendChild(label);
                 preview.appendChild(img);
-                preview.appendChild(badge);
                 input.parentElement.appendChild(preview);
             }
 

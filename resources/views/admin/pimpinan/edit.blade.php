@@ -31,8 +31,9 @@
                 <div>
                     <label for="foto" class="block text-sm font-semibold text-gray-700 mb-1.5">Foto</label>
                     @if ($item->foto)
-                        <div class="mb-2">
-                            <img src="{{ Storage::url($item->foto) }}" class="w-32 h-20 object-cover rounded-lg" />
+                        <div class="mb-3" id="foto-preview-wrapper">
+                            <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1.5">Sebelum</p>
+                            <img src="{{ Storage::url($item->foto) }}" class="w-32 h-20 object-cover rounded-lg border border-gray-200" />
                         </div>
                     @endif
                     <input type="file" name="foto" id="foto" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm file:mr-4 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-red-50 file:text-red-800 hover:file:bg-red-100 transition" />
