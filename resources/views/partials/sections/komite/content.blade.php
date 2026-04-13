@@ -23,7 +23,7 @@
                 class=" mx-auto sm:col-span-2 lg:col-span-3 group bg-white hover:bg-red-50/50 border border-gray-300 border-l-4 border-l-red-800 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-md w-xl">
                 <div class="flex items-center gap-3">
                     <span
-                        class="text-[16px] font-bold tracking-[0.08em] uppercase text-red-800">{{ __('Ketua Komite') }}</span>
+                        class="text-[16px] font-bold tracking-[0.08em] uppercase text-grey-900">{{ __('Ketua Komite') }}</span>
                 </div>
                 <div class="w-full h-px bg-gray-100"></div>
                 <p class="text-slate-600 text-[-14px] font-semibold leading-relaxed">
@@ -34,7 +34,7 @@
                 class="mx-auto sm:col-span-2 lg:col-span-3 group bg-white hover:bg-red-50/50 border border-gray-300 border-l-4 border-l-red-800 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-md w-xl">
                 <div class="flex items-center gap-3">
                     <span
-                        class="text-[16px] font-bold tracking-[0.08em] uppercase text-red-800">{{ __('Bendahara Komite') }}</span>
+                        class="text-[16px] font-bold tracking-[0.08em] uppercase text-grey-900">{{ __('Bendahara Komite') }}</span>
                 </div>
                 <div class="w-full h-px bg-gray-100"></div>
                 <p class="text-slate-600 text-[-14px] font-semibold leading-relaxed">
@@ -45,7 +45,7 @@
                 class="mx-auto sm:col-span-2 lg:col-span-3 group bg-white hover:bg-red-50/50 border border-gray-300 border-l-4 border-l-red-800 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-md w-xl">
                 <div class="flex items-center gap-3">
                     <span
-                        class="text-[16px] font-bold tracking-[0.08em] uppercase text-red-800">{{ __('Sekretaris Komite') }}</span>
+                        class="text-[16px] font-bold tracking-[0.08em] uppercase text-grey-900">{{ __('Sekretaris Komite') }}</span>
                 </div>
                 <div class="w-full h-px bg-gray-100"></div>
                 <p class="text-slate-600 text-[-14px] font-semibold leading-relaxed">
@@ -56,7 +56,7 @@
                 class=" mx-auto sm:col-span-2 lg:col-span-3 group bg-white hover:bg-red-50/50 border border-gray-300 border-l-4 border-l-red-800 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-md w-xl">
                 <div class="flex items-center gap-3">
                     <span
-                        class="text-[16px] font-bold tracking-[0.08em] uppercase text-red-800">{{ __('Anggota Komite') }}</span>
+                        class="text-[16px] font-bold tracking-[0.08em] uppercase text-grey-900">{{ __('Anggota Komite') }}</span>
                 </div>
                 <div class="w-full h-px bg-gray-100"></div>
                 <ol class="text-slate-600 font-semibold leading-relaxed list-decimal pl-5">

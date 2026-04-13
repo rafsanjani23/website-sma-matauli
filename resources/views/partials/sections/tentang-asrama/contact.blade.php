@@ -33,7 +33,7 @@
                         </div>
 
                         {{-- JUDUL & DESKRIPSI --}}
-                        <h3 class="text-lg text-matauli-red-dark font-semibold mb-1 mt-2">{{ __('Telp. Asrama') }}</h3>
+                        <h3 class="text-lg text-grey-900 font-semibold mb-1 mt-2">{{ __('Telp. Asrama') }}</h3>
                         <p class="text-slate-950 transition text-md font-medium">
                             +62 812-3456-7890
                         </p>
@@ -66,7 +66,7 @@
                         </div>
 
                         {{-- JUDUL & DESKRIPSI --}}
-                        <h3 class="text-lg text-matauli-red-dark font-semibold mb-1 mt-2">{{ __('Email Asrama') }}</h3>
+                        <h3 class="text-lg text-grey-900 font-semibold mb-1 mt-2">{{ __('Email Asrama') }}</h3>
                         <p class="text-slate-950 transition text-md font-medium">
                             sekret.asramamtn@gmail.com
                         </p>

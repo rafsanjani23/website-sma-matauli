@@ -48,7 +48,7 @@
                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-5">
-                                <h3 class="text-base font-bold text-red-800 mb-2 leading-snug">
+                                <h3 class="text-base font-bold text-grey-900 mb-2 leading-snug">
                                     {{ __('1991 - Pendirian Yayasan Maju Tapian Nauli (MATAULI)') }}
                                 </h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
@@ -75,7 +75,7 @@
                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-5">
-                                <h3 class="text-base font-bold text-red-800 mb-2 leading-snug">
+                                <h3 class="text-base font-bold text-grey-900 mb-2 leading-snug">
                                     {{ __('1994 - Pendirian SMA MATAULI Pandan') }}
                                 </h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
@@ -102,7 +102,7 @@
                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-5">
-                                <h3 class="text-base font-bold text-red-800 mb-2 leading-snug">
+                                <h3 class="text-base font-bold text-grey-900 mb-2 leading-snug">
                                     {{ __('1994 - Kerjasama dengan Kanwil Depdikbud Provinsi Sumatera Utara') }}
                                 </h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
@@ -129,7 +129,7 @@
                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-5">
-                                <h3 class="text-base font-bold text-red-800 mb-2 leading-snug">
+                                <h3 class="text-base font-bold text-grey-900 mb-2 leading-snug">
                                     {{ __('1995 - Perubahan Status') }}
                                 </h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
@@ -156,7 +156,7 @@
                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-5">
-                                <h3 class="text-base font-bold text-red-800 mb-2 leading-snug">
+                                <h3 class="text-base font-bold text-grey-900 mb-2 leading-snug">
                                     {{ __('2004 - Perubahan Nama Sekolah') }}
                                 </h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
@@ -183,7 +183,7 @@
                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-5">
-                                <h3 class="text-base font-bold text-red-800 mb-2 leading-snug">
+                                <h3 class="text-base font-bold text-grey-900 mb-2 leading-snug">
                                     {{ __('2008 - Mendapatkan Sertifikat Sistem Manajemen Mutu') }}
                                 </h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
@@ -210,7 +210,7 @@
                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-5">
-                                <h3 class="text-base font-bold text-red-800 mb-2 leading-snug">
+                                <h3 class="text-base font-bold text-grey-900 mb-2 leading-snug">
                                     {{ __('2012 - Menjadi Sekolah Penyedia Layanan Data Berbasis IT') }}
                                 </h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
@@ -237,7 +237,7 @@
                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-5">
-                                <h3 class="text-base font-bold text-red-800 mb-2 leading-snug">
+                                <h3 class="text-base font-bold text-grey-900 mb-2 leading-snug">
                                     {{ __('2014 - Perpanjang Kerjasama dengan Dinas Pendidikan') }}
                                 </h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
@@ -264,7 +264,7 @@
                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-5">
-                                <h3 class="text-base font-bold text-red-800 mb-2 leading-snug">
+                                <h3 class="text-base font-bold text-grey-900 mb-2 leading-snug">
                                     {{ __('2021 - Telah Mendapatkan Akreditasi A') }}
                                 </h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
@@ -321,7 +321,7 @@
                         <div class="max-w-sm w-full">
                             <div
                                 class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-r-4 border-red-800 text-right">
-                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
+                                <h3 class="text-xl md:text-2xl font-bold text-grey-900 mb-3">
                                     {{ __('1991 - Pendirian Yayasan Maju Tapian Nauli (MATAULI)') }}</h3>
                                 <p class="text-gray-600 text-sm md:text-base leading-relaxed">
                                     {{ __('Yayasan Maju Tapian Nauli (MATAULI) didirikan tahun 1991 oleh Jendral TNI (Purn) Feisal Tanjung dan Dr. Ir. Akbar Tandjung Beserta Tokoh Masyarakat Tapanuli Tengah yang Peduli dengan Pendidikan.') }}
@@ -363,7 +363,7 @@
                         <div class="max-w-sm w-full">
                             <div
                                 class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-l-4 border-red-800">
-                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
+                                <h3 class="text-xl md:text-2xl font-bold text-grey-900 mb-3">
                                     {{ __('1994 - Pendirian SMA MATAULI Pandan') }}</h3>
                                 <p class="text-gray-600 text-sm md:text-base leading-relaxed">
                                     {{ __('SMA MATAULI Pandan didirikan pada tahun 1994 di Jl. K. H. Dewantara No. 01 Pandan, Kabupaten Tapanuli Tengah, Provinsi Sumatera Utara.') }}
@@ -379,7 +379,7 @@
                         <div class="max-w-sm w-full">
                             <div
                                 class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-r-4 border-red-800 text-right">
-                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
+                                <h3 class="text-xl md:text-2xl font-bold text-grey-900 mb-3">
                                     {{ __('1994 - Kerjasama dengan Kanwil Depdikbud Provinsi Sumatera Utara') }}</h3>
                                 <p class="text-gray-600 text-sm md:text-base leading-relaxed">
                                     {{ __('Kerjasama antara Kantor Wilayah Departemen Pendidikan dan Kebudayaan Provinsi Sumatera Utara dengan Yayasan MATAULI.') }}
@@ -421,7 +421,7 @@
                         <div class="max-w-sm w-full">
                             <div
                                 class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-l-4 border-red-800">
-                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
+                                <h3 class="text-xl md:text-2xl font-bold text-grey-900 mb-3">
                                     {{ __('1995 - Perubahan Status') }}
                                 </h3>
                                 <p class="text-gray-600 text-sm md:text-base leading-relaxed">
@@ -438,7 +438,7 @@
                         <div class="max-w-sm w-full">
                             <div
                                 class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-r-4 border-red-800 text-right">
-                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
+                                <h3 class="text-xl md:text-2xl font-bold text-grey-900 mb-3">
                                     {{ __('2004 - Perubahan Nama Sekolah') }}</h3>
                                 <p class="text-gray-600 text-sm md:text-base leading-relaxed">
                                     {{ __('Pada 27 Januari melakukan perubahan nama menjadi SMA Negeri 1 MATAULI Pandan.') }}
@@ -480,7 +480,7 @@
                         <div class="max-w-sm w-full">
                             <div
                                 class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-l-4 border-red-800">
-                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
+                                <h3 class="text-xl md:text-2xl font-bold text-grey-900 mb-3">
                                     {{ __('2008 - Mendapatkan Sertifikat Sistem Manajemen Mutu') }}</h3>
                                 <p class="text-gray-600 text-sm md:text-base leading-relaxed">
                                     {{ __('SMA Negeri 1 (Plus) MATAULI Pandan telah mendapatkan sertifikat Sistem Manajemen Mutu (SMM) ISO 9001 : 2008 yang menjadi pedoman penyelenggaraan sistem manajemen sekolah.') }}
@@ -496,7 +496,7 @@
                         <div class="max-w-sm w-full">
                             <div
                                 class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-r-4 border-red-800 text-right">
-                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
+                                <h3 class="text-xl md:text-2xl font-bold text-grey-900 mb-3">
                                     {{ __('2012 - Menjadi Sekolah Penyedia Layanan Data Berbasis IT') }}</h3>
                                 <p class="text-gray-600 text-sm md:text-base leading-relaxed">
                                     {{ __('Sejak tahun 2012, SMA Negeri 1 (Plus) MATAULI Pandan dipercaya sebagai penyedia layanan data berbasis IT bagi seluruh SMA di Kabupaten Tapanuli Tengah.') }}
@@ -538,7 +538,7 @@
                         <div class="max-w-sm w-full">
                             <div
                                 class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-l-4 border-red-800">
-                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
+                                <h3 class="text-xl md:text-2xl font-bold text-grey-900 mb-3">
                                     {{ __('2014 - Perpanjang Kerjasama dengan Dinas Pendidikan') }}</h3>
                                 <p class="text-gray-600 text-sm md:text-base leading-relaxed">
                                     {{ __('Pada 28 Februari melakukan Perpanjangan Kerjasama Dinas Pendidikan Provinsi Sumatera Utara dengan Yayasan MATAULI.') }}
@@ -554,7 +554,7 @@
                         <div class="max-w-sm w-full">
                             <div
                                 class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-r-4 border-red-800 text-right">
-                                <h3 class="text-xl md:text-2xl font-bold text-red-800 mb-3">
+                                <h3 class="text-xl md:text-2xl font-bold text-grey-900 mb-3">
                                     {{ __('2021 - Telah Mendapatkan Akreditasi A') }}</h3>
                                 <p class="text-gray-600 text-sm md:text-base leading-relaxed">
                                     {{ __('Sekolah ini telah terakreditasi A dengan Nomor SK Akreditasi 1347/BAN-SM/SK/2021 pada tanggal 8 Desember 2021.') }}
