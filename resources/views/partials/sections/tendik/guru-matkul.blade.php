@@ -36,7 +36,7 @@
                                             @endif
                                         </div>
                                         <div class="p-2">
-                                            <h5 class="text-matauli-red-dark text-center text-md font-semibold">
+                                            <h5 class="text-black text-center text-md font-semibold">
                                                 {{ $item->nama }}</h5>
                                             <p class="text-slate-500 text-center text-sm font-light mt-2">
                                                 {{ $item->mata_pelajaran }}</p>
@@ -83,7 +83,7 @@
                                             @endif
                                         </div>
                                         <div class="p-2">
-                                            <h5 class="text-matauli-red-dark text-center text-md font-semibold">
+                                            <h5 class="text-black text-center text-md font-semibold">
                                                 {{ $item->nama }}</h5>
                                             <p class="text-slate-500 text-center text-sm font-light mt-2">
                                                 {{ $item->mata_pelajaran }}</p>
@@ -130,7 +130,7 @@
                                             @endif
                                         </div>
                                         <div class="p-2">
-                                            <h5 class="text-matauli-red-dark text-center text-md font-semibold">
+                                            <h5 class="text-black text-center text-md font-semibold">
                                                 {{ $item->nama }}</h5>
                                             <p class="text-slate-500 text-center text-sm font-light mt-2">
                                                 {{ $item->jabatan }}</p>
