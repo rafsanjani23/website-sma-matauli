@@ -15,6 +15,28 @@ class PimpinanController extends Controller
         return view('admin.pimpinan.index', compact('items'));
     }
 
+    public function create()
+    {
+        return view('admin.pimpinan.create');
+    }
+
+    public function store(Request $request)
+    {
+        $validated = $request->validate([
+            'jabatan' => 'required|max:100',
+            'nama'    => 'required|max:50',
+            'foto'    => 'nullable|image|max:2048',
+        ]);
+
+        if ($request->hasFile('foto')) {
+            $validated['foto'] = $request->file('foto')->store('pimpinan', 'public');
+        }
+
+        Pimpinan::create($validated);
+
+        return redirect()->route('admin.pimpinan.index')->with('success', 'Data berhasil ditambahkan.');
+    }
+
     public function edit($id)
     {
         $item = Pimpinan::findOrFail($id);

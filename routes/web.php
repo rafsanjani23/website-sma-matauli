@@ -246,8 +246,10 @@ Route::prefix('admin')->group(function () {
         Route::put('/kegiatan-asrama/{id}', [KegiatanAsramaController::class, 'update'])->name('admin.kegiatan-asrama.update');
         Route::delete('/kegiatan-asrama/{id}', [KegiatanAsramaController::class, 'destroy'])->name('admin.kegiatan-asrama.destroy');
 
-        // Pimpinan (only index + edit/update, no create/delete)
+        // Pimpinan
         Route::get('/pimpinan', [PimpinanController::class, 'index'])->name('admin.pimpinan.index');
+        Route::get('/pimpinan/create', [PimpinanController::class, 'create'])->name('admin.pimpinan.create');
+        Route::post('/pimpinan', [PimpinanController::class, 'store'])->name('admin.pimpinan.store');
         Route::get('/pimpinan/{id}/edit', [PimpinanController::class, 'edit'])->name('admin.pimpinan.edit');
         Route::put('/pimpinan/{id}', [PimpinanController::class, 'update'])->name('admin.pimpinan.update');
 

@@ -4,6 +4,13 @@
     <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
         <div class="px-6 py-4 border-b border-gray-200 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
             <h2 class="text-lg font-bold text-gray-900">Kelola Pimpinan</h2>
+            <a href="{{ route('admin.pimpinan.create') }}"
+                class="inline-flex items-center gap-2 bg-red-800 hover:bg-red-900 text-white text-sm font-semibold px-4 py-2.5 rounded-xl transition">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+                Tambah Data
+            </a>
         </div>
         <div class="overflow-x-auto">
             <table class="min-w-full">
