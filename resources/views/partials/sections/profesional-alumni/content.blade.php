@@ -15,11 +15,13 @@
 
                     <div class="p-4">
                         <h4 class="text-slate-900 text-base font-semibold">{{ $item->nama }}</h4>
+                        @if ($item->angkatan)
+                            <p class="text-gray-400 text-xs mt-1">Angkatan {{ $item->angkatan }}</p>
+                        @endif
 
                         <div class="mt-4">
                             <p class="text-slate-600 text-sm leading-relaxed">{{ $item->nama_lembaga }}</p>
                         </div>
-
                         <div class="space-x-4 mt-4">
                             @if ($item->link_facebook)
                             <a href="{{ $item->link_facebook }}" target="_blank"
