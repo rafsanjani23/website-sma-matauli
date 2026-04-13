@@ -18,7 +18,7 @@
         </div>
 
         {{-- Gambar Struktur --}}
-        <div class="relative max-w-5xl mx-auto">
+        <div class="relative max-w-6xl mx-auto">
             <div class="rounded-2xl overflow-hidden shadow-xl border border-gray-100 bg-white p-4 md:p-6">
                 <img src="{{ asset('assets/Struktur_Sekolah.png') }}"
                     alt="{{ __('Struktur Organisasi SMAN 1 MATAULI Pandan') }}"

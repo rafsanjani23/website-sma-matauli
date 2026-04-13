@@ -34,10 +34,10 @@
                 class="w-5/6 md:w-3xl mx-2 md:mx-7 sm:col-span-2 lg:col-span-3 group bg-white hover:bg-red-50/50 border border-gray-200 border-l-4 border-l-red-800 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-red-800 flex items-center justify-center">
-                        <span class="text-white font-black text-xs">1</span>
+                        <span class="text-yellow-400 font-black text-xs">1</span>
                     </div>
                     <span
-                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-red-800">{{ __('Karakter Lulusan') }}</span>
+                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-grey-900">{{ __('Karakter Lulusan') }}</span>
                 </div>
                 <div class="w-full h-px bg-gray-100"></div>
                 <p class="text-gray-600 text-md md:text-lg leading-relaxed">
@@ -50,10 +50,10 @@
                 class="w-5/6 md:w-3xl mx-2 md:mx-7 sm:col-span-2 lg:col-span-3 group bg-white hover:bg-red-50/50 border border-gray-200 border-l-4 border-l-red-800 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-red-800 flex items-center justify-center">
-                        <span class="text-white font-black text-xs">2</span>
+                        <span class="text-yellow-400 font-black text-xs">2</span>
                     </div>
                     <span
-                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-red-800">{{ __('Kurikulum IB') }}</span>
+                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-grey-900">{{ __('Kurikulum IB') }}</span>
                 </div>
                 <div class="w-full h-px bg-gray-100"></div>
                 <p class="text-gray-600 text-md md:text-lg leading-relaxed">
@@ -66,10 +66,10 @@
                 class="w-5/6 md:w-3xl mx-2 md:mx-7 sm:col-span-2 lg:col-span-3 group bg-white hover:bg-red-50/50 border border-gray-200 border-l-4 border-l-red-800 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-red-800 flex items-center justify-center">
-                        <span class="text-white font-black text-xs">3</span>
+                        <span class="text-yellow-400 font-black text-xs">3</span>
                     </div>
                     <span
-                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-red-800">{{ __('Inovasi & Teknologi') }}</span>
+                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-grey-900">{{ __('Inovasi & Teknologi') }}</span>
                 </div>
                 <div class="w-full h-px bg-gray-100"></div>
                 <p class="text-gray-600 text-md md:text-lg leading-relaxed">
@@ -82,10 +82,10 @@
                 class="w-5/6 md:w-3xl mx-2 md:mx-7 sm:col-span-2 lg:col-span-3 group bg-white hover:bg-red-50/50 border border-gray-200 border-l-4 border-l-red-800 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-red-800 flex items-center justify-center">
-                        <span class="text-white font-black text-xs">4</span>
+                        <span class="text-yellow-400 font-black text-xs">4</span>
                     </div>
                     <span
-                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-red-800">{{ __('Budaya Sekolah') }}</span>
+                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-grey-900">{{ __('Budaya Sekolah') }}</span>
                 </div>
                 <div class="w-full h-px bg-gray-100"></div>
                 <p class="text-gray-600 text-md md:text-lg leading-relaxed">
@@ -98,10 +98,10 @@
                 class="w-5/6 md:w-3xl mx-2 md:mx-7 sm:col-span-2 lg:col-span-3 group bg-white hover:bg-red-50/50 border border-gray-200 border-l-4 border-l-red-800 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-red-800 flex items-center justify-center">
-                        <span class="text-white font-black text-xs">5</span>
+                        <span class="text-yellow-400 font-black text-xs">5</span>
                     </div>
                     <span
-                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-red-800">{{ __('Bahasa Asing') }}</span>
+                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-grey-900">{{ __('Bahasa Asing') }}</span>
                 </div>
                 <div class="w-full h-px bg-gray-100"></div>
                 <p class="text-gray-600 text-md md:text-lg leading-relaxed">
@@ -114,10 +114,10 @@
                 class="w-5/6 md:w-3xl mx-2 md:mx-7 sm:col-span-2 lg:col-span-3 group bg-white hover:bg-red-50/50 border border-gray-200 border-l-4 border-l-red-800 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-red-800 flex items-center justify-center">
-                        <span class="text-white font-black text-xs">6</span>
+                        <span class="text-yellow-400 font-black text-xs">6</span>
                     </div>
                     <span
-                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-red-800">{{ __('Literasi') }}</span>
+                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-grey-900">{{ __('Literasi') }}</span>
                 </div>
                 <div class="w-full h-px bg-gray-100"></div>
                 <p class="text-gray-600 text-md md:text-lg leading-relaxed">
@@ -130,10 +130,10 @@
                 class="w-5/6 md:w-3xl mx-2 md:mx-7 sm:col-span-2 lg:col-span-3 group bg-white hover:bg-red-50/50 border border-gray-200 border-l-4 border-l-red-800 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-red-800 flex items-center justify-center">
-                        <span class="text-white font-black text-xs">7</span>
+                        <span class="text-yellow-400 font-black text-xs">7</span>
                     </div>
                     <span
-                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-red-800">{{ __('Pembelajaran Bermakna') }}</span>
+                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-grey-900">{{ __('Pembelajaran Bermakna') }}</span>
                 </div>
                 <div class="w-full h-px bg-gray-100"></div>
                 <p class="text-gray-600 text-md md:text-lg leading-relaxed">
@@ -146,10 +146,10 @@
                 class="w-5/6 md:w-3xl mx-2 md:mx-7 sm:col-span-2 lg:col-span-3 group bg-white hover:bg-red-50/50 border border-gray-200 border-l-4 border-l-red-800 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-red-800 flex items-center justify-center">
-                        <span class="text-white font-black text-xs">8</span>
+                        <span class="text-yellow-400 font-black text-xs">8</span>
                     </div>
                     <span
-                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-red-800">{{ __('Pengalaman Belajar') }}</span>
+                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-grey-900">{{ __('Pengalaman Belajar') }}</span>
                 </div>
                 <div class="w-full h-px bg-gray-100"></div>
                 <p class="text-gray-600 text-md md:text-lg leading-relaxed">
@@ -162,10 +162,10 @@
                 class="w-5/6 md:w-3xl mx-2 md:mx-7 sm:col-span-2 lg:col-span-3 group bg-white hover:bg-red-50/50 border border-gray-200 border-l-4 border-l-red-800 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-red-800 flex items-center justify-center">
-                        <span class="text-white font-black text-xs">9</span>
+                        <span class="text-yellow-400 font-black text-xs">9</span>
                     </div>
                     <span
-                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-red-800">{{ __('Kerangka Pembelajaran') }}</span>
+                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-grey-900">{{ __('Kerangka Pembelajaran') }}</span>
                 </div>
                 <div class="w-full h-px bg-gray-100"></div>
                 <p class="text-gray-600 text-md md:text-lg leading-relaxed">
@@ -178,10 +178,10 @@
                 class="w-5/6 md:w-3xl mx-2 md:mx-7 sm:col-span-2 lg:col-span-3 group bg-white hover:bg-red-50/50 border border-gray-200 border-l-4 border-l-red-800 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-red-800 flex items-center justify-center">
-                        <span class="text-white font-black text-xs">10</span>
+                        <span class="text-yellow-400 font-black text-xs">10</span>
                     </div>
                     <span
-                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-red-800">{{ __('Inkuari Kolaboratif') }}</span>
+                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-grey-900">{{ __('Inkuari Kolaboratif') }}</span>
                 </div>
                 <div class="w-full h-px bg-gray-100"></div>
                 <p class="text-gray-600 text-md md:text-lg leading-relaxed">
@@ -194,10 +194,10 @@
                 class="w-5/6 md:w-3xl mx-2 md:mx-7 sm:col-span-2 lg:col-span-3 group bg-white hover:bg-red-50/50 border border-gray-200 border-l-4 border-l-red-800 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-red-800 flex items-center justify-center">
-                        <span class="text-white font-black text-xs">11</span>
+                        <span class="text-yellow-400 font-black text-xs">11</span>
                     </div>
                     <span
-                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-red-800">{{ __('Peran Guru sebagai Pemimpin') }}</span>
+                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-grey-900">{{ __('Peran Guru sebagai Pemimpin') }}</span>
                 </div>
                 <div class="w-full h-px bg-gray-100"></div>
                 <p class="text-gray-600 text-md md:text-lg leading-relaxed">
@@ -210,10 +210,10 @@
                 class="w-5/6 md:w-3xl mx-2 md:mx-7 sm:col-span-2 lg:col-span-3 group bg-white hover:bg-red-50/50 border border-gray-200 border-l-4 border-l-red-800 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-red-800 flex items-center justify-center">
-                        <span class="text-white font-black text-xs">12</span>
+                        <span class="text-yellow-400 font-black text-xs">12</span>
                     </div>
                     <span
-                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-red-800">{{ __('Pelestarian Lingkungan') }}</span>
+                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-grey-900">{{ __('Pelestarian Lingkungan') }}</span>
                 </div>
                 <div class="w-full h-px bg-gray-100"></div>
                 <p class="text-gray-600 text-md md:text-lg leading-relaxed">
@@ -226,10 +226,10 @@
                 class="w-5/6 md:w-3xl mx-2 md:mx-7 sm:col-span-2 lg:col-span-3 group bg-white hover:bg-red-50/50 border border-gray-200 border-l-4 border-l-red-800 rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                 <div class="flex items-center gap-3">
                     <div class="shrink-0 w-8 h-8 rounded-lg bg-red-800 flex items-center justify-center">
-                        <span class="text-white font-black text-xs">13</span>
+                        <span class="text-yellow-400 font-black text-xs">13</span>
                     </div>
                     <span
-                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-red-800">{{ __('Lingkungan Sekolah "Hias Berriman"') }}</span>
+                        class="text-lg md:text-xl font-bold tracking-[0.08em] uppercase text-grey-900">{{ __('Lingkungan Sekolah "Hias Berriman"') }}</span>
                 </div>
                 <div class="w-full h-px bg-gray-100"></div>
                 <p class="text-gray-600 text-md md:text-lg leading-relaxed">

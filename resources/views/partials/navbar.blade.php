@@ -9,11 +9,11 @@
 
                 <!-- Logo Section -->
                 <div class="flex items-center gap-3">
+                    <img src="{{ asset('assets/Logo_Provinsi.png') }}" alt="Logo Provinsi"
+                        class="h-9 lg:h-10 w-auto object-contain">
                     <img src="{{ asset('assets/Logo_Yayasan.png') }}" alt="Logo Yayasan"
                         class="h-9 lg:h-10 w-auto object-contain">
                     <img src="{{ asset('assets/Logo_SMAN_Matauli.png') }}" alt="Logo SMAN Matauli"
-                        class="h-9 lg:h-10 w-auto object-contain">
-                    <img src="{{ asset('assets/Logo_Provinsi.png') }}" alt="Logo Provinsi"
                         class="h-9 lg:h-10 w-auto object-contain">
                 </div>
 
