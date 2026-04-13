@@ -21,7 +21,10 @@ class TenagaPendidikFactory extends Factory
                 'Agama',
             ]),
             'foto' => 'public/assets/DUMMY.jpg', // bisa diganti nanti
-            'kategori' => 'Guru Mata Pelajaran',
+            'kategori' => fake()->randomElement([
+                'Guru Mata Pelajaran',
+                'IB'
+            ])
         ];
     }
 }
