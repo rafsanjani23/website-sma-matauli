@@ -21,6 +21,9 @@ use App\Http\Controllers\Admin\VideoController;
 use App\Http\Controllers\Admin\EkstrakurikulerController;
 use App\Http\Controllers\Admin\ProgramKemataulianController;
 use App\Http\Controllers\Admin\ProgramKemendikdasmenController;
+use App\Http\Controllers\Admin\BerandaProgramIbController;
+use App\Http\Controllers\Admin\BerandaProgramKemataulianController;
+use App\Http\Controllers\Admin\BerandaProgramKemendikdasmenController;
 
 // Language switch
 Route::get('/lang/{locale}', function (string $locale) {
@@ -34,7 +37,10 @@ Route::get('/', function () {
     $berita = \App\Models\Media::latest()->take(3)->get();
     $prestasi = \App\Models\Prestasi::latest()->take(3)->get();
     $testimoni = \App\Models\Testimoni::latest()->take(6)->get();
-    return view('pages.home', compact('berita', 'prestasi', 'testimoni'));
+    $programIb = \App\Models\BerandaProgramIb::latest()->first();
+    $programKemataulian = \App\Models\BerandaProgramKemataulian::latest()->first();
+    $programKemendikdasmen = \App\Models\BerandaProgramKemendikdasmen::latest()->first();
+    return view('pages.home', compact('berita', 'prestasi', 'testimoni', 'programIb', 'programKemataulian', 'programKemendikdasmen'));
 });
 
 // tentang kami
@@ -332,6 +338,30 @@ Route::prefix('admin')->group(function () {
         Route::get('/program-kemendikdasmen/{id}/edit', [ProgramKemendikdasmenController::class, 'edit'])->name('admin.program-kemendikdasmen.edit');
         Route::put('/program-kemendikdasmen/{id}', [ProgramKemendikdasmenController::class, 'update'])->name('admin.program-kemendikdasmen.update');
         Route::delete('/program-kemendikdasmen/{id}', [ProgramKemendikdasmenController::class, 'destroy'])->name('admin.program-kemendikdasmen.destroy');
+
+        // Beranda - Program IB
+        Route::get('/beranda/program-ib', [BerandaProgramIbController::class, 'index'])->name('admin.beranda.program-ib.index');
+        Route::get('/beranda/program-ib/create', [BerandaProgramIbController::class, 'create'])->name('admin.beranda.program-ib.create');
+        Route::post('/beranda/program-ib', [BerandaProgramIbController::class, 'store'])->name('admin.beranda.program-ib.store');
+        Route::get('/beranda/program-ib/{id}/edit', [BerandaProgramIbController::class, 'edit'])->name('admin.beranda.program-ib.edit');
+        Route::put('/beranda/program-ib/{id}', [BerandaProgramIbController::class, 'update'])->name('admin.beranda.program-ib.update');
+        Route::delete('/beranda/program-ib/{id}', [BerandaProgramIbController::class, 'destroy'])->name('admin.beranda.program-ib.destroy');
+
+        // Beranda - Program Khusus Kemataulian
+        Route::get('/beranda/program-kemataulian', [BerandaProgramKemataulianController::class, 'index'])->name('admin.beranda.program-kemataulian.index');
+        Route::get('/beranda/program-kemataulian/create', [BerandaProgramKemataulianController::class, 'create'])->name('admin.beranda.program-kemataulian.create');
+        Route::post('/beranda/program-kemataulian', [BerandaProgramKemataulianController::class, 'store'])->name('admin.beranda.program-kemataulian.store');
+        Route::get('/beranda/program-kemataulian/{id}/edit', [BerandaProgramKemataulianController::class, 'edit'])->name('admin.beranda.program-kemataulian.edit');
+        Route::put('/beranda/program-kemataulian/{id}', [BerandaProgramKemataulianController::class, 'update'])->name('admin.beranda.program-kemataulian.update');
+        Route::delete('/beranda/program-kemataulian/{id}', [BerandaProgramKemataulianController::class, 'destroy'])->name('admin.beranda.program-kemataulian.destroy');
+
+        // Beranda - Program Kemendikdasmen
+        Route::get('/beranda/program-kemendikdasmen', [BerandaProgramKemendikdasmenController::class, 'index'])->name('admin.beranda.program-kemendikdasmen.index');
+        Route::get('/beranda/program-kemendikdasmen/create', [BerandaProgramKemendikdasmenController::class, 'create'])->name('admin.beranda.program-kemendikdasmen.create');
+        Route::post('/beranda/program-kemendikdasmen', [BerandaProgramKemendikdasmenController::class, 'store'])->name('admin.beranda.program-kemendikdasmen.store');
+        Route::get('/beranda/program-kemendikdasmen/{id}/edit', [BerandaProgramKemendikdasmenController::class, 'edit'])->name('admin.beranda.program-kemendikdasmen.edit');
+        Route::put('/beranda/program-kemendikdasmen/{id}', [BerandaProgramKemendikdasmenController::class, 'update'])->name('admin.beranda.program-kemendikdasmen.update');
+        Route::delete('/beranda/program-kemendikdasmen/{id}', [BerandaProgramKemendikdasmenController::class, 'destroy'])->name('admin.beranda.program-kemendikdasmen.destroy');
 
         // Pengasuh
         Route::get('/pengasuh', [PengasuhController::class, 'index'])->name('admin.pengasuh.index');

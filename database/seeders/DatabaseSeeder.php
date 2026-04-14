@@ -18,7 +18,10 @@ class DatabaseSeeder extends Seeder
             PimpinanSeeder::class,
             TenagaPendidikSeeder::class,
             TenagaKependidikanSeeder::class,
-            PengasuhSeeder::class
+            PengasuhSeeder::class,
+            BerandaProgramIbSeeder::class,
+            BerandaProgramKemataulianSeeder::class,
+            BerandaProgramKemendikdasmenSeeder::class,
         ]);
     }
 }

@@ -53,6 +53,27 @@
                     Dashboard
                 </a>
 
+                <p class="px-3 pt-4 pb-1 text-xs font-bold tracking-widest uppercase text-red-400">Beranda</p>
+
+                @php
+                    $berandaItems = [
+                        ['route' => 'admin.beranda.program-ib.index', 'pattern' => 'admin.beranda.program-ib.*', 'label' => 'Program IB'],
+                        ['route' => 'admin.beranda.program-kemataulian.index', 'pattern' => 'admin.beranda.program-kemataulian.*', 'label' => 'Program Khusus Kemataulian'],
+                        ['route' => 'admin.beranda.program-kemendikdasmen.index', 'pattern' => 'admin.beranda.program-kemendikdasmen.*', 'label' => 'Program Kemendikdasmen'],
+                    ];
+                @endphp
+
+                @foreach ($berandaItems as $item)
+                    <a href="{{ route($item['route']) }}"
+                        class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm transition-all duration-200
+                        {{ request()->routeIs($item['pattern']) ? 'bg-white/15 text-white' : 'text-red-200 hover:bg-white/10 hover:text-white' }}">
+                        <span class="w-5 h-5 flex items-center justify-center">
+                            <span class="w-1.5 h-1.5 bg-current rounded-full"></span>
+                        </span>
+                        {{ $item['label'] }}
+                    </a>
+                @endforeach
+
                 <p class="px-3 pt-4 pb-1 text-xs font-bold tracking-widest uppercase text-red-400">Konten</p>
 
                 @php
