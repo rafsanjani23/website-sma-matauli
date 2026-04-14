@@ -1,6 +1,6 @@
 <!-- HERO IMAGE FULL WIDTH -->
 <section class="relative w-full h-[50vh] md:h-[60vh] lg:h-[70vh] overflow-hidden">
-    <img src="{{ asset('assets/visi_misi.jpeg') }}" alt="Foto Pendiri MATAULI Pandan"
+    <img src="{{ asset('assets/visi-misi/Gambar-Hero-Section-Visi-Misi.webp') }}" alt="Foto Pendiri MATAULI Pandan"
         class="absolute inset-0 w-full h-full object-cover object-[center_30%]">
 
     <!-- Overlay -->
