@@ -30,13 +30,17 @@ class ProgramKemendikdasmenController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'judul' => 'required|max:100',
-            'deskripsi' => 'required',
-            'gambar' => 'required|image|max:2048',
+            'judul'          => 'required|max:100',
+            'ringkasan'      => 'required',
+            'isi_konten'     => 'required',
+            'gambar'         => 'required|image|max:4096',
+            'gambar_opsional'=> 'nullable|image|max:4096',
         ]);
 
-        if ($request->hasFile('gambar')) {
-            $validated['gambar'] = $request->file('gambar')->store('program-kemendikdasmen', 'public');
+        $validated['gambar'] = $request->file('gambar')->store('program-kemendikdasmen', 'public');
+
+        if ($request->hasFile('gambar_opsional')) {
+            $validated['gambar_opsional'] = $request->file('gambar_opsional')->store('program-kemendikdasmen', 'public');
         }
 
         ProgramKemendikdasmen::create($validated);
@@ -55,9 +59,11 @@ class ProgramKemendikdasmenController extends Controller
         $item = ProgramKemendikdasmen::findOrFail($id);
 
         $validated = $request->validate([
-            'judul' => 'required|max:100',
-            'deskripsi' => 'required',
-            'gambar' => 'nullable|image|max:2048',
+            'judul'          => 'required|max:100',
+            'ringkasan'      => 'required',
+            'isi_konten'     => 'required',
+            'gambar'         => 'nullable|image|max:4096',
+            'gambar_opsional'=> 'nullable|image|max:4096',
         ]);
 
         if ($request->hasFile('gambar')) {
@@ -65,6 +71,13 @@ class ProgramKemendikdasmenController extends Controller
                 Storage::disk('public')->delete($item->gambar);
             }
             $validated['gambar'] = $request->file('gambar')->store('program-kemendikdasmen', 'public');
+        }
+
+        if ($request->hasFile('gambar_opsional')) {
+            if ($item->gambar_opsional) {
+                Storage::disk('public')->delete($item->gambar_opsional);
+            }
+            $validated['gambar_opsional'] = $request->file('gambar_opsional')->store('program-kemendikdasmen', 'public');
         }
 
         $item->update($validated);

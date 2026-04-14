@@ -4,13 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ProgramKemataulian extends Model
+class ProgramIb extends Model
 {
-    protected $table = 'program_kemataulian';
+    protected $table = 'program_ib';
 
     protected $fillable = [
         'judul',
-        'deskripsi',
         'gambar',
         'ringkasan',
         'isi_konten',

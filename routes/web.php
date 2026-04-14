@@ -24,6 +24,7 @@ use App\Http\Controllers\Admin\ProgramKemendikdasmenController;
 use App\Http\Controllers\Admin\BerandaProgramIbController;
 use App\Http\Controllers\Admin\BerandaProgramKemataulianController;
 use App\Http\Controllers\Admin\BerandaProgramKemendikdasmenController;
+use App\Http\Controllers\Admin\ProgramIbController;
 
 // Language switch
 Route::get('/lang/{locale}', function (string $locale) {
@@ -93,13 +94,28 @@ Route::get('/program-kemataulian', function () {
     $items = \App\Models\ProgramKemataulian::orderBy('judul')->get();
     return view('pages.program-kemataulian', compact('items'));
 })->name('program-kemataulian');
+Route::get('/program-kemataulian/{id}', function ($id) {
+    $item = \App\Models\ProgramKemataulian::findOrFail($id);
+    return view('pages.program-kemataulian-detail', compact('item'));
+})->name('program-kemataulian-detail');
+
 Route::get('/program-ib', function () {
-    return view('pages.program-ib');
+    $items = \App\Models\ProgramIb::orderBy('judul')->get();
+    return view('pages.program-ib', compact('items'));
 })->name('program-ib');
+Route::get('/program-ib/{id}', function ($id) {
+    $item = \App\Models\ProgramIb::findOrFail($id);
+    return view('pages.program-ib-detail', compact('item'));
+})->name('program-ib-detail');
+
 Route::get('/program-kemendikdasmen', function () {
     $items = \App\Models\ProgramKemendikdasmen::orderBy('judul')->get();
     return view('pages.program-kemendikdasmen', compact('items'));
 })->name('program-kemendikdasmen');
+Route::get('/program-kemendikdasmen/{id}', function ($id) {
+    $item = \App\Models\ProgramKemendikdasmen::findOrFail($id);
+    return view('pages.program-kemendikdasmen-detail', compact('item'));
+})->name('program-kemendikdasmen-detail');
 
 // asrama
 Route::get('/tentang-asrama', function (){
@@ -322,6 +338,14 @@ Route::prefix('admin')->group(function () {
         Route::get('/ekstrakurikuler/{id}/edit', [EkstrakurikulerController::class, 'edit'])->name('admin.ekstrakurikuler.edit');
         Route::put('/ekstrakurikuler/{id}', [EkstrakurikulerController::class, 'update'])->name('admin.ekstrakurikuler.update');
         Route::delete('/ekstrakurikuler/{id}', [EkstrakurikulerController::class, 'destroy'])->name('admin.ekstrakurikuler.destroy');
+
+            // Program IB
+        Route::get('/program-ib', [ProgramIbController::class, 'index'])->name('admin.program-ib.index');
+        Route::get('/program-ib/create', [ProgramIbController::class, 'create'])->name('admin.program-ib.create');
+        Route::post('/program-ib', [ProgramIbController::class, 'store'])->name('admin.program-ib.store');
+        Route::get('/program-ib/{id}/edit', [ProgramIbController::class, 'edit'])->name('admin.program-ib.edit');
+        Route::put('/program-ib/{id}', [ProgramIbController::class, 'update'])->name('admin.program-ib.update');
+        Route::delete('/program-ib/{id}', [ProgramIbController::class, 'destroy'])->name('admin.program-ib.destroy');
 
             // Program Kemataulian
         Route::get('/program-kemataulian', [ProgramKemataulianController::class, 'index'])->name('admin.program-kemataulian.index');

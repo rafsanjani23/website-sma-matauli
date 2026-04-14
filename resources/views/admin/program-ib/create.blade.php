@@ -1,11 +1,11 @@
 @extends('admin.layouts.app')
 
-@section('title', 'Edit Program Kemataulian')
+@section('title', 'Tambah Program IB')
 
 @section('content')
     <div class="max-w-4xl">
         <div class="mb-6">
-            <a href="{{ route('admin.program-kemataulian.index') }}" class="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-red-800 transition">
+            <a href="{{ route('admin.program-ib.index') }}" class="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-red-800 transition">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
                 </svg>
@@ -14,7 +14,7 @@
         </div>
 
         <div class="bg-white rounded-xl border border-gray-200 p-6 md:p-8">
-            <h2 class="text-lg font-bold text-gray-900 mb-6">Edit Program Kemataulian</h2>
+            <h2 class="text-lg font-bold text-gray-900 mb-6">Tambah Program IB</h2>
 
             @if ($errors->any())
                 <div class="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-xl mb-6 text-sm">
@@ -26,46 +26,35 @@
                 </div>
             @endif
 
-            <form action="{{ route('admin.program-kemataulian.update', $item->id) }}" method="POST" enctype="multipart/form-data" class="space-y-5">
+            <form action="{{ route('admin.program-ib.store') }}" method="POST" enctype="multipart/form-data" class="space-y-5">
                 @csrf
-                @method('PUT')
 
                 <div>
                     <label for="judul" class="block text-sm font-semibold text-gray-700 mb-1.5">Judul</label>
-                    <input type="text" name="judul" id="judul" value="{{ old('judul', $item->judul) }}" required
+                    <input type="text" name="judul" id="judul" value="{{ old('judul') }}" required
                         class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">
                 </div>
 
                 <div>
                     <label for="ringkasan" class="block text-sm font-semibold text-gray-700 mb-1.5">Ringkasan <span class="font-normal text-gray-400">(ditampilkan di kartu)</span></label>
                     <textarea name="ringkasan" id="ringkasan" rows="3" required
-                        class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('ringkasan', $item->ringkasan ?? $item->deskripsi) }}</textarea>
+                        class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('ringkasan') }}</textarea>
                 </div>
 
                 <div>
                     <label for="isi_konten" class="block text-sm font-semibold text-gray-700 mb-1.5">Isi Konten <span class="font-normal text-gray-400">(ditampilkan di halaman detail)</span></label>
                     <textarea name="isi_konten" id="isi_konten" rows="8" required
-                        class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('isi_konten', $item->isi_konten) }}</textarea>
+                        class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('isi_konten') }}</textarea>
                 </div>
 
                 <div>
                     <label for="gambar" class="block text-sm font-semibold text-gray-700 mb-1.5">Gambar Utama <span class="font-normal text-gray-400">(thumbnail kartu & header detail)</span></label>
-                    @if ($item->gambar)
-                        <div class="mb-2">
-                            <img src="{{ Storage::url($item->gambar) }}" class="w-32 h-20 object-cover rounded-lg" />
-                        </div>
-                    @endif
-                    <input type="file" name="gambar" id="gambar" accept="image/*"
+                    <input type="file" name="gambar" id="gambar" accept="image/*" required
                         class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm file:mr-4 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-red-50 file:text-red-800 hover:file:bg-red-100 transition">
                 </div>
 
                 <div>
                     <label for="gambar_opsional" class="block text-sm font-semibold text-gray-700 mb-1.5">Gambar Tambahan <span class="font-normal text-gray-400">(opsional, ditampilkan di halaman detail)</span></label>
-                    @if ($item->gambar_opsional)
-                        <div class="mb-2">
-                            <img src="{{ Storage::url($item->gambar_opsional) }}" class="w-32 h-20 object-cover rounded-lg" />
-                        </div>
-                    @endif
                     <input type="file" name="gambar_opsional" id="gambar_opsional" accept="image/*"
                         class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm file:mr-4 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-red-50 file:text-red-800 hover:file:bg-red-100 transition">
                 </div>

@@ -12,5 +12,8 @@ class ProgramKemendikdasmen extends Model
         'judul',
         'deskripsi',
         'gambar',
+        'ringkasan',
+        'isi_konten',
+        'gambar_opsional',
     ];
 }

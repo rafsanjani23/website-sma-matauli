@@ -3,63 +3,63 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\ProgramKemataulian;
+use App\Models\ProgramIb;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
-class ProgramKemataulianController extends Controller
+class ProgramIbController extends Controller
 {
     public function index(Request $request)
     {
         $search = $request->query('search');
         if (!empty($search)) {
-            $items = ProgramKemataulian::where('judul', 'like', '%' . $search . '%')
+            $items = ProgramIb::where('judul', 'like', '%' . $search . '%')
                 ->paginate(20)->onEachSide(2)
-                ->fragment('program-kemataulian');
+                ->fragment('program-ib');
         } else {
-            $items = ProgramKemataulian::orderBy('judul')->paginate(20)->onEachSide(2)->fragment('program-kemataulian');
+            $items = ProgramIb::orderBy('judul')->paginate(20)->onEachSide(2)->fragment('program-ib');
         }
-        return view('admin.program-kemataulian.index', compact('items', 'search'));
+        return view('admin.program-ib.index', compact('items', 'search'));
     }
 
     public function create()
     {
-        return view('admin.program-kemataulian.create');
+        return view('admin.program-ib.create');
     }
 
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'judul'          => 'required|max:100',
+            'judul'          => 'required|max:150',
             'ringkasan'      => 'required',
             'isi_konten'     => 'required',
             'gambar'         => 'required|image|max:4096',
             'gambar_opsional'=> 'nullable|image|max:4096',
         ]);
 
-        $validated['gambar'] = $request->file('gambar')->store('program-kemataulian', 'public');
+        $validated['gambar'] = $request->file('gambar')->store('program-ib', 'public');
 
         if ($request->hasFile('gambar_opsional')) {
-            $validated['gambar_opsional'] = $request->file('gambar_opsional')->store('program-kemataulian', 'public');
+            $validated['gambar_opsional'] = $request->file('gambar_opsional')->store('program-ib', 'public');
         }
 
-        ProgramKemataulian::create($validated);
+        ProgramIb::create($validated);
 
-        return redirect()->route('admin.program-kemataulian.index')->with('success', 'Data berhasil ditambahkan.');
+        return redirect()->route('admin.program-ib.index')->with('success', 'Data berhasil ditambahkan.');
     }
 
     public function edit($id)
     {
-        $item = ProgramKemataulian::findOrFail($id);
-        return view('admin.program-kemataulian.edit', compact('item'));
+        $item = ProgramIb::findOrFail($id);
+        return view('admin.program-ib.edit', compact('item'));
     }
 
     public function update(Request $request, $id)
     {
-        $item = ProgramKemataulian::findOrFail($id);
+        $item = ProgramIb::findOrFail($id);
 
         $validated = $request->validate([
-            'judul'          => 'required|max:100',
+            'judul'          => 'required|max:150',
             'ringkasan'      => 'required',
             'isi_konten'     => 'required',
             'gambar'         => 'nullable|image|max:4096',
@@ -70,31 +70,34 @@ class ProgramKemataulianController extends Controller
             if ($item->gambar) {
                 Storage::disk('public')->delete($item->gambar);
             }
-            $validated['gambar'] = $request->file('gambar')->store('program-kemataulian', 'public');
+            $validated['gambar'] = $request->file('gambar')->store('program-ib', 'public');
         }
 
         if ($request->hasFile('gambar_opsional')) {
             if ($item->gambar_opsional) {
                 Storage::disk('public')->delete($item->gambar_opsional);
             }
-            $validated['gambar_opsional'] = $request->file('gambar_opsional')->store('program-kemataulian', 'public');
+            $validated['gambar_opsional'] = $request->file('gambar_opsional')->store('program-ib', 'public');
         }
 
         $item->update($validated);
 
-        return redirect()->route('admin.program-kemataulian.index')->with('success', 'Data berhasil diperbarui.');
+        return redirect()->route('admin.program-ib.index')->with('success', 'Data berhasil diperbarui.');
     }
 
     public function destroy($id)
     {
-        $item = ProgramKemataulian::findOrFail($id);
+        $item = ProgramIb::findOrFail($id);
 
         if ($item->gambar) {
             Storage::disk('public')->delete($item->gambar);
         }
+        if ($item->gambar_opsional) {
+            Storage::disk('public')->delete($item->gambar_opsional);
+        }
 
         $item->delete();
 
-        return redirect()->route('admin.program-kemataulian.index')->with('success', 'Data berhasil dihapus.');
+        return redirect()->route('admin.program-ib.index')->with('success', 'Data berhasil dihapus.');
     }
 }
