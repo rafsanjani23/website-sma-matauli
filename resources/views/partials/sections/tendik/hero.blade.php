@@ -6,7 +6,7 @@
     <div class="absolute inset-0 bg-black/45"></div>
 
     <!-- Logo & Text -->
-    <div class="absolute inset-0 flex flex-col items-center justify-end pb-20 md:pb-24 lg:pb-28 text-center px-4">
+    <div class="absolute inset-0 flex flex-col items-center justify-end pb-45 md:pb-62 lg:pb-72 text-center px-4">
         <!-- Logo -->
         {{-- <img src="{{ asset('assets/Logo_SMAN_Matauli.png') }}" alt="Logo SMAN 1 MATAULI Pandan"
             class="h-10 sm:h-12 md:h-16 lg:h-20 mb-4 object-contain drop-shadow-xl"> --}}
