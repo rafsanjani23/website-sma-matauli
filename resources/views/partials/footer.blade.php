@@ -310,7 +310,7 @@
                 <div class="flex flex-wrap gap-3">
 
                     <!-- Facebook -->
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+                    <a href="https://web.facebook.com/smanplusmatauli" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
                         class="group relative w-12 h-12 rounded-xl bg-white/10 backdrop-blur-sm hover:bg-blue-600 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1">
 
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white transition-colors"
@@ -326,7 +326,7 @@
 
 
                     <!-- Instagram -->
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+                    <a href="https://www.instagram.com/sman1matauli.official" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
                         class="group relative w-12 h-12 rounded-xl bg-white/10 backdrop-blur-sm hover:bg-linear-to-br hover:from-purple-500 hover:via-pink-500 hover:to-orange-500 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white transition-colors"
                             fill="currentColor" viewBox="0 0 24 24">
@@ -339,7 +339,7 @@
                     </a>
 
                     <!-- TikTok -->
-                    <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok"
+                    <a href="https://www.tiktok.com/@smartiksmatauli" target="_blank" rel="noopener noreferrer" aria-label="TikTok"
                         class="group relative w-12 h-12 rounded-xl bg-white/10 backdrop-blur-sm hover:bg-black flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white transition-colors"
                             fill="currentColor" viewBox="0 0 24 24">
@@ -352,7 +352,7 @@
                     </a>
 
                     <!-- YouTube -->
-                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"
+                    <a href="https://www.youtube.com/@smansamatauli" target="_blank" rel="noopener noreferrer" aria-label="YouTube"
                         class="group relative w-12 h-12 rounded-xl bg-white/10 backdrop-blur-sm hover:bg-red-600 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white transition-colors"
                             fill="currentColor" viewBox="0 0 24 24">
