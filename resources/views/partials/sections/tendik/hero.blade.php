@@ -1,5 +1,5 @@
 <section class="relative w-full h-80 md:h-100 lg:h-120 overflow-hidden">
-    <img src="{{ asset('assets/tendik/Tenaga_Pendidik.jpeg') }}" alt="Paduan Suara SMAN 1 MATAULI Pandan"
+    <img src="{{ asset('assets/tendik/Tenaga_Pendidik.webp') }}" alt="Paduan Suara SMAN 1 MATAULI Pandan"
         class="absolute inset-0 w-full h-full object-cover">
 
     <!-- Overlay -->

@@ -9,11 +9,11 @@
 
                 <!-- Logo Section -->
                 <div class="flex items-center gap-3">
-                    <img src="{{ asset('assets/Logo_Provinsi.png') }}" alt="Logo Provinsi"
+                    <img src="{{ asset('assets/Logo_Provinsi.webp') }}" alt="Logo Provinsi"
                         class="h-9 lg:h-10 w-auto object-contain">
-                    <img src="{{ asset('assets/Logo_Yayasan.png') }}" alt="Logo Yayasan"
+                    <img src="{{ asset('assets/Logo_Yayasan.webp') }}" alt="Logo Yayasan"
                         class="h-9 lg:h-10 w-auto object-contain">
-                    <img src="{{ asset('assets/Logo_SMAN_Matauli.png') }}" alt="Logo SMAN Matauli"
+                    <img src="{{ asset('assets/Logo_SMAN_Matauli.webp') }}" alt="Logo SMAN Matauli"
                         class="h-9 lg:h-10 w-auto object-contain">
                 </div>
 
@@ -87,7 +87,7 @@
 
         <!-- Brand Section -->
         <div class="flex items-center gap-2 sm:gap-3">
-            <img src="{{ asset('assets/Logo_SMAN_Matauli.png') }}" alt="Logo SMAN" class="h-10 sm:h-11 lg:h-12 w-auto">
+            <img src="{{ asset('assets/Logo_SMAN_Matauli.webp') }}" alt="Logo SMAN" class="h-10 sm:h-11 lg:h-12 w-auto">
 
             <div class="flex flex-col text-[#fff9f9]">
                 <h1 class="text-sm sm:text-base lg:text-xl font-bold tracking-tight leading-tight">

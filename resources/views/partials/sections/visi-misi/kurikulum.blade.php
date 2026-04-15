@@ -55,7 +55,7 @@
                     <div
                         class="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-red-800 via-red-600 to-yellow-500 z-10">
                     </div>
-                    <img src="{{ asset('assets/visi-misi/visi-misi2.JPG') }}" alt="Kurikulum IB SMAN 1 MATAULI"
+                    <img src="{{ asset('assets/visi-misi/visi-misi2.webp') }}" alt="Kurikulum IB SMAN 1 MATAULI"
                         class="w-full h-64 md:h-80 object-cover">
                     <div class="absolute bottom-0 left-0 right-0 h-20 bg-linear-to-t from-red-900/60 to-transparent">
                     </div>

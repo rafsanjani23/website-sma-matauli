@@ -7,7 +7,7 @@
             {{-- SECTION HEADER --}}
             <div class="text-center flex flex-col mb-16 md:mb-18">
                 <div class="relative mx-auto">
-                    <img src="{{ asset('assets/Logo_SMAN_Matauli.png') }}" alt="Program Kemendikdasmen" class="h-28 w-full">
+                    <img src="{{ asset('assets/Logo_SMAN_Matauli.webp') }}" alt="Program Kemendikdasmen" class="h-28 w-full">
                 </div>
                 <div>
                     <h2 class="mt-2 text-3xl md:text-4xl lg:text-5xl font-bold text-black">{{ __('Program Kemendikdasmen') }}</h2>

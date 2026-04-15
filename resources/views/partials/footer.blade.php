@@ -21,7 +21,7 @@
                     <!-- Logo wrapper with glow effect -->
                     <div class="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center shrink-0 relative">
                         <div class="absolute inset-0 bg-yellow-400/20 rounded-full blur-xl"></div>
-                        <img src="{{ asset('assets/Logo_SMAN_Matauli.png') }}" alt="Logo SMAN MATAULI"
+                        <img src="{{ asset('assets/Logo_SMAN_Matauli.webp') }}" alt="Logo SMAN MATAULI"
                             class="max-w-full max-h-full object-contain relative z-10 drop-shadow-2xl">
                     </div>
 
@@ -367,12 +367,12 @@
 
                 {{-- Gambar Kurikulum Merdeka --}}
                 <div class="mt-8">
-                    <img src="{{ asset('assets/kurikulum.png') }}" alt="Kurikulum Merdeka"
+                    <img src="{{ asset('assets/kurikulum.webp') }}" alt="Kurikulum Merdeka"
                         class="w-full h-16 object-cover rounded-xl max-md:w-57.5">
                 </div>
                 {{-- Gambar LOGO IB --}}
                 <div class="mt-4">
-                    <img src="{{ asset('assets/LogoIB.png') }}" alt="LOGO IB"
+                    <img src="{{ asset('assets/LogoIB.webp') }}" alt="LOGO IB"
                         class="w-full rounded-xl object-cover max-md:w-59.75 max-md:h-16">
                 </div>
             </div>

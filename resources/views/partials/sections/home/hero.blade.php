@@ -7,7 +7,7 @@
         <!-- Slide 1 - Daftar Disini -->
         <div id="beranda" class="hero-slide active absolute inset-0 pointer-events-none ease-in-out">
             <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
-            <img src="{{ asset('assets/home/Hero Section 1.png') }}" alt="School Building" class="w-full h-full object-cover">
+            <img src="{{ asset('assets/home/Hero Section 1.webp') }}" alt="School Building" class="w-full h-full object-cover">
             <div class="absolute inset-0 z-20 flex items-center pointer-events-auto">
                 <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
                     <div
@@ -41,7 +41,7 @@
         <!-- Slide 2 - Program IB -->
         <div id="ib" class="hero-slide absolute inset-0 pointer-events-none ease-in-out">
             <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
-            <img src="{{ asset('assets/home/Hero Section 2.jpeg') }}" alt="IB Program" class="w-full h-full object-cover">
+            <img src="{{ asset('assets/home/Hero Section 2.webp') }}" alt="IB Program" class="w-full h-full object-cover">
             <div class="absolute inset-0 z-20 flex items-center pointer-events-auto">
                 <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
                     <div
@@ -75,7 +75,7 @@
         <!-- Slide 3 - Asrama -->
         <div id="asrama" class="hero-slide absolute inset-0 pointer-events-none ease-in-out">
             <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-transparent z-10"></div>
-            <img src="{{ asset('assets/home/Asrama1.jpeg') }}" alt="School Activities" class="w-full h-full object-cover">
+            <img src="{{ asset('assets/home/Asrama1.webp') }}" alt="School Activities" class="w-full h-full object-cover">
             <div class="absolute inset-0 z-20 flex items-center pointer-events-auto">
                 <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
                     <div

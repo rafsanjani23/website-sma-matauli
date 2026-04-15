@@ -27,7 +27,7 @@
 
         <div class="flex items-center justify-center gap-4">
             <div class="h-px w-12 bg-red-200"></div>
-            <img src="{{ asset('assets/Logo_SMAN_Matauli.png') }}" alt="Logo" class="h-10 md:h-12 object-contain">
+            <img src="{{ asset('assets/Logo_SMAN_Matauli.webp') }}" alt="Logo" class="h-10 md:h-12 object-contain">
             <div class="h-px w-12 bg-red-200"></div>
         </div>
 

@@ -6,7 +6,7 @@
         {{-- ===================== --}}
         <div class="text-center flex flex-col mb-12 md:mb-16">
             <div class="relative mx-auto">
-                <img src="{{ asset('assets/Logo_SMAN_Matauli.png') }}" alt="Prestasi Siswa" class="h-28 w-full">
+                <img src="{{ asset('assets/Logo_SMAN_Matauli.webp') }}" alt="Prestasi Siswa" class="h-28 w-full">
             </div>
             <div>
                 <span class="text-xs font-semibold tracking-[0.3em] uppercase text-matauli-red-dark">{{ __('Prestasi Kami') }}</span>
