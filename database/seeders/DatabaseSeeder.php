@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
             BerandaProgramIbSeeder::class,
             BerandaProgramKemataulianSeeder::class,
             BerandaProgramKemendikdasmenSeeder::class,
+            ProgramIB::class,
         ]);
     }
 }
