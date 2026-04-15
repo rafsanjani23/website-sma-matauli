@@ -26,7 +26,7 @@
             {{-- Image --}}
             <div class="relative hidden md:block">
                 <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-                    <img src="{{ asset('assets/visi-misi3.jpeg') }}" alt="Visi SMAN 1 Matauli"
+                    <img src="{{ asset('assets/visi-misi/visi-misi3.jpeg') }}" alt="Visi SMAN 1 Matauli"
                         class="w-full h-80 object-cover">
                     <div class="absolute inset-0 bg-linear-to-t from-red-950/70 via-transparent to-transparent"></div>
                 </div>

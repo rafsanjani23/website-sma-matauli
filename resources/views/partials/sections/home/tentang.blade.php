@@ -41,7 +41,7 @@
                     {{-- TEKS JUDUL (tampil di atas pada mobile, tengah pada desktop) --}}
                     <div class="flex flex-col items-center text-center mb-5 md:hidden banner-mobile-title">
                         <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-3">
-                            <img src="assets/Logo_Provinsi.png" alt="Logo Pemprov Sumut"
+                            <img src="{{ asset('assets/Logo_Provinsi.png') }}" alt="Logo Pemprov Sumut"
                                 class="w-12 h-12 sm:w-14 sm:h-14 object-contain">
                         </div>
                         <h3 class="text-lg sm:text-xl font-black text-red-800 leading-tight uppercase tracking-wide">
@@ -69,7 +69,7 @@
                                     </div> --}}
                                     <div
                                         class="photo-card relative w-26 h-32 sm:w-32 sm:h-38 md:w-44 md:h-52 lg:w-48 lg:h-56 xl:w-52 xl:h-60 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
-                                        <img src="assets/Gubernur_Sumut.png" alt="Gubernur Sumatera Utara"
+                                        <img src="{{ asset('assets/home/Gubernur_Sumut.png') }}" alt="Gubernur Sumatera Utara"
                                             class="w-full h-full object-cover object-top">
                                         <div
                                             class="absolute bottom-0 left-0 right-0 bg-linear-to-t from-red-900/90 to-transparent px-2 py-2 md:px-3 md:py-2.5">
@@ -92,7 +92,7 @@
                                     </div> --}}
                                     <div
                                         class="photo-card relative w-26 h-32 sm:w-32 sm:h-38 md:w-44 md:h-52 lg:w-48 lg:h-56 xl:w-52 xl:h-60 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
-                                        <img src="assets/WakilGubernur_Sumut.png" alt="Wakil Gubernur Sumatera Utara"
+                                        <img src="{{ asset('assets/home/WakilGubernur_Sumut.png') }}" alt="Wakil Gubernur Sumatera Utara"
                                             class="w-full h-full object-cover object-top">
                                         <div
                                             class="absolute bottom-0 left-0 right-0 bg-linear-to-t from-red-900/90 to-transparent px-2 py-2 md:px-3 md:py-2.5">
@@ -112,7 +112,7 @@
                         <div
                             class="hidden md:flex flex-1 flex-col items-center justify-center text-center px-2 md:px-4">
                             <div class="banner-center-logo w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mb-3">
-                                <img src="assets/Logo_Provinsi.png" alt="Logo Pemprov Sumut"
+                                <img src="{{ asset('assets/Logo_Provinsi.png') }}" alt="Logo Pemprov Sumut"
                                     class="w-12 h-12 md:w-16 md:h-16 object-contain">
                             </div>
                             <h3
@@ -136,7 +136,7 @@
                                     </div> --}}
                                     <div
                                         class="photo-card relative w-26 h-32 sm:w-32 sm:h-38 md:w-44 md:h-52 lg:w-48 lg:h-56 xl:w-52 xl:h-60 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
-                                        <img src="assets/Kepala Dinas Pendidikan Sumatera Utara.png"
+                                        <img src="{{ asset('assets/home/Kepala Dinas Pendidikan Sumatera Utara.png') }}"
                                             alt="Kepala Dinas Pendidikan Sumatera Utara"
                                             class="w-full h-full object-cover object-top">
                                         <div
@@ -183,7 +183,7 @@
                     <div
                         class="w-52 h-52 md:w-60 md:h-60 lg:w-64 lg:h-64 rounded-full bg-linear-to-br from-red-800 to-red-950 p-0.75 shadow-2xl shadow-red-900/40 relative z-10">
                         <div class="w-full h-full rounded-full overflow-hidden bg-gray-100">
-                            <img src="assets/Pak_Deden_Kepala_Sekolah_wm.png" alt="Kepala Sekolah"
+                            <img src="{{ asset('assets/home/Pak_Deden_Kepala_Sekolah_wm.png') }}" alt="Kepala Sekolah"
                                 style="width: 100%; height: 140%; object-fit: cover; object-position: center 0%; margin-top: 0;">
                         </div>
                     </div>
@@ -277,7 +277,7 @@
                     <div
                         class="w-52 h-52 md:w-60 md:h-60 lg:w-64 lg:h-64 rounded-full bg-linear-to-br from-red-800 to-red-950 p-0.75 shadow-2xl shadow-red-900/40 relative z-10">
                         <div class="w-full h-full rounded-full overflow-hidden bg-gray-100">
-                            <img src="assets/Ibu_Fitri_Ketua_Umum_wm.png" alt="Ketua Umum"
+                            <img src="{{ asset('assets/home/Ibu_Fitri_Ketua_Umum_wm.png') }}" alt="Ketua Umum"
                                 style="width: 100%; height: 110%; object-fit: cover; object-position: center 0%; margin-top: 0;">
                         </div>
                     </div>

@@ -65,7 +65,7 @@
 
         {{-- Gambar --}}
         <div class="rounded-2xl overflow-hidden shadow-lg mb-10">
-            <img src="{{ asset('assets/gambar-kerja-sama.webp') }}" alt="{{ __('Kerja Sama Program IB') }}"
+            <img src="{{ asset('assets/program-ib/gambar-kerja-sama.webp') }}" alt="{{ __('Kerja Sama Program IB') }}"
                 class="w-full object-cover">
         </div>
 

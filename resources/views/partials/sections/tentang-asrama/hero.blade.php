@@ -1,5 +1,5 @@
 <section class="relative w-full h-64 md:h-100 lg:h-120 overflow-hidden mb-4">
-    <img src="{{ asset('assets/Hero_Section_Asrama.webp') }}?v={{ filemtime(public_path('assets/Hero_Section_Asrama.webp')) }}" alt="asrama" class="absolute inset-0 w-full h-full object-cover">
+    <img src="{{ asset('assets/asrama/Hero_Section_Asrama.webp') }}?v={{ filemtime(public_path('assets/asrama/Hero_Section_Asrama.webp')) }}" alt="asrama" class="absolute inset-0 w-full h-full object-cover">
 
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black/45"></div>

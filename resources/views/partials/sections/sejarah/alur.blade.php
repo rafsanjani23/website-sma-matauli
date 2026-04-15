@@ -44,7 +44,7 @@
                     <div class="flex-1 pt-1 pb-6">
                         <div class="bg-white rounded-2xl shadow-md border-l-4 border-red-800 overflow-hidden">
                             <div class="h-44 w-full overflow-hidden">
-                                <img src="{{ asset('assets/Sejarah_1991.jpg') }}" alt="1991"
+                                <img src="{{ asset('assets/sejarah/Sejarah_1991.jpg') }}" alt="1991"
                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-5">
@@ -71,7 +71,7 @@
                     <div class="flex-1 pt-1 pb-6">
                         <div class="bg-white rounded-2xl shadow-md border-l-4 border-red-800 overflow-hidden">
                             <div class="h-44 w-full overflow-hidden">
-                                <img src="{{ asset('assets/Sejarah_1994.jpg') }}" alt="1994"
+                                <img src="{{ asset('assets/sejarah/Sejarah_1994.jpg') }}" alt="1994"
                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-5">
@@ -98,7 +98,7 @@
                     <div class="flex-1 pt-1 pb-6">
                         <div class="bg-white rounded-2xl shadow-md border-l-4 border-red-800 overflow-hidden">
                             <div class="h-44 w-full overflow-hidden">
-                                <img src="{{ asset('assets/Sejarah_1994_2.jpg') }}" alt="1994 Kerjasama"
+                                <img src="{{ asset('assets/sejarah/Sejarah_1994_2.jpg') }}" alt="1994 Kerjasama"
                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-5">
@@ -125,7 +125,7 @@
                     <div class="flex-1 pt-1 pb-6">
                         <div class="bg-white rounded-2xl shadow-md border-l-4 border-red-800 overflow-hidden">
                             <div class="h-44 w-full overflow-hidden">
-                                <img src="{{ asset('assets/Sejarah_1995.jpeg') }}" alt="1995"
+                                <img src="{{ asset('assets/sejarah/Sejarah_1995.jpeg') }}" alt="1995"
                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-5">
@@ -152,7 +152,7 @@
                     <div class="flex-1 pt-1 pb-6">
                         <div class="bg-white rounded-2xl shadow-md border-l-4 border-red-800 overflow-hidden">
                             <div class="h-44 w-full overflow-hidden">
-                                <img src="{{ asset('assets/Sejarah_2004.jpg') }}" alt="2004"
+                                <img src="{{ asset('assets/sejarah/Sejarah_2004.jpg') }}" alt="2004"
                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-5">
@@ -179,7 +179,7 @@
                     <div class="flex-1 pt-1 pb-6">
                         <div class="bg-white rounded-2xl shadow-md border-l-4 border-red-800 overflow-hidden">
                             <div class="h-44 w-full overflow-hidden">
-                                <img src="{{ asset('assets/Sejarah_2008.jpg') }}" alt="2008"
+                                <img src="{{ asset('assets/sejarah/Sejarah_2008.jpg') }}" alt="2008"
                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-5">
@@ -206,7 +206,7 @@
                     <div class="flex-1 pt-1 pb-6">
                         <div class="bg-white rounded-2xl shadow-md border-l-4 border-red-800 overflow-hidden">
                             <div class="h-44 w-full overflow-hidden">
-                                <img src="{{ asset('assets/Sejarah_2012.jpeg') }}" alt="2012"
+                                <img src="{{ asset('assets/sejarah/Sejarah_2012.jpeg') }}" alt="2012"
                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-5">
@@ -233,7 +233,7 @@
                     <div class="flex-1 pt-1 pb-6">
                         <div class="bg-white rounded-2xl shadow-md border-l-4 border-red-800 overflow-hidden">
                             <div class="h-44 w-full overflow-hidden">
-                                <img src="{{ asset('assets/Sejarah_2014.jpeg') }}" alt="2014"
+                                <img src="{{ asset('assets/sejarah/Sejarah_2014.jpeg') }}" alt="2014"
                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-5">
@@ -260,7 +260,7 @@
                     <div class="flex-1 pt-1 pb-6">
                         <div class="bg-white rounded-2xl shadow-md border-l-4 border-red-800 overflow-hidden">
                             <div class="h-44 w-full overflow-hidden">
-                                <img src="{{ asset('assets/Sejarah_2021.jpeg') }}" alt="2021"
+                                <img src="{{ asset('assets/sejarah/Sejarah_2021.jpeg') }}" alt="2021"
                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-5">
@@ -287,7 +287,7 @@
                         <div
                             class="bg-linear-to-br from-yellow-50 to-orange-50 rounded-2xl shadow-md border-l-4 border-yellow-500 overflow-hidden">
                             <div class="h-44 w-full overflow-hidden">
-                                <img src="{{ asset('assets/Sejarah_2026.jpeg') }}" alt="2026"
+                                <img src="{{ asset('assets/sejarah/Sejarah_2026.jpeg') }}" alt="2026"
                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-5">
@@ -338,7 +338,7 @@
                     </div>
                     <div class="flex items-center justify-start pl-16 py-8">
                         <div class="max-w-sm w-full h-56 rounded-2xl overflow-hidden shadow-xl bg-gray-100">
-                            <img src="{{ asset('assets/Sejarah_1991.jpg') }}" alt="1991"
+                            <img src="{{ asset('assets/sejarah/Sejarah_1991.jpg') }}" alt="1991"
                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                     </div>
@@ -348,7 +348,7 @@
                 <div class="relative grid grid-cols-2 gap-0 min-h-64 mb-16">
                     <div class="flex items-center justify-end pr-16 py-8">
                         <div class="max-w-sm w-full h-56 rounded-2xl overflow-hidden shadow-xl bg-gray-100">
-                            <img src="{{ asset('assets/Sejarah_1994.jpg') }}" alt="1994"
+                            <img src="{{ asset('assets/sejarah/Sejarah_1994.jpg') }}" alt="1994"
                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                     </div>
@@ -396,7 +396,7 @@
                     </div>
                     <div class="flex items-center justify-start pl-16 py-8">
                         <div class="max-w-sm w-full h-56 rounded-2xl overflow-hidden shadow-xl bg-gray-100">
-                            <img src="{{ asset('assets/Sejarah_1994_2.jpg') }}" alt="1994"
+                            <img src="{{ asset('assets/sejarah/Sejarah_1994_2.jpg') }}" alt="1994"
                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                     </div>
@@ -406,7 +406,7 @@
                 <div class="relative grid grid-cols-2 gap-0 min-h-64 mb-16">
                     <div class="flex items-center justify-end pr-16 py-8">
                         <div class="max-w-sm w-full h-56 rounded-2xl overflow-hidden shadow-xl bg-gray-100">
-                            <img src="{{ asset('assets/Sejarah_1995.jpeg') }}" alt="1995"
+                            <img src="{{ asset('assets/sejarah/Sejarah_1995.jpeg') }}" alt="1995"
                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                     </div>
@@ -455,7 +455,7 @@
                     </div>
                     <div class="flex items-center justify-start pl-16 py-8">
                         <div class="max-w-sm w-full h-56 rounded-2xl overflow-hidden shadow-xl bg-gray-100">
-                            <img src="{{ asset('assets/Sejarah_2004.jpg') }}" alt="2004"
+                            <img src="{{ asset('assets/sejarah/Sejarah_2004.jpg') }}" alt="2004"
                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                     </div>
@@ -465,7 +465,7 @@
                 <div class="relative grid grid-cols-2 gap-0 min-h-64 mb-16">
                     <div class="flex items-center justify-end pr-16 py-8">
                         <div class="max-w-sm w-full h-56 rounded-2xl overflow-hidden shadow-xl bg-gray-100">
-                            <img src="{{ asset('assets/Sejarah_2008.jpg') }}" alt="2008"
+                            <img src="{{ asset('assets/sejarah/Sejarah_2008.jpg') }}" alt="2008"
                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                     </div>
@@ -513,7 +513,7 @@
                     </div>
                     <div class="flex items-center justify-start pl-16 py-8">
                         <div class="max-w-sm w-full h-56 rounded-2xl overflow-hidden shadow-xl bg-gray-100">
-                            <img src="{{ asset('assets/Sejarah_2012.jpeg') }}" alt="2012"
+                            <img src="{{ asset('assets/sejarah/Sejarah_2012.jpeg') }}" alt="2012"
                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                     </div>
@@ -523,7 +523,7 @@
                 <div class="relative grid grid-cols-2 gap-0 min-h-64 mb-16">
                     <div class="flex items-center justify-end pr-16 py-8">
                         <div class="max-w-sm w-full h-56 rounded-2xl overflow-hidden shadow-xl bg-gray-100">
-                            <img src="{{ asset('assets/Sejarah_2014.jpeg') }}" alt="2014"
+                            <img src="{{ asset('assets/sejarah/Sejarah_2014.jpeg') }}" alt="2014"
                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                     </div>
@@ -571,7 +571,7 @@
                     </div>
                     <div class="flex items-center justify-start pl-16 py-8">
                         <div class="max-w-sm w-full h-56 rounded-2xl overflow-hidden shadow-xl bg-gray-100">
-                            <img src="{{ asset('assets/Sejarah_2021.jpeg') }}" alt="2021"
+                            <img src="{{ asset('assets/sejarah/Sejarah_2021.jpeg') }}" alt="2021"
                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                     </div>
@@ -581,7 +581,7 @@
                 <div class="relative grid grid-cols-2 gap-0 min-h-64">
                     <div class="flex items-center justify-end pr-16 py-8">
                         <div class="max-w-sm w-full h-56 rounded-2xl overflow-hidden shadow-xl bg-gray-100">
-                            <img src="{{ asset('assets/Sejarah_2026.jpeg') }}" alt="2026"
+                            <img src="{{ asset('assets/sejarah/Sejarah_2026.jpeg') }}" alt="2026"
                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                     </div>

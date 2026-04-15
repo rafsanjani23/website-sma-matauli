@@ -15,7 +15,7 @@
                 <div class="shrink-0">
                     <div
                         class="w-52 h-52 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden ring-4 ring-yellow-400/30 shadow-2xl">
-                        <img src="{{ asset('assets/Jenderal TNI (Purn.) Feisal Tanjung.webp') }}"
+                        <img src="{{ asset('assets/profil/Jenderal TNI (Purn.) Feisal Tanjung.webp') }}"
                             alt="Jenderal TNI (Purn.) Feisal Tanjung"
                             class="w-full h-full object-cover object-top scale-100">
                     </div>

@@ -25,7 +25,7 @@
                 class="order-2 md:order-1 relative overflow-hidden scroll-animate opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
 
                 {{-- IMAGE: Full height mengisi kolom --}}
-                <img src="{{ asset('assets/feisal_dan_akbar_tanjung.png') }}"
+                <img src="{{ asset('assets/home/feisal_dan_akbar_tanjung.png') }}"
                     alt="Pendiri SMAN 1 MATAULI Pandan - Jenderal TNI Feisal Tanjung dan Dr. Ir. Akbar Tandjung"
                     class="w-full h-full object-cover object-top">
 

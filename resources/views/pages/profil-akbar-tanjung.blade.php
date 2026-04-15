@@ -15,7 +15,7 @@
                 <div class="shrink-0">
                     <div
                         class="w-52 h-52 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden ring-4 ring-yellow-400/30 shadow-2xl">
-                        <img src="{{ asset('assets/Dr. Ir. Akbar Tandjung_webp.webp') }}" alt="Dr. Ir. Akbar Tandjung"
+                        <img src="{{ asset('assets/profil/Dr. Ir. Akbar Tandjung_webp.webp') }}" alt="Dr. Ir. Akbar Tandjung"
                             class="w-full h-full object-cover object-top scale-105">
                     </div>
                 </div>

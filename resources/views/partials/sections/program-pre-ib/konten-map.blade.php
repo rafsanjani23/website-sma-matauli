@@ -24,7 +24,7 @@
         {{-- Peta --}}
         <div class="relative max-w-4xl mx-auto">
             <div class="rounded-2xl overflow-hidden shadow-lg border border-gray-100">
-                <img src="{{ asset('assets/map-penyebaran.webp') }}" alt="{{ __('Peta Penyebaran Siswa Beasiswa IB') }}"
+                <img src="{{ asset('assets/program-ib/map-penyebaran.webp') }}" alt="{{ __('Peta Penyebaran Siswa Beasiswa IB') }}"
                     class="w-full h-full object-cover">
             </div>
 
