@@ -37,12 +37,6 @@
                 </div>
 
                 <div>
-                    <label for="ringkasan" class="block text-sm font-semibold text-gray-700 mb-1.5">Ringkasan <span class="font-normal text-gray-400">(ditampilkan di kartu)</span></label>
-                    <textarea name="ringkasan" id="ringkasan" rows="3" required
-                        class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('ringkasan', $item->ringkasan) }}</textarea>
-                </div>
-
-                <div>
                     <label for="isi_konten" class="block text-sm font-semibold text-gray-700 mb-1.5">Isi Konten <span class="font-normal text-gray-400">(ditampilkan di halaman detail)</span></label>
                     <textarea name="isi_konten" id="isi_konten" rows="8" required
                         class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('isi_konten', $item->isi_konten) }}</textarea>

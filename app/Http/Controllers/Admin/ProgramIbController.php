@@ -60,7 +60,6 @@ class ProgramIbController extends Controller
 
         $validated = $request->validate([
             'judul'          => 'required|max:150',
-            'ringkasan'      => 'required',
             'isi_konten'     => 'required',
             'gambar'         => 'nullable|image|max:4096',
             'gambar_opsional'=> 'nullable|image|max:4096',

@@ -13,7 +13,7 @@
         @endif
     </title>
 
-    <link rel="icon" type="image/webp" href="{{ asset('assets/Logo_SMAN_Matauli.webp') }}">
+    <link rel="icon" type="image/png" href="{{ asset('assets/Logo_SMAN_Matauli.png') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 

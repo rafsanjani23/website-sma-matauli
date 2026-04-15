@@ -100,8 +100,8 @@ Route::get('/program-kemataulian/{id}', function ($id) {
 })->name('program-kemataulian-detail');
 
 Route::get('/program-ib', function () {
-    $items = \App\Models\ProgramIb::orderBy('judul')->get();
-    return view('pages.program-ib', compact('items'));
+    $item = \App\Models\ProgramIb::orderBy('judul')->first();
+    return view('pages.program-ib-detail', compact('item'));
 })->name('program-ib');
 Route::get('/program-ib/{id}', function ($id) {
     $item = \App\Models\ProgramIb::findOrFail($id);
