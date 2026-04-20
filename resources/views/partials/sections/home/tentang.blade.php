@@ -68,7 +68,7 @@
                                         class="absolute -inset-1 rounded-2xl bg-linear-to-b from-yellow-400/40 to-red-800/20 blur-sm">
                                     </div> --}}
                                     <div
-                                        class="photo-card relative w-26 h-32 sm:w-32 sm:h-38 md:w-44 md:h-52 lg:w-48 lg:h-56 xl:w-52 xl:h-60 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
+                                        class="photo-card relative aspect-13/15 w-26 sm:w-32 md:w-44 lg:w-48 xl:w-52 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
                                         <img src="{{ asset('assets/home/Gubernur_Sumut.webp') }}" alt="Gubernur Sumatera Utara"
                                             class="w-full h-full object-cover object-top">
                                         <div
@@ -91,7 +91,7 @@
                                         class="absolute -inset-1 rounded-2xl bg-linear-to-b from-red-800/20 to-yellow-400/20 blur-sm">
                                     </div> --}}
                                     <div
-                                        class="photo-card relative w-26 h-32 sm:w-32 sm:h-38 md:w-44 md:h-52 lg:w-48 lg:h-56 xl:w-52 xl:h-60 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
+                                        class="photo-card relative aspect-13/15 w-26 sm:w-32 md:w-44 lg:w-48 xl:w-52 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
                                         <img src="{{ asset('assets/home/WakilGubernur_Sumut.webp') }}" alt="Wakil Gubernur Sumatera Utara"
                                             class="w-full h-full object-cover object-top">
                                         <div
@@ -135,7 +135,7 @@
                                         class="absolute -inset-1 rounded-2xl bg-linear-to-b from-yellow-400/40 to-red-800/20 blur-sm">
                                     </div> --}}
                                     <div
-                                        class="photo-card relative w-26 h-32 sm:w-32 sm:h-38 md:w-44 md:h-52 lg:w-48 lg:h-56 xl:w-52 xl:h-60 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
+                                        class="photo-card relative aspect-13/15 w-26 sm:w-32 md:w-44 lg:w-48 xl:w-52 rounded-2xl overflow-hidden border-2 border-white shadow-lg shadow-red-900/20">
                                         <img src="{{ asset('assets/home/Kepala Dinas Pendidikan Sumatera Utara.webp') }}"
                                             alt="Kepala Dinas Pendidikan Sumatera Utara"
                                             class="w-full h-full object-cover object-top">
