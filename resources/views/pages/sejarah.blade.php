@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Sejarah')
+@section('title', __('Sejarah'))
 @section('content')
     <!-- ============================================ -->
     <!-- SEJARAH SEKOLAH SECTION - START -->
