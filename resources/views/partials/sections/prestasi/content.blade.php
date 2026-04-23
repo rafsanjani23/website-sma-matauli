@@ -2,10 +2,10 @@
     <div class="mx-auto px-4 sm:px-6 lg:px-12 xl:px-24">
 
         <!-- TAB LIST -->
-        <div class="flex justify-center mb-8">
-            <div role="tablist" class="inline-flex gap-1 lg:gap-2 p-1 bg-matauli-red-dark rounded-full mb-4">
+        <div class="flex justify-center mb-8 px-2">
+            <div role="tablist" class="flex flex-wrap justify-center gap-1 lg:gap-2 p-1 bg-matauli-red-dark rounded-2xl sm:rounded-full mb-4 max-w-full">
 
-                <button role="tab" id="tab-prestasi-sekolah" aria-controls="panel-prestasi-sekolah" aria-selected="true" class="px-4 lg:px-8 py-3 rounded-full text-sm lg:text-md font-medium transition-all duration-200
+                <button role="tab" id="tab-prestasi-sekolah" aria-controls="panel-prestasi-sekolah" aria-selected="true" class="px-3 sm:px-5 lg:px-8 py-2.5 lg:py-3 rounded-full text-xs sm:text-sm lg:text-md font-medium transition-all duration-200
                  outline-none focus:ring-2
                  aria-selected:bg-matauli-yellow
                  aria-selected:text-matauli-red-dark
@@ -14,7 +14,7 @@
                     {{ __('Prestasi Sekolah') }}
                 </button>
 
-                <button role="tab" id="tab-prestasi-siswa" aria-controls="panel-prestasi-siswa" aria-selected="false" class="px-4 lg:px-8 py-3 rounded-full text-sm lg:text-md font-medium transition-all duration-200
+                <button role="tab" id="tab-prestasi-siswa" aria-controls="panel-prestasi-siswa" aria-selected="false" class="px-3 sm:px-5 lg:px-8 py-2.5 lg:py-3 rounded-full text-xs sm:text-sm lg:text-md font-medium transition-all duration-200
                  outline-none focus:ring-2
                  aria-selected:bg-matauli-yellow
                  aria-selected:text-matauli-red-dark
@@ -23,7 +23,7 @@
                     {{ __('Prestasi Siswa') }}
                 </button>
 
-                <button role="tab" id="tab-prestasi-guru" aria-controls="panel-prestasi-guru" aria-selected="false" class="px-4 lg:px-8 py-3 rounded-full text-sm lg:text-md font-medium transition-all duration-200
+                <button role="tab" id="tab-prestasi-guru" aria-controls="panel-prestasi-guru" aria-selected="false" class="px-3 sm:px-5 lg:px-8 py-2.5 lg:py-3 rounded-full text-xs sm:text-sm lg:text-md font-medium transition-all duration-200
                  outline-none focus:ring-2
                  aria-selected:bg-matauli-yellow
                  aria-selected:text-matauli-red-dark
