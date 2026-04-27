@@ -13,10 +13,15 @@ class PrestasiController extends Controller
     {
         $search = $request->query('search');
         if (!empty($search)) {
-            $items = Prestasi::where('prestasi.judul', 'like', '%' . $search . '%')
-                ->orWhere('prestasi.tanggal', 'like', '%' . $search . '%')
-                ->orWhere('prestasi.nama_lomba', 'like', '%' . $search . '%')
-                ->orWhere('prestasi.tingkatan', 'like', '%' . $search . '%')
+            $items = Prestasi::where(function ($q) use ($search) {
+                    $q->where('judul->id', 'like', '%' . $search . '%')
+                      ->orWhere('judul->en', 'like', '%' . $search . '%')
+                      ->orWhere('tanggal', 'like', '%' . $search . '%')
+                      ->orWhere('nama_lomba->id', 'like', '%' . $search . '%')
+                      ->orWhere('nama_lomba->en', 'like', '%' . $search . '%')
+                      ->orWhere('tingkatan->id', 'like', '%' . $search . '%')
+                      ->orWhere('tingkatan->en', 'like', '%' . $search . '%');
+                })
                 ->paginate(20)->onEachSide(2)
                 ->fragment('prestasi');
         } else {
@@ -36,10 +41,14 @@ class PrestasiController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'judul' => 'required|max:50',
-            'nama_lomba' => 'required|max:50',
-            'tingkatan' => 'required|max:50',
-            'isi' => 'required',
+            'judul.id' => 'required|max:50',
+            'judul.en' => 'nullable|max:50',
+            'nama_lomba.id' => 'required|max:50',
+            'nama_lomba.en' => 'nullable|max:50',
+            'tingkatan.id' => 'required|max:50',
+            'tingkatan.en' => 'nullable|max:50',
+            'isi.id' => 'required',
+            'isi.en' => 'nullable',
             'gambar' => 'required|image|max:2048',
             'tanggal' => 'required|date',
             'kategori' => 'required|in:Prestasi Sekolah,Prestasi Siswa,Prestasi Guru',
@@ -65,10 +74,14 @@ class PrestasiController extends Controller
         $item = Prestasi::findOrFail($id);
 
         $validated = $request->validate([
-            'judul' => 'required|max:50',
-            'nama_lomba' => 'required|max:50',
-            'tingkatan' => 'required|max:50',
-            'isi' => 'required',
+            'judul.id' => 'required|max:50',
+            'judul.en' => 'nullable|max:50',
+            'nama_lomba.id' => 'required|max:50',
+            'nama_lomba.en' => 'nullable|max:50',
+            'tingkatan.id' => 'required|max:50',
+            'tingkatan.en' => 'nullable|max:50',
+            'isi.id' => 'required',
+            'isi.en' => 'nullable',
             'gambar' => 'nullable|image|max:2048',
             'tanggal' => 'required|date',
             'kategori' => 'required|in:Prestasi Sekolah,Prestasi Siswa,Prestasi Guru',

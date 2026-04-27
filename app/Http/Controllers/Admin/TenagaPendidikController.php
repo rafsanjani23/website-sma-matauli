@@ -13,11 +13,14 @@ class TenagaPendidikController extends Controller
     {
         $search = $request->query('search');
         if (!empty($search)) {
-            $items = TenagaPendidik::where('tenaga_pendidik.nama', 'like', '%' . $search . '%')
-            ->orWhere('tenaga_pendidik.mata_pelajaran', 'like', '%'.$search.'%')
-            ->orWhere('tenaga_pendidik.kategori', 'like', '%'.$search.'%')
-            ->paginate(20)->onEachSide(2)
-            ->fragment('tenaga_pendidik');
+            $items = TenagaPendidik::where(function ($q) use ($search) {
+                    $q->where('nama', 'like', '%'.$search.'%')
+                      ->orWhere('mata_pelajaran->id', 'like', '%'.$search.'%')
+                      ->orWhere('mata_pelajaran->en', 'like', '%'.$search.'%')
+                      ->orWhere('kategori', 'like', '%'.$search.'%');
+                })
+                ->paginate(20)->onEachSide(2)
+                ->fragment('tenaga_pendidik');
         } else {
             $items = TenagaPendidik::orderBy('nama')->paginate(20)->onEachSide(2)->fragment('tenaga_pendidik');
         }
@@ -36,7 +39,8 @@ class TenagaPendidikController extends Controller
     {
         $validated = $request->validate([
             'nama' => 'required|max:50',
-            'mata_pelajaran' => 'required|max:50',
+            'mata_pelajaran.id' => 'required|max:50',
+            'mata_pelajaran.en' => 'nullable|max:50',
             'foto' => 'nullable|image|max:2048',
             'kategori' => 'required|in:Guru Mata Pelajaran,IB',
         ]);
@@ -62,7 +66,8 @@ class TenagaPendidikController extends Controller
 
         $validated = $request->validate([
             'nama' => 'required|max:50',
-            'mata_pelajaran' => 'required|max:50',
+            'mata_pelajaran.id' => 'required|max:50',
+            'mata_pelajaran.en' => 'nullable|max:50',
             'foto' => 'nullable|image|max:2048',
             'kategori' => 'required|in:Guru Mata Pelajaran,IB',
         ]);

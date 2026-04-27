@@ -13,7 +13,8 @@ class KemitraanController extends Controller
     {
         $search = $request->query('search');
         if (!empty($search)) {
-            $items = Kemitraan::where('kemitraan.nama_mitra', 'like', '%' . $search . '%')
+            $items = Kemitraan::where('nama_mitra->id', 'like', '%' . $search . '%')
+                ->orWhere('nama_mitra->en', 'like', '%' . $search . '%')
                 ->paginate(20)->onEachSide(2)
                 ->fragment('kemitraan');
         } else {
@@ -33,11 +34,14 @@ class KemitraanController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'nama_mitra' => 'required|max:50',
-            'penjelasan_singkat' => 'required',
+            'nama_mitra.id' => 'required|max:50',
+            'nama_mitra.en' => 'nullable|max:50',
+            'penjelasan_singkat.id' => 'required',
+            'penjelasan_singkat.en' => 'nullable',
             'gambar_mitra' => 'required|image|max:2048',
             'gambar_kegiatan' => 'required|image|max:2048',
-            'ringkasan_kegiatan' => 'required',
+            'ringkasan_kegiatan.id' => 'required',
+            'ringkasan_kegiatan.en' => 'nullable',
         ]);
 
         if ($request->hasFile('gambar_mitra')) {
@@ -64,11 +68,14 @@ class KemitraanController extends Controller
         $item = Kemitraan::findOrFail($id);
 
         $validated = $request->validate([
-            'nama_mitra' => 'required|max:50',
-            'penjelasan_singkat' => 'required',
+            'nama_mitra.id' => 'required|max:50',
+            'nama_mitra.en' => 'nullable|max:50',
+            'penjelasan_singkat.id' => 'required',
+            'penjelasan_singkat.en' => 'nullable',
             'gambar_mitra' => 'nullable|image|max:2048',
             'gambar_kegiatan' => 'nullable|image|max:2048',
-            'ringkasan_kegiatan' => 'required',
+            'ringkasan_kegiatan.id' => 'required',
+            'ringkasan_kegiatan.en' => 'nullable',
         ]);
 
         if ($request->hasFile('gambar_mitra')) {

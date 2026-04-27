@@ -13,9 +13,10 @@ class KegiatanAsramaController extends Controller
     {
         $search = $request->query('search');
         if(!empty($search)){
-            $items = KegiatanAsrama::where('kegiatan_asrama.nama', 'like' , '%'.$search.'%')
-            ->paginate(20)->onEachSide(2)
-            ->fragment('kegiatan_asrama');
+            $items = KegiatanAsrama::where('nama->id', 'like', '%'.$search.'%')
+                ->orWhere('nama->en', 'like', '%'.$search.'%')
+                ->paginate(20)->onEachSide(2)
+                ->fragment('kegiatan_asrama');
         }else{
              $items = KegiatanAsrama::latest()->paginate(20)->onEachSide(2)->fragment('kegiatan_asrama');
         }
@@ -33,7 +34,8 @@ class KegiatanAsramaController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'nama' => 'required|max:50',
+            'nama.id' => 'required|max:50',
+            'nama.en' => 'nullable|max:50',
             'kategori' => 'required|in:rutin,tidak_rutin',
             'gambar' => 'required|image|max:2048',
         ]);
@@ -58,7 +60,8 @@ class KegiatanAsramaController extends Controller
         $item = KegiatanAsrama::findOrFail($id);
 
         $validated = $request->validate([
-            'nama' => 'required|max:50',
+            'nama.id' => 'required|max:50',
+            'nama.en' => 'nullable|max:50',
             'kategori' => 'required|in:rutin,tidak_rutin',
             'gambar' => 'nullable|image|max:2048',
         ]);

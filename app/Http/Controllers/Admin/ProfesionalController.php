@@ -13,8 +13,11 @@ class ProfesionalController extends Controller
     {
         $search = $request->query('search');
         if (!empty($search)) {
-            $items = Profesional::where('profesional.nama', 'like', '%' . $search . '%')
-                ->orWhere('profesional.nama_lembaga', 'like', '%' . $search . '%')
+            $items = Profesional::where(function ($q) use ($search) {
+                    $q->where('nama', 'like', '%' . $search . '%')
+                      ->orWhere('nama_lembaga->id', 'like', '%' . $search . '%')
+                      ->orWhere('nama_lembaga->en', 'like', '%' . $search . '%');
+                })
                 ->paginate(20)->onEachSide(2)
                 ->fragment('profesional');
         } else {
@@ -35,7 +38,8 @@ class ProfesionalController extends Controller
     {
         $validated = $request->validate([
             'nama' => 'required|max:50',
-            'nama_lembaga' => 'required|max:50',
+            'nama_lembaga.id' => 'required|max:50',
+            'nama_lembaga.en' => 'nullable|max:50',
             'angkatan' => 'nullable|max:20',
             'foto' => 'nullable|image|max:2048',
             'link_facebook' => 'nullable|max:50',
@@ -64,7 +68,8 @@ class ProfesionalController extends Controller
 
         $validated = $request->validate([
             'nama' => 'required|max:50',
-            'nama_lembaga' => 'required|max:50',
+            'nama_lembaga.id' => 'required|max:50',
+            'nama_lembaga.en' => 'nullable|max:50',
             'angkatan' => 'nullable|max:20',
             'foto' => 'nullable|image|max:2048',
             'link_facebook' => 'nullable|max:50',

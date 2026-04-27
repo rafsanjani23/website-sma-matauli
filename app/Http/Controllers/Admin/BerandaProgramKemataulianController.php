@@ -23,9 +23,11 @@ class BerandaProgramKemataulianController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'judul'     => 'required|max:150',
-            'ringkasan' => 'required',
-            'foto'      => 'required|image|max:2048',
+            'judul.id'     => 'required|max:150',
+            'judul.en'     => 'nullable|max:150',
+            'ringkasan.id' => 'required',
+            'ringkasan.en' => 'nullable',
+            'foto'         => 'required|image|max:2048',
         ]);
 
         if ($request->hasFile('foto')) {
@@ -48,9 +50,11 @@ class BerandaProgramKemataulianController extends Controller
         $item = BerandaProgramKemataulian::findOrFail($id);
 
         $validated = $request->validate([
-            'judul'     => 'required|max:150',
-            'ringkasan' => 'required|max:300',
-            'foto'      => 'nullable|image|max:2048',
+            'judul.id'     => 'required|max:150',
+            'judul.en'     => 'nullable|max:150',
+            'ringkasan.id' => 'required|max:300',
+            'ringkasan.en' => 'nullable|max:300',
+            'foto'         => 'nullable|image|max:2048',
         ]);
 
         if ($request->hasFile('foto')) {

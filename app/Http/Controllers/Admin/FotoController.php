@@ -13,7 +13,8 @@ class FotoController extends Controller
     {
         $search = $request->query('search');
         if (!empty($search)) {
-            $items = Foto::where('foto.judul', 'like', '%' . $search . '%')
+            $items = Foto::where('judul->id', 'like', '%' . $search . '%')
+                ->orWhere('judul->en', 'like', '%' . $search . '%')
                 ->paginate(20)->onEachSide(2)
                 ->fragment('foto');
         } else {
@@ -33,8 +34,10 @@ class FotoController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'judul' => 'required|max:50',
-            'deskripsi' => 'nullable|max:100',
+            'judul.id' => 'required|max:50',
+            'judul.en' => 'nullable|max:50',
+            'deskripsi.id' => 'nullable|max:100',
+            'deskripsi.en' => 'nullable|max:100',
             'gambar' => 'required|image|max:2048',
         ]);
 
@@ -58,8 +61,10 @@ class FotoController extends Controller
         $item = Foto::findOrFail($id);
 
         $validated = $request->validate([
-            'judul' => 'required|max:50',
-            'deskripsi' => 'nullable|max:100',
+            'judul.id' => 'required|max:50',
+            'judul.en' => 'nullable|max:50',
+            'deskripsi.id' => 'nullable|max:100',
+            'deskripsi.en' => 'nullable|max:100',
             'gambar' => 'nullable|image|max:2048',
         ]);
 

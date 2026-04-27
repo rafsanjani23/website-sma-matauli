@@ -37,7 +37,8 @@ class TestimoniController extends Controller
             'nama' => 'required|max:50',
             'tahun_alumni' => 'required|max:50',
             'foto' => 'nullable|image|max:2048',
-            'isi' => 'required',
+            'isi.id' => 'required',
+            'isi.en' => 'nullable',
         ]);
 
         if ($request->hasFile('foto')) {
@@ -63,7 +64,8 @@ class TestimoniController extends Controller
             'nama' => 'required|max:50',
             'tahun_alumni' => 'required|max:50',
             'foto' => 'nullable|image|max:2048',
-            'isi' => 'required',
+            'isi.id' => 'required',
+            'isi.en' => 'nullable',
         ]);
 
         if ($request->hasFile('foto')) {

@@ -13,11 +13,12 @@ class ProgramIbController extends Controller
     {
         $search = $request->query('search');
         if (!empty($search)) {
-            $items = ProgramIb::where('judul', 'like', '%' . $search . '%')
+            $items = ProgramIb::where('judul->id', 'like', '%' . $search . '%')
+                ->orWhere('judul->en', 'like', '%' . $search . '%')
                 ->paginate(20)->onEachSide(2)
                 ->fragment('program-ib');
         } else {
-            $items = ProgramIb::orderBy('judul')->paginate(20)->onEachSide(2)->fragment('program-ib');
+            $items = ProgramIb::orderBy('judul->id')->paginate(20)->onEachSide(2)->fragment('program-ib');
         }
         return view('admin.program-ib.index', compact('items', 'search'));
     }
@@ -30,9 +31,12 @@ class ProgramIbController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'judul'          => 'required|max:150',
-            'ringkasan'      => 'required',
-            'isi_konten'     => 'required',
+            'judul.id'       => 'required|max:150',
+            'judul.en'       => 'nullable|max:150',
+            'ringkasan.id'   => 'required',
+            'ringkasan.en'   => 'nullable',
+            'isi_konten.id'  => 'required',
+            'isi_konten.en'  => 'nullable',
             'gambar'         => 'required|image|max:4096',
             'gambar_opsional'=> 'nullable|image|max:4096',
         ]);
@@ -59,8 +63,12 @@ class ProgramIbController extends Controller
         $item = ProgramIb::findOrFail($id);
 
         $validated = $request->validate([
-            'judul'          => 'required|max:150',
-            'isi_konten'     => 'required',
+            'judul.id'       => 'required|max:150',
+            'judul.en'       => 'nullable|max:150',
+            'ringkasan.id'   => 'required',
+            'ringkasan.en'   => 'nullable',
+            'isi_konten.id'  => 'required',
+            'isi_konten.en'  => 'nullable',
             'gambar'         => 'nullable|image|max:4096',
             'gambar_opsional'=> 'nullable|image|max:4096',
         ]);

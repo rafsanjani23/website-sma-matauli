@@ -3,9 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Spatie\Translatable\HasTranslations;
 
 class Foto extends Model
 {
+    use HasTranslations;
+
     protected $table = 'foto';
 
     protected $fillable = [
@@ -13,4 +16,6 @@ class Foto extends Model
         'deskripsi',
         'gambar',
     ];
+
+    public $translatable = ['judul', 'deskripsi'];
 }

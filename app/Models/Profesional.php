@@ -3,9 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Spatie\Translatable\HasTranslations;
 
 class Profesional extends Model
 {
+    use HasTranslations;
+
     protected $table = 'profesional';
 
     protected $fillable = [
@@ -17,4 +20,6 @@ class Profesional extends Model
         'link_twitter',
         'link_linkedin',
     ];
+
+    public $translatable = ['nama_lembaga'];
 }

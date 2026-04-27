@@ -30,22 +30,46 @@
                 @csrf
                 @method('PUT')
 
-                <div>
-                    <label for="judul" class="block text-sm font-semibold text-gray-700 mb-1.5">Judul</label>
-                    <input type="text" name="judul" id="judul" value="{{ old('judul', $item->judul) }}" required
-                        class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">
-                </div>
-
-                <div>
-                    <label for="ringkasan" class="block text-sm font-semibold text-gray-700 mb-1.5">Ringkasan <span class="font-normal text-gray-400">(ditampilkan di kartu)</span></label>
-                    <textarea name="ringkasan" id="ringkasan" rows="3" required
-                        class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('ringkasan', $item->ringkasan ?? $item->deskripsi) }}</textarea>
-                </div>
-
-                <div>
-                    <label for="isi_konten" class="block text-sm font-semibold text-gray-700 mb-1.5">Isi Konten <span class="font-normal text-gray-400">(ditampilkan di halaman detail)</span></label>
-                    <textarea name="isi_konten" id="isi_konten" rows="8" required
-                        class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('isi_konten', $item->isi_konten) }}</textarea>
+                <div data-lang-tabs>
+                    <div class="flex gap-1 border-b border-gray-200 mb-4">
+                        <button type="button" data-tab-btn="id" class="lang-tab-btn px-4 py-2 text-sm font-semibold border-b-2 border-red-800 text-red-800 transition">Indonesia</button>
+                        <button type="button" data-tab-btn="en" class="lang-tab-btn px-4 py-2 text-sm font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-700 transition">English</button>
+                    </div>
+                    <div data-tab-pane="id" class="space-y-5">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Judul (ID) <span class="text-red-600">*</span></label>
+                            <input type="text" name="judul[id]" value="{{ old('judul.id', $item->getTranslation('judul', 'id', false) ?? '') }}" required
+                                class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Ringkasan (ID) <span class="font-normal text-gray-400">(ditampilkan di kartu)</span> <span class="text-red-600">*</span></label>
+                            <textarea name="ringkasan[id]" rows="3" required
+                                class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('ringkasan.id', $item->getTranslation('ringkasan', 'id', false) ?? '') }}</textarea>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Isi Konten (ID) <span class="font-normal text-gray-400">(ditampilkan di halaman detail)</span> <span class="text-red-600">*</span></label>
+                            <textarea name="isi_konten[id]" rows="8" required
+                                class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('isi_konten.id', $item->getTranslation('isi_konten', 'id', false) ?? '') }}</textarea>
+                        </div>
+                    </div>
+                    <div data-tab-pane="en" class="hidden space-y-5">
+                        <p class="text-xs text-gray-500 italic">Field bahasa Inggris opsional, fallback ke ID jika kosong.</p>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Judul (EN)</label>
+                            <input type="text" name="judul[en]" value="{{ old('judul.en', $item->getTranslation('judul', 'en', false) ?? '') }}"
+                                class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Ringkasan (EN)</label>
+                            <textarea name="ringkasan[en]" rows="3"
+                                class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('ringkasan.en', $item->getTranslation('ringkasan', 'en', false) ?? '') }}</textarea>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Isi Konten (EN)</label>
+                            <textarea name="isi_konten[en]" rows="8"
+                                class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('isi_konten.en', $item->getTranslation('isi_konten', 'en', false) ?? '') }}</textarea>
+                        </div>
+                    </div>
                 </div>
 
                 <div>
@@ -78,4 +102,6 @@
             </form>
         </div>
     </div>
+
+    @include('admin.partials.lang-tabs-script')
 @endsection

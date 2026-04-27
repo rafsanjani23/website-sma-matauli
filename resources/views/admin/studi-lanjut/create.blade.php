@@ -23,9 +23,20 @@
                     <label for="nama_alumni" class="block text-sm font-semibold text-gray-700 mb-1.5">Nama Alumni</label>
                     <input type="text" name="nama_alumni" id="nama_alumni" value="{{ old('nama_alumni') }}" required class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
                 </div>
-                <div>
-                    <label for="nama_lembaga" class="block text-sm font-semibold text-gray-700 mb-1.5">Nama Lembaga</label>
-                    <input type="text" name="nama_lembaga" id="nama_lembaga" value="{{ old('nama_lembaga') }}" required class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
+                <div data-lang-tabs>
+                    <div class="flex gap-1 border-b border-gray-200 mb-4">
+                        <button type="button" data-tab-btn="id" class="lang-tab-btn px-4 py-2 text-sm font-semibold border-b-2 border-red-800 text-red-800 transition">Indonesia</button>
+                        <button type="button" data-tab-btn="en" class="lang-tab-btn px-4 py-2 text-sm font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-700 transition">English</button>
+                    </div>
+                    <div data-tab-pane="id">
+                        <label class="block text-sm font-semibold text-gray-700 mb-1.5">Nama Lembaga (ID) <span class="text-red-600">*</span></label>
+                        <input type="text" name="nama_lembaga[id]" value="{{ old('nama_lembaga.id') }}" required class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
+                    </div>
+                    <div data-tab-pane="en" class="hidden">
+                        <p class="text-xs text-gray-500 italic mb-1.5">Field bahasa Inggris opsional, fallback ke ID jika kosong.</p>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1.5">Nama Lembaga (EN)</label>
+                        <input type="text" name="nama_lembaga[en]" value="{{ old('nama_lembaga.en') }}" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
+                    </div>
                 </div>
                 <div>
                     <label for="kategori" class="block text-sm font-semibold text-gray-700 mb-1.5">Kategori</label>
@@ -48,4 +59,6 @@
             </form>
         </div>
     </div>
+
+    @include('admin.partials.lang-tabs-script')
 @endsection

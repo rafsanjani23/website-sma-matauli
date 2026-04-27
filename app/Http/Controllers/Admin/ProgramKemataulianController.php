@@ -13,11 +13,12 @@ class ProgramKemataulianController extends Controller
     {
         $search = $request->query('search');
         if (!empty($search)) {
-            $items = ProgramKemataulian::where('judul', 'like', '%' . $search . '%')
+            $items = ProgramKemataulian::where('judul->id', 'like', '%' . $search . '%')
+                ->orWhere('judul->en', 'like', '%' . $search . '%')
                 ->paginate(20)->onEachSide(2)
                 ->fragment('program-kemataulian');
         } else {
-            $items = ProgramKemataulian::orderBy('judul')->paginate(20)->onEachSide(2)->fragment('program-kemataulian');
+            $items = ProgramKemataulian::orderBy('judul->id')->paginate(20)->onEachSide(2)->fragment('program-kemataulian');
         }
         return view('admin.program-kemataulian.index', compact('items', 'search'));
     }
@@ -30,9 +31,12 @@ class ProgramKemataulianController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'judul'          => 'required|max:100',
-            'ringkasan'      => 'required',
-            'isi_konten'     => 'required',
+            'judul.id'       => 'required|max:100',
+            'judul.en'       => 'nullable|max:100',
+            'ringkasan.id'   => 'required',
+            'ringkasan.en'   => 'nullable',
+            'isi_konten.id'  => 'required',
+            'isi_konten.en'  => 'nullable',
             'gambar'         => 'required|image|max:4096',
             'gambar_opsional'=> 'nullable|image|max:4096',
         ]);
@@ -59,9 +63,12 @@ class ProgramKemataulianController extends Controller
         $item = ProgramKemataulian::findOrFail($id);
 
         $validated = $request->validate([
-            'judul'          => 'required|max:100',
-            'ringkasan'      => 'required',
-            'isi_konten'     => 'required',
+            'judul.id'       => 'required|max:100',
+            'judul.en'       => 'nullable|max:100',
+            'ringkasan.id'   => 'required',
+            'ringkasan.en'   => 'nullable',
+            'isi_konten.id'  => 'required',
+            'isi_konten.en'  => 'nullable',
             'gambar'         => 'nullable|image|max:4096',
             'gambar_opsional'=> 'nullable|image|max:4096',
         ]);

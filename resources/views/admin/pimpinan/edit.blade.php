@@ -20,9 +20,20 @@
             <form action="{{ route('admin.pimpinan.update', $item->id) }}" method="POST" enctype="multipart/form-data" class="space-y-5">
                 @csrf
                 @method('PUT')
-                <div>
-                    <label class="block text-sm font-semibold text-gray-700 mb-1.5">Jabatan</label>
-                    <input type="text" value="{{ $item->jabatan }}" disabled class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm bg-gray-100 cursor-not-allowed" />
+                <div data-lang-tabs>
+                    <div class="flex gap-1 border-b border-gray-200 mb-4">
+                        <button type="button" data-tab-btn="id" class="lang-tab-btn px-4 py-2 text-sm font-semibold border-b-2 border-red-800 text-red-800 transition">Indonesia</button>
+                        <button type="button" data-tab-btn="en" class="lang-tab-btn px-4 py-2 text-sm font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-700 transition">English</button>
+                    </div>
+                    <div data-tab-pane="id">
+                        <label class="block text-sm font-semibold text-gray-700 mb-1.5">Jabatan (ID) <span class="text-red-600">*</span></label>
+                        <input type="text" name="jabatan[id]" value="{{ old('jabatan.id', $item->getTranslation('jabatan', 'id', false) ?? '') }}" required class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
+                    </div>
+                    <div data-tab-pane="en" class="hidden">
+                        <p class="text-xs text-gray-500 italic mb-1.5">Field bahasa Inggris opsional, fallback ke ID jika kosong.</p>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1.5">Jabatan (EN)</label>
+                        <input type="text" name="jabatan[en]" value="{{ old('jabatan.en', $item->getTranslation('jabatan', 'en', false) ?? '') }}" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
+                    </div>
                 </div>
                 <div>
                     <label for="nama" class="block text-sm font-semibold text-gray-700 mb-1.5">Nama</label>
@@ -44,4 +55,6 @@
             </form>
         </div>
     </div>
+
+    @include('admin.partials.lang-tabs-script')
 @endsection

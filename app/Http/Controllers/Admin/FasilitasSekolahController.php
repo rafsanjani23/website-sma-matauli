@@ -13,10 +13,13 @@ class FasilitasSekolahController extends Controller
     {
            $search = $request->query('search');
         if(!empty($search)){
-            $items = FasilitasSekolah::where('fasilitas_sekolah.nama', 'like' , '%'.$search.'%')
-            ->orWhere('fasilitas_sekolah.kategori', 'like' , '%'.$search.'%')
-            ->paginate(20)->onEachSide(2)
-            ->fragment('fasilitas_sekolah');
+            $items = FasilitasSekolah::where(function ($q) use ($search) {
+                    $q->where('nama->id', 'like', '%'.$search.'%')
+                      ->orWhere('nama->en', 'like', '%'.$search.'%')
+                      ->orWhere('kategori', 'like', '%'.$search.'%');
+                })
+                ->paginate(20)->onEachSide(2)
+                ->fragment('fasilitas_sekolah');
         }else{
              $items = FasilitasSekolah::latest()->paginate(20)->onEachSide(2)->fragment('fasilitas_sekolah');
         }
@@ -34,7 +37,8 @@ class FasilitasSekolahController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'nama' => 'required|max:50',
+            'nama.id' => 'required|max:50',
+            'nama.en' => 'nullable|max:50',
             'gambar' => 'required|image|max:2048',
             'kategori' => 'required|in:Laboratorium / Studi,Fasilitas Akademik,Fasilitas Umum',
         ]);
@@ -59,7 +63,8 @@ class FasilitasSekolahController extends Controller
         $item = FasilitasSekolah::findOrFail($id);
 
         $validated = $request->validate([
-            'nama' => 'required|max:50',
+            'nama.id' => 'required|max:50',
+            'nama.en' => 'nullable|max:50',
             'gambar' => 'nullable|image|max:2048',
             'kategori' => 'required|in:Laboratorium / Studi,Fasilitas Akademik,Fasilitas Umum',
         ]);

@@ -13,8 +13,11 @@ class TenagaKependidikanController extends Controller
     {
         $search = $request->query('search');
         if (!empty($search)) {
-            $items = TenagaKependidikan::where('tenaga_kependidikan.nama', 'like', '%' . $search . '%')
-                ->orWhere('tenaga_kependidikan.jabatan', 'like', '%' . $search . '%')
+            $items = TenagaKependidikan::where(function ($q) use ($search) {
+                    $q->where('nama', 'like', '%' . $search . '%')
+                      ->orWhere('jabatan->id', 'like', '%' . $search . '%')
+                      ->orWhere('jabatan->en', 'like', '%' . $search . '%');
+                })
                 ->paginate(20)->onEachSide(2)
                 ->fragment('tenaga_kependidikan');
         } else {
@@ -35,7 +38,8 @@ class TenagaKependidikanController extends Controller
     {
         $validated = $request->validate([
             'nama' => 'required|max:50',
-            'jabatan' => 'required|max:50',
+            'jabatan.id' => 'required|max:50',
+            'jabatan.en' => 'nullable|max:50',
             'foto' => 'nullable|image|max:2048',
         ]);
 
@@ -60,7 +64,8 @@ class TenagaKependidikanController extends Controller
 
         $validated = $request->validate([
             'nama' => 'required|max:50',
-            'jabatan' => 'required|max:50',
+            'jabatan.id' => 'required|max:50',
+            'jabatan.en' => 'nullable|max:50',
             'foto' => 'nullable|image|max:2048',
         ]);
 

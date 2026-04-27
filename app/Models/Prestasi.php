@@ -3,9 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Spatie\Translatable\HasTranslations;
 
 class Prestasi extends Model
 {
+    use HasTranslations;
+
     protected $table = 'prestasi';
 
     protected $fillable = [
@@ -17,6 +20,8 @@ class Prestasi extends Model
         'tanggal',
         'kategori',
     ];
+
+    public $translatable = ['judul', 'nama_lomba', 'tingkatan', 'isi'];
 
     protected function casts(): array
     {

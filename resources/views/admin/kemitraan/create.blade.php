@@ -19,13 +19,32 @@
             @endif
             <form action="{{ route('admin.kemitraan.store') }}" method="POST" enctype="multipart/form-data" class="space-y-5">
                 @csrf
-                <div>
-                    <label for="nama_mitra" class="block text-sm font-semibold text-gray-700 mb-1.5">Nama Mitra</label>
-                    <input type="text" name="nama_mitra" id="nama_mitra" value="{{ old('nama_mitra') }}" required class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
-                </div>
-                <div>
-                    <label for="penjelasan_singkat" class="block text-sm font-semibold text-gray-700 mb-1.5">Penjelasan Singkat</label>
-                    <textarea name="penjelasan_singkat" id="penjelasan_singkat" rows="4" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('penjelasan_singkat') }}</textarea>
+                <div data-lang-tabs>
+                    <div class="flex gap-1 border-b border-gray-200 mb-4">
+                        <button type="button" data-tab-btn="id" class="lang-tab-btn px-4 py-2 text-sm font-semibold border-b-2 border-red-800 text-red-800 transition">Indonesia</button>
+                        <button type="button" data-tab-btn="en" class="lang-tab-btn px-4 py-2 text-sm font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-700 transition">English</button>
+                    </div>
+                    <div data-tab-pane="id" class="space-y-5">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Nama Mitra (ID) <span class="text-red-600">*</span></label>
+                            <input type="text" name="nama_mitra[id]" value="{{ old('nama_mitra.id') }}" required class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Penjelasan Singkat (ID)</label>
+                            <textarea name="penjelasan_singkat[id]" rows="4" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('penjelasan_singkat.id') }}</textarea>
+                        </div>
+                    </div>
+                    <div data-tab-pane="en" class="hidden space-y-5">
+                        <p class="text-xs text-gray-500 italic">Field bahasa Inggris opsional, fallback ke ID jika kosong.</p>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Nama Mitra (EN)</label>
+                            <input type="text" name="nama_mitra[en]" value="{{ old('nama_mitra.en') }}" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Penjelasan Singkat (EN)</label>
+                            <textarea name="penjelasan_singkat[en]" rows="4" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('penjelasan_singkat.en') }}</textarea>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <label for="gambar_mitra" class="block text-sm font-semibold text-gray-700 mb-1.5">Gambar Mitra</label>
@@ -35,9 +54,20 @@
                     <label for="gambar_kegiatan" class="block text-sm font-semibold text-gray-700 mb-1.5">Gambar Kegiatan</label>
                     <input type="file" name="gambar_kegiatan" id="gambar_kegiatan" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm file:mr-4 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-red-50 file:text-red-800 hover:file:bg-red-100 transition" />
                 </div>
-                <div>
-                    <label for="ringkasan_kegiatan" class="block text-sm font-semibold text-gray-700 mb-1.5">Ringkasan Kegiatan</label>
-                    <textarea name="ringkasan_kegiatan" id="ringkasan_kegiatan" rows="4" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('ringkasan_kegiatan') }}</textarea>
+                <div data-lang-tabs>
+                    <div class="flex gap-1 border-b border-gray-200 mb-4">
+                        <button type="button" data-tab-btn="id" class="lang-tab-btn px-4 py-2 text-sm font-semibold border-b-2 border-red-800 text-red-800 transition">Indonesia</button>
+                        <button type="button" data-tab-btn="en" class="lang-tab-btn px-4 py-2 text-sm font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-700 transition">English</button>
+                    </div>
+                    <div data-tab-pane="id">
+                        <label class="block text-sm font-semibold text-gray-700 mb-1.5">Ringkasan Kegiatan (ID)</label>
+                        <textarea name="ringkasan_kegiatan[id]" rows="4" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('ringkasan_kegiatan.id') }}</textarea>
+                    </div>
+                    <div data-tab-pane="en" class="hidden">
+                        <p class="text-xs text-gray-500 italic mb-1.5">Field bahasa Inggris opsional, fallback ke ID jika kosong.</p>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1.5">Ringkasan Kegiatan (EN)</label>
+                        <textarea name="ringkasan_kegiatan[en]" rows="4" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('ringkasan_kegiatan.en') }}</textarea>
+                    </div>
                 </div>
                 <div class="pt-4">
                     <button type="submit" class="bg-red-800 hover:bg-red-900 text-white font-semibold px-6 py-2.5 rounded-xl text-sm transition">Simpan</button>
@@ -45,4 +75,6 @@
             </form>
         </div>
     </div>
+
+    @include('admin.partials.lang-tabs-script')
 @endsection

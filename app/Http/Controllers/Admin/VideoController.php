@@ -12,7 +12,8 @@ class VideoController extends Controller
     {
         $search = $request->query('search');
         if (!empty($search)) {
-            $items = Video::where('video.judul', 'like', '%' . $search . '%')
+            $items = Video::where('judul->id', 'like', '%' . $search . '%')
+                ->orWhere('judul->en', 'like', '%' . $search . '%')
                 ->paginate(20)->onEachSide(2)
                 ->fragment('video');
         } else {
@@ -32,7 +33,8 @@ class VideoController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'judul' => 'required|max:50',
+            'judul.id' => 'required|max:50',
+            'judul.en' => 'nullable|max:50',
             'youtube_link' => 'required|url',
         ]);
 
@@ -61,7 +63,8 @@ class VideoController extends Controller
         $item = Video::findOrFail($id);
 
         $request->validate([
-            'judul' => 'required|max:50',
+            'judul.id' => 'required|max:50',
+            'judul.en' => 'nullable|max:50',
             'youtube_link' => 'required|url',
         ]);
 

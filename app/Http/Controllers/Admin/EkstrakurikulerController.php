@@ -13,11 +13,12 @@ class EkstrakurikulerController extends Controller
     {
         $search = $request->query('search');
         if(!empty($search)){
-            $items = Ekstrakurikuler::where('ekstrakurikuler.nama', 'like' , '%'.$search.'%')
-            ->paginate(20)->onEachSide(2)
-            ->fragment('ekstrakurikuler');
+            $items = Ekstrakurikuler::where('nama->id', 'like', '%'.$search.'%')
+                ->orWhere('nama->en', 'like', '%'.$search.'%')
+                ->paginate(20)->onEachSide(2)
+                ->fragment('ekstrakurikuler');
         }else{
-             $items = Ekstrakurikuler::orderBy('nama')->paginate(20)->onEachSide(2)->fragment('ekstrakurikuler');
+             $items = Ekstrakurikuler::orderBy('nama->id')->paginate(20)->onEachSide(2)->fragment('ekstrakurikuler');
         }
         return view('admin.ekstrakurikuler.index', with([
             'items' => $items,
@@ -33,7 +34,8 @@ class EkstrakurikulerController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'nama' => 'required|max:100',
+            'nama.id' => 'required|max:100',
+            'nama.en' => 'nullable|max:100',
             'gambar' => 'required|image|max:2048',
         ]);
 
@@ -57,7 +59,8 @@ class EkstrakurikulerController extends Controller
         $item = Ekstrakurikuler::findOrFail($id);
 
         $validated = $request->validate([
-            'nama' => 'required|max:100',
+            'nama.id' => 'required|max:100',
+            'nama.en' => 'nullable|max:100',
             'gambar' => 'nullable|image|max:2048',
         ]);
 

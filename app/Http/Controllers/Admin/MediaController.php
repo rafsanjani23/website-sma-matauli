@@ -12,13 +12,16 @@ class MediaController extends Controller
     public function index(Request $request)
     {
         $search = $request->query('search');
-        if(!empty($search)){
-            $items = Media::where('media.judul', 'like' , '%'.$search.'%')
-            ->orWhere('media.tanggal', 'like' , '%'.$search.'%')
-            ->paginate(20)->onEachSide(2)
-            ->fragment('media');
-        }else{
-             $items = Media::latest()->paginate(20)->onEachSide(2)->fragment('media');
+        if (!empty($search)) {
+            $items = Media::where(function ($q) use ($search) {
+                    $q->where('judul->id', 'like', '%'.$search.'%')
+                      ->orWhere('judul->en', 'like', '%'.$search.'%')
+                      ->orWhere('tanggal', 'like', '%'.$search.'%');
+                })
+                ->paginate(20)->onEachSide(2)
+                ->fragment('media');
+        } else {
+            $items = Media::latest()->paginate(20)->onEachSide(2)->fragment('media');
         }
         return view('admin.media.index', with([
             'items' => $items,
@@ -34,9 +37,12 @@ class MediaController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'judul' => 'required|max:50',
-            'ringkasan' => 'required',
-            'isi' => 'required',
+            'judul.id' => 'required|max:50',
+            'judul.en' => 'nullable|max:50',
+            'ringkasan.id' => 'required',
+            'ringkasan.en' => 'nullable',
+            'isi.id' => 'required',
+            'isi.en' => 'nullable',
             'gambar' => 'required|image|max:2048',
             'link_facebook' => 'nullable|max:50',
             'tanggal' => 'required|date',
@@ -62,9 +68,12 @@ class MediaController extends Controller
         $item = Media::findOrFail($id);
 
         $validated = $request->validate([
-            'judul' => 'required|max:50',
-            'ringkasan' => 'required',
-            'isi' => 'required',
+            'judul.id' => 'required|max:50',
+            'judul.en' => 'nullable|max:50',
+            'ringkasan.id' => 'required',
+            'ringkasan.en' => 'nullable',
+            'isi.id' => 'required',
+            'isi.en' => 'nullable',
             'gambar' => 'nullable|image|max:2048',
             'link_facebook' => 'nullable|max:50',
             'tanggal' => 'required|date',

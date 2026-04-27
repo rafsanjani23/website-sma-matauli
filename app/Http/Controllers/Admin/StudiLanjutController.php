@@ -12,10 +12,13 @@ class StudiLanjutController extends Controller
     {
         $search = $request->query('search');
         if (!empty($search)) {
-            $items = StudiLanjut::where('studi_lanjut.nama_alumni', 'like', '%' . $search . '%')
-                ->orWhere('studi_lanjut.nama_lembaga', 'like', '%' . $search . '%')
-                ->orWhere('studi_lanjut.kategori', 'like', '%' . $search . '%')
-                ->orWhere('studi_lanjut.angkatan', 'like', '%' . $search . '%')
+            $items = StudiLanjut::where(function ($q) use ($search) {
+                    $q->where('nama_alumni', 'like', '%' . $search . '%')
+                      ->orWhere('nama_lembaga->id', 'like', '%' . $search . '%')
+                      ->orWhere('nama_lembaga->en', 'like', '%' . $search . '%')
+                      ->orWhere('kategori', 'like', '%' . $search . '%')
+                      ->orWhere('angkatan', 'like', '%' . $search . '%');
+                })
                 ->paginate(20)->onEachSide(2)
                 ->fragment('studi_lanjut');
         } else {
@@ -36,7 +39,8 @@ class StudiLanjutController extends Controller
     {
         $validated = $request->validate([
             'nama_alumni' => 'required|max:50',
-            'nama_lembaga' => 'required|max:50',
+            'nama_lembaga.id' => 'required|max:50',
+            'nama_lembaga.en' => 'nullable|max:50',
             'kategori' => 'required|in:PTN,PTS,PTLN,TNI-Polri,Kedinasan',
             'angkatan' => 'required|max:10',
         ]);
@@ -58,7 +62,8 @@ class StudiLanjutController extends Controller
 
         $validated = $request->validate([
             'nama_alumni' => 'required|max:50',
-            'nama_lembaga' => 'required|max:50',
+            'nama_lembaga.id' => 'required|max:50',
+            'nama_lembaga.en' => 'nullable|max:50',
             'kategori' => 'required|in:PTN,PTS,PTLN,TNI-Polri,Kedinasan',
             'angkatan' => 'required|max:10',
         ]);

@@ -371,5 +371,15 @@
     "Ketua Komite": "Committee Chair",
     "Bendahara Komite": "Committee Treasurer",
     "Sekretaris Komite": "Committee Secretary",
-    "Anggota Komite": "Committee Members"
+    "Anggota Komite": "Committee Members",
+
+    "Laboratorium / Studi": "Laboratory / Study",
+    "Fasilitas Akademik": "Academic Facilities",
+    "Fasilitas Umum": "General Facilities",
+    "Prestasi Sekolah": "School Achievements",
+    "Prestasi Siswa": "Student Achievements",
+    "Prestasi Guru": "Teacher Achievements",
+    "TNI-Polri": "Military / Police",
+    "Guru Mata Pelajaran": "Subject Teacher",
+    "IB": "IB"
 }

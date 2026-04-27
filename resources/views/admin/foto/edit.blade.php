@@ -20,14 +20,32 @@
             <form action="{{ route('admin.foto.update', $item->id) }}" method="POST" enctype="multipart/form-data" class="space-y-5">
                 @csrf
                 @method('PUT')
-                <div>
-                    <label for="judul" class="block text-sm font-semibold text-gray-700 mb-1.5">Judul</label>
-                    <input type="text" name="judul" id="judul" value="{{ old('judul', $item->judul) }}" required class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
-                </div>
-                <div>
-                    <label for="deskripsi" class="block text-sm font-semibold text-gray-700 mb-1.5">Deskripsi <span class="font-normal text-gray-400">(maks. 100 karakter)</span></label>
-                    <textarea name="deskripsi" id="deskripsi" rows="3" maxlength="100" oninput="document.getElementById('charCount').textContent = this.value.length" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('deskripsi', $item->deskripsi) }}</textarea>
-                    <p class="text-xs text-gray-400 mt-1"><span id="charCount">{{ strlen(old('deskripsi', $item->deskripsi ?? '')) }}</span>/100 karakter</p>
+                <div data-lang-tabs>
+                    <div class="flex gap-1 border-b border-gray-200 mb-4">
+                        <button type="button" data-tab-btn="id" class="lang-tab-btn px-4 py-2 text-sm font-semibold border-b-2 border-red-800 text-red-800 transition">Indonesia</button>
+                        <button type="button" data-tab-btn="en" class="lang-tab-btn px-4 py-2 text-sm font-semibold border-b-2 border-transparent text-gray-500 hover:text-gray-700 transition">English</button>
+                    </div>
+                    <div data-tab-pane="id" class="space-y-5">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Judul (ID) <span class="text-red-600">*</span></label>
+                            <input type="text" name="judul[id]" value="{{ old('judul.id', $item->getTranslation('judul', 'id', false) ?? '') }}" required class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Deskripsi (ID) <span class="font-normal text-gray-400">(maks. 100 karakter)</span></label>
+                            <textarea name="deskripsi[id]" rows="3" maxlength="100" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('deskripsi.id', $item->getTranslation('deskripsi', 'id', false) ?? '') }}</textarea>
+                        </div>
+                    </div>
+                    <div data-tab-pane="en" class="hidden space-y-5">
+                        <p class="text-xs text-gray-500 italic">Field bahasa Inggris opsional, fallback ke ID jika kosong.</p>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Judul (EN)</label>
+                            <input type="text" name="judul[en]" value="{{ old('judul.en', $item->getTranslation('judul', 'en', false) ?? '') }}" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Deskripsi (EN) <span class="font-normal text-gray-400">(maks. 100 karakter)</span></label>
+                            <textarea name="deskripsi[en]" rows="3" maxlength="100" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('deskripsi.en', $item->getTranslation('deskripsi', 'en', false) ?? '') }}</textarea>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <label for="gambar" class="block text-sm font-semibold text-gray-700 mb-1.5">Gambar</label>
@@ -42,4 +60,6 @@
             </form>
         </div>
     </div>
+
+    @include('admin.partials.lang-tabs-script')
 @endsection
