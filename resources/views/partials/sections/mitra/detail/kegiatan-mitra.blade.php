@@ -17,7 +17,7 @@
         <!-- penjelasan kegiatan -->
         <div class="text-left group relative lg:max-w-5xl max-w-2xl mt-5 bg-white border border-gray-100 rounded-xl shadow-sm overflow-hidden mx-auto w-full">
             <h5 class="font-semibold p-6 text-lg text-slate-900">{{ __('Kegiatan') }}</h5>
-            <p class="mb-4 p-6 text-[15px] text-slate-600 leading-relaxed">{{ $item->ringkasan_kegiatan }}</p>
+            <div class="rich-content mb-4 p-6 text-[15px] text-slate-600 leading-relaxed">{!! $item->ringkasan_kegiatan !!}</div>
         </div>
     </div>
 </section>

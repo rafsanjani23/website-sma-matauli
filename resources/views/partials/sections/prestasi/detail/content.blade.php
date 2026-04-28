@@ -21,8 +21,8 @@
         </div>
 
         <!-- ISI PRESTASI -->
-        <div class="space-y-6 text-slate-700 text-sm md:text-base leading-relaxed text-justify">
-            {!! nl2br(e($item->isi)) !!}
+        <div class="rich-content text-slate-700 text-sm md:text-base leading-relaxed text-justify">
+            {!! $item->isi !!}
         </div>
 
         <!-- TANGGAL -->

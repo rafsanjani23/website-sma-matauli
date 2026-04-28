@@ -23,8 +23,8 @@
 
             {{-- ISI KONTEN --}}
             <div
-                class="prose prose-gray max-w-none text-sm md:text-base leading-relaxed text-slate-700 text-justify space-y-4">
-                {!! nl2br(e($item->isi_konten)) !!}
+                class="rich-content max-w-none text-sm md:text-base leading-relaxed text-slate-700 text-justify">
+                {!! $item->isi_konten !!}
             </div>
 
             {{-- GAMBAR OPSIONAL --}}

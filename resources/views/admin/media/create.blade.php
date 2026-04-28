@@ -54,7 +54,7 @@
                         </div>
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 mb-1.5">Isi (ID) <span class="text-red-600">*</span></label>
-                            <textarea name="isi[id]" rows="6" required
+                            <textarea name="isi[id]" data-rich-editor rows="6" required
                                 class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('isi.id') }}</textarea>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                         </div>
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 mb-1.5">Isi (EN)</label>
-                            <textarea name="isi[en]" rows="6"
+                            <textarea name="isi[en]" data-rich-editor rows="6"
                                 class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('isi.en') }}</textarea>
                         </div>
                     </div>

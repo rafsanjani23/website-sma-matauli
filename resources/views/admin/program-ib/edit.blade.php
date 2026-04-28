@@ -48,7 +48,7 @@
                         </div>
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 mb-1.5">Isi Konten (ID) <span class="font-normal text-gray-400">(ditampilkan di halaman detail)</span> <span class="text-red-600">*</span></label>
-                            <textarea name="isi_konten[id]" rows="8" required
+                            <textarea name="isi_konten[id]" data-rich-editor rows="8" required
                                 class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('isi_konten.id', $item->getTranslation('isi_konten', 'id', false) ?? '') }}</textarea>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                         </div>
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 mb-1.5">Isi Konten (EN)</label>
-                            <textarea name="isi_konten[en]" rows="8"
+                            <textarea name="isi_konten[en]" data-rich-editor rows="8"
                                 class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('isi_konten.en', $item->getTranslation('isi_konten', 'en', false) ?? '') }}</textarea>
                         </div>
                     </div>

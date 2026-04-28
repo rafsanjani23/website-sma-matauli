@@ -410,6 +410,8 @@
         </div>
     </div>
 
+    @include('admin.partials.rich-editor')
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js"></script>
     <script>
         (function() {

@@ -32,7 +32,7 @@
                         </div>
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 mb-1.5">Penjelasan Singkat (ID)</label>
-                            <textarea name="penjelasan_singkat[id]" rows="4" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('penjelasan_singkat.id', $item->getTranslation('penjelasan_singkat', 'id', false) ?? '') }}</textarea>
+                            <textarea name="penjelasan_singkat[id]" data-rich-editor rows="4" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('penjelasan_singkat.id', $item->getTranslation('penjelasan_singkat', 'id', false) ?? '') }}</textarea>
                         </div>
                     </div>
                     <div data-tab-pane="en" class="hidden space-y-5">
@@ -43,7 +43,7 @@
                         </div>
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 mb-1.5">Penjelasan Singkat (EN)</label>
-                            <textarea name="penjelasan_singkat[en]" rows="4" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('penjelasan_singkat.en', $item->getTranslation('penjelasan_singkat', 'en', false) ?? '') }}</textarea>
+                            <textarea name="penjelasan_singkat[en]" data-rich-editor rows="4" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('penjelasan_singkat.en', $item->getTranslation('penjelasan_singkat', 'en', false) ?? '') }}</textarea>
                         </div>
                     </div>
                 </div>
@@ -72,12 +72,12 @@
                     </div>
                     <div data-tab-pane="id">
                         <label class="block text-sm font-semibold text-gray-700 mb-1.5">Ringkasan Kegiatan (ID)</label>
-                        <textarea name="ringkasan_kegiatan[id]" rows="4" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('ringkasan_kegiatan.id', $item->getTranslation('ringkasan_kegiatan', 'id', false) ?? '') }}</textarea>
+                        <textarea name="ringkasan_kegiatan[id]" data-rich-editor rows="4" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('ringkasan_kegiatan.id', $item->getTranslation('ringkasan_kegiatan', 'id', false) ?? '') }}</textarea>
                     </div>
                     <div data-tab-pane="en" class="hidden">
                         <p class="text-xs text-gray-500 italic mb-1.5">Field bahasa Inggris opsional, fallback ke ID jika kosong.</p>
                         <label class="block text-sm font-semibold text-gray-700 mb-1.5">Ringkasan Kegiatan (EN)</label>
-                        <textarea name="ringkasan_kegiatan[en]" rows="4" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('ringkasan_kegiatan.en', $item->getTranslation('ringkasan_kegiatan', 'en', false) ?? '') }}</textarea>
+                        <textarea name="ringkasan_kegiatan[en]" data-rich-editor rows="4" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('ringkasan_kegiatan.en', $item->getTranslation('ringkasan_kegiatan', 'en', false) ?? '') }}</textarea>
                     </div>
                 </div>
                 <div class="pt-4">

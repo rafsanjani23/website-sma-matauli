@@ -10,7 +10,7 @@
         <div class="px-4 py-8">
             <div class="grid lg:grid-cols-2 gap-6 lg:max-w-6xl max-w-2xl mx-auto">
                 <div class="text-left group relative bg-white border border-gray-100 rounded-xl shadow-sm overflow-hidden mx-auto w-full scroll-animate transition-all duration-700 ease-in-out translate-x-10 opacity-0 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-900/10 hover:border-red-100 cursor-pointer">
-                    <p class="mb-4 p-6 text-[15px] text-slate-600 leading-relaxed">{{ $item->penjelasan_singkat }}</p>
+                    <div class="rich-content mb-4 p-6 text-[15px] text-slate-600 leading-relaxed">{!! $item->penjelasan_singkat !!}</div>
                 </div>
                 <div class="group relative bg-white border border-gray-100 rounded-xl shadow-sm overflow-hidden mx-auto w-full scroll-animate transition-all duration-700 ease-in-out translate-x-10 opacity-0 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-900/10 hover:border-red-100 cursor-pointer">
                     <img src="{{ Storage::url($item->gambar_mitra) }}" alt="{{ $item->nama_mitra }}"
