@@ -431,8 +431,9 @@
                         cropper = null;
                     }
                     cropImage.onload = function() {
+                        const freeCrop = activeInput && activeInput.dataset.cropFree !== undefined;
                         cropper = new Cropper(cropImage, {
-                            aspectRatio: 4 / 3,
+                            aspectRatio: freeCrop ? NaN : 4 / 3,
                             viewMode: 1,
                             autoCropArea: 1,
                             responsive: true,
@@ -504,7 +505,10 @@
                 label.textContent = 'Sesudah';
                 const img = document.createElement('img');
                 img.src = URL.createObjectURL(blob);
-                img.className = 'w-32 h-20 object-cover rounded-lg border border-gray-200';
+                const freeCrop = input.dataset.cropFree !== undefined;
+                img.className = freeCrop
+                    ? 'w-40 h-auto rounded-lg border border-gray-200'
+                    : 'w-32 h-20 object-cover rounded-lg border border-gray-200';
                 preview.appendChild(label);
                 preview.appendChild(img);
                 input.parentElement.appendChild(preview);

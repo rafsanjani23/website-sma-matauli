@@ -73,13 +73,13 @@
 
                 <div>
                     <label for="gambar" class="block text-sm font-semibold text-gray-700 mb-1.5">Gambar Utama <span class="font-normal text-gray-400">(thumbnail kartu & header detail)</span></label>
-                    <input type="file" name="gambar" id="gambar" accept="image/*" required
+                    <input type="file" name="gambar" id="gambar" accept="image/*" data-crop-free required
                         class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm file:mr-4 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-red-50 file:text-red-800 hover:file:bg-red-100 transition">
                 </div>
 
                 <div>
                     <label for="gambar_opsional" class="block text-sm font-semibold text-gray-700 mb-1.5">Gambar Tambahan <span class="font-normal text-gray-400">(opsional, ditampilkan di halaman detail)</span></label>
-                    <input type="file" name="gambar_opsional" id="gambar_opsional" accept="image/*"
+                    <input type="file" name="gambar_opsional" id="gambar_opsional" accept="image/*" data-crop-free
                         class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm file:mr-4 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-red-50 file:text-red-800 hover:file:bg-red-100 transition">
                 </div>
 

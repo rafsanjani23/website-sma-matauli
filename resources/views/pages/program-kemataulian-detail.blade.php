@@ -21,8 +21,8 @@
             </h1>
             <div class="w-30 h-1 bg-yellow-400 rounded-full mb-8 mx-auto"></div>
 
-            <div class="w-full h-64 md:h-96 lg:h-[34rem] max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg mb-10 md:mb-12">
-                <img src="{{ Storage::url($item->gambar) }}" alt="{{ $item->judul }}" class="w-full h-full object-cover object-top" />
+            <div class="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg mb-10 md:mb-12">
+                <img src="{{ Storage::url($item->gambar) }}" alt="{{ $item->judul }}" class="w-full h-auto block" />
             </div>
 
             {{-- RINGKASAN --}}
@@ -41,8 +41,8 @@
 
             {{-- GAMBAR OPSIONAL --}}
             @if ($item->gambar_opsional)
-                <div class="w-full h-64 md:h-96 lg:h-[34rem] max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg mb-10 md:mb-12 mt-10">
-                    <img src="{{ Storage::url($item->gambar_opsional) }}" alt="{{ $item->judul }}" class="w-full h-full object-cover object-top" />
+                <div class="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg mb-10 md:mb-12 mt-10">
+                    <img src="{{ Storage::url($item->gambar_opsional) }}" alt="{{ $item->judul }}" class="w-full h-auto block" />
                 </div>
             @endif
 
