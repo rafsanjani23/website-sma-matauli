@@ -40,7 +40,7 @@
                 </div>
                 <div>
                     <label for="angkatan" class="block text-sm font-semibold text-gray-700 mb-1.5">Angkatan</label>
-                    <input type="text" name="angkatan" id="angkatan" value="{{ old('angkatan') }}" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
+                    <input type="text" name="angkatan" id="angkatan" value="{{ old('angkatan') }}" placeholder="Contoh: 15" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
                 </div>
                 <div>
                     <label for="foto" class="block text-sm font-semibold text-gray-700 mb-1.5">Foto</label>

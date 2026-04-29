@@ -16,7 +16,7 @@
                     <div class="p-4">
                         <h4 class="text-slate-900 text-base font-semibold">{{ $item->nama }}</h4>
                         @if ($item->angkatan)
-                            <p class="text-gray-400 text-xs mt-1">Angkatan {{ $item->angkatan }}</p>
+                            <p class="text-gray-400 text-xs mt-1">{{ __('Angkatan') }} {{ $item->angkatan }}</p>
                         @endif
 
                         <div class="mt-4">
