@@ -37,7 +37,7 @@
                         <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">
                             Judul</th>
                         <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">
-                            YouTube ID</th>
+                            Sumber</th>
                         <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50">
                             Aksi</th>
                     </tr>
@@ -50,11 +50,22 @@
                         <tr class="hover:bg-gray-50">
                             <td class="px-6 py-4 text-sm text-gray-700">{{ $no++ }}</td>
                             <td class="px-6 py-4 text-sm text-gray-700">
-                                <img src="https://img.youtube.com/vi/{{ $item->youtube_id }}/hqdefault.jpg" alt="Thumbnail"
-                                    class="w-16 h-10 object-cover rounded">
+                                @if ($item->video_path)
+                                    <img src="{{ $item->thumbnail_path ? asset('storage/' . $item->thumbnail_path) : asset('images/placeholder.png') }}" alt="Thumbnail"
+                                        class="w-16 h-10 object-cover rounded">
+                                @else
+                                    <img src="https://img.youtube.com/vi/{{ $item->youtube_id }}/hqdefault.jpg" alt="Thumbnail"
+                                        class="w-16 h-10 object-cover rounded">
+                                @endif
                             </td>
                             <td class="px-6 py-4 text-sm text-gray-700">{{ $item->judul }}</td>
-                            <td class="px-6 py-4 text-sm text-gray-700">{{ $item->youtube_id }}</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">
+                                @if ($item->video_path)
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-blue-100 text-blue-800">Upload</span>
+                                @else
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800">YouTube</span>
+                                @endif
+                            </td>
                             <td class="px-6 py-4">
                                 <div class="flex items-center gap-2">
                                     <a href="{{ route('admin.video.edit', $item->id) }}"

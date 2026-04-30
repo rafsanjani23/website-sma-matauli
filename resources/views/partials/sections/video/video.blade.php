@@ -6,11 +6,23 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-2 px-10">
 
             @forelse ($items as $item)
+            @php
+                $isUpload = !empty($item->video_path);
+                $thumbSrc = $isUpload
+                    ? ($item->thumbnail_path ? asset('storage/' . $item->thumbnail_path) : asset('images/placeholder.png'))
+                    : 'https://img.youtube.com/vi/' . $item->youtube_id . '/hqdefault.jpg';
+                $videoUrl = $isUpload ? asset('storage/' . $item->video_path) : '';
+            @endphp
             <div>
                 <div
                     class="bg-white border border-gray-200 shadow-md w-full max-w-sm rounded-4xl overflow-hidden mx-auto relative group">
-                    <div class="aspect-3/2 relative cursor-pointer" onclick="openVideoModal('{{ $item->youtube_id }}')">
-                        <img src="https://img.youtube.com/vi/{{ $item->youtube_id }}/hqdefault.jpg" alt="{{ $item->judul }}"
+                    <div class="aspect-3/2 relative cursor-pointer"
+                        @if ($isUpload)
+                            onclick="openVideoModal('upload', '{{ $videoUrl }}')"
+                        @else
+                            onclick="openVideoModal('youtube', '{{ $item->youtube_id }}')"
+                        @endif>
+                        <img src="{{ $thumbSrc }}" alt="{{ $item->judul }}" loading="lazy"
                             class="w-full h-full object-cover" />
                         <!-- Play Button Overlay -->
                         <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-all duration-300">
@@ -50,18 +62,31 @@
     </button>
 
     <!-- Video Container -->
-    <div class="w-full max-w-4xl mx-4 aspect-video rounded-2xl overflow-hidden shadow-2xl">
-        <iframe id="videoIframe" class="w-full h-full" src="" frameborder="0"
+    <div class="w-full max-w-4xl mx-4 aspect-video rounded-2xl overflow-hidden shadow-2xl bg-black">
+        <iframe id="videoIframe" class="w-full h-full hidden" src="" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
+        <video id="videoPlayer" class="w-full h-full hidden" controls preload="none" playsinline></video>
     </div>
 </div>
 
 <script>
-    function openVideoModal(videoId) {
+    function openVideoModal(type, value) {
         const modal = document.getElementById('videoModal');
         const iframe = document.getElementById('videoIframe');
-        iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
+        const player = document.getElementById('videoPlayer');
+
+        if (type === 'youtube') {
+            player.classList.add('hidden');
+            iframe.classList.remove('hidden');
+            iframe.src = 'https://www.youtube.com/embed/' + value + '?autoplay=1';
+        } else {
+            iframe.classList.add('hidden');
+            player.classList.remove('hidden');
+            player.src = value;
+            player.play().catch(() => {});
+        }
+
         modal.classList.remove('hidden');
         modal.classList.add('flex');
         document.body.style.overflow = 'hidden';
@@ -70,7 +95,11 @@
     function closeVideoModal() {
         const modal = document.getElementById('videoModal');
         const iframe = document.getElementById('videoIframe');
+        const player = document.getElementById('videoPlayer');
         iframe.src = '';
+        player.pause();
+        player.removeAttribute('src');
+        player.load();
         modal.classList.add('hidden');
         modal.classList.remove('flex');
         document.body.style.overflow = '';

@@ -1,6 +1,10 @@
 @extends('admin.layouts.app')
 @section('title', 'Edit Video')
 @section('content')
+    @php
+        $currentSource = $item->video_path ? 'upload' : 'youtube';
+        $currentYoutubeLink = $item->youtube_id ? 'https://www.youtube.com/watch?v=' . $item->youtube_id : '';
+    @endphp
     <div class="max-w-4xl">
         <div class="mb-6">
             <a href="{{ route('admin.video.index') }}" class="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-red-800 transition">
@@ -17,7 +21,7 @@
                     </ul>
                 </div>
             @endif
-            <form action="{{ route('admin.video.update', $item->id) }}" method="POST" class="space-y-5">
+            <form action="{{ route('admin.video.update', $item->id) }}" method="POST" enctype="multipart/form-data" class="space-y-5" id="video-form">
                 @csrf
                 @method('PUT')
                 <div data-lang-tabs>
@@ -35,11 +39,14 @@
                         <input type="text" name="judul[en]" value="{{ old('judul.en', $item->getTranslation('judul', 'en', false) ?? '') }}" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
                     </div>
                 </div>
-                <div>
-                    <label for="youtube_link" class="block text-sm font-semibold text-gray-700 mb-1.5">YouTube Link</label>
-                    <img src="https://img.youtube.com/vi/{{ $item->youtube_id }}/hqdefault.jpg" alt="Thumbnail saat ini" class="w-40 h-24 object-cover rounded-lg mb-4" />
-                    <input type="url" name="youtube_link" id="youtube_link" value="{{ old('youtube_link', 'https://www.youtube.com/watch?v=' . $item->youtube_id) }}" required placeholder="contoh: https://www.youtube.com/watch?v=lXwn83rmegQ" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
-                </div>
+
+                @include('admin.video.partials.source-picker', [
+                    'oldSourceType' => old('source_type', $currentSource),
+                    'oldYoutubeLink' => old('youtube_link', $currentYoutubeLink),
+                    'currentVideoPath' => $item->video_path,
+                    'currentThumbnailPath' => $item->thumbnail_path,
+                ])
+
                 <div class="pt-4">
                     <button type="submit" class="bg-red-800 hover:bg-red-900 text-white font-semibold px-6 py-2.5 rounded-xl text-sm transition">Simpan</button>
                 </div>
@@ -48,4 +55,5 @@
     </div>
 
     @include('admin.partials.lang-tabs-script')
+    @include('admin.video.partials.source-picker-script')
 @endsection

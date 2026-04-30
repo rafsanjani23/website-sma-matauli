@@ -17,7 +17,7 @@
                     </ul>
                 </div>
             @endif
-            <form action="{{ route('admin.video.store') }}" method="POST" class="space-y-5">
+            <form action="{{ route('admin.video.store') }}" method="POST" enctype="multipart/form-data" class="space-y-5" id="video-form">
                 @csrf
                 <div data-lang-tabs>
                     <div class="flex gap-1 border-b border-gray-200 mb-4">
@@ -34,10 +34,14 @@
                         <input type="text" name="judul[en]" value="{{ old('judul.en') }}" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
                     </div>
                 </div>
-                <div>
-                    <label for="youtube_link" class="block text-sm font-semibold text-gray-700 mb-1.5">YouTube Link</label>
-                    <input type="url" name="youtube_link" id="youtube_link" value="{{ old('youtube_link') }}" required placeholder="contoh: https://www.youtube.com/watch?v=lXwn83rmegQ" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
-                </div>
+
+                @include('admin.video.partials.source-picker', [
+                    'oldSourceType' => old('source_type', 'youtube'),
+                    'oldYoutubeLink' => old('youtube_link'),
+                    'currentVideoPath' => null,
+                    'currentThumbnailPath' => null,
+                ])
+
                 <div class="pt-4">
                     <button type="submit" class="bg-red-800 hover:bg-red-900 text-white font-semibold px-6 py-2.5 rounded-xl text-sm transition">Simpan</button>
                 </div>
@@ -46,4 +50,5 @@
     </div>
 
     @include('admin.partials.lang-tabs-script')
+    @include('admin.video.partials.source-picker-script')
 @endsection

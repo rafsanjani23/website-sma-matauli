@@ -14,6 +14,8 @@ class Video extends Model
     protected $fillable = [
         'judul',
         'youtube_id',
+        'video_path',
+        'thumbnail_path',
     ];
 
     public $translatable = ['judul'];
