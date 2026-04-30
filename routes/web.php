@@ -91,8 +91,8 @@ Route::get('/mitra/{id}', function ($id) {
 
 // program
 Route::get('/program-kemataulian', function () {
-    $items = \App\Models\ProgramKemataulian::orderBy('judul')->get();
-    return view('pages.program-kemataulian', compact('items'));
+    $item = \App\Models\ProgramKemataulian::orderBy('judul')->first();
+    return view('pages.program-kemataulian-detail', compact('item'));
 })->name('program-kemataulian');
 Route::get('/program-kemataulian/{id}', function ($id) {
     $item = \App\Models\ProgramKemataulian::findOrFail($id);
@@ -109,8 +109,8 @@ Route::get('/program-ib/{id}', function ($id) {
 })->name('program-ib-detail');
 
 Route::get('/program-kemendikdasmen', function () {
-    $items = \App\Models\ProgramKemendikdasmen::orderBy('judul')->get();
-    return view('pages.program-kemendikdasmen', compact('items'));
+    $item = \App\Models\ProgramKemendikdasmen::orderBy('judul')->first();
+    return view('pages.program-kemendikdasmen-detail', compact('item'));
 })->name('program-kemendikdasmen');
 Route::get('/program-kemendikdasmen/{id}', function ($id) {
     $item = \App\Models\ProgramKemendikdasmen::findOrFail($id);
