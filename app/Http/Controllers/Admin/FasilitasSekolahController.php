@@ -19,9 +19,10 @@ class FasilitasSekolahController extends Controller
                       ->orWhere('kategori', 'like', '%'.$search.'%');
                 })
                 ->paginate(20)->onEachSide(2)
+                ->withQueryString()
                 ->fragment('fasilitas_sekolah');
         }else{
-             $items = FasilitasSekolah::latest()->paginate(20)->onEachSide(2)->fragment('fasilitas_sekolah');
+             $items = FasilitasSekolah::latest()->paginate(20)->onEachSide(2)->withQueryString()->fragment('fasilitas_sekolah');
         }
         return view('admin.fasilitas-sekolah.index', with([
             'items' => $items,
@@ -78,7 +79,7 @@ class FasilitasSekolahController extends Controller
 
         $item->update($validated);
 
-        return redirect()->route('admin.fasilitas-sekolah.index')->with('success', 'Data berhasil diperbarui.');
+        return redirect()->route('admin.fasilitas-sekolah.index', request()->query())->with('success', 'Data berhasil diperbarui.');
     }
 
     public function destroy($id)
@@ -91,6 +92,6 @@ class FasilitasSekolahController extends Controller
 
         $item->delete();
 
-        return redirect()->route('admin.fasilitas-sekolah.index')->with('success', 'Data berhasil dihapus.');
+        return redirect()->route('admin.fasilitas-sekolah.index', request()->query())->with('success', 'Data berhasil dihapus.');
     }
 }

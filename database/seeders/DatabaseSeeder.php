@@ -19,9 +19,9 @@ class DatabaseSeeder extends Seeder
             BerandaProgramIbSeeder::class,
             BerandaProgramKemataulianSeeder::class,
             BerandaProgramKemendikdasmenSeeder::class,
-            ProgramIB::class,
-            ProgramKemataulian::class,
-            ProgramKemendikdasmen::class,
+            ProgramIbSeeder::class,
+            ProgramKemataulianSeeder::class,
+            ProgramKemendikdasmenSeeder::class,
         ]);
     }
 }

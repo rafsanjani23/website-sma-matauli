@@ -19,9 +19,10 @@ class MediaController extends Controller
                       ->orWhere('tanggal', 'like', '%'.$search.'%');
                 })
                 ->paginate(20)->onEachSide(2)
+                ->withQueryString()
                 ->fragment('media');
         } else {
-            $items = Media::latest()->paginate(20)->onEachSide(2)->fragment('media');
+            $items = Media::latest()->paginate(20)->onEachSide(2)->withQueryString()->fragment('media');
         }
         return view('admin.media.index', with([
             'items' => $items,
@@ -88,7 +89,7 @@ class MediaController extends Controller
 
         $item->update($validated);
 
-        return redirect()->route('admin.media.index')->with('success', 'Data berhasil diperbarui.');
+        return redirect()->route('admin.media.index', request()->query())->with('success', 'Data berhasil diperbarui.');
     }
 
     public function destroy($id)
@@ -101,6 +102,6 @@ class MediaController extends Controller
 
         $item->delete();
 
-        return redirect()->route('admin.media.index')->with('success', 'Data berhasil dihapus.');
+        return redirect()->route('admin.media.index', request()->query())->with('success', 'Data berhasil dihapus.');
     }
 }

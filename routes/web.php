@@ -150,14 +150,22 @@ Route::get('/studi-lanjut', function (\Illuminate\Http\Request $request) {
 
     // Build queries per category with optional angkatan filter + pagination
     $perPage = 10;
-    $buildQuery = function ($kategori) use ($request, $angkatan, $perPage) {
+    $panelMap = [
+        'TNI-Polri' => 'panel-tni',
+        'Kedinasan' => 'panel-kedinasan',
+        'PTN'       => 'panel-ptn',
+        'PTS'       => 'panel-pts',
+        'PTLN'      => 'panel-ptln',
+    ];
+    $buildQuery = function ($kategori) use ($request, $angkatan, $perPage, $panelMap) {
         $query = \App\Models\StudiLanjut::where('kategori', $kategori);
         if (!empty($angkatan)) {
             $query->where('angkatan', $angkatan);
         }
         return $query->orderBy('angkatan', 'desc')->orderBy('nama_alumni', 'asc')
             ->paginate($perPage, ['*'], strtolower(str_replace('-', '', $kategori)) . '_page')
-            ->appends($request->query());
+            ->appends($request->query())
+            ->fragment($panelMap[$kategori]);
     };
 
     $tniPolri = $buildQuery('TNI-Polri');

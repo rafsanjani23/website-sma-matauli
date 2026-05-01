@@ -15,9 +15,10 @@ class PengasuhController extends Controller
         if (!empty($search)) {
             $items = Pengasuh::where('pengasuhs.nama', 'like', '%' . $search . '%')
                 ->paginate(20)->onEachSide(2)
+                ->withQueryString()
                 ->fragment('pengasuh');
         } else {
-            $items = Pengasuh::orderBy('nama')->paginate(20)->onEachSide(2)->fragment('pengasuh');
+            $items = Pengasuh::orderBy('nama')->paginate(20)->onEachSide(2)->withQueryString()->fragment('pengasuh');
         }
         return view('admin.pengasuh.index', with([
             'items' => $items,
@@ -70,7 +71,7 @@ class PengasuhController extends Controller
 
         $item->update($validated);
 
-        return redirect()->route('admin.pengasuh.index')->with('success', 'Data berhasil diperbarui.');
+        return redirect()->route('admin.pengasuh.index', request()->query())->with('success', 'Data berhasil diperbarui.');
     }
 
       public function destroy($id)
@@ -83,7 +84,7 @@ class PengasuhController extends Controller
 
         $item->delete();
 
-        return redirect()->route('admin.pengasuh.index')->with('success', 'Data berhasil dihapus.');
+        return redirect()->route('admin.pengasuh.index', request()->query())->with('success', 'Data berhasil dihapus.');
     }
 
 }

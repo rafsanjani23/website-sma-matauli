@@ -16,9 +16,10 @@ class KemitraanController extends Controller
             $items = Kemitraan::where('nama_mitra->id', 'like', '%' . $search . '%')
                 ->orWhere('nama_mitra->en', 'like', '%' . $search . '%')
                 ->paginate(20)->onEachSide(2)
+                ->withQueryString()
                 ->fragment('kemitraan');
         } else {
-            $items = Kemitraan::latest()->paginate(20)->onEachSide(2)->fragment('kemitraan');
+            $items = Kemitraan::latest()->paginate(20)->onEachSide(2)->withQueryString()->fragment('kemitraan');
         }
         return view('admin.kemitraan.index', with([
             'items' => $items,
@@ -94,7 +95,7 @@ class KemitraanController extends Controller
 
         $item->update($validated);
 
-        return redirect()->route('admin.kemitraan.index')->with('success', 'Data berhasil diperbarui.');
+        return redirect()->route('admin.kemitraan.index', request()->query())->with('success', 'Data berhasil diperbarui.');
     }
 
     public function destroy($id)
@@ -111,6 +112,6 @@ class KemitraanController extends Controller
 
         $item->delete();
 
-        return redirect()->route('admin.kemitraan.index')->with('success', 'Data berhasil dihapus.');
+        return redirect()->route('admin.kemitraan.index', request()->query())->with('success', 'Data berhasil dihapus.');
     }
 }

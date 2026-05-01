@@ -16,9 +16,10 @@ class TestimoniController extends Controller
             $items = Testimoni::where('testimoni.nama', 'like', '%' . $search . '%')
                 ->orWhere('testimoni.tahun_alumni', 'like', '%' . $search . '%')
                 ->paginate(20)->onEachSide(2)
+                ->withQueryString()
                 ->fragment('testimoni');
         } else {
-            $items = Testimoni::latest()->paginate(20)->onEachSide(2)->fragment('testimoni');
+            $items = Testimoni::latest()->paginate(20)->onEachSide(2)->withQueryString()->fragment('testimoni');
         }
         return view('admin.testimoni.index', with([
             'items' => $items,
@@ -77,7 +78,7 @@ class TestimoniController extends Controller
 
         $item->update($validated);
 
-        return redirect()->route('admin.testimoni.index')->with('success', 'Data berhasil diperbarui.');
+        return redirect()->route('admin.testimoni.index', request()->query())->with('success', 'Data berhasil diperbarui.');
     }
 
     public function destroy($id)
@@ -90,6 +91,6 @@ class TestimoniController extends Controller
 
         $item->delete();
 
-        return redirect()->route('admin.testimoni.index')->with('success', 'Data berhasil dihapus.');
+        return redirect()->route('admin.testimoni.index', request()->query())->with('success', 'Data berhasil dihapus.');
     }
 }

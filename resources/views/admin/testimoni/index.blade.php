@@ -6,7 +6,7 @@
     <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
         <div class="px-6 py-4 border-b border-gray-200 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
             <h2 class="text-lg font-bold text-gray-900">Kelola Testimoni</h2>
-            <form action="{{ route('admin.prestasi.index') }}" method="GET">
+            <form action="{{ route('admin.testimoni.index') }}" method="GET">
                 <div class="flex rounded-full border-2 border-red-700 overflow-hidden max-w-md mx-auto">
                     <input type="text" placeholder="Cari..." name="search" value="{{ $search }}"
                         class="w-full outline-none bg-white text-sm px-5 py-2" />
@@ -66,9 +66,9 @@
                             <td class="px-6 py-4 text-sm text-gray-700">{{ Str::limit($item->isi, 50) }}</td>
                             <td class="px-6 py-4">
                                 <div class="flex items-center gap-2">
-                                    <a href="{{ route('admin.testimoni.edit', $item->id) }}"
+                                    <a href="{{ route('admin.testimoni.edit', array_merge(['id' => $item->id], request()->query())) }}"
                                         class="text-blue-600 hover:text-blue-800 text-sm font-medium">Edit</a>
-                                    <form action="{{ route('admin.testimoni.destroy', $item->id) }}" method="POST">
+                                    <form action="{{ route('admin.testimoni.destroy', array_merge(['id' => $item->id], request()->query())) }}" method="POST">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit"

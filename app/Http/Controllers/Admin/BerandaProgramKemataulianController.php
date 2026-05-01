@@ -11,7 +11,7 @@ class BerandaProgramKemataulianController extends Controller
 {
     public function index()
     {
-        $items = BerandaProgramKemataulian::latest()->paginate(20)->onEachSide(2)->fragment('beranda-program-kemataulian');
+        $items = BerandaProgramKemataulian::latest()->paginate(20)->onEachSide(2)->withQueryString()->fragment('beranda-program-kemataulian');
         return view('admin.beranda.program-kemataulian.index', compact('items'));
     }
 
@@ -66,7 +66,7 @@ class BerandaProgramKemataulianController extends Controller
 
         $item->update($validated);
 
-        return redirect()->route('admin.beranda.program-kemataulian.index')->with('success', 'Data berhasil diperbarui.');
+        return redirect()->route('admin.beranda.program-kemataulian.index', request()->query())->with('success', 'Data berhasil diperbarui.');
     }
 
     public function destroy($id)
@@ -79,6 +79,6 @@ class BerandaProgramKemataulianController extends Controller
 
         $item->delete();
 
-        return redirect()->route('admin.beranda.program-kemataulian.index')->with('success', 'Data berhasil dihapus.');
+        return redirect()->route('admin.beranda.program-kemataulian.index', request()->query())->with('success', 'Data berhasil dihapus.');
     }
 }

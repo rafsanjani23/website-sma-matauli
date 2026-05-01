@@ -16,9 +16,10 @@ class ProgramKemendikdasmenController extends Controller
             $items = ProgramKemendikdasmen::where('judul->id', 'like', '%' . $search . '%')
                 ->orWhere('judul->en', 'like', '%' . $search . '%')
                 ->paginate(20)->onEachSide(2)
+                ->withQueryString()
                 ->fragment('program-kemendikdasmen');
         } else {
-            $items = ProgramKemendikdasmen::orderBy('judul->id')->paginate(20)->onEachSide(2)->fragment('program-kemendikdasmen');
+            $items = ProgramKemendikdasmen::orderBy('judul->id')->paginate(20)->onEachSide(2)->withQueryString()->fragment('program-kemendikdasmen');
         }
         return view('admin.program-kemendikdasmen.index', compact('items', 'search'));
     }
@@ -89,7 +90,7 @@ class ProgramKemendikdasmenController extends Controller
 
         $item->update($validated);
 
-        return redirect()->route('admin.program-kemendikdasmen.index')->with('success', 'Data berhasil diperbarui.');
+        return redirect()->route('admin.program-kemendikdasmen.index', request()->query())->with('success', 'Data berhasil diperbarui.');
     }
 
     public function destroy($id)
@@ -102,6 +103,6 @@ class ProgramKemendikdasmenController extends Controller
 
         $item->delete();
 
-        return redirect()->route('admin.program-kemendikdasmen.index')->with('success', 'Data berhasil dihapus.');
+        return redirect()->route('admin.program-kemendikdasmen.index', request()->query())->with('success', 'Data berhasil dihapus.');
     }
 }

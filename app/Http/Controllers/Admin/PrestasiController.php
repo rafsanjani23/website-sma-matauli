@@ -23,9 +23,10 @@ class PrestasiController extends Controller
                       ->orWhere('tingkatan->en', 'like', '%' . $search . '%');
                 })
                 ->paginate(20)->onEachSide(2)
+                ->withQueryString()
                 ->fragment('prestasi');
         } else {
-            $items = Prestasi::latest()->paginate(20)->onEachSide(2)->fragment('prestasi');
+            $items = Prestasi::latest()->paginate(20)->onEachSide(2)->withQueryString()->fragment('prestasi');
         }
         return view('admin.prestasi.index', with([
             'items' => $items,
@@ -96,7 +97,7 @@ class PrestasiController extends Controller
 
         $item->update($validated);
 
-        return redirect()->route('admin.prestasi.index')->with('success', 'Data berhasil diperbarui.');
+        return redirect()->route('admin.prestasi.index', request()->query())->with('success', 'Data berhasil diperbarui.');
     }
 
     public function destroy($id)
@@ -109,6 +110,6 @@ class PrestasiController extends Controller
 
         $item->delete();
 
-        return redirect()->route('admin.prestasi.index')->with('success', 'Data berhasil dihapus.');
+        return redirect()->route('admin.prestasi.index', request()->query())->with('success', 'Data berhasil dihapus.');
     }
 }

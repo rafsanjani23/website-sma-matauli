@@ -19,9 +19,10 @@ class ProfesionalController extends Controller
                       ->orWhere('nama_lembaga->en', 'like', '%' . $search . '%');
                 })
                 ->paginate(20)->onEachSide(2)
+                ->withQueryString()
                 ->fragment('profesional');
         } else {
-            $items = Profesional::orderBy('nama')->paginate(20)->onEachSide(2)->fragment('profesional');
+            $items = Profesional::orderBy('nama')->paginate(20)->onEachSide(2)->withQueryString()->fragment('profesional');
         }
         return view('admin.profesional.index', with([
             'items' => $items,
@@ -86,7 +87,7 @@ class ProfesionalController extends Controller
 
         $item->update($validated);
 
-        return redirect()->route('admin.profesional.index')->with('success', 'Data berhasil diperbarui.');
+        return redirect()->route('admin.profesional.index', request()->query())->with('success', 'Data berhasil diperbarui.');
     }
 
     public function destroy($id)
@@ -99,6 +100,6 @@ class ProfesionalController extends Controller
 
         $item->delete();
 
-        return redirect()->route('admin.profesional.index')->with('success', 'Data berhasil dihapus.');
+        return redirect()->route('admin.profesional.index', request()->query())->with('success', 'Data berhasil dihapus.');
     }
 }

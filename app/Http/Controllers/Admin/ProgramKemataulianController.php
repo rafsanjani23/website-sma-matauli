@@ -16,9 +16,10 @@ class ProgramKemataulianController extends Controller
             $items = ProgramKemataulian::where('judul->id', 'like', '%' . $search . '%')
                 ->orWhere('judul->en', 'like', '%' . $search . '%')
                 ->paginate(20)->onEachSide(2)
+                ->withQueryString()
                 ->fragment('program-kemataulian');
         } else {
-            $items = ProgramKemataulian::orderBy('judul->id')->paginate(20)->onEachSide(2)->fragment('program-kemataulian');
+            $items = ProgramKemataulian::orderBy('judul->id')->paginate(20)->onEachSide(2)->withQueryString()->fragment('program-kemataulian');
         }
         return view('admin.program-kemataulian.index', compact('items', 'search'));
     }
@@ -89,7 +90,7 @@ class ProgramKemataulianController extends Controller
 
         $item->update($validated);
 
-        return redirect()->route('admin.program-kemataulian.index')->with('success', 'Data berhasil diperbarui.');
+        return redirect()->route('admin.program-kemataulian.index', request()->query())->with('success', 'Data berhasil diperbarui.');
     }
 
     public function destroy($id)
@@ -102,6 +103,6 @@ class ProgramKemataulianController extends Controller
 
         $item->delete();
 
-        return redirect()->route('admin.program-kemataulian.index')->with('success', 'Data berhasil dihapus.');
+        return redirect()->route('admin.program-kemataulian.index', request()->query())->with('success', 'Data berhasil dihapus.');
     }
 }

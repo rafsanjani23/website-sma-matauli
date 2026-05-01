@@ -34,7 +34,7 @@
                             <td class="px-6 py-4 text-sm text-gray-700">{{ $item->judul }}</td>
                             <td class="px-6 py-4 text-sm text-gray-500 max-w-xs truncate">{{ $item->ringkasan }}</td>
                             <td class="px-6 py-4">
-                                <a href="{{ route('admin.beranda.program-kemataulian.edit', $item->id) }}"
+                                <a href="{{ route('admin.beranda.program-kemataulian.edit', array_merge(['id' => $item->id], request()->query())) }}"
                                     class="text-blue-600 hover:text-blue-800 text-sm font-medium">Edit</a>
                             </td>
                         </tr>

@@ -64,6 +64,6 @@ class PimpinanController extends Controller
 
         $item->update($validated);
 
-        return redirect()->route('admin.pimpinan.index')->with('success', 'Data berhasil diperbarui.');
+        return redirect()->route('admin.pimpinan.index', request()->query())->with('success', 'Data berhasil diperbarui.');
     }
 }

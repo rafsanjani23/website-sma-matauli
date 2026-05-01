@@ -11,7 +11,7 @@ class BerandaProgramIbController extends Controller
 {
     public function index()
     {
-        $items = BerandaProgramIb::latest()->paginate(20)->onEachSide(2)->fragment('beranda-program-ib');
+        $items = BerandaProgramIb::latest()->paginate(20)->onEachSide(2)->withQueryString()->fragment('beranda-program-ib');
         return view('admin.beranda.program-ib.index', compact('items'));
     }
 
@@ -66,7 +66,7 @@ class BerandaProgramIbController extends Controller
 
         $item->update($validated);
 
-        return redirect()->route('admin.beranda.program-ib.index')->with('success', 'Data berhasil diperbarui.');
+        return redirect()->route('admin.beranda.program-ib.index', request()->query())->with('success', 'Data berhasil diperbarui.');
     }
 
     public function destroy($id)
@@ -79,6 +79,6 @@ class BerandaProgramIbController extends Controller
 
         $item->delete();
 
-        return redirect()->route('admin.beranda.program-ib.index')->with('success', 'Data berhasil dihapus.');
+        return redirect()->route('admin.beranda.program-ib.index', request()->query())->with('success', 'Data berhasil dihapus.');
     }
 }

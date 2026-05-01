@@ -2,20 +2,25 @@
 
 namespace Database\Seeders;
 
+use App\Models\BerandaProgramKemendikdasmen;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
 class BerandaProgramKemendikdasmenSeeder extends Seeder
 {
     public function run(): void
     {
-        DB::table('beranda_program_kemendikdasmen')->updateOrInsert(
-            ['judul' => 'Program Kemendikdasmen'],
+        BerandaProgramKemendikdasmen::updateOrCreate(
+            ['id' => 1],
             [
-                'ringkasan' => 'Program Kemendikdasmen adalah program yang mengacu pada kebijakan Kementerian Pendidikan Dasar dan Menengah untuk meningkatkan mutu pendidikan dan mengembangkan potensi siswa secara optimal.',
+                'judul' => [
+                    'id' => 'Program Kemendikdasmen',
+                    'en' => 'Kemendikdasmen Program',
+                ],
+                'ringkasan' => [
+                    'id' => 'Program Kemendikdasmen adalah program yang mengacu pada kebijakan Kementerian Pendidikan Dasar dan Menengah untuk meningkatkan mutu pendidikan dan mengembangkan potensi siswa secara optimal.',
+                    'en' => 'The Kemendikdasmen Program follows the Ministry of Primary and Secondary Education\'s policy to improve education quality and develop students\' potential optimally.',
+                ],
                 'foto' => 'default.jpg',
-                'created_at' => now(),
-                'updated_at' => now(),
             ]
         );
     }

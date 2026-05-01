@@ -11,7 +11,7 @@ class BerandaProgramKemendikdasmenController extends Controller
 {
     public function index()
     {
-        $items = BerandaProgramKemendikdasmen::latest()->paginate(20)->onEachSide(2)->fragment('beranda-program-kemendikdasmen');
+        $items = BerandaProgramKemendikdasmen::latest()->paginate(20)->onEachSide(2)->withQueryString()->fragment('beranda-program-kemendikdasmen');
         return view('admin.beranda.program-kemendikdasmen.index', compact('items'));
     }
 
@@ -66,7 +66,7 @@ class BerandaProgramKemendikdasmenController extends Controller
 
         $item->update($validated);
 
-        return redirect()->route('admin.beranda.program-kemendikdasmen.index')->with('success', 'Data berhasil diperbarui.');
+        return redirect()->route('admin.beranda.program-kemendikdasmen.index', request()->query())->with('success', 'Data berhasil diperbarui.');
     }
 
     public function destroy($id)
@@ -79,6 +79,6 @@ class BerandaProgramKemendikdasmenController extends Controller
 
         $item->delete();
 
-        return redirect()->route('admin.beranda.program-kemendikdasmen.index')->with('success', 'Data berhasil dihapus.');
+        return redirect()->route('admin.beranda.program-kemendikdasmen.index', request()->query())->with('success', 'Data berhasil dihapus.');
     }
 }

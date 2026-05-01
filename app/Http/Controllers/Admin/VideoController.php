@@ -17,9 +17,10 @@ class VideoController extends Controller
             $items = Video::where('judul->id', 'like', '%' . $search . '%')
                 ->orWhere('judul->en', 'like', '%' . $search . '%')
                 ->paginate(20)->onEachSide(2)
+                ->withQueryString()
                 ->fragment('video');
         } else {
-            $items = Video::latest()->paginate(20)->onEachSide(2)->fragment('video');
+            $items = Video::latest()->paginate(20)->onEachSide(2)->withQueryString()->fragment('video');
         }
         return view('admin.video.index', with([
             'items' => $items,
@@ -154,9 +155,9 @@ class VideoController extends Controller
         $item->update($data);
 
         if ($request->ajax() || $request->wantsJson()) {
-            return response()->json(['redirect' => route('admin.video.index'), 'message' => 'Data berhasil diperbarui.']);
+            return response()->json(['redirect' => route('admin.video.index', request()->query()), 'message' => 'Data berhasil diperbarui.']);
         }
-        return redirect()->route('admin.video.index')->with('success', 'Data berhasil diperbarui.');
+        return redirect()->route('admin.video.index', request()->query())->with('success', 'Data berhasil diperbarui.');
     }
 
     public function destroy($id)
@@ -172,7 +173,7 @@ class VideoController extends Controller
 
         $item->delete();
 
-        return redirect()->route('admin.video.index')->with('success', 'Data berhasil dihapus.');
+        return redirect()->route('admin.video.index', request()->query())->with('success', 'Data berhasil dihapus.');
     }
 
     private function errorResponse(Request $request, array $errors)

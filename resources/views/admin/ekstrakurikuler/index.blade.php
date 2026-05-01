@@ -61,9 +61,9 @@
                             <td class="px-6 py-4 text-sm text-gray-700">{{ $item->nama }}</td>
                             <td class="px-6 py-4">
                                 <div class="flex items-center gap-2">
-                                    <a href="{{ route('admin.ekstrakurikuler.edit', $item->id) }}"
+                                    <a href="{{ route('admin.ekstrakurikuler.edit', array_merge(['id' => $item->id], request()->query())) }}"
                                         class="text-blue-600 hover:text-blue-800 text-sm font-medium">Edit</a>
-                                    <form action="{{ route('admin.ekstrakurikuler.destroy', $item->id) }}" method="POST">
+                                    <form action="{{ route('admin.ekstrakurikuler.destroy', array_merge(['id' => $item->id], request()->query())) }}" method="POST">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit"

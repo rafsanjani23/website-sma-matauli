@@ -2,20 +2,25 @@
 
 namespace Database\Seeders;
 
+use App\Models\BerandaProgramKemataulian;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
 class BerandaProgramKemataulianSeeder extends Seeder
 {
     public function run(): void
     {
-        DB::table('beranda_program_kemataulian')->updateOrInsert(
-            ['judul' => 'Program Khusus Kemataulian'],
+        BerandaProgramKemataulian::updateOrCreate(
+            ['id' => 1],
             [
-                'ringkasan' => 'Program Khusus Kemataulian adalah program unggulan yang dirancang untuk membentuk karakter dan kepribadian siswa yang berakhlak mulia, disiplin, dan bertanggung jawab.',
+                'judul' => [
+                    'id' => 'Program Khusus Kemataulian',
+                    'en' => 'Kemataulian Special Program',
+                ],
+                'ringkasan' => [
+                    'id' => 'Program Khusus Kemataulian adalah program unggulan yang dirancang untuk membentuk karakter dan kepribadian siswa yang berakhlak mulia, disiplin, dan bertanggung jawab.',
+                    'en' => 'The Kemataulian Special Program is a flagship program designed to shape the character and personality of students who are noble, disciplined, and responsible.',
+                ],
                 'foto' => 'default.jpg',
-                'created_at' => now(),
-                'updated_at' => now(),
             ]
         );
     }

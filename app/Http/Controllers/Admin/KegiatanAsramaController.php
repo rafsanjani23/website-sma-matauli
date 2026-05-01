@@ -16,9 +16,10 @@ class KegiatanAsramaController extends Controller
             $items = KegiatanAsrama::where('nama->id', 'like', '%'.$search.'%')
                 ->orWhere('nama->en', 'like', '%'.$search.'%')
                 ->paginate(20)->onEachSide(2)
+                ->withQueryString()
                 ->fragment('kegiatan_asrama');
         }else{
-             $items = KegiatanAsrama::latest()->paginate(20)->onEachSide(2)->fragment('kegiatan_asrama');
+             $items = KegiatanAsrama::latest()->paginate(20)->onEachSide(2)->withQueryString()->fragment('kegiatan_asrama');
         }
         return view('admin.kegiatan-asrama.index', with([
             'items' => $items,
@@ -75,7 +76,7 @@ class KegiatanAsramaController extends Controller
 
         $item->update($validated);
 
-        return redirect()->route('admin.kegiatan-asrama.index')->with('success', 'Data berhasil diperbarui.');
+        return redirect()->route('admin.kegiatan-asrama.index', request()->query())->with('success', 'Data berhasil diperbarui.');
     }
 
     public function destroy($id)
@@ -88,6 +89,6 @@ class KegiatanAsramaController extends Controller
 
         $item->delete();
 
-        return redirect()->route('admin.kegiatan-asrama.index')->with('success', 'Data berhasil dihapus.');
+        return redirect()->route('admin.kegiatan-asrama.index', request()->query())->with('success', 'Data berhasil dihapus.');
     }
 }

@@ -19,9 +19,10 @@ class TenagaKependidikanController extends Controller
                       ->orWhere('jabatan->en', 'like', '%' . $search . '%');
                 })
                 ->paginate(20)->onEachSide(2)
+                ->withQueryString()
                 ->fragment('tenaga_kependidikan');
         } else {
-            $items = TenagaKependidikan::orderBy('nama')->paginate(20)->onEachSide(2)->fragment('tenaga_kependidikan');
+            $items = TenagaKependidikan::orderBy('nama')->paginate(20)->onEachSide(2)->withQueryString()->fragment('tenaga_kependidikan');
         }
         return view('admin.tenaga-kependidikan.index', with([
             'items' => $items,
@@ -78,7 +79,7 @@ class TenagaKependidikanController extends Controller
 
         $item->update($validated);
 
-        return redirect()->route('admin.tenaga-kependidikan.index')->with('success', 'Data berhasil diperbarui.');
+        return redirect()->route('admin.tenaga-kependidikan.index', request()->query())->with('success', 'Data berhasil diperbarui.');
     }
 
     public function destroy($id)
@@ -91,6 +92,6 @@ class TenagaKependidikanController extends Controller
 
         $item->delete();
 
-        return redirect()->route('admin.tenaga-kependidikan.index')->with('success', 'Data berhasil dihapus.');
+        return redirect()->route('admin.tenaga-kependidikan.index', request()->query())->with('success', 'Data berhasil dihapus.');
     }
 }

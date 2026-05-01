@@ -20,9 +20,10 @@ class StudiLanjutController extends Controller
                       ->orWhere('angkatan', 'like', '%' . $search . '%');
                 })
                 ->paginate(20)->onEachSide(2)
+                ->withQueryString()
                 ->fragment('studi_lanjut');
         } else {
-            $items = StudiLanjut::orderBy('nama_alumni')->paginate(20)->onEachSide(2)->fragment('studi_lanjut');
+            $items = StudiLanjut::orderBy('nama_alumni')->paginate(20)->onEachSide(2)->withQueryString()->fragment('studi_lanjut');
         }
         return view('admin.studi-lanjut.index', with([
             'items' => $items,
@@ -70,7 +71,7 @@ class StudiLanjutController extends Controller
 
         $item->update($validated);
 
-        return redirect()->route('admin.studi-lanjut.index')->with('success', 'Data berhasil diperbarui.');
+        return redirect()->route('admin.studi-lanjut.index', request()->query())->with('success', 'Data berhasil diperbarui.');
     }
 
     public function destroy($id)
@@ -78,6 +79,6 @@ class StudiLanjutController extends Controller
         $item = StudiLanjut::findOrFail($id);
         $item->delete();
 
-        return redirect()->route('admin.studi-lanjut.index')->with('success', 'Data berhasil dihapus.');
+        return redirect()->route('admin.studi-lanjut.index', request()->query())->with('success', 'Data berhasil dihapus.');
     }
 }

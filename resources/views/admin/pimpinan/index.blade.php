@@ -36,7 +36,7 @@
                             <td class="px-6 py-4 text-sm text-gray-700">{{ $item->nama }}</td>
                             <td class="px-6 py-4">
                                 <div class="flex items-center gap-2">
-                                    <a href="{{ route('admin.pimpinan.edit', $item->id) }}" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Edit</a>
+                                    <a href="{{ route('admin.pimpinan.edit', array_merge(['id' => $item->id], request()->query())) }}" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Edit</a>
                                 </div>
                             </td>
                         </tr>

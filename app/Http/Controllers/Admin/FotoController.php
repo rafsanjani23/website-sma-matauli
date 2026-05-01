@@ -16,9 +16,10 @@ class FotoController extends Controller
             $items = Foto::where('judul->id', 'like', '%' . $search . '%')
                 ->orWhere('judul->en', 'like', '%' . $search . '%')
                 ->paginate(20)->onEachSide(2)
+                ->withQueryString()
                 ->fragment('foto');
         } else {
-            $items = Foto::latest()->paginate(20)->onEachSide(2)->fragment('foto');
+            $items = Foto::latest()->paginate(20)->onEachSide(2)->withQueryString()->fragment('foto');
         }
         return view('admin.foto.index', with([
             'items' => $items,
@@ -77,7 +78,7 @@ class FotoController extends Controller
 
         $item->update($validated);
 
-        return redirect()->route('admin.foto.index')->with('success', 'Data berhasil diperbarui.');
+        return redirect()->route('admin.foto.index', request()->query())->with('success', 'Data berhasil diperbarui.');
     }
 
     public function destroy($id)
@@ -90,6 +91,6 @@ class FotoController extends Controller
 
         $item->delete();
 
-        return redirect()->route('admin.foto.index')->with('success', 'Data berhasil dihapus.');
+        return redirect()->route('admin.foto.index', request()->query())->with('success', 'Data berhasil dihapus.');
     }
 }

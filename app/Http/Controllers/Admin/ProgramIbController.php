@@ -16,9 +16,10 @@ class ProgramIbController extends Controller
             $items = ProgramIb::where('judul->id', 'like', '%' . $search . '%')
                 ->orWhere('judul->en', 'like', '%' . $search . '%')
                 ->paginate(20)->onEachSide(2)
+                ->withQueryString()
                 ->fragment('program-ib');
         } else {
-            $items = ProgramIb::orderBy('judul->id')->paginate(20)->onEachSide(2)->fragment('program-ib');
+            $items = ProgramIb::orderBy('judul->id')->paginate(20)->onEachSide(2)->withQueryString()->fragment('program-ib');
         }
         return view('admin.program-ib.index', compact('items', 'search'));
     }
@@ -89,7 +90,7 @@ class ProgramIbController extends Controller
 
         $item->update($validated);
 
-        return redirect()->route('admin.program-ib.index')->with('success', 'Data berhasil diperbarui.');
+        return redirect()->route('admin.program-ib.index', request()->query())->with('success', 'Data berhasil diperbarui.');
     }
 
     public function destroy($id)
@@ -105,6 +106,6 @@ class ProgramIbController extends Controller
 
         $item->delete();
 
-        return redirect()->route('admin.program-ib.index')->with('success', 'Data berhasil dihapus.');
+        return redirect()->route('admin.program-ib.index', request()->query())->with('success', 'Data berhasil dihapus.');
     }
 }

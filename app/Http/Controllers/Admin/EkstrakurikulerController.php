@@ -16,9 +16,10 @@ class EkstrakurikulerController extends Controller
             $items = Ekstrakurikuler::where('nama->id', 'like', '%'.$search.'%')
                 ->orWhere('nama->en', 'like', '%'.$search.'%')
                 ->paginate(20)->onEachSide(2)
+                ->withQueryString()
                 ->fragment('ekstrakurikuler');
         }else{
-             $items = Ekstrakurikuler::orderBy('nama->id')->paginate(20)->onEachSide(2)->fragment('ekstrakurikuler');
+             $items = Ekstrakurikuler::orderBy('nama->id')->paginate(20)->onEachSide(2)->withQueryString()->fragment('ekstrakurikuler');
         }
         return view('admin.ekstrakurikuler.index', with([
             'items' => $items,
@@ -73,7 +74,7 @@ class EkstrakurikulerController extends Controller
 
         $item->update($validated);
 
-        return redirect()->route('admin.ekstrakurikuler.index')->with('success', 'Data berhasil diperbarui.');
+        return redirect()->route('admin.ekstrakurikuler.index', request()->query())->with('success', 'Data berhasil diperbarui.');
     }
 
     public function destroy($id)
@@ -86,6 +87,6 @@ class EkstrakurikulerController extends Controller
 
         $item->delete();
 
-        return redirect()->route('admin.ekstrakurikuler.index')->with('success', 'Data berhasil dihapus.');
+        return redirect()->route('admin.ekstrakurikuler.index', request()->query())->with('success', 'Data berhasil dihapus.');
     }
 }

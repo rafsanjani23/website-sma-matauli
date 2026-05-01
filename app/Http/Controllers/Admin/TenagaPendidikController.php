@@ -20,9 +20,10 @@ class TenagaPendidikController extends Controller
                       ->orWhere('kategori', 'like', '%'.$search.'%');
                 })
                 ->paginate(20)->onEachSide(2)
+                ->withQueryString()
                 ->fragment('tenaga_pendidik');
         } else {
-            $items = TenagaPendidik::orderBy('nama')->paginate(20)->onEachSide(2)->fragment('tenaga_pendidik');
+            $items = TenagaPendidik::orderBy('nama')->paginate(20)->onEachSide(2)->withQueryString()->fragment('tenaga_pendidik');
         }
         return view('admin.tenaga-pendidik.index', with([
             'items' => $items,
@@ -81,7 +82,7 @@ class TenagaPendidikController extends Controller
 
         $item->update($validated);
 
-        return redirect()->route('admin.tenaga-pendidik.index')->with('success', 'Data berhasil diperbarui.');
+        return redirect()->route('admin.tenaga-pendidik.index', request()->query())->with('success', 'Data berhasil diperbarui.');
     }
 
     public function destroy($id)
@@ -94,6 +95,6 @@ class TenagaPendidikController extends Controller
 
         $item->delete();
 
-        return redirect()->route('admin.tenaga-pendidik.index')->with('success', 'Data berhasil dihapus.');
+        return redirect()->route('admin.tenaga-pendidik.index', request()->query())->with('success', 'Data berhasil dihapus.');
     }
 }

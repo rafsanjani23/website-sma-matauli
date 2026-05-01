@@ -3,7 +3,7 @@
 @section('content')
     <div class="max-w-4xl">
         <div class="mb-6">
-            <a href="{{ route('admin.pimpinan.index') }}" class="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-red-800 transition">
+            <a href="{{ route('admin.pimpinan.index', request()->query()) }}" class="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-red-800 transition">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" /></svg>
                 Kembali
             </a>
@@ -17,7 +17,7 @@
                     </ul>
                 </div>
             @endif
-            <form action="{{ route('admin.pimpinan.update', $item->id) }}" method="POST" enctype="multipart/form-data" class="space-y-5">
+            <form action="{{ route('admin.pimpinan.update', array_merge(['id' => $item->id], request()->query())) }}" method="POST" enctype="multipart/form-data" class="space-y-5">
                 @csrf
                 @method('PUT')
                 <div data-lang-tabs>

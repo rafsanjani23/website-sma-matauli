@@ -68,9 +68,9 @@
                             <td class="px-6 py-4 text-sm text-gray-700">{{ $item->link_facebook }}</td>
                             <td class="px-6 py-4">
                                 <div class="flex items-center gap-2">
-                                    <a href="{{ route('admin.media.edit', $item->id) }}"
+                                    <a href="{{ route('admin.media.edit', array_merge(['id' => $item->id], request()->query())) }}"
                                         class="text-blue-600 hover:text-blue-800 text-sm font-medium">Edit</a>
-                                    <form action="{{ route('admin.media.destroy', $item->id) }}" method="POST">
+                                    <form action="{{ route('admin.media.destroy', array_merge(['id' => $item->id], request()->query())) }}" method="POST">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit"

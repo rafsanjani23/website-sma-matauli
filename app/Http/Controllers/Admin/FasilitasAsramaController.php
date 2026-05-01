@@ -16,9 +16,10 @@ class FasilitasAsramaController extends Controller
             $items = FasilitasAsrama::where('nama->id', 'like', '%'.$search.'%')
                 ->orWhere('nama->en', 'like', '%'.$search.'%')
                 ->paginate(20)->onEachSide(2)
+                ->withQueryString()
                 ->fragment('fasilitas_asrama');
         }else{
-             $items = FasilitasAsrama::latest()->paginate(20)->onEachSide(2)->fragment('fasilitas_asrama');
+             $items = FasilitasAsrama::latest()->paginate(20)->onEachSide(2)->withQueryString()->fragment('fasilitas_asrama');
         }
         return view('admin.fasilitas-asrama.index', with([
             'items' => $items,
@@ -73,7 +74,7 @@ class FasilitasAsramaController extends Controller
 
         $item->update($validated);
 
-        return redirect()->route('admin.fasilitas-asrama.index')->with('success', 'Data berhasil diperbarui.');
+        return redirect()->route('admin.fasilitas-asrama.index', request()->query())->with('success', 'Data berhasil diperbarui.');
     }
 
     public function destroy($id)
@@ -86,6 +87,6 @@ class FasilitasAsramaController extends Controller
 
         $item->delete();
 
-        return redirect()->route('admin.fasilitas-asrama.index')->with('success', 'Data berhasil dihapus.');
+        return redirect()->route('admin.fasilitas-asrama.index', request()->query())->with('success', 'Data berhasil dihapus.');
     }
 }
