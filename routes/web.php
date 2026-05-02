@@ -148,6 +148,12 @@ Route::get('/studi-lanjut', function (\Illuminate\Http\Request $request) {
     // Get all unique angkatan values for dropdown
     $angkatanList = \App\Models\StudiLanjut::select('angkatan')->distinct()->orderBy('angkatan', 'desc')->pluck('angkatan');
 
+    // Get total per angkatan
+    $angkatanTotals = \App\Models\StudiLanjut::select('angkatan', \DB::raw('COUNT(*) as total'))
+        ->groupBy('angkatan')
+        ->orderBy('angkatan', 'desc')
+        ->pluck('total', 'angkatan');
+
     // Build queries per category with optional angkatan filter + pagination
     $perPage = 10;
     $panelMap = [
@@ -174,7 +180,7 @@ Route::get('/studi-lanjut', function (\Illuminate\Http\Request $request) {
     $pts = $buildQuery('PTS');
     $ptln = $buildQuery('PTLN');
 
-    return view('pages.studi-lanjut', compact('tniPolri', 'kedinasan', 'ptn', 'pts', 'ptln', 'percentages', 'angkatanList', 'angkatan', 'total'));
+    return view('pages.studi-lanjut', compact('tniPolri', 'kedinasan', 'ptn', 'pts', 'ptln', 'percentages', 'angkatanList', 'angkatanTotals', 'angkatan', 'total'));
 })->name('studi-lanjut');
 Route::get('/profesional-alumni', function () {
     $items = \App\Models\Profesional::orderBy('nama')->get();

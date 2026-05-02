@@ -16,7 +16,7 @@
             $currentOffset = 0;
         @endphp
 
-        <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 mb-10">
             <!-- Donut Chart -->
             <div class="relative w-56 h-56 md:w-72 md:h-72 shrink-0">
                 <svg class="w-full h-full -rotate-90" viewBox="0 0 200 200">
@@ -56,5 +56,22 @@
                 @endforeach
             </div>
         </div>
+
+        @if (!empty($angkatanTotals) && count($angkatanTotals) > 0)
+            <div class="border-t border-gray-100 pt-8">
+                <h3 class="text-center text-sm md:text-base font-semibold text-slate-700 mb-4">
+                    {{ __('Total per Angkatan') }}
+                </h3>
+                <div class="flex flex-wrap justify-center gap-2">
+                    @foreach ($angkatanTotals as $angkatanKey => $angkatanTotal)
+                        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gray-50 border border-gray-200 text-xs md:text-sm">
+                            <span class="font-semibold text-slate-700">{{ __('Angkatan') }} {{ $angkatanKey }}</span>
+                            <span class="text-gray-300">·</span>
+                            <span class="font-bold text-red-700">{{ $angkatanTotal }}</span>
+                        </span>
+                    @endforeach
+                </div>
+            </div>
+        @endif
     </div>
 </section>
