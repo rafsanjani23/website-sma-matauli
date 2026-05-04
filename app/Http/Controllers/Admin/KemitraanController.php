@@ -35,8 +35,8 @@ class KemitraanController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'nama_mitra.id' => 'required|max:50',
-            'nama_mitra.en' => 'nullable|max:50',
+            'nama_mitra.id' => 'required',
+            'nama_mitra.en' => 'nullable',
             'penjelasan_singkat.id' => 'required',
             'penjelasan_singkat.en' => 'nullable',
             'gambar_mitra' => 'required|image|max:2048',
@@ -69,8 +69,8 @@ class KemitraanController extends Controller
         $item = Kemitraan::findOrFail($id);
 
         $validated = $request->validate([
-            'nama_mitra.id' => 'required|max:50',
-            'nama_mitra.en' => 'nullable|max:50',
+            'nama_mitra.id' => 'required',
+            'nama_mitra.en' => 'nullable',
             'penjelasan_singkat.id' => 'required',
             'penjelasan_singkat.en' => 'nullable',
             'gambar_mitra' => 'nullable|image|max:2048',

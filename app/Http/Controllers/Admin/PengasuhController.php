@@ -34,7 +34,7 @@ class PengasuhController extends Controller
      public function store(Request $request)
     {
         $validated = $request->validate([
-            'nama' => 'required|max:50',
+            'nama' => 'required',
             'foto' => 'nullable|image|max:2048',
         ]);
 
@@ -58,7 +58,7 @@ class PengasuhController extends Controller
         $item = Pengasuh::findOrFail($id);
 
         $validated = $request->validate([
-            'nama' => 'required|max:50',
+            'nama' => 'required',
             'foto' => 'nullable|image|max:2048',
         ]);
 

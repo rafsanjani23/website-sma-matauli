@@ -32,8 +32,8 @@ class ProgramKemendikdasmenController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'judul.id'       => 'required|max:100',
-            'judul.en'       => 'nullable|max:100',
+            'judul.id'       => 'required',
+            'judul.en'       => 'nullable',
             'ringkasan.id'   => 'required',
             'ringkasan.en'   => 'nullable',
             'isi_konten.id'  => 'required',
@@ -64,8 +64,8 @@ class ProgramKemendikdasmenController extends Controller
         $item = ProgramKemendikdasmen::findOrFail($id);
 
         $validated = $request->validate([
-            'judul.id'       => 'required|max:100',
-            'judul.en'       => 'nullable|max:100',
+            'judul.id'       => 'required',
+            'judul.en'       => 'nullable',
             'ringkasan.id'   => 'required',
             'ringkasan.en'   => 'nullable',
             'isi_konten.id'  => 'required',

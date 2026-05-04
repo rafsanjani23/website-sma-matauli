@@ -35,10 +35,10 @@ class FotoController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'judul.id' => 'required|max:50',
-            'judul.en' => 'nullable|max:50',
-            'deskripsi.id' => 'nullable|max:100',
-            'deskripsi.en' => 'nullable|max:100',
+            'judul.id' => 'required',
+            'judul.en' => 'nullable',
+            'deskripsi.id' => 'nullable',
+            'deskripsi.en' => 'nullable',
             'gambar' => 'required|image|max:2048',
         ]);
 
@@ -62,10 +62,10 @@ class FotoController extends Controller
         $item = Foto::findOrFail($id);
 
         $validated = $request->validate([
-            'judul.id' => 'required|max:50',
-            'judul.en' => 'nullable|max:50',
-            'deskripsi.id' => 'nullable|max:100',
-            'deskripsi.en' => 'nullable|max:100',
+            'judul.id' => 'required',
+            'judul.en' => 'nullable',
+            'deskripsi.id' => 'nullable',
+            'deskripsi.en' => 'nullable',
             'gambar' => 'nullable|image|max:2048',
         ]);
 

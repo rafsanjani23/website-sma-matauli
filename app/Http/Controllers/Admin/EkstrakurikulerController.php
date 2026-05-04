@@ -35,8 +35,8 @@ class EkstrakurikulerController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'nama.id' => 'required|max:100',
-            'nama.en' => 'nullable|max:100',
+            'nama.id' => 'required',
+            'nama.en' => 'nullable',
             'gambar' => 'required|image|max:2048',
         ]);
 
@@ -60,8 +60,8 @@ class EkstrakurikulerController extends Controller
         $item = Ekstrakurikuler::findOrFail($id);
 
         $validated = $request->validate([
-            'nama.id' => 'required|max:100',
-            'nama.en' => 'nullable|max:100',
+            'nama.id' => 'required',
+            'nama.en' => 'nullable',
             'gambar' => 'nullable|image|max:2048',
         ]);
 

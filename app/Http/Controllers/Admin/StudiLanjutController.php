@@ -39,11 +39,11 @@ class StudiLanjutController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'nama_alumni' => 'required|max:50',
-            'nama_lembaga.id' => 'required|max:50',
-            'nama_lembaga.en' => 'nullable|max:50',
+            'nama_alumni' => 'required',
+            'nama_lembaga.id' => 'required',
+            'nama_lembaga.en' => 'nullable',
             'kategori' => 'required|in:PTN,PTS,PTLN,TNI-Polri,Kedinasan',
-            'angkatan' => 'required|max:10',
+            'angkatan' => 'required',
         ]);
 
         StudiLanjut::create($validated);
@@ -62,11 +62,11 @@ class StudiLanjutController extends Controller
         $item = StudiLanjut::findOrFail($id);
 
         $validated = $request->validate([
-            'nama_alumni' => 'required|max:50',
-            'nama_lembaga.id' => 'required|max:50',
-            'nama_lembaga.en' => 'nullable|max:50',
+            'nama_alumni' => 'required',
+            'nama_lembaga.id' => 'required',
+            'nama_lembaga.en' => 'nullable',
             'kategori' => 'required|in:PTN,PTS,PTLN,TNI-Polri,Kedinasan',
-            'angkatan' => 'required|max:10',
+            'angkatan' => 'required',
         ]);
 
         $item->update($validated);

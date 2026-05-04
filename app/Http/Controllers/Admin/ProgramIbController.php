@@ -32,8 +32,8 @@ class ProgramIbController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'judul.id'       => 'required|max:150',
-            'judul.en'       => 'nullable|max:150',
+            'judul.id'       => 'required',
+            'judul.en'       => 'nullable',
             'ringkasan.id'   => 'required',
             'ringkasan.en'   => 'nullable',
             'isi_konten.id'  => 'required',
@@ -64,8 +64,8 @@ class ProgramIbController extends Controller
         $item = ProgramIb::findOrFail($id);
 
         $validated = $request->validate([
-            'judul.id'       => 'required|max:150',
-            'judul.en'       => 'nullable|max:150',
+            'judul.id'       => 'required',
+            'judul.en'       => 'nullable',
             'ringkasan.id'   => 'required',
             'ringkasan.en'   => 'nullable',
             'isi_konten.id'  => 'required',

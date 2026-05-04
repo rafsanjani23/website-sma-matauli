@@ -38,9 +38,9 @@ class TenagaKependidikanController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'nama' => 'required|max:50',
-            'jabatan.id' => 'required|max:50',
-            'jabatan.en' => 'nullable|max:50',
+            'nama' => 'required',
+            'jabatan.id' => 'required',
+            'jabatan.en' => 'nullable',
             'foto' => 'nullable|image|max:2048',
         ]);
 
@@ -64,9 +64,9 @@ class TenagaKependidikanController extends Controller
         $item = TenagaKependidikan::findOrFail($id);
 
         $validated = $request->validate([
-            'nama' => 'required|max:50',
-            'jabatan.id' => 'required|max:50',
-            'jabatan.en' => 'nullable|max:50',
+            'nama' => 'required',
+            'jabatan.id' => 'required',
+            'jabatan.en' => 'nullable',
             'foto' => 'nullable|image|max:2048',
         ]);
 

@@ -42,8 +42,8 @@
                                 class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">
                         </div>
                         <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Ringkasan (ID) <span class="font-normal text-gray-400">(maks. 300 karakter)</span> <span class="text-red-600">*</span></label>
-                            <textarea name="ringkasan[id]" rows="4" required maxlength="300"
+                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Ringkasan (ID) <span class="text-red-600">*</span></label>
+                            <textarea name="ringkasan[id]" rows="4" required
                                 class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('ringkasan.id', $item->getTranslation('ringkasan', 'id', false) ?? '') }}</textarea>
                         </div>
                     </div>
@@ -55,8 +55,8 @@
                                 class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">
                         </div>
                         <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Ringkasan (EN) <span class="font-normal text-gray-400">(maks. 300 karakter)</span></label>
-                            <textarea name="ringkasan[en]" rows="4" maxlength="300"
+                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Ringkasan (EN)</label>
+                            <textarea name="ringkasan[en]" rows="4"
                                 class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('ringkasan.en', $item->getTranslation('ringkasan', 'en', false) ?? '') }}</textarea>
                         </div>
                     </div>

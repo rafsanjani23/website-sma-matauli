@@ -23,8 +23,8 @@ class BerandaProgramKemendikdasmenController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'judul.id'     => 'required|max:150',
-            'judul.en'     => 'nullable|max:150',
+            'judul.id'     => 'required',
+            'judul.en'     => 'nullable',
             'ringkasan.id' => 'required',
             'ringkasan.en' => 'nullable',
             'foto'         => 'required|image|max:2048',
@@ -50,10 +50,10 @@ class BerandaProgramKemendikdasmenController extends Controller
         $item = BerandaProgramKemendikdasmen::findOrFail($id);
 
         $validated = $request->validate([
-            'judul.id'     => 'required|max:150',
-            'judul.en'     => 'nullable|max:150',
-            'ringkasan.id' => 'required|max:300',
-            'ringkasan.en' => 'nullable|max:300',
+            'judul.id'     => 'required',
+            'judul.en'     => 'nullable',
+            'ringkasan.id' => 'required',
+            'ringkasan.en' => 'nullable',
             'foto'         => 'nullable|image|max:2048',
         ]);
 

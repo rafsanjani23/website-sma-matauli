@@ -35,8 +35,8 @@ class FasilitasAsramaController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'nama.id' => 'required|max:50',
-            'nama.en' => 'nullable|max:50',
+            'nama.id' => 'required',
+            'nama.en' => 'nullable',
             'gambar' => 'required|image|max:2048',
         ]);
 
@@ -60,8 +60,8 @@ class FasilitasAsramaController extends Controller
         $item = FasilitasAsrama::findOrFail($id);
 
         $validated = $request->validate([
-            'nama.id' => 'required|max:50',
-            'nama.en' => 'nullable|max:50',
+            'nama.id' => 'required',
+            'nama.en' => 'nullable',
             'gambar' => 'nullable|image|max:2048',
         ]);
 

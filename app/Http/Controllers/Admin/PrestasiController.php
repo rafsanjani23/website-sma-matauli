@@ -42,12 +42,12 @@ class PrestasiController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'judul.id' => 'required|max:50',
-            'judul.en' => 'nullable|max:50',
-            'nama_lomba.id' => 'required|max:50',
-            'nama_lomba.en' => 'nullable|max:50',
-            'tingkatan.id' => 'required|max:50',
-            'tingkatan.en' => 'nullable|max:50',
+            'judul.id' => 'required',
+            'judul.en' => 'nullable',
+            'nama_lomba.id' => 'required',
+            'nama_lomba.en' => 'nullable',
+            'tingkatan.id' => 'required',
+            'tingkatan.en' => 'nullable',
             'isi.id' => 'required',
             'isi.en' => 'nullable',
             'gambar' => 'required|image|max:2048',
@@ -75,12 +75,12 @@ class PrestasiController extends Controller
         $item = Prestasi::findOrFail($id);
 
         $validated = $request->validate([
-            'judul.id' => 'required|max:50',
-            'judul.en' => 'nullable|max:50',
-            'nama_lomba.id' => 'required|max:50',
-            'nama_lomba.en' => 'nullable|max:50',
-            'tingkatan.id' => 'required|max:50',
-            'tingkatan.en' => 'nullable|max:50',
+            'judul.id' => 'required',
+            'judul.en' => 'nullable',
+            'nama_lomba.id' => 'required',
+            'nama_lomba.en' => 'nullable',
+            'tingkatan.id' => 'required',
+            'tingkatan.en' => 'nullable',
             'isi.id' => 'required',
             'isi.en' => 'nullable',
             'gambar' => 'nullable|image|max:2048',

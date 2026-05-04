@@ -30,8 +30,8 @@
                             <input type="text" name="judul[id]" value="{{ old('judul.id') }}" required class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
                         </div>
                         <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Deskripsi (ID) <span class="font-normal text-gray-400">(maks. 100 karakter)</span></label>
-                            <textarea name="deskripsi[id]" rows="3" maxlength="100" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('deskripsi.id') }}</textarea>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Deskripsi (ID)</label>
+                            <textarea name="deskripsi[id]" rows="3" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('deskripsi.id') }}</textarea>
                         </div>
                     </div>
                     <div data-tab-pane="en" class="hidden space-y-5">
@@ -41,8 +41,8 @@
                             <input type="text" name="judul[en]" value="{{ old('judul.en') }}" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition" />
                         </div>
                         <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Deskripsi (EN) <span class="font-normal text-gray-400">(maks. 100 karakter)</span></label>
-                            <textarea name="deskripsi[en]" rows="3" maxlength="100" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('deskripsi.en') }}</textarea>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Deskripsi (EN)</label>
+                            <textarea name="deskripsi[en]" rows="3" class="w-full px-4 py-2.5 border border-gray-300 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition">{{ old('deskripsi.en') }}</textarea>
                         </div>
                     </div>
                 </div>

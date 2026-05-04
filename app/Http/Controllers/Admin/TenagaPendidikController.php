@@ -39,9 +39,9 @@ class TenagaPendidikController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'nama' => 'required|max:50',
-            'mata_pelajaran.id' => 'required|max:50',
-            'mata_pelajaran.en' => 'nullable|max:50',
+            'nama' => 'required',
+            'mata_pelajaran.id' => 'required',
+            'mata_pelajaran.en' => 'nullable',
             'foto' => 'nullable|image|max:2048',
             'kategori' => 'required|in:Guru Mata Pelajaran,IB',
         ]);
@@ -66,9 +66,9 @@ class TenagaPendidikController extends Controller
         $item = TenagaPendidik::findOrFail($id);
 
         $validated = $request->validate([
-            'nama' => 'required|max:50',
-            'mata_pelajaran.id' => 'required|max:50',
-            'mata_pelajaran.en' => 'nullable|max:50',
+            'nama' => 'required',
+            'mata_pelajaran.id' => 'required',
+            'mata_pelajaran.en' => 'nullable',
             'foto' => 'nullable|image|max:2048',
             'kategori' => 'required|in:Guru Mata Pelajaran,IB',
         ]);

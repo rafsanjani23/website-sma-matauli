@@ -35,8 +35,8 @@ class TestimoniController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'nama' => 'required|max:50',
-            'tahun_alumni' => 'required|max:50',
+            'nama' => 'required',
+            'tahun_alumni' => 'required',
             'foto' => 'nullable|image|max:2048',
             'isi.id' => 'required',
             'isi.en' => 'nullable',
@@ -62,8 +62,8 @@ class TestimoniController extends Controller
         $item = Testimoni::findOrFail($id);
 
         $validated = $request->validate([
-            'nama' => 'required|max:50',
-            'tahun_alumni' => 'required|max:50',
+            'nama' => 'required',
+            'tahun_alumni' => 'required',
             'foto' => 'nullable|image|max:2048',
             'isi.id' => 'required',
             'isi.en' => 'nullable',

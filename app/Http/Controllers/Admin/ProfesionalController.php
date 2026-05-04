@@ -38,14 +38,14 @@ class ProfesionalController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'nama' => 'required|max:50',
-            'nama_lembaga.id' => 'required|max:50',
-            'nama_lembaga.en' => 'nullable|max:50',
-            'angkatan' => 'nullable|max:20',
+            'nama' => 'required',
+            'nama_lembaga.id' => 'required',
+            'nama_lembaga.en' => 'nullable',
+            'angkatan' => 'nullable',
             'foto' => 'nullable|image|max:2048',
-            'link_facebook' => 'nullable|max:50',
-            'link_twitter' => 'nullable|max:50',
-            'link_linkedin' => 'nullable|max:50',
+            'link_facebook' => 'nullable',
+            'link_twitter' => 'nullable',
+            'link_linkedin' => 'nullable',
         ]);
 
         if ($request->hasFile('foto')) {
@@ -68,14 +68,14 @@ class ProfesionalController extends Controller
         $item = Profesional::findOrFail($id);
 
         $validated = $request->validate([
-            'nama' => 'required|max:50',
-            'nama_lembaga.id' => 'required|max:50',
-            'nama_lembaga.en' => 'nullable|max:50',
-            'angkatan' => 'nullable|max:20',
+            'nama' => 'required',
+            'nama_lembaga.id' => 'required',
+            'nama_lembaga.en' => 'nullable',
+            'angkatan' => 'nullable',
             'foto' => 'nullable|image|max:2048',
-            'link_facebook' => 'nullable|max:50',
-            'link_twitter' => 'nullable|max:50',
-            'link_linkedin' => 'nullable|max:50',
+            'link_facebook' => 'nullable',
+            'link_twitter' => 'nullable',
+            'link_linkedin' => 'nullable',
         ]);
 
         if ($request->hasFile('foto')) {

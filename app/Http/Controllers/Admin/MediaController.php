@@ -38,14 +38,14 @@ class MediaController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'judul.id' => 'required|max:50',
-            'judul.en' => 'nullable|max:50',
+            'judul.id' => 'required',
+            'judul.en' => 'nullable',
             'ringkasan.id' => 'required',
             'ringkasan.en' => 'nullable',
             'isi.id' => 'required',
             'isi.en' => 'nullable',
             'gambar' => 'required|image|max:2048',
-            'link_facebook' => 'nullable|max:50',
+            'link_facebook' => 'nullable',
             'tanggal' => 'required|date',
         ]);
 
@@ -69,14 +69,14 @@ class MediaController extends Controller
         $item = Media::findOrFail($id);
 
         $validated = $request->validate([
-            'judul.id' => 'required|max:50',
-            'judul.en' => 'nullable|max:50',
+            'judul.id' => 'required',
+            'judul.en' => 'nullable',
             'ringkasan.id' => 'required',
             'ringkasan.en' => 'nullable',
             'isi.id' => 'required',
             'isi.en' => 'nullable',
             'gambar' => 'nullable|image|max:2048',
-            'link_facebook' => 'nullable|max:50',
+            'link_facebook' => 'nullable',
             'tanggal' => 'required|date',
         ]);
 

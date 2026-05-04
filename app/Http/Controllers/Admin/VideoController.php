@@ -38,8 +38,8 @@ class VideoController extends Controller
         $sourceType = $request->input('source_type', 'youtube');
 
         $rules = [
-            'judul.id' => 'required|max:50',
-            'judul.en' => 'nullable|max:50',
+            'judul.id' => 'required',
+            'judul.en' => 'nullable',
             'source_type' => 'required|in:youtube,upload',
         ];
 
@@ -96,8 +96,8 @@ class VideoController extends Controller
         $sourceType = $request->input('source_type', 'youtube');
 
         $rules = [
-            'judul.id' => 'required|max:50',
-            'judul.en' => 'nullable|max:50',
+            'judul.id' => 'required',
+            'judul.en' => 'nullable',
             'source_type' => 'required|in:youtube,upload',
         ];
 

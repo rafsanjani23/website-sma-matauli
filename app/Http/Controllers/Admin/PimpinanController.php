@@ -23,9 +23,9 @@ class PimpinanController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'jabatan.id' => 'required|max:100',
-            'jabatan.en' => 'nullable|max:100',
-            'nama'    => 'required|max:50',
+            'jabatan.id' => 'required',
+            'jabatan.en' => 'nullable',
+            'nama'    => 'required',
             'foto'    => 'nullable|image|max:2048',
         ]);
 
@@ -49,9 +49,9 @@ class PimpinanController extends Controller
         $item = Pimpinan::findOrFail($id);
 
         $validated = $request->validate([
-            'jabatan.id' => 'required|max:100',
-            'jabatan.en' => 'nullable|max:100',
-            'nama' => 'required|max:50',
+            'jabatan.id' => 'required',
+            'jabatan.en' => 'nullable',
+            'nama' => 'required',
             'foto' => 'nullable|image|max:2048',
         ]);
 

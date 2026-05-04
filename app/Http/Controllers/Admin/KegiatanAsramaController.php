@@ -35,8 +35,8 @@ class KegiatanAsramaController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'nama.id' => 'required|max:50',
-            'nama.en' => 'nullable|max:50',
+            'nama.id' => 'required',
+            'nama.en' => 'nullable',
             'kategori' => 'required|in:rutin,tidak_rutin',
             'gambar' => 'required|image|max:2048',
         ]);
@@ -61,8 +61,8 @@ class KegiatanAsramaController extends Controller
         $item = KegiatanAsrama::findOrFail($id);
 
         $validated = $request->validate([
-            'nama.id' => 'required|max:50',
-            'nama.en' => 'nullable|max:50',
+            'nama.id' => 'required',
+            'nama.en' => 'nullable',
             'kategori' => 'required|in:rutin,tidak_rutin',
             'gambar' => 'nullable|image|max:2048',
         ]);
