@@ -2,24 +2,24 @@
 <!-- GALERI FOTO CONTENT - START -->
 <!-- ============================================ -->
 <section class="bg-white mb-16">
-    <div class="mx-auto px-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-2 px-10 items-stretch">
+    <div class="mx-auto max-w-7xl px-4">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mb-2 items-stretch">
 
             @forelse ($items as $item)
                 <div
-                    class="bg-white border border-gray-200 shadow-md rounded-4xl overflow-hidden flex flex-col h-full group transition-shadow hover:shadow-lg">
-                    <div class="aspect-3/2 bg-gray-100">
+                    class="bg-white border border-gray-200 shadow-sm rounded-2xl overflow-hidden flex flex-col h-full group transition-shadow hover:shadow-md">
+                    <div class="aspect-video bg-gray-100">
                         <img src="{{ Storage::url($item->gambar) }}" alt="{{ $item->judul }}"
                             class="w-full h-full object-cover" />
                     </div>
-                    <div class="p-4 bg-matauli-red-dark flex-1 flex flex-col items-center justify-center">
-                        <h3 class="text-lg text-center font-semibold text-white leading-snug break-words">
+                    <div class="px-3 py-2.5 bg-matauli-red-dark flex-1 flex flex-col items-center justify-center">
+                        <h3 class="text-xs sm:text-sm text-center font-semibold text-white leading-snug break-words line-clamp-2">
                             {{ $item->judul }}
                         </h3>
                         @if ($item->deskripsi)
                             <div
-                                class="w-full max-h-0 overflow-hidden group-hover:max-h-40 group-hover:mt-3 transition-all duration-300">
-                                <p class="text-gray-200 text-[13px] leading-relaxed text-center">
+                                class="w-full max-h-0 overflow-hidden group-hover:max-h-32 group-hover:mt-2 transition-all duration-300">
+                                <p class="text-gray-200 text-[11px] leading-relaxed text-center line-clamp-4">
                                     {{ $item->deskripsi }}
                                 </p>
                             </div>
