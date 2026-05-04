@@ -347,8 +347,13 @@
 
             okBtn.addEventListener('click', function() {
                 if (pendingForm) {
-                    pendingForm.dataset.confirmed = 'true';
-                    pendingForm.submit();
+                    var formToSubmit = pendingForm;
+                    formToSubmit.dataset.confirmed = 'true';
+                    var submitEvent = new Event('submit', { bubbles: true, cancelable: true });
+                    var notCancelled = formToSubmit.dispatchEvent(submitEvent);
+                    if (notCancelled) {
+                        formToSubmit.submit();
+                    }
                 }
                 hideConfirm();
             });

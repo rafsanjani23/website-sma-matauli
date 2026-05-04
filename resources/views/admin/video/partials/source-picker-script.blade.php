@@ -266,33 +266,35 @@
 
     form.addEventListener('submit', function (e) {
         const sourceType = form.querySelector('[data-source-radio]:checked')?.value;
-
-        if (sourceType !== 'upload') {
-            showOverlay({ title: 'Menyimpan...', withProgress: false });
-            return;
-        }
-
         const hasExisting = upPane.dataset.hasExistingVideo === '1';
         const hasNewVideo = videoInput.files && videoInput.files.length > 0;
 
-        if (!hasExisting && !hasNewVideo) {
-            e.preventDefault();
-            videoError.textContent = 'Pilih file video terlebih dahulu.';
-            videoError.classList.remove('hidden');
-            return;
-        }
-
-        if (hasNewVideo) {
-            const hasGenerated = !!thumbDataInput.value;
-            const hasManual = manualThumbInput && manualThumbInput.files && manualThumbInput.files.length > 0;
-            if (!hasGenerated && !hasManual) {
+        if (sourceType === 'upload') {
+            if (!hasExisting && !hasNewVideo) {
                 e.preventDefault();
-                alert('Pilih salah satu thumbnail atau upload thumbnail manual.');
+                e.stopPropagation();
+                videoError.textContent = 'Pilih file video terlebih dahulu.';
+                videoError.classList.remove('hidden');
                 return;
+            }
+
+            if (hasNewVideo) {
+                const hasGenerated = !!thumbDataInput.value;
+                const hasManual = manualThumbInput && manualThumbInput.files && manualThumbInput.files.length > 0;
+                if (!hasGenerated && !hasManual) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    alert('Pilih salah satu thumbnail atau upload thumbnail manual.');
+                    return;
+                }
             }
         }
 
-        if (!hasNewVideo) {
+        if (form.dataset.confirmed !== 'true') {
+            return;
+        }
+
+        if (sourceType !== 'upload' || !hasNewVideo) {
             showOverlay({ title: 'Menyimpan...', withProgress: false });
             return;
         }
