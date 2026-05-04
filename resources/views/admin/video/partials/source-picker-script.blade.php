@@ -262,6 +262,8 @@
         box.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
+    let isUploadingFile = false;
+
     form.addEventListener('submit', function (e) {
         const sourceType = form.querySelector('[data-source-radio]:checked')?.value;
 
@@ -297,6 +299,7 @@
 
         e.preventDefault();
         showOverlay({ title: 'Mengupload video...', subtitle: 'Jangan tutup atau refresh halaman ini.', withProgress: true });
+        isUploadingFile = true;
 
         const xhr = new XMLHttpRequest();
         const formData = new FormData(form);
@@ -306,6 +309,7 @@
         });
 
         xhr.addEventListener('load', function () {
+            isUploadingFile = false;
             if (xhr.status >= 200 && xhr.status < 300) {
                 try {
                     const data = JSON.parse(xhr.responseText);
@@ -333,8 +337,13 @@
         });
 
         xhr.addEventListener('error', function () {
+            isUploadingFile = false;
             hideOverlay();
             showServerErrors({ _: ['Koneksi terputus. Coba lagi.'] });
+        });
+
+        xhr.addEventListener('abort', function () {
+            isUploadingFile = false;
         });
 
         xhr.open('POST', form.action, true);
@@ -344,10 +353,9 @@
     });
 
     window.addEventListener('beforeunload', function (e) {
-        if (overlay && !overlay.classList.contains('hidden')) {
-            e.preventDefault();
-            e.returnValue = '';
-        }
+        if (!isUploadingFile) return;
+        e.preventDefault();
+        e.returnValue = '';
     });
 })();
 </script>
