@@ -2,8 +2,8 @@
 <!-- GALERI VIDEO CONTENT - START -->
 <!-- ============================================ -->
 <section class="bg-white mb-16">
-    <div class="mx-auto px-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-2 px-10 items-stretch">
+    <div class="mx-auto max-w-7xl px-4">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mb-2 items-stretch">
 
             @forelse ($items as $item)
             @php
@@ -14,8 +14,8 @@
                 $videoUrl = $isUpload ? asset('storage/' . $item->video_path) : '';
             @endphp
             <div
-                class="bg-white border border-gray-200 shadow-md rounded-4xl overflow-hidden flex flex-col h-full group transition-shadow hover:shadow-lg">
-                <div class="aspect-3/2 relative cursor-pointer bg-gray-100"
+                class="bg-white border border-gray-200 shadow-sm rounded-2xl overflow-hidden flex flex-col h-full group transition-shadow hover:shadow-md">
+                <div class="aspect-video relative cursor-pointer bg-gray-100"
                     @if ($isUpload)
                         onclick="openVideoModal('upload', '{{ $videoUrl }}')"
                     @else
@@ -25,15 +25,15 @@
                         class="w-full h-full object-cover" />
                     <!-- Play Button Overlay -->
                     <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-all duration-300">
-                        <div class="w-14 h-14 bg-matauli-red-dark/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                            <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                        <div class="w-10 h-10 bg-matauli-red-dark/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-4 h-4 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M8 5v14l11-7z" />
                             </svg>
                         </div>
                     </div>
                 </div>
-                <div class="p-4 bg-matauli-red-dark flex-1 flex items-center justify-center">
-                    <h3 class="text-lg text-center font-semibold text-white leading-snug break-words">
+                <div class="px-3 py-2.5 bg-matauli-red-dark flex-1 flex items-center justify-center">
+                    <h3 class="text-xs sm:text-sm text-center font-semibold text-white leading-snug break-words line-clamp-2">
                         {{ $item->judul }}
                     </h3>
                 </div>

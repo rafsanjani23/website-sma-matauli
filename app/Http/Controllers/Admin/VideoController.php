@@ -46,7 +46,7 @@ class VideoController extends Controller
         if ($sourceType === 'youtube') {
             $rules['youtube_link'] = 'required|url';
         } else {
-            $rules['video_file'] = 'required|file|mimetypes:video/mp4|mimes:mp4|max:102400';
+            $rules['video_file'] = ['required', 'file', 'max:102400', $this->mp4FileRule()];
             $rules['thumbnail_file'] = 'nullable|image|mimes:jpg,jpeg,png|max:2048';
             $rules['thumbnail_data'] = 'nullable|string';
         }
@@ -104,7 +104,7 @@ class VideoController extends Controller
         if ($sourceType === 'youtube') {
             $rules['youtube_link'] = 'required|url';
         } else {
-            $rules['video_file'] = ($item->video_path ? 'nullable' : 'required') . '|file|mimetypes:video/mp4|mimes:mp4|max:102400';
+            $rules['video_file'] = [$item->video_path ? 'nullable' : 'required', 'file', 'max:102400', $this->mp4FileRule()];
             $rules['thumbnail_file'] = 'nullable|image|mimes:jpg,jpeg,png|max:2048';
             $rules['thumbnail_data'] = 'nullable|string';
         }
@@ -200,6 +200,33 @@ class VideoController extends Controller
         }
 
         return null;
+    }
+
+    private function mp4FileRule(): \Closure
+    {
+        return function ($attribute, $value, $fail) {
+            if (!$value || !$value->isValid()) {
+                return;
+            }
+
+            $ext = strtolower($value->getClientOriginalExtension());
+            if (!in_array($ext, ['mp4', 'm4v'], true)) {
+                $fail('File harus berformat MP4 (.mp4).');
+                return;
+            }
+
+            $handle = @fopen($value->getRealPath(), 'rb');
+            if ($handle === false) {
+                $fail('File video tidak bisa dibaca.');
+                return;
+            }
+            $header = fread($handle, 12);
+            fclose($handle);
+
+            if (strlen($header) < 8 || substr($header, 4, 4) !== 'ftyp') {
+                $fail('File bukan MP4 yang valid (signature tidak cocok).');
+            }
+        };
     }
 
     private function resolveThumbnail(Request $request): ?string
