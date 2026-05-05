@@ -310,7 +310,7 @@
                 <div class="flex flex-wrap gap-3">
 
                     <!-- Facebook -->
-                    <a href="https://web.facebook.com/smanplusmatauli" target="_blank" rel="noopener noreferrer"
+                    <a href="https://web.facebook.com/smansa.plus.matauli" target="_blank" rel="noopener noreferrer"
                         aria-label="Facebook"
                         class="group relative w-12 h-12 rounded-xl bg-white/10 backdrop-blur-sm hover:bg-blue-600 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1">
 
