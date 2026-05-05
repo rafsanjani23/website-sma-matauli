@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\PengasuhController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\MediaController;
@@ -25,6 +26,7 @@ use App\Http\Controllers\Admin\BerandaProgramIbController;
 use App\Http\Controllers\Admin\BerandaProgramKemataulianController;
 use App\Http\Controllers\Admin\BerandaProgramKemendikdasmenController;
 use App\Http\Controllers\Admin\ProgramIbController;
+
 
 // Language switch
 Route::get('/lang/{locale}', function (string $locale) {
@@ -66,7 +68,15 @@ Route::get('/komite', function () {
 Route::get('/tendik', function () {
     $pimpinan = \App\Models\Pimpinan::all();
     $guruMapel = \App\Models\TenagaPendidik::where('kategori', 'Guru Mata Pelajaran')->orderBy('nama')->get();
-    $guruIB = \App\Models\TenagaPendidik::where('kategori', 'IB')->orderBy('nama')->get();
+    $guruIB = \App\Models\TenagaPendidik::where('kategori', 'IB')->orderByRaw("
+            CASE
+                WHEN JSON_UNQUOTE(JSON_EXTRACT(mata_pelajaran, '$.id')) = 'Program Coordinator' THEN 0
+                WHEN JSON_UNQUOTE(JSON_EXTRACT(mata_pelajaran, '$.id')) = 'Administrator Kurikulum IB' THEN 1
+                WHEN JSON_UNQUOTE(JSON_EXTRACT(mata_pelajaran, '$.id')) = 'Bimbingan Konseling (BK)' THEN 2
+                WHEN JSON_UNQUOTE(JSON_EXTRACT(mata_pelajaran, '$.id')) = 'Pustakawan' THEN 3
+                ELSE 4
+            END
+        ")->orderBy('nama')->get();
     $tendik = \App\Models\TenagaKependidikan::orderBy('nama')->get();
     return view('pages.tendik', compact('pimpinan', 'guruMapel', 'guruIB', 'tendik'));
 })->name('tendik');
@@ -149,7 +159,7 @@ Route::get('/studi-lanjut', function (\Illuminate\Http\Request $request) {
     $angkatanList = \App\Models\StudiLanjut::select('angkatan')->distinct()->orderBy('angkatan', 'desc')->pluck('angkatan');
 
     // Get total per angkatan
-    $angkatanTotals = \App\Models\StudiLanjut::select('angkatan', \DB::raw('COUNT(*) as total'))
+    $angkatanTotals = \App\Models\StudiLanjut::select('angkatan', DB::raw('COUNT(*) as total'))
         ->groupBy('angkatan')
         ->orderBy('angkatan', 'desc')
         ->pluck('total', 'angkatan');
