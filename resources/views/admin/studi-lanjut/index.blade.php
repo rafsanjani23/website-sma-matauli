@@ -59,7 +59,9 @@
                                 <div class="flex items-center gap-2">
                                     <a href="{{ route('admin.studi-lanjut.edit', array_merge(['id' => $item->id], request()->query())) }}"
                                         class="text-blue-600 hover:text-blue-800 text-sm font-medium">Edit</a>
-                                    <form action="{{ route('admin.studi-lanjut.destroy', array_merge(['id' => $item->id], request()->query())) }}" method="POST">
+                                    <form
+                                        action="{{ route('admin.studi-lanjut.destroy', array_merge(['id' => $item->id], request()->query())) }}"
+                                        method="POST">
                                         @csrf @method('DELETE')
                                         <button type="submit"
                                             class="text-red-600 hover:text-red-800 text-sm font-medium">Hapus</button>
@@ -74,50 +76,65 @@
                     @endforelse
                 </tbody>
             </table>
-            @if ($items->lastPage() > 1)
-                <ul class="flex space-x-2 justify-center mt-8 mb-3">
+            {{-- Number --}}
+            @php
+                $current = $items->currentPage();
+                $last = $items->lastPage();
 
-                    {{-- Previous --}}
+                $start = max($current - 2, 1);
+                $end = min($current + 2, $last);
+            @endphp
+
+            {{-- First Page --}}
+            @if ($start > 1)
+                <li>
+                    <a href="{{ $items->url(1) }}"
+                        class="flex items-center justify-center shrink-0 border border-gray-200 hover:border-red-600 text-gray-900 cursor-pointer text-base font-medium px-[13px] h-9 rounded-md">
+                        1
+                    </a>
+                </li>
+
+                @if ($start > 2)
                     <li>
-                        <a href="{{ $items->previousPageUrl() ?? '#' }}"
-                            class="flex items-center justify-center shrink-0 bg-gray-100 w-9 h-9 rounded-md {{ $items->onFirstPage() ? 'opacity-50 pointer-events-none' : '' }}">
-
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3 fill-gray-400" viewBox="0 0 55.753 55.753">
-                                <path
-                                    d="M12.745 23.915c.283-.282.59-.52.913-.727L35.266 1.581a5.4 5.4 0 0 1 7.637 7.638L24.294 27.828l18.705 18.706a5.4 5.4 0 0 1-7.636 7.637L13.658 32.464a5.367 5.367 0 0 1-.913-.727 5.367 5.367 0 0 1-1.572-3.911 5.369 5.369 0 0 1 1.572-3.911z" />
-                            </svg>
-
-                        </a>
+                        <span class="flex items-center justify-center w-9 h-9">
+                            ...
+                        </span>
                     </li>
+                @endif
+            @endif
 
-                    {{-- Number --}}
-                    @for ($i = 1; $i <= $items->lastPage(); $i++)
-                        <li>
-                            <a href="{{ $items->url($i) }}" class="flex items-center justify-center shrink-0 border
-                                                   {{ $items->currentPage() == $i ? 'bg-red-800 text-white border-red-800' : 'border-gray-200 hover:border-red-600 text-gray-900' }}
-                                                   cursor-pointer text-base font-medium px-[13px] h-9 rounded-md">
+            {{-- Page Numbers --}}
+            @for ($i = $start; $i <= $end; $i++)
+                <li>
+                    <a href="{{ $items->url($i) }}" class="flex items-center justify-center shrink-0 border
+                    {{ $items->currentPage() == $i
+                ? 'bg-red-800 text-white border-red-800'
+                : 'border-gray-200 hover:border-red-600 text-gray-900' }}
+                    cursor-pointer text-base font-medium px-[13px] h-9 rounded-md">
 
-                                {{ $i }}
+                        {{ $i }}
 
-                            </a>
-                        </li>
-                    @endfor
+                    </a>
+                </li>
+            @endfor
 
-                    {{-- Next --}}
+            {{-- Last Page --}}
+            @if ($end < $last)
+
+                @if ($end < $last - 1)
                     <li>
-                        <a href="{{ $items->nextPageUrl() ?? '#' }}"
-                            class="flex items-center justify-center shrink-0 border border-gray-200 hover:border-red-600 w-9 h-9 rounded-md {{ !$items->hasMorePages() ? 'opacity-50 pointer-events-none' : '' }}">
-
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3 fill-gray-400 rotate-180"
-                                viewBox="0 0 55.753 55.753">
-                                <path
-                                    d="M12.745 23.915c.283-.282.59-.52.913-.727L35.266 1.581a5.4 5.4 0 0 1 7.637 7.638L24.294 27.828l18.705 18.706a5.4 5.4 0 0 1-7.636 7.637L13.658 32.464a5.367 5.367 0 0 1-.913-.727 5.367 5.367 0 0 1-1.572-3.911 5.369 5.369 0 0 1 1.572-3.911z" />
-                            </svg>
-
-                        </a>
+                        <span class="flex items-center justify-center w-9 h-9">
+                            ...
+                        </span>
                     </li>
+                @endif
 
-                </ul>
+                <li>
+                    <a href="{{ $items->url($last) }}"
+                        class="flex items-center justify-center shrink-0 border border-gray-200 hover:border-red-600 text-gray-900 cursor-pointer text-base font-medium px-[13px] h-9 rounded-md">
+                        {{ $last }}
+                    </a>
+                </li>
             @endif
         </div>
     </div>
