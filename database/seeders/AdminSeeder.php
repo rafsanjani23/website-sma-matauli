@@ -14,6 +14,7 @@ class AdminSeeder extends Seeder
             ['username' => 'sman1mat'],
             [
                 'password' => Hash::make('SMAMTN&m4t4UL1'),
+                'role' => 'super_admin',
                 'created_at' => now(),
                 'updated_at' => now(),
             ]

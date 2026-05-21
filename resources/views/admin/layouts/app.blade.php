@@ -40,6 +40,7 @@
             </div>
 
             {{-- Navigation --}}
+            @php $currentAdmin = Auth::guard('admin')->user(); @endphp
             <nav class="px-4 py-4 space-y-1 overflow-y-auto h-[calc(100vh-140px)]">
 
                 {{-- Dashboard --}}
@@ -53,113 +54,150 @@
                     Dashboard
                 </a>
 
-                <p class="px-3 pt-4 pb-1 text-xs font-bold tracking-widest uppercase text-red-400">Beranda</p>
-
-                @php
-                    $berandaItems = [
-                        ['route' => 'admin.beranda.program-ib.index', 'pattern' => 'admin.beranda.program-ib.*', 'label' => 'Program IB'],
-                        ['route' => 'admin.beranda.program-kemataulian.index', 'pattern' => 'admin.beranda.program-kemataulian.*', 'label' => 'Program Khusus Kemataulian'],
-                        ['route' => 'admin.beranda.program-kemendikdasmen.index', 'pattern' => 'admin.beranda.program-kemendikdasmen.*', 'label' => 'Program Kemendikdasmen'],
-                    ];
-                @endphp
-
-                @foreach ($berandaItems as $item)
-                    <a href="{{ route($item['route']) }}"
+                @if ($currentAdmin->canManageAdmins())
+                    <p class="px-3 pt-4 pb-1 text-xs font-bold tracking-widest uppercase text-red-400">Manajemen</p>
+                    <a href="{{ route('admin.admin-users.index') }}"
                         class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm transition-all duration-200
-                        {{ request()->routeIs($item['pattern']) ? 'bg-white/15 text-white' : 'text-red-200 hover:bg-white/10 hover:text-white' }}">
-                        <span class="w-5 h-5 flex items-center justify-center">
-                            <span class="w-1.5 h-1.5 bg-current rounded-full"></span>
-                        </span>
-                        {{ $item['label'] }}
+                        {{ request()->routeIs('admin.admin-users.*') ? 'bg-white/15 text-white' : 'text-red-200 hover:bg-white/10 hover:text-white' }}">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
+                        </svg>
+                        Kelola Admin
                     </a>
-                @endforeach
+                @endif
 
-                <p class="px-3 pt-4 pb-1 text-xs font-bold tracking-widest uppercase text-red-400">Konten</p>
+                @if ($currentAdmin->canAccessSekolah())
+                    <p class="px-3 pt-4 pb-1 text-xs font-bold tracking-widest uppercase text-red-400">Beranda</p>
 
-                @php
-                    $menuItems = [
-                        [
-                            'route' => 'admin.media.index',
-                            'label' => 'Media',
-                            'icon' =>
-                                '<path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" />',
-                        ],
-                        [
-                            'route' => 'admin.prestasi.index',
-                            'label' => 'Prestasi',
-                            'icon' =>
-                                '<path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M18.75 4.236c.982.143 1.954.317 2.916.52A6.003 6.003 0 0 1 16.27 9.728M18.75 4.236V4.5c0 2.108-.966 3.99-2.48 5.228m0 0a6.003 6.003 0 0 1-4.77 0m4.77 0a6.003 6.003 0 0 1-4.77 0M12 15.75a6 6 0 0 1-6-6" />',
-                        ],
-                        [
-                            'route' => 'admin.testimoni.index',
-                            'label' => 'Testimoni',
-                            'icon' =>
-                                '<path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />',
-                        ],
-                    ];
-                @endphp
+                    @php
+                        $berandaItems = [
+                            ['route' => 'admin.beranda.program-ib.index', 'pattern' => 'admin.beranda.program-ib.*', 'label' => 'Program IB'],
+                            ['route' => 'admin.beranda.program-kemataulian.index', 'pattern' => 'admin.beranda.program-kemataulian.*', 'label' => 'Program Khusus Kemataulian'],
+                            ['route' => 'admin.beranda.program-kemendikdasmen.index', 'pattern' => 'admin.beranda.program-kemendikdasmen.*', 'label' => 'Program Kemendikdasmen'],
+                        ];
+                    @endphp
 
-                @foreach ($menuItems as $item)
-                    <a href="{{ route($item['route']) }}"
-                        class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm transition-all duration-200
-                        {{ request()->routeIs($item['route']) ? 'bg-white/15 text-white' : 'text-red-200 hover:bg-white/10 hover:text-white' }}">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5"
-                            viewBox="0 0 24 24">{!! $item['icon'] !!}</svg>
-                        {{ $item['label'] }}
-                    </a>
-                @endforeach
+                    @foreach ($berandaItems as $item)
+                        <a href="{{ route($item['route']) }}"
+                            class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm transition-all duration-200
+                            {{ request()->routeIs($item['pattern']) ? 'bg-white/15 text-white' : 'text-red-200 hover:bg-white/10 hover:text-white' }}">
+                            <span class="w-5 h-5 flex items-center justify-center">
+                                <span class="w-1.5 h-1.5 bg-current rounded-full"></span>
+                            </span>
+                            {{ $item['label'] }}
+                        </a>
+                    @endforeach
 
-                <p class="px-3 pt-4 pb-1 text-xs font-bold tracking-widest uppercase text-red-400">Sekolah</p>
+                    <p class="px-3 pt-4 pb-1 text-xs font-bold tracking-widest uppercase text-red-400">Konten</p>
 
-                @php
-                    $sekolahItems = [
-                        ['route' => 'admin.fasilitas-sekolah.index', 'label' => 'Fasilitas Sekolah'],
-                        ['route' => 'admin.fasilitas-asrama.index', 'label' => 'Fasilitas Asrama'],
-                        ['route' => 'admin.kegiatan-asrama.index', 'label' => 'Kegiatan Asrama'],
-                        ['route' => 'admin.pengasuh.index', 'label' => 'Pengasuh Asrama'],
-                        ['route' => 'admin.pimpinan.index', 'label' => 'Pimpinan'],
-                        ['route' => 'admin.tenaga-pendidik.index', 'label' => 'Tenaga Pendidik'],
-                        ['route' => 'admin.tenaga-kependidikan.index', 'label' => 'Tenaga Kependidikan'],
-                        ['route' => 'admin.kemitraan.index', 'label' => 'Kemitraan'],
-                        ['route' => 'admin.ekstrakurikuler.index', 'label' => 'Ekstrakurikuler'],
-                        ['route' => 'admin.program-ib.index', 'label' => 'Program IB'],
-                        ['route' => 'admin.program-kemataulian.index', 'label' => 'Program Kemataulian'],
-                        ['route' => 'admin.program-kemendikdasmen.index', 'label' => 'Program Kemendikdasmen'],
-                    ];
-                @endphp
+                    @php
+                        $menuItems = [
+                            [
+                                'route' => 'admin.media.index',
+                                'label' => 'Media',
+                                'icon' =>
+                                    '<path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" />',
+                            ],
+                            [
+                                'route' => 'admin.prestasi.index',
+                                'label' => 'Prestasi',
+                                'icon' =>
+                                    '<path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M18.75 4.236c.982.143 1.954.317 2.916.52A6.003 6.003 0 0 1 16.27 9.728M18.75 4.236V4.5c0 2.108-.966 3.99-2.48 5.228m0 0a6.003 6.003 0 0 1-4.77 0m4.77 0a6.003 6.003 0 0 1-4.77 0M12 15.75a6 6 0 0 1-6-6" />',
+                            ],
+                            [
+                                'route' => 'admin.testimoni.index',
+                                'label' => 'Testimoni',
+                                'icon' =>
+                                    '<path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />',
+                            ],
+                        ];
+                    @endphp
 
-                @foreach ($sekolahItems as $item)
-                    <a href="{{ route($item['route']) }}"
-                        class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm transition-all duration-200
-                        {{ request()->routeIs($item['route']) ? 'bg-white/15 text-white' : 'text-red-200 hover:bg-white/10 hover:text-white' }}">
-                        <span class="w-5 h-5 flex items-center justify-center">
-                            <span class="w-1.5 h-1.5 bg-current rounded-full"></span>
-                        </span>
-                        {{ $item['label'] }}
-                    </a>
-                @endforeach
+                    @foreach ($menuItems as $item)
+                        <a href="{{ route($item['route']) }}"
+                            class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm transition-all duration-200
+                            {{ request()->routeIs($item['route']) ? 'bg-white/15 text-white' : 'text-red-200 hover:bg-white/10 hover:text-white' }}">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5"
+                                viewBox="0 0 24 24">{!! $item['icon'] !!}</svg>
+                            {{ $item['label'] }}
+                        </a>
+                    @endforeach
 
-                <p class="px-3 pt-4 pb-1 text-xs font-bold tracking-widest uppercase text-red-400">Alumni & Galeri</p>
+                    <p class="px-3 pt-4 pb-1 text-xs font-bold tracking-widest uppercase text-red-400">Sekolah</p>
 
-                @php
-                    $alumniItems = [
-                        ['route' => 'admin.studi-lanjut.index', 'label' => 'Studi Lanjut'],
-                        ['route' => 'admin.profesional.index', 'label' => 'Profesional'],
-                        ['route' => 'admin.foto.index', 'label' => 'Foto'],
-                        ['route' => 'admin.video.index', 'label' => 'Video'],
-                    ];
-                @endphp
+                    @php
+                        $sekolahItems = [
+                            ['route' => 'admin.fasilitas-sekolah.index', 'label' => 'Fasilitas Sekolah'],
+                            ['route' => 'admin.pimpinan.index', 'label' => 'Pimpinan'],
+                            ['route' => 'admin.tenaga-pendidik.index', 'label' => 'Tenaga Pendidik'],
+                            ['route' => 'admin.tenaga-kependidikan.index', 'label' => 'Tenaga Kependidikan'],
+                            ['route' => 'admin.kemitraan.index', 'label' => 'Kemitraan'],
+                            ['route' => 'admin.ekstrakurikuler.index', 'label' => 'Ekstrakurikuler'],
+                            ['route' => 'admin.program-ib.index', 'label' => 'Program IB'],
+                            ['route' => 'admin.program-kemataulian.index', 'label' => 'Program Kemataulian'],
+                            ['route' => 'admin.program-kemendikdasmen.index', 'label' => 'Program Kemendikdasmen'],
+                        ];
+                    @endphp
 
-                @foreach ($alumniItems as $item)
-                    <a href="{{ route($item['route']) }}"
-                        class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm transition-all duration-200
-                        {{ request()->routeIs($item['route']) ? 'bg-white/15 text-white' : 'text-red-200 hover:bg-white/10 hover:text-white' }}">
-                        <span class="w-5 h-5 flex items-center justify-center">
-                            <span class="w-1.5 h-1.5 bg-current rounded-full"></span>
-                        </span>
-                        {{ $item['label'] }}
-                    </a>
-                @endforeach
+                    @foreach ($sekolahItems as $item)
+                        <a href="{{ route($item['route']) }}"
+                            class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm transition-all duration-200
+                            {{ request()->routeIs($item['route']) ? 'bg-white/15 text-white' : 'text-red-200 hover:bg-white/10 hover:text-white' }}">
+                            <span class="w-5 h-5 flex items-center justify-center">
+                                <span class="w-1.5 h-1.5 bg-current rounded-full"></span>
+                            </span>
+                            {{ $item['label'] }}
+                        </a>
+                    @endforeach
+                @endif
+
+                @if ($currentAdmin->canAccessAsrama())
+                    <p class="px-3 pt-4 pb-1 text-xs font-bold tracking-widest uppercase text-red-400">Asrama</p>
+
+                    @php
+                        $asramaItems = [
+                            ['route' => 'admin.fasilitas-asrama.index', 'label' => 'Fasilitas Asrama'],
+                            ['route' => 'admin.kegiatan-asrama.index', 'label' => 'Kegiatan Asrama'],
+                            ['route' => 'admin.pengasuh.index', 'label' => 'Pengasuh Asrama'],
+                        ];
+                    @endphp
+
+                    @foreach ($asramaItems as $item)
+                        <a href="{{ route($item['route']) }}"
+                            class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm transition-all duration-200
+                            {{ request()->routeIs($item['route']) ? 'bg-white/15 text-white' : 'text-red-200 hover:bg-white/10 hover:text-white' }}">
+                            <span class="w-5 h-5 flex items-center justify-center">
+                                <span class="w-1.5 h-1.5 bg-current rounded-full"></span>
+                            </span>
+                            {{ $item['label'] }}
+                        </a>
+                    @endforeach
+                @endif
+
+                @if ($currentAdmin->canAccessSekolah())
+                    <p class="px-3 pt-4 pb-1 text-xs font-bold tracking-widest uppercase text-red-400">Alumni & Galeri</p>
+
+                    @php
+                        $alumniItems = [
+                            ['route' => 'admin.studi-lanjut.index', 'label' => 'Studi Lanjut'],
+                            ['route' => 'admin.profesional.index', 'label' => 'Profesional'],
+                            ['route' => 'admin.foto.index', 'label' => 'Foto'],
+                            ['route' => 'admin.video.index', 'label' => 'Video'],
+                        ];
+                    @endphp
+
+                    @foreach ($alumniItems as $item)
+                        <a href="{{ route($item['route']) }}"
+                            class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm transition-all duration-200
+                            {{ request()->routeIs($item['route']) ? 'bg-white/15 text-white' : 'text-red-200 hover:bg-white/10 hover:text-white' }}">
+                            <span class="w-5 h-5 flex items-center justify-center">
+                                <span class="w-1.5 h-1.5 bg-current rounded-full"></span>
+                            </span>
+                            {{ $item['label'] }}
+                        </a>
+                    @endforeach
+                @endif
 
             </nav>
 
@@ -202,7 +240,10 @@
                     <h1 class="text-lg font-bold text-gray-900">@yield('title', 'Dashboard')</h1>
                 </div>
                 <div class="flex items-center gap-2">
-                    <span class="text-sm text-gray-500">{{ Auth::guard('admin')->user()->username }}</span>
+                    <div class="flex flex-col items-end leading-tight">
+                        <span class="text-sm text-gray-700 font-medium">{{ Auth::guard('admin')->user()->username }}</span>
+                        <span class="text-[10px] uppercase tracking-wider font-bold text-red-700 bg-red-50 px-2 py-0.5 rounded-full">{{ Auth::guard('admin')->user()->role_label }}</span>
+                    </div>
                     <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
                         <svg class="w-4 h-4 text-red-800" fill="none" stroke="currentColor" stroke-width="1.5"
                             viewBox="0 0 24 24">
