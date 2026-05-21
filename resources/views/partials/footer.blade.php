@@ -375,9 +375,9 @@
                         class="w-full h-16 object-cover rounded-xl max-md:w-57.5">
                 </div>
                 {{-- Gambar LOGO IB --}}
-                <div class="mt-4">
+                <div class="-mt-3 w-full h-32 flex items-center justify-center max-md:w-57.5">
                     <img src="{{ asset('assets/LogoIB.webp') }}" alt="LOGO IB"
-                        class="w-full rounded-xl object-cover max-md:w-59.75 max-md:h-16">
+                        class="h-full w-auto object-contain">
                 </div>
             </div>
         </div>
