@@ -248,27 +248,27 @@
                     </div>
                 </div>
 
-                {{-- ITEM 9: 2021 --}}
+                {{-- ITEM 9: 2022 --}}
                 <div class="flex gap-4">
                     <div class="flex flex-col items-center shrink-0 w-12">
                         <div
                             class="w-12 h-12 rounded-full bg-linear-to-br from-red-800 to-red-950 flex items-center justify-center shadow-lg ring-4 ring-white z-10 shrink-0">
-                            <span class="text-white font-bold text-sm">21</span>
+                            <span class="text-white font-bold text-sm">22</span>
                         </div>
                         <div class="w-0.5 flex-1 bg-linear-to-b from-yellow-400 to-yellow-300 mt-1"></div>
                     </div>
                     <div class="flex-1 pt-1 pb-6">
                         <div class="bg-white rounded-2xl shadow-md border-l-4 border-red-800 overflow-hidden">
                             <div class="h-44 w-full overflow-hidden">
-                                <img src="{{ asset('assets/sejarah/Sejarah_2021.webp') }}" alt="2021"
+                                <img src="{{ asset('assets/sejarah/Sejarah_2021.webp') }}" alt="2022"
                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-5">
                                 <h3 class="text-base font-bold text-grey-900 mb-2 leading-snug">
-                                    {{ __('2021 - Telah Mendapatkan Akreditasi A') }}
+                                    {{ __('2022 - Telah Mendapatkan Akreditasi A (Unggul)') }}
                                 </h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
-                                    {{ __('Sekolah ini telah terakreditasi A dengan Nomor SK Akreditasi 1347/BAN-SM/SK/2021 pada tanggal 8 Desember 2021.') }}
+                                    {{ __('Sekolah ini telah terakreditasi A (Unggul) dengan Nilai 97, berdasarkan SK Badan Akreditasi Nasional Sekolah/Madrasah Nomor 1466/BAN-SM/SK/2022 yang ditetapkan di Jakarta pada tanggal 21 Oktober 2022.') }}
                                 </p>
                             </div>
                         </div>
@@ -548,16 +548,16 @@
                     </div>
                 </div>
 
-                {{-- ITEM 9: 2021 - teks kiri | foto kanan --}}
+                {{-- ITEM 9: 2022 - teks kiri | foto kanan --}}
                 <div class="relative grid grid-cols-2 gap-0 min-h-64 mb-16">
                     <div class="flex items-center justify-end pr-16 py-8">
                         <div class="max-w-sm w-full">
                             <div
                                 class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-r-4 border-red-800 text-right">
                                 <h3 class="text-xl md:text-2xl font-bold text-grey-900 mb-3">
-                                    {{ __('2021 - Telah Mendapatkan Akreditasi A') }}</h3>
+                                    {{ __('2022 - Telah Mendapatkan Akreditasi A (Unggul)') }}</h3>
                                 <p class="text-gray-600 text-sm md:text-base leading-relaxed">
-                                    {{ __('Sekolah ini telah terakreditasi A dengan Nomor SK Akreditasi 1347/BAN-SM/SK/2021 pada tanggal 8 Desember 2021.') }}
+                                    {{ __('Sekolah ini telah terakreditasi A (Unggul) dengan Nilai 97, berdasarkan SK Badan Akreditasi Nasional Sekolah/Madrasah Nomor 1466/BAN-SM/SK/2022 yang ditetapkan di Jakarta pada tanggal 21 Oktober 2022.') }}
                                 </p>
                             </div>
                         </div>
@@ -566,12 +566,12 @@
                         class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center z-10">
                         <div
                             class="w-16 h-16 rounded-full bg-linear-to-br from-red-800 to-red-950 flex items-center justify-center shadow-xl ring-4 ring-white">
-                            <span class="text-white font-bold text-lg">21</span>
+                            <span class="text-white font-bold text-lg">22</span>
                         </div>
                     </div>
                     <div class="flex items-center justify-start pl-16 py-8">
                         <div class="max-w-sm w-full h-56 rounded-2xl overflow-hidden shadow-xl bg-gray-100">
-                            <img src="{{ asset('assets/sejarah/Sejarah_2021.webp') }}" alt="2021"
+                            <img src="{{ asset('assets/sejarah/Sejarah_2021.webp') }}" alt="2022"
                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                     </div>
