@@ -148,7 +148,7 @@
                     <li><a href="{{ url('/program-kemataulian') }}"
                             class="dropdown-item">{{ __('Program Kemataulian') }}</a>
                     </li>
-                    <li><a href="{{ url('/program-ib') }}" class="dropdown-item">{{ __('Program Pre-IB') }}</a>
+                    <li><a href="{{ url('/program-ib') }}" class="dropdown-item">{{ __('Program IB') }}</a>
                     </li>
                     <li><a href="{{ url('/program-kemendikdasmen') }}"
                             class="dropdown-item">{{ __('Program Kemendikdasmen') }}</a>
@@ -327,7 +327,7 @@
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Program Kemataulian') }}</a>
                     </li>
                     <li><a href="{{ url('/program-ib') }}"
-                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Program Pre-IB') }}</a>
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Program IB') }}</a>
                     </li>
                     <li><a href="{{ url('/program-kemendikdasmen') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Program Kemendikdasmen') }}</a>

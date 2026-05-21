@@ -20,8 +20,8 @@
                 [
                     'data'  => $programIb ?? null,
                     'url'   => url('/program-ib'),
-                    'badge' => 'Pre-IB',
-                    'label' => __('Program Pre-Internasional Baccalaureate'),
+                    'badge' => 'IB',
+                    'label' => __('Program Internasional Baccalaureate'),
                 ],
                 [
                     'data'  => $programKemataulian ?? null,
