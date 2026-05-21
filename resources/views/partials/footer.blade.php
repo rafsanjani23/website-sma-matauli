@@ -376,7 +376,7 @@
                 </div>
                 {{-- Gambar LOGO IB --}}
                 <div class="-mt-3 w-full h-32 flex items-center justify-center max-md:w-57.5">
-                    <img src="{{ asset('assets/LogoIB.webp') }}" alt="LOGO IB"
+                    <img src="{{ asset('assets/LogoIB-v2.webp') }}" alt="LOGO IB"
                         class="h-full w-auto object-contain">
                 </div>
             </div>
