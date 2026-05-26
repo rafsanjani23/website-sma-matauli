@@ -22,6 +22,8 @@ class DatabaseSeeder extends Seeder
             ProgramIbSeeder::class,
             ProgramKemataulianSeeder::class,
             ProgramKemendikdasmenSeeder::class,
+
+            // StudiLanjutSeeder::class,
         ]);
     }
 }

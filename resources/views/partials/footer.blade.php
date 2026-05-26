@@ -370,9 +370,9 @@
                 </div>
 
                 {{-- Gambar Kurikulum Merdeka --}}
-                <div class="mt-8">
+                <div class="mt-8 w-full h-16 flex items-center justify-center object-cover max-md:w-57.5">
                     <img src="{{ asset('assets/kurikulum.webp') }}" alt="Kurikulum Merdeka"
-                        class="w-full h-16 object-cover rounded-xl max-md:w-57.5">
+                        class="w-auto h-full rounded-xl">
                 </div>
                 {{-- Gambar LOGO IB --}}
                 <div class="-mt-3 w-full h-32 flex items-center justify-center max-md:w-57.5">

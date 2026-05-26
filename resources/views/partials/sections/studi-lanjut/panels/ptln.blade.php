@@ -36,7 +36,8 @@
         </table>
     </div>
 
-    @if ($ptln->lastPage() > 1)
+    @include('partials.pagination',['items' => $ptln])
+    <!-- @if ($ptln->lastPage() > 1)
         <ul class="flex space-x-2 justify-center mt-6">
             <li>
                 <a href="{{ $ptln->previousPageUrl() ?? '#' }}"
@@ -66,5 +67,5 @@
                 </a>
             </li>
         </ul>
-    @endif
+    @endif -->
 </div>
