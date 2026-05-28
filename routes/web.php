@@ -37,6 +37,45 @@ Route::get('/lang/{locale}', function (string $locale) {
     return redirect()->back();
 })->name('lang.switch');
 
+$protectedDocuments = [
+    'pudd' => [
+        'title' => 'PUDD',
+        'file' => 'PUDD.pdf',
+    ],
+    'perdupsis' => [
+        'title' => 'Perdupsis',
+        'file' => 'Perdupsis.pdf',
+    ],
+];
+
+Route::get('/dokumen/{document}', function (string $document) use ($protectedDocuments) {
+    abort_unless(isset($protectedDocuments[$document]), 404);
+
+    return view('pages.pdf-viewer', [
+        'documentTitle' => $protectedDocuments[$document]['title'],
+        'pdfSourceUrl' => route('documents.source', $document),
+    ]);
+})->name('documents.show');
+
+Route::get('/dokumen/{document}/source', function (\Illuminate\Http\Request $request, string $document) use ($protectedDocuments) {
+    abort_unless($request->headers->get('X-PDF-Viewer') === 'canvas', 404);
+    abort_unless(isset($protectedDocuments[$document]), 404);
+
+    $path = resource_path('documents/pdf/' . $protectedDocuments[$document]['file']);
+
+    abort_unless(is_file($path), 404);
+
+    return response()->file($path, [
+        'Content-Disposition' => 'inline; filename="' . $protectedDocuments[$document]['file'] . '"',
+        'Content-Type' => 'application/pdf',
+        'Cache-Control' => 'no-store, no-cache, must-revalidate, max-age=0',
+        'Pragma' => 'no-cache',
+        'Expires' => '0',
+        'X-Content-Type-Options' => 'nosniff',
+        'X-Robots-Tag' => 'noindex, nofollow, noarchive',
+    ]);
+})->name('documents.source');
+
 Route::get('/', function () {
     $berita = \App\Models\Media::latest()->take(3)->get();
     $prestasi = \App\Models\Prestasi::latest()->take(3)->get();

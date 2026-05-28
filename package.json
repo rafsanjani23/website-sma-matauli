@@ -15,5 +15,8 @@
         "laravel-vite-plugin": "^1.2.0",
         "axios": "^1.7.4",
         "concurrently": "^9.0.1"
+    },
+    "dependencies": {
+        "pdfjs-dist": "^4.10.38"
     }
 }
