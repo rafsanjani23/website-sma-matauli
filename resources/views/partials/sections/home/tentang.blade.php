@@ -277,7 +277,7 @@
                     <div
                         class="w-52 h-52 md:w-60 md:h-60 lg:w-64 lg:h-64 rounded-full bg-linear-to-br from-red-800 to-red-950 p-0.75 shadow-2xl shadow-red-900/40 relative z-10">
                         <div class="w-full h-full rounded-full overflow-hidden bg-gray-100">
-                            <img src="{{ asset('assets/home/Ibu_Fitri_Ketua_Umum_wm.webp') }}" alt="Ketua Umum"
+                            <img src="{{ asset('assets/home/Ibu_Yana_Ketua_Umum_wm.webp') }}" alt="Ketua Umum"
                                 style="width: 100%; height: 110%; object-fit: cover; object-position: center 0%; margin-top: 0;">
                         </div>
                     </div>
@@ -289,8 +289,8 @@
                         <div
                             class="bg-white border border-red-100 rounded-2xl px-6 py-3.5 shadow-lg shadow-red-900/10">
                             <div class="w-8 h-0.5 bg-yellow-400 mx-auto mb-2 rounded-full"></div>
-                            <p class="text-xs font-bold text-gray-800 whitespace-nowrap">Fitri Krisnawati Tandjung,
-                                B.Sc</p>
+                            <p class="text-xs font-bold text-gray-800 whitespace-nowrap">Triana Krisandini Tandjung,
+                                B.Sc., M.I.A.</p>
                             <p class="text-[10px] text-red-800 font-semibold mt-1">
                                 {{ __('Ketua Umum Yayasan MATAULI') }}</p>
                         </div>
