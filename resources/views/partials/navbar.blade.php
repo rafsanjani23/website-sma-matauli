@@ -90,8 +90,8 @@
             <img src="{{ asset('assets/Logo_SMAN_Matauli.webp') }}" alt="Logo SMAN" class="h-10 sm:h-11 lg:h-12 w-auto">
 
             <div class="flex flex-col text-[#fff9f9]">
-                <h1 class="text-sm sm:text-base lg:text-xl font-bold tracking-tight leading-tight">
-                    SMAN 1 MATAULI PANDAN
+                <h1 class="text-xs sm:text-sm lg:text-lg font-bold tracking-tight leading-tight">
+                    SMAN 1 MATAULI
                 </h1>
                 <span class="text-[0.6rem] sm:text-[0.65rem] lg:text-xs font-light">
                     The center of excellence
