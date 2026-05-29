@@ -292,7 +292,7 @@
                             <p class="text-xs font-bold text-gray-800 whitespace-nowrap">Triana Krisandini Tandjung,
                                 B.Sc., M.I.A.</p>
                             <p class="text-[10px] text-red-800 font-semibold mt-1">
-                                {{ __('Ketua Umum Yayasan MATAULI') }}</p>
+                                {{ __('Ketua Pengurus Yayasan MATAULI') }}</p>
                         </div>
                     </div>
                 </div>
