@@ -76,66 +76,7 @@
                     @endforelse
                 </tbody>
             </table>
-            {{-- Number --}}
-            @php
-                $current = $items->currentPage();
-                $last = $items->lastPage();
-
-                $start = max($current - 2, 1);
-                $end = min($current + 2, $last);
-            @endphp
-
-            {{-- First Page --}}
-            @if ($start > 1)
-                <li>
-                    <a href="{{ $items->url(1) }}"
-                        class="flex items-center justify-center shrink-0 border border-gray-200 hover:border-red-600 text-gray-900 cursor-pointer text-base font-medium px-[13px] h-9 rounded-md">
-                        1
-                    </a>
-                </li>
-
-                @if ($start > 2)
-                    <li>
-                        <span class="flex items-center justify-center w-9 h-9">
-                            ...
-                        </span>
-                    </li>
-                @endif
-            @endif
-
-            {{-- Page Numbers --}}
-            @for ($i = $start; $i <= $end; $i++)
-                <li>
-                    <a href="{{ $items->url($i) }}" class="flex items-center justify-center shrink-0 border
-                    {{ $items->currentPage() == $i
-                ? 'bg-red-800 text-white border-red-800'
-                : 'border-gray-200 hover:border-red-600 text-gray-900' }}
-                    cursor-pointer text-base font-medium px-[13px] h-9 rounded-md">
-
-                        {{ $i }}
-
-                    </a>
-                </li>
-            @endfor
-
-            {{-- Last Page --}}
-            @if ($end < $last)
-
-                @if ($end < $last - 1)
-                    <li>
-                        <span class="flex items-center justify-center w-9 h-9">
-                            ...
-                        </span>
-                    </li>
-                @endif
-
-                <li>
-                    <a href="{{ $items->url($last) }}"
-                        class="flex items-center justify-center shrink-0 border border-gray-200 hover:border-red-600 text-gray-900 cursor-pointer text-base font-medium px-[13px] h-9 rounded-md">
-                        {{ $last }}
-                    </a>
-                </li>
-            @endif
+            @include('partials.pagination', ['items' => $items])
         </div>
     </div>
 @endsection

@@ -36,36 +36,5 @@
         </table>
     </div>
 
-    @include('partials.pagination',['items' => $pts])
-    <!-- @if ($pts->lastPage() > 1)
-        <ul class="flex space-x-2 justify-center mt-6">
-            <li>
-                <a href="{{ $pts->previousPageUrl() ?? '#' }}"
-                    class="flex items-center justify-center shrink-0 bg-gray-100 w-9 h-9 rounded-md {{ $pts->onFirstPage() ? 'opacity-50 pointer-events-none' : '' }}">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3 fill-gray-400" viewBox="0 0 55.753 55.753">
-                        <path
-                            d="M12.745 23.915c.283-.282.59-.52.913-.727L35.266 1.581a5.4 5.4 0 0 1 7.637 7.638L24.294 27.828l18.705 18.706a5.4 5.4 0 0 1-7.636 7.637L13.658 32.464a5.367 5.367 0 0 1-.913-.727 5.367 5.367 0 0 1-1.572-3.911 5.369 5.369 0 0 1 1.572-3.911z" />
-                    </svg>
-                </a>
-            </li>
-            @for ($i = 1; $i <= $pts->lastPage(); $i++)
-                <li>
-                    <a href="{{ $pts->url($i) }}"
-                        class="flex items-center justify-center shrink-0 border {{ $pts->currentPage() == $i ? 'bg-red-800 text-white border-red-800' : 'border-gray-200 hover:border-red-600 text-gray-900' }} cursor-pointer text-base font-medium px-3.25 h-9 rounded-md">
-                        {{ $i }}
-                    </a>
-                </li>
-            @endfor
-            <li>
-                <a href="{{ $pts->nextPageUrl() ?? '#' }}"
-                    class="flex items-center justify-center shrink-0 border border-gray-200 hover:border-red-600 w-9 h-9 rounded-md {{ !$pts->hasMorePages() ? 'opacity-50 pointer-events-none' : '' }}">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3 fill-gray-400 rotate-180"
-                        viewBox="0 0 55.753 55.753">
-                        <path
-                            d="M12.745 23.915c.283-.282.59-.52.913-.727L35.266 1.581a5.4 5.4 0 0 1 7.637 7.638L24.294 27.828l18.705 18.706a5.4 5.4 0 0 1-7.636 7.637L13.658 32.464a5.367 5.367 0 0 1-.913-.727 5.367 5.367 0 0 1-1.572-3.911 5.369 5.369 0 0 1 1.572-3.911z" />
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    @endif -->
+    @include('partials.pagination', ['items' => $pts])
 </div>
