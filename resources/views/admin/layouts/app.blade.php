@@ -159,6 +159,7 @@
                         $asramaItems = [
                             ['route' => 'admin.fasilitas-asrama.index', 'label' => 'Fasilitas Asrama'],
                             ['route' => 'admin.kegiatan-asrama.index', 'label' => 'Kegiatan Asrama'],
+                            ['route' => 'admin.pengumuman-asrama.index', 'label' => 'Pengumuman Asrama'],
                             ['route' => 'admin.pengasuh.index', 'label' => 'Pengasuh Asrama'],
                         ];
                     @endphp

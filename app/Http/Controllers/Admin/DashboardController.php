@@ -35,6 +35,7 @@ class DashboardController extends Controller
         $asramaStats = [
             ['label' => 'Fasilitas Asrama', 'count' => DB::table('fasilitas_asrama')->count(), 'route' => 'admin.fasilitas-asrama.index', 'icon' => 'home'],
             ['label' => 'Kegiatan Asrama', 'count' => DB::table('kegiatan_asrama')->count(), 'route' => 'admin.kegiatan-asrama.index', 'icon' => 'calendar'],
+            ['label' => 'Pengumuman Asrama', 'count' => DB::table('pengumuman_asrama')->count(), 'route' => 'admin.pengumuman-asrama.index', 'icon' => 'newspaper'],
             ['label' => 'Pengasuh Asrama', 'count' => DB::table('pengasuhs')->count(), 'route' => 'admin.pengasuh.index', 'icon' => 'users'],
         ];
 

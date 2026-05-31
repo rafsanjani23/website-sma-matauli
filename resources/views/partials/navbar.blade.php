@@ -174,6 +174,8 @@
                     </li>
                     <li><a href="{{ route('kegiatan-asrama') }}" class="dropdown-item">{{ __('Kegiatan Asrama') }}</a>
                     </li>
+                    <li><a href="{{ route('pengumuman-asrama') }}" class="dropdown-item">{{ __('Pengumuman Asrama') }}</a>
+                    </li>
                 </ul>
             </li>
             <!-- dropdown tentang asrama end -->
@@ -354,6 +356,9 @@
                     </li>
                     <li><a href="{{ route('kegiatan-asrama') }}"
                             class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Kegiatan Asrama') }}</a>
+                    </li>
+                    <li><a href="{{ route('pengumuman-asrama') }}"
+                            class="block px-10 py-3 text-sm font-medium text-gray-700 hover:bg-orange-100 hover:text-orange-600 transition-colors">{{ __('Pengumuman Asrama') }}</a>
                     </li>
                 </ul>
             </li>

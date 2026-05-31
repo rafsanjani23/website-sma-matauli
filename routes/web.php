@@ -11,6 +11,7 @@ use App\Http\Controllers\Admin\TestimoniController;
 use App\Http\Controllers\Admin\FasilitasSekolahController;
 use App\Http\Controllers\Admin\FasilitasAsramaController;
 use App\Http\Controllers\Admin\KegiatanAsramaController;
+use App\Http\Controllers\Admin\PengumumanAsramaController;
 use App\Http\Controllers\Admin\PimpinanController;
 use App\Http\Controllers\Admin\TenagaPendidikController;
 use App\Http\Controllers\Admin\TenagaKependidikanController;
@@ -181,6 +182,14 @@ Route::get('/kegiatan-asrama', function () {
     $tidakRutinItems = \App\Models\KegiatanAsrama::where('kategori', 'tidak_rutin')->latest()->get();
     return view('pages.kegiatan-asrama', compact('rutinItems', 'tidakRutinItems'));
 })->name('kegiatan-asrama');
+Route::get('/pengumuman-asrama', function () {
+    $items = \App\Models\PengumumanAsrama::latest()->get();
+    return view('pages.pengumuman-asrama', compact('items'));
+})->name('pengumuman-asrama');
+Route::get('/pengumuman-asrama/{id}', function ($id) {
+    $item = \App\Models\PengumumanAsrama::findOrFail($id);
+    return view('pages.pengumuman-asrama-detail', compact('item'));
+})->name('pengumuman-asrama-detail');
 
 // alumni
 Route::get('/studi-lanjut', function (\Illuminate\Http\Request $request) {
@@ -474,6 +483,14 @@ Route::prefix('admin')->group(function () {
             Route::get('/kegiatan-asrama/{id}/edit', [KegiatanAsramaController::class, 'edit'])->name('admin.kegiatan-asrama.edit');
             Route::put('/kegiatan-asrama/{id}', [KegiatanAsramaController::class, 'update'])->name('admin.kegiatan-asrama.update');
             Route::delete('/kegiatan-asrama/{id}', [KegiatanAsramaController::class, 'destroy'])->name('admin.kegiatan-asrama.destroy');
+
+            // Pengumuman Asrama
+            Route::get('/pengumuman-asrama', [PengumumanAsramaController::class, 'index'])->name('admin.pengumuman-asrama.index');
+            Route::get('/pengumuman-asrama/create', [PengumumanAsramaController::class, 'create'])->name('admin.pengumuman-asrama.create');
+            Route::post('/pengumuman-asrama', [PengumumanAsramaController::class, 'store'])->name('admin.pengumuman-asrama.store');
+            Route::get('/pengumuman-asrama/{id}/edit', [PengumumanAsramaController::class, 'edit'])->name('admin.pengumuman-asrama.edit');
+            Route::put('/pengumuman-asrama/{id}', [PengumumanAsramaController::class, 'update'])->name('admin.pengumuman-asrama.update');
+            Route::delete('/pengumuman-asrama/{id}', [PengumumanAsramaController::class, 'destroy'])->name('admin.pengumuman-asrama.destroy');
 
             // Pengasuh Asrama
             Route::get('/pengasuh', [PengasuhController::class, 'index'])->name('admin.pengasuh.index');
