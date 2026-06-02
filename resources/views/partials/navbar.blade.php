@@ -102,6 +102,13 @@
                     The center of excellence
                 </span>
             </div>
+
+            <div class="flex items-center gap-1 rounded-md bg-white p-0.5 lg:hidden">
+                <img src="{{ asset('assets/kurikulum-merdeka.webp') }}" alt="Logo Kurikulum"
+                    class="h-10 sm:h-11 w-auto object-contain">
+                <img src="{{ asset('assets/Logo_IB.webp') }}" alt="Logo IB"
+                    class="h-10 sm:h-11 w-auto object-contain">
+            </div>
         </div>
 
         <!-- Desktop Navigation Menu -->
