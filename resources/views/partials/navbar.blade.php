@@ -454,6 +454,16 @@
                     </a>
                 </div>
 
+                <!-- Institutional Logos (Mobile) -->
+                <div class="flex items-center justify-center gap-3 border-t border-gray-200 py-3">
+                    <img src="{{ asset('assets/Logo_Provinsi.webp') }}" alt="Logo Provinsi"
+                        class="h-10 w-auto object-contain">
+                    <img src="{{ asset('assets/Logo_Yayasan.webp') }}" alt="Logo Yayasan"
+                        class="h-10 w-auto object-contain">
+                    <img src="{{ asset('assets/Logo_SMAN_Matauli.webp') }}" alt="Logo SMAN Matauli"
+                        class="h-10 w-auto object-contain">
+                </div>
+
                 <!-- Language Selector (Mobile) -->
                 <div class="border-t border-gray-200 pt-3">
                     <p class="text-xs font-semibold text-gray-700 mb-2">
