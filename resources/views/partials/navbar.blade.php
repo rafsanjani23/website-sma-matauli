@@ -15,8 +15,10 @@
                         class="h-9 lg:h-10 w-auto object-contain">
                     <img src="{{ asset('assets/Logo_SMAN_Matauli.webp') }}" alt="Logo SMAN Matauli"
                         class="h-9 lg:h-10 w-auto object-contain">
-                    <img src="{{ asset('assets/kurikulum-merdeka.webp') }}" alt="Logo Kurikulum"
-                        class="h-9 lg:h-10 w-auto object-contain">
+                    <span class="flex h-9 lg:h-10 w-12 lg:w-14 items-center justify-center overflow-hidden">
+                        <img src="{{ asset('assets/kurikulum-merdeka.webp') }}" alt="Logo Kurikulum"
+                            class="h-14 lg:h-16 w-auto max-w-none object-contain">
+                    </span>
                     <img src="{{ asset('assets/Logo_IB.webp') }}" alt="Logo IB"
                         class="h-9 lg:h-10 w-auto object-contain">
                 </div>
@@ -103,11 +105,15 @@
                 </span>
             </div>
 
-            <div class="flex items-center gap-1 rounded-md bg-white p-0.5 lg:hidden">
-                <img src="{{ asset('assets/kurikulum-merdeka.webp') }}" alt="Logo Kurikulum"
-                    class="h-10 sm:h-11 w-auto object-contain">
-                <img src="{{ asset('assets/Logo_IB.webp') }}" alt="Logo IB"
-                    class="h-10 sm:h-11 w-auto object-contain">
+            <div class="flex items-center gap-1 lg:hidden">
+                <span class="flex h-11 sm:h-12 w-11 sm:w-12 items-center justify-center overflow-hidden rounded-full bg-white">
+                    <img src="{{ asset('assets/kurikulum-merdeka.webp') }}" alt="Logo Kurikulum"
+                        class="h-11 sm:h-12 w-auto max-w-none object-contain">
+                </span>
+                <span class="flex h-11 sm:h-12 w-11 sm:w-12 items-center justify-center rounded-full bg-white p-[2px]">
+                    <img src="{{ asset('assets/Logo_IB.webp') }}" alt="Logo IB"
+                        class="h-full w-full object-contain">
+                </span>
             </div>
         </div>
 
