@@ -92,27 +92,30 @@
         class="relative flex items-center justify-between px-4 sm:px-6 lg:px-12 xl:px-24 py-3 lg:py-4 bg-matauli-red-dark text-gray-900 transition-all shadow">
 
         <!-- Brand Section -->
-        <div class="flex items-center gap-2 sm:gap-3">
-            <img src="{{ asset('assets/Logo_SMAN_Matauli.webp') }}" alt="Logo SMAN"
-                class="h-10 sm:h-11 lg:h-12 w-auto">
+        <div class="flex min-w-0 items-center gap-1.5 sm:gap-2 lg:gap-3">
+            <span
+                class="flex h-10 w-10 shrink-0 items-center justify-center sm:h-11 sm:w-11 lg:h-auto lg:w-auto">
+                <img src="{{ asset('assets/Logo_SMAN_Matauli.webp') }}" alt="Logo SMAN"
+                    class="h-full w-full object-contain lg:h-12 lg:w-auto">
+            </span>
 
-            <div class="flex flex-col text-[#fff9f9]">
-                <h1 class="text-xs sm:text-sm lg:text-lg font-bold tracking-tight leading-tight">
+            <div class="flex min-w-0 flex-col text-[#fff9f9]">
+                <h1 class="whitespace-nowrap text-[0.68rem] sm:text-sm lg:text-lg font-bold tracking-tight leading-tight">
                     SMAN 1 MATAULI
                 </h1>
-                <span class="text-[0.6rem] sm:text-[0.65rem] lg:text-xs font-light">
+                <span class="whitespace-nowrap text-[0.56rem] sm:text-[0.65rem] lg:text-xs font-light">
                     The center of excellence
                 </span>
             </div>
 
-            <div class="flex items-center gap-1 lg:hidden">
-                <span class="flex h-11 sm:h-12 w-11 sm:w-12 items-center justify-center overflow-hidden rounded-full bg-white">
+            <div class="ml-1 flex shrink-0 items-center gap-1 lg:hidden">
+                <span class="flex h-10 w-10 shrink-0 items-center justify-center sm:h-11 sm:w-11">
                     <img src="{{ asset('assets/kurikulum-merdeka.webp') }}" alt="Logo Kurikulum"
-                        class="h-11 sm:h-12 w-auto max-w-none object-contain">
+                        class="h-full w-full scale-150 object-contain drop-shadow-[0_0_4px_rgba(255,255,255,0.85)]">
                 </span>
-                <span class="flex h-11 sm:h-12 w-11 sm:w-12 items-center justify-center rounded-full bg-white p-[2px]">
+                <span class="flex h-10 w-10 shrink-0 items-center justify-center sm:h-11 sm:w-11">
                     <img src="{{ asset('assets/Logo_IB.webp') }}" alt="Logo IB"
-                        class="h-full w-full object-contain">
+                        class="h-full w-full scale-110 object-contain drop-shadow-[0_0_4px_rgba(255,255,255,0.85)]">
                 </span>
             </div>
         </div>
