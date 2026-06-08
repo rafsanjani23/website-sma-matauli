@@ -15,9 +15,9 @@
                         class="h-9 lg:h-10 w-auto object-contain">
                     <img src="{{ asset('assets/Logo_SMAN_Matauli.webp') }}" alt="Logo SMAN Matauli"
                         class="h-9 lg:h-10 w-auto object-contain">
-                    <img src="{{ asset('assets/Logo_Kurikulum_Merdeka_Navbar.png') }}" alt="Logo Kurikulum"
+                    <img src="{{ asset('assets/Logo_Kurikulum_Merdeka_Navbar.webp') }}" alt="Logo Kurikulum"
                         class="h-12 lg:h-13 w-auto object-contain">
-                    <img src="{{ asset('assets/Logo_IB_Navbar.png') }}" alt="Logo IB"
+                    <img src="{{ asset('assets/Logo_IB_Navbar.webp') }}" alt="Logo IB"
                         class="h-11 lg:h-12 w-auto object-contain">
                 </div>
 
