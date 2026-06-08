@@ -15,9 +15,9 @@
                         class="h-9 lg:h-10 w-auto object-contain">
                     <img src="{{ asset('assets/Logo_SMAN_Matauli.webp') }}" alt="Logo SMAN Matauli"
                         class="h-9 lg:h-10 w-auto object-contain">
-                    <img src="{{ asset('assets/Logo_Kurikulum_Merdeka_Navbar.webp') }}" alt="Logo Kurikulum"
+                    <img src="{{ asset('assets/kurikulum-merdeka.webp') }}" alt="Logo Kurikulum"
                         class="h-12 lg:h-13 w-auto object-contain">
-                    <img src="{{ asset('assets/Logo_IB_Navbar.webp') }}" alt="Logo IB"
+                    <img src="{{ asset('assets/Logo_IB.webp') }}" alt="Logo IB"
                         class="h-11 lg:h-12 w-auto object-contain">
                 </div>
 
@@ -106,14 +106,17 @@
                 </span>
             </div>
 
+            {{-- Logo Kurikulum Merdeka Mobile --}}
             <div class="ml-1 flex shrink-0 items-center gap-1 lg:hidden">
                 <span class="flex h-10 w-10 shrink-0 items-center justify-center sm:h-11 sm:w-11">
                     <img src="{{ asset('assets/kurikulum-merdeka.webp') }}" alt="Logo Kurikulum"
-                        class="h-full w-full scale-150 object-contain drop-shadow-[0_0_4px_rgba(255,255,255,0.85)]">
+                        class="h-full w-full scale-110 object-contain">
                 </span>
+
+                {{-- Logo IB Mobile --}}
                 <span class="flex h-10 w-10 shrink-0 items-center justify-center sm:h-11 sm:w-11">
                     <img src="{{ asset('assets/Logo_IB.webp') }}" alt="Logo IB"
-                        class="h-full w-full scale-110 object-contain drop-shadow-[0_0_4px_rgba(255,255,255,0.85)]">
+                        class="h-full w-full scale-110 object-contain">
                 </span>
             </div>
         </div>
