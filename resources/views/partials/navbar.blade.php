@@ -15,10 +15,6 @@
                         class="h-9 lg:h-10 w-auto object-contain">
                     <img src="{{ asset('assets/Logo_SMAN_Matauli.webp') }}" alt="Logo SMAN Matauli"
                         class="h-9 lg:h-10 w-auto object-contain">
-                    <img src="{{ asset('assets/kurikulum-merdeka.webp') }}" alt="Logo Kurikulum"
-                        class="h-12 lg:h-13 w-auto object-contain">
-                    <img src="{{ asset('assets/Logo_IB.webp') }}" alt="Logo IB"
-                        class="h-11 lg:h-12 w-auto object-contain">
                 </div>
 
                 <!-- Contact & Language -->
@@ -106,17 +102,17 @@
                 </span>
             </div>
 
-            {{-- Logo Kurikulum Merdeka Mobile --}}
-            <div class="ml-1 flex shrink-0 items-center gap-1 lg:hidden">
-                <span class="flex h-10 w-10 shrink-0 items-center justify-center sm:h-11 sm:w-11">
+            {{-- Logo Kurikulum Merdeka dan IB --}}
+            <div class="ml-1 flex shrink-0 items-center gap-1">
+                <span class="flex h-10 w-10 shrink-0 items-center justify-center sm:h-11 sm:w-11 lg:h-auto lg:w-auto">
                     <img src="{{ asset('assets/kurikulum-merdeka.webp') }}" alt="Logo Kurikulum"
-                        class="h-full w-full scale-110 object-contain">
+                        class="h-full w-full scale-110 object-contain lg:h-12 lg:w-auto">
                 </span>
 
-                {{-- Logo IB Mobile --}}
-                <span class="flex h-10 w-10 shrink-0 items-center justify-center sm:h-11 sm:w-11">
+                {{-- Logo IB --}}
+                <span class="flex h-10 w-10 shrink-0 items-center justify-center sm:h-11 sm:w-11 lg:h-auto lg:w-auto">
                     <img src="{{ asset('assets/Logo_IB.webp') }}" alt="Logo IB"
-                        class="h-full w-full scale-110 object-contain">
+                        class="h-full w-full scale-110 object-contain lg:h-12 lg:w-auto">
                 </span>
             </div>
         </div>
