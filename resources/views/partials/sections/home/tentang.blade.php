@@ -196,7 +196,7 @@
                             <div class="w-8 h-0.5 bg-yellow-400 mx-auto mb-2 rounded-full"></div>
                             <p class="text-xs font-bold text-gray-800 whitespace-nowrap">Deden Rachmawan, S.Pd., M.M</p>
                             <p class="text-[10px] text-red-800 font-semibold mt-1">
-                                {{ __('Kepala Sekolah SMAN 1 MATAULI') }}</p>
+                                {{ __('Kepala SMAN 1 MATAULI') }}</p>
                         </div>
                     </div>
                 </div>
