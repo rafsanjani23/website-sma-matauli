@@ -369,15 +369,16 @@
                     </a>
                 </div>
 
-                {{-- Gambar Kurikulum Merdeka --}}
-                <div class="mt-8 w-full h-16 flex items-center justify-center object-cover max-md:w-57.5">
-                    <img src="{{ asset('assets/kurikulum.webp') }}" alt="Kurikulum Merdeka"
-                        class="w-auto h-full rounded-xl">
-                </div>
-                {{-- Gambar LOGO IB --}}
-                <div class="-mt-3 w-full h-32 flex items-center justify-center max-md:w-57.5">
-                    <img src="{{ asset('assets/LogoIB-v2.webp') }}" alt="LOGO IB"
-                        class="h-full w-auto object-contain">
+                {{-- Logo Kemendikdasmen, Kurikulum Merdeka, dan IB --}}
+                <div class="mt-8 flex w-full max-w-[15rem] items-center justify-center gap-3 max-md:w-57.5">
+                    <img src="{{ asset('assets/logo-kemendikdasmen.webp') }}" alt="Logo Kemendikdasmen"
+                        class="h-14 w-auto object-contain drop-shadow-[0_4px_10px_rgba(0,0,0,0.35)] sm:h-16">
+
+                    <img src="{{ asset('assets/kurikulum-merdeka.webp') }}" alt="Logo Kurikulum Merdeka"
+                        class="h-16 w-auto object-contain drop-shadow-[0_4px_10px_rgba(0,0,0,0.35)] sm:h-[4.5rem]">
+
+                    <img src="{{ asset('assets/Logo_IB.webp') }}" alt="LOGO IB"
+                        class="h-14 w-auto object-contain drop-shadow-[0_4px_10px_rgba(0,0,0,0.35)] sm:h-16">
                 </div>
             </div>
         </div>
