@@ -8,19 +8,17 @@
             <div class="flex items-center justify-between">
 
                 <!-- Logo Section -->
-                <div class="flex items-center gap-3">
+                <div class="flex items-center gap-1.5">
                     <img src="{{ asset('assets/Logo_Provinsi.webp') }}" alt="Logo Provinsi"
                         class="h-9 lg:h-10 w-auto object-contain">
                     <img src="{{ asset('assets/Logo_Yayasan.webp') }}" alt="Logo Yayasan"
                         class="h-9 lg:h-10 w-auto object-contain">
                     <img src="{{ asset('assets/Logo_SMAN_Matauli.webp') }}" alt="Logo SMAN Matauli"
                         class="h-9 lg:h-10 w-auto object-contain">
-                    <span class="flex h-9 lg:h-10 w-12 lg:w-14 items-center justify-center overflow-hidden">
-                        <img src="{{ asset('assets/kurikulum-merdeka.webp') }}" alt="Logo Kurikulum"
-                            class="h-14 lg:h-16 w-auto max-w-none object-contain">
-                    </span>
-                    <img src="{{ asset('assets/Logo_IB.webp') }}" alt="Logo IB"
-                        class="h-9 lg:h-10 w-auto object-contain">
+                    <img src="{{ asset('assets/Logo_Kurikulum_Merdeka_Navbar.png') }}" alt="Logo Kurikulum"
+                        class="h-12 lg:h-13 w-auto object-contain">
+                    <img src="{{ asset('assets/Logo_IB_Navbar.png') }}" alt="Logo IB"
+                        class="h-11 lg:h-12 w-auto object-contain">
                 </div>
 
                 <!-- Contact & Language -->
@@ -93,14 +91,14 @@
 
         <!-- Brand Section -->
         <div class="flex min-w-0 items-center gap-1.5 sm:gap-2 lg:gap-3">
-            <span
-                class="flex h-10 w-10 shrink-0 items-center justify-center sm:h-11 sm:w-11 lg:h-auto lg:w-auto">
+            <span class="flex h-10 w-10 shrink-0 items-center justify-center sm:h-11 sm:w-11 lg:h-auto lg:w-auto">
                 <img src="{{ asset('assets/Logo_SMAN_Matauli.webp') }}" alt="Logo SMAN"
                     class="h-full w-full object-contain lg:h-12 lg:w-auto">
             </span>
 
             <div class="flex min-w-0 flex-col text-[#fff9f9]">
-                <h1 class="whitespace-nowrap text-[0.68rem] sm:text-sm lg:text-lg font-bold tracking-tight leading-tight">
+                <h1
+                    class="whitespace-nowrap text-[0.68rem] sm:text-sm lg:text-lg font-bold tracking-tight leading-tight">
                     SMAN 1 MATAULI
                 </h1>
                 <span class="whitespace-nowrap text-[0.56rem] sm:text-[0.65rem] lg:text-xs font-light">
